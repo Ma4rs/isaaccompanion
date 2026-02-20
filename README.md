@@ -1,3 +1,4 @@
+## [Play it live](https://vibeftw.github.io/isaaccompanion/)
 # Isaac Companion
 
 A **vanilla JavaScript** web app and **100% completion guide** for **The Binding of Isaac: Repentance** — browse all 577 items, follow path guides, unlock all 34 characters, track all 45 challenges, and reference all 14 transformations. No build step or framework required.
