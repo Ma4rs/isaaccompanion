@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isaac Companion — Items, Paths, Unlocks & Challenges</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#/" class="nav-logo">Isaac Companion</a>
+    <ul class="nav-links">
+      <li><a href="#/" class="nav-link" data-path="/">Home</a></li>
+      <li><a href="#/items" class="nav-link" data-path="/items">Items</a></li>
+      <li><a href="#/paths" class="nav-link" data-path="/paths">Paths</a></li>
+      <li><a href="#/unlocks" class="nav-link" data-path="/unlocks">Unlocks</a></li>
+      <li><a href="#/challenges" class="nav-link" data-path="/challenges">Challenges</a></li>
+      <li><a href="#/transformations" class="nav-link" data-path="/transformations">Transforms</a></li>
+    </ul>
+    <div class="search-wrap">
+      <input type="search" id="globalSearch" class="global-search" placeholder="Search everything... (/)" aria-label="Search all sections" />
+      <div id="searchResults" class="search-results"></div>
+    </div>
+  </nav>
+  <main id="app" class="main"></main>
+  <script src="data/fallback.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
