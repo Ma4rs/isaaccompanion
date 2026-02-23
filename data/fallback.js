@@ -576,7 +576,8 @@ window.ISAAC_FALLBACK = {
   {"id":"735","name":"Monster Manual","description":"Spawns a random familiar for the room","quality":1,"pool":"treasure"},
   {"id":"736","name":"Book of Secrets","description":"Grants a random mapping effect for the floor","quality":2,"pool":"shop"},
   {"id":"737","name":"Ars Goetia","description":"Grants a random devil item wisp","quality":2,"pool":"devil"},
-  {"id":"738","name":"Spiderbaby","description":"Spawn 3-5 blue spiders when hit","quality":1,"pool":"treasure"}
+  {"id":"738","name":"Spiderbaby","description":"Spawn 3-5 blue spiders when hit","quality":1,"pool":"treasure"},
+  {"id":"740","name":"Lil Gurdy","description":"Charge familiar that bounces around the room","quality":1,"pool":"treasure"}
 ],
 
   paths: [
