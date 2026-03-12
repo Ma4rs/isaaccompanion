@@ -56,7 +56,8 @@
         p === base || (p === '/items' && base === 'items') ||
         (p === '/trinkets' && base === 'trinkets') ||
         (p === '/paths' && base === 'paths') || (p === '/unlocks' && base === 'unlocks') ||
-        (p === '/challenges' && base === 'challenges') || (p === '/transformations' && base === 'transformations')
+        (p === '/challenges' && base === 'challenges') || (p === '/transformations' && base === 'transformations') ||
+        (p === '/reference' && base === 'reference')
       );
     });
   }
@@ -377,7 +378,7 @@
     if (state.trinketsLoading) return '<div class="trinkets"><h1 class="trinkets-title">Trinkets</h1><div class="items-grid">' + skeletonCards(12, 'item-card') + '</div></div>';
     if (state.trinketsError) return '<div class="trinkets-error" role="alert">Error: ' + esc(state.trinketsError) + '</div>';
     const cards = state.trinkets.map(t => {
-      return '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card"><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta">Q' + t.quality + '</span>' : '') + '</a>';
+      return '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card"><img src="icons/trinkets/' + esc(t.id) + '.png" alt="" class="item-card-icon" loading="lazy" onerror="this.style.display=\'none\'" /><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta">Q' + t.quality + '</span>' : '') + '</a>';
     }).join('');
     return '<div class="trinkets"><h1 class="trinkets-title">Trinkets</h1><p class="trinkets-desc">' + state.trinkets.length + ' trinkets — passive modifiers you can carry.</p><div class="items-grid">' + cards + '</div></div>';
   }
@@ -387,6 +388,7 @@
     if (!trinket) return '<div class="item-detail-missing">Trinket not found.</div>';
     return '<div class="item-detail"><a href="#/trinkets" class="item-detail-back">&larr; Trinkets</a>' +
       '<article class="item-detail-card" tabindex="-1">' +
+        '<img src="icons/trinkets/' + esc(id) + '.png" alt="" class="item-detail-icon" onerror="this.style.display=\'none\'" />' +
         '<h1 class="item-detail-name">' + esc(trinket.name) + '</h1>' +
         (trinket.quality != null ? '<p class="item-detail-meta">Quality ' + trinket.quality + '</p>' : '') +
         (trinket.description ? '<p class="item-detail-desc">' + esc(trinket.description) + '</p>' : '') +
