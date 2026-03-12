@@ -9,8 +9,9 @@
   "icons": [
     {
       "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='32' fill='%231a1410'/%3E%3Cellipse cx='96' cy='108' rx='36' ry='48' fill='%23c4953a'/%3E%3Ccircle cx='96' cy='72' r='18' fill='%231a1410'/%3E%3C/svg%3E",
-      "sizes": "192x192",
-      "type": "image/svg+xml"
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
     }
   ]
 }

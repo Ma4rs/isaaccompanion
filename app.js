@@ -392,11 +392,17 @@
 
   // --- Render: Trinkets ---
 
+  let currentTrinketSearch = '';
+
   function renderTrinkets() {
     if (state.trinketsLoading) return '<div class="trinkets"><h1 class="trinkets-title">Trinkets</h1><div class="items-grid">' + skeletonCards(12, 'item-card') + '</div></div>';
     if (state.trinketsError) return '<div class="trinkets-error" role="alert">Error: ' + esc(state.trinketsError) + '</div>';
-    const cards = state.trinkets.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card"><img src="icons/trinkets/' + esc(t.id) + '.png" alt="" class="item-card-icon" loading="lazy" onerror="this.style.display=\'none\'" /><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta">Q' + t.quality + '</span>' : '') + '</a>').join('');
-    return '<div class="trinkets"><h1 class="trinkets-title">Trinkets</h1><p class="trinkets-desc">' + state.trinkets.length + ' trinkets \u2014 passive modifiers you can carry.</p><div class="items-grid">' + cards + '</div></div>';
+    const q = (currentTrinketSearch || '').trim().toLowerCase();
+    const list = q ? state.trinkets.filter(t => (t.name && t.name.toLowerCase().includes(q)) || (t.description && t.description.toLowerCase().includes(q))) : state.trinkets;
+    const cards = list.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card"><img src="icons/trinkets/' + esc(t.id) + '.png" alt="" class="item-card-icon" loading="lazy" onerror="this.style.display=\'none\'" /><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta">Q' + t.quality + '</span>' : '') + '</a>').join('');
+    return '<div class="trinkets"><h1 class="trinkets-title">Trinkets</h1><span class="items-count">' + list.length + ' trinkets</span>' +
+      '<div class="items-toolbar"><input type="search" placeholder="Search trinkets\u2026" class="items-search" data-action="trinket-search" value="' + esc(currentTrinketSearch || '') + '" aria-label="Search trinkets" /></div>' +
+      '<div class="items-grid">' + cards + '</div>' + (list.length === 0 ? '<p class="items-empty">No trinkets match your search.</p>' : '') + '</div>';
   }
 
   // R5: trinket detail loading state
@@ -594,6 +600,7 @@
   // --- Event delegation ---
 
   let _searchDebounce = null;
+  let _trinketSearchDebounce = null;
   app.addEventListener('input', e => {
     if (e.target.matches('[data-action="search"]')) {
       currentSearch = e.target.value;
@@ -609,6 +616,20 @@
           if (counter) counter.textContent = filtered.length + ' items';
           if (empty) empty.style.display = filtered.length === 0 ? '' : 'none';
           if (!empty && filtered.length === 0) grid.insertAdjacentHTML('afterend', '<p class="items-empty">No items match your filters. <a href="#/trinkets">Try searching trinkets instead?</a></p>');
+        }
+      }, 150);
+    }
+    if (e.target.matches('[data-action="trinket-search"]')) {
+      currentTrinketSearch = e.target.value;
+      clearTimeout(_trinketSearchDebounce);
+      _trinketSearchDebounce = setTimeout(() => {
+        const q = (currentTrinketSearch || '').trim().toLowerCase();
+        const list = q ? state.trinkets.filter(t => (t.name && t.name.toLowerCase().includes(q)) || (t.description && t.description.toLowerCase().includes(q))) : state.trinkets;
+        const grid = app.querySelector('.items-grid');
+        const counter = app.querySelector('.items-count');
+        if (grid) {
+          grid.innerHTML = list.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card"><img src="icons/trinkets/' + esc(t.id) + '.png" alt="" class="item-card-icon" loading="lazy" onerror="this.style.display=\'none\'" /><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta">Q' + t.quality + '</span>' : '') + '</a>').join('');
+          if (counter) counter.textContent = list.length + ' trinkets';
         }
       }, 150);
     }
