@@ -221,6 +221,44 @@ select option {
 .item-detail-tag { font-size: 0.8rem; padding: 0.25rem 0.5rem; background: var(--bg); border: 1px solid var(--border); border-radius: 4px; color: var(--text-muted); }
 .item-detail-missing { color: var(--text-muted); padding: 2rem; }
 
+/* Detail prev/next nav */
+.detail-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25rem;
+  gap: 1rem;
+}
+.detail-nav-prev,
+.detail-nav-next {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--accent);
+  text-decoration: none;
+  max-width: 45%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: background 0.15s, border-color 0.15s;
+}
+.detail-nav-prev:hover,
+.detail-nav-next:hover {
+  background: var(--bg);
+  border-color: var(--accent);
+}
+.detail-nav-next { margin-left: auto; }
+.detail-nav-disabled { visibility: hidden; }
+@media (max-width: 480px) {
+  .detail-nav-prev,
+  .detail-nav-next { max-width: 48%; font-size: 0.8rem; padding: 0.35rem 0.5rem; }
+}
+
 /* Paths / Unlocks list */
 .paths-title, .unlocks-title { font-size: 1.1rem; color: var(--accent); margin-bottom: 0.25rem; }
 .paths-desc, .unlocks-desc { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem; }

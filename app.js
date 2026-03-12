@@ -144,6 +144,24 @@
     return state.transformations.filter(t => (t.items || []).some(n => n.toLowerCase() === name));
   }
 
+  function getNeighbors(list, currentId, nameKey) {
+    const idx = list.findIndex(x => x.id === currentId);
+    if (idx === -1) return { prev: null, next: null };
+    const prev = idx > 0 ? list[idx - 1] : null;
+    const next = idx < list.length - 1 ? list[idx + 1] : null;
+    return {
+      prev: prev ? { id: prev.id, name: prev[nameKey] || prev.name } : null,
+      next: next ? { id: next.id, name: next[nameKey] || next.name } : null
+    };
+  }
+
+  function renderDetailNav(section, prev, next) {
+    return '<nav class="detail-nav">' +
+      (prev ? '<a href="#/' + section + '/' + encodeURIComponent(prev.id) + '" class="detail-nav-prev" title="' + esc(prev.name) + '">&larr; ' + esc(prev.name) + '</a>' : '<span class="detail-nav-prev detail-nav-disabled"></span>') +
+      (next ? '<a href="#/' + section + '/' + encodeURIComponent(next.id) + '" class="detail-nav-next" title="' + esc(next.name) + '">' + esc(next.name) + ' &rarr;</a>' : '<span class="detail-nav-next detail-nav-disabled"></span>') +
+      '</nav>';
+  }
+
   // --- localStorage ---
 
   function getChecked(prefix, id) {
@@ -372,6 +390,7 @@
     const transforms = getTransformationsForItem(item.name);
     const transformsHtml = transforms.length ? '<div class="item-transforms"><strong>Contributes to:</strong> ' + transforms.map(t => '<a href="#/transformations/' + encodeURIComponent(t.id) + '" class="transform-link">' + esc(t.name) + '</a>').join(', ') + '</div>' : '';
     const synergiesHtml = item.synergies && item.synergies.length ? '<div class="synergies-section"><h2 class="synergies-title">Notable Synergies</h2><ul class="synergies-list">' + item.synergies.map(s => '<li class="synergy-item"><strong>' + esc(s.item) + ':</strong> ' + esc(s.effect) + '</li>').join('') + '</ul></div>' : '';
+    const nb = getNeighbors(state.items, id, 'name');
     // R11: breadcrumb
     return '<div class="item-detail"><a href="#/items" class="item-detail-back">&larr; Items</a>' +
       '<article class="item-detail-card" tabindex="-1">' +
@@ -382,7 +401,7 @@
         (item.quote ? '<blockquote class="item-detail-quote">\u201c' + esc(item.quote) + '\u201d</blockquote>' : '') +
         (tagsHtml ? '<div class="item-detail-tags">' + tagsHtml + '</div>' : '') +
         transformsHtml + synergiesHtml +
-      '</article></div>';
+      '</article>' + renderDetailNav('items', nb.prev, nb.next) + '</div>';
   }
 
   // R2: Item Pool Browser
@@ -417,6 +436,7 @@
     if (state.trinketsLoading && state.trinkets.length === 0) return '<div class="item-detail"><a href="#/trinkets" class="item-detail-back">&larr; Trinkets</a><div class="item-detail-card skeleton-card"><div class="skeleton-line skeleton-line--short"></div><div class="skeleton-line"></div></div></div>';
     const trinket = id ? getTrinketById(id) : null;
     if (!trinket) return '<div class="item-detail-missing">Trinket not found.</div>';
+    const nb = getNeighbors(state.trinkets, id, 'name');
     // R11: breadcrumb
     return '<div class="item-detail"><a href="#/trinkets" class="item-detail-back">&larr; Trinkets</a>' +
       '<article class="item-detail-card" tabindex="-1">' +
@@ -424,7 +444,7 @@
         '<h1 class="item-detail-name">' + esc(trinket.name) + '</h1>' +
         (trinket.quality != null ? '<p class="item-detail-meta">Quality ' + trinket.quality + '</p>' : '') +
         (trinket.description ? '<p class="item-detail-desc">' + esc(trinket.description) + '</p>' : '') +
-      '</article></div>';
+      '</article>' + renderDetailNav('trinkets', nb.prev, nb.next) + '</div>';
   }
 
   // --- Render: Progress bar ---
@@ -464,7 +484,8 @@
     const path = id ? getPathById(id) : null;
     if (!path) return '<div class="path-detail-missing">Path not found.</div>';
     const checked = getChecked(PREFIX_PATH, id); const steps = path.steps || []; const done = steps.filter(s => checked.has(s.id)).length;
-    return '<div class="path-detail" data-path-id="' + esc(id) + '"><a href="#/paths" class="path-detail-back">&larr; Paths</a><article class="path-detail-card" tabindex="-1"><img src="portraits/bosses/' + esc(id) + '.png" alt="" class="path-detail-portrait" onerror="this.style.display=\'none\'" /><h1 class="path-detail-name">' + esc(path.name) + '</h1>' + (path.description ? '<p class="path-detail-desc">' + esc(path.description) + '</p>' : '') + '<div class="detail-progress">' + renderProgressBar(done, steps.length) + '</div>' + renderChecklist(steps, checked) + '<div class="checklist-actions"><button type="button" class="complete-all-btn" data-action="complete-path" data-id="' + esc(id) + '">Complete all</button><button type="button" class="reset-btn" data-action="reset-path" data-id="' + esc(id) + '">Reset progress</button></div></article></div>';
+    const nb = getNeighbors(state.paths, id, 'name');
+    return '<div class="path-detail" data-path-id="' + esc(id) + '"><a href="#/paths" class="path-detail-back">&larr; Paths</a><article class="path-detail-card" tabindex="-1"><img src="portraits/bosses/' + esc(id) + '.png" alt="" class="path-detail-portrait" onerror="this.style.display=\'none\'" /><h1 class="path-detail-name">' + esc(path.name) + '</h1>' + (path.description ? '<p class="path-detail-desc">' + esc(path.description) + '</p>' : '') + '<div class="detail-progress">' + renderProgressBar(done, steps.length) + '</div>' + renderChecklist(steps, checked) + '<div class="checklist-actions"><button type="button" class="complete-all-btn" data-action="complete-path" data-id="' + esc(id) + '">Complete all</button><button type="button" class="reset-btn" data-action="reset-path" data-id="' + esc(id) + '">Reset progress</button></div></article>' + renderDetailNav('paths', nb.prev, nb.next) + '</div>';
   }
 
   // --- Render: Unlocks ---
@@ -496,7 +517,8 @@
     const unlock = id ? getUnlockById(id) : null;
     if (!unlock) return '<div class="unlock-detail-missing">Unlock not found.</div>';
     const checked = getChecked(PREFIX_UNLOCK, id); const steps = unlock.steps || []; const done = steps.filter(s => checked.has(s.id)).length;
-    return '<div class="unlock-detail" data-unlock-id="' + esc(id) + '"><a href="#/unlocks" class="unlock-detail-back">&larr; Unlocks</a><article class="unlock-detail-card" tabindex="-1"><img src="portraits/characters/' + esc(id) + '.png" alt="" class="unlock-detail-portrait" onerror="this.style.display=\'none\'" /><h1 class="unlock-detail-name">' + esc(unlock.targetUnlock) + '</h1><p class="unlock-detail-meta">' + esc(unlock.characterName) + '</p><div class="detail-progress">' + renderProgressBar(done, steps.length) + '</div>' + renderChecklist(steps, checked) + '<div class="checklist-actions"><button type="button" class="complete-all-btn" data-action="complete-unlock" data-id="' + esc(id) + '">Complete all</button><button type="button" class="reset-btn" data-action="reset-unlock" data-id="' + esc(id) + '">Reset progress</button></div>' + renderRewardsTable(unlock.rewards) + '</article></div>';
+    const nb = getNeighbors(state.unlocks, id, 'targetUnlock');
+    return '<div class="unlock-detail" data-unlock-id="' + esc(id) + '"><a href="#/unlocks" class="unlock-detail-back">&larr; Unlocks</a><article class="unlock-detail-card" tabindex="-1"><img src="portraits/characters/' + esc(id) + '.png" alt="" class="unlock-detail-portrait" onerror="this.style.display=\'none\'" /><h1 class="unlock-detail-name">' + esc(unlock.targetUnlock) + '</h1><p class="unlock-detail-meta">' + esc(unlock.characterName) + '</p><div class="detail-progress">' + renderProgressBar(done, steps.length) + '</div>' + renderChecklist(steps, checked) + '<div class="checklist-actions"><button type="button" class="complete-all-btn" data-action="complete-unlock" data-id="' + esc(id) + '">Complete all</button><button type="button" class="reset-btn" data-action="reset-unlock" data-id="' + esc(id) + '">Reset progress</button></div>' + renderRewardsTable(unlock.rewards) + '</article>' + renderDetailNav('unlocks', nb.prev, nb.next) + '</div>';
   }
 
   // --- Render: Challenges ---
@@ -523,7 +545,8 @@
     if (!ch) return '<div class="challenge-detail-missing">Challenge not found.</div>';
     const checked = getChecked(PREFIX_CHALLENGE, id); const completed = checked.has('done');
     const restrictions = (ch.restrictions || []).map(r => '<li>' + esc(r) + '</li>').join('');
-    return '<div class="challenge-detail" data-challenge-id="' + esc(id) + '"><a href="#/challenges" class="challenge-detail-back">&larr; Challenges</a><article class="challenge-detail-card" tabindex="-1"><div class="challenge-detail-header"><span class="challenge-number">#' + ch.number + '</span><span class="difficulty-badge difficulty-badge--' + esc(ch.difficulty || 'medium') + '">' + esc(ch.difficulty || 'medium') + '</span></div><h1 class="challenge-detail-name">' + esc(ch.name) + '</h1>' + (ch.description ? '<p class="challenge-detail-desc">' + esc(ch.description) + '</p>' : '') + '<div class="challenge-meta"><div class="challenge-meta-row"><strong>Character:</strong> ' + esc(ch.character) + '</div><div class="challenge-meta-row"><strong>Goal:</strong> ' + esc(ch.goal) + '</div><div class="challenge-meta-row"><strong>Unlocks:</strong> ' + esc(ch.unlock) + '</div>' + (restrictions ? '<div class="challenge-meta-row"><strong>Restrictions:</strong><ul class="challenge-restrictions">' + restrictions + '</ul></div>' : '') + '</div><div class="challenge-completion"><button type="button" class="check-list-box challenge-done-btn" data-action="toggle-challenge" data-id="' + esc(id) + '" aria-pressed="' + completed + '" aria-label="Mark as completed">' + (completed ? '\u2713' : '') + '</button><span class="challenge-done-label">' + (completed ? 'Completed' : 'Mark as completed') + '</span></div></article></div>';
+    const nb = getNeighbors(state.challenges, id, 'name');
+    return '<div class="challenge-detail" data-challenge-id="' + esc(id) + '"><a href="#/challenges" class="challenge-detail-back">&larr; Challenges</a><article class="challenge-detail-card" tabindex="-1"><div class="challenge-detail-header"><span class="challenge-number">#' + ch.number + '</span><span class="difficulty-badge difficulty-badge--' + esc(ch.difficulty || 'medium') + '">' + esc(ch.difficulty || 'medium') + '</span></div><h1 class="challenge-detail-name">' + esc(ch.name) + '</h1>' + (ch.description ? '<p class="challenge-detail-desc">' + esc(ch.description) + '</p>' : '') + '<div class="challenge-meta"><div class="challenge-meta-row"><strong>Character:</strong> ' + esc(ch.character) + '</div><div class="challenge-meta-row"><strong>Goal:</strong> ' + esc(ch.goal) + '</div><div class="challenge-meta-row"><strong>Unlocks:</strong> ' + esc(ch.unlock) + '</div>' + (restrictions ? '<div class="challenge-meta-row"><strong>Restrictions:</strong><ul class="challenge-restrictions">' + restrictions + '</ul></div>' : '') + '</div><div class="challenge-completion"><button type="button" class="check-list-box challenge-done-btn" data-action="toggle-challenge" data-id="' + esc(id) + '" aria-pressed="' + completed + '" aria-label="Mark as completed">' + (completed ? '\u2713' : '') + '</button><span class="challenge-done-label">' + (completed ? 'Completed' : 'Mark as completed') + '</span></div></article>' + renderDetailNav('challenges', nb.prev, nb.next) + '</div>';
   }
 
   // --- Render: Transformations ---
@@ -547,7 +570,8 @@
       const found = state.items.find(i => i.name.toLowerCase() === name.toLowerCase());
       return found ? '<li class="transform-item"><a href="#/items/' + encodeURIComponent(found.id) + '">' + esc(name) + '</a></li>' : '<li class="transform-item">' + esc(name) + '</li>';
     }).join('');
-    return '<div class="transform-detail"><a href="#/transformations" class="transform-detail-back">&larr; Transformations</a><article class="transform-detail-card" tabindex="-1"><h1 class="transform-detail-name">' + esc(t.name) + '</h1><p class="transform-detail-desc">' + esc(t.description) + '</p><p class="transform-detail-req">Requires <strong>' + t.requires + '</strong> of the following ' + items.length + ' items:</p><ul class="transform-items-list">' + itemLinks + '</ul></article></div>';
+    const nb = getNeighbors(state.transformations, id, 'name');
+    return '<div class="transform-detail"><a href="#/transformations" class="transform-detail-back">&larr; Transformations</a><article class="transform-detail-card" tabindex="-1"><h1 class="transform-detail-name">' + esc(t.name) + '</h1><p class="transform-detail-desc">' + esc(t.description) + '</p><p class="transform-detail-req">Requires <strong>' + t.requires + '</strong> of the following ' + items.length + ' items:</p><ul class="transform-items-list">' + itemLinks + '</ul></article>' + renderDetailNav('transformations', nb.prev, nb.next) + '</div>';
   }
 
   // --- Render: Quick Reference ---
@@ -713,6 +737,20 @@
       if (prev) prev.focus();
     }
   });
+
+  document.addEventListener('keydown', e => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') return;
+    const nav = app.querySelector('.detail-nav');
+    if (!nav) return;
+    if (e.key === 'ArrowLeft') {
+      const prev = nav.querySelector('.detail-nav-prev[href]');
+      if (prev) { e.preventDefault(); prev.click(); }
+    } else if (e.key === 'ArrowRight') {
+      const next = nav.querySelector('.detail-nav-next[href]');
+      if (next) { e.preventDefault(); next.click(); }
+    }
+  });
+
   // --- Global search events ---
 
   if (globalSearchEl) {
