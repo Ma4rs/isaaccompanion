@@ -340,7 +340,7 @@
       if (item.pool) meta.push(esc(item.pool));
       return '<a href="#/items/' + encodeURIComponent(item.id) + '" class="item-card"><img src="' + esc(getItemImageUrl(item)) + '" alt="' + esc(item.name) + '" class="item-card-icon" loading="lazy" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER_ICON + '\';" /><span class="item-card-name">' + esc(item.name) + '</span>' + (meta.length ? '<span class="item-card-meta">' + meta.join(' &middot; ') + '</span>' : '') + '</a>';
     }).join('');
-    return '<div class="items"><h1 class="items-title">Items</h1>' + sourceHtml +
+    return '<div class="items"><h1 class="items-title">Items</h1><span class="items-count">' + filtered.length + ' items</span>' + sourceHtml +
       '<div class="items-toolbar"><input type="search" placeholder="Search items\u2026" class="items-search" data-action="search" value="' + esc(search || '') + '" aria-label="Search items" />' +
       '<select class="items-select" data-action="pool" aria-label="Filter by pool"><option value="">All pools</option>' + optionsPool + '</select>' +
       '<select class="items-select" data-action="quality" aria-label="Filter by quality"><option value="">All quality</option>' + optionsQuality + '</select>' +
@@ -590,8 +590,18 @@
   // --- Footer ---
 
   function renderFooter() {
-    return '<footer class="site-footer"><span>Isaac Companion &middot; Fan project for <a href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/" target="_blank" rel="noopener">The Binding of Isaac: Repentance</a></span></footer>';
+    return '<footer class="site-footer"><span>Isaac Companion &middot; Fan project for <a href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/" target="_blank" rel="noopener">The Binding of Isaac: Repentance</a></span></footer>' +
+      '<button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>';
   }
+
+  // Back to top button
+  window.addEventListener('scroll', () => {
+    const btn = document.getElementById('backToTop');
+    if (btn) btn.classList.toggle('visible', window.scrollY > 400);
+  });
+  document.addEventListener('click', e => {
+    if (e.target.closest('#backToTop')) window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 
   // --- Main render ---
 
@@ -622,10 +632,29 @@
 
   // --- Event delegation ---
 
+  let _searchDebounce = null;
   app.addEventListener('input', e => {
     if (e.target.matches('[data-action="search"]')) {
       currentSearch = e.target.value;
-      render();
+      clearTimeout(_searchDebounce);
+      _searchDebounce = setTimeout(() => {
+        const grid = app.querySelector('.items-grid');
+        const empty = app.querySelector('.items-empty');
+        const counter = app.querySelector('.items-count');
+        if (grid) {
+          let filtered = filterItems(currentSearch, currentPool, currentQuality);
+          filtered = sortItems(filtered, currentSort);
+          grid.innerHTML = filtered.map(item => {
+            const meta = [];
+            if (item.quality != null) meta.push('Q' + item.quality);
+            if (item.pool) meta.push(esc(item.pool));
+            return '<a href="#/items/' + encodeURIComponent(item.id) + '" class="item-card"><img src="' + esc(getItemImageUrl(item)) + '" alt="' + esc(item.name) + '" class="item-card-icon" loading="lazy" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER_ICON + '\';" /><span class="item-card-name">' + esc(item.name) + '</span>' + (meta.length ? '<span class="item-card-meta">' + meta.join(' &middot; ') + '</span>' : '') + '</a>';
+          }).join('');
+          if (counter) counter.textContent = filtered.length + ' items';
+          if (empty) empty.style.display = filtered.length === 0 ? '' : 'none';
+          if (!empty && filtered.length === 0) grid.insertAdjacentHTML('afterend', '<p class="items-empty">No items match your filters.</p>');
+        }
+      }, 150);
     }
   });
 
