@@ -10,18 +10,19 @@
   const QUALITIES = [0, 1, 2, 3, 4];
   const PLACEHOLDER_ICON = 'data:image/svg+xml,' + encodeURIComponent(
     '<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">' +
-    '<rect fill="%233d3228" width="48" height="48" rx="4"/>' +
-    '<text x="24" y="30" font-size="20" fill="%239a8f84" text-anchor="middle" font-family="sans-serif">?</text></svg>'
+    '<rect fill="%232a2018" width="48" height="48" rx="4"/>' +
+    '<text x="24" y="30" font-size="20" fill="%23a89070" text-anchor="middle" font-family="sans-serif">?</text></svg>'
   );
 
-  const fallback = window.ISAAC_FALLBACK || { items: [], paths: [], unlocks: [], challenges: [], transformations: [] };
+  const fallback = window.ISAAC_FALLBACK || { items: [], paths: [], unlocks: [], challenges: [], transformations: [], trinkets: [] };
 
   const state = {
     items: [], itemsSource: null, itemsLoading: true, itemsError: null,
     paths: [], pathsLoading: true, pathsError: null,
     unlocks: [], unlocksLoading: true, unlocksError: null,
     challenges: [], challengesLoading: true, challengesError: null,
-    transformations: [], transformationsLoading: true, transformationsError: null
+    transformations: [], transformationsLoading: true, transformationsError: null,
+    trinkets: [], trinketsLoading: true, trinketsError: null
   };
 
   const app = document.getElementById('app');
@@ -31,6 +32,15 @@
 
   const _escEl = document.createElement('span');
   function esc(s) { _escEl.textContent = s; return _escEl.innerHTML; }
+
+  function highlight(text, query) {
+    if (!query || query.length < 2) return esc(text);
+    const escaped = esc(text);
+    const q = query.toLowerCase();
+    const idx = text.toLowerCase().indexOf(q);
+    if (idx === -1) return escaped;
+    return esc(text.substring(0, idx)) + '<mark>' + esc(text.substring(idx, idx + query.length)) + '</mark>' + esc(text.substring(idx + query.length));
+  }
 
   function getRoute() {
     const hash = (location.hash || '#/').slice(1);
@@ -44,6 +54,7 @@
       const p = a.getAttribute('data-path');
       a.classList.toggle('active',
         p === base || (p === '/items' && base === 'items') ||
+        (p === '/trinkets' && base === 'trinkets') ||
         (p === '/paths' && base === 'paths') || (p === '/unlocks' && base === 'unlocks') ||
         (p === '/challenges' && base === 'challenges') || (p === '/transformations' && base === 'transformations')
       );
@@ -65,7 +76,9 @@
       quality: typeof raw.quality === 'number' ? raw.quality : undefined,
       pool: raw.pool != null ? String(raw.pool) : undefined,
       quote: raw.quote != null ? String(raw.quote) : undefined,
-      tags: Array.isArray(raw.tags) ? raw.tags : undefined
+      tags: Array.isArray(raw.tags) ? raw.tags : undefined,
+      type: raw.type != null ? String(raw.type) : undefined,
+      synergies: Array.isArray(raw.synergies) ? raw.synergies : undefined
     };
   }
 
@@ -106,6 +119,7 @@
   function loadUnlocks() { loadJson('data/unlocks.json', 'unlocks'); }
   function loadChallenges() { loadJson('data/challenges.json', 'challenges'); }
   function loadTransformations() { loadJson('data/transformations.json', 'transformations'); }
+  function loadTrinkets() { loadJson('data/trinkets.json', 'trinkets'); }
 
   // --- Lookups ---
 
@@ -114,6 +128,7 @@
   function getUnlockById(id) { return state.unlocks.find(u => u.id === id) || null; }
   function getChallengeById(id) { return state.challenges.find(c => c.id === id) || null; }
   function getTransformationById(id) { return state.transformations.find(t => t.id === id) || null; }
+  function getTrinketById(id) { return state.trinkets.find(t => t.id === id) || null; }
 
   function getTransformationsForItem(itemName) {
     if (!itemName) return [];
@@ -129,33 +144,47 @@
   function setChecked(prefix, id, stepIds) { try { localStorage.setItem(prefix + id, JSON.stringify(Array.from(stepIds))); } catch {} }
   function clearChecked(prefix, id) { try { localStorage.removeItem(prefix + id); } catch {} }
 
+  // --- Export/Import ---
+
+  function exportProgress() {
+    const data = {};
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key && key.startsWith('isaac-')) data[key] = localStorage.getItem(key);
+    }
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'isaac-companion-progress.json';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }
+
+  function importProgress(file) {
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const data = JSON.parse(reader.result);
+        Object.entries(data).forEach(([k, v]) => { if (k.startsWith('isaac-')) localStorage.setItem(k, v); });
+        render();
+        alert('Progress imported successfully!');
+      } catch { alert('Invalid file format.'); }
+    };
+    reader.readAsText(file);
+  }
+
   // --- Dashboard stats ---
 
   function getDashboardStats() {
     let pathsDone = 0, pathsTotal = state.paths.length;
-    state.paths.forEach(p => {
-      const steps = p.steps || [];
-      const checked = getChecked(PREFIX_PATH, p.id);
-      if (steps.length > 0 && steps.every(s => checked.has(s.id))) pathsDone++;
-    });
-
+    state.paths.forEach(p => { const steps = p.steps || []; const checked = getChecked(PREFIX_PATH, p.id); if (steps.length > 0 && steps.every(s => checked.has(s.id))) pathsDone++; });
     let unlocksDone = 0, unlocksTotal = state.unlocks.length;
-    state.unlocks.forEach(u => {
-      const steps = u.steps || [];
-      const checked = getChecked(PREFIX_UNLOCK, u.id);
-      if (steps.length > 0 && steps.every(s => checked.has(s.id))) unlocksDone++;
-    });
-
+    state.unlocks.forEach(u => { const steps = u.steps || []; const checked = getChecked(PREFIX_UNLOCK, u.id); if (steps.length > 0 && steps.every(s => checked.has(s.id))) unlocksDone++; });
     let challengesDone = 0, challengesTotal = state.challenges.length;
-    state.challenges.forEach(c => {
-      const checked = getChecked(PREFIX_CHALLENGE, c.id);
-      if (checked.has('done')) challengesDone++;
-    });
-
+    state.challenges.forEach(c => { if (getChecked(PREFIX_CHALLENGE, c.id).has('done')) challengesDone++; });
     const totalDone = pathsDone + unlocksDone + challengesDone;
     const totalAll = pathsTotal + unlocksTotal + challengesTotal;
     const overallPct = totalAll > 0 ? Math.round((totalDone / totalAll) * 100) : 0;
-
     return { pathsDone, pathsTotal, unlocksDone, unlocksTotal, challengesDone, challengesTotal, totalDone, totalAll, overallPct };
   }
 
@@ -164,6 +193,7 @@
   let currentSearch = '';
   let currentPool = '';
   let currentQuality = '';
+  let currentSort = '';
 
   function filterItems(search, pool, quality) {
     let list = state.items;
@@ -174,42 +204,62 @@
     return list;
   }
 
+  function sortItems(list, sort) {
+    if (!sort) return list;
+    const sorted = [...list];
+    switch (sort) {
+      case 'name-az': sorted.sort((a, b) => (a.name || '').localeCompare(b.name || '')); break;
+      case 'name-za': sorted.sort((a, b) => (b.name || '').localeCompare(a.name || '')); break;
+      case 'quality-hi': sorted.sort((a, b) => (b.quality || 0) - (a.quality || 0)); break;
+      case 'quality-lo': sorted.sort((a, b) => (a.quality || 0) - (b.quality || 0)); break;
+    }
+    return sorted;
+  }
+
   // --- Global search ---
 
-  function globalSearch(query) {
+  let _searchQuery = '';
+
+  function globalSearchFn(query) {
     const q = (query || '').trim().toLowerCase();
-    if (q.length < 2) return { items: [], paths: [], unlocks: [], challenges: [], transformations: [] };
+    if (q.length < 2) return { items: [], paths: [], unlocks: [], challenges: [], transformations: [], trinkets: [] };
     const MAX = 5;
     return {
       items: state.items.filter(i => (i.name && i.name.toLowerCase().includes(q)) || (i.description && i.description.toLowerCase().includes(q))).slice(0, MAX),
       paths: state.paths.filter(p => (p.name && p.name.toLowerCase().includes(q)) || (p.description && p.description.toLowerCase().includes(q))).slice(0, MAX),
       unlocks: state.unlocks.filter(u => (u.characterName && u.characterName.toLowerCase().includes(q)) || (u.targetUnlock && u.targetUnlock.toLowerCase().includes(q))).slice(0, MAX),
-      challenges: state.challenges.filter(c => (c.name && c.name.toLowerCase().includes(q)) || (c.description && c.description.toLowerCase().includes(q)) || (c.unlock && c.unlock.toLowerCase().includes(q)) || (c.character && c.character.toLowerCase().includes(q))).slice(0, MAX),
-      transformations: state.transformations.filter(t => (t.name && t.name.toLowerCase().includes(q)) || (t.description && t.description.toLowerCase().includes(q))).slice(0, MAX)
+      challenges: state.challenges.filter(c => (c.name && c.name.toLowerCase().includes(q)) || (c.description && c.description.toLowerCase().includes(q)) || (c.unlock && c.unlock.toLowerCase().includes(q))).slice(0, MAX),
+      transformations: state.transformations.filter(t => (t.name && t.name.toLowerCase().includes(q)) || (t.description && t.description.toLowerCase().includes(q))).slice(0, MAX),
+      trinkets: state.trinkets.filter(t => (t.name && t.name.toLowerCase().includes(q)) || (t.description && t.description.toLowerCase().includes(q))).slice(0, MAX)
     };
   }
 
   function renderSearchResults(results) {
+    const q = _searchQuery;
     const sections = [];
     if (results.items.length) {
       sections.push('<div class="search-group"><h3 class="search-group-title">Items</h3>' +
-        results.items.map(i => '<a href="#/items/' + encodeURIComponent(i.id) + '" class="search-result-item"><span class="search-result-badge badge-items">Item</span><span class="search-result-name">' + esc(i.name) + '</span>' + (i.description ? '<span class="search-result-desc">' + esc(i.description) + '</span>' : '') + '</a>').join('') + '</div>');
+        results.items.map(i => '<a href="#/items/' + encodeURIComponent(i.id) + '" class="search-result-item"><span class="search-result-badge badge-items">Item</span><span class="search-result-name">' + highlight(i.name, q) + '</span></a>').join('') + '</div>');
+    }
+    if (results.trinkets.length) {
+      sections.push('<div class="search-group"><h3 class="search-group-title">Trinkets</h3>' +
+        results.trinkets.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="search-result-item"><span class="search-result-badge badge-trinkets">Trinket</span><span class="search-result-name">' + highlight(t.name, q) + '</span></a>').join('') + '</div>');
     }
     if (results.paths.length) {
       sections.push('<div class="search-group"><h3 class="search-group-title">Paths</h3>' +
-        results.paths.map(p => '<a href="#/paths/' + encodeURIComponent(p.id) + '" class="search-result-item"><span class="search-result-badge badge-paths">Path</span><span class="search-result-name">' + esc(p.name) + '</span></a>').join('') + '</div>');
+        results.paths.map(p => '<a href="#/paths/' + encodeURIComponent(p.id) + '" class="search-result-item"><span class="search-result-badge badge-paths">Path</span><span class="search-result-name">' + highlight(p.name, q) + '</span></a>').join('') + '</div>');
     }
     if (results.unlocks.length) {
       sections.push('<div class="search-group"><h3 class="search-group-title">Unlocks</h3>' +
-        results.unlocks.map(u => '<a href="#/unlocks/' + encodeURIComponent(u.id) + '" class="search-result-item"><span class="search-result-badge badge-unlocks">Unlock</span><span class="search-result-name">' + esc(u.characterName) + '</span></a>').join('') + '</div>');
+        results.unlocks.map(u => '<a href="#/unlocks/' + encodeURIComponent(u.id) + '" class="search-result-item"><span class="search-result-badge badge-unlocks">Unlock</span><span class="search-result-name">' + highlight(u.characterName, q) + '</span></a>').join('') + '</div>');
     }
     if (results.challenges.length) {
       sections.push('<div class="search-group"><h3 class="search-group-title">Challenges</h3>' +
-        results.challenges.map(c => '<a href="#/challenges/' + encodeURIComponent(c.id) + '" class="search-result-item"><span class="search-result-badge badge-challenges">Challenge</span><span class="search-result-name">#' + c.number + ' ' + esc(c.name) + '</span></a>').join('') + '</div>');
+        results.challenges.map(c => '<a href="#/challenges/' + encodeURIComponent(c.id) + '" class="search-result-item"><span class="search-result-badge badge-challenges">Challenge</span><span class="search-result-name">#' + c.number + ' ' + highlight(c.name, q) + '</span></a>').join('') + '</div>');
     }
     if (results.transformations.length) {
       sections.push('<div class="search-group"><h3 class="search-group-title">Transformations</h3>' +
-        results.transformations.map(t => '<a href="#/transformations/' + encodeURIComponent(t.id) + '" class="search-result-item"><span class="search-result-badge badge-transforms">Transform</span><span class="search-result-name">' + esc(t.name) + '</span></a>').join('') + '</div>');
+        results.transformations.map(t => '<a href="#/transformations/' + encodeURIComponent(t.id) + '" class="search-result-item"><span class="search-result-badge badge-transforms">Transform</span><span class="search-result-name">' + highlight(t.name, q) + '</span></a>').join('') + '</div>');
     }
     return sections.length ? '<div class="search-results-inner">' + sections.join('') + '</div>' : '<div class="search-results-inner"><p class="search-no-results">No results found.</p></div>';
   }
@@ -217,8 +267,9 @@
   function showSearchResults(query) {
     if (!searchResultsEl) return;
     const q = (query || '').trim();
+    _searchQuery = q;
     if (q.length < 2) { searchResultsEl.classList.remove('open'); searchResultsEl.innerHTML = ''; return; }
-    searchResultsEl.innerHTML = renderSearchResults(globalSearch(q));
+    searchResultsEl.innerHTML = renderSearchResults(globalSearchFn(q));
     searchResultsEl.classList.add('open');
   }
 
@@ -248,30 +299,27 @@
 
     function card(href, title, done, total, desc) {
       const pct = total > 0 ? Math.round((done / total) * 100) : 0;
-      return '<a href="' + href + '" class="home-card">' +
-        '<span class="home-card-title">' + title + '</span>' +
-        (loading
-          ? '<span class="home-card-desc">' + desc + '</span>'
-          : '<span class="home-card-stat">' + done + '/' + total + ' completed</span>' +
-            '<div class="home-card-bar"><div class="progress-wrap"><div class="progress-bar" style="width:' + pct + '%"></div></div></div>'
-        ) +
-      '</a>';
+      return '<a href="' + href + '" class="home-card"><span class="home-card-title">' + title + '</span>' +
+        (loading ? '<span class="home-card-desc">' + desc + '</span>' : '<span class="home-card-stat">' + done + '/' + total + ' completed</span><div class="home-card-bar"><div class="progress-wrap"><div class="progress-bar" style="width:' + pct + '%"></div></div></div>') + '</a>';
     }
 
-    return (
-      '<div class="home">' +
-        '<h1 class="home-title">Isaac Companion</h1>' +
-        '<p class="home-tagline">Your guide to 100% The Binding of Isaac: Repentance</p>' +
-        overallHtml +
-        '<div class="home-links">' +
-          '<a href="#/items" class="home-card"><span class="home-card-title">Items</span><span class="home-card-desc">Browse all 577 items</span></a>' +
-          card('#/paths', 'Paths', s.pathsDone, s.pathsTotal, 'Path guides') +
-          card('#/unlocks', 'Unlocks', s.unlocksDone, s.unlocksTotal, '34 characters') +
-          card('#/challenges', 'Challenges', s.challengesDone, s.challengesTotal, '45 challenges') +
-          '<a href="#/transformations" class="home-card"><span class="home-card-title">Transforms</span><span class="home-card-desc">' + state.transformations.length + ' transformations</span></a>' +
-        '</div>' +
-      '</div>'
-    );
+    return '<div class="home">' +
+      '<h1 class="home-title">Isaac Companion</h1>' +
+      '<p class="home-tagline">Your guide to 100% The Binding of Isaac: Repentance</p>' +
+      overallHtml +
+      '<div class="home-links">' +
+        '<a href="#/items" class="home-card"><span class="home-card-title">Items</span><span class="home-card-desc">' + state.items.length + ' items</span></a>' +
+        '<a href="#/trinkets" class="home-card"><span class="home-card-title">Trinkets</span><span class="home-card-desc">' + state.trinkets.length + ' trinkets</span></a>' +
+        card('#/paths', 'Paths', s.pathsDone, s.pathsTotal, 'Path guides') +
+        card('#/unlocks', 'Unlocks', s.unlocksDone, s.unlocksTotal, '34 characters') +
+        card('#/challenges', 'Challenges', s.challengesDone, s.challengesTotal, '45 challenges') +
+        '<a href="#/transformations" class="home-card"><span class="home-card-title">Transforms</span><span class="home-card-desc">' + state.transformations.length + ' transformations</span></a>' +
+      '</div>' +
+      '<div class="home-actions">' +
+        '<button type="button" class="btn-export" data-action="export">Export Progress</button>' +
+        '<label class="btn-import">Import Progress<input type="file" accept=".json" data-action="import" hidden /></label>' +
+      '</div>' +
+    '</div>';
   }
 
   // --- Render: Items ---
@@ -279,10 +327,12 @@
   function renderItems(search, pool, quality) {
     if (state.itemsLoading) return '<div class="items"><h1 class="items-title">Items</h1><div class="items-grid">' + skeletonCards(12, 'item-card') + '</div></div>';
     if (state.itemsError) return '<div class="items-error" role="alert">Error: ' + esc(state.itemsError) + '</div>';
-    const filtered = filterItems(search, pool, quality);
+    let filtered = filterItems(search, pool, quality);
+    filtered = sortItems(filtered, currentSort);
     const sourceHtml = state.itemsSource ? '<p class="items-source">' + (state.itemsSource === 'api' ? 'Data from API' : 'Using offline fallback') + '</p>' : '';
     const optionsPool = POOLS.map(p => '<option value="' + esc(p) + '"' + (pool === p ? ' selected' : '') + '>' + esc(p) + '</option>').join('');
     const optionsQuality = QUALITIES.map(q => '<option value="' + q + '"' + (Number(quality) === q ? ' selected' : '') + '>Quality ' + q + '</option>').join('');
+    const sortOptions = '<select class="items-select" data-action="sort" aria-label="Sort items"><option value="">Sort by...</option><option value="name-az"' + (currentSort === 'name-az' ? ' selected' : '') + '>Name A-Z</option><option value="name-za"' + (currentSort === 'name-za' ? ' selected' : '') + '>Name Z-A</option><option value="quality-hi"' + (currentSort === 'quality-hi' ? ' selected' : '') + '>Quality High-Low</option><option value="quality-lo"' + (currentSort === 'quality-lo' ? ' selected' : '') + '>Quality Low-High</option></select>';
     const cards = filtered.map(item => {
       const meta = [];
       if (item.quality != null) meta.push('Q' + item.quality);
@@ -292,7 +342,8 @@
     return '<div class="items"><h1 class="items-title">Items</h1>' + sourceHtml +
       '<div class="items-toolbar"><input type="search" placeholder="Search items\u2026" class="items-search" data-action="search" value="' + esc(search || '') + '" aria-label="Search items" />' +
       '<select class="items-select" data-action="pool" aria-label="Filter by pool"><option value="">All pools</option>' + optionsPool + '</select>' +
-      '<select class="items-select" data-action="quality" aria-label="Filter by quality"><option value="">All quality</option>' + optionsQuality + '</select></div>' +
+      '<select class="items-select" data-action="quality" aria-label="Filter by quality"><option value="">All quality</option>' + optionsQuality + '</select>' +
+      sortOptions + '</div>' +
       '<div class="items-grid">' + cards + '</div>' + (filtered.length === 0 ? '<p class="items-empty">No items match your filters.</p>' : '') + '</div>';
   }
 
@@ -304,12 +355,9 @@
     if (item.quality != null) meta.push('Quality ' + item.quality);
     if (item.pool) meta.push(item.pool);
     const tagsHtml = item.tags && item.tags.length ? item.tags.map(t => '<span class="item-detail-tag">' + esc(t) + '</span>').join('') : '';
-
     const transforms = getTransformationsForItem(item.name);
-    const transformsHtml = transforms.length
-      ? '<div class="item-transforms"><strong>Contributes to:</strong> ' + transforms.map(t => '<a href="#/transformations/' + encodeURIComponent(t.id) + '" class="transform-link">' + esc(t.name) + '</a>').join(', ') + '</div>'
-      : '';
-
+    const transformsHtml = transforms.length ? '<div class="item-transforms"><strong>Contributes to:</strong> ' + transforms.map(t => '<a href="#/transformations/' + encodeURIComponent(t.id) + '" class="transform-link">' + esc(t.name) + '</a>').join(', ') + '</div>' : '';
+    const synergiesHtml = item.synergies && item.synergies.length ? '<div class="synergies-section"><h2 class="synergies-title">Notable Synergies</h2><ul class="synergies-list">' + item.synergies.map(s => '<li class="synergy-item"><strong>' + esc(s.item) + ':</strong> ' + esc(s.effect) + '</li>').join('') + '</ul></div>' : '';
     return '<div class="item-detail"><a href="#/items" class="item-detail-back">&larr; Items</a>' +
       '<article class="item-detail-card" tabindex="-1">' +
         '<img src="' + esc(getItemImageUrl(item)) + '" alt="' + esc(item.name) + '" class="item-detail-icon" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER_ICON + '\';" />' +
@@ -318,7 +366,29 @@
         (item.description ? '<p class="item-detail-desc">' + esc(item.description) + '</p>' : '') +
         (item.quote ? '<blockquote class="item-detail-quote">\u201c' + esc(item.quote) + '\u201d</blockquote>' : '') +
         (tagsHtml ? '<div class="item-detail-tags">' + tagsHtml + '</div>' : '') +
-        transformsHtml +
+        transformsHtml + synergiesHtml +
+      '</article></div>';
+  }
+
+  // --- Render: Trinkets ---
+
+  function renderTrinkets() {
+    if (state.trinketsLoading) return '<div class="trinkets"><h1 class="trinkets-title">Trinkets</h1><div class="items-grid">' + skeletonCards(12, 'item-card') + '</div></div>';
+    if (state.trinketsError) return '<div class="trinkets-error" role="alert">Error: ' + esc(state.trinketsError) + '</div>';
+    const cards = state.trinkets.map(t => {
+      return '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card"><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta">Q' + t.quality + '</span>' : '') + '</a>';
+    }).join('');
+    return '<div class="trinkets"><h1 class="trinkets-title">Trinkets</h1><p class="trinkets-desc">' + state.trinkets.length + ' trinkets — passive modifiers you can carry.</p><div class="items-grid">' + cards + '</div></div>';
+  }
+
+  function renderTrinketDetail(id) {
+    const trinket = id ? getTrinketById(id) : null;
+    if (!trinket) return '<div class="item-detail-missing">Trinket not found.</div>';
+    return '<div class="item-detail"><a href="#/trinkets" class="item-detail-back">&larr; Trinkets</a>' +
+      '<article class="item-detail-card" tabindex="-1">' +
+        '<h1 class="item-detail-name">' + esc(trinket.name) + '</h1>' +
+        (trinket.quality != null ? '<p class="item-detail-meta">Quality ' + trinket.quality + '</p>' : '') +
+        (trinket.description ? '<p class="item-detail-desc">' + esc(trinket.description) + '</p>' : '') +
       '</article></div>';
   }
 
@@ -371,10 +441,7 @@
 
   function renderRewardsTable(rewards) {
     if (!rewards || !rewards.length) return '';
-    return '<div class="rewards-section"><h2 class="rewards-title">Completion Rewards</h2>' +
-      '<table class="rewards-table"><thead><tr><th>Boss</th><th>Unlocks</th></tr></thead><tbody>' +
-      rewards.map(r => '<tr><td>' + esc(r.boss) + '</td><td>' + esc(r.unlock) + '</td></tr>').join('') +
-      '</tbody></table></div>';
+    return '<div class="rewards-section"><h2 class="rewards-title">Completion Rewards</h2><table class="rewards-table"><thead><tr><th>Boss</th><th>Unlocks</th></tr></thead><tbody>' + rewards.map(r => '<tr><td>' + esc(r.boss) + '</td><td>' + esc(r.unlock) + '</td></tr>').join('') + '</tbody></table></div>';
   }
 
   function renderUnlockDetail(id) {
@@ -425,9 +492,7 @@
     const items = t.items || [];
     const itemLinks = items.map(name => {
       const found = state.items.find(i => i.name.toLowerCase() === name.toLowerCase());
-      return found
-        ? '<li class="transform-item"><a href="#/items/' + encodeURIComponent(found.id) + '">' + esc(name) + '</a></li>'
-        : '<li class="transform-item">' + esc(name) + '</li>';
+      return found ? '<li class="transform-item"><a href="#/items/' + encodeURIComponent(found.id) + '">' + esc(name) + '</a></li>' : '<li class="transform-item">' + esc(name) + '</li>';
     }).join('');
     return '<div class="transform-detail"><a href="#/transformations" class="transform-detail-back">&larr; Transformations</a><article class="transform-detail-card" tabindex="-1"><h1 class="transform-detail-name">' + esc(t.name) + '</h1><p class="transform-detail-desc">' + esc(t.description) + '</p><p class="transform-detail-req">Requires <strong>' + t.requires + '</strong> of the following ' + items.length + ' items:</p><ul class="transform-items-list">' + itemLinks + '</ul></article></div>';
   }
@@ -448,6 +513,8 @@
     if (route.path === '') html = renderHome();
     else if (route.path === 'items' && !route.id) html = renderItems(currentSearch, currentPool, currentQuality);
     else if (route.path === 'items' && route.id) html = renderItemDetail(route.id);
+    else if (route.path === 'trinkets' && !route.id) html = renderTrinkets();
+    else if (route.path === 'trinkets' && route.id) html = renderTrinketDetail(route.id);
     else if (route.path === 'paths' && !route.id) html = renderPaths();
     else if (route.path === 'paths' && route.id) html = renderPathDetail(route.id);
     else if (route.path === 'unlocks' && !route.id) html = renderUnlocks();
@@ -467,25 +534,15 @@
   app.addEventListener('input', e => {
     if (e.target.matches('[data-action="search"]')) {
       currentSearch = e.target.value;
-      const grid = app.querySelector('.items-grid');
-      const empty = app.querySelector('.items-empty');
-      if (grid) {
-        const filtered = filterItems(currentSearch, currentPool, currentQuality);
-        grid.innerHTML = filtered.map(item => {
-          const meta = [];
-          if (item.quality != null) meta.push('Q' + item.quality);
-          if (item.pool) meta.push(esc(item.pool));
-          return '<a href="#/items/' + encodeURIComponent(item.id) + '" class="item-card"><img src="' + esc(getItemImageUrl(item)) + '" alt="' + esc(item.name) + '" class="item-card-icon" loading="lazy" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER_ICON + '\';" /><span class="item-card-name">' + esc(item.name) + '</span>' + (meta.length ? '<span class="item-card-meta">' + meta.join(' &middot; ') + '</span>' : '') + '</a>';
-        }).join('');
-        if (empty) empty.style.display = filtered.length === 0 ? '' : 'none';
-        if (!empty && filtered.length === 0) grid.insertAdjacentHTML('afterend', '<p class="items-empty">No items match your filters.</p>');
-      }
+      render();
     }
   });
 
   app.addEventListener('change', e => {
     if (e.target.matches('[data-action="pool"]')) { currentPool = e.target.value; render(); }
     else if (e.target.matches('[data-action="quality"]')) { currentQuality = e.target.value; render(); }
+    else if (e.target.matches('[data-action="sort"]')) { currentSort = e.target.value; render(); }
+    else if (e.target.matches('[data-action="import"]')) { if (e.target.files[0]) importProgress(e.target.files[0]); }
   });
 
   app.addEventListener('click', e => {
@@ -503,7 +560,8 @@
     const resetPath = e.target.closest('[data-action="reset-path"]');
     if (resetPath) { if (confirm('Reset all progress for this path?')) { clearChecked(PREFIX_PATH, resetPath.getAttribute('data-id')); render(); } return; }
     const resetUnlock = e.target.closest('[data-action="reset-unlock"]');
-    if (resetUnlock) { if (confirm('Reset all progress for this unlock?')) { clearChecked(PREFIX_UNLOCK, resetUnlock.getAttribute('data-id')); render(); } }
+    if (resetUnlock) { if (confirm('Reset all progress for this unlock?')) { clearChecked(PREFIX_UNLOCK, resetUnlock.getAttribute('data-id')); render(); } return; }
+    if (e.target.closest('[data-action="export"]')) { exportProgress(); return; }
   });
 
   app.addEventListener('error', e => {
@@ -519,11 +577,29 @@
   }
   document.addEventListener('click', e => { if (searchResultsEl && !e.target.closest('.search-wrap')) hideSearchResults(); });
   window.addEventListener('hashchange', () => { hideSearchResults(); if (globalSearchEl) globalSearchEl.value = ''; });
-  document.addEventListener('keydown', e => { if (e.key === '/' && !e.target.matches('input, select, textarea')) { e.preventDefault(); if (globalSearchEl) globalSearchEl.focus(); } });
+
+  // --- Keyboard shortcuts ---
+
+  document.addEventListener('keydown', e => {
+    if (e.target.matches('input, select, textarea')) return;
+    if (e.key === '/') { e.preventDefault(); if (globalSearchEl) globalSearchEl.focus(); }
+    if (e.key === 'Escape') {
+      const route = getRoute();
+      if (route.id) history.back();
+    }
+  });
+
   if (searchResultsEl) searchResultsEl.addEventListener('click', e => { if (e.target.closest('a')) hideSearchResults(); });
+
+  // --- Hamburger menu toggle ---
+
+  document.querySelector('.nav-toggle')?.addEventListener('click', () => {
+    document.querySelector('.nav-links')?.classList.toggle('open');
+  });
+  window.addEventListener('hashchange', () => { document.querySelector('.nav-links')?.classList.remove('open'); });
 
   // --- Router ---
 
   window.addEventListener('hashchange', render);
-  window.addEventListener('load', () => { loadItems(); loadPaths(); loadUnlocks(); loadChallenges(); loadTransformations(); render(); });
+  window.addEventListener('load', () => { loadItems(); loadPaths(); loadUnlocks(); loadChallenges(); loadTransformations(); loadTrinkets(); render(); });
 })();

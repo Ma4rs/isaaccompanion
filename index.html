@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Isaac Companion — Items, Paths, Unlocks & Challenges</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a1410'/%3E%3Cellipse cx='16' cy='18' rx='6' ry='8' fill='%23c4953a'/%3E%3Ccircle cx='16' cy='12' r='3' fill='%231a1410'/%3E%3C/svg%3E" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#1a1410" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -12,9 +15,11 @@
 <body>
   <nav class="nav" aria-label="Main navigation">
     <a href="#/" class="nav-logo">Isaac Companion</a>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
     <ul class="nav-links">
       <li><a href="#/" class="nav-link" data-path="/">Home</a></li>
       <li><a href="#/items" class="nav-link" data-path="/items">Items</a></li>
+      <li><a href="#/trinkets" class="nav-link" data-path="/trinkets">Trinkets</a></li>
       <li><a href="#/paths" class="nav-link" data-path="/paths">Paths</a></li>
       <li><a href="#/unlocks" class="nav-link" data-path="/unlocks">Unlocks</a></li>
       <li><a href="#/challenges" class="nav-link" data-path="/challenges">Challenges</a></li>
@@ -28,5 +33,6 @@
   <main id="app" class="main"></main>
   <script src="data/fallback.js"></script>
   <script src="app.js"></script>
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});</script>
 </body>
 </html>

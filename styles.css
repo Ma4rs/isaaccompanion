@@ -656,11 +656,63 @@ select option {
 .home-card-bar { width: 100%; }
 .home-card-bar .progress-wrap { height: 4px; }
 
-/* Search badge for transforms */
+/* Search badges */
 .badge-transforms { background: #8a7050; }
+.badge-trinkets { background: #7a8a5a; }
+
+/* Search highlighting */
+.search-result-item mark { background: var(--accent-glow); color: var(--text); border-radius: 2px; padding: 0 2px; }
+
+/* Synergies on item detail */
+.synergies-section { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.synergies-title { font-size: 0.8rem; color: var(--accent); margin-bottom: 0.5rem; }
+.synergies-list { list-style: none; padding: 0; }
+.synergy-item { padding: 0.35rem 0; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+.synergy-item:last-child { border-bottom: none; }
+.synergy-item strong { color: var(--accent); }
+
+/* Trinkets */
+.trinkets-title { font-size: 1.1rem; color: var(--accent); margin-bottom: 0.25rem; }
+.trinkets-desc { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem; }
+
+/* Export/Import buttons */
+.home-actions { display: flex; gap: 0.75rem; justify-content: center; margin-top: 1.5rem; }
+.btn-export, .btn-import {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+.btn-export:hover, .btn-import:hover { background: var(--accent); color: var(--bg); }
+
+/* Hamburger menu */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 1.2rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+}
 
 /* Responsive improvements */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  .nav-toggle { display: block; }
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-top: 0.5rem;
+  }
+  .nav-links.open { display: flex; }
   .search-wrap { width: 100%; margin-left: 0; margin-top: 0.5rem; }
   .global-search { width: 100%; }
   .global-search:focus { width: 100%; }
@@ -673,6 +725,7 @@ select option {
   .item-card { padding: 0.75rem; }
   .item-card-icon { width: 36px; height: 36px; }
   .home-links { grid-template-columns: 1fr; }
+  .home-actions { flex-direction: column; align-items: center; }
 }
 
 @media (max-width: 360px) {
