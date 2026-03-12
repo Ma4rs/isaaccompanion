@@ -307,10 +307,26 @@ select option {
 .path-detail-desc, .unlock-detail-meta { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem; }
 .path-detail-missing, .unlock-detail-missing { color: var(--text-muted); padding: 2rem; }
 
+/* Checklist action buttons */
+.checklist-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+.complete-all-btn {
+  padding: 0.45rem 1rem;
+  font-size: 0.85rem;
+  color: var(--success);
+  background: transparent;
+  border: 1px solid var(--success);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+.complete-all-btn:hover { background: var(--success); color: var(--bg); }
+
 /* Reset button */
 .reset-btn {
-  display: inline-block;
-  margin-top: 1.25rem;
   padding: 0.45rem 1rem;
   font-size: 0.85rem;
   color: var(--accent-red);

@@ -427,7 +427,7 @@
     const path = id ? getPathById(id) : null;
     if (!path) return '<div class="path-detail-missing">Path not found.</div>';
     const checked = getChecked(PREFIX_PATH, id); const steps = path.steps || []; const done = steps.filter(s => checked.has(s.id)).length;
-    return '<div class="path-detail" data-path-id="' + esc(id) + '"><a href="#/paths" class="path-detail-back">&larr; Paths</a><article class="path-detail-card" tabindex="-1"><img src="portraits/bosses/' + esc(id) + '.png" alt="" class="path-detail-portrait" onerror="this.style.display=\'none\'" /><h1 class="path-detail-name">' + esc(path.name) + '</h1>' + (path.description ? '<p class="path-detail-desc">' + esc(path.description) + '</p>' : '') + '<div class="detail-progress">' + renderProgressBar(done, steps.length) + '</div>' + renderChecklist(steps, checked) + '<button type="button" class="reset-btn" data-action="reset-path" data-id="' + esc(id) + '">Reset progress</button></article></div>';
+    return '<div class="path-detail" data-path-id="' + esc(id) + '"><a href="#/paths" class="path-detail-back">&larr; Paths</a><article class="path-detail-card" tabindex="-1"><img src="portraits/bosses/' + esc(id) + '.png" alt="" class="path-detail-portrait" onerror="this.style.display=\'none\'" /><h1 class="path-detail-name">' + esc(path.name) + '</h1>' + (path.description ? '<p class="path-detail-desc">' + esc(path.description) + '</p>' : '') + '<div class="detail-progress">' + renderProgressBar(done, steps.length) + '</div>' + renderChecklist(steps, checked) + '<div class="checklist-actions"><button type="button" class="complete-all-btn" data-action="complete-path" data-id="' + esc(id) + '">Complete all</button><button type="button" class="reset-btn" data-action="reset-path" data-id="' + esc(id) + '">Reset progress</button></div></article></div>';
   }
 
   // --- Render: Unlocks ---
@@ -452,7 +452,7 @@
     const unlock = id ? getUnlockById(id) : null;
     if (!unlock) return '<div class="unlock-detail-missing">Unlock not found.</div>';
     const checked = getChecked(PREFIX_UNLOCK, id); const steps = unlock.steps || []; const done = steps.filter(s => checked.has(s.id)).length;
-    return '<div class="unlock-detail" data-unlock-id="' + esc(id) + '"><a href="#/unlocks" class="unlock-detail-back">&larr; Unlocks</a><article class="unlock-detail-card" tabindex="-1"><img src="portraits/characters/' + esc(id) + '.png" alt="" class="unlock-detail-portrait" onerror="this.style.display=\'none\'" /><h1 class="unlock-detail-name">' + esc(unlock.targetUnlock) + '</h1><p class="unlock-detail-meta">' + esc(unlock.characterName) + '</p><div class="detail-progress">' + renderProgressBar(done, steps.length) + '</div>' + renderChecklist(steps, checked) + '<button type="button" class="reset-btn" data-action="reset-unlock" data-id="' + esc(id) + '">Reset progress</button>' + renderRewardsTable(unlock.rewards) + '</article></div>';
+    return '<div class="unlock-detail" data-unlock-id="' + esc(id) + '"><a href="#/unlocks" class="unlock-detail-back">&larr; Unlocks</a><article class="unlock-detail-card" tabindex="-1"><img src="portraits/characters/' + esc(id) + '.png" alt="" class="unlock-detail-portrait" onerror="this.style.display=\'none\'" /><h1 class="unlock-detail-name">' + esc(unlock.targetUnlock) + '</h1><p class="unlock-detail-meta">' + esc(unlock.characterName) + '</p><div class="detail-progress">' + renderProgressBar(done, steps.length) + '</div>' + renderChecklist(steps, checked) + '<div class="checklist-actions"><button type="button" class="complete-all-btn" data-action="complete-unlock" data-id="' + esc(id) + '">Complete all</button><button type="button" class="reset-btn" data-action="reset-unlock" data-id="' + esc(id) + '">Reset progress</button></div>' + renderRewardsTable(unlock.rewards) + '</article></div>';
   }
 
   // --- Render: Challenges ---
@@ -679,6 +679,20 @@
     }
     const challengeBtn = e.target.closest('[data-action="toggle-challenge"]');
     if (challengeBtn) { const id = challengeBtn.getAttribute('data-id'); const c = getChecked(PREFIX_CHALLENGE, id); if (c.has('done')) c.delete('done'); else c.add('done'); setChecked(PREFIX_CHALLENGE, id, c); render(); return; }
+    const completePath = e.target.closest('[data-action="complete-path"]');
+    if (completePath) {
+      const id = completePath.getAttribute('data-id');
+      const path = getPathById(id);
+      if (path) { const all = new Set((path.steps || []).map(s => s.id)); setChecked(PREFIX_PATH, id, all); render(); }
+      return;
+    }
+    const completeUnlock = e.target.closest('[data-action="complete-unlock"]');
+    if (completeUnlock) {
+      const id = completeUnlock.getAttribute('data-id');
+      const unlock = getUnlockById(id);
+      if (unlock) { const all = new Set((unlock.steps || []).map(s => s.id)); setChecked(PREFIX_UNLOCK, id, all); render(); }
+      return;
+    }
     const resetPath = e.target.closest('[data-action="reset-path"]');
     if (resetPath) { if (confirm('Reset all progress for this path?')) { clearChecked(PREFIX_PATH, resetPath.getAttribute('data-id')); render(); } return; }
     const resetUnlock = e.target.closest('[data-action="reset-unlock"]');
