@@ -168,12 +168,13 @@
     URL.revokeObjectURL(a.href);
   }
 
-  function importProgress(file) {
+  function importProgress(file, inputEl) {
     const reader = new FileReader();
     reader.onload = () => {
       try {
         const data = JSON.parse(reader.result);
         Object.entries(data).forEach(([k, v]) => { if (k.startsWith('isaac-')) localStorage.setItem(k, v); });
+        if (inputEl) inputEl.value = '';
         render();
         alert('Progress imported successfully!');
       } catch { alert('Invalid file format.'); }
@@ -308,13 +309,13 @@
       '<p class="home-tagline">Your guide to 100% The Binding of Isaac: Repentance</p>' +
       overallHtml +
       '<div class="home-links">' +
-        '<a href="#/items" class="home-card"><span class="home-card-title">Items</span><span class="home-card-desc">' + state.items.length + ' items</span></a>' +
-        '<a href="#/trinkets" class="home-card"><span class="home-card-title">Trinkets</span><span class="home-card-desc">' + state.trinkets.length + ' trinkets</span></a>' +
+        '<a href="#/items" class="home-card"><span class="home-card-title">Items</span><span class="home-card-desc">' + (state.itemsLoading ? 'Loading…' : state.items.length + ' items') + '</span></a>' +
+        '<a href="#/trinkets" class="home-card"><span class="home-card-title">Trinkets</span><span class="home-card-desc">' + (state.trinketsLoading ? 'Loading…' : state.trinkets.length + ' trinkets') + '</span></a>' +
         '<a href="#/pools" class="home-card"><span class="home-card-title">Pools</span><span class="home-card-desc">Browse by item pool</span></a>' +
         card('#/paths', 'Paths', s.pathsDone, s.pathsTotal, 'Path guides') +
         card('#/unlocks', 'Unlocks', s.unlocksDone, s.unlocksTotal, '34 characters') +
         card('#/challenges', 'Challenges', s.challengesDone, s.challengesTotal, '45 challenges') +
-        '<a href="#/transformations" class="home-card"><span class="home-card-title">Transforms</span><span class="home-card-desc">' + state.transformations.length + ' transformations</span></a>' +
+        '<a href="#/transformations" class="home-card"><span class="home-card-title">Transforms</span><span class="home-card-desc">' + (state.transformationsLoading ? 'Loading…' : state.transformations.length + ' transformations') + '</span></a>' +
         '<a href="#/reference" class="home-card"><span class="home-card-title">Reference</span><span class="home-card-desc">Dice rooms, sacrifice rooms &amp; more</span></a>' +
       '</div>' +
       '<div class="home-actions">' +
@@ -471,8 +472,8 @@
     if (state.unlocksLoading) return '<div class="unlocks"><h1 class="unlocks-title">Unlocks</h1><p class="unlocks-desc">How to unlock all 34 characters.</p><div class="unlocks-grid">' + skeletonCards(8, 'unlock-card') + '</div></div>';
     if (state.unlocksError) return '<div class="unlocks-error" role="alert">Error: ' + esc(state.unlocksError) + '</div>';
     let list = state.unlocks;
-    if (currentUnlockFilter === 'base') list = list.filter(u => !u.id.startsWith('tainted-'));
-    else if (currentUnlockFilter === 'tainted') list = list.filter(u => u.id.startsWith('tainted-'));
+    if (currentUnlockFilter === 'base') list = list.filter(u => !(u.id || '').startsWith('tainted-'));
+    else if (currentUnlockFilter === 'tainted') list = list.filter(u => (u.id || '').startsWith('tainted-'));
     const filterHtml = '<div class="unlocks-toolbar"><select class="items-select" data-action="unlock-filter" aria-label="Filter characters"><option value=""' + (currentUnlockFilter === '' ? ' selected' : '') + '>All characters</option><option value="base"' + (currentUnlockFilter === 'base' ? ' selected' : '') + '>Base characters</option><option value="tainted"' + (currentUnlockFilter === 'tainted' ? ' selected' : '') + '>Tainted characters</option></select></div>';
     const cards = list.map(u => {
       const steps = u.steps || []; const checked = getChecked(PREFIX_UNLOCK, u.id); const done = steps.filter(s => checked.has(s.id)).length;
@@ -483,7 +484,7 @@
 
   function renderRewardsTable(rewards) {
     if (!rewards || !rewards.length) return '';
-    return '<div class="rewards-section"><h2 class="rewards-title">Completion Rewards</h2><table class="rewards-table"><thead><tr><th>Boss</th><th>Unlocks</th></tr></thead><tbody>' + rewards.map(r => '<tr><td>' + esc(r.boss) + '</td><td>' + esc(r.unlock) + '</td></tr>').join('') + '</tbody></table></div>';
+    return '<div class="rewards-section"><h2 class="rewards-title">Completion Rewards</h2><table class="rewards-table"><thead><tr><th>Boss</th><th>Unlocks</th></tr></thead><tbody>' + rewards.map(r => '<tr><td>' + esc(r.boss || '') + '</td><td>' + esc(r.unlock || '') + '</td></tr>').join('') + '</tbody></table></div>';
   }
 
   function renderUnlockDetail(id) {
@@ -645,7 +646,7 @@
     if (e.target.matches('[data-action="pool"]')) { currentPool = e.target.value; render(); }
     else if (e.target.matches('[data-action="quality"]')) { currentQuality = e.target.value; render(); }
     else if (e.target.matches('[data-action="sort"]')) { currentSort = e.target.value; render(); }
-    else if (e.target.matches('[data-action="import"]')) { if (e.target.files[0]) importProgress(e.target.files[0]); }
+    else if (e.target.matches('[data-action="import"]')) { if (e.target.files[0]) { importProgress(e.target.files[0], e.target); } }
     else if (e.target.matches('[data-action="difficulty-filter"]')) { currentDifficulty = e.target.value; render(); } // R6
     else if (e.target.matches('[data-action="unlock-filter"]')) { currentUnlockFilter = e.target.value; render(); } // R7
   });
