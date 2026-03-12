@@ -330,7 +330,7 @@
 
   function renderItemCard(item) {
     const meta = [];
-    if (item.quality != null) meta.push('Q' + item.quality);
+    if (item.quality != null) meta.push('<span class="quality-badge quality-' + item.quality + '">Q' + item.quality + '</span>');
     if (item.pool) meta.push(esc(item.pool));
     return '<a href="#/items/' + encodeURIComponent(item.id) + '" class="item-card" tabindex="0"><img src="' + esc(getItemImageUrl(item)) + '" alt="' + esc(item.name) + '" class="item-card-icon" loading="lazy" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER_ICON + '\';" /><span class="item-card-name">' + esc(item.name) + '</span>' + (meta.length ? '<span class="item-card-meta">' + meta.join(' &middot; ') + '</span>' : '') + '</a>';
   }
@@ -376,7 +376,7 @@
     return '<div class="item-detail"><a href="#/items" class="item-detail-back">&larr; Items</a>' +
       '<article class="item-detail-card" tabindex="-1">' +
         '<img src="' + esc(getItemImageUrl(item)) + '" alt="' + esc(item.name) + '" class="item-detail-icon" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER_ICON + '\';" />' +
-        '<h1 class="item-detail-name">' + esc(item.name) + '</h1>' +
+        '<h1 class="item-detail-name">' + esc(item.name) + '<button type="button" class="copy-btn" data-action="copy-name" data-name="' + esc(item.name) + '" title="Copy name">\u2398</button></h1>' +
         (meta.length ? '<p class="item-detail-meta">' + esc(meta.join(' \u00b7 ')) + '</p>' : '') +
         (item.description ? '<p class="item-detail-desc">' + esc(item.description) + '</p>' : '') +
         (item.quote ? '<blockquote class="item-detail-quote">\u201c' + esc(item.quote) + '\u201d</blockquote>' : '') +
@@ -406,7 +406,7 @@
     if (state.trinketsError) return '<div class="trinkets-error" role="alert">Error: ' + esc(state.trinketsError) + '</div>';
     const q = (currentTrinketSearch || '').trim().toLowerCase();
     const list = q ? state.trinkets.filter(t => (t.name && t.name.toLowerCase().includes(q)) || (t.description && t.description.toLowerCase().includes(q))) : state.trinkets;
-    const cards = list.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card" tabindex="0"><img src="icons/trinkets/' + esc(t.id) + '.png" alt="" class="item-card-icon" loading="lazy" onerror="this.style.display=\'none\'" /><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta">Q' + t.quality + '</span>' : '') + '</a>').join('');
+    const cards = list.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card" tabindex="0"><img src="icons/trinkets/' + esc(t.id) + '.png" alt="" class="item-card-icon" loading="lazy" onerror="this.style.display=\'none\'" /><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta"><span class="quality-badge quality-' + t.quality + '">Q' + t.quality + '</span></span>' : '') + '</a>').join('');
     return '<div class="trinkets"><h1 class="trinkets-title">Trinkets</h1><span class="items-count">' + list.length + ' trinkets</span>' +
       '<div class="items-toolbar"><input type="search" placeholder="Search trinkets\u2026" class="items-search" data-action="trinket-search" value="' + esc(currentTrinketSearch || '') + '" aria-label="Search trinkets" /></div>' +
       '<div class="items-grid">' + cards + '</div>' + (list.length === 0 ? '<p class="items-empty">No trinkets match your search.</p>' : '') + '</div>';
@@ -439,13 +439,15 @@
   function renderPaths() {
     if (state.pathsLoading) return '<div class="paths"><h1 class="paths-title">Paths</h1><p class="paths-desc">Step-by-step guides for Repentance paths.</p><div class="paths-grid">' + skeletonCards(6, 'path-card') + '</div></div>';
     if (state.pathsError) return '<div class="paths-error" role="alert">Error: ' + esc(state.pathsError) + '</div>';
+    let pathsFullDone = 0;
     const cards = state.paths.map(p => {
       const steps = p.steps || []; const checked = getChecked(PREFIX_PATH, p.id); const done = steps.filter(s => checked.has(s.id)).length;
       // R8: completed path cards
       const isComplete = steps.length > 0 && done === steps.length;
+      if (isComplete) pathsFullDone++;
       return '<a href="#/paths/' + encodeURIComponent(p.id) + '" class="path-card' + (isComplete ? ' path-done' : '') + '"><img src="portraits/bosses/' + esc(p.id) + '.png" alt="" class="path-card-portrait" onerror="this.style.display=\'none\'" /><div class="path-card-body"><h2 class="path-card-name">' + esc(p.name) + '</h2>' + (p.description ? '<p class="path-card-desc">' + esc(p.description) + '</p>' : '') + '<div class="card-progress">' + renderProgressBar(done, steps.length) + '</div></div>' + (isComplete ? '<span class="path-card-check">\u2713</span>' : '') + '</a>';
     }).join('');
-    return '<div class="paths"><h1 class="paths-title">Paths</h1><p class="paths-desc">Step-by-step guides for Repentance paths.</p><div class="paths-grid">' + cards + '</div>' + (state.paths.length === 0 ? '<p class="paths-empty">No paths loaded.</p>' : '') + '</div>';
+    return '<div class="paths"><h1 class="paths-title">Paths</h1><p class="paths-desc">Step-by-step guides for Repentance paths. <span class="section-done-count">(' + pathsFullDone + '/' + state.paths.length + ' complete)</span></p><div class="paths-grid">' + cards + '</div>' + (state.paths.length === 0 ? '<p class="paths-empty">No paths loaded.</p>' : '') + '</div>';
   }
 
   function renderChecklist(steps, checked) {
@@ -475,11 +477,13 @@
     if (currentUnlockFilter === 'base') list = list.filter(u => !(u.id || '').startsWith('tainted-'));
     else if (currentUnlockFilter === 'tainted') list = list.filter(u => (u.id || '').startsWith('tainted-'));
     const filterHtml = '<div class="unlocks-toolbar"><select class="items-select" data-action="unlock-filter" aria-label="Filter characters"><option value=""' + (currentUnlockFilter === '' ? ' selected' : '') + '>All characters</option><option value="base"' + (currentUnlockFilter === 'base' ? ' selected' : '') + '>Base characters</option><option value="tainted"' + (currentUnlockFilter === 'tainted' ? ' selected' : '') + '>Tainted characters</option></select></div>';
+    let unlocksDone = 0;
     const cards = list.map(u => {
       const steps = u.steps || []; const checked = getChecked(PREFIX_UNLOCK, u.id); const done = steps.filter(s => checked.has(s.id)).length;
+      if (steps.length > 0 && done === steps.length) unlocksDone++;
       return '<a href="#/unlocks/' + encodeURIComponent(u.id) + '" class="unlock-card"><img src="portraits/characters/' + esc(u.id) + '.png" alt="" class="unlock-card-portrait" onerror="this.style.display=\'none\'" /><div class="unlock-card-body"><h2 class="unlock-card-name">' + esc(u.targetUnlock) + '</h2><span class="unlock-card-meta">' + esc(u.characterName) + '</span><div class="card-progress">' + renderProgressBar(done, steps.length) + '</div></div></a>';
     }).join('');
-    return '<div class="unlocks"><h1 class="unlocks-title">Unlocks</h1><p class="unlocks-desc">How to unlock all 34 characters.</p>' + filterHtml + '<div class="unlocks-grid">' + cards + '</div>' + (list.length === 0 ? '<p class="unlocks-empty">No unlocks match filter.</p>' : '') + '</div>';
+    return '<div class="unlocks"><h1 class="unlocks-title">Unlocks</h1><p class="unlocks-desc">How to unlock all 34 characters. <span class="section-done-count">(' + unlocksDone + '/' + list.length + ' done)</span></p>' + filterHtml + '<div class="unlocks-grid">' + cards + '</div>' + (list.length === 0 ? '<p class="unlocks-empty">No unlocks match filter.</p>' : '') + '</div>';
   }
 
   function renderRewardsTable(rewards) {
@@ -504,11 +508,13 @@
     let list = state.challenges;
     if (currentDifficulty) list = list.filter(c => c.difficulty === currentDifficulty);
     const filterHtml = '<div class="challenges-toolbar"><select class="items-select" data-action="difficulty-filter" aria-label="Filter by difficulty"><option value="">All difficulties</option>' + DIFFICULTIES.map(d => '<option value="' + d + '"' + (currentDifficulty === d ? ' selected' : '') + '>' + d.charAt(0).toUpperCase() + d.slice(1) + '</option>').join('') + '</select></div>';
+    let challengesDone = 0;
     const cards = list.map(c => {
       const checked = getChecked(PREFIX_CHALLENGE, c.id); const completed = checked.has('done');
+      if (completed) challengesDone++;
       return '<a href="#/challenges/' + encodeURIComponent(c.id) + '" class="challenge-card' + (completed ? ' challenge-done' : '') + '"><div class="challenge-card-header"><span class="challenge-number">#' + c.number + '</span><span class="difficulty-badge difficulty-badge--' + esc(c.difficulty || 'medium') + '">' + esc(c.difficulty || 'medium') + '</span></div><h2 class="challenge-card-name">' + esc(c.name) + '</h2><span class="challenge-card-meta">' + esc(c.character) + ' &rarr; ' + esc(c.goal) + '</span><span class="challenge-card-unlock">Unlocks: ' + esc(c.unlock) + '</span>' + (completed ? '<span class="challenge-card-check">\u2713</span>' : '') + '</a>';
     }).join('');
-    return '<div class="challenges"><h1 class="challenges-title">Challenges</h1><p class="challenges-desc">All 45 challenges and their rewards.</p>' + filterHtml + '<div class="challenges-grid">' + cards + '</div>' + (list.length === 0 ? '<p class="challenges-empty">No challenges match filter.</p>' : '') + '</div>';
+    return '<div class="challenges"><h1 class="challenges-title">Challenges</h1><p class="challenges-desc">All 45 challenges and their rewards. <span class="section-done-count">(' + challengesDone + '/' + list.length + ' completed)</span></p>' + filterHtml + '<div class="challenges-grid">' + cards + '</div>' + (list.length === 0 ? '<p class="challenges-empty">No challenges match filter.</p>' : '') + '</div>';
   }
 
   function renderChallengeDetail(id) {
@@ -654,6 +660,14 @@
   app.addEventListener('click', e => {
     // R1: random item
     if (e.target.closest('[data-action="random-item"]')) { goToRandomItem(); return; }
+    // R1: copy item name
+    const copyBtn = e.target.closest('[data-action="copy-name"]');
+    if (copyBtn) {
+      navigator.clipboard?.writeText(copyBtn.getAttribute('data-name')).then(() => {
+        copyBtn.textContent = '\u2713'; setTimeout(() => { copyBtn.textContent = '\u2398'; }, 1500);
+      }).catch(() => {});
+      return;
+    }
     const checkBtn = e.target.closest('.check-list-box:not([data-action])');
     if (checkBtn) {
       const stepId = checkBtn.getAttribute('data-step-id');
@@ -680,6 +694,25 @@
     if (e.target.tagName === 'IMG' && !e.target.dataset.fallbackApplied) { e.target.dataset.fallbackApplied = '1'; e.target.src = PLACEHOLDER_ICON; }
   }, true);
 
+
+  app.addEventListener('keydown', e => {
+    const card = e.target.closest('.item-card');
+    if (!card) return;
+    const grid = app.querySelector('.items-grid');
+    if (!grid) return;
+    const cards = Array.from(grid.querySelectorAll('.item-card'));
+    const idx = cards.indexOf(card);
+    if (idx === -1) return;
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      e.preventDefault();
+      const next = cards[idx + 1];
+      if (next) next.focus();
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      const prev = cards[idx - 1];
+      if (prev) prev.focus();
+    }
+  });
   // --- Global search events ---
 
   if (globalSearchEl) {
@@ -688,7 +721,12 @@
     globalSearchEl.addEventListener('keydown', e => { if (e.key === 'Escape') { hideSearchResults(); globalSearchEl.blur(); } });
   }
   document.addEventListener('click', e => { if (searchResultsEl && !e.target.closest('.search-wrap')) hideSearchResults(); });
-  window.addEventListener('hashchange', () => { hideSearchResults(); if (globalSearchEl) globalSearchEl.value = ''; });
+  window.addEventListener('hashchange', () => {
+    hideSearchResults();
+    if (globalSearchEl) globalSearchEl.value = '';
+    clearTimeout(_trinketSearchDebounce);
+    if (getRoute().path !== 'trinkets') currentTrinketSearch = '';
+  });
 
   // --- Keyboard shortcuts ---
 
