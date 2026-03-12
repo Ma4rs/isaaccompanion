@@ -314,6 +314,7 @@
         card('#/unlocks', 'Unlocks', s.unlocksDone, s.unlocksTotal, '34 characters') +
         card('#/challenges', 'Challenges', s.challengesDone, s.challengesTotal, '45 challenges') +
         '<a href="#/transformations" class="home-card"><span class="home-card-title">Transforms</span><span class="home-card-desc">' + state.transformations.length + ' transformations</span></a>' +
+        '<a href="#/reference" class="home-card"><span class="home-card-title">Reference</span><span class="home-card-desc">Dice rooms, sacrifice rooms &amp; more</span></a>' +
       '</div>' +
       '<div class="home-actions">' +
         '<button type="button" class="btn-export" data-action="export">Export Progress</button>' +
@@ -497,6 +498,95 @@
     return '<div class="transform-detail"><a href="#/transformations" class="transform-detail-back">&larr; Transformations</a><article class="transform-detail-card" tabindex="-1"><h1 class="transform-detail-name">' + esc(t.name) + '</h1><p class="transform-detail-desc">' + esc(t.description) + '</p><p class="transform-detail-req">Requires <strong>' + t.requires + '</strong> of the following ' + items.length + ' items:</p><ul class="transform-items-list">' + itemLinks + '</ul></article></div>';
   }
 
+  // --- Render: Quick Reference ---
+
+  function renderReference() {
+    return '<div class="reference">' +
+      '<h1 class="reference-title">Quick Reference</h1>' +
+      '<p class="reference-desc">Commonly looked-up room effects and mechanics.</p>' +
+
+      '<section class="ref-section">' +
+        '<h2 class="ref-section-title">Dice Rooms</h2>' +
+        '<p class="ref-section-desc">Dice rooms have a number on the floor (1-6). Step on it to trigger the effect. One use only.</p>' +
+        '<table class="ref-table"><thead><tr><th>Number</th><th>Effect</th><th>Equivalent</th></tr></thead><tbody>' +
+          '<tr><td>1</td><td>Reroll all your passive items into random new items</td><td>D4</td></tr>' +
+          '<tr><td>2</td><td>Reroll all pickups in the room (coins, bombs, keys, hearts)</td><td>D20</td></tr>' +
+          '<tr><td>3</td><td>Reroll all pedestal items on the entire floor</td><td>D6 (floor-wide)</td></tr>' +
+          '<tr><td>4</td><td>Reroll all pedestal items on the floor AND reroll all your passive items</td><td>D6 + D4</td></tr>' +
+          '<tr><td>5</td><td>Reroll the current room (layout and enemies)</td><td>D7</td></tr>' +
+          '<tr><td>6</td><td>Combines effects of 1-5: rerolls your items, pickups, pedestal items, and room layout</td><td>D4+D20+D6+D7</td></tr>' +
+        '</tbody></table>' +
+      '</section>' +
+
+      '<section class="ref-section">' +
+        '<h2 class="ref-section-title">Sacrifice Room</h2>' +
+        '<p class="ref-section-desc">Step on the spikes to trigger rewards. Each hit costs half a heart.</p>' +
+        '<table class="ref-table"><thead><tr><th>Hit #</th><th>Effect</th></tr></thead><tbody>' +
+          '<tr><td>1</td><td>50% chance: 1 penny</td></tr>' +
+          '<tr><td>2</td><td>50% chance: 1 penny</td></tr>' +
+          '<tr><td>3</td><td>65% chance: spawn a chest</td></tr>' +
+          '<tr><td>4</td><td>50% chance: spawn a chest</td></tr>' +
+          '<tr><td>5</td><td>33% chance: spawn 1 soul heart + 3 pennies</td></tr>' +
+          '<tr><td>6</td><td>33% chance: teleport to Angel Room. 33% chance: spawn soul heart</td></tr>' +
+          '<tr><td>7</td><td>33% chance: spawn angel room item</td></tr>' +
+          '<tr><td>8</td><td>100%: spawn 7 soul hearts</td></tr>' +
+          '<tr><td>9</td><td>33% chance: spawn angel room item</td></tr>' +
+          '<tr><td>10</td><td>50% chance: spawn 30 pennies. 50% chance: spawn 7 soul hearts</td></tr>' +
+          '<tr><td>11</td><td>33% chance: 7 soul hearts. Uriel fight</td></tr>' +
+          '<tr><td>12+</td><td>50% chance: teleport to Dark Room. Gabriel fight</td></tr>' +
+        '</tbody></table>' +
+      '</section>' +
+
+      '<section class="ref-section">' +
+        '<h2 class="ref-section-title">Blood Donation Machine</h2>' +
+        '<p class="ref-section-desc">Touch to donate half a heart. Chance to spawn coins. Can explode into Blood Bag or IV Bag.</p>' +
+        '<ul class="ref-list">' +
+          '<li>Each use: chance to drop 1-3 coins</li>' +
+          '<li>Can spawn Blood Bag (HP up, speed up, full heal) when it breaks</li>' +
+          '<li>Can spawn IV Bag (active item) when it breaks</li>' +
+          '<li>Useful for converting red hearts into money</li>' +
+        '</ul>' +
+      '</section>' +
+
+      '<section class="ref-section">' +
+        '<h2 class="ref-section-title">Donation Machine</h2>' +
+        '<p class="ref-section-desc">Found in shops. Donate coins to earn permanent unlocks.</p>' +
+        '<ul class="ref-list">' +
+          '<li>20 coins: Blue Map (shop pool)</li>' +
+          '<li>50 coins: There\'s Options (boss items show 2 choices)</li>' +
+          '<li>100 coins: Black Candle (shop pool)</li>' +
+          '<li>150 coins: Stop Watch (shop pool)</li>' +
+          '<li>200 coins: Blank Card (shop pool)</li>' +
+          '<li>400 coins: Diplopia (shop pool)</li>' +
+          '<li>600 coins: Shop has 2 items for sale</li>' +
+          '<li>999 coins: The Generosity achievement, resets to 0</li>' +
+        '</ul>' +
+      '</section>' +
+
+      '<section class="ref-section">' +
+        '<h2 class="ref-section-title">Greed Donation Machine</h2>' +
+        '<p class="ref-section-desc">Appears after defeating Ultra Greed. Donate to unlock characters and items.</p>' +
+        '<ul class="ref-list">' +
+          '<li>68 coins: Special Greedier shop items</li>' +
+          '<li>111 coins: Greedier Mode unlocked</li>' +
+          '<li>500 coins: Keeper unlockable (need 1000 total)</li>' +
+          '<li>1000 coins: Keeper character unlocked</li>' +
+          '<li>Jam chance increases with same character — switch characters often</li>' +
+        '</ul>' +
+      '</section>' +
+
+      '<section class="ref-section">' +
+        '<h2 class="ref-section-title">Crawl Spaces & Trapdoors</h2>' +
+        '<ul class="ref-list">' +
+          '<li><strong>Crawl Space:</strong> Bomb a rock with an X mark to reveal. Usually contains a pickup or item.</li>' +
+          '<li><strong>Black Market:</strong> Rare crawl space variant. Sells devil deal items for hearts.</li>' +
+          '<li><strong>Void Portal:</strong> After Hush, chance to appear. Leads to The Void (Delirium fight).</li>' +
+        '</ul>' +
+      '</section>' +
+
+    '</div>';
+  }
+
   // --- Footer ---
 
   function renderFooter() {
@@ -523,6 +613,7 @@
     else if (route.path === 'challenges' && route.id) html = renderChallengeDetail(route.id);
     else if (route.path === 'transformations' && !route.id) html = renderTransformations();
     else if (route.path === 'transformations' && route.id) html = renderTransformationDetail(route.id);
+    else if (route.path === 'reference') html = renderReference();
     else html = renderHome();
     app.innerHTML = html + renderFooter();
     const article = app.querySelector('article[tabindex]');
