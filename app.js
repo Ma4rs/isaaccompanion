@@ -332,7 +332,7 @@
     const meta = [];
     if (item.quality != null) meta.push('Q' + item.quality);
     if (item.pool) meta.push(esc(item.pool));
-    return '<a href="#/items/' + encodeURIComponent(item.id) + '" class="item-card"><img src="' + esc(getItemImageUrl(item)) + '" alt="' + esc(item.name) + '" class="item-card-icon" loading="lazy" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER_ICON + '\';" /><span class="item-card-name">' + esc(item.name) + '</span>' + (meta.length ? '<span class="item-card-meta">' + meta.join(' &middot; ') + '</span>' : '') + '</a>';
+    return '<a href="#/items/' + encodeURIComponent(item.id) + '" class="item-card" tabindex="0"><img src="' + esc(getItemImageUrl(item)) + '" alt="' + esc(item.name) + '" class="item-card-icon" loading="lazy" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER_ICON + '\';" /><span class="item-card-name">' + esc(item.name) + '</span>' + (meta.length ? '<span class="item-card-meta">' + meta.join(' &middot; ') + '</span>' : '') + '</a>';
   }
 
   function renderItems(search, pool, quality) {
@@ -406,7 +406,7 @@
     if (state.trinketsError) return '<div class="trinkets-error" role="alert">Error: ' + esc(state.trinketsError) + '</div>';
     const q = (currentTrinketSearch || '').trim().toLowerCase();
     const list = q ? state.trinkets.filter(t => (t.name && t.name.toLowerCase().includes(q)) || (t.description && t.description.toLowerCase().includes(q))) : state.trinkets;
-    const cards = list.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card"><img src="icons/trinkets/' + esc(t.id) + '.png" alt="" class="item-card-icon" loading="lazy" onerror="this.style.display=\'none\'" /><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta">Q' + t.quality + '</span>' : '') + '</a>').join('');
+    const cards = list.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card" tabindex="0"><img src="icons/trinkets/' + esc(t.id) + '.png" alt="" class="item-card-icon" loading="lazy" onerror="this.style.display=\'none\'" /><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta">Q' + t.quality + '</span>' : '') + '</a>').join('');
     return '<div class="trinkets"><h1 class="trinkets-title">Trinkets</h1><span class="items-count">' + list.length + ' trinkets</span>' +
       '<div class="items-toolbar"><input type="search" placeholder="Search trinkets\u2026" class="items-search" data-action="trinket-search" value="' + esc(currentTrinketSearch || '') + '" aria-label="Search trinkets" /></div>' +
       '<div class="items-grid">' + cards + '</div>' + (list.length === 0 ? '<p class="items-empty">No trinkets match your search.</p>' : '') + '</div>';
@@ -635,7 +635,7 @@
         const grid = app.querySelector('.items-grid');
         const counter = app.querySelector('.items-count');
         if (grid) {
-          grid.innerHTML = list.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card"><img src="icons/trinkets/' + esc(t.id) + '.png" alt="" class="item-card-icon" loading="lazy" onerror="this.style.display=\'none\'" /><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta">Q' + t.quality + '</span>' : '') + '</a>').join('');
+          grid.innerHTML = list.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card" tabindex="0"><img src="icons/trinkets/' + esc(t.id) + '.png" alt="" class="item-card-icon" loading="lazy" onerror="this.style.display=\'none\'" /><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta">Q' + t.quality + '</span>' : '') + '</a>').join('');
           if (counter) counter.textContent = list.length + ' trinkets';
         }
       }, 150);
