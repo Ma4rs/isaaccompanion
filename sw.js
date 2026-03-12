@@ -1,9 +1,10 @@
-const CACHE = 'isaac-companion-v1';
+const CACHE = 'isaac-companion-v2';
 const ASSETS = [
   './',
   './index.html',
   './app.js',
   './styles.css',
+  './manifest.json',
   './data/fallback.js',
   './data/items.fallback.json',
   './data/paths.json',

@@ -699,6 +699,31 @@ select option {
 .ref-list li { margin-bottom: 0.3rem; }
 .ref-list strong { color: var(--text); }
 
+/* Pool browser */
+.pools-title { font-size: 1.1rem; color: var(--accent); margin-bottom: 0.25rem; }
+.pools-desc { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+.pool-section { margin-bottom: 2rem; }
+.pool-section-title { font-size: 0.85rem; color: var(--accent); margin-bottom: 0.75rem; }
+.pool-section-count { font-family: var(--font-sans); font-weight: 400; color: var(--text-muted); font-size: 0.75rem; }
+
+/* Completed path cards */
+.path-card.path-done { border-color: var(--success); opacity: 0.8; position: relative; }
+.path-card-check { position: absolute; top: 0.75rem; right: 0.75rem; color: var(--success); font-size: 1.1rem; font-weight: bold; }
+
+/* Random item button */
+.btn-random { padding: 0.5rem 1rem; font-size: 0.8rem; font-weight: 500; color: var(--accent); background: transparent; border: 1px solid var(--accent); border-radius: var(--radius); cursor: pointer; transition: background var(--transition), color var(--transition); }
+.btn-random:hover { background: var(--accent); color: var(--bg); }
+.btn-random-sm { padding: 0.4rem 0.6rem; font-size: 1rem; background: transparent; border: 1px solid var(--border); border-radius: var(--radius); cursor: pointer; color: var(--text); transition: border-color var(--transition); }
+.btn-random-sm:hover { border-color: var(--accent); }
+
+/* Filter toolbars */
+.challenges-toolbar, .unlocks-toolbar { margin-bottom: 1rem; }
+
+/* R13: Checklist transitions */
+.check-list-item { transition: opacity 0.2s ease, background 0.2s ease; }
+.check-list-item.checked { opacity: 0.7; }
+.check-list-box { transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, transform 0.15s ease; }
+
 /* Search badges */
 .badge-transforms { background: #8a7050; }
 .badge-trinkets { background: #7a8a5a; }

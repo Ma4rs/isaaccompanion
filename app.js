@@ -8,6 +8,7 @@
   const PREFIX_CHALLENGE = 'isaac-challenge-';
   const POOLS = ['treasure', 'devil', 'angel', 'shop', 'boss', 'secret', 'golden', 'planetarium'];
   const QUALITIES = [0, 1, 2, 3, 4];
+  const DIFFICULTIES = ['easy', 'medium', 'hard', 'extreme'];
   const PLACEHOLDER_ICON = 'data:image/svg+xml,' + encodeURIComponent(
     '<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">' +
     '<rect fill="%232a2018" width="48" height="48" rx="4"/>' +
@@ -33,12 +34,12 @@
   const _escEl = document.createElement('span');
   function esc(s) { _escEl.textContent = s; return _escEl.innerHTML; }
 
+  // R4/R10: highlight matched text in search
   function highlight(text, query) {
     if (!query || query.length < 2) return esc(text);
-    const escaped = esc(text);
     const q = query.toLowerCase();
     const idx = text.toLowerCase().indexOf(q);
-    if (idx === -1) return escaped;
+    if (idx === -1) return esc(text);
     return esc(text.substring(0, idx)) + '<mark>' + esc(text.substring(idx, idx + query.length)) + '</mark>' + esc(text.substring(idx + query.length));
   }
 
@@ -57,7 +58,7 @@
         (p === '/trinkets' && base === 'trinkets') ||
         (p === '/paths' && base === 'paths') || (p === '/unlocks' && base === 'unlocks') ||
         (p === '/challenges' && base === 'challenges') || (p === '/transformations' && base === 'transformations') ||
-        (p === '/reference' && base === 'reference')
+        (p === '/reference' && base === 'reference') || (p === '/pools' && base === 'pools')
       );
     });
   }
@@ -174,6 +175,13 @@
     reader.readAsText(file);
   }
 
+  // R1: Random item picker
+  function goToRandomItem() {
+    if (state.items.length === 0) return;
+    const item = state.items[Math.floor(Math.random() * state.items.length)];
+    location.hash = '#/items/' + encodeURIComponent(item.id);
+  }
+
   // --- Dashboard stats ---
 
   function getDashboardStats() {
@@ -195,6 +203,8 @@
   let currentPool = '';
   let currentQuality = '';
   let currentSort = '';
+  let currentDifficulty = ''; // R6
+  let currentUnlockFilter = ''; // R7
 
   function filterItems(search, pool, quality) {
     let list = state.items;
@@ -238,39 +248,21 @@
   function renderSearchResults(results) {
     const q = _searchQuery;
     const sections = [];
-    if (results.items.length) {
-      sections.push('<div class="search-group"><h3 class="search-group-title">Items</h3>' +
-        results.items.map(i => '<a href="#/items/' + encodeURIComponent(i.id) + '" class="search-result-item"><span class="search-result-badge badge-items">Item</span><span class="search-result-name">' + highlight(i.name, q) + '</span></a>').join('') + '</div>');
-    }
-    if (results.trinkets.length) {
-      sections.push('<div class="search-group"><h3 class="search-group-title">Trinkets</h3>' +
-        results.trinkets.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="search-result-item"><span class="search-result-badge badge-trinkets">Trinket</span><span class="search-result-name">' + highlight(t.name, q) + '</span></a>').join('') + '</div>');
-    }
-    if (results.paths.length) {
-      sections.push('<div class="search-group"><h3 class="search-group-title">Paths</h3>' +
-        results.paths.map(p => '<a href="#/paths/' + encodeURIComponent(p.id) + '" class="search-result-item"><span class="search-result-badge badge-paths">Path</span><span class="search-result-name">' + highlight(p.name, q) + '</span></a>').join('') + '</div>');
-    }
-    if (results.unlocks.length) {
-      sections.push('<div class="search-group"><h3 class="search-group-title">Unlocks</h3>' +
-        results.unlocks.map(u => '<a href="#/unlocks/' + encodeURIComponent(u.id) + '" class="search-result-item"><span class="search-result-badge badge-unlocks">Unlock</span><span class="search-result-name">' + highlight(u.characterName, q) + '</span></a>').join('') + '</div>');
-    }
-    if (results.challenges.length) {
-      sections.push('<div class="search-group"><h3 class="search-group-title">Challenges</h3>' +
-        results.challenges.map(c => '<a href="#/challenges/' + encodeURIComponent(c.id) + '" class="search-result-item"><span class="search-result-badge badge-challenges">Challenge</span><span class="search-result-name">#' + c.number + ' ' + highlight(c.name, q) + '</span></a>').join('') + '</div>');
-    }
-    if (results.transformations.length) {
-      sections.push('<div class="search-group"><h3 class="search-group-title">Transformations</h3>' +
-        results.transformations.map(t => '<a href="#/transformations/' + encodeURIComponent(t.id) + '" class="search-result-item"><span class="search-result-badge badge-transforms">Transform</span><span class="search-result-name">' + highlight(t.name, q) + '</span></a>').join('') + '</div>');
-    }
-    return sections.length ? '<div class="search-results-inner">' + sections.join('') + '</div>' : '<div class="search-results-inner"><p class="search-no-results">No results found.</p></div>';
+    if (results.items.length) sections.push('<div class="search-group"><h3 class="search-group-title">Items</h3>' + results.items.map(i => '<a href="#/items/' + encodeURIComponent(i.id) + '" class="search-result-item"><span class="search-result-badge badge-items">Item</span><span class="search-result-name">' + highlight(i.name, q) + '</span></a>').join('') + '</div>');
+    if (results.trinkets.length) sections.push('<div class="search-group"><h3 class="search-group-title">Trinkets</h3>' + results.trinkets.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="search-result-item"><span class="search-result-badge badge-trinkets">Trinket</span><span class="search-result-name">' + highlight(t.name, q) + '</span></a>').join('') + '</div>');
+    if (results.paths.length) sections.push('<div class="search-group"><h3 class="search-group-title">Paths</h3>' + results.paths.map(p => '<a href="#/paths/' + encodeURIComponent(p.id) + '" class="search-result-item"><span class="search-result-badge badge-paths">Path</span><span class="search-result-name">' + highlight(p.name, q) + '</span></a>').join('') + '</div>');
+    if (results.unlocks.length) sections.push('<div class="search-group"><h3 class="search-group-title">Unlocks</h3>' + results.unlocks.map(u => '<a href="#/unlocks/' + encodeURIComponent(u.id) + '" class="search-result-item"><span class="search-result-badge badge-unlocks">Unlock</span><span class="search-result-name">' + highlight(u.characterName, q) + '</span></a>').join('') + '</div>');
+    if (results.challenges.length) sections.push('<div class="search-group"><h3 class="search-group-title">Challenges</h3>' + results.challenges.map(c => '<a href="#/challenges/' + encodeURIComponent(c.id) + '" class="search-result-item"><span class="search-result-badge badge-challenges">Challenge</span><span class="search-result-name">#' + c.number + ' ' + highlight(c.name, q) + '</span></a>').join('') + '</div>');
+    if (results.transformations.length) sections.push('<div class="search-group"><h3 class="search-group-title">Transformations</h3>' + results.transformations.map(t => '<a href="#/transformations/' + encodeURIComponent(t.id) + '" class="search-result-item"><span class="search-result-badge badge-transforms">Transform</span><span class="search-result-name">' + highlight(t.name, q) + '</span></a>').join('') + '</div>');
+    // R10: better empty message
+    return sections.length ? '<div class="search-results-inner">' + sections.join('') + '</div>' : '<div class="search-results-inner"><p class="search-no-results">No results for \u201c' + esc(_searchQuery) + '\u201d across items, trinkets, paths, unlocks, challenges, or transformations.</p></div>';
   }
 
   function showSearchResults(query) {
     if (!searchResultsEl) return;
-    const q = (query || '').trim();
-    _searchQuery = q;
-    if (q.length < 2) { searchResultsEl.classList.remove('open'); searchResultsEl.innerHTML = ''; return; }
-    searchResultsEl.innerHTML = renderSearchResults(globalSearchFn(q));
+    _searchQuery = (query || '').trim();
+    if (_searchQuery.length < 2) { searchResultsEl.classList.remove('open'); searchResultsEl.innerHTML = ''; return; }
+    searchResultsEl.innerHTML = renderSearchResults(globalSearchFn(_searchQuery));
     searchResultsEl.classList.add('open');
   }
 
@@ -304,6 +296,7 @@
         (loading ? '<span class="home-card-desc">' + desc + '</span>' : '<span class="home-card-stat">' + done + '/' + total + ' completed</span><div class="home-card-bar"><div class="progress-wrap"><div class="progress-bar" style="width:' + pct + '%"></div></div></div>') + '</a>';
     }
 
+    // R3: dynamic item count
     return '<div class="home">' +
       '<h1 class="home-title">Isaac Companion</h1>' +
       '<p class="home-tagline">Your guide to 100% The Binding of Isaac: Repentance</p>' +
@@ -311,6 +304,7 @@
       '<div class="home-links">' +
         '<a href="#/items" class="home-card"><span class="home-card-title">Items</span><span class="home-card-desc">' + state.items.length + ' items</span></a>' +
         '<a href="#/trinkets" class="home-card"><span class="home-card-title">Trinkets</span><span class="home-card-desc">' + state.trinkets.length + ' trinkets</span></a>' +
+        '<a href="#/pools" class="home-card"><span class="home-card-title">Pools</span><span class="home-card-desc">Browse by item pool</span></a>' +
         card('#/paths', 'Paths', s.pathsDone, s.pathsTotal, 'Path guides') +
         card('#/unlocks', 'Unlocks', s.unlocksDone, s.unlocksTotal, '34 characters') +
         card('#/challenges', 'Challenges', s.challengesDone, s.challengesTotal, '45 challenges') +
@@ -318,6 +312,7 @@
         '<a href="#/reference" class="home-card"><span class="home-card-title">Reference</span><span class="home-card-desc">Dice rooms, sacrifice rooms &amp; more</span></a>' +
       '</div>' +
       '<div class="home-actions">' +
+        '<button type="button" class="btn-random" data-action="random-item">\u{1F3B2} Random Item</button>' +
         '<button type="button" class="btn-export" data-action="export">Export Progress</button>' +
         '<label class="btn-import">Import Progress<input type="file" accept=".json" data-action="import" hidden /></label>' +
       '</div>' +
@@ -325,6 +320,13 @@
   }
 
   // --- Render: Items ---
+
+  function renderItemCard(item) {
+    const meta = [];
+    if (item.quality != null) meta.push('Q' + item.quality);
+    if (item.pool) meta.push(esc(item.pool));
+    return '<a href="#/items/' + encodeURIComponent(item.id) + '" class="item-card"><img src="' + esc(getItemImageUrl(item)) + '" alt="' + esc(item.name) + '" class="item-card-icon" loading="lazy" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER_ICON + '\';" /><span class="item-card-name">' + esc(item.name) + '</span>' + (meta.length ? '<span class="item-card-meta">' + meta.join(' &middot; ') + '</span>' : '') + '</a>';
+  }
 
   function renderItems(search, pool, quality) {
     if (state.itemsLoading) return '<div class="items"><h1 class="items-title">Items</h1><div class="items-grid">' + skeletonCards(12, 'item-card') + '</div></div>';
@@ -334,21 +336,22 @@
     const sourceHtml = state.itemsSource ? '<p class="items-source">' + (state.itemsSource === 'api' ? 'Data from API' : 'Using offline fallback') + '</p>' : '';
     const optionsPool = POOLS.map(p => '<option value="' + esc(p) + '"' + (pool === p ? ' selected' : '') + '>' + esc(p) + '</option>').join('');
     const optionsQuality = QUALITIES.map(q => '<option value="' + q + '"' + (Number(quality) === q ? ' selected' : '') + '>Quality ' + q + '</option>').join('');
-    const sortOptions = '<select class="items-select" data-action="sort" aria-label="Sort items"><option value="">Sort by...</option><option value="name-az"' + (currentSort === 'name-az' ? ' selected' : '') + '>Name A-Z</option><option value="name-za"' + (currentSort === 'name-za' ? ' selected' : '') + '>Name Z-A</option><option value="quality-hi"' + (currentSort === 'quality-hi' ? ' selected' : '') + '>Quality High-Low</option><option value="quality-lo"' + (currentSort === 'quality-lo' ? ' selected' : '') + '>Quality Low-High</option></select>';
-    const cards = filtered.map(item => {
-      const meta = [];
-      if (item.quality != null) meta.push('Q' + item.quality);
-      if (item.pool) meta.push(esc(item.pool));
-      return '<a href="#/items/' + encodeURIComponent(item.id) + '" class="item-card"><img src="' + esc(getItemImageUrl(item)) + '" alt="' + esc(item.name) + '" class="item-card-icon" loading="lazy" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER_ICON + '\';" /><span class="item-card-name">' + esc(item.name) + '</span>' + (meta.length ? '<span class="item-card-meta">' + meta.join(' &middot; ') + '</span>' : '') + '</a>';
-    }).join('');
+    const sortOpts = '<select class="items-select" data-action="sort" aria-label="Sort items"><option value="">Sort by...</option><option value="name-az"' + (currentSort === 'name-az' ? ' selected' : '') + '>Name A-Z</option><option value="name-za"' + (currentSort === 'name-za' ? ' selected' : '') + '>Name Z-A</option><option value="quality-hi"' + (currentSort === 'quality-hi' ? ' selected' : '') + '>Quality High-Low</option><option value="quality-lo"' + (currentSort === 'quality-lo' ? ' selected' : '') + '>Quality Low-High</option></select>';
+    // R1: random button, R12: search type=search has native clear
+    const cards = filtered.map(renderItemCard).join('');
+    // R4: trinket hint when empty
+    const emptyMsg = filtered.length === 0 ? '<p class="items-empty">No items match your filters. <a href="#/trinkets">Try searching trinkets instead?</a></p>' : '';
     return '<div class="items"><h1 class="items-title">Items</h1><span class="items-count">' + filtered.length + ' items</span>' + sourceHtml +
       '<div class="items-toolbar"><input type="search" placeholder="Search items\u2026" class="items-search" data-action="search" value="' + esc(search || '') + '" aria-label="Search items" />' +
       '<select class="items-select" data-action="pool" aria-label="Filter by pool"><option value="">All pools</option>' + optionsPool + '</select>' +
       '<select class="items-select" data-action="quality" aria-label="Filter by quality"><option value="">All quality</option>' + optionsQuality + '</select>' +
-      sortOptions + '</div>' +
-      '<div class="items-grid">' + cards + '</div>' + (filtered.length === 0 ? '<p class="items-empty">No items match your filters.</p>' : '') + '</div>';
+      sortOpts +
+      '<button type="button" class="btn-random-sm" data-action="random-item" title="Random item">\u{1F3B2}</button>' +
+      '</div>' +
+      '<div class="items-grid">' + cards + '</div>' + emptyMsg + '</div>';
   }
 
+  // R14: show item ID
   function renderItemDetail(id) {
     if (state.itemsLoading && state.items.length === 0) return '<div class="item-detail"><a href="#/items" class="item-detail-back">&larr; Items</a><div class="item-detail-card skeleton-card"><div class="skeleton-line skeleton-line--short"></div><div class="skeleton-line"></div></div></div>';
     const item = id ? getItemById(id) : null;
@@ -356,10 +359,13 @@
     const meta = [];
     if (item.quality != null) meta.push('Quality ' + item.quality);
     if (item.pool) meta.push(item.pool);
+    // R14: item ID for wiki reference
+    meta.push('ID: ' + item.id);
     const tagsHtml = item.tags && item.tags.length ? item.tags.map(t => '<span class="item-detail-tag">' + esc(t) + '</span>').join('') : '';
     const transforms = getTransformationsForItem(item.name);
     const transformsHtml = transforms.length ? '<div class="item-transforms"><strong>Contributes to:</strong> ' + transforms.map(t => '<a href="#/transformations/' + encodeURIComponent(t.id) + '" class="transform-link">' + esc(t.name) + '</a>').join(', ') + '</div>' : '';
     const synergiesHtml = item.synergies && item.synergies.length ? '<div class="synergies-section"><h2 class="synergies-title">Notable Synergies</h2><ul class="synergies-list">' + item.synergies.map(s => '<li class="synergy-item"><strong>' + esc(s.item) + ':</strong> ' + esc(s.effect) + '</li>').join('') + '</ul></div>' : '';
+    // R11: breadcrumb
     return '<div class="item-detail"><a href="#/items" class="item-detail-back">&larr; Items</a>' +
       '<article class="item-detail-card" tabindex="-1">' +
         '<img src="' + esc(getItemImageUrl(item)) + '" alt="' + esc(item.name) + '" class="item-detail-icon" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER_ICON + '\';" />' +
@@ -372,20 +378,33 @@
       '</article></div>';
   }
 
+  // R2: Item Pool Browser
+  function renderPools() {
+    if (state.itemsLoading) return '<div class="pools"><h1 class="pools-title">Item Pools</h1><div class="items-grid">' + skeletonCards(8, 'item-card') + '</div></div>';
+    let html = '<div class="pools"><h1 class="pools-title">Item Pools</h1><p class="pools-desc">Browse items by which pool they appear in.</p>';
+    POOLS.forEach(pool => {
+      const poolItems = state.items.filter(i => (i.pool || '').toLowerCase() === pool);
+      if (poolItems.length === 0) return;
+      html += '<section class="pool-section"><h2 class="pool-section-title">' + esc(pool.charAt(0).toUpperCase() + pool.slice(1)) + ' <span class="pool-section-count">(' + poolItems.length + ')</span></h2><div class="items-grid">' + poolItems.map(renderItemCard).join('') + '</div></section>';
+    });
+    return html + '</div>';
+  }
+
   // --- Render: Trinkets ---
 
   function renderTrinkets() {
     if (state.trinketsLoading) return '<div class="trinkets"><h1 class="trinkets-title">Trinkets</h1><div class="items-grid">' + skeletonCards(12, 'item-card') + '</div></div>';
     if (state.trinketsError) return '<div class="trinkets-error" role="alert">Error: ' + esc(state.trinketsError) + '</div>';
-    const cards = state.trinkets.map(t => {
-      return '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card"><img src="icons/trinkets/' + esc(t.id) + '.png" alt="" class="item-card-icon" loading="lazy" onerror="this.style.display=\'none\'" /><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta">Q' + t.quality + '</span>' : '') + '</a>';
-    }).join('');
-    return '<div class="trinkets"><h1 class="trinkets-title">Trinkets</h1><p class="trinkets-desc">' + state.trinkets.length + ' trinkets — passive modifiers you can carry.</p><div class="items-grid">' + cards + '</div></div>';
+    const cards = state.trinkets.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card"><img src="icons/trinkets/' + esc(t.id) + '.png" alt="" class="item-card-icon" loading="lazy" onerror="this.style.display=\'none\'" /><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta">Q' + t.quality + '</span>' : '') + '</a>').join('');
+    return '<div class="trinkets"><h1 class="trinkets-title">Trinkets</h1><p class="trinkets-desc">' + state.trinkets.length + ' trinkets \u2014 passive modifiers you can carry.</p><div class="items-grid">' + cards + '</div></div>';
   }
 
+  // R5: trinket detail loading state
   function renderTrinketDetail(id) {
+    if (state.trinketsLoading && state.trinkets.length === 0) return '<div class="item-detail"><a href="#/trinkets" class="item-detail-back">&larr; Trinkets</a><div class="item-detail-card skeleton-card"><div class="skeleton-line skeleton-line--short"></div><div class="skeleton-line"></div></div></div>';
     const trinket = id ? getTrinketById(id) : null;
     if (!trinket) return '<div class="item-detail-missing">Trinket not found.</div>';
+    // R11: breadcrumb
     return '<div class="item-detail"><a href="#/trinkets" class="item-detail-back">&larr; Trinkets</a>' +
       '<article class="item-detail-card" tabindex="-1">' +
         '<img src="icons/trinkets/' + esc(id) + '.png" alt="" class="item-detail-icon" onerror="this.style.display=\'none\'" />' +
@@ -409,7 +428,9 @@
     if (state.pathsError) return '<div class="paths-error" role="alert">Error: ' + esc(state.pathsError) + '</div>';
     const cards = state.paths.map(p => {
       const steps = p.steps || []; const checked = getChecked(PREFIX_PATH, p.id); const done = steps.filter(s => checked.has(s.id)).length;
-      return '<a href="#/paths/' + encodeURIComponent(p.id) + '" class="path-card"><img src="portraits/bosses/' + esc(p.id) + '.png" alt="" class="path-card-portrait" onerror="this.style.display=\'none\'" /><div class="path-card-body"><h2 class="path-card-name">' + esc(p.name) + '</h2>' + (p.description ? '<p class="path-card-desc">' + esc(p.description) + '</p>' : '') + '<div class="card-progress">' + renderProgressBar(done, steps.length) + '</div></div></a>';
+      // R8: completed path cards
+      const isComplete = steps.length > 0 && done === steps.length;
+      return '<a href="#/paths/' + encodeURIComponent(p.id) + '" class="path-card' + (isComplete ? ' path-done' : '') + '"><img src="portraits/bosses/' + esc(p.id) + '.png" alt="" class="path-card-portrait" onerror="this.style.display=\'none\'" /><div class="path-card-body"><h2 class="path-card-name">' + esc(p.name) + '</h2>' + (p.description ? '<p class="path-card-desc">' + esc(p.description) + '</p>' : '') + '<div class="card-progress">' + renderProgressBar(done, steps.length) + '</div></div>' + (isComplete ? '<span class="path-card-check">\u2713</span>' : '') + '</a>';
     }).join('');
     return '<div class="paths"><h1 class="paths-title">Paths</h1><p class="paths-desc">Step-by-step guides for Repentance paths.</p><div class="paths-grid">' + cards + '</div>' + (state.paths.length === 0 ? '<p class="paths-empty">No paths loaded.</p>' : '') + '</div>';
   }
@@ -422,6 +443,7 @@
     }).join('') + '</ul>';
   }
 
+  // R11: breadcrumb in back link
   function renderPathDetail(id) {
     if (state.pathsLoading && state.paths.length === 0) return '<div class="path-detail"><a href="#/paths" class="path-detail-back">&larr; Paths</a><div class="path-detail-card skeleton-card"><div class="skeleton-line skeleton-line--short"></div><div class="skeleton-line"></div></div></div>';
     const path = id ? getPathById(id) : null;
@@ -432,14 +454,19 @@
 
   // --- Render: Unlocks ---
 
+  // R7: unlock filter
   function renderUnlocks() {
     if (state.unlocksLoading) return '<div class="unlocks"><h1 class="unlocks-title">Unlocks</h1><p class="unlocks-desc">How to unlock all 34 characters.</p><div class="unlocks-grid">' + skeletonCards(8, 'unlock-card') + '</div></div>';
     if (state.unlocksError) return '<div class="unlocks-error" role="alert">Error: ' + esc(state.unlocksError) + '</div>';
-    const cards = state.unlocks.map(u => {
+    let list = state.unlocks;
+    if (currentUnlockFilter === 'base') list = list.filter(u => !u.id.startsWith('tainted-'));
+    else if (currentUnlockFilter === 'tainted') list = list.filter(u => u.id.startsWith('tainted-'));
+    const filterHtml = '<div class="unlocks-toolbar"><select class="items-select" data-action="unlock-filter" aria-label="Filter characters"><option value=""' + (currentUnlockFilter === '' ? ' selected' : '') + '>All characters</option><option value="base"' + (currentUnlockFilter === 'base' ? ' selected' : '') + '>Base characters</option><option value="tainted"' + (currentUnlockFilter === 'tainted' ? ' selected' : '') + '>Tainted characters</option></select></div>';
+    const cards = list.map(u => {
       const steps = u.steps || []; const checked = getChecked(PREFIX_UNLOCK, u.id); const done = steps.filter(s => checked.has(s.id)).length;
       return '<a href="#/unlocks/' + encodeURIComponent(u.id) + '" class="unlock-card"><img src="portraits/characters/' + esc(u.id) + '.png" alt="" class="unlock-card-portrait" onerror="this.style.display=\'none\'" /><div class="unlock-card-body"><h2 class="unlock-card-name">' + esc(u.targetUnlock) + '</h2><span class="unlock-card-meta">' + esc(u.characterName) + '</span><div class="card-progress">' + renderProgressBar(done, steps.length) + '</div></div></a>';
     }).join('');
-    return '<div class="unlocks"><h1 class="unlocks-title">Unlocks</h1><p class="unlocks-desc">How to unlock all 34 characters.</p><div class="unlocks-grid">' + cards + '</div>' + (state.unlocks.length === 0 ? '<p class="unlocks-empty">No unlocks loaded.</p>' : '') + '</div>';
+    return '<div class="unlocks"><h1 class="unlocks-title">Unlocks</h1><p class="unlocks-desc">How to unlock all 34 characters.</p>' + filterHtml + '<div class="unlocks-grid">' + cards + '</div>' + (list.length === 0 ? '<p class="unlocks-empty">No unlocks match filter.</p>' : '') + '</div>';
   }
 
   function renderRewardsTable(rewards) {
@@ -457,14 +484,18 @@
 
   // --- Render: Challenges ---
 
+  // R6: difficulty filter
   function renderChallenges() {
     if (state.challengesLoading) return '<div class="challenges"><h1 class="challenges-title">Challenges</h1><p class="challenges-desc">All 45 challenges and their rewards.</p><div class="challenges-grid">' + skeletonCards(9, 'challenge-card') + '</div></div>';
     if (state.challengesError) return '<div class="challenges-error" role="alert">Error: ' + esc(state.challengesError) + '</div>';
-    const cards = state.challenges.map(c => {
+    let list = state.challenges;
+    if (currentDifficulty) list = list.filter(c => c.difficulty === currentDifficulty);
+    const filterHtml = '<div class="challenges-toolbar"><select class="items-select" data-action="difficulty-filter" aria-label="Filter by difficulty"><option value="">All difficulties</option>' + DIFFICULTIES.map(d => '<option value="' + d + '"' + (currentDifficulty === d ? ' selected' : '') + '>' + d.charAt(0).toUpperCase() + d.slice(1) + '</option>').join('') + '</select></div>';
+    const cards = list.map(c => {
       const checked = getChecked(PREFIX_CHALLENGE, c.id); const completed = checked.has('done');
       return '<a href="#/challenges/' + encodeURIComponent(c.id) + '" class="challenge-card' + (completed ? ' challenge-done' : '') + '"><div class="challenge-card-header"><span class="challenge-number">#' + c.number + '</span><span class="difficulty-badge difficulty-badge--' + esc(c.difficulty || 'medium') + '">' + esc(c.difficulty || 'medium') + '</span></div><h2 class="challenge-card-name">' + esc(c.name) + '</h2><span class="challenge-card-meta">' + esc(c.character) + ' &rarr; ' + esc(c.goal) + '</span><span class="challenge-card-unlock">Unlocks: ' + esc(c.unlock) + '</span>' + (completed ? '<span class="challenge-card-check">\u2713</span>' : '') + '</a>';
     }).join('');
-    return '<div class="challenges"><h1 class="challenges-title">Challenges</h1><p class="challenges-desc">All 45 challenges and their rewards.</p><div class="challenges-grid">' + cards + '</div>' + (state.challenges.length === 0 ? '<p class="challenges-empty">No challenges loaded.</p>' : '') + '</div>';
+    return '<div class="challenges"><h1 class="challenges-title">Challenges</h1><p class="challenges-desc">All 45 challenges and their rewards.</p>' + filterHtml + '<div class="challenges-grid">' + cards + '</div>' + (list.length === 0 ? '<p class="challenges-empty">No challenges match filter.</p>' : '') + '</div>';
   }
 
   function renderChallengeDetail(id) {
@@ -503,90 +534,15 @@
   // --- Render: Quick Reference ---
 
   function renderReference() {
-    return '<div class="reference">' +
-      '<h1 class="reference-title">Quick Reference</h1>' +
-      '<p class="reference-desc">Commonly looked-up room effects and mechanics.</p>' +
-
-      '<section class="ref-section">' +
-        '<h2 class="ref-section-title">Dice Rooms</h2>' +
-        '<p class="ref-section-desc">Dice rooms have a number on the floor (1-6). Step on it to trigger the effect. One use only.</p>' +
-        '<table class="ref-table"><thead><tr><th>Number</th><th>Effect</th><th>Equivalent</th></tr></thead><tbody>' +
-          '<tr><td>1</td><td>Reroll all your passive items into random new items</td><td>D4</td></tr>' +
-          '<tr><td>2</td><td>Reroll all pickups in the room (coins, bombs, keys, hearts)</td><td>D20</td></tr>' +
-          '<tr><td>3</td><td>Reroll all pedestal items on the entire floor</td><td>D6 (floor-wide)</td></tr>' +
-          '<tr><td>4</td><td>Reroll all pedestal items on the floor AND reroll all your passive items</td><td>D6 + D4</td></tr>' +
-          '<tr><td>5</td><td>Reroll the current room (layout and enemies)</td><td>D7</td></tr>' +
-          '<tr><td>6</td><td>Combines effects of 1-5: rerolls your items, pickups, pedestal items, and room layout</td><td>D4+D20+D6+D7</td></tr>' +
-        '</tbody></table>' +
-      '</section>' +
-
-      '<section class="ref-section">' +
-        '<h2 class="ref-section-title">Sacrifice Room</h2>' +
-        '<p class="ref-section-desc">Step on the spikes to trigger rewards. Each hit costs half a heart.</p>' +
-        '<table class="ref-table"><thead><tr><th>Hit #</th><th>Effect</th></tr></thead><tbody>' +
-          '<tr><td>1</td><td>50% chance: 1 penny</td></tr>' +
-          '<tr><td>2</td><td>50% chance: 1 penny</td></tr>' +
-          '<tr><td>3</td><td>65% chance: spawn a chest</td></tr>' +
-          '<tr><td>4</td><td>50% chance: spawn a chest</td></tr>' +
-          '<tr><td>5</td><td>33% chance: spawn 1 soul heart + 3 pennies</td></tr>' +
-          '<tr><td>6</td><td>33% chance: teleport to Angel Room. 33% chance: spawn soul heart</td></tr>' +
-          '<tr><td>7</td><td>33% chance: spawn angel room item</td></tr>' +
-          '<tr><td>8</td><td>100%: spawn 7 soul hearts</td></tr>' +
-          '<tr><td>9</td><td>33% chance: spawn angel room item</td></tr>' +
-          '<tr><td>10</td><td>50% chance: spawn 30 pennies. 50% chance: spawn 7 soul hearts</td></tr>' +
-          '<tr><td>11</td><td>33% chance: 7 soul hearts. Uriel fight</td></tr>' +
-          '<tr><td>12+</td><td>50% chance: teleport to Dark Room. Gabriel fight</td></tr>' +
-        '</tbody></table>' +
-      '</section>' +
-
-      '<section class="ref-section">' +
-        '<h2 class="ref-section-title">Blood Donation Machine</h2>' +
-        '<p class="ref-section-desc">Touch to donate half a heart. Chance to spawn coins. Can explode into Blood Bag or IV Bag.</p>' +
-        '<ul class="ref-list">' +
-          '<li>Each use: chance to drop 1-3 coins</li>' +
-          '<li>Can spawn Blood Bag (HP up, speed up, full heal) when it breaks</li>' +
-          '<li>Can spawn IV Bag (active item) when it breaks</li>' +
-          '<li>Useful for converting red hearts into money</li>' +
-        '</ul>' +
-      '</section>' +
-
-      '<section class="ref-section">' +
-        '<h2 class="ref-section-title">Donation Machine</h2>' +
-        '<p class="ref-section-desc">Found in shops. Donate coins to earn permanent unlocks.</p>' +
-        '<ul class="ref-list">' +
-          '<li>20 coins: Blue Map (shop pool)</li>' +
-          '<li>50 coins: There\'s Options (boss items show 2 choices)</li>' +
-          '<li>100 coins: Black Candle (shop pool)</li>' +
-          '<li>150 coins: Stop Watch (shop pool)</li>' +
-          '<li>200 coins: Blank Card (shop pool)</li>' +
-          '<li>400 coins: Diplopia (shop pool)</li>' +
-          '<li>600 coins: Shop has 2 items for sale</li>' +
-          '<li>999 coins: The Generosity achievement, resets to 0</li>' +
-        '</ul>' +
-      '</section>' +
-
-      '<section class="ref-section">' +
-        '<h2 class="ref-section-title">Greed Donation Machine</h2>' +
-        '<p class="ref-section-desc">Appears after defeating Ultra Greed. Donate to unlock characters and items.</p>' +
-        '<ul class="ref-list">' +
-          '<li>68 coins: Special Greedier shop items</li>' +
-          '<li>111 coins: Greedier Mode unlocked</li>' +
-          '<li>500 coins: Keeper unlockable (need 1000 total)</li>' +
-          '<li>1000 coins: Keeper character unlocked</li>' +
-          '<li>Jam chance increases with same character — switch characters often</li>' +
-        '</ul>' +
-      '</section>' +
-
-      '<section class="ref-section">' +
-        '<h2 class="ref-section-title">Crawl Spaces & Trapdoors</h2>' +
-        '<ul class="ref-list">' +
-          '<li><strong>Crawl Space:</strong> Bomb a rock with an X mark to reveal. Usually contains a pickup or item.</li>' +
-          '<li><strong>Black Market:</strong> Rare crawl space variant. Sells devil deal items for hearts.</li>' +
-          '<li><strong>Void Portal:</strong> After Hush, chance to appear. Leads to The Void (Delirium fight).</li>' +
-        '</ul>' +
-      '</section>' +
-
-    '</div>';
+    return '<div class="reference"><h1 class="reference-title">Quick Reference</h1><p class="reference-desc">Commonly looked-up room effects and mechanics.</p>' +
+      '<section class="ref-section"><h2 class="ref-section-title">Dice Rooms</h2><p class="ref-section-desc">Dice rooms have a number on the floor (1-6). Step on it to trigger the effect. One use only.</p><table class="ref-table"><thead><tr><th>Number</th><th>Effect</th><th>Equivalent</th></tr></thead><tbody>' +
+      '<tr><td>1</td><td>Reroll all your passive items into random new items</td><td>D4</td></tr><tr><td>2</td><td>Reroll all pickups in the room (coins, bombs, keys, hearts)</td><td>D20</td></tr><tr><td>3</td><td>Reroll all pedestal items on the entire floor</td><td>D6 (floor-wide)</td></tr><tr><td>4</td><td>Reroll all pedestal items on the floor AND reroll all your passive items</td><td>D6 + D4</td></tr><tr><td>5</td><td>Reroll the current room (layout and enemies)</td><td>D7</td></tr><tr><td>6</td><td>Combines effects of 1-5: rerolls your items, pickups, pedestal items, and room layout</td><td>D4+D20+D6+D7</td></tr></tbody></table></section>' +
+      '<section class="ref-section"><h2 class="ref-section-title">Sacrifice Room</h2><p class="ref-section-desc">Step on the spikes to trigger rewards. Each hit costs half a heart.</p><table class="ref-table"><thead><tr><th>Hit #</th><th>Effect</th></tr></thead><tbody>' +
+      '<tr><td>1</td><td>50% chance: 1 penny</td></tr><tr><td>2</td><td>50% chance: 1 penny</td></tr><tr><td>3</td><td>65% chance: spawn a chest</td></tr><tr><td>4</td><td>50% chance: spawn a chest</td></tr><tr><td>5</td><td>33% chance: spawn 1 soul heart + 3 pennies</td></tr><tr><td>6</td><td>33% chance: teleport to Angel Room. 33% chance: spawn soul heart</td></tr><tr><td>7</td><td>33% chance: spawn angel room item</td></tr><tr><td>8</td><td>100%: spawn 7 soul hearts</td></tr><tr><td>9</td><td>33% chance: spawn angel room item</td></tr><tr><td>10</td><td>50% chance: spawn 30 pennies. 50% chance: spawn 7 soul hearts</td></tr><tr><td>11</td><td>33% chance: 7 soul hearts. Uriel fight</td></tr><tr><td>12+</td><td>50% chance: teleport to Dark Room. Gabriel fight</td></tr></tbody></table></section>' +
+      '<section class="ref-section"><h2 class="ref-section-title">Blood Donation Machine</h2><p class="ref-section-desc">Touch to donate half a heart. Chance to spawn coins. Can explode into Blood Bag or IV Bag.</p><ul class="ref-list"><li>Each use: chance to drop 1-3 coins</li><li>Can spawn Blood Bag (HP up, speed up, full heal) when it breaks</li><li>Can spawn IV Bag (active item) when it breaks</li><li>Useful for converting red hearts into money</li></ul></section>' +
+      '<section class="ref-section"><h2 class="ref-section-title">Donation Machine</h2><p class="ref-section-desc">Found in shops. Donate coins to earn permanent unlocks.</p><ul class="ref-list"><li>20 coins: Blue Map (shop pool)</li><li>50 coins: There\'s Options (boss items show 2 choices)</li><li>100 coins: Black Candle (shop pool)</li><li>150 coins: Stop Watch (shop pool)</li><li>200 coins: Blank Card (shop pool)</li><li>400 coins: Diplopia (shop pool)</li><li>600 coins: Shop has 2 items for sale</li><li>999 coins: The Generosity achievement, resets to 0</li></ul></section>' +
+      '<section class="ref-section"><h2 class="ref-section-title">Greed Donation Machine</h2><p class="ref-section-desc">Appears after defeating Ultra Greed. Donate to unlock characters and items.</p><ul class="ref-list"><li>68 coins: Special Greedier shop items</li><li>111 coins: Greedier Mode unlocked</li><li>500 coins: Keeper unlockable (need 1000 total)</li><li>1000 coins: Keeper character unlocked</li><li>Jam chance increases with same character \u2014 switch characters often</li></ul></section>' +
+      '<section class="ref-section"><h2 class="ref-section-title">Crawl Spaces & Trapdoors</h2><ul class="ref-list"><li><strong>Crawl Space:</strong> Bomb a rock with an X mark to reveal. Usually contains a pickup or item.</li><li><strong>Black Market:</strong> Rare crawl space variant. Sells devil deal items for hearts.</li><li><strong>Void Portal:</strong> After Hush, chance to appear. Leads to The Void (Delirium fight).</li></ul></section></div>';
   }
 
   // --- Footer ---
@@ -596,7 +552,6 @@
       '<button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>';
   }
 
-  // Back to top button
   window.addEventListener('scroll', () => {
     const btn = document.getElementById('backToTop');
     if (btn) btn.classList.toggle('visible', window.scrollY > 400);
@@ -617,6 +572,7 @@
     else if (route.path === 'items' && route.id) html = renderItemDetail(route.id);
     else if (route.path === 'trinkets' && !route.id) html = renderTrinkets();
     else if (route.path === 'trinkets' && route.id) html = renderTrinketDetail(route.id);
+    else if (route.path === 'pools') html = renderPools();
     else if (route.path === 'paths' && !route.id) html = renderPaths();
     else if (route.path === 'paths' && route.id) html = renderPathDetail(route.id);
     else if (route.path === 'unlocks' && !route.id) html = renderUnlocks();
@@ -628,6 +584,9 @@
     else if (route.path === 'reference') html = renderReference();
     else html = renderHome();
     app.innerHTML = html + renderFooter();
+    // R11: update page title breadcrumb
+    const titles = { items: 'Items', trinkets: 'Trinkets', pools: 'Pools', paths: 'Paths', unlocks: 'Unlocks', challenges: 'Challenges', transformations: 'Transforms', reference: 'Reference' };
+    document.title = (route.path && titles[route.path] ? titles[route.path] + ' — ' : '') + 'Isaac Companion';
     const article = app.querySelector('article[tabindex]');
     if (article) article.focus({ preventScroll: true });
   }
@@ -646,15 +605,10 @@
         if (grid) {
           let filtered = filterItems(currentSearch, currentPool, currentQuality);
           filtered = sortItems(filtered, currentSort);
-          grid.innerHTML = filtered.map(item => {
-            const meta = [];
-            if (item.quality != null) meta.push('Q' + item.quality);
-            if (item.pool) meta.push(esc(item.pool));
-            return '<a href="#/items/' + encodeURIComponent(item.id) + '" class="item-card"><img src="' + esc(getItemImageUrl(item)) + '" alt="' + esc(item.name) + '" class="item-card-icon" loading="lazy" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER_ICON + '\';" /><span class="item-card-name">' + esc(item.name) + '</span>' + (meta.length ? '<span class="item-card-meta">' + meta.join(' &middot; ') + '</span>' : '') + '</a>';
-          }).join('');
+          grid.innerHTML = filtered.map(renderItemCard).join('');
           if (counter) counter.textContent = filtered.length + ' items';
           if (empty) empty.style.display = filtered.length === 0 ? '' : 'none';
-          if (!empty && filtered.length === 0) grid.insertAdjacentHTML('afterend', '<p class="items-empty">No items match your filters.</p>');
+          if (!empty && filtered.length === 0) grid.insertAdjacentHTML('afterend', '<p class="items-empty">No items match your filters. <a href="#/trinkets">Try searching trinkets instead?</a></p>');
         }
       }, 150);
     }
@@ -665,9 +619,13 @@
     else if (e.target.matches('[data-action="quality"]')) { currentQuality = e.target.value; render(); }
     else if (e.target.matches('[data-action="sort"]')) { currentSort = e.target.value; render(); }
     else if (e.target.matches('[data-action="import"]')) { if (e.target.files[0]) importProgress(e.target.files[0]); }
+    else if (e.target.matches('[data-action="difficulty-filter"]')) { currentDifficulty = e.target.value; render(); } // R6
+    else if (e.target.matches('[data-action="unlock-filter"]')) { currentUnlockFilter = e.target.value; render(); } // R7
   });
 
   app.addEventListener('click', e => {
+    // R1: random item
+    if (e.target.closest('[data-action="random-item"]')) { goToRandomItem(); return; }
     const checkBtn = e.target.closest('.check-list-box:not([data-action])');
     if (checkBtn) {
       const stepId = checkBtn.getAttribute('data-step-id');
@@ -680,19 +638,9 @@
     const challengeBtn = e.target.closest('[data-action="toggle-challenge"]');
     if (challengeBtn) { const id = challengeBtn.getAttribute('data-id'); const c = getChecked(PREFIX_CHALLENGE, id); if (c.has('done')) c.delete('done'); else c.add('done'); setChecked(PREFIX_CHALLENGE, id, c); render(); return; }
     const completePath = e.target.closest('[data-action="complete-path"]');
-    if (completePath) {
-      const id = completePath.getAttribute('data-id');
-      const path = getPathById(id);
-      if (path) { const all = new Set((path.steps || []).map(s => s.id)); setChecked(PREFIX_PATH, id, all); render(); }
-      return;
-    }
+    if (completePath) { const id = completePath.getAttribute('data-id'); const p = getPathById(id); if (p) { setChecked(PREFIX_PATH, id, new Set((p.steps||[]).map(s=>s.id))); render(); } return; }
     const completeUnlock = e.target.closest('[data-action="complete-unlock"]');
-    if (completeUnlock) {
-      const id = completeUnlock.getAttribute('data-id');
-      const unlock = getUnlockById(id);
-      if (unlock) { const all = new Set((unlock.steps || []).map(s => s.id)); setChecked(PREFIX_UNLOCK, id, all); render(); }
-      return;
-    }
+    if (completeUnlock) { const id = completeUnlock.getAttribute('data-id'); const u = getUnlockById(id); if (u) { setChecked(PREFIX_UNLOCK, id, new Set((u.steps||[]).map(s=>s.id))); render(); } return; }
     const resetPath = e.target.closest('[data-action="reset-path"]');
     if (resetPath) { if (confirm('Reset all progress for this path?')) { clearChecked(PREFIX_PATH, resetPath.getAttribute('data-id')); render(); } return; }
     const resetUnlock = e.target.closest('[data-action="reset-unlock"]');
@@ -719,10 +667,7 @@
   document.addEventListener('keydown', e => {
     if (e.target.matches('input, select, textarea')) return;
     if (e.key === '/') { e.preventDefault(); if (globalSearchEl) globalSearchEl.focus(); }
-    if (e.key === 'Escape') {
-      const route = getRoute();
-      if (route.id) history.back();
-    }
+    if (e.key === 'Escape') { const route = getRoute(); if (route.id) history.back(); }
   });
 
   if (searchResultsEl) searchResultsEl.addEventListener('click', e => { if (e.target.closest('a')) hideSearchResults(); });
@@ -734,8 +679,25 @@
   });
   window.addEventListener('hashchange', () => { document.querySelector('.nav-links')?.classList.remove('open'); });
 
+  // --- R15: Data validation on load ---
+
+  function validateData() {
+    if (state.items.length === 0 && !state.itemsLoading) console.warn('[Isaac Companion] No items loaded');
+    if (state.paths.length === 0 && !state.pathsLoading) console.warn('[Isaac Companion] No paths loaded');
+    if (state.unlocks.length === 0 && !state.unlocksLoading) console.warn('[Isaac Companion] No unlocks loaded');
+    if (state.challenges.length === 0 && !state.challengesLoading) console.warn('[Isaac Companion] No challenges loaded');
+    if (state.transformations.length === 0 && !state.transformationsLoading) console.warn('[Isaac Companion] No transformations loaded');
+    if (state.trinkets.length === 0 && !state.trinketsLoading) console.warn('[Isaac Companion] No trinkets loaded');
+    const dupeNames = state.items.map(i => i.name?.toLowerCase()).filter((n, i, a) => a.indexOf(n) !== i);
+    if (dupeNames.length) console.warn('[Isaac Companion] Duplicate item names:', [...new Set(dupeNames)]);
+  }
+
   // --- Router ---
 
   window.addEventListener('hashchange', render);
-  window.addEventListener('load', () => { loadItems(); loadPaths(); loadUnlocks(); loadChallenges(); loadTransformations(); loadTrinkets(); render(); });
+  window.addEventListener('load', () => {
+    loadItems(); loadPaths(); loadUnlocks(); loadChallenges(); loadTransformations(); loadTrinkets();
+    render();
+    setTimeout(validateData, 8000);
+  });
 })();
