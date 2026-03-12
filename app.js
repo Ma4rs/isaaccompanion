@@ -46,7 +46,13 @@
   function getRoute() {
     const hash = (location.hash || '#/').slice(1);
     const parts = hash.split('/').filter(Boolean);
-    return { path: parts[0] || '', id: parts[1] || null };
+    const rawId = parts[1] || null;
+    let decodedId = null;
+    if (rawId !== null) {
+      try { decodedId = decodeURIComponent(rawId); }
+      catch { decodedId = rawId; }
+    }
+    return { path: parts[0] || '', id: decodedId };
   }
 
   function setNavActive(route) {
@@ -335,7 +341,7 @@
     filtered = sortItems(filtered, currentSort);
     const sourceHtml = state.itemsSource ? '<p class="items-source">' + (state.itemsSource === 'api' ? 'Data from API' : 'Using offline fallback') + '</p>' : '';
     const optionsPool = POOLS.map(p => '<option value="' + esc(p) + '"' + (pool === p ? ' selected' : '') + '>' + esc(p) + '</option>').join('');
-    const optionsQuality = QUALITIES.map(q => '<option value="' + q + '"' + (Number(quality) === q ? ' selected' : '') + '>Quality ' + q + '</option>').join('');
+    const optionsQuality = QUALITIES.map(q => '<option value="' + q + '"' + (quality !== '' && Number(quality) === q ? ' selected' : '') + '>Quality ' + q + '</option>').join('');
     const sortOpts = '<select class="items-select" data-action="sort" aria-label="Sort items"><option value="">Sort by...</option><option value="name-az"' + (currentSort === 'name-az' ? ' selected' : '') + '>Name A-Z</option><option value="name-za"' + (currentSort === 'name-za' ? ' selected' : '') + '>Name Z-A</option><option value="quality-hi"' + (currentSort === 'quality-hi' ? ' selected' : '') + '>Quality High-Low</option><option value="quality-lo"' + (currentSort === 'quality-lo' ? ' selected' : '') + '>Quality Low-High</option></select>';
     // R1: random button, R12: search type=search has native clear
     const cards = filtered.map(renderItemCard).join('');
