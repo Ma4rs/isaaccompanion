@@ -712,6 +712,101 @@ select option {
 .home-card-bar { width: 100%; }
 .home-card-bar .progress-wrap { height: 4px; }
 
+/* Completion Marks */
+.marks-title { font-size: 1.1rem; color: var(--accent); margin-bottom: 0.25rem; }
+.marks-desc { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem; }
+.marks-progress { max-width: 480px; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+.marks-toolbar { margin-bottom: 1rem; }
+.marks-grid-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.marks-grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  min-width: 700px;
+}
+.marks-grid thead { position: sticky; top: 0; z-index: 2; }
+.marks-grid th {
+  padding: 0.4rem 0.25rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  background: var(--bg);
+  border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+}
+.marks-char-header { text-align: left; padding-left: 0.5rem; min-width: 130px; position: sticky; left: 0; z-index: 3; background: var(--bg); }
+.marks-boss-header { width: 48px; }
+.marks-count-header { width: 50px; }
+.marks-row { transition: background 0.1s; }
+.marks-row:hover { background: var(--bg-card-hover); }
+.marks-row-done { background: rgba(76, 175, 80, 0.06); }
+.marks-row-done:hover { background: rgba(76, 175, 80, 0.12); }
+.marks-char-cell {
+  padding: 0;
+  position: sticky;
+  left: 0;
+  background: var(--bg);
+  z-index: 1;
+  border-right: 1px solid var(--border);
+  min-width: 130px;
+}
+.marks-char-inner {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.5rem;
+}
+.marks-row:hover .marks-char-cell { background: var(--bg-card-hover); }
+.marks-row-done .marks-char-cell { background: rgba(76, 175, 80, 0.06); }
+.marks-row-done:hover .marks-char-cell { background: rgba(76, 175, 80, 0.12); }
+.marks-char-portrait { width: 24px; height: 24px; border-radius: 3px; flex-shrink: 0; image-rendering: pixelated; }
+.marks-char-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 0.75rem; }
+.marks-cell { text-align: center; padding: 0.15rem; border-bottom: 1px solid var(--border); }
+.marks-cell-done { background: rgba(76, 175, 80, 0.1); }
+.marks-btn {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg-card);
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 0;
+  transition: background 0.12s, border-color 0.12s;
+}
+.marks-btn:hover { background: var(--bg); border-color: var(--accent); }
+.marks-btn[aria-pressed="true"] {
+  background: rgba(76, 175, 80, 0.2);
+  border-color: #4caf50;
+  color: #4caf50;
+  font-weight: bold;
+}
+.marks-count-cell {
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  padding: 0.3rem 0.25rem;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+@media (max-width: 600px) {
+  .marks-grid { min-width: 580px; }
+  .marks-char-cell { min-width: 100px; }
+  .marks-char-name { font-size: 0.65rem; }
+  .marks-btn { width: 24px; height: 24px; font-size: 0.65rem; }
+  .marks-boss-header { width: 36px; }
+}
+
 /* Reference page */
 .reference-title { font-size: 1.1rem; color: var(--accent); margin-bottom: 0.25rem; }
 .reference-desc { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem; }

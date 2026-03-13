@@ -1,4 +1,4 @@
-const CACHE = 'isaac-companion-v2';
+const CACHE = 'isaac-companion-v3';
 const ASSETS = [
   './',
   './index.html',

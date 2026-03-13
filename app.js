@@ -6,6 +6,9 @@
   const PREFIX_PATH = 'isaac-path-';
   const PREFIX_UNLOCK = 'isaac-unlock-';
   const PREFIX_CHALLENGE = 'isaac-challenge-';
+  const PREFIX_MARK = 'isaac-mark-';
+  const MARK_BOSSES = ['Mom\'s Heart', 'Isaac', 'Satan', '???', 'The Lamb', 'Boss Rush', 'Hush', 'Delirium', 'Mega Satan', 'Greedier', 'Mother', 'The Beast'];
+  const MARK_BOSS_SHORT = ['Heart', 'Isaac', 'Satan', '???', 'Lamb', 'Rush', 'Hush', 'Del', 'MSat', 'Greed', 'Mom', 'Beast'];
   const POOLS = ['treasure', 'devil', 'angel', 'shop', 'boss', 'secret', 'golden', 'planetarium'];
   const QUALITIES = [0, 1, 2, 3, 4];
   const DIFFICULTIES = ['easy', 'medium', 'hard', 'extreme'];
@@ -216,10 +219,12 @@
     state.unlocks.forEach(u => { const steps = u.steps || []; const checked = getChecked(PREFIX_UNLOCK, u.id); if (steps.length > 0 && steps.every(s => checked.has(s.id))) unlocksDone++; });
     let challengesDone = 0, challengesTotal = state.challenges.length;
     state.challenges.forEach(c => { if (getChecked(PREFIX_CHALLENGE, c.id).has('done')) challengesDone++; });
-    const totalDone = pathsDone + unlocksDone + challengesDone;
-    const totalAll = pathsTotal + unlocksTotal + challengesTotal;
+    let marksDone = 0, marksTotal = state.unlocks.length * MARK_BOSSES.length;
+    state.unlocks.forEach(u => { const checked = getChecked(PREFIX_MARK, u.id); MARK_BOSSES.forEach(b => { if (checked.has(b)) marksDone++; }); });
+    const totalDone = pathsDone + unlocksDone + challengesDone + marksDone;
+    const totalAll = pathsTotal + unlocksTotal + challengesTotal + marksTotal;
     const overallPct = totalAll > 0 ? Math.round((totalDone / totalAll) * 100) : 0;
-    return { pathsDone, pathsTotal, unlocksDone, unlocksTotal, challengesDone, challengesTotal, totalDone, totalAll, overallPct };
+    return { pathsDone, pathsTotal, unlocksDone, unlocksTotal, challengesDone, challengesTotal, marksDone, marksTotal, totalDone, totalAll, overallPct };
   }
 
   // --- Filter state ---
@@ -333,6 +338,7 @@
         card('#/paths', 'Paths', s.pathsDone, s.pathsTotal, 'Path guides') +
         card('#/unlocks', 'Unlocks', s.unlocksDone, s.unlocksTotal, '34 characters') +
         card('#/challenges', 'Challenges', s.challengesDone, s.challengesTotal, '45 challenges') +
+        card('#/marks', 'Marks', s.marksDone, s.marksTotal, 'Completion marks') +
         '<a href="#/transformations" class="home-card"><span class="home-card-title">Transforms</span><span class="home-card-desc">' + (state.transformationsLoading ? 'Loading…' : state.transformations.length + ' transformations') + '</span></a>' +
         '<a href="#/reference" class="home-card"><span class="home-card-title">Reference</span><span class="home-card-desc">Dice rooms, sacrifice rooms &amp; more</span></a>' +
       '</div>' +
@@ -574,6 +580,73 @@
     return '<div class="transform-detail"><a href="#/transformations" class="transform-detail-back">&larr; Transformations</a><article class="transform-detail-card" tabindex="-1"><h1 class="transform-detail-name">' + esc(t.name) + '</h1><p class="transform-detail-desc">' + esc(t.description) + '</p><p class="transform-detail-req">Requires <strong>' + t.requires + '</strong> of the following ' + items.length + ' items:</p><ul class="transform-items-list">' + itemLinks + '</ul></article>' + renderDetailNav('transformations', nb.prev, nb.next) + '</div>';
   }
 
+  // --- Render: Completion Marks ---
+
+  let currentMarkFilter = '';
+
+  function getMarkUnlock(charId, bossName) {
+    const unlock = state.unlocks.find(u => u.id === charId);
+    if (!unlock || !unlock.rewards) return '';
+    const reward = unlock.rewards.find(r => {
+      if (r.boss === bossName) return true;
+      if (r.boss && r.boss.indexOf(bossName) !== -1) return true;
+      return false;
+    });
+    return reward ? reward.unlock : '';
+  }
+
+  function getMarkStats() {
+    let total = 0, done = 0;
+    state.unlocks.forEach(u => {
+      const checked = getChecked(PREFIX_MARK, u.id);
+      total += MARK_BOSSES.length;
+      MARK_BOSSES.forEach(b => { if (checked.has(b)) done++; });
+    });
+    return { done, total };
+  }
+
+  function renderMarks() {
+    if (state.unlocksLoading) return '<div class="marks"><h1 class="marks-title">Completion Marks</h1><p class="marks-desc">Track your post-it note progress across all characters.</p><div class="items-grid">' + skeletonCards(6, 'item-card') + '</div></div>';
+    let list = state.unlocks;
+    if (currentMarkFilter === 'base') list = list.filter(u => !(u.id || '').startsWith('tainted-'));
+    else if (currentMarkFilter === 'tainted') list = list.filter(u => (u.id || '').startsWith('tainted-'));
+
+    const ms = getMarkStats();
+    const pct = ms.total > 0 ? Math.round((ms.done / ms.total) * 100) : 0;
+
+    const filterHtml = '<div class="marks-toolbar"><select class="items-select" data-action="mark-filter" aria-label="Filter characters"><option value=""' + (currentMarkFilter === '' ? ' selected' : '') + '>All characters</option><option value="base"' + (currentMarkFilter === 'base' ? ' selected' : '') + '>Base characters</option><option value="tainted"' + (currentMarkFilter === 'tainted' ? ' selected' : '') + '>Tainted characters</option></select></div>';
+
+    let thead = '<tr><th class="marks-char-header">Character</th>';
+    MARK_BOSS_SHORT.forEach((s, i) => { thead += '<th class="marks-boss-header" title="' + esc(MARK_BOSSES[i]) + '">' + esc(s) + '</th>'; });
+    thead += '<th class="marks-count-header">Done</th></tr>';
+
+    let tbody = '';
+    list.forEach(u => {
+      const checked = getChecked(PREFIX_MARK, u.id);
+      let rowDone = 0;
+      MARK_BOSSES.forEach(b => { if (checked.has(b)) rowDone++; });
+      const isComplete = rowDone === MARK_BOSSES.length;
+      const isTainted = (u.id || '').startsWith('tainted-');
+      const portraitId = isTainted ? u.id.replace('tainted-', '') : u.id;
+
+      tbody += '<tr class="marks-row' + (isComplete ? ' marks-row-done' : '') + '">';
+      tbody += '<td class="marks-char-cell"><div class="marks-char-inner"><img src="portraits/characters/' + esc(u.id) + '.png" alt="" class="marks-char-portrait" onerror="this.style.display=\'none\'" /><span class="marks-char-name">' + esc(u.characterName) + '</span></div></td>';
+      MARK_BOSSES.forEach(b => {
+        const isChecked = checked.has(b);
+        const unlockReward = getMarkUnlock(u.id, b);
+        tbody += '<td class="marks-cell' + (isChecked ? ' marks-cell-done' : '') + '"><button type="button" class="marks-btn" data-action="toggle-mark" data-char="' + esc(u.id) + '" data-boss="' + esc(b) + '" aria-pressed="' + isChecked + '"' + (unlockReward ? ' title="Unlocks: ' + esc(unlockReward) + '"' : '') + '>' + (isChecked ? '\u2713' : '') + '</button></td>';
+      });
+      tbody += '<td class="marks-count-cell">' + rowDone + '/' + MARK_BOSSES.length + '</td>';
+      tbody += '</tr>';
+    });
+
+    return '<div class="marks"><h1 class="marks-title">Completion Marks</h1>' +
+      '<p class="marks-desc">Track your post-it note progress across all characters. <span class="section-done-count">(' + ms.done + '/' + ms.total + ' \u2014 ' + pct + '%)</span></p>' +
+      '<div class="marks-progress">' + renderProgressBar(ms.done, ms.total) + '</div>' +
+      filterHtml +
+      '<div class="marks-grid-wrap"><table class="marks-grid"><thead>' + thead + '</thead><tbody>' + tbody + '</tbody></table></div></div>';
+  }
+
   // --- Render: Quick Reference ---
 
   function renderReference() {
@@ -624,11 +697,12 @@
     else if (route.path === 'challenges' && route.id) html = renderChallengeDetail(route.id);
     else if (route.path === 'transformations' && !route.id) html = renderTransformations();
     else if (route.path === 'transformations' && route.id) html = renderTransformationDetail(route.id);
+    else if (route.path === 'marks') html = renderMarks();
     else if (route.path === 'reference') html = renderReference();
     else html = renderHome();
     app.innerHTML = html + renderFooter();
     // R11: update page title breadcrumb
-    const titles = { items: 'Items', trinkets: 'Trinkets', pools: 'Pools', paths: 'Paths', unlocks: 'Unlocks', challenges: 'Challenges', transformations: 'Transforms', reference: 'Reference' };
+    const titles = { items: 'Items', trinkets: 'Trinkets', pools: 'Pools', paths: 'Paths', unlocks: 'Unlocks', challenges: 'Challenges', transformations: 'Transforms', marks: 'Marks', reference: 'Reference' };
     document.title = (route.path && titles[route.path] ? titles[route.path] + ' — ' : '') + 'Isaac Companion';
     const article = app.querySelector('article[tabindex]');
     if (article) article.focus({ preventScroll: true });
@@ -679,6 +753,7 @@
     else if (e.target.matches('[data-action="import"]')) { if (e.target.files[0]) { importProgress(e.target.files[0], e.target); } }
     else if (e.target.matches('[data-action="difficulty-filter"]')) { currentDifficulty = e.target.value; render(); } // R6
     else if (e.target.matches('[data-action="unlock-filter"]')) { currentUnlockFilter = e.target.value; render(); } // R7
+    else if (e.target.matches('[data-action="mark-filter"]')) { currentMarkFilter = e.target.value; render(); }
   });
 
   app.addEventListener('click', e => {
@@ -712,6 +787,16 @@
     const resetUnlock = e.target.closest('[data-action="reset-unlock"]');
     if (resetUnlock) { if (confirm('Reset all progress for this unlock?')) { clearChecked(PREFIX_UNLOCK, resetUnlock.getAttribute('data-id')); render(); } return; }
     if (e.target.closest('[data-action="export"]')) { exportProgress(); return; }
+    const markBtn = e.target.closest('[data-action="toggle-mark"]');
+    if (markBtn) {
+      const charId = markBtn.getAttribute('data-char');
+      const boss = markBtn.getAttribute('data-boss');
+      const c = getChecked(PREFIX_MARK, charId);
+      if (c.has(boss)) c.delete(boss); else c.add(boss);
+      setChecked(PREFIX_MARK, charId, c);
+      render();
+      return;
+    }
   });
 
   app.addEventListener('error', e => {
