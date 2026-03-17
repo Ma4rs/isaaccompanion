@@ -19,6 +19,7 @@
   );
 
   const fallback = window.ISAAC_FALLBACK || { items: [], paths: [], unlocks: [], challenges: [], transformations: [], trinkets: [] };
+  const db = window.IsaacDB;
 
   const state = {
     items: [], itemsSource: null, itemsLoading: true, itemsError: null,
@@ -26,7 +27,9 @@
     unlocks: [], unlocksLoading: true, unlocksError: null,
     challenges: [], challengesLoading: true, challengesError: null,
     transformations: [], transformationsLoading: true, transformationsError: null,
-    trinkets: [], trinketsLoading: true, trinketsError: null
+    trinkets: [], trinketsLoading: true, trinketsError: null,
+    authUser: null,
+    cloudProgress: null
   };
 
   const app = document.getElementById('app');
@@ -93,7 +96,7 @@
     };
   }
 
-  // --- Data fetching ---
+  // --- Data fetching (Supabase first, then JSON fallback) ---
 
   function fetchItemsApi() {
     const controller = new AbortController();
@@ -112,10 +115,13 @@
 
   function loadItems() {
     state.itemsLoading = true; state.itemsError = null; render();
-    fetchItemsApi()
-      .then(list => { state.items = list; state.itemsSource = 'api'; state.itemsLoading = false; render(); })
-      .catch(() => fetchItemsFallback().then(list => { state.items = list; state.itemsSource = 'fallback'; state.itemsLoading = false; render(); }))
-      .catch(() => { state.items = fallback.items.map(mapItem); state.itemsSource = 'fallback'; state.itemsError = null; state.itemsLoading = false; render(); });
+    (db ? db.fetchItems() : Promise.reject())
+      .then(list => { state.items = list; state.itemsSource = 'supabase'; state.itemsLoading = false; render(); })
+      .catch(() => fetchItemsApi()
+        .then(list => { state.items = list; state.itemsSource = 'api'; state.itemsLoading = false; render(); })
+        .catch(() => fetchItemsFallback().then(list => { state.items = list; state.itemsSource = 'fallback'; state.itemsLoading = false; render(); }))
+        .catch(() => { state.items = fallback.items.map(mapItem); state.itemsSource = 'fallback'; state.itemsError = null; state.itemsLoading = false; render(); })
+      );
   }
 
   function loadJson(url, key, fallbackKey) {
@@ -126,11 +132,18 @@
       .catch(() => { state[key] = fallback[fallbackKey || key] || []; state[key + 'Loading'] = false; render(); });
   }
 
-  function loadPaths() { loadJson('data/paths.json', 'paths'); }
-  function loadUnlocks() { loadJson('data/unlocks.json', 'unlocks'); }
-  function loadChallenges() { loadJson('data/challenges.json', 'challenges'); }
-  function loadTransformations() { loadJson('data/transformations.json', 'transformations'); }
-  function loadTrinkets() { loadJson('data/trinkets.json', 'trinkets'); }
+  function loadFromSupabaseOrJson(supabaseFn, jsonUrl, key, fallbackKey) {
+    state[key + 'Loading'] = true; state[key + 'Error'] = null;
+    (db ? supabaseFn() : Promise.reject())
+      .then(data => { state[key] = data; state[key + 'Loading'] = false; render(); })
+      .catch(() => loadJson(jsonUrl, key, fallbackKey));
+  }
+
+  function loadPaths() { loadFromSupabaseOrJson(() => db.fetchPaths(), 'data/paths.json', 'paths'); }
+  function loadUnlocks() { loadFromSupabaseOrJson(() => db.fetchUnlocks(), 'data/unlocks.json', 'unlocks'); }
+  function loadChallenges() { loadFromSupabaseOrJson(() => db.fetchChallenges(), 'data/challenges.json', 'challenges'); }
+  function loadTransformations() { loadFromSupabaseOrJson(() => db.fetchTransformations(), 'data/transformations.json', 'transformations'); }
+  function loadTrinkets() { loadFromSupabaseOrJson(() => db.fetchTrinkets(), 'data/trinkets.json', 'trinkets'); }
 
   // --- Lookups ---
 
@@ -165,13 +178,101 @@
       '</nav>';
   }
 
-  // --- localStorage ---
+  // --- Progress storage (Supabase + localStorage fallback) ---
 
-  function getChecked(prefix, id) {
+  function getCheckedFromLocal(prefix, id) {
     try { const raw = localStorage.getItem(prefix + id); if (!raw) return new Set(); const arr = JSON.parse(raw); return new Set(Array.isArray(arr) ? arr : []); } catch { return new Set(); }
   }
-  function setChecked(prefix, id, stepIds) { try { localStorage.setItem(prefix + id, JSON.stringify(Array.from(stepIds))); } catch {} }
-  function clearChecked(prefix, id) { try { localStorage.removeItem(prefix + id); } catch {} }
+
+  function getCheckedFromCloud(prefix, id) {
+    if (!state.cloudProgress) return null;
+    if (prefix === PREFIX_PATH) {
+      const entry = state.cloudProgress.paths.find(p => p.path_id === id);
+      return entry ? new Set(entry.completed_steps || []) : new Set();
+    } else if (prefix === PREFIX_UNLOCK) {
+      const entry = state.cloudProgress.unlocks.find(u => u.unlock_id === id);
+      return entry ? new Set(entry.completed_steps || []) : new Set();
+    } else if (prefix === PREFIX_CHALLENGE) {
+      const entry = state.cloudProgress.challenges.find(c => c.challenge_id === id);
+      return entry && entry.completed ? new Set(['done']) : new Set();
+    } else if (prefix === PREFIX_MARK) {
+      const entry = state.cloudProgress.marks.find(m => m.character_id === id);
+      return entry ? new Set(entry.completed_bosses || []) : new Set();
+    }
+    return null;
+  }
+
+  function getChecked(prefix, id) {
+    if (state.authUser && state.cloudProgress) {
+      const cloud = getCheckedFromCloud(prefix, id);
+      if (cloud !== null) return cloud;
+    }
+    return getCheckedFromLocal(prefix, id);
+  }
+
+  function setChecked(prefix, id, stepIds) {
+    const arr = Array.from(stepIds);
+    try { localStorage.setItem(prefix + id, JSON.stringify(arr)); } catch {}
+
+    if (state.authUser && db) {
+      const userId = state.authUser.id;
+      if (prefix === PREFIX_PATH) {
+        db.savePathProgress(userId, id, arr).catch(() => db.addToSyncQueue({ type: 'path', id, data: arr }));
+        updateCloudProgressLocal('paths', 'path_id', id, 'completed_steps', arr);
+      } else if (prefix === PREFIX_UNLOCK) {
+        db.saveUnlockProgress(userId, id, arr).catch(() => db.addToSyncQueue({ type: 'unlock', id, data: arr }));
+        updateCloudProgressLocal('unlocks', 'unlock_id', id, 'completed_steps', arr);
+      } else if (prefix === PREFIX_CHALLENGE) {
+        const done = arr.includes('done');
+        db.saveChallengeProgress(userId, id, done).catch(() => db.addToSyncQueue({ type: 'challenge', id, data: done }));
+        updateCloudProgressLocal('challenges', 'challenge_id', id, 'completed', done);
+      } else if (prefix === PREFIX_MARK) {
+        db.saveMarkProgress(userId, id, arr).catch(() => db.addToSyncQueue({ type: 'mark', id, data: arr }));
+        updateCloudProgressLocal('marks', 'character_id', id, 'completed_bosses', arr);
+      }
+    }
+  }
+
+  function clearChecked(prefix, id) {
+    try { localStorage.removeItem(prefix + id); } catch {}
+
+    if (state.authUser && db) {
+      const userId = state.authUser.id;
+      if (prefix === PREFIX_PATH) {
+        db.deletePathProgress(userId, id).catch(() => db.addToSyncQueue({ type: 'delete-path', id }));
+        removeCloudProgressLocal('paths', 'path_id', id);
+      } else if (prefix === PREFIX_UNLOCK) {
+        db.deleteUnlockProgress(userId, id).catch(() => db.addToSyncQueue({ type: 'delete-unlock', id }));
+        removeCloudProgressLocal('unlocks', 'unlock_id', id);
+      } else if (prefix === PREFIX_CHALLENGE) {
+        db.deleteChallengeProgress(userId, id).catch(() => db.addToSyncQueue({ type: 'delete-challenge', id }));
+        removeCloudProgressLocal('challenges', 'challenge_id', id);
+      } else if (prefix === PREFIX_MARK) {
+        db.deleteMarkProgress(userId, id).catch(() => db.addToSyncQueue({ type: 'delete-mark', id }));
+        removeCloudProgressLocal('marks', 'character_id', id);
+      }
+    }
+  }
+
+  function updateCloudProgressLocal(collection, keyField, id, valueField, value) {
+    if (!state.cloudProgress) return;
+    const list = state.cloudProgress[collection];
+    const idx = list.findIndex(e => e[keyField] === id);
+    if (idx >= 0) { list[idx][valueField] = value; }
+    else { const entry = { user_id: state.authUser.id }; entry[keyField] = id; entry[valueField] = value; list.push(entry); }
+  }
+
+  function removeCloudProgressLocal(collection, keyField, id) {
+    if (!state.cloudProgress) return;
+    state.cloudProgress[collection] = state.cloudProgress[collection].filter(e => e[keyField] !== id);
+  }
+
+  async function loadCloudProgress() {
+    if (!state.authUser || !db) { state.cloudProgress = null; return; }
+    try {
+      state.cloudProgress = await db.loadAllProgress(state.authUser.id);
+    } catch { state.cloudProgress = null; }
+  }
 
   // --- Export/Import ---
 
@@ -347,6 +448,7 @@
         '<button type="button" class="btn-export" data-action="export">Export Progress</button>' +
         '<label class="btn-import">Import Progress<input type="file" accept=".json" data-action="import" hidden /></label>' +
       '</div>' +
+      (state.authUser ? '<div class="home-cloud-status"><span class="cloud-status-badge cloud-status-ok">Cloud sync active</span></div>' : '<div class="home-cloud-status"><button type="button" class="auth-btn" id="homeLoginBtn" onclick="if(window.IsaacAuth)window.IsaacAuth.showAuthModal()">Sign in to sync progress</button></div>') +
     '</div>';
   }
 
@@ -364,7 +466,8 @@
     if (state.itemsError) return '<div class="items-error" role="alert">Error: ' + esc(state.itemsError) + '</div>';
     let filtered = filterItems(search, pool, quality);
     filtered = sortItems(filtered, currentSort);
-    const sourceHtml = state.itemsSource ? '<p class="items-source">' + (state.itemsSource === 'api' ? 'Data from API' : 'Using offline fallback') + '</p>' : '';
+    const sourceLabel = state.itemsSource === 'supabase' ? 'Data from Supabase' : state.itemsSource === 'api' ? 'Data from API' : 'Using offline fallback';
+    const sourceHtml = state.itemsSource ? '<p class="items-source">' + sourceLabel + '</p>' : '';
     const optionsPool = POOLS.map(p => '<option value="' + esc(p) + '"' + (pool === p ? ' selected' : '') + '>' + esc(p) + '</option>').join('');
     const optionsQuality = QUALITIES.map(q => '<option value="' + q + '"' + (quality !== '' && Number(quality) === q ? ' selected' : '') + '>Quality ' + q + '</option>').join('');
     const sortOpts = '<select class="items-select" data-action="sort" aria-label="Sort items"><option value="">Sort by...</option><option value="name-az"' + (currentSort === 'name-az' ? ' selected' : '') + '>Name A-Z</option><option value="name-za"' + (currentSort === 'name-za' ? ' selected' : '') + '>Name Z-A</option><option value="quality-hi"' + (currentSort === 'quality-hi' ? ' selected' : '') + '>Quality High-Low</option><option value="quality-lo"' + (currentSort === 'quality-lo' ? ' selected' : '') + '>Quality Low-High</option></select>';
@@ -881,6 +984,19 @@
     if (dupeNames.length) console.warn('[Isaac Companion] Duplicate item names:', [...new Set(dupeNames)]);
   }
 
+  // --- Auth integration ---
+
+  window.addEventListener('isaac-auth-changed', async (e) => {
+    state.authUser = e.detail?.user || null;
+    await loadCloudProgress();
+    render();
+  });
+
+  window.addEventListener('isaac-progress-changed', async () => {
+    await loadCloudProgress();
+    render();
+  });
+
   // --- Router ---
 
   window.addEventListener('hashchange', render);
@@ -888,5 +1004,6 @@
     loadItems(); loadPaths(); loadUnlocks(); loadChallenges(); loadTransformations(); loadTrinkets();
     render();
     setTimeout(validateData, 8000);
+    if (window.IsaacAuth) window.IsaacAuth.init();
   });
 })();
