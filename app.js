@@ -334,6 +334,8 @@
   let currentPool = '';
   let currentQuality = '';
   let currentSort = '';
+  let currentTrinketSort = '';
+  let currentPoolSort = '';
   let currentDifficulty = ''; // R6
   let currentUnlockFilter = ''; // R7
 
@@ -346,7 +348,7 @@
     return list;
   }
 
-  function sortItems(list, sort) {
+  function sortByNameQuality(list, sort) {
     if (!sort) return list;
     const sorted = [...list];
     switch (sort) {
@@ -356,6 +358,11 @@
       case 'quality-lo': sorted.sort((a, b) => (a.quality || 0) - (b.quality || 0)); break;
     }
     return sorted;
+  }
+  function sortItems(list, sort) { return sortByNameQuality(list, sort); }
+
+  function renderSortSelect(action, currentValue) {
+    return '<select class="items-select" data-action="' + action + '" aria-label="Sort"><option value="">Sort by...</option><option value="name-az"' + (currentValue === 'name-az' ? ' selected' : '') + '>Name A-Z</option><option value="name-za"' + (currentValue === 'name-za' ? ' selected' : '') + '>Name Z-A</option><option value="quality-hi"' + (currentValue === 'quality-hi' ? ' selected' : '') + '>Quality High-Low</option><option value="quality-lo"' + (currentValue === 'quality-lo' ? ' selected' : '') + '>Quality Low-High</option></select>';
   }
 
   // --- Global search ---
@@ -516,10 +523,12 @@
   // R2: Item Pool Browser
   function renderPools() {
     if (state.itemsLoading) return '<div class="pools"><h1 class="pools-title">Item Pools</h1><div class="items-grid">' + skeletonCards(8, 'item-card') + '</div></div>';
-    let html = '<div class="pools"><h1 class="pools-title">Item Pools</h1><p class="pools-desc">Browse items by which pool they appear in.</p>';
+    let html = '<div class="pools"><h1 class="pools-title">Item Pools</h1><p class="pools-desc">Browse items by which pool they appear in.</p>' +
+      '<div class="items-toolbar">' + renderSortSelect('pool-sort', currentPoolSort) + '</div>';
     POOLS.forEach(pool => {
-      const poolItems = state.items.filter(i => (i.pool || '').toLowerCase() === pool);
+      let poolItems = state.items.filter(i => (i.pool || '').toLowerCase() === pool);
       if (poolItems.length === 0) return;
+      poolItems = sortByNameQuality(poolItems, currentPoolSort);
       html += '<section class="pool-section"><h2 class="pool-section-title">' + esc(pool.charAt(0).toUpperCase() + pool.slice(1)) + ' <span class="pool-section-count">(' + poolItems.length + ')</span></h2><div class="items-grid">' + poolItems.map(renderItemCard).join('') + '</div></section>';
     });
     return html + '</div>';
@@ -533,10 +542,12 @@
     if (state.trinketsLoading) return '<div class="trinkets"><h1 class="trinkets-title">Trinkets</h1><div class="items-grid">' + skeletonCards(12, 'item-card') + '</div></div>';
     if (state.trinketsError) return '<div class="trinkets-error" role="alert">Error: ' + esc(state.trinketsError) + '</div>';
     const q = (currentTrinketSearch || '').trim().toLowerCase();
-    const list = q ? state.trinkets.filter(t => (t.name && t.name.toLowerCase().includes(q)) || (t.description && t.description.toLowerCase().includes(q))) : state.trinkets;
+    let list = q ? state.trinkets.filter(t => (t.name && t.name.toLowerCase().includes(q)) || (t.description && t.description.toLowerCase().includes(q))) : state.trinkets;
+    list = sortByNameQuality(list, currentTrinketSort);
     const cards = list.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card" tabindex="0"><img src="icons/trinkets/' + esc(t.id) + '.png" alt="" class="item-card-icon" loading="lazy" onerror="this.style.display=\'none\'" /><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta"><span class="quality-badge quality-' + t.quality + '">Q' + t.quality + '</span></span>' : '') + '</a>').join('');
     return '<div class="trinkets"><h1 class="trinkets-title">Trinkets</h1><span class="items-count">' + list.length + ' trinkets</span>' +
-      '<div class="items-toolbar"><input type="search" placeholder="Search trinkets\u2026" class="items-search" data-action="trinket-search" value="' + esc(currentTrinketSearch || '') + '" aria-label="Search trinkets" /></div>' +
+      '<div class="items-toolbar"><input type="search" placeholder="Search trinkets\u2026" class="items-search" data-action="trinket-search" value="' + esc(currentTrinketSearch || '') + '" aria-label="Search trinkets" />' +
+      renderSortSelect('trinket-sort', currentTrinketSort) + '</div>' +
       '<div class="items-grid">' + cards + '</div>' + (list.length === 0 ? '<p class="items-empty">No trinkets match your search.</p>' : '') + '</div>';
   }
 
@@ -853,6 +864,8 @@
     if (e.target.matches('[data-action="pool"]')) { currentPool = e.target.value; render(); }
     else if (e.target.matches('[data-action="quality"]')) { currentQuality = e.target.value; render(); }
     else if (e.target.matches('[data-action="sort"]')) { currentSort = e.target.value; render(); }
+    else if (e.target.matches('[data-action="trinket-sort"]')) { currentTrinketSort = e.target.value; render(); }
+    else if (e.target.matches('[data-action="pool-sort"]')) { currentPoolSort = e.target.value; render(); }
     else if (e.target.matches('[data-action="import"]')) { if (e.target.files[0]) { importProgress(e.target.files[0], e.target); } }
     else if (e.target.matches('[data-action="difficulty-filter"]')) { currentDifficulty = e.target.value; render(); } // R6
     else if (e.target.matches('[data-action="unlock-filter"]')) { currentUnlockFilter = e.target.value; render(); } // R7

@@ -1,14 +1,24 @@
 // Supabase client for Isaac Companion
-// Configure SUPABASE_URL and SUPABASE_ANON_KEY before use.
 (function () {
   'use strict';
 
-  // ── Configuration ──────────────────────────────────────────
-  // Replace these with your Supabase project values
   const SUPABASE_URL = window.ISAAC_SUPABASE_URL || 'https://misvptdgzbxhmujfumzn.supabase.co';
   const SUPABASE_ANON_KEY = window.ISAAC_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1pc3ZwdGRnemJ4aG11amZ1bXpuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE4MzkxMjQsImV4cCI6MjA4NzQxNTEyNH0.10dDK5z6EK8rH-divy9Ej98hccIHU7I4A488bDihj-0';
 
-  const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  let sb = null;
+  try {
+    if (window.supabase && window.supabase.createClient) {
+      sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    }
+  } catch (err) {
+    console.warn('[Isaac Companion] Supabase init failed:', err.message);
+  }
+
+  if (!sb) {
+    console.warn('[Isaac Companion] Running without Supabase – using JSON fallback');
+    window.IsaacDB = null;
+    return;
+  }
 
   // ── Auth helpers ───────────────────────────────────────────
 

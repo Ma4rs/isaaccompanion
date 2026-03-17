@@ -3,6 +3,10 @@
   'use strict';
 
   const db = window.IsaacDB;
+  if (!db) {
+    window.IsaacAuth = { init: function(){}, getUser: function(){ return null; }, showAuthModal: function(){}, hideAuthModal: function(){} };
+    return;
+  }
   let _authUser = null;
   let _authModal = null;
   let _migrationDone = false;
