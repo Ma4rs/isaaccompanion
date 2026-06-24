@@ -12,14 +12,13 @@
   const POOLS = ['treasure', 'devil', 'angel', 'shop', 'boss', 'secret', 'golden', 'planetarium'];
   const QUALITIES = [0, 1, 2, 3, 4];
   const DIFFICULTIES = ['easy', 'medium', 'hard', 'extreme'];
-  const PLACEHOLDER_ICON = 'data:image/svg+xml,' + encodeURIComponent(
-    '<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">' +
-    '<rect fill="%232a2018" width="48" height="48" rx="4"/>' +
-    '<text x="24" y="30" font-size="20" fill="%23a89070" text-anchor="middle" font-family="sans-serif">?</text></svg>'
-  );
 
   const fallback = window.ISAAC_FALLBACK || { items: [], paths: [], unlocks: [], challenges: [], transformations: [], trinkets: [] };
   const db = window.IsaacDB;
+  const router = window.IsaacRouter;
+  const dataTools = window.IsaacData;
+  const searchTools = window.IsaacSearch;
+  const PLACEHOLDER_ICON = dataTools.PLACEHOLDER_ICON;
 
   const state = {
     items: [], itemsSource: null, itemsLoading: true, itemsError: null,
@@ -49,52 +48,13 @@
     return esc(text.substring(0, idx)) + '<mark>' + esc(text.substring(idx, idx + query.length)) + '</mark>' + esc(text.substring(idx + query.length));
   }
 
-  function getRoute() {
-    const hash = (location.hash || '#/').slice(1);
-    const parts = hash.split('/').filter(Boolean);
-    const rawId = parts[1] || null;
-    let decodedId = null;
-    if (rawId !== null) {
-      try { decodedId = decodeURIComponent(rawId); }
-      catch { decodedId = rawId; }
-    }
-    return { path: parts[0] || '', id: decodedId };
-  }
+  function getRoute() { return router.getRoute(); }
+  function setNavActive(route) { return router.setNavActive(route, navLinks); }
 
-  function setNavActive(route) {
-    const base = route.path || '/';
-    navLinks.forEach(a => {
-      const p = a.getAttribute('data-path');
-      a.classList.toggle('active',
-        p === base || (p === '/items' && base === 'items') ||
-        (p === '/trinkets' && base === 'trinkets') ||
-        (p === '/paths' && base === 'paths') || (p === '/unlocks' && base === 'unlocks') ||
-        (p === '/challenges' && base === 'challenges') || (p === '/transformations' && base === 'transformations') ||
-        (p === '/reference' && base === 'reference') || (p === '/pools' && base === 'pools')
-      );
-    });
-  }
+  function getItemImageUrl(item) { return dataTools.getItemImageUrl(item); }
+  function getTrinketImageUrl(item) { return dataTools.getTrinketImageUrl(item); }
 
-  function getItemImageUrl(item) {
-    if (item && item.iconUrl) return item.iconUrl;
-    if (!item || !item.id) return PLACEHOLDER_ICON;
-    return 'icons/' + item.id + '.png';
-  }
-
-  function mapItem(raw) {
-    return {
-      id: String(raw.id != null ? raw.id : raw.name != null ? raw.name : ''),
-      name: String(raw.name != null ? raw.name : ''),
-      description: raw.description != null ? String(raw.description) : undefined,
-      iconUrl: raw.icon_url != null ? String(raw.icon_url) : raw.iconUrl != null ? String(raw.iconUrl) : undefined,
-      quality: typeof raw.quality === 'number' ? raw.quality : undefined,
-      pool: raw.pool != null ? String(raw.pool) : undefined,
-      quote: raw.quote != null ? String(raw.quote) : undefined,
-      tags: Array.isArray(raw.tags) ? raw.tags : undefined,
-      type: raw.type != null ? String(raw.type) : undefined,
-      synergies: Array.isArray(raw.synergies) ? raw.synergies : undefined
-    };
-  }
+  function mapItem(raw) { return dataTools.mapItem(raw); }
 
   // --- Data fetching (Supabase first, then JSON fallback) ---
 
@@ -331,6 +291,7 @@
   // --- Filter state ---
 
   let currentSearch = '';
+  let currentTag = '';
   let currentPool = '';
   let currentQuality = '';
   let currentSort = '';
@@ -341,8 +302,18 @@
 
   function filterItems(search, pool, quality) {
     let list = state.items;
-    const q = (search || '').trim().toLowerCase();
-    if (q) list = list.filter(i => (i.name && i.name.toLowerCase().includes(q)) || (i.description && i.description.toLowerCase().includes(q)));
+    const q = (search || '').trim();
+    if (q) {
+      list = searchTools.rankEntities(list, q, {
+        name: (i) => i.name,
+        description: (i) => i.description,
+        tags: (i) => i.tags || [],
+      });
+    }
+    if (currentTag) {
+      const needle = searchTools.normalize(currentTag);
+      list = list.filter((i) => Array.isArray(i.tags) && i.tags.some((tag) => searchTools.normalize(tag) === needle));
+    }
     if (pool) list = list.filter(i => (i.pool || '').toLowerCase() === pool.toLowerCase());
     if (quality !== '' && quality !== null && quality !== undefined) list = list.filter(i => (i.quality != null ? i.quality : 0) === Number(quality));
     return list;
@@ -361,6 +332,17 @@
   }
   function sortItems(list, sort) { return sortByNameQuality(list, sort); }
 
+  function getTopItemTags(limit) {
+    const counts = new Map();
+    state.items.forEach((item) => {
+      (item.tags || []).forEach((tag) => counts.set(tag, (counts.get(tag) || 0) + 1));
+    });
+    return [...counts.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, limit)
+      .map(([tag]) => tag);
+  }
+
   function renderSortSelect(action, currentValue) {
     return '<select class="items-select" data-action="' + action + '" aria-label="Sort"><option value="">Sort by...</option><option value="name-az"' + (currentValue === 'name-az' ? ' selected' : '') + '>Name A-Z</option><option value="name-za"' + (currentValue === 'name-za' ? ' selected' : '') + '>Name Z-A</option><option value="quality-hi"' + (currentValue === 'quality-hi' ? ' selected' : '') + '>Quality High-Low</option><option value="quality-lo"' + (currentValue === 'quality-lo' ? ' selected' : '') + '>Quality Low-High</option></select>';
   }
@@ -370,16 +352,16 @@
   let _searchQuery = '';
 
   function globalSearchFn(query) {
-    const q = (query || '').trim().toLowerCase();
+    const q = (query || '').trim();
     if (q.length < 2) return { items: [], paths: [], unlocks: [], challenges: [], transformations: [], trinkets: [] };
     const MAX = 5;
     return {
-      items: state.items.filter(i => (i.name && i.name.toLowerCase().includes(q)) || (i.description && i.description.toLowerCase().includes(q))).slice(0, MAX),
-      paths: state.paths.filter(p => (p.name && p.name.toLowerCase().includes(q)) || (p.description && p.description.toLowerCase().includes(q))).slice(0, MAX),
-      unlocks: state.unlocks.filter(u => (u.characterName && u.characterName.toLowerCase().includes(q)) || (u.targetUnlock && u.targetUnlock.toLowerCase().includes(q))).slice(0, MAX),
-      challenges: state.challenges.filter(c => (c.name && c.name.toLowerCase().includes(q)) || (c.description && c.description.toLowerCase().includes(q)) || (c.unlock && c.unlock.toLowerCase().includes(q))).slice(0, MAX),
-      transformations: state.transformations.filter(t => (t.name && t.name.toLowerCase().includes(q)) || (t.description && t.description.toLowerCase().includes(q))).slice(0, MAX),
-      trinkets: state.trinkets.filter(t => (t.name && t.name.toLowerCase().includes(q)) || (t.description && t.description.toLowerCase().includes(q))).slice(0, MAX)
+      items: searchTools.rankEntities(state.items, q, { name: (i) => i.name, description: (i) => i.description, tags: (i) => i.tags || [] }).slice(0, MAX),
+      paths: searchTools.rankEntities(state.paths, q, { name: (i) => i.name, description: (i) => i.description, tags: () => [] }).slice(0, MAX),
+      unlocks: searchTools.rankEntities(state.unlocks, q, { name: (i) => i.targetUnlock, description: (i) => i.characterName, tags: () => [] }).slice(0, MAX),
+      challenges: searchTools.rankEntities(state.challenges, q, { name: (i) => i.name, description: (i) => [i.description, i.unlock, i.character, i.goal].filter(Boolean).join(' '), tags: () => [] }).slice(0, MAX),
+      transformations: searchTools.rankEntities(state.transformations, q, { name: (i) => i.name, description: (i) => i.description, tags: () => [] }).slice(0, MAX),
+      trinkets: searchTools.rankEntities(state.trinkets, q, { name: (i) => i.name, description: (i) => i.description, tags: (i) => i.tags || [] }).slice(0, MAX)
     };
   }
 
@@ -478,17 +460,21 @@
     const optionsPool = POOLS.map(p => '<option value="' + esc(p) + '"' + (pool === p ? ' selected' : '') + '>' + esc(p) + '</option>').join('');
     const optionsQuality = QUALITIES.map(q => '<option value="' + q + '"' + (quality !== '' && Number(quality) === q ? ' selected' : '') + '>Quality ' + q + '</option>').join('');
     const sortOpts = '<select class="items-select" data-action="sort" aria-label="Sort items"><option value="">Sort by...</option><option value="name-az"' + (currentSort === 'name-az' ? ' selected' : '') + '>Name A-Z</option><option value="name-za"' + (currentSort === 'name-za' ? ' selected' : '') + '>Name Z-A</option><option value="quality-hi"' + (currentSort === 'quality-hi' ? ' selected' : '') + '>Quality High-Low</option><option value="quality-lo"' + (currentSort === 'quality-lo' ? ' selected' : '') + '>Quality Low-High</option></select>';
+    const topTags = getTopItemTags(16);
+    const tagChips = topTags.map((tag) => '<button type="button" class="tag-chip' + (currentTag === tag ? ' active' : '') + '" data-action="tag-filter" data-tag="' + esc(tag) + '">' + esc(tag) + '</button>').join('');
+    const clearTag = currentTag ? '<button type="button" class="tag-chip clear" data-action="tag-filter-clear">clear tag</button>' : '';
     // R1: random button, R12: search type=search has native clear
     const cards = filtered.map(renderItemCard).join('');
     // R4: trinket hint when empty
     const emptyMsg = filtered.length === 0 ? '<p class="items-empty">No items match your filters. <a href="#/trinkets">Try searching trinkets instead?</a></p>' : '';
     return '<div class="items"><h1 class="items-title">Items</h1><span class="items-count">' + filtered.length + ' items</span>' + sourceHtml +
-      '<div class="items-toolbar"><input type="search" placeholder="Search items\u2026" class="items-search" data-action="search" value="' + esc(search || '') + '" aria-label="Search items" />' +
+      '<div class="items-toolbar"><input type="search" placeholder="Search items or tags (e.g. auge, fly)\u2026" class="items-search" data-action="search" value="' + esc(search || '') + '" aria-label="Search items" />' +
       '<select class="items-select" data-action="pool" aria-label="Filter by pool"><option value="">All pools</option>' + optionsPool + '</select>' +
       '<select class="items-select" data-action="quality" aria-label="Filter by quality"><option value="">All quality</option>' + optionsQuality + '</select>' +
       sortOpts +
       '<button type="button" class="btn-random-sm" data-action="random-item" title="Random item">\u{1F3B2}</button>' +
       '</div>' +
+      '<div class="tag-chip-row">' + tagChips + clearTag + '</div>' +
       '<div class="items-grid">' + cards + '</div>' + emptyMsg + '</div>';
   }
 
@@ -541,12 +527,12 @@
   function renderTrinkets() {
     if (state.trinketsLoading) return '<div class="trinkets"><h1 class="trinkets-title">Trinkets</h1><div class="items-grid">' + skeletonCards(12, 'item-card') + '</div></div>';
     if (state.trinketsError) return '<div class="trinkets-error" role="alert">Error: ' + esc(state.trinketsError) + '</div>';
-    const q = (currentTrinketSearch || '').trim().toLowerCase();
-    let list = q ? state.trinkets.filter(t => (t.name && t.name.toLowerCase().includes(q)) || (t.description && t.description.toLowerCase().includes(q))) : state.trinkets;
+    const q = (currentTrinketSearch || '').trim();
+    let list = q ? searchTools.rankEntities(state.trinkets, q, { name: (t) => t.name, description: (t) => t.description, tags: (t) => t.tags || [] }) : state.trinkets;
     list = sortByNameQuality(list, currentTrinketSort);
-    const cards = list.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card" tabindex="0"><img src="icons/trinkets/' + esc(t.id) + '.png" alt="" class="item-card-icon" loading="lazy" onerror="this.style.display=\'none\'" /><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta"><span class="quality-badge quality-' + t.quality + '">Q' + t.quality + '</span></span>' : '') + '</a>').join('');
+    const cards = list.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card" tabindex="0"><img src="' + esc(getTrinketImageUrl(t)) + '" alt="" class="item-card-icon" loading="lazy" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER_ICON + '\';" /><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta"><span class="quality-badge quality-' + t.quality + '">Q' + t.quality + '</span></span>' : '') + '</a>').join('');
     return '<div class="trinkets"><h1 class="trinkets-title">Trinkets</h1><span class="items-count">' + list.length + ' trinkets</span>' +
-      '<div class="items-toolbar"><input type="search" placeholder="Search trinkets\u2026" class="items-search" data-action="trinket-search" value="' + esc(currentTrinketSearch || '') + '" aria-label="Search trinkets" />' +
+      '<div class="items-toolbar"><input type="search" placeholder="Search trinkets or tags\u2026" class="items-search" data-action="trinket-search" value="' + esc(currentTrinketSearch || '') + '" aria-label="Search trinkets" />' +
       renderSortSelect('trinket-sort', currentTrinketSort) + '</div>' +
       '<div class="items-grid">' + cards + '</div>' + (list.length === 0 ? '<p class="items-empty">No trinkets match your search.</p>' : '') + '</div>';
   }
@@ -560,7 +546,7 @@
     // R11: breadcrumb
     return '<div class="item-detail"><a href="#/trinkets" class="item-detail-back">&larr; Trinkets</a>' +
       '<article class="item-detail-card" tabindex="-1">' +
-        '<img src="icons/trinkets/' + esc(id) + '.png" alt="" class="item-detail-icon" onerror="this.style.display=\'none\'" />' +
+        '<img src="' + esc(getTrinketImageUrl(trinket)) + '" alt="" class="item-detail-icon" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER_ICON + '\';" />' +
         '<h1 class="item-detail-name">' + esc(trinket.name) + '</h1>' +
         (trinket.quality != null ? '<p class="item-detail-meta">Quality ' + trinket.quality + '</p>' : '') +
         (trinket.description ? '<p class="item-detail-desc">' + esc(trinket.description) + '</p>' : '') +
@@ -740,8 +726,6 @@
       let rowDone = 0;
       MARK_BOSSES.forEach(b => { if (checked.has(b)) rowDone++; });
       const isComplete = rowDone === MARK_BOSSES.length;
-      const isTainted = (u.id || '').startsWith('tainted-');
-      const portraitId = isTainted ? u.id.replace('tainted-', '') : u.id;
 
       tbody += '<tr class="marks-row' + (isComplete ? ' marks-row-done' : '') + '">';
       tbody += '<td class="marks-char-cell"><div class="marks-char-inner"><img src="portraits/characters/' + esc(u.id) + '.png" alt="" class="marks-char-portrait" onerror="this.style.display=\'none\'" /><span class="marks-char-name">' + esc(u.characterName) + '</span></div></td>';
@@ -848,12 +832,12 @@
       currentTrinketSearch = e.target.value;
       clearTimeout(_trinketSearchDebounce);
       _trinketSearchDebounce = setTimeout(() => {
-        const q = (currentTrinketSearch || '').trim().toLowerCase();
-        const list = q ? state.trinkets.filter(t => (t.name && t.name.toLowerCase().includes(q)) || (t.description && t.description.toLowerCase().includes(q))) : state.trinkets;
+        const q = (currentTrinketSearch || '').trim();
+        const list = q ? searchTools.rankEntities(state.trinkets, q, { name: (t) => t.name, description: (t) => t.description, tags: (t) => t.tags || [] }) : state.trinkets;
         const grid = app.querySelector('.items-grid');
         const counter = app.querySelector('.items-count');
         if (grid) {
-          grid.innerHTML = list.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card" tabindex="0"><img src="icons/trinkets/' + esc(t.id) + '.png" alt="" class="item-card-icon" loading="lazy" onerror="this.style.display=\'none\'" /><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta">Q' + t.quality + '</span>' : '') + '</a>').join('');
+          grid.innerHTML = list.map(t => '<a href="#/trinkets/' + encodeURIComponent(t.id) + '" class="item-card" tabindex="0"><img src="' + esc(getTrinketImageUrl(t)) + '" alt="" class="item-card-icon" loading="lazy" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER_ICON + '\';" /><span class="item-card-name">' + esc(t.name) + '</span>' + (t.quality != null ? '<span class="item-card-meta">Q' + t.quality + '</span>' : '') + '</a>').join('');
           if (counter) counter.textContent = list.length + ' trinkets';
         }
       }, 150);
@@ -913,6 +897,18 @@
       render();
       return;
     }
+    const tagChip = e.target.closest('[data-action="tag-filter"]');
+    if (tagChip) {
+      const tag = tagChip.getAttribute('data-tag');
+      currentTag = currentTag === tag ? '' : tag;
+      render();
+      return;
+    }
+    if (e.target.closest('[data-action="tag-filter-clear"]')) {
+      currentTag = '';
+      render();
+      return;
+    }
   });
 
   app.addEventListener('error', e => {
@@ -965,6 +961,7 @@
     if (globalSearchEl) globalSearchEl.value = '';
     clearTimeout(_trinketSearchDebounce);
     if (getRoute().path !== 'trinkets') currentTrinketSearch = '';
+    if (getRoute().path !== 'items') currentTag = '';
   });
 
   // --- Keyboard shortcuts ---

@@ -1,0 +1,21 @@
+{
+  "name": "isaaccompanion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:fallback": "node scripts/build-fallback.js",
+    "sync:data": "node scripts/sync-platinumgod-data.mjs",
+    "check:data": "node scripts/check-data.js",
+    "lint": "eslint . --ext .js,.mjs",
+    "format": "prettier --check .",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "eslint": "^9.29.0",
+    "prettier": "^3.5.3"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.8"
+  }
+}

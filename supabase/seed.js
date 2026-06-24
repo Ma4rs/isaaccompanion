@@ -49,7 +49,9 @@ async function seedTrinkets() {
     id: t.id,
     name: t.name,
     description: t.description ?? null,
-    quality: t.quality ?? null
+    quality: t.quality ?? null,
+    icon_url: t.icon_url ?? t.iconUrl ?? null,
+    tags: t.tags ?? []
   }));
   const { error } = await supabase.from('ic_trinkets').upsert(trinkets, { onConflict: 'id' });
   if (error) throw new Error(`Trinkets: ${error.message}`);
@@ -146,6 +148,19 @@ async function seedTransformations() {
   console.log(`Seeded ${transformations.length} transformations with ${items.length} item mappings`);
 }
 
+async function seedSteamAchievementMap() {
+  const raw = readJson('data/steam-achievement-map.json');
+  await supabase.from('ic_steam_achievement_map').delete().neq('id', 0);
+  const { error } = await supabase.from('ic_steam_achievement_map').insert(raw.map((m) => ({
+    steam_achievement_name: m.steam_achievement_name,
+    target_type: m.target_type,
+    target_id: m.target_id,
+    target_value: m.target_value ?? null,
+  })));
+  if (error) throw new Error(`Steam achievement map: ${error.message}`);
+  console.log(`Seeded ${raw.length} steam achievement mappings`);
+}
+
 async function main() {
   console.log('Seeding Supabase database...');
   await seedItems();
@@ -154,6 +169,7 @@ async function main() {
   await seedUnlocks();
   await seedChallenges();
   await seedTransformations();
+  await seedSteamAchievementMap();
   console.log('Done!');
 }
 

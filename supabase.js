@@ -2,6 +2,8 @@
 (function () {
   'use strict';
 
+  // NOTE: The anon key is intentionally public in client apps.
+  // Access control is enforced by Supabase RLS policies.
   const SUPABASE_URL = window.ISAAC_SUPABASE_URL || 'https://misvptdgzbxhmujfumzn.supabase.co';
   const SUPABASE_ANON_KEY = window.ISAAC_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1pc3ZwdGRnemJ4aG11amZ1bXpuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE4MzkxMjQsImV4cCI6MjA4NzQxNTEyNH0.10dDK5z6EK8rH-divy9Ej98hccIHU7I4A488bDihj-0';
 
@@ -66,7 +68,14 @@
   async function fetchTrinkets() {
     const { data, error } = await sb.from('ic_trinkets').select('*');
     if (error) throw error;
-    return data || [];
+    return (data || []).map(t => ({
+      id: t.id,
+      name: t.name,
+      description: t.description,
+      quality: t.quality,
+      icon_url: t.icon_url,
+      tags: t.tags || []
+    }));
   }
 
   async function fetchPaths() {

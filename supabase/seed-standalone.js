@@ -83,7 +83,9 @@ async function seedTrinkets() {
   const trinkets = raw.map(t => ({
     id: t.id, name: t.name,
     description: t.description ?? null,
-    quality: t.quality ?? null
+    quality: t.quality ?? null,
+    icon_url: t.icon_url ?? t.iconUrl ?? null,
+    tags: t.tags ?? []
   }));
   await upsert('ic_trinkets', trinkets);
 }
@@ -182,6 +184,31 @@ async function seedTransformations() {
   console.log(`  ic_transformation_items: ${items.length} rows`);
 }
 
+async function seedSteamAchievementMap() {
+  const raw = readJson('data/steam-achievement-map.json');
+  await deleteAll('ic_steam_achievement_map');
+  const rows = raw.map((m) => ({
+    steam_achievement_name: m.steam_achievement_name,
+    target_type: m.target_type,
+    target_id: m.target_id,
+    target_value: m.target_value ?? null,
+  }));
+  const BATCH = 100;
+  for (let i = 0; i < rows.length; i += BATCH) {
+    const batch = rows.slice(i, i + BATCH);
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/ic_steam_achievement_map`, {
+      method: 'POST',
+      headers: { ...headers, 'Prefer': 'return=minimal' },
+      body: JSON.stringify(batch),
+    });
+    if (!res.ok) {
+      const body = await res.text();
+      throw new Error(`ic_steam_achievement_map batch: ${res.status} ${body}`);
+    }
+  }
+  console.log(`  ic_steam_achievement_map: ${rows.length} rows`);
+}
+
 async function main() {
   console.log('Seeding Supabase database...\n');
   await seedItems();
@@ -190,6 +217,7 @@ async function main() {
   await seedUnlocks();
   await seedChallenges();
   await seedTransformations();
+  await seedSteamAchievementMap();
   console.log('\nDone!');
 }
 
