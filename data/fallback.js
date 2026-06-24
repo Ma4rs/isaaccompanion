@@ -3,3356 +3,3245 @@ window.ISAAC_FALLBACK = {
     {
       "id": "1",
       "name": "The Sad Onion",
-      "description": "\"Tears up\" — Tears +0.7. A straightforward tears upgrade.",
-      "quality": 1,
+      "description": "+0.7 Tears Up",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Tears up",
+      "type": "Passive",
       "tags": [
         "tears up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_001.png"
+      ]
     },
     {
       "id": "2",
       "name": "The Inner Eye",
-      "description": "\"Triple shot\" — Grants triple shot. Tears down significantly. Three tears fire per shot in a spread pattern.",
-      "quality": 3,
+      "description": "Tears now shoot three at a time (Triple Shot) Tears Down significantly - Tears fired per second * 0.51",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Triple shot",
+      "type": "Passive, Tear Modifier",
       "tags": [
         "auge",
         "eye",
-        "feuer",
-        "fire",
+        "tears down",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_002.png"
+      ]
     },
     {
       "id": "3",
       "name": "Spoon Bender",
-      "description": "\"Homing shots\" — All tears gain homing, seeking out enemies. One of the best quality-of-life items.",
-      "quality": 2,
+      "description": "Gives Isaac's tears a homing effect",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Homing shots",
+      "type": "Passive",
       "tags": [
         "homing",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_003.png"
+      ]
     },
     {
       "id": "4",
       "name": "Cricket's Head",
-      "description": "\"DMG up\" — Damage x1.5 multiplier. One of the strongest damage items in the game.",
-      "quality": 3,
+      "description": "+0.5 Damage Up x1.5 times Damage Multiplier (Does not stack with the Magic Mushroom multiplier) Can be found in golden chests Cricket's Head used to be known as Max's Head in the original game and was renamed for Rebirth",
+      "quality": 4,
       "pool": "treasure",
       "quote": "DMG up",
+      "type": "Passive",
       "tags": [
         "dmg up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_004.png"
+      ]
     },
     {
       "id": "5",
       "name": "My Reflection",
-      "description": "\"Boomerang tears\" — Tears gain a boomerang effect, flying out and curving back. Range up, shot speed down. Tears can hit enemies multiple times.",
-      "quality": 1,
+      "description": "Gives tears a boomerang effect +1.5 Damage Up +0.6 Shot Speed Up -1 Luck Down Range Up (1.6x + 1.5)",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Boomerang tears",
+      "type": "Passive, Tear Modifier",
       "tags": [
-        "fliege",
-        "flight",
-        "fly",
+        "dmg up",
+        "luck",
         "range up",
         "shot speed",
+        "speed up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_005.png"
+      ]
     },
     {
       "id": "6",
       "name": "Number One",
-      "description": "\"Tears up\" — Tears +1.5, range down significantly. Extremely fast fire rate at the cost of short range.",
-      "quality": 1,
+      "description": "Gives you a very high tear rate in exchange for a big range down +1.5 Tears Up -2.5 Range Down",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Tears up",
+      "type": "Passive",
       "tags": [
-        "feuer",
-        "fire",
         "tears up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_006.png"
+      ]
     },
     {
       "id": "7",
       "name": "Blood of the Martyr",
-      "description": "\"DMG up\" — Damage +1.0. If you also have Book of Belial, grants an additional x1.5 damage multiplier.",
-      "quality": 2,
+      "description": "+1.0 Damage Up x1.5 times Damage Multiplier if you also have Book of Belial (Does not stack with Magic Mushroom or Cricket's Head multipliers)",
+      "quality": 3,
       "pool": "angel",
       "quote": "DMG up",
+      "type": "Passive",
       "tags": [
         "angel",
         "blood",
         "blut",
         "dmg up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_007.png"
+      ]
     },
     {
       "id": "8",
       "name": "Brother Bobby",
-      "description": "\"Friends 'till the end\" — Familiar that follows you and shoots normal tears dealing 3.5 damage per shot.",
+      "description": "A familiar which follows Isaac and shoots normal tears which do 3.5 damage Counts as 1 of 3 familiar items needed towards the Conjoined transformation",
       "quality": 1,
-      "pool": "treasure",
+      "pool": "devil",
       "quote": "Friends 'till the end",
+      "type": "Passive, Familiar",
       "tags": [
-        "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_008.png"
+        "devil",
+        "familiar"
+      ]
     },
     {
       "id": "9",
       "name": "Skatole",
-      "description": "\"Fly love\" — All fly enemies become friendly and won't attack you. Extremely rare from Shell Game.",
-      "quality": 1,
-      "pool": "boss",
+      "description": "A lot of fly enemies are no longer aggressive towards Isaac Attack Fly, Dart Fly, Eternal Fly, and Ring Fly are transformed into a neutral black fly Boom Fly, Red Boom Fly, Drowned Boom Fly move slower, but still deal contact damage Moter, Level 2 Fly, Full Fly, Pooter, and Super Pooter move slower and deal no contact damage Can only be obtained from the shell game in the arcade Counts as 1 of 3 fly items needed towards the Beelzebub transformation Counts as 1 of 3 poop items needed towards the Oh Crap transformation.",
+      "quality": 0,
+      "pool": "treasure",
       "quote": "Fly love",
+      "type": "Passive",
       "tags": [
-        "boss",
-        "fliege",
-        "fly"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_009.png"
+        "treasure"
+      ]
     },
     {
       "id": "10",
       "name": "Halo of Flies",
-      "description": "\"Fly protection\" — Two orbiting fly familiars that block enemy projectiles.",
-      "quality": 1,
+      "description": "Gives Isaac 2 orbital flies which block enemy shots Picking up this item as well as 2 other fly-type items will allow you to transform into Lord of the Flies Counts as 1 of 3 fly items needed towards the Beelzebub transformation",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Projectile protection",
+      "type": "Passive, Orbital",
       "tags": [
-        "familiar",
-        "fliege",
-        "fly",
+        "orbital",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_010.png"
+      ]
     },
     {
       "id": "11",
-      "name": "1up!",
-      "description": "\"Extra life\" — Grants an extra life. On death, respawn in the current room with full health. Part of the Fun Guy transformation.",
-      "quality": 3,
+      "name": "1UP",
+      "description": "Gives the player an extra life When revived, the green mushroom that follows Isaac will disappear and he will respawn with the same amount of red heart containers at full health Resurrection takes place before all other items which give you an extra life",
+      "quality": 2,
       "pool": "secret",
       "quote": "Extra life",
+      "type": "Passive",
       "tags": [
+        "heart",
+        "herz",
         "hp up",
         "secret"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_011.png"
+      ]
     },
     {
       "id": "12",
       "name": "Magic Mushroom",
-      "description": "\"All stats up\" — Damage x1.5, +0.3 damage, HP up, speed +0.3, range +5.25. Makes you bigger. One of the best items in the game.",
+      "description": "+1 HP Up +0.3 Damage Up x1.5 times Damage Multiplier (Does not stack with the multipliers from Cricket's Head / Blood of The Martyr + Book of Belial) +1.5 Range Up +0.3 Speed Up Increases the size of your player sprite, but doesn't increase the hitbox Fully restores all red heart containers Counts as 1 of 3 mushroom items needed towards the Fun Guy transformation Counts as 1 of 3 size-increasing items needed towards the Stompy transformation",
       "quality": 4,
       "pool": "treasure",
       "quote": "All stats up!",
+      "type": "Passive",
       "tags": [
+        "blood",
+        "blut",
+        "dmg up",
+        "heart",
+        "herz",
         "hp up",
+        "range up",
+        "speed up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_012.png"
+      ]
     },
     {
       "id": "13",
       "name": "The Virus",
-      "description": "\"Poison touch\" — Poison touch damage on contact with enemies. Speed -0.1. Counts toward Spun transformation.",
-      "quality": 1,
-      "pool": "devil",
+      "description": "Enemies touching you take 12 damage, then a poison effect is applied for 6-7 ticks, dealing damage equal to the amount of red hearts you have (up to 30.8 at 12 full red hearts) +0.2 Speed Up Has a chance to drop from the Lust miniboss fight Counts as 1 of 3 syringe items needed towards the Spun transformation",
+      "quality": 2,
+      "pool": "boss",
       "quote": "Poison touch",
+      "type": "Passive",
       "tags": [
-        "devil"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_013.png"
+        "boss",
+        "heart",
+        "herz",
+        "poison",
+        "speed up"
+      ]
     },
     {
       "id": "14",
       "name": "Roid Rage",
-      "description": "\"Speed and range up\" — Speed +0.6, range +5.25. A solid stat upgrade.",
+      "description": "+0.3 Speed Up +1.5 Range Up +0.5 Shot Height Counts as 1 of 3 syringe items needed towards the Spun transformation",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "boss",
       "quote": "Speed and range up",
+      "type": "Passive",
       "tags": [
+        "boss",
         "range up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_014.png"
+        "speed up"
+      ]
     },
     {
       "id": "15",
-      "name": "Heart",
-      "description": "\"HP up\" — Grants one full red heart container.",
+      "name": "<3",
+      "description": "+1 HP Up Fully restores all red heart containers Has a chance to drop from the Gluttony miniboss fight",
       "quality": 2,
       "pool": "boss",
       "quote": "HP up",
+      "type": "Passive",
       "tags": [
         "boss",
         "heart",
         "herz",
         "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_015.png"
+      ]
     },
     {
       "id": "16",
       "name": "Raw Liver",
-      "description": "\"HP up\" — Grants two red heart containers and fully heals.",
+      "description": "+2 Health Up Full red heart heal",
       "quality": 2,
-      "pool": "boss",
+      "pool": "secret",
       "quote": "HP up",
+      "type": "Passive",
       "tags": [
-        "boss",
         "heart",
         "herz",
-        "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_016.png"
+        "hp up",
+        "secret"
+      ]
     },
     {
       "id": "17",
       "name": "Skeleton Key",
-      "description": "\"99 keys\" — Grants 99 keys.",
-      "quality": 2,
+      "description": "Gives Isaac 99 Keys",
+      "quality": 3,
       "pool": "secret",
       "quote": "99 keys",
+      "type": "Passive",
       "tags": [
         "secret"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_017.png"
+      ]
     },
     {
       "id": "18",
       "name": "A Dollar",
-      "description": "\"$$$\" — Grants 99 coins.",
-      "quality": 2,
-      "pool": "secret",
+      "description": "Gives Isaac 100 coins Can drop from an exploding slot machine while playing it",
+      "quality": 3,
+      "pool": "treasure",
       "quote": "$$$",
+      "type": "Passive",
       "tags": [
-        "secret"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_018.png"
+        "treasure"
+      ]
     },
     {
       "id": "19",
       "name": "Boom!",
-      "description": "\"10 bombs\" — Grants 10 bombs.",
-      "quality": 1,
-      "pool": "boss",
+      "description": "+10 Bombs",
+      "quality": 0,
+      "pool": "treasure",
       "quote": "10 bombs",
+      "type": "Passive",
       "tags": [
         "bomb",
         "bombe",
-        "boss"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_019.png"
+        "treasure"
+      ]
     },
     {
       "id": "20",
       "name": "Transcendence",
-      "description": "\"We all float down here\" — Grants flight, letting you fly over obstacles, pits, and rocks.",
+      "description": "Gives Isaac the ability to fly",
       "quality": 3,
       "pool": "secret",
       "quote": "We all float down here...",
+      "type": "Passive",
       "tags": [
-        "fliege",
-        "flight",
-        "fly",
         "secret"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_020.png"
+      ]
     },
     {
       "id": "21",
       "name": "The Compass",
-      "description": "\"The end is near\" — Reveals all special room locations (boss, treasure, shop, etc.) on the map.",
-      "quality": 1,
-      "pool": "treasure",
+      "description": "Shows most icons on the map (Shops, Item Rooms, Boss Rooms etc.) Does not show the layout of the map Doesn't show the location of Secret or Super Secret rooms Room icons will not show if a Curse of the Lost is in effect on the current floor",
+      "quality": 2,
+      "pool": "shop",
       "quote": "The end is near",
+      "type": "Passive",
       "tags": [
-        "boss",
-        "shop",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_021.png"
+        "shop"
+      ]
     },
     {
       "id": "22",
       "name": "Lunch",
-      "description": "\"HP up\" — Grants one red heart container.",
+      "description": "+1 HP Up Heals one red heart container when picked up",
       "quality": 1,
       "pool": "boss",
       "quote": "HP up",
+      "type": "Passive",
       "tags": [
         "boss",
         "heart",
         "herz",
         "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_022.png"
+      ]
     },
     {
       "id": "23",
       "name": "Dinner",
-      "description": "\"HP up\" — Grants one red heart container.",
+      "description": "+1 HP Up Heals one red heart container when picked up",
       "quality": 1,
       "pool": "boss",
       "quote": "HP up",
+      "type": "Passive",
       "tags": [
         "boss",
         "heart",
         "herz",
         "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_023.png"
+      ]
     },
     {
       "id": "24",
       "name": "Dessert",
-      "description": "\"HP up\" — Grants one red heart container.",
+      "description": "+1 HP Up Heals one red heart container when picked up",
       "quality": 1,
       "pool": "boss",
       "quote": "HP up",
+      "type": "Passive",
       "tags": [
         "boss",
         "heart",
         "herz",
         "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_024.png"
+      ]
     },
     {
       "id": "25",
       "name": "Breakfast",
-      "description": "\"HP up\" — Grants one red heart container. Given when all other boss pool items are exhausted.",
+      "description": "+1 HP Up Heals one red heart container when picked up",
       "quality": 1,
       "pool": "boss",
       "quote": "HP up",
+      "type": "Passive",
       "tags": [
         "boss",
         "heart",
         "herz",
         "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_025.png"
+      ]
     },
     {
       "id": "26",
       "name": "Rotten Meat",
-      "description": "\"HP up\" — Grants one red heart container.",
+      "description": "+1 HP Up Heals one red heart container when picked up",
       "quality": 1,
       "pool": "boss",
       "quote": "HP up",
+      "type": "Passive",
       "tags": [
         "boss",
         "heart",
         "herz",
         "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_026.png"
+      ]
     },
     {
       "id": "27",
       "name": "Wooden Spoon",
-      "description": "\"Speed up\" — Speed +0.3.",
+      "description": "+0.3 Speed Up",
       "quality": 1,
       "pool": "boss",
       "quote": "Speed up",
+      "type": "Passive",
       "tags": [
         "boss",
         "speed up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_027.png"
+      ]
     },
     {
       "id": "28",
       "name": "The Belt",
-      "description": "\"Speed up\" — Speed +0.3.",
+      "description": "+0.3 Speed Up",
       "quality": 1,
       "pool": "boss",
       "quote": "Speed up",
+      "type": "Passive",
       "tags": [
         "boss",
         "speed up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_028.png"
+      ]
     },
     {
       "id": "29",
       "name": "Mom's Underwear",
-      "description": "\"Range up\" — Range +5.25.",
+      "description": "+1.5 Range Up Gives 3-6 blue attack flies when picked up Counts as 1 of 3 mom items needed towards the Mom transformation",
       "quality": 1,
       "pool": "boss",
       "quote": "Range Up",
+      "type": "Passive",
       "tags": [
         "boss",
         "range up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_029.png"
+      ]
     },
     {
       "id": "30",
       "name": "Mom's Heels",
-      "description": "\"Range up\" — Range +5.25.",
+      "description": "+1.5 Range Up Makes Isaac deal 12 contact damage per tick (24 damage per second) Counts as 1 of 3 mom items needed towards the Mom transformation",
       "quality": 1,
       "pool": "boss",
       "quote": "Range up",
+      "type": "Passive",
       "tags": [
         "boss",
         "range up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_030.png"
+      ]
     },
     {
       "id": "31",
       "name": "Mom's Lipstick",
-      "description": "\"Range up\" — Range +5.25. Counts toward Yes Mother? transformation.",
+      "description": "+2.25 Range Up Drops a random heart on the floor when picked up Counts as 1 of 3 mom items needed towards the Mom transformation",
       "quality": 1,
       "pool": "boss",
       "quote": "Range up",
+      "type": "Passive",
       "tags": [
         "boss",
+        "heart",
+        "herz",
         "range up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_031.png"
+      ]
     },
     {
       "id": "32",
       "name": "Wire Coat Hanger",
-      "description": "\"Tears up\" — Tears +0.7. A solid tears upgrade.",
-      "quality": 2,
-      "pool": "treasure",
+      "description": "+0.7 Tears Up",
+      "quality": 3,
+      "pool": "boss",
       "quote": "Tears up",
+      "type": "Passive",
       "tags": [
-        "tears up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_032.png"
+        "boss",
+        "tears up"
+      ]
     },
     {
       "id": "33",
       "name": "The Bible",
-      "description": "\"Temporary flight\" — Grants flight for the current room. Instantly kills Mom and Mom's Heart/It Lives. Kills you if used on Satan. Counts toward Seraphim and Bookworm transformations.",
-      "quality": 2,
+      "description": "Gives Isaac angel wings for the current room, allowing him to fly Instantly kills the Mom's Foot, Mom's Heart and It Lives boss fights If used during the Satan fight, The Bible will instantly kill Isaac Counts as 1 of 3 angel items needed towards the Seraphim transformation Counts as 1 of 3 book items needed towards the Bookworm transformation Recharge Time: 4 rooms",
+      "quality": 1,
       "pool": "angel",
       "quote": "Temporary flight",
+      "type": "Active",
       "tags": [
         "angel",
         "flight",
         "heart",
         "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_033.png"
+      ]
     },
     {
       "id": "34",
       "name": "The Book of Belial",
-      "description": "\"Temporary DMG up\" — Damage +2 for the current room. Guarantees a Devil Room if used during the boss fight. Counts toward Bookworm and Leviathan transformations.",
-      "quality": 3,
+      "description": "Upon use, gives +2 damage up which lasts for the current room x1.5 times Damage Multiplier if you also have Blood of the Martyr (Does not stack with Magic Mushroom or Cricket's Head multipliers) Increases your chances of getting a devil/angel room by +12.5% Judas starts with this item Additional uses in the same room or combined with The Devil XV give +1 damage per use Counts as 1 of 3 book items needed towards the Bookworm transformation Recharge Time: 3 rooms",
+      "quality": 2,
       "pool": "devil",
       "quote": "Temporary DMG up",
+      "type": "Active",
       "tags": [
-        "boss",
+        "blood",
+        "blut",
         "devil",
         "dmg up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_034.png"
+      ]
     },
     {
       "id": "35",
       "name": "The Necronomicon",
-      "description": "\"Mass room damage\" — Deals 40 damage to all enemies in the room. Counts toward Bookworm transformation.",
-      "quality": 2,
+      "description": "Deals 40 damage to everything in the room when used Counts as 1 of 3 book items needed towards the Bookworm transformation Recharge Time: 3 rooms",
+      "quality": 1,
       "pool": "devil",
       "quote": "Mass room damage",
+      "type": "Active",
       "tags": [
         "devil"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_035.png"
+      ]
     },
     {
       "id": "36",
       "name": "The Poop",
-      "description": "\"Plop!\" — Spawns a poop. Can block enemy shots and rarely drops pickups when destroyed.",
+      "description": "Drops a poop on the floor Blue Baby starts with this item Can be placed next to a pit and exploded to make a bridge Can be placed over a broken red poop to overwrite it, causing it to no longer regenerate Counts as 1 of 3 poop items needed towards the Oh Crap transformation Recharge Time: 1 room",
       "quality": 0,
       "pool": "treasure",
       "quote": "Plop!",
+      "type": "Active",
       "tags": [
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_036.png"
+      ]
     },
     {
       "id": "37",
       "name": "Mr. Boom",
-      "description": "\"Reusable bomb\" — Places a large bomb at your feet dealing 110 damage.",
+      "description": "Drops a large bomb below the player which does 185 damage Compatible with bomb modifiers, such as Glitter Bombs, Sticky Bombs etc Has a chance to drop from the Wrath miniboss fight Recharge Time: 2 rooms",
       "quality": 1,
-      "pool": "treasure",
+      "pool": "boss",
       "quote": "Reusable bomb buddy",
+      "type": "Active",
       "tags": [
         "bomb",
         "bombe",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_037.png"
+        "boss"
+      ]
     },
     {
       "id": "38",
       "name": "Tammy's Head",
-      "description": "\"Reusable tear burst\" — Shoots 10 tears in all directions from your position. Tears inherit your tear effects and deal your current damage.",
-      "quality": 3,
+      "description": "Fires 10 tears in a circle around Isaac Each tear is equal to your damage stat + 25 flat damage The tears spawned from Tammy's Head retain tear effects of Isaac's tears, such as poison or homing Recharge Time: 1 room",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Reusable tear burst",
+      "type": "Active",
       "tags": [
+        "homing",
+        "poison",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_038.png"
+      ]
     },
     {
       "id": "39",
       "name": "Mom's Bra",
-      "description": "\"Mass petrify\" — Petrifies all enemies in the room for ~4 seconds. Counts toward Yes Mother? transformation.",
+      "description": "When used, freezes all enemies in the current room for about 4 seconds Counts as 1 of 3 mom items needed towards the Mom transformation Recharge Time: 3 rooms",
       "quality": 1,
-      "pool": "boss",
+      "pool": "treasure",
       "quote": "Mass fear",
+      "type": "Active",
       "tags": [
-        "boss"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_039.png"
+        "freeze",
+        "treasure"
+      ]
     },
     {
       "id": "40",
-      "name": "Kamikaze!",
-      "description": "\"Become the bomb\" — Creates an explosion at your position dealing 185 damage. Costs half a heart per use.",
+      "name": "Kamikaze",
+      "description": "Causes an explosion near Isaac which takes away half a heart and does 40 damage all enemies in close proximity Does not reduce your devil/angel room chances when used Recharge Time: Instant",
       "quality": 0,
       "pool": "treasure",
       "quote": "Become the bomb!",
+      "type": "Active",
       "tags": [
         "bomb",
         "bombe",
         "heart",
         "herz",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_040.png"
+      ]
     },
     {
       "id": "41",
       "name": "Mom's Pad",
-      "description": "\"Mass fear\" — Fears all enemies in the room for 5 seconds. Counts toward Yes Mother? transformation.",
-      "quality": 1,
-      "pool": "boss",
+      "description": "When used, causes all enemies in the current room to run away from Isaac in fear for 5 seconds Spawns 1 blue attack fly per use Counts as 1 of 3 mom items needed towards the Mom transformation Recharge Time: 2 rooms",
+      "quality": 0,
+      "pool": "treasure",
       "quote": "Gross...",
+      "type": "Active",
       "tags": [
-        "boss"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_041.png"
+        "treasure"
+      ]
     },
     {
       "id": "42",
       "name": "Bob's Rotten Head",
-      "description": "\"Reusable ranged bomb\" — Throwable bomb familiar that deals 185 damage and leaves a poison cloud. Counts toward Bob transformation.",
-      "quality": 2,
-      "pool": "treasure",
+      "description": "A poison bomb which can be thrown and leaves a poison effect on any enemies within the blast radius. It also leaves a gas cloud at the place where it exploded The bomb deals 185 damage + your tear damage on hit and leaves a damage over time poison effect that does 3 times your tear damage per tick Synergizes with tear modifying items such as My Reflection or Tiny Planet Has a chance to drop from the Sloth miniboss fight Counts as 1 of 3 poison items needed towards the Bob transformation Recharge Time: 2 rooms",
+      "quality": 1,
+      "pool": "boss",
       "quote": "Reusable ranged bomb",
+      "type": "Active",
       "tags": [
         "bomb",
         "bombe",
-        "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_042.png"
+        "boss",
+        "poison"
+      ]
     },
     {
       "id": "44",
-      "name": "Lucky Foot",
-      "description": "\"Luck up\" — Luck +1. Better outcomes from Fortune Telling Machines, Shell Game, and pills (no negative pill effects).",
-      "quality": 2,
-      "pool": "boss",
+      "name": "Teleport",
+      "description": "Teleports Isaac to a random location on the map Can't be used to teleport to the I AM ERROR room Recharge Time: 2 rooms",
+      "quality": 0,
+      "pool": "treasure",
       "quote": "Teleport!",
+      "type": "Active",
       "tags": [
-        "boss",
-        "luck",
-        "pill",
-        "pille"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_044.png"
+        "treasure"
+      ]
     },
     {
       "id": "45",
-      "name": "Doctor's Remote",
-      "description": "\"Targeted airstrike\" — Creates a crosshair that you can move with fire buttons. Calls a missile strike dealing 20x your damage.",
-      "quality": 3,
-      "pool": "treasure",
+      "name": "Yum Heart",
+      "description": "Heals Isaac for one whole red heart Maggy starts with this item When used as the Keeper, one coin HP is restored Has a chance to drop from the Super Lust miniboss fight Recharge Time: 4 rooms",
+      "quality": 1,
+      "pool": "boss",
       "quote": "Reusable regeneration",
+      "type": "Active",
       "tags": [
-        "feuer",
-        "fire",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_045.png"
+        "boss",
+        "heart",
+        "herz"
+      ]
     },
     {
       "id": "46",
-      "name": "Cupid's Arrow",
-      "description": "\"Piercing shots\" — All tears gain piercing, passing through enemies.",
+      "name": "Lucky Foot",
+      "description": "+1.0 Luck Up Better chance to win while gambling at the Shell Game and Fortune Telling Machine Higher chance to get a random drop after clearing a room Converts all negative pills into their positive counterparts. Doesn't affect neutral ones and pills remain unidentified",
       "quality": 2,
       "pool": "treasure",
       "quote": "Luck up",
+      "type": "Passive",
       "tags": [
         "luck",
-        "piercing",
+        "pill",
+        "pille",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_046.png"
+      ]
     },
     {
       "id": "47",
-      "name": "Shoop da Whoop!",
-      "description": "\"BLARGH!\" — Fires a large laser beam in the direction you're shooting for 4 seconds.",
+      "name": "Doctor's Remote",
+      "description": "A target is placed on the floor which can be controlled. After a few seconds a huge missile hits the target and deals 20x your tear damage to anything nearby Essentially a one-time use of the Epic Fetus item Recharge Time: 2 rooms",
       "quality": 1,
       "pool": "treasure",
       "quote": "Reusable air strike",
+      "type": "Active",
       "tags": [
-        "feuer",
-        "fire",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_047.png"
+      ]
     },
     {
       "id": "48",
-      "name": "Steven",
-      "description": "\"DMG up\" — Damage +1.0.",
-      "quality": 2,
-      "pool": "boss",
+      "name": "Cupid's Arrow",
+      "description": "Isaac's tears now have a piercing effect which allows them to travel through enemies instead of breaking on hit",
+      "quality": 3,
+      "pool": "treasure",
       "quote": "Piercing shots",
+      "type": "Passive",
       "tags": [
-        "boss",
-        "dmg up",
-        "piercing"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_048.png"
+        "piercing",
+        "treasure"
+      ]
     },
     {
       "id": "49",
-      "name": "Pentagram",
-      "description": "\"DMG up\" — Damage +1.0. Increases Devil Room chance by 10%. Counts toward Leviathan transformation.",
+      "name": "Shoop Da Whoop!",
+      "description": "When used, fires a high damage laser in a straight line across the room in a similar way to Brimstone The laser deals damage equal to double your tear damage. The laser hits up to 13 times if an enemy stays inside it for the duration Has a chance to drop from the Envy and Super Envy miniboss fights Recharge Time: 2 rooms",
       "quality": 2,
-      "pool": "devil",
+      "pool": "boss",
       "quote": "BLLLARRRRGGG!",
+      "type": "Active",
       "tags": [
-        "devil",
-        "dmg up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_049.png"
+        "boss",
+        "laser"
+      ]
     },
     {
       "id": "50",
-      "name": "Dr. Fetus",
-      "description": "\"Bomb tears\" — Tears are replaced with bombs that deal 60 damage. Bombs inherit some tear effects. -0.4 fire delay.",
+      "name": "Steven",
+      "description": "+1 Damage Up Can only be dropped by the Steven boss",
       "quality": 3,
-      "pool": "treasure",
+      "pool": "boss",
       "quote": "DMG up",
+      "type": "Passive",
       "tags": [
-        "bomb",
-        "bombe",
-        "dmg up",
-        "feuer",
-        "fire",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_050.png"
+        "boss",
+        "dmg up"
+      ]
     },
     {
       "id": "51",
-      "name": "Magneto",
-      "description": "\"Item attraction\" — Pulls nearby pickups toward you from a moderate range.",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Pentagram",
+      "description": "+1.0 Damage Up +10% chance of a devil/angel room opening while held A second Pentagram will give an extra +5% chance Counts as 1 of 3 evil items needed towards the Leviathan transformation",
+      "quality": 3,
+      "pool": "devil",
       "quote": "DMG up",
+      "type": "Passive",
       "tags": [
-        "dmg up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_051.png"
+        "devil",
+        "dmg up"
+      ]
     },
     {
       "id": "52",
-      "name": "Treasure Map",
-      "description": "\"Full floor map\" — Reveals the entire floor layout, showing all rooms but not their types.",
-      "quality": 1,
-      "pool": "shop",
+      "name": "Dr. Fetus",
+      "description": "Instead of tears, Isaac now shoots bombs from his eyes, which explode dealing damage to anything nearby Bomb damage = damage * 10 Tears Down (Tear delay * 2.5) Bombs will also synergize with other bomb items and tear modifiers, including Sad Bombs, Mr. Mega and many more Bombs grow larger or smaller with tear size modifiers and are immune to knockback from their own explosions",
+      "quality": 4,
+      "pool": "treasure",
       "quote": "???",
+      "type": "Passive, Tear Modifier",
       "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_052.png"
+        "auge",
+        "bomb",
+        "bombe",
+        "eye",
+        "tears down",
+        "treasure"
+      ]
     },
     {
       "id": "53",
-      "name": "Mom's Eye",
-      "description": "\"Rear shot chance\" — 50% chance to fire an extra tear from the back of your head. Counts toward Yes Mother? transformation.",
+      "name": "Magneto",
+      "description": "Causes pickups on the floor move towards the player Works across pits, but not through Key blocks Chests up to 2 tiles away from Isaac open automatically. Spiked chests are opened without damaging Isaac. Locked chests and stone chests are not opened and still require a key/bomb",
       "quality": 1,
       "pool": "treasure",
       "quote": "Item snatcher",
+      "type": "Passive",
       "tags": [
-        "auge",
-        "eye",
-        "feuer",
-        "fire",
+        "bomb",
+        "bombe",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_053.png"
+      ]
     },
     {
       "id": "54",
-      "name": "Lemon Mishap",
-      "description": "\"Lemon party\" — Creates a large lemon puddle that deals 24 damage per tick to enemies standing in it.",
-      "quality": 0,
-      "pool": "treasure",
+      "name": "Treasure Map",
+      "description": "Reveals the entire map for every floor except the secret room locations Does not show the icons for any unexplored rooms Can still help you to guess which direction the boss room is in, due to the fact that the Boss Room is usually in the room furthest away from the first room",
+      "quality": 2,
+      "pool": "shop",
       "quote": "Full visible map",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_054.png"
+        "shop"
+      ]
     },
     {
       "id": "55",
-      "name": "Distant Admiration",
-      "description": "\"Attack fly\" — Orbital fly that circles far from you, dealing 75 damage per tick on contact with enemies.",
+      "name": "Mom's Eye",
+      "description": "Isaac has a random chance to fire another tear out the back of his head The chance to fire the second tear can improve based on your luck stat and will always activate at +5 Luck At +0 luck theres a ~50% chance for this effect to activate Synergizes very well with a lot of items. If used with Brimstone you have a 100% chance to fire a laser out the back of your head Counts as 1 of 3 mom items needed towards the Mom transformation",
       "quality": 1,
       "pool": "treasure",
       "quote": "Eye in the back of your head",
+      "type": "Passive, Tear Modifier",
       "tags": [
         "auge",
         "eye",
-        "fliege",
-        "fly",
-        "orbital",
+        "laser",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_055.png"
+      ]
     },
     {
       "id": "56",
-      "name": "Book of Shadows",
-      "description": "\"Temporary invincibility\" — Grants invincibility for 10 seconds. Counts toward Bookworm transformation.",
-      "quality": 2,
+      "name": "Lemon Mishap",
+      "description": "When used, drops a pool of 'lemonade' on the floor which damages any enemies that come into contact with it for 8 damage per tick Recharge Time: 2 rooms",
+      "quality": 0,
       "pool": "treasure",
       "quote": "Oops...",
+      "type": "Active",
       "tags": [
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_056.png"
+      ]
     },
     {
       "id": "57",
-      "name": "The Ladder",
-      "description": "\"Bridge builder\" — Allows you to walk over single-tile gaps by placing a bridge automatically.",
+      "name": "Distant Admiration",
+      "description": "Gives Isaac an orbiting fly which deals 5 contact damage to enemies per tick Counts as 1 of 3 fly items needed towards the Beelzebub transformation",
       "quality": 2,
-      "pool": "shop",
+      "pool": "treasure",
       "quote": "Attack fly",
+      "type": "Passive, Orbital",
       "tags": [
-        "fliege",
-        "fly",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_057.png"
+        "treasure"
+      ]
     },
     {
       "id": "58",
-      "name": "Charm of the Vampire",
-      "description": "\"Healing on kills\" — Heal half a red heart for every 13 enemies killed.",
-      "quality": 2,
-      "pool": "devil",
+      "name": "Book of Shadows",
+      "description": "Gives the player an invulnerability effect which lasts for a 10 seconds Can be used to get free hits on the Blood Donation machines and Devil Beggars Counts as 1 of 3 book items needed towards the Bookworm transformation Recharge Time: 3 rooms",
+      "quality": 3,
+      "pool": "library",
       "quote": "Temporary invincibility",
+      "type": "Active",
       "tags": [
-        "devil",
-        "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_058.png"
+        "blood",
+        "blut",
+        "library",
+        "shield"
+      ]
     },
     {
       "id": "60",
-      "name": "Steam Sale",
-      "description": "\"50% off\" — All shop items cost 50% less. Stacking two makes shop items free.",
-      "quality": 3,
+      "name": "The Ladder",
+      "description": "Allows Isaac to walk over gaps with a width of one tile",
+      "quality": 1,
       "pool": "shop",
       "quote": "Building bridges",
+      "type": "Passive",
       "tags": [
         "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_060.png"
+      ]
     },
     {
       "id": "62",
-      "name": "Technology",
-      "description": "\"Laser tears\" — Tears are replaced with a constant laser beam. The laser is piercing.",
-      "quality": 3,
+      "name": "Charm of the Vampire",
+      "description": "+0.3 Damage Up Heals half a heart after every 13 enemies killed Works with the Keeper for restoring coin HP",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Kills heal",
+      "type": "Passive",
       "tags": [
-        "piercing",
+        "dmg up",
+        "heart",
+        "herz",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_062.png"
+      ]
     },
     {
       "id": "63",
-      "name": "Technology 2",
-      "description": "\"Continuous laser\" — Fires a constant laser from one eye while the other fires normal tears. The laser deals 1/3 of your damage per tick.",
+      "name": "The Battery",
+      "description": "All spacebar items can now be 'overcharged', allowing them to be charged up twice instead of once The extra charges appear in yellow on top of the normal green bars This item works with self-recharging items",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "shop",
       "quote": "Stores energy",
+      "type": "Passive",
       "tags": [
-        "auge",
-        "eye",
-        "feuer",
-        "fire",
-        "shop",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_063.png"
+        "shop"
+      ]
     },
     {
       "id": "64",
-      "name": "Mutant Spider",
-      "description": "\"Quad shot\" — Fires 4 tears per shot in a spread. Tears stat greatly reduced. Very high damage per volley.",
-      "quality": 4,
-      "pool": "treasure",
+      "name": "Steam Sale",
+      "description": "Items in the shop are now -50% off 15c items are reduced to 7c. 5c pickups become 3c. 3c pickups become 2c Taking more than 1 steam sale reduces the price of all items even further This item is called Steamy Sale on PS4, PS Vita, Xbox One and Switch versions, probably due to copyright reasons",
+      "quality": 2,
+      "pool": "shop",
       "quote": "50% off",
+      "type": "Passive",
       "tags": [
-        "feuer",
-        "fire",
-        "spider",
-        "spinne",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_064.png"
+        "shop"
+      ]
     },
     {
       "id": "65",
-      "name": "Polyphemus",
-      "description": "\"Mega tears\" — Damage +4, damage x2 multiplier. Fire rate significantly reduced. Tears that kill an enemy continue with remaining damage. One of the best damage items.",
-      "quality": 4,
-      "pool": "treasure",
-      "synergies": [
-        {
-          "item": "Sacred Heart",
-          "effect": "Massive homing tears with insane damage"
-        },
-        {
-          "item": "Cricket's Head",
-          "effect": "Stacking multipliers for huge single tears"
-        },
-        {
-          "item": "Brimstone",
-          "effect": "Very high damage Brimstone beam"
-        },
-        {
-          "item": "20/20",
-          "effect": "Two massive tears per shot"
-        }
-      ],
+      "name": "Anarchist Cookbook",
+      "description": "Spawns 6 troll bombs at random locations around the room Bombs are effected by other passive bomb items Has a chance to drop from the Pride miniboss fight Counts as 1 of 3 book items needed towards the Bookworm transformation Recharge Time: 3 rooms",
+      "quality": 1,
+      "pool": "boss",
       "quote": "Summon bombs",
+      "type": "Active",
       "tags": [
         "bomb",
         "bombe",
-        "feuer",
-        "fire",
-        "tears up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_065.png"
+        "boss"
+      ]
     },
     {
       "id": "66",
-      "name": "Proptosis",
-      "description": "\"Short range mega tears\" — Damage x3 at point blank range, decreasing with distance. At max range tears deal almost no damage.",
-      "quality": 4,
+      "name": "The Hourglass",
+      "description": "When used, slows down all enemies in the current room and their projectiles for about 8 seconds Recharge Time: 2 rooms",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Temporary enemy slowdown",
+      "type": "Active",
       "tags": [
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_066.png"
+      ]
     },
     {
       "id": "67",
-      "name": "20/20",
-      "description": "\"Double shot\" — Fires two tears at once with no stat penalty. Effectively doubles your DPS.",
-      "quality": 3,
-      "pool": "treasure",
+      "name": "Sister Maggy",
+      "description": "A familiar which follows Isaac around and shoots blood tears that deal 5 damage The tears appear red but have no additional damage Sister Maggy fires tears at a rate of 1 tear per second Counts as 1 of 3 familiar items needed towards the Conjoined transformation",
+      "quality": 1,
+      "pool": "devil",
       "quote": "Friends 'till the end",
+      "type": "Passive, Familiar",
       "tags": [
-        "feuer",
-        "fire",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_067.png"
+        "blood",
+        "blut",
+        "devil",
+        "familiar"
+      ]
     },
     {
       "id": "68",
-      "name": "Chocolate Milk",
-      "description": "\"Charge shots\" — Tears can be charged for more damage. Quick-tapping fires rapid low-damage shots. Fully charged = 4x damage.",
+      "name": "Technology",
+      "description": "Isaac's tears are replaced with a laser that has unlimited range and can only fire at right angles Lasers travel through enemies but not obstacles in the room Synergizes with most items that affect how many tears you fire (20/20, Mutant Spider etc.) or the path they take (My Reflection, Tiny Planet etc.)",
       "quality": 3,
       "pool": "treasure",
       "quote": "Laser tears",
+      "type": "Passive, Tear Modifier",
       "tags": [
-        "feuer",
-        "fire",
+        "laser",
+        "spider",
+        "spinne",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_068.png"
+      ]
     },
     {
       "id": "69",
-      "name": "The Mark",
-      "description": "\"DMG + speed up\" — Damage +1.0, speed +0.2. Grants one soul heart. Counts toward Leviathan transformation.",
-      "quality": 2,
-      "pool": "devil",
+      "name": "Chocolate Milk",
+      "description": "Isaac can now charge shots for more damage by holding down the fire button At full charge, your tears do 4 times more damage Tears fired at the minimum possible charge do roughly 1/3 of your normal damage You can spam the fire button to rapid fire, however the overall damage per second will be low Tears down: Delay * 2.5",
+      "quality": 3,
+      "pool": "treasure",
       "quote": "Charge shots",
+      "type": "Passive, Tear Modifier",
       "tags": [
-        "devil",
-        "heart",
-        "herz",
-        "speed up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_069.png"
+        "tears down",
+        "treasure"
+      ]
     },
     {
       "id": "70",
-      "name": "The Pact",
-      "description": "\"DMG + tears up\" — Damage +0.5, tears +0.7. Grants two soul hearts. Counts toward Leviathan transformation.",
+      "name": "Growth Hormones",
+      "description": "+1.0 Damage Up +0.2 Speed Up Counts as 1 of 3 syringe items needed towards the Spun transformation",
       "quality": 3,
-      "pool": "devil",
+      "pool": "boss",
       "quote": "DMG up + speed up",
+      "type": "Passive",
       "tags": [
-        "devil",
+        "boss",
         "dmg up",
-        "heart",
-        "herz",
-        "speed up",
-        "tears up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_070.png"
+        "speed up"
+      ]
     },
     {
       "id": "71",
-      "name": "Dead Cat",
-      "description": "\"9 lives\" — Grants 9 extra lives. On death, respawn with 1 red heart container (all others removed). Counts toward Guppy transformation.",
+      "name": "Mini Mush",
+      "description": "+0.3 Speed Up +1.5 Range Up Causes Isaac to shrink in size (including hitbox slightly) Can be dropped when exploding mushrooms in the environment that are usually found in the Caves/Catacombs and in secret rooms Counts as 1 of 3 mushroom items needed towards the Fun Guy transformation",
       "quality": 2,
-      "pool": "devil",
-      "synergies": [
-        {
-          "item": "Guppy's Head",
-          "effect": "Counts toward Guppy transformation (need 3 total)"
-        },
-        {
-          "item": "Guppy's Paw",
-          "effect": "2/3 Guppy items, one more completes transformation"
-        },
-        {
-          "item": "Guppy's Tail",
-          "effect": "Combined with any other Guppy item = Guppy transformation"
-        }
-      ],
+      "pool": "treasure",
       "quote": "Speed + range up",
+      "type": "Passive",
       "tags": [
-        "devil",
-        "heart",
-        "herz",
-        "hp up",
-        "range up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_071.png"
+        "range up",
+        "speed up",
+        "treasure"
+      ]
     },
     {
       "id": "72",
-      "name": "Lord of the Pit",
-      "description": "\"Demon wings\" — Grants flight and speed +0.3. Counts toward Leviathan transformation.",
+      "name": "Rosary",
+      "description": "+3 Soul Hearts +0.5 Tears Up Adds several instances of The Bible item into all item pools Counts as 1 of 3 angel items needed towards the Seraphim transformation",
       "quality": 2,
-      "pool": "devil",
+      "pool": "angel",
       "quote": "Faith up",
+      "type": "Passive",
       "tags": [
-        "devil",
-        "flight"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_072.png"
+        "angel",
+        "heart",
+        "herz",
+        "tears up"
+      ]
     },
     {
       "id": "73",
-      "name": "The Nail",
-      "description": "\"Temporary power\" — On use: damage +0.7, grants half a soul heart, breaks rocks by walking. Counts toward Leviathan transformation.",
+      "name": "Cube of Meat",
+      "description": "An orbital which blocks shots and damages enemies it comes into contact with for 7 damage per tick Exclusively drops from one of the horsemen bosses 2 cubes of meat transform the orbital into a meat head which fires blood tears which deal 3.5 damage each 3 cubes of meat transform it into a meat boy familiar that walks around and deals 3.5 contact damage per tick to enemies 4 cubes of meat cause the meat boy familiar to grow in size and do 5.5 damage per tick instead Any further cubes of meat past 4 will start the cycle again",
       "quality": 2,
-      "pool": "devil",
+      "pool": "boss",
       "quote": "Gotta meat em all",
+      "type": "Passive",
       "tags": [
-        "devil",
-        "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_073.png"
+        "blood",
+        "blut",
+        "boss",
+        "familiar",
+        "orbital"
+      ]
     },
     {
       "id": "74",
-      "name": "Whore of Babylon",
-      "description": "\"Curse of the unknown\" — Activates at half a red heart or less (or as ???/any character with no red hearts): damage +1.5, speed +0.3. Counts toward Leviathan transformation.",
-      "quality": 2,
+      "name": "A Quarter",
+      "description": "+25 Coins Has a very small chance to drop after destroying one of the pots that appear in the Basement and Cellar floors Has a chance to drop from the Super Greed miniboss fight",
+      "quality": 0,
       "pool": "devil",
       "quote": "+25 coins",
+      "type": "Passive",
       "tags": [
-        "devil",
-        "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_074.png"
+        "devil"
+      ]
     },
     {
       "id": "75",
-      "name": "Abaddon",
-      "description": "\"Evil + DMG up\" — Damage +1.5, speed +0.2. Removes all red hearts, grants 6 black hearts. Adds fear to tears (10% chance). Counts toward Leviathan transformation.",
-      "quality": 3,
-      "pool": "devil",
+      "name": "PhD",
+      "description": "Converts most negative pills into their positive counterparts, e.g. Stat Down becomes Stat Up. Bad Trip becomes Balls of Steel. Amnesia becomes I Can See Forever etc Pills are identified before using them Drops one pill on pickup Heals for 2 full red hearts Adds 0-2 coins to the payout when you use a Blood Donation machine or IV Bag",
+      "quality": 2,
+      "pool": "shop",
       "quote": "Better pills",
+      "type": "Passive",
       "tags": [
-        "devil",
-        "dmg up",
+        "blood",
+        "blut",
         "heart",
         "herz",
         "pill",
-        "pille"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_075.png"
+        "pille",
+        "shop"
+      ]
     },
     {
       "id": "76",
-      "name": "Monstro's Lung",
-      "description": "\"Charged burst\" — Charge to fire a shotgun blast of tears. Charges in 2.5x normal attack rate. All tears in the burst deal your full damage.",
-      "quality": 3,
+      "name": "X-Ray Vision",
+      "description": "Reveals the entrance to secret rooms and automatically opens the hole, removing the need for bombs to enter",
+      "quality": 2,
       "pool": "treasure",
       "quote": "I've seen everything",
+      "type": "Passive",
       "tags": [
-        "feuer",
-        "fire",
+        "bomb",
+        "bombe",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_076.png"
+      ]
     },
     {
       "id": "77",
-      "name": "Ludo",
-      "description": "\"Controllable tear\" — Tears are replaced with a single large tear you control with fire buttons. Deals damage continuously on contact.",
-      "quality": 2,
+      "name": "My Little Unicorn",
+      "description": "Gives Isaac invincibility and +0.28 Speed for 6 seconds While active you cannot fire tears, but running into enemies will deal 40 contact damage per second Allows free hits on the Blood Donation machines and devil beggars Recharge Time: 4 rooms",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Temporary badass",
+      "type": "Active",
       "tags": [
-        "feuer",
-        "fire",
+        "blood",
+        "blut",
+        "shield",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_077.png"
+      ]
     },
     {
       "id": "78",
-      "name": "Ipecac",
-      "description": "\"Explosive tears\" — Tears become explosive arcing shots. +40 flat damage. Explosions deal 10 + 2x your damage. Poisons enemies. Self-damage from explosions is possible.",
+      "name": "Book of Revelations",
+      "description": "Upon use, gives Isaac an extra Soul heart Using this item gives you a higher chance of finding a horsemen boss at the end of the floor +17.5% chance of a Devil Deal opening after the boss fight Counts as 1 of 3 book items needed towards the Bookworm transformation Recharge Time: 6 rooms",
       "quality": 3,
-      "pool": "treasure",
-      "synergies": [
-        {
-          "item": "Pyromaniac",
-          "effect": "Self-healing from your own explosive tears"
-        },
-        {
-          "item": "Brimstone",
-          "effect": "Laser poisons and explodes on contact"
-        },
-        {
-          "item": "Dr. Fetus",
-          "effect": "Massive damage bombs (+40 flat damage)"
-        },
-        {
-          "item": "Host Hat",
-          "effect": "Explosion immunity prevents self-damage"
-        }
-      ],
+      "pool": "library",
       "quote": "Reusable soul protection",
+      "type": "Active",
       "tags": [
-        "bomb",
-        "bombe",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_078.png"
+        "heart",
+        "herz",
+        "library"
+      ]
     },
     {
       "id": "79",
-      "name": "Epic Fetus",
-      "description": "\"Guided missile\" — Tears are replaced with targeted missile strikes. A crosshair appears; missiles deal 20x your damage. One of the highest DPS items in the game.",
-      "quality": 4,
-      "pool": "treasure",
-      "synergies": [
-        {
-          "item": "Pyromaniac",
-          "effect": "Missile strikes heal you instead of hurting"
-        },
-        {
-          "item": "Sad Bombs",
-          "effect": "Missiles fire 10 tears on impact"
-        },
-        {
-          "item": "Brimstone Bombs",
-          "effect": "Missiles fire 4 Brimstone beams on impact"
-        }
-      ],
+      "name": "The Mark",
+      "description": "+1.0 Damage Up +0.2 Speed Up +1 Soul Heart Counts as 1 of 3 evil items needed towards the Leviathan transformation",
+      "quality": 3,
+      "pool": "devil",
       "quote": "DMG up",
+      "type": "Passive",
       "tags": [
+        "devil",
         "dmg up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_079.png"
+        "heart",
+        "herz",
+        "speed up"
+      ]
     },
     {
       "id": "80",
-      "name": "Tech.5",
-      "description": "\"Random laser\" — Randomly fires a piercing laser alongside your normal tears. The laser deals your damage per tick.",
+      "name": "The Pact",
+      "description": "+0.5 Damage Up +0.7 Tears Up +2 Black Hearts Counts as 1 of 3 evil items needed towards the Leviathan transformation",
       "quality": 3,
-      "pool": "treasure",
+      "pool": "devil",
       "quote": "DMG + tears up",
+      "type": "Passive",
       "tags": [
-        "feuer",
-        "fire",
-        "piercing",
-        "tears up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_080.png"
+        "devil",
+        "dmg up",
+        "heart",
+        "herz",
+        "tears up"
+      ]
     },
     {
       "id": "81",
-      "name": "Spirit of the Night",
-      "description": "\"Scary\" — Grants flight and spectral tears (tears pass through obstacles). Counts toward Leviathan transformation.",
+      "name": "Dead Cat",
+      "description": "Isaac's health is set to 1 and he also gains 9 extra lives Each time Isaac dies, he will respawn with 1 Health Has a chance to drop from the Super Pride mini boss The floating Dead Cat head that follows you will disappear when you are on your last life (Very useful for The Lost) Counts as 1 of 3 cat items needed towards the Guppy transformation",
       "quality": 3,
       "pool": "devil",
       "quote": "9 lives",
+      "type": "Passive",
       "tags": [
-        "devil",
-        "flight",
-        "spectral"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_081.png"
+        "devil"
+      ]
     },
     {
       "id": "82",
-      "name": "Sacred Heart",
-      "description": "\"Homing + DMG up\" — Damage x2.3 multiplier, +1 flat damage. Tears gain homing. Grants one red heart container. Speed -0.4, tears -0.4. Despite the tears down, one of the best items in the game.",
-      "quality": 4,
-      "pool": "angel",
-      "synergies": [
-        {
-          "item": "Brimstone",
-          "effect": "Homing Brimstone beam with massive damage"
-        },
-        {
-          "item": "Polyphemus",
-          "effect": "Extremely high damage tears with homing"
-        },
-        {
-          "item": "Cricket's Head",
-          "effect": "Stacking damage multipliers (x2.3 + x1.5)"
-        },
-        {
-          "item": "Tech X",
-          "effect": "Homing laser rings"
-        }
-      ],
+      "name": "Lord of the Pit",
+      "description": "Gives Isaac demon wings and the ability to fly +0.3 Speed Up Counts as 1 of 3 evil items needed towards the Leviathan transformation.",
+      "quality": 3,
+      "pool": "devil",
       "quote": "Demon wings",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "dmg up",
-        "heart",
-        "herz",
-        "homing",
-        "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_082.png"
+        "devil",
+        "speed up"
+      ]
     },
     {
       "id": "83",
-      "name": "Godhead",
-      "description": "\"God tears\" — Damage x1.2 multiplier, +0.5 flat damage. Tears gain homing and a damaging aura that hurts enemies near the tear. Range -0.3, tears -0.3, shot speed -0.3. The aura makes it extremely powerful.",
-      "quality": 4,
-      "pool": "angel",
-      "synergies": [
-        {
-          "item": "Sacred Heart",
-          "effect": "Double homing + damaging aura (insane synergy)"
-        },
-        {
-          "item": "Brimstone",
-          "effect": "Laser with damaging aura on each tick"
-        },
-        {
-          "item": "Polyphemus",
-          "effect": "Large slow tears with massive aura"
-        }
-      ],
+      "name": "The Nail",
+      "description": "Each use of this item gives +0.7 Damage Up, -0.18 Speed Down and the ability to destroy most obstacles for the current room. Each use also gives half a black heart, however this is stays between rooms unlike the other effects Allows Isaac to deal 40 contact damage to enemies for the current room. Does not prevent Isaac from taking contact damage All the above effects are only active when the item is used for the current room Counts as 1 of 3 evil items needed towards the Leviathan transformation Recharge Time: 6 rooms",
+      "quality": 2,
+      "pool": "devil",
       "quote": "Temporary demon form",
+      "type": "Active",
       "tags": [
-        "angel",
-        "homing",
-        "shot speed"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_083.png"
+        "devil",
+        "dmg up",
+        "heart",
+        "herz"
+      ]
     },
     {
       "id": "84",
-      "name": "Revelation",
-      "description": "\"Awaken\" — Grants flight. Charging gives a holy Brimstone-like beam that deals 2x your damage per tick. Your normal tears still fire while charging. Grants 2 soul hearts.",
-      "quality": 4,
-      "pool": "angel",
+      "name": "We Need To Go Deeper",
+      "description": "Spawns a trapdoor at Isaac's feet which allows him to travel to the next floor Digging in certain spots with objects or markings on the floor will guarantee a crawlspace once per floor In Sheol, Cathedral, Chest and Dark Room this item either opens a Crawl Space, or does nothing Cannot spawn a trapdoor directly infront of a secret room entrance Can destroy rocks if used when Isaac is flying over a rock Recharge Time: 6 rooms",
+      "quality": 2,
+      "pool": "devil",
       "quote": "Reusable level skip",
+      "type": "Active",
       "tags": [
-        "angel",
-        "feuer",
-        "fire",
-        "flight",
-        "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_084.png"
+        "devil"
+      ]
     },
     {
       "id": "85",
-      "name": "Crown of Light",
-      "description": "\"DMG up when no damage taken\" — Damage x2 while you have no damaged hearts (full health). Grants 2 soul hearts. The damage bonus is lost when you take damage and returns when healed.",
-      "quality": 4,
-      "pool": "angel",
+      "name": "Deck of Cards",
+      "description": "Gives Isaac a random tarot card on use Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums Recharge Time: 6 rooms",
+      "quality": 2,
+      "pool": "shop",
       "quote": "Reusable card generator",
+      "type": "Active",
       "tags": [
-        "angel",
-        "dmg up",
-        "heart",
-        "herz",
-        "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_085.png"
+        "shop"
+      ]
     },
     {
       "id": "86",
-      "name": "Dead Dove",
-      "description": "\"Flight + spectral tears\" — Grants flight and spectral tears. A simple but very effective combination.",
-      "quality": 3,
-      "pool": "angel",
+      "name": "Monstro's Tooth",
+      "description": "When used, spawns a Monstro which will jump on a random enemy in the room, dealing 120 damage and destroying nearby obstacles Recharge Time: 3 rooms",
+      "quality": 1,
+      "pool": "treasure",
       "quote": "Summon monstro",
+      "type": "Active",
       "tags": [
-        "angel",
-        "flight",
-        "spectral"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_086.png"
+        "treasure"
+      ]
     },
     {
       "id": "87",
-      "name": "Holy Mantle",
-      "description": "\"Holy shield\" — Negates the first hit of damage per room. The shield recharges when entering a new room. Essential for The Lost.",
-      "quality": 4,
-      "pool": "angel",
+      "name": "Loki's Horns",
+      "description": "Everytime you fire a tear, there is a chance that you will also fire three more tears in all cardinal directions The chance to fire 4-way tears is affected by your luck stat and at +15 Luck it will activate every time At +0 luck the effect has a 30% chance to activate",
+      "quality": 1,
+      "pool": "treasure",
       "quote": "Cross tears",
+      "type": "Passive, Tear Modifier",
       "tags": [
-        "angel"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_087.png"
+        "treasure"
+      ]
     },
     {
       "id": "88",
-      "name": "Mitre",
-      "description": "\"Soul heart conversion\" — 33% chance that any red heart pickup is converted to a soul heart instead.",
+      "name": "Little Chubby",
+      "description": "A familiar that follows Isaac and charges forwards, dealing 3.5 damage per tick to any enemies it comes into contact with",
       "quality": 2,
-      "pool": "angel",
+      "pool": "treasure",
       "quote": "Attack buddy",
+      "type": "Passive, Familiar",
       "tags": [
-        "angel",
-        "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_088.png"
+        "familiar",
+        "treasure"
+      ]
     },
     {
       "id": "89",
-      "name": "Scapular",
-      "description": "\"Emergency soul heart\" — When you reach half a red heart, grants one soul heart. Only triggers once per room.",
+      "name": "Spider Bite",
+      "description": "Tears now have a chance of slowing enemies and their projectiles for 2.5 seconds The chance to slow enemies is affected by your luck stat and at +15 Luck it will activate every time",
       "quality": 2,
-      "pool": "angel",
+      "pool": "treasure",
       "quote": "Slow effect",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_089.png"
+        "spider",
+        "spinne",
+        "treasure"
+      ]
     },
     {
       "id": "90",
-      "name": "Guardian Angel",
-      "description": "\"Guardian orbital\" — Orbital angel that blocks enemy projectiles and deals contact damage. Speeds up all orbitals by 30%.",
-      "quality": 2,
-      "pool": "angel",
+      "name": "The Small Rock",
+      "description": "+1.0 Damage Up +0.2 Tears Up -0.2 Speed Down Has a chance to drop when exploding a tinted rock",
+      "quality": 3,
+      "pool": "treasure",
       "quote": "DMG up",
+      "type": "Passive",
       "tags": [
-        "angel",
         "dmg up",
-        "orbital"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_090.png"
+        "tears up",
+        "treasure"
+      ]
     },
     {
       "id": "91",
-      "name": "The Halo",
-      "description": "\"All stats up\" — Damage +0.3, tears +0.2, range +0.25, speed +0.3, HP up. A balanced stat upgrade. Counts toward Seraphim transformation.",
+      "name": "Spelunker Hat",
+      "description": "Reveals adjacent rooms up to 2 rooms away, this includes revealing if you're next to a Secret Room or Super Secret Rooms Gives Isaac a slight glow when Curse of Darkness is active Blocks damage from projectiles falling from above",
       "quality": 2,
-      "pool": "angel",
+      "pool": "treasure",
       "quote": "See-through doors",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_091.png"
+        "treasure"
+      ]
     },
     {
       "id": "92",
-      "name": "Fate",
-      "description": "\"Flight + eternal heart\" — Grants flight and one eternal heart.",
+      "name": "Super Bandage",
+      "description": "+1 HP Up +2 Soul Hearts Heals one red heart container when picked up",
       "quality": 2,
-      "pool": "angel",
+      "pool": "boss",
       "quote": "+2 hearts",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "flight",
+        "boss",
         "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_092.png"
+        "herz",
+        "hp up"
+      ]
     },
     {
       "id": "93",
-      "name": "Holy Grail",
-      "description": "\"Flight + HP up\" — Grants flight and one red heart container. Counts toward Seraphim transformation.",
-      "quality": 3,
-      "pool": "angel",
+      "name": "The Gamekid",
+      "description": "When used Isaac transforms into pacman, which makes him invincible for 6 seconds and does 40 contact damage to enemies per chomp Everytime you 'eat' 2 enemies, you regain 1/2 heart of red health You can't shoot tears while the effect is active Recharge Time: 4 rooms",
+      "quality": 1,
+      "pool": "treasure",
       "quote": "Temporary Man-Pac",
+      "type": "Active",
       "tags": [
-        "angel",
-        "flight",
         "heart",
         "herz",
-        "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_093.png"
+        "shield",
+        "treasure"
+      ]
     },
     {
       "id": "94",
-      "name": "Trisagion",
-      "description": "\"Holy beam tears\" — Tears become piercing white beams of light. They deal damage per tick as they pass through enemies. Reduced damage per tick but can hit multiple times.",
-      "quality": 3,
-      "pool": "angel",
+      "name": "Sack of Pennies",
+      "description": "A bag that floats around following Isaac and drops a random coin every 2 rooms",
+      "quality": 1,
+      "pool": "treasure",
       "quote": "Gives money",
+      "type": "Passive, Familiar",
       "tags": [
-        "angel",
-        "piercing"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_094.png"
+        "treasure"
+      ]
     },
     {
       "id": "95",
-      "name": "Act of Contrition",
-      "description": "\"Tears + Angel Room\" — Tears +0.7. Grants one eternal heart. Angel Rooms can now appear even after taking a Devil Deal.",
-      "quality": 2,
-      "pool": "angel",
+      "name": "Robo-Baby",
+      "description": "A familiar which follows Isaac and shoots lasers, similar to the Technology item Robo-Baby's laser is spectral and piercing (It will pass through rocks and objects in the environment) Robo-Baby's lasers deal 3.5 damage per hit Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
+      "quality": 1,
+      "pool": "treasure",
       "quote": "Friends till the bzzzttt",
+      "type": "Passive, Familiar",
       "tags": [
-        "angel",
-        "devil",
-        "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_095.png"
+        "familiar",
+        "laser",
+        "piercing",
+        "spectral",
+        "treasure"
+      ]
     },
     {
       "id": "96",
-      "name": "Genesis",
-      "description": "\"Fresh start\" — Teleports to a special bedroom. Removes all items and pickups. For each removed item, choose one of 3 items from that pool. Start the floor over.",
-      "quality": 4,
-      "pool": "angel",
+      "name": "Little C.H.A.D",
+      "description": "A familiar which follows Isaac and drops half a red heart every 3 rooms",
+      "quality": 2,
+      "pool": "boss",
       "quote": "Gives kisses",
+      "type": "Passive, Familiar",
       "tags": [
-        "angel"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_096.png"
+        "boss",
+        "familiar",
+        "heart",
+        "herz"
+      ]
     },
     {
       "id": "97",
-      "name": "Star of Bethlehem",
-      "description": "\"Guiding light\" — A star familiar slowly moves toward the Boss Room. While in the star's aura: damage x1.2, tears x1.2, +10% luck, +0.5 speed.",
-      "quality": 4,
-      "pool": "angel",
+      "name": "The Book of Sin",
+      "description": "Spawns a random pickup on the floor Any pickups are possible from this item, including Bombs, hearts, keys, coins, pills, batteries, tarot cards, runes etc Doesn't produce microbatteries, only regular sized ones and rarely golden/mega batteries Counts as 1 of 3 book items needed towards the Bookworm transformation Recharge Time: 4 rooms",
+      "quality": 2,
+      "pool": "devil",
       "quote": "Reusable item generator",
+      "type": "Active",
       "tags": [
-        "angel",
-        "boss",
-        "familiar",
-        "luck"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_097.png"
+        "bomb",
+        "bombe",
+        "devil",
+        "heart",
+        "herz",
+        "pill",
+        "pille"
+      ]
     },
     {
       "id": "98",
-      "name": "Incubus",
-      "description": "\"Demonic familiar\" — Familiar that fires tears identical to yours at your current fire rate and damage. One of the best familiars. Counts toward Conjoined transformation.",
-      "quality": 4,
-      "pool": "devil",
+      "name": "The Relic",
+      "description": "A blue cross that follows Isaac and drops a soul heart every 7 or 8 rooms",
+      "quality": 3,
+      "pool": "angel",
       "quote": "Soul generator",
+      "type": "Passive, Familiar",
       "tags": [
-        "devil",
-        "familiar",
-        "feuer",
-        "fire",
-        "tears up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_098.png"
+        "angel",
+        "heart",
+        "herz"
+      ]
     },
     {
       "id": "99",
-      "name": "Succubus",
-      "description": "\"Dark aura familiar\" — Familiar with a dark aura that damages enemies for 2x your damage per tick. Briefly increases your damage while standing in the aura.",
-      "quality": 3,
-      "pool": "devil",
+      "name": "Little Gish",
+      "description": "A familiar that follows Isaac and fires black tar tears, which slow enemy movement and projectile speed for a few seconds Little Gish's tears do 3.5 damage Little Gish fires tears at a rate of 1 tear per second A Guaranteed drop from the Gish boss fight",
+      "quality": 2,
+      "pool": "boss",
       "quote": "Sticky friend",
+      "type": "Passive, Familiar",
       "tags": [
-        "devil",
-        "familiar",
-        "fliege",
-        "fly"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_099.png"
+        "boss",
+        "familiar"
+      ]
     },
     {
       "id": "100",
-      "name": "Twisted Pair",
-      "description": "\"Duo familiar\" — Two familiar clones that fire tears in the same direction as you. Each deals 37.5% of your damage.",
-      "quality": 4,
-      "pool": "devil",
+      "name": "Little Steven",
+      "description": "A familiar that follows Isaac and fires homing tears that deal 3.5 damage each Has a high chance to drop from the Steven boss fight Little Steven fires tears at a rate of 1 tear per second with a slightly longer range than other familiars Counts as 1 of 3 familiar items needed towards the Conjoined transformation",
+      "quality": 2,
+      "pool": "boss",
       "quote": "Psychic friend",
+      "type": "Passive, Familiar",
       "tags": [
-        "devil",
+        "boss",
         "familiar",
-        "feuer",
-        "fire"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_100.png"
+        "homing"
+      ]
     },
     {
       "id": "101",
-      "name": "Lil Brimstone",
-      "description": "\"Mini Brimstone\" — Familiar that charges and fires a small Brimstone beam dealing 3.1 damage per tick.",
-      "quality": 3,
-      "pool": "devil",
+      "name": "The Halo",
+      "description": "+1 HP Up +0.3 Damage Up +0.2 Tears Up +0.38 Range Up +0.3 Speed Up Heals one red heart container when picked up Counts as 1 of 3 angel items needed towards the Seraphim transformation",
+      "quality": 2,
+      "pool": "angel",
       "quote": "All stats up",
+      "type": "Passive",
       "tags": [
-        "devil",
-        "familiar",
-        "feuer",
-        "fire"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_101.png"
+        "angel",
+        "dmg up",
+        "heart",
+        "herz",
+        "hp up",
+        "range up",
+        "speed up",
+        "tears up"
+      ]
     },
     {
       "id": "102",
-      "name": "Maw of the Void",
-      "description": "\"Void ring\" — After fully charging an attack for 2.35 seconds, release to fire a dark ring that damages all nearby enemies for 6x your damage. Counts toward Leviathan transformation.",
-      "quality": 3,
-      "pool": "devil",
+      "name": "Mom's Bottle of Pills",
+      "description": "When used, gives Isaac a random pill Counts as 1 of 3 mom items needed towards the Mom transformation Recharge Time: 6 rooms",
+      "quality": 1,
+      "pool": "shop",
       "quote": "Reusable pill generator",
+      "type": "Active",
       "tags": [
-        "devil",
-        "feuer",
-        "fire",
         "pill",
-        "pille"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_102.png"
+        "pille",
+        "shop"
+      ]
     },
     {
       "id": "103",
-      "name": "Mega Blast",
-      "description": "\"Giant laser\" — Fires a massive Brimstone beam for ~15 seconds that persists through rooms. The beam deals your damage per tick. One use per floor.",
-      "quality": 4,
-      "pool": "devil",
+      "name": "The Common Cold",
+      "description": "Tears now have a random chance to apply a poison effect, causing double your tear damage per tick to enemies over time The chance to fire poison shots is affected by your luck stat and at +12 Luck it will activate every time",
+      "quality": 1,
+      "pool": "treasure",
       "quote": "Poison damage",
+      "type": "Passive",
       "tags": [
-        "devil",
-        "feuer",
-        "fire"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_103.png"
+        "poison",
+        "treasure"
+      ]
     },
     {
       "id": "104",
-      "name": "Ceremonial Robes",
-      "description": "\"Sin up\" — Damage +3. Grants 3 black hearts.",
+      "name": "The Parasite",
+      "description": "Isaac's tears now split into two upon contact with enemies or the environment Tears that split off from the main tear do less damage (tear damage * 0.5) Tears can keep splitting if they still have range and damage above 1",
       "quality": 3,
-      "pool": "devil",
+      "pool": "treasure",
       "quote": "Split shot",
+      "type": "Passive",
       "tags": [
-        "devil",
-        "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_104.png"
+        "treasure"
+      ]
     },
     {
       "id": "105",
-      "name": "Eye of Belial",
-      "description": "\"Piercing + homing\" — Tears pierce through one enemy and then gain homing, increased damage, and a red glow. Counts toward Leviathan transformation.",
-      "quality": 3,
-      "pool": "devil",
+      "name": "The D6",
+      "description": "When used, replaces all pedestal items in the current room with another random item. Re-rolled items pick from the current room's item pool Isaac starts with this item after it is unlocked Recharge Time: 6 rooms",
+      "quality": 4,
+      "pool": "treasure",
       "quote": "Reroll your destiny",
+      "type": "Active",
       "tags": [
-        "auge",
-        "devil",
-        "eye",
-        "homing",
-        "piercing"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_105.png"
+        "treasure"
+      ]
     },
     {
       "id": "106",
-      "name": "Sulfur",
-      "description": "\"Temporary Brimstone\" — Active item: grants Brimstone for the current room.",
-      "quality": 3,
-      "pool": "devil",
+      "name": "Mr. Mega",
+      "description": "+5 Bombs Bombs now do 185 damage (up from 100) and have a larger blast radius Can be found in the secret room Has a chance to drop from the Super Wrath miniboss fight",
+      "quality": 2,
+      "pool": "boss",
       "quote": "Blast damage",
+      "type": "Passive",
       "tags": [
-        "devil"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_106.png"
+        "bomb",
+        "bombe",
+        "boss"
+      ]
     },
     {
       "id": "107",
-      "name": "Contract From Below",
-      "description": "\"Double rewards\" — Room rewards are doubled but there's a 1/3 chance of getting nothing. Stacks. Counts toward Leviathan transformation.",
+      "name": "Pinking Shears",
+      "description": "Cuts Isaac's head from his body for the current room, allowing him to fly and leaving the decapitated body to run around attacking enemies for 5.5 damage per tick Recharge Time: 4 rooms",
       "quality": 2,
-      "pool": "devil",
+      "pool": "treasure",
       "quote": "Cut and run",
+      "type": "Active",
       "tags": [
-        "devil"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_107.png"
+        "treasure"
+      ]
     },
     {
       "id": "108",
-      "name": "Death's Touch",
-      "description": "\"DMG + piercing\" — Damage +1.5, tears -0.3. Tears become large piercing scythes. Counts toward Leviathan transformation.",
+      "name": "The Wafer",
+      "description": "All damage taken is reduced to half a heart Damaged reduction is reduced from every source in the game except Devil Deals and health down pills Does not prevent death (i.e. Suicide King or using The Bible on Isaac, ??? or Satan) The Wafer becomes most effective in the Womb and beyond where enemies all deal a whole heart of damage The Wafer causes the Sharp Plug item to only cost 1/2 a heart per use Has no effect with the Keeper - there's no such thing as half a coin health point",
       "quality": 4,
-      "pool": "devil",
+      "pool": "angel",
       "quote": "Damage resistance",
+      "type": "Passive",
       "tags": [
-        "devil",
-        "piercing"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_108.png"
+        "angel",
+        "heart",
+        "herz",
+        "pill",
+        "pille"
+      ]
     },
     {
       "id": "109",
-      "name": "Dark Prince's Crown",
-      "description": "\"Conditional triple shot\" — At exactly 1 full red heart: tears +2.0, range +1.5, shot speed +0.2. Lost above 1 heart.",
-      "quality": 2,
+      "name": "Money = Power",
+      "description": "+0.04 Damage Up for every coin you currently have At 99 coins this item gives +3.96 Damage Up +0.04 per coin is the amount added before the damage formula is calculated, as this is the only way to show a consistent amount of damage given. You may see more or less than this on the Found HUD overlay, however this number varies based on your other damage increasing items",
+      "quality": 3,
       "pool": "devil",
       "quote": "$$$ = DMG",
+      "type": "Passive",
       "tags": [
         "devil",
-        "heart",
-        "herz",
-        "shot speed"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_109.png"
+        "dmg up"
+      ]
     },
     {
       "id": "110",
-      "name": "Guppy's Head",
-      "description": "\"Reusable fly swarm\" — Spawns 2-4 blue flies that attack enemies. Counts toward Guppy transformation.",
-      "quality": 2,
+      "name": "Mom's Contacts",
+      "description": "Tears now have a random chance to freeze enemies in place The chance to freeze enemies is affected by your luck stat +0.38 Range Up Chance to activate increases with luck, up to around 50% chance at +20 luck Counts as 1 of 3 mom items needed towards the Mom transformation",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Freeze effect",
+      "type": "Passive",
       "tags": [
-        "fliege",
-        "fly",
+        "freeze",
+        "range up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_110.png"
+      ]
     },
     {
       "id": "111",
-      "name": "Guppy's Tail",
-      "description": "\"More chests\" — Higher chance of golden/stone/locked chests replacing room drops. Lower chance of normal drops. Counts toward Guppy transformation.",
-      "quality": 1,
+      "name": "The Bean",
+      "description": "Upon use, this item causes Isaac to fart and poison any enemies in close proximity The Bean deals 5 damage, then poisons enemies for 6 total ticks of damage The poison deals your current tear damage per tick Recharge Time: 1 room",
+      "quality": 0,
       "pool": "treasure",
       "quote": "Toot on command",
+      "type": "Active",
       "tags": [
+        "poison",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_111.png"
+      ]
     },
     {
       "id": "112",
-      "name": "Guppy's Paw",
-      "description": "\"Soul converter\" — Removes one red heart container and grants 3 soul hearts. Can be used repeatedly. Counts toward Guppy transformation.",
+      "name": "Guardian Angel",
+      "description": "An orbital which does 7 contact damage per tick, blocks shots and increases the speed of all other orbitals Counts as 1 of 3 angel items needed towards the Seraphim transformation Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
       "quality": 2,
-      "pool": "devil",
+      "pool": "angel",
       "quote": "Extra protection",
+      "type": "Passive, Orbital",
       "tags": [
-        "devil",
-        "heart",
-        "herz",
-        "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_112.png"
+        "angel",
+        "familiar",
+        "orbital"
+      ]
     },
     {
       "id": "113",
-      "name": "Guppy's Eye",
-      "description": "\"See contents\" — Shows the contents of chests, sacks, and fire places before you open them. Counts toward Guppy transformation.",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Demon Baby",
+      "description": "A familiar which follows Isaac and automatically fires tears that deal 3 damage each at any enemies in close range Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
+      "quality": 2,
+      "pool": "devil",
       "quote": "Auto-turret friend",
+      "type": "Passive, Familiar",
       "tags": [
-        "auge",
-        "eye",
-        "feuer",
-        "fire",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_113.png"
+        "devil",
+        "familiar"
+      ]
     },
     {
       "id": "114",
-      "name": "Guppy's Hairball",
-      "description": "\"Gross\" — Trailing familiar that grows when you kill enemies. Can be swung to deal contact damage. Counts toward Guppy transformation.",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Mom's Knife",
+      "description": "Tears are replaced with a knife which can be charged and thrown in a boomerang style action The knife can also do damage without being thrown as a close range melee weapon When used as a melee weapon, Mom's Knife deals your tear damage * 2 per tick At the furthest point from Isaac the knife deals your tear damage * 6 Counts as 1 of 3 mom items needed towards the Mom transformation",
+      "quality": 4,
+      "pool": "devil",
       "quote": "Stab stab stab",
+      "type": "Passive, Tear Modifier",
       "tags": [
-        "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_114.png"
+        "devil"
+      ]
     },
     {
       "id": "115",
-      "name": "Guppy's Collar",
-      "description": "\"Eternal life?\" — 50% chance to revive on death with half a soul heart. Counts toward Guppy transformation.",
+      "name": "Ouija Board",
+      "description": "Gives Isaac spectral tears which allows them to travel through objects in the environment (i.e. rocks) +0.4 Tears Up",
       "quality": 2,
       "pool": "devil",
       "quote": "Spectral tears",
+      "type": "Passive",
       "tags": [
         "devil",
-        "heart",
-        "herz",
-        "spectral"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_115.png"
+        "spectral",
+        "tears up"
+      ]
     },
     {
       "id": "116",
-      "name": "Cube of Meat",
-      "description": "\"Orbiting buddy\" — Orbital that blocks shots. Collecting multiple: 2nd = shoots, 3rd = meat boy familiar, 4th = super meat boy.",
+      "name": "9 Volt",
+      "description": "Automatically gives you 1 bar of charge after using your spacebar item Fully recharges your current spacebar item when picked up Any items which are normally a 1 room recharge are now timed instead",
       "quality": 2,
-      "pool": "boss",
+      "pool": "shop",
       "quote": "Quicker charge",
+      "type": "Passive",
       "tags": [
-        "boss",
-        "familiar",
-        "orbital"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_116.png"
+        "shop"
+      ]
     },
     {
       "id": "117",
-      "name": "Ball of Bandages",
-      "description": "\"Orbiting buddy\" — Orbital that blocks shots. Collecting multiple: 2nd = shoots, 3rd = bandage girl familiar, 4th = super bandage girl.",
-      "quality": 2,
-      "pool": "boss",
+      "name": "Dead Bird",
+      "description": "When Isaac takes damage, the dead bird will spawn and attack nearby enemies in the current room for 2 damage per tick Eve starts with this item",
+      "quality": 0,
+      "pool": "treasure",
       "quote": "Protective buddy",
+      "type": "Passive, Familiar",
       "tags": [
-        "boss",
-        "familiar",
-        "orbital"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_117.png"
+        "treasure"
+      ]
     },
     {
       "id": "118",
-      "name": "Mulligan",
-      "description": "\"Bug catcher\" — Tears have a 1/6 chance to spawn a friendly blue fly on hitting an enemy.",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Brimstone",
+      "description": "Tears are replaced with the ability to charge and fire a powerful laser that travels in a straight line across the room, dealing a lot of damage (tear damage hits for 9 ticks per laser) to any enemies it comes into contact with Does not directly affect your Damage stat but hits enemies 9 times per charge Synergizes very well with a lot of items including Tammy's Head, Tiny Planet, Inner Eye (Triple Shot), Mutant Spider (Quad Shot) and many others If you somehow manage to get a second Brimstone, the laser becomes massive and deals double damage",
+      "quality": 4,
+      "pool": "devil",
       "quote": "Blood laser barrage",
+      "type": "Passive, Tear Modifier",
       "tags": [
+        "auge",
         "blood",
         "blut",
-        "fliege",
-        "fly",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_118.png"
+        "devil",
+        "eye",
+        "laser",
+        "spider",
+        "spinne"
+      ]
     },
     {
       "id": "119",
-      "name": "Hive Mind",
-      "description": "\"Giant flies and spiders\" — All blue flies and blue spiders deal double damage.",
+      "name": "Blood Bag",
+      "description": "+1 HP Up +0.3 Speed Up Heals for 5 full red hearts Has a chance to drop while playing any Blood Donation machine",
       "quality": 2,
       "pool": "treasure",
       "quote": "HP up",
-      "tags": [
-        "fliege",
-        "fly",
-        "hp up",
-        "spider",
-        "spinne",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_119.png"
-    },
-    {
-      "id": "120",
-      "name": "Infestation 2",
-      "description": "\"Corpse spiders\" — Killing an enemy spawns a blue spider. Great for generating persistent damage.",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Fire rate up",
-      "tags": [
-        "feuer",
-        "fire",
-        "spider",
-        "spinne",
-        "tears up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_120.png"
-    },
-    {
-      "id": "121",
-      "name": "BFFs!",
-      "description": "\"Familiar DMG up\" — All familiars deal double damage.",
-      "quality": 2,
-      "pool": "shop",
-      "quote": "DMG up",
-      "tags": [
-        "dmg up",
-        "familiar",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_121.png"
-    },
-    {
-      "id": "122",
-      "name": "The D6",
-      "description": "\"Reroll items\" — Active item: reroll all pedestal items in the room into new random items from the same pool. Isaac's starting item.",
-      "quality": 3,
-      "pool": "treasure",
-      "quote": "Curse up",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_122.png"
-    },
-    {
-      "id": "123",
-      "name": "D20",
-      "description": "\"Reroll pickups\" — Active item: reroll all pickups in the room. Can create game-breaking loops with batteries.",
-      "quality": 3,
-      "pool": "treasure",
-      "quote": "Temporary buddy generator",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_123.png"
-    },
-    {
-      "id": "124",
-      "name": "D4",
-      "description": "\"Reroll self\" — Active item: reroll all your passive items into random new items.",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "It's a mystery",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_124.png"
-    },
-    {
-      "id": "125",
-      "name": "D100",
-      "description": "\"Reroll everything\" — Active item: combines effects of D4, D6, D20. Rerolls your items, pedestals, and pickups.",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Friends till the end",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_125.png"
-    },
-    {
-      "id": "126",
-      "name": "D1",
-      "description": "\"Duplicate pickup\" — Active item: duplicates a random pickup in the room.",
-      "quality": 3,
-      "pool": "treasure",
-      "quote": "Feel my pain",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_126.png"
-    },
-    {
-      "id": "127",
-      "name": "D Infinity",
-      "description": "\"Infinite dice\" — Active item: cycles between D4, D6, D8, D10, D12, D20, and D100 effects. Switch with drop key.",
-      "quality": 4,
-      "pool": "treasure",
-      "quote": "I don't remember...",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_127.png"
-    },
-    {
-      "id": "128",
-      "name": "Spindown Dice",
-      "description": "\"Item ID -1\" — Rerolls item pedestals to the item with the previous internal ID number. Allows targeted rerolling if you know the item IDs.",
-      "quality": 4,
-      "pool": "treasure",
-      "quote": "Attack fly",
-      "tags": [
-        "fliege",
-        "fly",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_128.png"
-    },
-    {
-      "id": "129",
-      "name": "Void",
-      "description": "\"Absorb items\" — Active item: consume all pedestal items in the room. Passive items grant stat ups; active items add their effects to Void's use.",
-      "quality": 4,
-      "pool": "treasure",
-      "quote": "HP up",
-      "tags": [
-        "hp up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_129.png"
-    },
-    {
-      "id": "130",
-      "name": "Glitched Crown",
-      "description": "\"Cycling options\" — Item pedestals rapidly cycle between 5 random items. Grab the one you want with precise timing. Extremely powerful with patience.",
-      "quality": 4,
-      "pool": "treasure",
-      "quote": "Flight + dash attack",
-      "tags": [
-        "flight",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_130.png"
-    },
-    {
-      "id": "131",
-      "name": "Sacred Orb",
-      "description": "\"Selective quality\" — Automatically rerolls any quality 0 or quality 1 item that spawns. Effectively filters out all bad items.",
-      "quality": 4,
-      "pool": "angel",
-      "quote": "Gives bombs",
-      "tags": [
-        "angel",
-        "bomb",
-        "bombe"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_131.png"
-    },
-    {
-      "id": "132",
-      "name": "Rock Bottom",
-      "description": "\"Only up\" — Your stats can only go up, never down. Any temporary stat boost becomes permanent at its peak. Extremely powerful with stat-cycling items.",
-      "quality": 4,
-      "pool": "treasure",
-      "synergies": [
-        {
-          "item": "Soy Milk",
-          "effect": "Keep max fire rate even when getting damage ups later"
-        },
-        {
-          "item": "Almond Milk",
-          "effect": "Similar to Soy Milk, locks in high fire rate"
-        },
-        {
-          "item": "Purity",
-          "effect": "Stats permanently lock at their highest aura color"
-        },
-        {
-          "item": "Red Stew",
-          "effect": "Lock in +21.6 damage permanently"
-        }
-      ],
-      "quote": "My Xmas present",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_132.png"
-    },
-    {
-      "id": "133",
-      "name": "C Section",
-      "description": "\"Baby attack\" — Tears become fetuses that launch from you, chase enemies, and deal 3.5x your damage. They persist until they deal enough damage.",
-      "quality": 4,
-      "pool": "treasure",
-      "quote": "Soul converter",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_133.png"
-    },
-    {
-      "id": "134",
-      "name": "R Key",
-      "description": "\"Restart\" — Restarts the entire run from Basement I while keeping all your current items, stats, and pickups.",
-      "quality": 4,
-      "pool": "secret",
-      "quote": "Cursed?",
-      "tags": [
-        "secret"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_134.png"
-    },
-    {
-      "id": "135",
-      "name": "Death Certificate",
-      "description": "\"Pick any item\" — Teleports to a special floor with one of every item in the game. Take any single item and return. The most powerful item in the game.",
-      "quality": 4,
-      "pool": "secret",
-      "quote": "Portable blood bank",
+      "type": "Passive",
       "tags": [
         "blood",
         "blut",
+        "heart",
+        "herz",
+        "hp up",
+        "speed up",
+        "treasure"
+      ]
+    },
+    {
+      "id": "120",
+      "name": "Odd Mushroom (Thin)",
+      "description": "Gives you a high rate of fire in exchange for a damage down +1.7 Tears Up +0.3 Speed Up Damage Down (damage * 0.9 - 0.4) Counts as 1 of 3 mushroom items needed towards the Fun Guy transformation",
+      "quality": 2,
+      "pool": "secret",
+      "quote": "Fire rate up",
+      "type": "Passive",
+      "tags": [
+        "secret",
+        "speed up",
+        "tears up"
+      ]
+    },
+    {
+      "id": "121",
+      "name": "Odd Mushroom (Large)",
+      "description": "+1 HP Up +1.0 Damage Up +0.38 Range Up -0.2 Speed Down Heals one red heart container when picked up Counts as 1 of 3 mushroom items needed towards the Fun Guy transformation",
+      "quality": 2,
+      "pool": "secret",
+      "quote": "DMG up",
+      "type": "Passive",
+      "tags": [
+        "dmg up",
+        "heart",
+        "herz",
+        "hp up",
+        "range up",
         "secret"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_135.png"
+      ]
+    },
+    {
+      "id": "122",
+      "name": "Whore of Babylon",
+      "description": "When you only have half a red heart remaining or less, you enter a curse state which adds +1.5 damage and +0.3 speed When playing as Eve, this item activates with one FULL heart remaining or less AND also removes her 0.75 damage multiplier, raising it up to 1.0 The effect is permanently active for characters with no red hearts (e.g. Blue Baby, The Lost) One of Eve's starting items",
+      "quality": 2,
+      "pool": "devil",
+      "quote": "Curse up",
+      "type": "Passive",
+      "tags": [
+        "devil",
+        "dmg up",
+        "heart",
+        "herz"
+      ]
+    },
+    {
+      "id": "123",
+      "name": "Monster Manual",
+      "description": "When used, gives a random familiar for the entire floor It can spawn familiars you haven't unlocked yet! Recharge Time: 6 rooms",
+      "quality": 1,
+      "pool": "devil",
+      "quote": "Temporary buddy generator",
+      "type": "Active",
+      "tags": [
+        "devil",
+        "familiar"
+      ]
+    },
+    {
+      "id": "124",
+      "name": "Dead Sea Scrolls",
+      "description": "Upon use, the dead sea scrolls gives a random active item effect An item that can be found in the Angel room The name of the effect given is displayed when used. Cannot give the Kamikaze effect Recharge Time: 2 rooms",
+      "quality": 1,
+      "pool": "angel",
+      "quote": "It's a mystery",
+      "type": "Active",
+      "tags": [
+        "angel"
+      ]
+    },
+    {
+      "id": "125",
+      "name": "Bobby - Bomb",
+      "description": "+5 Bombs All of Isaac's bombs now having a homing effect when placed on the floor",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Friends till the end",
+      "type": "Passive",
+      "tags": [
+        "bomb",
+        "bombe",
+        "homing",
+        "treasure"
+      ]
+    },
+    {
+      "id": "126",
+      "name": "Razor Blade",
+      "description": "When used, deals damage to Isaac in exchange for +1.2 damage up which lasts for the current room This item takes 1 full heart of damage per use, and will take red hearts first before any other Eve starts with this item after donating 439 coins to the Greed Donation Machine Recharge Time: Instant",
+      "quality": 0,
+      "pool": "curse",
+      "quote": "Feel my pain",
+      "type": "Active",
+      "tags": [
+        "curse",
+        "dmg up",
+        "heart",
+        "herz"
+      ]
+    },
+    {
+      "id": "127",
+      "name": "Forget Me Now",
+      "description": "Upon use, this item refreshes the current floor with brand new rooms, monsters and items, as if you had entered a new floor Recharge Time: Instant (One time use)",
+      "quality": 3,
+      "pool": "devil",
+      "quote": "I don't remember...",
+      "type": "Active",
+      "tags": [
+        "devil"
+      ]
+    },
+    {
+      "id": "128",
+      "name": "Forever Alone",
+      "description": "An orbiting fly which deals 2 contact damage per tick to enemies Counts as 1 of 3 fly items needed towards the Beelzebub transformation",
+      "quality": 1,
+      "pool": "treasure",
+      "quote": "Attack fly",
+      "type": "Passive, Orbital",
+      "tags": [
+        "treasure"
+      ]
+    },
+    {
+      "id": "129",
+      "name": "Bucket of Lard",
+      "description": "+2 Health Up -0.2 Speed Down Has a chance to drop from the Super Gluttony miniboss fight",
+      "quality": 1,
+      "pool": "boss",
+      "quote": "HP up",
+      "type": "Passive",
+      "tags": [
+        "boss",
+        "hp up"
+      ]
+    },
+    {
+      "id": "130",
+      "name": "A Pony",
+      "description": "Allows Isaac to fly while the Pony is held Sets your speed stat to 1.5 if it isn't already that high When the active attack is used, Isaac will dash across the screen dealing scaling contact damage to anything he hits (damage * 4 + 28) Drops from the Headless Horseman boss fight Recharge Time: 2 rooms",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Flight + dash attack",
+      "type": "Active",
+      "tags": [
+        "flight",
+        "treasure"
+      ]
+    },
+    {
+      "id": "131",
+      "name": "Bomb Bag",
+      "description": "A bag of bombs that will drop a bomb pickup every 2 rooms",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Gives bombs",
+      "type": "Passive, Familiar",
+      "tags": [
+        "bomb",
+        "bombe",
+        "treasure"
+      ]
+    },
+    {
+      "id": "132",
+      "name": "A Lump of Coal",
+      "description": "Tears gain a damage up and increase in size based on the distance they travel The length of a normal room roughly gives +6 damage, but this can be higher with double rooms or Tiny Planet This item synergises with beam items such as Brimstone and Tech, allowing them to do more damage the further away the enemy is",
+      "quality": 3,
+      "pool": "treasure",
+      "quote": "My Xmas present",
+      "type": "Passive",
+      "tags": [
+        "dmg up",
+        "laser",
+        "treasure"
+      ]
+    },
+    {
+      "id": "133",
+      "name": "Guppy's Paw",
+      "description": "When used, removes one heart container and gives you 3 soul hearts Bone hearts cannot be converted Counts as 1 of 3 cat items needed towards the Guppy transformation Recharge Time: Instant",
+      "quality": 3,
+      "pool": "devil",
+      "quote": "Soul converter",
+      "type": "Active",
+      "tags": [
+        "devil",
+        "heart",
+        "herz",
+        "hp up"
+      ]
+    },
+    {
+      "id": "134",
+      "name": "Guppy's Tail",
+      "description": "Gives a 1/3 chance for room clear rewards to become a normal or locked chest, and a 1/3 chance to reward nothing at all Doesn't affect coins dropped after waves in Greed Mode Counts as 1 of 3 cat items needed towards the Guppy transformation",
+      "quality": 2,
+      "pool": "devil",
+      "quote": "Cursed?",
+      "type": "Passive",
+      "tags": [
+        "devil"
+      ]
+    },
+    {
+      "id": "135",
+      "name": "IV Bag",
+      "description": "Upon use, the IV Bag takes half a red heart and spawns 1-3 coins (the same effect as a blood donation machine) Can drop from a blood donation machine after playing it In the Womb and beyond this deals 1 full heart of damage If no red hearts exist, other types of hearts are consumed instead With the Keeper this is changed to spawning 0-1 coins per use instead Recharge Time: Instant",
+      "quality": 1,
+      "pool": "treasure",
+      "quote": "Portable blood bank",
+      "type": "Active",
+      "tags": [
+        "blood",
+        "blut",
+        "heart",
+        "herz",
+        "treasure"
+      ]
     },
     {
       "id": "136",
-      "name": "Damocles",
-      "description": "\"Double items, eventual death\" — All item pedestals spawn a second item. After taking any damage, there is an increasing random chance of instant death on any future frame.",
-      "quality": 3,
+      "name": "Best Friend",
+      "description": "Places a decoy on the floor which attracts enemies and explodes after a period of time When it explodes, it deals 185 damage to everything in radius (Same damage as Mr Mega bombs) Recharge Time: 3 rooms",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Friends 'till the end",
+      "type": "Active",
       "tags": [
+        "bomb",
+        "bombe",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_136.png"
+      ]
     },
     {
       "id": "137",
-      "name": "TMTRAINER",
-      "description": "\"All items are glitched\" — All future item pedestals become random glitched items with unpredictable effects. Can be incredibly powerful or run-ending.",
-      "quality": 2,
-      "pool": "secret",
+      "name": "Remote Detonator",
+      "description": "+5 Bombs Bombs no longer automatically explode and will only do so when you activate the remote detonator Can be used to detonate Dr. Fetus bombs early Recharge Time: Instant",
+      "quality": 1,
+      "pool": "shop",
       "quote": "Remote bomb detonation",
+      "type": "Active",
       "tags": [
         "bomb",
         "bombe",
-        "secret"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_137.png"
+        "shop"
+      ]
     },
     {
       "id": "138",
-      "name": "Echo Chamber",
-      "description": "\"Card/pill memory\" — Using a card, pill, or rune also activates the last 3 cards/pills/runes you previously used.",
-      "quality": 3,
+      "name": "Stigmata",
+      "description": "+1 HP Up +0.3 Damage Up Heals one red heart container when picked up",
+      "quality": 2,
       "pool": "treasure",
       "quote": "DMG + HP up",
+      "type": "Passive",
       "tags": [
+        "dmg up",
+        "heart",
+        "herz",
         "hp up",
-        "pill",
-        "pille",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_138.png"
+      ]
     },
     {
       "id": "139",
-      "name": "Red Key",
-      "description": "\"New rooms\" — Creates a new room connected to any red-outlined wall. Can find Ultra Secret Rooms and create unique layouts.",
-      "quality": 3,
-      "pool": "treasure",
+      "name": "Mom's Purse",
+      "description": "Isaac can now hold two trinkets at the same time Drops a random trinket on the floor when picked up Allows you to pick up more trinkets while also holding The Tick Counts as 1 of 3 mom items needed towards the Mom transformation",
+      "quality": 2,
+      "pool": "shop",
       "quote": "More trinket room",
+      "type": "Passive",
       "tags": [
-        "secret",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_139.png"
+        "shop"
+      ]
     },
     {
       "id": "140",
-      "name": "Birthright",
-      "description": "\"Character bonus\" — Unique effect depending on your character. Isaac: items have a chance to appear twice. Judas: Dark Arts damage stored as permanent damage. Each character gets something different.",
-      "quality": 3,
-      "pool": "shop",
+      "name": "Bob's Curse",
+      "description": "+5 Bombs Isaac's bombs now poison nearby enemies and leave behind a gas cloud that poisons enemies that move through it. Poisoned enemies take 4 or 6 damage per tick for a few seconds Has a chance to drop from the Super Sloth miniboss fight Counts as 1 of 3 poison items needed towards the Bob transformation",
+      "quality": 1,
+      "pool": "boss",
       "quote": "Poison bombs",
+      "type": "Passive",
       "tags": [
         "bomb",
         "bombe",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_140.png"
+        "boss",
+        "poison"
+      ]
     },
     {
       "id": "141",
-      "name": "Mom's Knife",
-      "description": "\"Stabbing tears\" — Tears are replaced with a thrown knife that deals 2x damage at close range, 6x at max charge. Very high DPS. Counts toward Yes Mother? transformation.",
-      "quality": 4,
-      "pool": "treasure",
-      "synergies": [
-        {
-          "item": "Brimstone",
-          "effect": "Knife + barrage of knives on throw"
-        },
-        {
-          "item": "Polyphemus",
-          "effect": "Massive damage knife"
-        },
-        {
-          "item": "Sacred Heart",
-          "effect": "Homing knife"
-        },
-        {
-          "item": "Tech X",
-          "effect": "Knife launches inside laser ring"
-        }
-      ],
+      "name": "Pageant Boy",
+      "description": "Spawns 7 random coins around Isaac on the floor Isaac wears a pink crown on his head",
+      "quality": 0,
+      "pool": "boss",
       "quote": "Ultimate grand supreme",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_141.png"
+        "boss"
+      ]
     },
     {
       "id": "142",
-      "name": "Tech X",
-      "description": "\"Laser ring\" — Tears become charged laser rings that travel across the screen. Size and damage scale with charge time. Piercing. One of the strongest items.",
-      "quality": 4,
-      "pool": "treasure",
-      "synergies": [
-        {
-          "item": "Brimstone",
-          "effect": "Larger Brimstone ring with wider hitbox"
-        },
-        {
-          "item": "Mom's Knife",
-          "effect": "Knife inside the laser ring"
-        },
-        {
-          "item": "Ipecac",
-          "effect": "Explosive laser ring"
-        },
-        {
-          "item": "Monstro's Lung",
-          "effect": "Multiple smaller rings in a burst"
-        }
-      ],
+      "name": "Scapular",
+      "description": "Once per room when you are damaged down to your final half a heart, you gain 1 soul heart Re-entering a room allows this effect to be triggered again Scapular won't grant its soul heart if the player is attempting to proc it with certain heart donation mechanics (such as IV Bag) Counts as 1 of 3 angel items needed towards the Seraphim transformation.",
+      "quality": 2,
+      "pool": "angel",
       "quote": "You have been blessed",
+      "type": "Passive",
       "tags": [
-        "piercing",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_142.png"
+        "angel",
+        "heart",
+        "herz"
+      ]
     },
     {
       "id": "143",
-      "name": "Cricket's Body",
-      "description": "\"Splash tears\" — Tears +0.5, tears split into 4 smaller tears on hit. Split tears deal half damage. -20 range.",
+      "name": "Speed Ball",
+      "description": "+0.3 Speed Up +0.2 Shot Speed Up Counts as 1 of 3 syringe items needed towards the Spun transformation",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "boss",
       "quote": "Speed + shot speed up",
+      "type": "Passive",
       "tags": [
+        "boss",
         "shot speed",
-        "speed up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_143.png"
+        "speed up"
+      ]
     },
     {
       "id": "144",
-      "name": "The Wiz",
-      "description": "\"Double diagonal shot\" — Fires two tears diagonally from your eyes. You can no longer fire straight.",
+      "name": "Bum Friend",
+      "description": "A beggar who follows Isaac around and automatically picks up nearby coins After picking up 6 coins he will drop a random pickup, e.g. hearts, keys, bombs, coins, pills, cards, trinkets, batteries etc After the first drop, he has a 67% chance to drop a pickup after 3 coins and a 33% chance to drop a pickup after 4 coins Bum friend also has a chance to spawn items from the Beggar Item Pool Counts as 1 of 3 bum items needed towards the Super Bum transformation",
       "quality": 1,
       "pool": "treasure",
       "quote": "He's Greedy",
+      "type": "Passive, Familiar",
       "tags": [
-        "auge",
-        "eye",
-        "feuer",
-        "fire",
+        "bomb",
+        "bombe",
+        "heart",
+        "herz",
+        "pill",
+        "pille",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_144.png"
+      ]
     },
     {
       "id": "145",
-      "name": "Pyromaniac",
-      "description": "\"Heal from explosions\" — All explosions heal you for 1 full red heart instead of damaging you. Immune to all bomb and explosion damage.",
-      "quality": 4,
-      "pool": "treasure",
+      "name": "Guppy's Head",
+      "description": "When used, spawns between 2-4 blue flies Blue Flies do double your tear damage Counts as 1 of 3 cat items needed towards the Guppy transformation Recharge Time: 1 room",
+      "quality": 2,
+      "pool": "devil",
       "quote": "Reusable fly hive",
+      "type": "Active",
       "tags": [
-        "bomb",
-        "bombe",
+        "devil",
         "fliege",
-        "fly",
-        "heart",
-        "herz",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_145.png"
+        "fly"
+      ]
     },
     {
       "id": "146",
-      "name": "Host Hat",
-      "description": "\"Projectile shield\" — Chance to block enemy projectiles from above. Grants explosion immunity.",
+      "name": "Prayer Card",
+      "description": "Gives Isaac an eternal heart when used Taking an eternal heart to the next floor or collecting two on the same floor gives you an extra heart container Recharge Time: 6 rooms",
       "quality": 3,
-      "pool": "treasure",
+      "pool": "angel",
       "quote": "Reusable eternity",
+      "type": "Active",
       "tags": [
-        "bomb",
-        "bombe",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_146.png"
+        "angel",
+        "heart",
+        "herz",
+        "hp up"
+      ]
     },
     {
       "id": "147",
-      "name": "Infamy",
-      "description": "Chance to block enemy shots",
+      "name": "Notched Axe",
+      "description": "When activated, Isaac takes out the axe and gives you the ability to break rocks and damage enemies with it It has a limited amount of uses per floor, decreasing with every hit that connects with a rock/enemy Cannot break the stone blocks which appear in the environment Creates bridges when breaking rocks next to pits Recharge Time: At the start of each new floor",
       "quality": 1,
-      "pool": "boss",
+      "pool": "shop",
       "quote": "Rocks didn't stand a chance",
+      "type": "Active",
       "tags": [
-        "boss"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_147.png"
+        "shop"
+      ]
     },
     {
       "id": "148",
-      "name": "Trinity Shield",
-      "description": "Blocks shots in the direction you face",
-      "quality": 2,
-      "pool": "angel",
+      "name": "Infestation",
+      "description": "When Isaac gets hit, 2-6 blue flies will randomly spawn Blue Flies do double your tear damage Counts as 1 of 3 fly items needed towards the Beelzebub transformation",
+      "quality": 0,
+      "pool": "treasure",
       "quote": "Fly revenge",
-      "tags": [
-        "angel",
-        "fliege",
-        "fly"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_148.png"
-    },
-    {
-      "id": "149",
-      "name": "Holy Water",
-      "description": "\"Creep trail\" — Leave a trail of damaging blue creep as you move. The creep deals 2x your damage per tick.",
-      "quality": 1,
-      "pool": "angel",
-      "quote": "Explosive shots",
-      "tags": [
-        "angel",
-        "bomb",
-        "bombe"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_149.png"
-    },
-    {
-      "id": "150",
-      "name": "Immaculate Heart",
-      "description": "\"Homing orbits\" — Damage x1.2 multiplier. Grants a red heart container. When firing, extra orbiting tears randomly shoot out. Counts toward Seraphim transformation.",
-      "quality": 4,
-      "pool": "angel",
-      "quote": "Tooth shot",
-      "tags": [
-        "angel",
-        "heart",
-        "herz",
-        "homing",
-        "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_150.png"
-    },
-    {
-      "id": "151",
-      "name": "Vade Retro",
-      "description": "\"Ghost buster\" — Ghost enemies explode on death. Active: destroys all ghost familiars for area damage.",
-      "quality": 1,
-      "pool": "angel",
-      "quote": "They grow inside",
-      "tags": [
-        "angel",
-        "familiar"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_151.png"
-    },
-    {
-      "id": "152",
-      "name": "Mars",
-      "description": "\"Dash attack\" — Double-tap a direction to dash, becoming invincible during the dash. Enemies hit take 4x your damage. 3 second cooldown.",
-      "quality": 3,
-      "pool": "planetarium",
-      "quote": "Laser",
-      "tags": [
-        "planetarium"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_152.png"
-    },
-    {
-      "id": "153",
-      "name": "Jupiter",
-      "description": "\"Gas aura\" — Speed +0.3 (builds up while standing still). Standing still charges a fart aura that poisons nearby enemies. +2 red heart containers.",
-      "quality": 2,
-      "pool": "planetarium",
-      "quote": "Quad Shot",
-      "tags": [
-        "heart",
-        "herz",
-        "hp up",
-        "planetarium"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_153.png"
-    },
-    {
-      "id": "154",
-      "name": "Saturnus",
-      "description": "\"Tear orbit\" — Entering a room creates a ring of orbiting tears around you that damage enemies on contact.",
-      "quality": 2,
-      "pool": "planetarium",
-      "quote": "DMG up",
-      "tags": [
-        "dmg up",
-        "planetarium"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_154.png"
-    },
-    {
-      "id": "155",
-      "name": "Luna",
-      "description": "\"Secret rooms\" — Adds an extra secret room per floor. A beam of light in secret rooms grants tears up and drops soul hearts.",
-      "quality": 3,
-      "pool": "planetarium",
-      "quote": "Plop!",
-      "tags": [
-        "heart",
-        "herz",
-        "planetarium",
-        "secret",
-        "tears up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_155.png"
-    },
-    {
-      "id": "156",
-      "name": "Mercurius",
-      "description": "\"Speed way up\" — Speed +0.4. All doors stay open even during combat.",
-      "quality": 3,
-      "pool": "planetarium",
-      "quote": "Item martyr",
-      "tags": [
-        "planetarium"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_156.png"
-    },
-    {
-      "id": "157",
-      "name": "Venus",
-      "description": "\"Charm aura\" — Enemies near you become charmed for 2.5 seconds. +1 red heart container.",
-      "quality": 2,
-      "pool": "planetarium",
-      "quote": "RAGE!",
-      "tags": [
-        "heart",
-        "herz",
-        "hp up",
-        "planetarium"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_157.png"
-    },
-    {
-      "id": "158",
-      "name": "Terra",
-      "description": "\"Rock tears\" — Tears become rocks with varying sizes and damage. Can destroy obstacles. Damage has a random bonus of +0 to +6.",
-      "quality": 3,
-      "pool": "planetarium",
-      "quote": "I see my future",
-      "tags": [
-        "planetarium"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_158.png"
-    },
-    {
-      "id": "159",
-      "name": "Pluto",
-      "description": "\"Shrink\" — Become very tiny. Tears +0.7. Can squeeze through gaps in rocks.",
-      "quality": 3,
-      "pool": "planetarium",
-      "quote": "Scary",
-      "tags": [
-        "planetarium"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_159.png"
-    },
-    {
-      "id": "160",
-      "name": "Neptune",
-      "description": "\"Flood tears\" — Hold fire to build up tears; release to fire a burst. The longer you hold, the bigger the burst.",
-      "quality": 2,
-      "pool": "planetarium",
-      "quote": "Holy white death",
-      "tags": [
-        "feuer",
-        "fire",
-        "planetarium"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_160.png"
-    },
-    {
-      "id": "161",
-      "name": "Uranus",
-      "description": "\"Ice tears\" — Enemies killed by your tears freeze and can be kicked into other enemies, shattering for damage.",
-      "quality": 3,
-      "pool": "planetarium",
-      "quote": "Eternal life?",
-      "tags": [
-        "planetarium"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_161.png"
-    },
-    {
-      "id": "162",
-      "name": "Sol",
-      "description": "\"Sun blessing\" — After beating a boss: full map reveal, full heal, damage +3 and luck +1 for the rest of the floor.",
-      "quality": 3,
-      "pool": "planetarium",
-      "quote": "You feel blessed",
-      "tags": [
-        "boss",
-        "hp up",
-        "luck",
-        "planetarium"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_162.png"
-    },
-    {
-      "id": "163",
-      "name": "Mom's Razor",
-      "description": "Orbital that bleeds enemies",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Spectral buddy",
-      "tags": [
-        "orbital",
-        "spectral",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_163.png"
-    },
-    {
-      "id": "164",
-      "name": "Tractor Beam",
-      "description": "Tears travel in a beam you aim",
-      "quality": 3,
-      "pool": "treasure",
-      "quote": "Reusable flame",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_164.png"
-    },
-    {
-      "id": "165",
-      "name": "Lachryphagy",
-      "description": "\"Feeding tears\" — Tears slowly decelerate. If a tear hits another tear, it grows larger. Large tears burst into 8 smaller tears on contact with an enemy.",
-      "quality": 3,
-      "pool": "treasure",
-      "quote": "Shot speed up + DMG up",
-      "tags": [
-        "dmg up",
-        "shot speed",
-        "speed up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_165.png"
-    },
-    {
-      "id": "166",
-      "name": "Eye of the Occult",
-      "description": "\"Controlled tears\" — Tears +0.5, damage +1.0, range +2.0. Tears become controllable with fire buttons after firing.",
-      "quality": 3,
-      "pool": "devil",
-      "quote": "Reroll the basics",
-      "tags": [
-        "auge",
-        "devil",
-        "eye",
-        "feuer",
-        "fire"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_166.png"
-    },
-    {
-      "id": "167",
-      "name": "Sulfuric Acid",
-      "description": "Tears destroy rocks and doors",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Double shot buddy",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_167.png"
-    },
-    {
-      "id": "168",
-      "name": "Spear of Destiny",
-      "description": "Piercing spear in front of you",
-      "quality": 2,
-      "pool": "angel",
-      "quote": "On-demand air strike",
-      "tags": [
-        "angel",
-        "piercing"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_168.png"
-    },
-    {
-      "id": "169",
-      "name": "Ventricle Razor",
-      "description": "Place 2 linked portals",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Mega tears",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_169.png"
-    },
-    {
-      "id": "170",
-      "name": "Plan C",
-      "description": "\"Win then die\" — Active item: kills all enemies in the room, then kills you 3 seconds later. Use on the final boss to still win.",
-      "quality": 2,
-      "pool": "shop",
-      "quote": "Daddy's love",
-      "tags": [
-        "boss",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_170.png"
-    },
-    {
-      "id": "171",
-      "name": "Eden's Soul",
-      "description": "\"Twin items\" — Active item: spawns two random item pedestals from the current room's pool.",
-      "quality": 3,
-      "pool": "secret",
-      "quote": "Mass enemy slowdown + damage",
-      "tags": [
-        "secret"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_171.png"
-    },
-    {
-      "id": "172",
-      "name": "Lil Dumpy",
-      "description": "Familiar that pushes enemies with gas",
-      "quality": 0,
-      "pool": "treasure",
-      "quote": "My fate protects me",
-      "tags": [
-        "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_172.png"
-    },
-    {
-      "id": "173",
-      "name": "Ghost Pepper",
-      "description": "Chance to leave damaging fire behind",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "You feel blessed",
-      "tags": [
-        "feuer",
-        "fire",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_173.png"
-    },
-    {
-      "id": "174",
-      "name": "Sausage",
-      "description": "\"All stats up\" — All stats up: damage +0.5, speed +0.2, tears +0.5, range +1.5, shot speed +0.16, luck +1.",
-      "quality": 3,
-      "pool": "secret",
-      "quote": "Random buddy",
-      "tags": [
-        "luck",
-        "secret",
-        "shot speed"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_174.png"
-    },
-    {
-      "id": "175",
-      "name": "Eye of Greed",
-      "description": "\"Gold tears\" — Every 20th tear is a gold tear. Gold tears turn enemies into gold, dropping 1-3 coins when killed.",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Opens all doors...",
-      "tags": [
-        "auge",
-        "eye",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_175.png"
-    },
-    {
-      "id": "176",
-      "name": "Abel",
-      "description": "Mirror familiar that copies movement",
-      "quality": 0,
-      "pool": "treasure",
-      "quote": "HP up",
-      "tags": [
-        "familiar",
-        "hp up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_176.png"
-    },
-    {
-      "id": "177",
-      "name": "Robo-Baby 2.0",
-      "description": "Laser familiar that targets enemies",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Gamble 24/7",
-      "tags": [
-        "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_177.png"
-    },
-    {
-      "id": "178",
-      "name": "Rotten Baby",
-      "description": "Spawns blue flies that attack",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Splash!",
+      "type": "Passive",
       "tags": [
         "fliege",
         "fly",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_178.png"
+      ]
     },
     {
-      "id": "179",
-      "name": "Head of the Keeper",
-      "description": "\"Penny tears\" — Tears have a 5% chance to drop a penny on hitting an enemy.",
-      "quality": 2,
+      "id": "149",
+      "name": "Ipecac",
+      "description": "Isaac's tears are replaced with explosive poison bombs, which will arc upwards and explode on contact with the floor, dealing huge damage and leaving a poison effect on enemies in range Ipecac shots are given a flat +40 Damage on top of the normal 3.5 base damage Tears Down (Tear delay * 2 + 10) Ipecac explosion size scales with tear size Shots will damage Isaac if he is in the blast radius when they explode Counts as 1 of 3 poison items needed towards the Bob transformation",
+      "quality": 4,
       "pool": "treasure",
-      "quote": "Flight eternal",
+      "quote": "Explosive shots",
+      "type": "Passive, Tear Modifier",
       "tags": [
-        "flight",
+        "bomb",
+        "bombe",
+        "poison",
+        "tears down",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_179.png"
+      ]
     },
     {
-      "id": "180",
-      "name": "Belly Button",
-      "description": "\"Trinket slot\" — Grants a second trinket slot. Drops a random trinket on pickup.",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "Toot on touch",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_180.png"
-    },
-    {
-      "id": "181",
-      "name": "SMB Super Fan",
-      "description": "\"All stats up\" — HP +1, damage +0.3, tears +0.2, speed +0.2, range +0.5. A solid all-around upgrade.",
+      "id": "150",
+      "name": "Tough Love",
+      "description": "Isaac has a random chance to fire a tooth shot instead of a tear sometimes Teeth shots deal damage equal to your tear damage * 3.2 The chance to fire a tooth is affected by your luck stat and at +9 Luck it will activate every time Synergizes well with some tear modifiers such as Ipecac, which causes it to do massive damage",
       "quality": 3,
       "pool": "treasure",
-      "quote": "Flight + holy death",
+      "quote": "Tooth shot",
+      "type": "Passive",
       "tags": [
-        "flight",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_181.png"
+      ]
     },
     {
-      "id": "182",
-      "name": "Thunder Thighs",
-      "description": "\"Stompy\" — Destroy rocks by walking over them. Speed -0.4. Creates dust clouds on rock destruction. Counts toward Stompy transformation.",
+      "id": "151",
+      "name": "The Mulligan",
+      "description": "Isaac has a 1/6 chance to spawn a blue fly when one of his tears hits an enemy Blue Flies do double your tear damage The chance to activate this effect is not changed with your Luck stat Counts as 1 of 3 fly items needed towards the Beelzebub transformation",
+      "quality": 3,
+      "pool": "treasure",
+      "quote": "They grow inside",
+      "type": "Passive",
+      "tags": [
+        "fliege",
+        "fly",
+        "treasure"
+      ]
+    },
+    {
+      "id": "152",
+      "name": "Technology 2",
+      "description": "Isaac now also has a laser with unlimited range which fires continuously, dealing damage 15 times per second Tears continue to fire from your left eye at a rate of 2/3 The laser deals damage equal to 1/7th of your tear damage, but very rapidly The laser can apply status effects (e.g. Poison) rapidly due to how often it hits Does not apply a negative damage multiplier as it used to prior to Repentance",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Laser",
+      "type": "Passive, Tear Modifier",
+      "tags": [
+        "auge",
+        "dmg up",
+        "eye",
+        "laser",
+        "poison",
+        "treasure"
+      ]
+    },
+    {
+      "id": "153",
+      "name": "Mutant Spider",
+      "description": "Tears now shoot 4 at a time (Quad Shot) Tears Down significantly (Tear delay * 2.1 + 3) Synergizes well with a lot of tear effects - e.g. with Brimstone you get 4 lasers Counts as 1 of 3 spider items needed towards the Spider Baby transformation",
+      "quality": 3,
+      "pool": "treasure",
+      "quote": "Quad Shot",
+      "type": "Passive, Tear Modifier",
+      "tags": [
+        "laser",
+        "spider",
+        "spinne",
+        "tears down",
+        "treasure"
+      ]
+    },
+    {
+      "id": "154",
+      "name": "Chemical Peel",
+      "description": "+2 Damage Up for tears fired from Isaac's left eye If playing as Cain or you have an item which modifies which eye you fire tears from, each shot has a 50% chance to do +2 Damage",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "DMG up",
+      "type": "Passive",
+      "tags": [
+        "auge",
+        "dmg up",
+        "eye",
+        "treasure"
+      ]
+    },
+    {
+      "id": "155",
+      "name": "The Peeper",
+      "description": "Gives Isaac an eye companion that floats around the room and deals 8 damage per tick on contact with enemies Damage from Isaac's left eye deal roughly +35% damage",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Plop!",
+      "type": "Passive, Familiar",
+      "tags": [
+        "auge",
+        "eye",
+        "treasure"
+      ]
+    },
+    {
+      "id": "156",
+      "name": "Habit",
+      "description": "When you take damage, this item recharges one room's worth of charge to your spacebar item For example, with the D6 you would need to take damage 6 times to fully recharge it",
+      "quality": 2,
+      "pool": "angel",
+      "quote": "Item martyr",
+      "type": "Passive",
+      "tags": [
+        "angel"
+      ]
+    },
+    {
+      "id": "157",
+      "name": "Bloody Lust",
+      "description": "Each time you take damage, you gain a damage up which lasts for the rest of the floor and turn a darker red colour each time After taking 6 hits Bloody Lust doesn't give you any further damage increases Damage given for each hit increases as follows: +0.5, +0.7, +0.9, +1.1, +1.3, +1.5 Samson starts with this item",
+      "quality": 2,
+      "pool": "devil",
+      "quote": "RAGE!",
+      "type": "Passive",
+      "tags": [
+        "devil",
+        "dmg up"
+      ]
+    },
+    {
+      "id": "158",
+      "name": "Crystal Ball",
+      "description": "Upon use, reveals the map and drops either a soul heart or a random card/rune (50% chance for each) It reveals the location of the secret room, however it doesn't reveal the Super secret room Has a chance to drop from playing a fortune machine Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums Guarantees a Planetarium if an item room has been skipped, otherwise +15% chance for Planetariums to spawn while held. After entering a Planetarium the chance goes back to 1%. The floor generation can fail and cause the guaranteed Planetarium to not spawn sometimes. Recharge Time: 6 rooms",
+      "quality": 3,
+      "pool": "treasure",
+      "quote": "I see my future",
+      "type": "Active",
+      "tags": [
+        "heart",
+        "herz",
+        "treasure"
+      ]
+    },
+    {
+      "id": "159",
+      "name": "Spirit of the Night",
+      "description": "Gives Isaac the ability to fly and spectral tears Counts as 1 of 3 evil items needed towards the Leviathan transformation",
+      "quality": 3,
+      "pool": "devil",
+      "quote": "Scary",
+      "type": "Passive",
+      "tags": [
+        "devil",
+        "spectral"
+      ]
+    },
+    {
+      "id": "160",
+      "name": "Crack The Sky",
+      "description": "Creates 5 beams of light from the sky that deal damage equal to your tear damage + 20 to any enemies which come into contact with them The beams have a high chance to spawn on top of enemies where possible Recharge Time: 4 rooms",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Holy white death",
+      "type": "Active",
+      "tags": [
+        "treasure"
+      ]
+    },
+    {
+      "id": "161",
+      "name": "Ankh",
+      "description": "Upon death, you respawn in the previous room as Blue Baby with three Soul hearts This is a one time use item and all new heart containers will be soul hearts Can be used to unlock some of Blue Baby's secrets before having the character available",
       "quality": 1,
       "pool": "treasure",
-      "quote": "Homing shots + DMG up",
+      "quote": "Eternal life?",
+      "type": "Passive",
       "tags": [
-        "dmg up",
-        "homing",
+        "heart",
+        "herz",
+        "hp up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_182.png"
+      ]
     },
     {
-      "id": "183",
-      "name": "Stem Cells",
-      "description": "HP up, shot speed up",
+      "id": "162",
+      "name": "Celtic Cross",
+      "description": "Upon taking damage, you have a 20% chance to gain an invulnerability shield for 7 seconds The chance to gain a shield is affected by your luck stat and at +27 Luck it will activate every time Counts as 1 of 3 angel items needed towards the Seraphim transformation.",
+      "quality": 1,
+      "pool": "angel",
+      "quote": "You feel blessed",
+      "type": "Passive",
+      "tags": [
+        "angel",
+        "shield"
+      ]
+    },
+    {
+      "id": "163",
+      "name": "Ghost Baby",
+      "description": "A familiar which follows Isaac and shoots spectral tears that deal 3.5 damage Ghost Baby fires tears at a rate of 1 tear per second Can drop while destroying skulls in the Depths and Necropolis floors Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
+      "quality": 1,
+      "pool": "devil",
+      "quote": "Spectral buddy",
+      "type": "Passive, Familiar",
+      "tags": [
+        "devil",
+        "familiar",
+        "spectral"
+      ]
+    },
+    {
+      "id": "164",
+      "name": "The Candle",
+      "description": "A spacebar item which allows Isaac to fire a blue flame that damages anything in its path for 23 damage per tick Can cause up to a total of 276 potential damage The flame destroys enemy shots, making it useful for bullet hell bosses Recharge Time: Timed (A few seconds)",
       "quality": 2,
+      "pool": "shop",
+      "quote": "Reusable flame",
+      "type": "Active",
+      "tags": [
+        "feuer",
+        "fire",
+        "shop"
+      ]
+    },
+    {
+      "id": "165",
+      "name": "Cat-O-Nine-Tails",
+      "description": "+1.0 Damage Up +0.23 Shot Speed Up An item only found in the Boss room pool",
+      "quality": 3,
       "pool": "boss",
-      "quote": "Tears + shot speed up",
+      "quote": "Shot speed up + DMG up",
+      "type": "Passive",
       "tags": [
         "boss",
+        "dmg up",
+        "shot speed",
+        "speed up"
+      ]
+    },
+    {
+      "id": "166",
+      "name": "D20",
+      "description": "Upon use, re-rolls all pickup consumables in the current room into another random kind of pickup This includes all types of pickup such as hearts, bombs, keys, coins, pills, tarot cards, chests, trinkets etc Recharge Time: 6 rooms",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Reroll the basics",
+      "type": "Active",
+      "tags": [
+        "bomb",
+        "bombe",
+        "heart",
+        "herz",
+        "pill",
+        "pille",
+        "treasure"
+      ]
+    },
+    {
+      "id": "167",
+      "name": "Harlequin Baby",
+      "description": "A familiar which follows Isaac and shoots two normal tears at once in a V-shaped pattern Each of Harlequin Baby's tears deal 4 damage Harlequin Baby fires tears at a rate of 1 tear per second Counts as 1 of 3 familiar items needed towards the Conjoined transformation",
+      "quality": 1,
+      "pool": "treasure",
+      "quote": "Double shot buddy",
+      "type": "Passive, Familiar",
+      "tags": [
+        "familiar",
+        "treasure"
+      ]
+    },
+    {
+      "id": "168",
+      "name": "Epic Fetus",
+      "description": "Tears now become missiles which deal huge damage to anything nearby Missiles damage = damage * 20 This item places a controllable red target on the ground which will cause a missile to fall from the sky and hit it after a short period of time",
+      "quality": 4,
+      "pool": "secret",
+      "quote": "On-demand air strike",
+      "type": "Passive, Tear Modifier",
+      "tags": [
+        "secret"
+      ]
+    },
+    {
+      "id": "169",
+      "name": "Polyphemus",
+      "description": "High Damage Up - (damage + 4) * 2 Tears Down significantly (Tear delay * 2.1 + 3) If a tear kills an enemy, it continues to travel forward with the leftover damage",
+      "quality": 4,
+      "pool": "treasure",
+      "quote": "Mega tears",
+      "type": "Passive",
+      "tags": [
+        "dmg up",
+        "tears down",
+        "treasure"
+      ]
+    },
+    {
+      "id": "170",
+      "name": "Daddy Longlegs",
+      "description": "A shadow follows Isaac and stomps on enemies randomly, dealing 40 damage per stomp (2 damage ticks at 20 damage each) Counts as 1 of 3 spider items needed towards the Spider Baby transformation.",
+      "quality": 3,
+      "pool": "treasure",
+      "quote": "Daddy's love",
+      "type": "Passive, Familiar",
+      "tags": [
+        "spider",
+        "spinne",
+        "treasure"
+      ]
+    },
+    {
+      "id": "171",
+      "name": "Spider Butt",
+      "description": "Upon use, does 10 damage to all enemies in the room and gives them a slowing effect for 4 seconds Enemies killed by Spider Butt will spawn friendly blue spiders Counts as 1 of 3 spider items needed towards the Spider Baby transformation Recharge Time: 2 rooms",
+      "quality": 1,
+      "pool": "treasure",
+      "quote": "Mass enemy slowdown + damage",
+      "type": "Active",
+      "tags": [
+        "spider",
+        "spinne",
+        "treasure"
+      ]
+    },
+    {
+      "id": "172",
+      "name": "Sacrificial Dagger",
+      "description": "Gives Isaac an orbital knife that blocks shots and deals 15 damage per tick on contact with enemies The highest damage orbital in the game, dealing 225 damage per second Synergises very well with invulnerability items such as Book of Shadows",
+      "quality": 2,
+      "pool": "devil",
+      "quote": "My fate protects me",
+      "type": "Passive, Orbital",
+      "tags": [
+        "devil",
+        "orbital"
+      ]
+    },
+    {
+      "id": "173",
+      "name": "Mitre",
+      "description": "Gives a 33% chance of converting red heart drops into soul hearts Counts as 1 of 3 angel items needed towards the Seraphim transformation",
+      "quality": 3,
+      "pool": "angel",
+      "quote": "You feel blessed",
+      "type": "Passive",
+      "tags": [
+        "angel",
+        "heart",
+        "herz"
+      ]
+    },
+    {
+      "id": "174",
+      "name": "Rainbow Baby",
+      "description": "A familiar the follows Isaac and fires random tears Rainbow Baby's tears can choose from any of the other familiars, such as homing, spectral, tar shots etc Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
+      "quality": 1,
+      "pool": "treasure",
+      "quote": "Random buddy",
+      "type": "Passive, Familiar",
+      "tags": [
+        "familiar",
+        "homing",
+        "spectral",
+        "treasure"
+      ]
+    },
+    {
+      "id": "175",
+      "name": "Dad's Key",
+      "description": "Upon use, opens all closed doors in the current room, including the ones which require a key to enter and secret room doors Can be used to open the golden door that appears in the Dark Room or the Chest Cannot be used to escape the Mom's Foot boss, open angel/devil rooms, or open the door to the Blue Womb floor Recharge Time: 2 rooms",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Opens all doors...",
+      "type": "Active",
+      "tags": [
+        "treasure"
+      ]
+    },
+    {
+      "id": "176",
+      "name": "Stem Cells",
+      "description": "+1 HP Up +0.16 Shot Speed Up Heals one red heart container when picked up",
+      "quality": 1,
+      "pool": "boss",
+      "quote": "HP up",
+      "type": "Passive",
+      "tags": [
+        "boss",
+        "heart",
+        "herz",
         "hp up",
         "shot speed",
         "speed up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_183.png"
+      ]
+    },
+    {
+      "id": "177",
+      "name": "Portable Slot",
+      "description": "Using the portable slot takes a coin and has a chance to give a pickup - similar to how the normal slot machines work Recharge Time: Instant",
+      "quality": 0,
+      "pool": "shop",
+      "quote": "Gamble 24/7",
+      "type": "Active",
+      "tags": [
+        "shop"
+      ]
+    },
+    {
+      "id": "178",
+      "name": "Holy Water",
+      "description": "Spawns a familiar that follows Isaac and launches itself in the direction Isaac shoots Upon hitting an enemy, it will deal 7 damage and shatter, creating a pool of damaging blue creep that also petrifies enemies that touch it Once the pool disappears, the familiar will respawn and can be thrown again",
+      "quality": 3,
+      "pool": "angel",
+      "quote": "Splash!",
+      "type": "Passive, Familiar",
+      "tags": [
+        "angel",
+        "familiar"
+      ]
+    },
+    {
+      "id": "179",
+      "name": "Fate",
+      "description": "Gives Isaac an eternal heart and the ability to fly Taking an eternal heart to the next floor or collecting two on the same floor gives you an extra heart container",
+      "quality": 3,
+      "pool": "treasure",
+      "quote": "Flight eternal",
+      "type": "Passive",
+      "tags": [
+        "flight",
+        "heart",
+        "herz",
+        "hp up",
+        "treasure"
+      ]
+    },
+    {
+      "id": "180",
+      "name": "The Black Bean",
+      "description": "Upon taking damage, Isaac will fart, causing all enemies in close proximity to become poisoned Black Bean deals your tear damage for 6 ticks",
+      "quality": 0,
+      "pool": "treasure",
+      "quote": "Toot on touch",
+      "type": "Passive",
+      "tags": [
+        "treasure"
+      ]
+    },
+    {
+      "id": "181",
+      "name": "White Pony",
+      "description": "Allows Isaac to fly while the White Pony is held While held, sets your speed stat to 1.5 if it isn't already that high. If your speed stat is already higher then that value is still used Upon use, Isaac charges in the direction the pony is facing, becoming invulnerable during the charge and damaging enemies While charging, Isaac spawns a trail of light beams that deal a lot of damage to enemies (damage * 4 + 10) Drops from the Conquest boss fight Recharge Time: 2 rooms",
+      "quality": 2,
+      "pool": "boss",
+      "quote": "Flight + holy death",
+      "type": "Active",
+      "tags": [
+        "boss",
+        "flight"
+      ]
+    },
+    {
+      "id": "182",
+      "name": "Sacred Heart",
+      "description": "Tears are now white, do a lot more damage and move slower across the screen with a homing effect Health Up Damage Up (damage * 2.3 + 1) -0.4 Tears Down -0.25 Shot Speed Down Full red heart heal Counts as 1 of 3 angel items needed towards the Seraphim transformation.",
+      "quality": 4,
+      "pool": "angel",
+      "quote": "Homing shots + DMG up",
+      "type": "Passive, Tear Modifier",
+      "tags": [
+        "angel",
+        "dmg up",
+        "heart",
+        "herz",
+        "homing",
+        "hp up",
+        "shot speed",
+        "tears down"
+      ]
+    },
+    {
+      "id": "183",
+      "name": "Toothpicks",
+      "description": "+0.7 Tears Up +0.16 Shot Speed Up Does not increase your damage, simply makes your tears red",
+      "quality": 3,
+      "pool": "boss",
+      "quote": "Tears + shot speed up",
+      "type": "Passive",
+      "tags": [
+        "boss",
+        "shot speed",
+        "speed up",
+        "tears up"
+      ]
     },
     {
       "id": "184",
-      "name": "Key Piece 1",
-      "description": "\"Half key\" — First half of the key to Mega Satan's door. Combine with Key Piece 2.",
-      "quality": 2,
+      "name": "Holy Grail",
+      "description": "+1 HP Up Gives Isaac the ability to fly Heals one red heart container when picked up Counts as 1 of 3 angel items needed towards the Seraphim transformation",
+      "quality": 3,
       "pool": "angel",
       "quote": "Flight + HP up",
+      "type": "Passive",
       "tags": [
         "angel",
         "flight",
+        "heart",
+        "herz",
         "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_184.png"
+      ]
     },
     {
       "id": "185",
-      "name": "Key Piece 2",
-      "description": "\"Half key\" — Second half of the key to Mega Satan's door. Combine with Key Piece 1 to unlock the golden door.",
-      "quality": 2,
+      "name": "Dead Dove",
+      "description": "Gives Isaac the ability to fly and spectral tears An item only found in the Angel room Counts as 1 of 3 angel items needed towards the Seraphim transformation",
+      "quality": 3,
       "pool": "angel",
       "quote": "Flight + spectral tears",
+      "type": "Passive",
       "tags": [
         "angel",
         "flight",
         "spectral"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_185.png"
+      ]
     },
     {
       "id": "186",
-      "name": "Knife Piece 1",
-      "description": "\"Part 1/2\" — First piece of the Mother knife. Combines with Knife Piece 2 to open the flesh door to Corpse.",
-      "quality": 2,
-      "pool": "golden",
+      "name": "Blood Rights",
+      "description": "Upon use, takes away one full heart and deals 40 damage to the entire room Shields and invincibility effects do not prevent damage when using this item Using with Isaac's Heart previously prevented you from taking damage, however in Repentance this was fixed Using this item as The Lost will instantly kill him, even if you have Holy Mantle active Recharge Time: Instant",
+      "quality": 0,
+      "pool": "devil",
       "quote": "Mass enemy damage at a cost",
+      "type": "Active",
       "tags": [
-        "golden"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_186.png"
+        "blood",
+        "blut",
+        "devil",
+        "heart",
+        "herz",
+        "shield"
+      ]
     },
     {
       "id": "187",
-      "name": "Knife Piece 2",
-      "description": "\"Part 2/2\" — Second piece of the Mother knife. With Piece 1, opens the flesh door. The combined knife acts as a piercing orbital dealing 25 damage per tick.",
-      "quality": 2,
-      "pool": "golden",
+      "name": "Guppy's Hairball",
+      "description": "Follows behind Isaac and can be swung back and forth, dealing 5 contact damage per tick to anything it hits Every time the hairball kills an enemy, it grows in size allowing it to deal more damage This is one of the items which allows you to transform into Guppy Moving to a new floor decreases the size of the hairball Counts as 1 of 3 cat items needed towards the Guppy transformation",
+      "quality": 1,
+      "pool": "devil",
       "quote": "Swing it",
+      "type": "Passive, Familiar",
       "tags": [
-        "golden",
-        "orbital",
-        "piercing"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_187.png"
+        "devil"
+      ]
     },
     {
       "id": "188",
-      "name": "Dad's Note",
-      "description": "\"Ascend\" — Triggers the Ascent sequence, reversing through all floors back to Home. Required for The Beast path.",
-      "quality": 2,
-      "pool": "golden",
+      "name": "Abel",
+      "description": "A familiar that mirrors the player's movements and shoots tears directly at Isaac Abel's tears do 3.5 damage, unless playing as Cain in which case they do 5 Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
+      "quality": 0,
+      "pool": "treasure",
       "quote": "Mirrored buddy",
+      "type": "Passive, Familiar",
       "tags": [
-        "golden"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_188.png"
+        "familiar",
+        "treasure"
+      ]
     },
     {
       "id": "189",
-      "name": "Broken Shovel",
-      "description": "\"Mom's foot stomps\" — While held, Mom's foot periodically stomps. Survive to combine in Boss Rush and unlock The Forgotten.",
-      "quality": 1,
-      "pool": "golden",
+      "name": "SMB Super Fan",
+      "description": "Isaac turns red like Meatboy +1 HP Up +0.3 Damage Up +0.2 Tears Up +1.5 Range Up +0.2 Speed Up Full red heart heal",
+      "quality": 3,
+      "pool": "treasure",
       "quote": "All stats up",
+      "type": "Passive",
       "tags": [
-        "boss",
-        "golden"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_189.png"
+        "dmg up",
+        "heart",
+        "herz",
+        "hp up",
+        "range up",
+        "speed up",
+        "tears up",
+        "treasure"
+      ]
     },
     {
       "id": "190",
-      "name": "Mom's Shovel",
-      "description": "\"Trapdoor\" — Active item: creates a trapdoor to the next floor. Used on the Dark Room dirt patch to unlock The Forgotten.",
-      "quality": 2,
-      "pool": "golden",
+      "name": "Pyro",
+      "description": "Gives Isaac 99 bombs",
+      "quality": 3,
+      "pool": "secret",
       "quote": "99 bombs",
+      "type": "Passive",
       "tags": [
         "bomb",
         "bombe",
-        "golden"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_190.png"
+        "secret"
+      ]
     },
     {
       "id": "191",
-      "name": "PHD",
-      "description": "\"Better pills\" — Identifies all pills. Converts bad pill effects to good ones. Grants a full heart. Counts toward Spun transformation.",
+      "name": "3 Dollar Bill",
+      "description": "Grants Isaac random tear effects Can pick from a list of 39 item effects, including 8 Inch Nails, 20/20, Apple!, Ball of Tar, Continuum, Cricket's Body, Dark Matter, Dead Eye, Death's Touch, Euthanasia, Explosivo, Eye of Belial, Fire Mind, Holy Light, Iron Bar, Little Horn, Lost Contact, Mom's Contacts, Mom's Eyeshadow, Mom's Perfume, Mutant Spider, My Reflection, Mysterious Liquid, Number One, Ouija Board, Parasitoid, Proptosis, Pupula Duplex, Rubber Cement, Sagittarius, Scorpio, Sinus Infection, Speed Ball, Spoon Bender, The Inner Eye, The Parasite, The Sad Onion, The Wiz and Tough Love The tear type changes every 2-3 seconds",
       "quality": 3,
-      "pool": "shop",
+      "pool": "treasure",
       "quote": "Rainbow tears",
+      "type": "Passive, Tear Modifier",
       "tags": [
-        "heart",
-        "herz",
-        "pill",
-        "pille",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_191.png"
-    },
-    {
-      "id": "192",
-      "name": "Restock",
-      "description": "\"Items restock\" — Shop items reappear after purchase (at increasing prices). Allows buying infinite shop items.",
-      "quality": 3,
-      "pool": "shop",
-      "quote": "Temporary psychic shot",
-      "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_192.png"
-    },
-    {
-      "id": "193",
-      "name": "Blank Card",
-      "description": "\"Card copier\" — Active item: triggers the effect of your currently held card or rune without consuming it.",
-      "quality": 3,
-      "pool": "shop",
-      "quote": "DMG + HP up",
-      "tags": [
-        "hp up",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_193.png"
-    },
-    {
-      "id": "194",
-      "name": "Placebo",
-      "description": "\"Pill copier\" — Active item: triggers the effect of your currently held pill without consuming it.",
-      "quality": 3,
-      "pool": "shop",
-      "quote": "Shot speed up",
-      "tags": [
-        "pill",
-        "pille",
-        "shop",
-        "shot speed",
-        "speed up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_194.png"
-    },
-    {
-      "id": "195",
-      "name": "Car Battery",
-      "description": "\"Double active\" — Active items trigger their effect twice when used.",
-      "quality": 3,
-      "pool": "shop",
-      "quote": "What's all this...?",
-      "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_195.png"
-    },
-    {
-      "id": "196",
-      "name": "Diplopia",
-      "description": "\"Double items\" — One-time use: duplicates all pedestal items and shop items in the current room. Extremely powerful.",
-      "quality": 4,
-      "pool": "shop",
-      "quote": "Tears up",
-      "tags": [
-        "shop",
-        "tears up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_196.png"
-    },
-    {
-      "id": "197",
-      "name": "Crooked Penny",
-      "description": "\"50/50 gamble\" — 50% chance to double all items and pickups in the room, 50% chance to destroy them all.",
-      "quality": 2,
-      "pool": "shop",
-      "quote": "Damage + range up",
-      "tags": [
-        "range up",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_197.png"
-    },
-    {
-      "id": "198",
-      "name": "Schoolbag",
-      "description": "\"Two actives\" — Allows you to carry two active items at once. Switch between them with the drop key.",
-      "quality": 3,
-      "pool": "shop",
-      "quote": "Stuff",
-      "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_198.png"
-    },
-    {
-      "id": "199",
-      "name": "Deep Pockets",
-      "description": "\"Extra coins\" — Raises coin cap to 999. Any room that would normally drop nothing now drops coins.",
-      "quality": 2,
-      "pool": "shop",
-      "quote": "Better chest loot +2 keys",
-      "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_199.png"
-    },
-    {
-      "id": "200",
-      "name": "4.5 Volt",
-      "description": "\"Damage charges\" — Active items are charged by dealing damage to enemies instead of clearing rooms. ~100 damage per charge.",
-      "quality": 3,
-      "pool": "shop",
-      "quote": "Charm tears",
-      "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_200.png"
-    },
-    {
-      "id": "201",
-      "name": "Book of Virtues",
-      "description": "\"Wisp generator\" — Active item: spawns a wisp orbital that fires tears and blocks shots. Wisps have unique effects based on other active items held.",
-      "quality": 3,
-      "pool": "angel",
-      "quote": "Concussive tears",
-      "tags": [
-        "angel",
-        "feuer",
-        "fire",
-        "orbital"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_201.png"
-    },
-    {
-      "id": "202",
-      "name": "Satanic Bible",
-      "description": "\"Dark boss items\" — Active item: grants a black heart. The boss room item pedestal becomes a Devil Deal item.",
-      "quality": 3,
-      "pool": "devil",
-      "quote": "Golden touch",
-      "tags": [
-        "boss",
-        "devil",
-        "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_202.png"
-    },
-    {
-      "id": "203",
-      "name": "Eucharist",
-      "description": "\"Angel guarantee\" — Angel Room always appears after boss fights.",
-      "quality": 3,
-      "pool": "angel",
-      "quote": "1+1free 4evar!",
-      "tags": [
-        "angel",
-        "boss"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_203.png"
-    },
-    {
-      "id": "204",
-      "name": "Goat Head",
-      "description": "\"Devil/Angel guarantee\" — Devil Room or Angel Room is guaranteed to appear after every boss fight.",
-      "quality": 3,
-      "pool": "devil",
-      "quote": "Filled with goodies",
-      "tags": [
-        "angel",
-        "boss",
-        "devil"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_204.png"
-    },
-    {
-      "id": "205",
-      "name": "Duality",
-      "description": "\"Both doors\" — When a Devil Room or Angel Room door appears, both appear. Enter one and the other vanishes.",
-      "quality": 2,
-      "pool": "angel",
-      "quote": "Charge with blood",
-      "tags": [
-        "angel",
-        "blood",
-        "blut",
-        "devil"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_205.png"
-    },
-    {
-      "id": "206",
-      "name": "Sacrificial Altar",
-      "description": "\"Sacrifice familiars\" — Active item: removes 1-2 familiars and spawns a Devil Room item for each.",
-      "quality": 1,
-      "pool": "devil",
-      "quote": "An out-of-body experience",
-      "tags": [
-        "devil",
-        "familiar"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_206.png"
-    },
-    {
-      "id": "207",
-      "name": "Dark Arts",
-      "description": "\"Shadow dash\" — Active item: briefly become a shadow that passes through enemies and projectiles. On ending, deal stored damage to everything you passed through.",
-      "quality": 3,
-      "pool": "devil",
-      "quote": "Gotta lick em all",
-      "tags": [
-        "devil",
-        "fliege",
-        "fly",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_207.png"
-    },
-    {
-      "id": "208",
-      "name": "Lemegeton",
-      "description": "\"Wisp items\" — Active item: spawns an orbiting wisp that grants the effect of a random item. Wisps can be destroyed.",
-      "quality": 3,
-      "pool": "angel",
-      "quote": "DMG + Challenge up",
-      "tags": [
-        "angel"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_208.png"
-    },
-    {
-      "id": "209",
-      "name": "Bob's Brain",
-      "description": "\"Explosive friend\" — Familiar that charges forward when you fire, exploding on contact for 60 damage + poison cloud. Can hurt you. Counts toward Bob transformation.",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "Toxic blast +5 bombs",
-      "tags": [
-        "bomb",
-        "bombe",
-        "familiar",
-        "feuer",
-        "fire",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_209.png"
-    },
-    {
-      "id": "210",
-      "name": "Aquarius",
-      "description": "\"Trail of tears\" — Leave a trail of damaging blue creep as you move. The creep inherits your tear effects.",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "Unbreakable",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_210.png"
-    },
-    {
-      "id": "211",
-      "name": "The Parasite",
-      "description": "\"Splitting tears\" — Tears split in two on hitting an enemy or obstacle. Split tears deal half damage and fire perpendicular.",
-      "quality": 3,
-      "pool": "treasure",
-      "quote": "Spider revenge",
-      "tags": [
-        "feuer",
-        "fire",
+        "auge",
+        "eye",
         "spider",
         "spinne",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_211.png"
+      ]
     },
     {
-      "id": "212",
-      "name": "Jacob's Ladder",
-      "description": "\"Electric tears\" — Tears spark electricity to nearby enemies when they hit something, dealing half your damage.",
-      "quality": 3,
-      "pool": "treasure",
-      "quote": "Eternal life?",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_212.png"
-    },
-    {
-      "id": "213",
-      "name": "Haemolacria",
-      "description": "\"Burst tears\" — Tears arc and burst into 3-6 smaller tears on impact. Main tear deals your damage; split tears deal half.",
-      "quality": 3,
-      "pool": "treasure",
-      "quote": "Shielded tears",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_213.png"
-    },
-    {
-      "id": "214",
-      "name": "Pop!",
-      "description": "\"Bouncing eyeball tears\" — Tears bounce off walls and objects. Can hit enemies multiple times as they bounce around the room.",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Toxic blood",
-      "tags": [
-        "auge",
-        "blood",
-        "blut",
-        "eye",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_214.png"
-    },
-    {
-      "id": "215",
-      "name": "Flat Stone",
-      "description": "\"Bouncing tears\" — Tears bounce off the ground, creating splash damage on each bounce. Effectively extends range and hits multiple times.",
-      "quality": 3,
-      "pool": "treasure",
-      "quote": "He accepts your offering",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_215.png"
-    },
-    {
-      "id": "216",
-      "name": "Almond Milk",
-      "description": "\"Rapid fire\" — Fire rate x4, damage x0.3. Tears wobble randomly. Less damage penalty than Soy Milk.",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Sin up",
-      "tags": [
-        "feuer",
-        "fire",
-        "tears up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_216.png"
-    },
-    {
-      "id": "217",
-      "name": "Soy Milk",
-      "description": "\"DMG way down + tears way up\" — Fire rate x5.5, damage x0.2. Extremely rapid fire with very low damage per tear. Great with certain synergies.",
+      "id": "192",
+      "name": "Telepathy for Dummies",
+      "description": "When used, Isaac gains homing shots and +3.0 Range Up for the current room Counts as 1 of 3 book items needed towards the Bookworm transormation Recharge Time: 2 rooms",
       "quality": 1,
-      "pool": "treasure",
-      "quote": "You feel itchy",
+      "pool": "library",
+      "quote": "Temporary psychic shot",
+      "type": "Active",
       "tags": [
-        "feuer",
-        "fire",
-        "tears up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_217.png"
+        "homing",
+        "library",
+        "range up"
+      ]
     },
     {
-      "id": "218",
-      "name": "Bird's Eye",
-      "description": "Chance to shoot fire tears",
+      "id": "193",
+      "name": "MEAT!",
+      "description": "+1 HP Up +0.3 Damage Up Heals one red heart container when picked up",
       "quality": 2,
-      "pool": "treasure",
-      "quote": "HP up + regen",
+      "pool": "boss",
+      "quote": "DMG + HP up",
+      "type": "Passive",
       "tags": [
-        "auge",
-        "eye",
-        "feuer",
-        "fire",
-        "hp up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_218.png"
+        "boss",
+        "dmg up",
+        "heart",
+        "herz",
+        "hp up"
+      ]
     },
     {
-      "id": "219",
-      "name": "Psy Fly",
-      "description": "\"Psychic guardian\" — Orbiting fly that chases and deflects enemy projectiles. One of the best defensive items in the game.",
-      "quality": 4,
-      "pool": "treasure",
-      "quote": "HP up",
+      "id": "194",
+      "name": "Magic 8 Ball",
+      "description": "+0.16 Shot Speed Up Gives Isaac a random tarot card when picked up +15% chance for Planetariums to spawn Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
+      "quality": 1,
+      "pool": "boss",
+      "quote": "Shot speed up",
+      "type": "Passive",
       "tags": [
-        "fliege",
-        "fly",
-        "hp up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_219.png"
+        "boss",
+        "shot speed",
+        "speed up"
+      ]
     },
     {
-      "id": "220",
-      "name": "Gnawed Leaf",
-      "description": "\"Standing still = invincible\" — Become completely invincible when standing still for ~1 second. Extremely powerful with orbital or familiar damage.",
+      "id": "195",
+      "name": "Mom's Coin Purse",
+      "description": "Drops 4 random pills on the floor around Isaac Counts as 1 of 3 mom items needed towards the Mom transformation",
+      "quality": 1,
+      "pool": "shop",
+      "quote": "What's all this...?",
+      "type": "Passive",
+      "tags": [
+        "pill",
+        "pille",
+        "shop"
+      ]
+    },
+    {
+      "id": "196",
+      "name": "Squeezy",
+      "description": "+2 Soul Hearts +0.4 Tears Up",
+      "quality": 3,
+      "pool": "boss",
+      "quote": "Tears up",
+      "type": "Passive",
+      "tags": [
+        "boss",
+        "heart",
+        "herz",
+        "tears up"
+      ]
+    },
+    {
+      "id": "197",
+      "name": "Jesus Juice",
+      "description": "+0.5 Damage Up +0.38 Range Up",
       "quality": 2,
-      "pool": "treasure",
-      "quote": "Tear blast +5 bombs",
+      "pool": "angel",
+      "quote": "Damage + range up",
+      "type": "Passive",
+      "tags": [
+        "angel",
+        "dmg up",
+        "range up"
+      ]
+    },
+    {
+      "id": "198",
+      "name": "Box",
+      "description": "When picked up, spawns 1 red heart, 1 key, 1 bomb, 1 coin, 1 card/rune, 1 pill and 1 trinket",
+      "quality": 0,
+      "pool": "boss",
+      "quote": "Stuff",
+      "type": "Passive",
       "tags": [
         "bomb",
         "bombe",
-        "familiar",
-        "orbital",
+        "boss",
+        "heart",
+        "herz",
+        "pill",
+        "pille"
+      ]
+    },
+    {
+      "id": "199",
+      "name": "Mom's Key",
+      "description": "+2 Keys Doubles the yield of hearts, coins, bombs and keys that spawn from non-red chests Counts as 1 of 3 mom items needed towards the Mom transformation",
+      "quality": 3,
+      "pool": "shop",
+      "quote": "Better chest loot +2 keys",
+      "type": "Passive",
+      "tags": [
+        "bomb",
+        "bombe",
+        "heart",
+        "herz",
+        "shop"
+      ]
+    },
+    {
+      "id": "200",
+      "name": "Mom's Eyeshadow",
+      "description": "Tears have a random chance to charm enemies Charmed enemies will prioritize attacking other enemies in the room, otherwise they will still attack Isaac The chance to charm enemies is affected by your luck stat and at +27 Luck it will activate every time Counts as 1 of 3 mom items needed towards the Mom transformation",
+      "quality": 1,
+      "pool": "treasure",
+      "quote": "Charm tears",
+      "type": "Passive",
+      "tags": [
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_220.png"
+      ]
+    },
+    {
+      "id": "201",
+      "name": "Iron Bar",
+      "description": "+0.3 Damage Up Tears now have a chance to concuss enemies, causing them to walk around dazed and confused for a short period of time The chance to concuss enemies is affected by your luck stat and at +27 Luck it will activate every time",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Concussive tears",
+      "type": "Passive",
+      "tags": [
+        "dmg up",
+        "treasure"
+      ]
+    },
+    {
+      "id": "202",
+      "name": "Midas Touch",
+      "description": "Isaac's touch now petrifies enemies, turning them to gold for a few seconds. If an enemy is killed while it is golden, it will drop between 1-4 coins Contact damage is also dealt to enemies equal to the amount of coins Isaac is currently holding Has a synergy with The Poop item, which gives it a high chance to spawn golden poops",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Golden touch",
+      "type": "Passive",
+      "tags": [
+        "treasure"
+      ]
+    },
+    {
+      "id": "203",
+      "name": "Humbleing Bundle",
+      "description": "All future pennies, keys, bombs and hearts have a chance to drop in pairs Does not work for other pickups, such as soul hearts, nickels, dimes, cards, pills etc Does not affect existing pickups that already dropped before taking this item",
+      "quality": 3,
+      "pool": "shop",
+      "quote": "1+1free 4evar!",
+      "type": "Passive",
+      "tags": [
+        "bomb",
+        "bombe",
+        "heart",
+        "herz",
+        "pill",
+        "pille",
+        "shop"
+      ]
+    },
+    {
+      "id": "204",
+      "name": "Fanny pack",
+      "description": "When you take damage, there is a 50% chance to drop a random heart, key, bomb or coin",
+      "quality": 1,
+      "pool": "shop",
+      "quote": "Filled with goodies",
+      "type": "Passive",
+      "tags": [
+        "bomb",
+        "bombe",
+        "heart",
+        "herz",
+        "shop"
+      ]
+    },
+    {
+      "id": "205",
+      "name": "Sharp Plug",
+      "description": "When your spacebar item is not fully charged, you can press spacebar to recharge it at the cost half of a heart per charge Can be used on partially charged items Will not kill you if used - it stops a half a heart left Red hearts are taken before other kinds, i.e. soul or black hearts Your devil deal chance isn't ruined by this item taking away red hearts",
+      "quality": 2,
+      "pool": "shop",
+      "quote": "Charge with blood",
+      "type": "Passive",
+      "tags": [
+        "blood",
+        "blut",
+        "heart",
+        "herz",
+        "shop"
+      ]
+    },
+    {
+      "id": "206",
+      "name": "The Guillotine",
+      "description": "+1.0 Damage Up -1 Tear Delay (Tears Up) Causes Isaac's head to detach and orbit his body, blocking shots and dealing 7 contact damage per tick BFFs will cause the Guillotine head to do double damage (14 damage per tick) Tears are still fired from Isaac's head but the hitbox remains around his body",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "An out-of-body experience",
+      "type": "Passive",
+      "tags": [
+        "dmg up",
+        "tears up",
+        "treasure"
+      ]
+    },
+    {
+      "id": "207",
+      "name": "Ball of Bandages",
+      "description": "Gives Isaac an orbital ball of bandages that deals 7 contact damage per tick and blocks enemy shots Collecting a second Ball of Bandages in the run turns the orbital into a pink head that shoots tears that deal 7 damage each and have a chance to charm enemies Getting a third Ball of Bandages will transform the head into bandage girl which will chase enemies dealing 3.5 contact damage per tick while firing charm tears A fourth Ball of Bandages will make the Bandage Girl bigger and stronger, making her deal 5.5 damage per tick instead Any further Ball of Bandages will repeat the cycle Charmed enemies will prioritize attacking other enemies in the room, otherwise they will still attack Isaac",
+      "quality": 2,
+      "pool": "boss",
+      "quote": "Gotta lick em all",
+      "type": "Passive, Orbital",
+      "tags": [
+        "boss",
+        "orbital"
+      ]
+    },
+    {
+      "id": "208",
+      "name": "Champion Belt",
+      "description": "+1.0 Damage Up Increases the chance of champion enemies appearing by 15% Doesn't affect the chance for champion bosses to spawn An item only found in the Shop room pool",
+      "quality": 3,
+      "pool": "shop",
+      "quote": "DMG + Challenge up",
+      "type": "Passive",
+      "tags": [
+        "dmg up",
+        "shop"
+      ]
+    },
+    {
+      "id": "209",
+      "name": "Butt Bombs",
+      "description": "+5 bombs Bombs now become poop bombs, which deal 10 damage to all enemies in the room and daze them for a short period of time Butt Bombs heal the poop bosses (Dingle, Dangle, Brownie) by 25% of their max HP Counts as 1 of 3 poop items needed towards the Oh Crap transformation.",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Toxic blast +5 bombs",
+      "type": "Passive",
+      "tags": [
+        "bomb",
+        "bombe",
+        "treasure"
+      ]
+    },
+    {
+      "id": "210",
+      "name": "Gnawed Leaf",
+      "description": "If Isaac stands still and stops shooting for a second, he turns to stone, making him invincible until he moves/shoots again Using bombs or your active item will remove the invicibility as well This item is a reference to the Tanuki suit in Super Mario 3",
+      "quality": 1,
+      "pool": "treasure",
+      "quote": "Unbreakable",
+      "type": "Passive",
+      "tags": [
+        "bomb",
+        "bombe",
+        "shield",
+        "treasure"
+      ]
+    },
+    {
+      "id": "211",
+      "name": "Spiderbaby",
+      "description": "Spawns 2-5 friendly attack spiders every time you take damage Counts as 1 of 3 spider items needed towards the Spider Baby transformation",
+      "quality": 0,
+      "pool": "treasure",
+      "quote": "Spider revenge",
+      "type": "Passive",
+      "tags": [
+        "spider",
+        "spinne",
+        "treasure"
+      ]
+    },
+    {
+      "id": "212",
+      "name": "Guppy's Collar",
+      "description": "When Isaac dies, he has a 50% chance to resurrect with 1/2 a heart Counts as 1 of 3 cat items needed towards the Guppy transformation",
+      "quality": 1,
+      "pool": "devil",
+      "quote": "Eternal life?",
+      "type": "Passive",
+      "tags": [
+        "devil",
+        "heart",
+        "herz"
+      ]
+    },
+    {
+      "id": "213",
+      "name": "Lost Contact",
+      "description": "All of Isaac's tears now have a shield, allowing them to block an enemy projectile If a tear blocks something, both Isaac's and the enemies tears are destroyed -0.16 Shot Speed Down",
+      "quality": 2,
+      "pool": "secret",
+      "quote": "Shielded tears",
+      "type": "Passive",
+      "tags": [
+        "secret",
+        "shield",
+        "shot speed"
+      ]
+    },
+    {
+      "id": "214",
+      "name": "Anemic",
+      "description": "+1.5 Range Up When Isaac takes damage, he will start to leave a trail of blood creep behind him as he walks for the current room. The creep deals 2 damage per tick while enemies stand in it Lazarus' revived form (Lazarus II) respawns with this item",
+      "quality": 1,
+      "pool": "treasure",
+      "quote": "Toxic blood",
+      "type": "Passive",
+      "tags": [
+        "blood",
+        "blut",
+        "range up",
+        "treasure"
+      ]
+    },
+    {
+      "id": "215",
+      "name": "Goat Head",
+      "description": "Gives Isaac a guaranteed devil or angel room on every floor that they can appear, even if you have already beaten the boss and it didn't show up originally Taking the Goat Head (or any other item) in a Devil Deal bars you from encountering Angel Rooms naturally. After which, the only way to access an Angel Room is via the Sacrifice Room",
+      "quality": 3,
+      "pool": "devil",
+      "quote": "He accepts your offering",
+      "type": "Passive",
+      "tags": [
+        "devil"
+      ]
+    },
+    {
+      "id": "216",
+      "name": "Ceremonial Robes",
+      "description": "+3 Black Hearts +1 Damage Up When depleted, Black Hearts deal 40 damage to the entire room, in a Necronomicon style effect",
+      "quality": 3,
+      "pool": "devil",
+      "quote": "Sin up",
+      "type": "Passive",
+      "tags": [
+        "devil",
+        "dmg up",
+        "heart",
+        "herz"
+      ]
+    },
+    {
+      "id": "217",
+      "name": "Mom's Wig",
+      "description": "Isaac now has a small chance to create friendly attack spiders everytime he fires a tear Can create up to a maximum of 5 spiders in the room at one time The Hive Mind item allows Mom's Wig to spawn a maximum of 10 spiders at once, and increases their damage The chance to create a spider is affected by your luck stat and at +10 Luck it will activate every time Heals you for 1 red heart when picked up Counts as 1 of 3 mom items needed towards the Mom transformation",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "You feel itchy",
+      "type": "Passive",
+      "tags": [
+        "heart",
+        "herz",
+        "spider",
+        "spinne",
+        "treasure"
+      ]
+    },
+    {
+      "id": "218",
+      "name": "Placenta",
+      "description": "+1 HP Up Gives a chance to heal 1/2 a red heart every time the in-game timer hits a new minute Heals one red heart container when picked up There are no restrictions on when the regeneration effect happens as long as the game is not paused, so you can simply afk and heal over time Works in crawl spaces It's possible to find this item by blowing up Polyps (the weird red rocks found in the Womb floors)",
+      "quality": 2,
+      "pool": "boss",
+      "quote": "HP up + regen",
+      "type": "Passive",
+      "tags": [
+        "boss",
+        "heart",
+        "herz",
+        "hp up"
+      ]
+    },
+    {
+      "id": "219",
+      "name": "Old Bandage",
+      "description": "+1 HP Up The given heart container is empty When you get hit, you will sometimes cause hearts to drop on the floor The chance to drop hearts is affected by your luck stat and at +29 Luck it will activate 50% of the time",
+      "quality": 2,
+      "pool": "boss",
+      "quote": "HP up",
+      "type": "Passive",
+      "tags": [
+        "boss",
+        "heart",
+        "herz",
+        "hp up"
+      ]
+    },
+    {
+      "id": "220",
+      "name": "Sad Bombs",
+      "description": "+5 Bombs Everytime a bomb explodes, it will release a circle of 10 tears outwards, much like the Tammy's Head effect The tears from each bomb deal a flat 25 damage and are affected by any tear modifiers Isaac has The tears caused by Sad Bombs are much larger and do a lot more damage than Isaac's normal tears",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Tear blast +5 bombs",
+      "type": "Passive",
+      "tags": [
+        "bomb",
+        "bombe",
+        "treasure"
+      ]
     },
     {
       "id": "221",
-      "name": "Zodiac",
-      "description": "\"Random zodiac\" — Gain a random zodiac item effect at the start of each floor. Effects include speed, damage, tears, range, and special abilities.",
-      "quality": 2,
+      "name": "Rubber Cement",
+      "description": "Isaac's tears now bounce off walls and objects in the environment, such as rocks and pots Allows tears to hit the same enemy multiple times If you also have Lost Contact, tears will bounce off enemy projectiles instead of being destroyed",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Bouncing tears",
+      "type": "Passive",
       "tags": [
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_221.png"
+      ]
     },
     {
       "id": "222",
-      "name": "Magic Skin",
-      "description": "\"Item on demand\" — Active item: spawns a random item pedestal. Costs one heart container per use (replaced with a broken heart).",
+      "name": "Anti-Gravity",
+      "description": "-2 Tear Delay (Tears Up) As you hold down the fire button, shots will float in the same place until you release the fire key again Allows you to store up a lot of tears in the air and release them all at once When the tears are released, they will fire off in the direction that Isaac was originally facing when it was created",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Antigravity tears + tears up",
+      "type": "Passive, Tear Modifier",
+      "tags": [
+        "tears up",
+        "treasure"
+      ]
+    },
+    {
+      "id": "223",
+      "name": "Pyromaniac",
+      "description": "+5 Bombs All explosions now heal Isaac for 0.5 red hearts instead of hurting him Pyromaniac grants Isaac immunity to fire, but does not protect against stomps or shockwave effects",
+      "quality": 3,
+      "pool": "treasure",
+      "quote": "Hurts so good +5 bombs",
+      "type": "Passive",
+      "tags": [
+        "bomb",
+        "bombe",
+        "heart",
+        "herz",
+        "treasure"
+      ]
+    },
+    {
+      "id": "224",
+      "name": "Cricket's Body",
+      "description": "-1 Tear Delay (Tears Up) -1.3 Range Down x1.2 Tear Size Makes tears break into 4 smaller tears on impact with anything, which deal half of your damage",
+      "quality": 3,
+      "pool": "treasure",
+      "quote": "Splash damage + tears up",
+      "type": "Passive",
+      "tags": [
+        "tears up",
+        "treasure"
+      ]
+    },
+    {
+      "id": "225",
+      "name": "Gimpy",
+      "description": "When getting hit, this item has a chance to drop a soul heart or black heart The chance to spawn a heart is affected by your luck stat and at +22 Luck it will activate 50% of the time Enemies have a chance to drop half a red heart when killed",
+      "quality": 2,
+      "pool": "devil",
+      "quote": "Sweet suffering",
+      "type": "Passive",
+      "tags": [
+        "devil",
+        "heart",
+        "herz"
+      ]
+    },
+    {
+      "id": "226",
+      "name": "Black Lotus",
+      "description": "+1 HP Up +1 Soul Heart +1 Black Heart Heals one red heart container when picked up When depleted, Black Hearts deal 40 damage to the entire room, in a Necronomicon style effect An item only found in the secret room pool",
       "quality": 2,
       "pool": "secret",
-      "quote": "Antigravity tears + tears up",
+      "quote": "HP up x3",
+      "type": "Passive",
       "tags": [
         "heart",
         "herz",
         "hp up",
-        "secret",
-        "tears up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_222.png"
-    },
-    {
-      "id": "223",
-      "name": "Mom's Box",
-      "description": "\"Double trinkets\" — Active item: drops a random trinket. While held, doubles the effect of your current trinket. Counts toward Yes Mother? transformation.",
-      "quality": 3,
-      "pool": "shop",
-      "quote": "Hurts so good +5 bombs",
-      "tags": [
-        "bomb",
-        "bombe",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_223.png"
-    },
-    {
-      "id": "224",
-      "name": "Tarot Cloth",
-      "description": "\"Double cards\" — Doubles the effect of played cards and runes.",
-      "quality": 3,
-      "pool": "shop",
-      "quote": "Splash damage + tears up",
-      "tags": [
-        "shop",
-        "tears up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_224.png"
-    },
-    {
-      "id": "225",
-      "name": "Starter Deck",
-      "description": "\"Card holder\" — Cards replace pills. Hold 2 cards at once. Spawns a card on pickup.",
-      "quality": 2,
-      "pool": "shop",
-      "quote": "Sweet suffering",
-      "tags": [
-        "pill",
-        "pille",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_225.png"
-    },
-    {
-      "id": "226",
-      "name": "Little Baggy",
-      "description": "\"Pill holder\" — Pills replace cards. Hold 2 pills at once. Spawns a pill on pickup.",
-      "quality": 1,
-      "pool": "shop",
-      "quote": "HP up x3",
-      "tags": [
-        "hp up",
-        "pill",
-        "pille",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_226.png"
+        "secret"
+      ]
     },
     {
       "id": "227",
-      "name": "Old Bandage",
-      "description": "\"Chance for hearts\" — Chance to spawn a red heart when you take damage.",
+      "name": "Piggy Bank",
+      "description": "+3 Coins when picked up When you take damage, 1-2 coins will drop on the floor When playing as the Keeper, this item drops 0-1 coins instead",
       "quality": 1,
-      "pool": "boss",
+      "pool": "shop",
       "quote": "My life savings",
+      "type": "Passive",
       "tags": [
-        "boss",
-        "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_227.png"
+        "shop"
+      ]
     },
     {
       "id": "228",
-      "name": "Celtic Cross",
-      "description": "\"Chance for shield\" — When you take damage, 20% chance to gain a shield that blocks the next hit (stacks with luck).",
+      "name": "Mom's Perfume",
+      "description": "-1 Tear Delay (Tears Up) Isaac's tears have a 15% chance of causing a fear effect Feared enemies will run away from Isaac temporarily The chance to fear enemies is affected by your luck stat and at +85 Luck it will activate every time Counts as 1 of 3 mom items needed towards the Mom transformation",
       "quality": 2,
-      "pool": "angel",
+      "pool": "treasure",
       "quote": "Fear shot",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "luck"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_228.png"
+        "tears up",
+        "treasure"
+      ]
     },
     {
       "id": "229",
-      "name": "Butter Bean",
-      "description": "Pushes nearby enemies and shots",
-      "quality": 0,
+      "name": "Monstro's Lung",
+      "description": "Tears can now be charged and released in a shotgun style effect, much like Monstro's main attack Tears down (Tear delay * 4.3) Partial charging does nothing - must be fully charged to use",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Charged attack",
+      "type": "Passive, Tear Modifier",
       "tags": [
+        "tears down",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_229.png"
+      ]
     },
     {
       "id": "230",
-      "name": "Purity",
-      "description": "\"Cycling aura\" — Gain a random colored aura each room: red = +4 damage, blue = -4 tear delay, yellow = +0.5 speed, orange = +7.5 range. Resets on hit.",
+      "name": "Abaddon",
+      "description": "On pickup Abaddon converts all your heart containers to black hearts, then gives you +2 more black hearts +1.5 Damage Up +0.2 Speed Up Tears now have a chance to induce the fear effect, causing enemies to run away from Isaac for a short period The chance to fear enemies is affected by your luck stat and at +85 Luck it will activate every time When depleted, Black Hearts deal 40 damage to the entire room, in a Necronomicon style effect Counts as 1 of 3 evil items needed towards the Leviathan transformation When taken as The Keeper, your coin health is reduced to 1",
       "quality": 3,
-      "pool": "angel",
+      "pool": "devil",
       "quote": "Evil up + DMG up + fear shot",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "dmg up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_230.png"
+        "devil",
+        "dmg up",
+        "heart",
+        "herz",
+        "hp up",
+        "speed up"
+      ]
     },
     {
       "id": "231",
       "name": "Ball of Tar",
-      "description": "Isaac leaves a trail of tar behind him which will slow down enemies that walk over it Tears have a chance to slow enemies and their projectiles for a short period of time",
+      "description": "Isaac leaves a trail of tar behind him which will slow down enemies that walk over it Tears have a chance to slow enemies and their projectiles for a short period of time The chance to slow enemies can improve based on your luck stat and will always slow enemies at +18 Luck",
       "quality": 2,
       "pool": "treasure",
       "quote": "Sticky feet...",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_231.png",
+      "type": "Passive",
       "tags": [
         "treasure"
       ]
     },
     {
       "id": "232",
-      "name": "Spirit Sword",
-      "description": "\"Melee weapon\" — Tears are replaced with a sword. Swing for 3x damage. Hold fire to charge and release a spin attack + projectile dealing 6x damage. Counts toward Seraphim transformation.",
+      "name": "Stop Watch",
+      "description": "+0.3 Speed Up The Stop Watch applies a permanent but slight slowing effect to all enemies and their projectiles The slowing effect has a reduced effect against Brimstone lasers fired by enemies",
       "quality": 4,
-      "pool": "angel",
+      "pool": "shop",
       "quote": "Let's slow this down a bit",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "feuer",
-        "fire"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_232.png"
+        "laser",
+        "shop",
+        "speed up"
+      ]
     },
     {
       "id": "233",
-      "name": "Keeper's Sack",
-      "description": "\"Shop stat ups\" — Buying a shop item grants a random stat upgrade. Spawns 3 coins, a key, and a bomb on pickup.",
-      "quality": 3,
-      "pool": "shop",
+      "name": "Tiny Planet",
+      "description": "Range greatly increased Grants spectral tears Tears now revolve around Isaac's Body at a fixed distance until they hit the ground The tears orbit close to Isaac, offset slightly in the direction fired. Changing the firing direction will redirect all previously fired tears Causes a lot of great synergies with items such as Lump of Coal, Brimstone, Rubber Cement, Technology and most of the worm trinkets",
+      "quality": 0,
+      "pool": "treasure",
       "quote": "Orbiting tears + range up",
+      "type": "Passive, Tear Modifier",
       "tags": [
-        "bomb",
-        "bombe",
+        "laser",
         "range up",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_233.png"
+        "spectral",
+        "treasure"
+      ]
     },
     {
       "id": "234",
       "name": "Infestation 2",
-      "description": "Creates a friendly blue spider when you kill an enemy Spiders are spawned at the location where the enemy died",
+      "description": "Creates a friendly blue spider when you kill an enemy Spiders are spawned at the location where the enemy died Counts as 1 of 3 spider items needed towards the Spider Baby transformation.",
       "quality": 3,
       "pool": "treasure",
       "quote": "Infestation shot",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_234.png",
+      "type": "Passive",
       "tags": [
         "spider",
         "spinne",
@@ -3361,120 +3250,303 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "236",
-      "name": "Mega Mush",
-      "description": "\"MEGA!\" — Active item: become giant and invincible for 30 seconds. Stomp enemies for massive damage. One of the rarest and most powerful items.",
-      "quality": 4,
-      "pool": "secret",
+      "name": "E. Coli",
+      "description": "E. Coli turns normal enemies into poop if they touch you Enemies can turn into poop even if they do not do contact damage, allowing you to apply the effect without taking damage Can be combined with Midas Touch to turn enemies into Golden Poop This does not work on mini-bosses and bosses Counts as 1 of 3 poop items needed towards the Oh Crap transformation",
+      "quality": 1,
+      "pool": "treasure",
       "quote": "Turdy Touch",
+      "type": "Passive",
       "tags": [
-        "secret"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_236.png"
+        "treasure"
+      ]
     },
     {
       "id": "237",
-      "name": "Dogma",
-      "description": "\"Ascend\" — Grants flight, +2 damage, speed +0.1. Grants a one-time Holy Mantle shield. Automatically given when defeating Dogma boss.",
-      "quality": 4,
-      "pool": "golden",
+      "name": "Death's Touch",
+      "description": "+1.5 Damage Up -0.3 Tears Down x2 Tear Size Isaac's tears turn into large scythes that pierce through enemies (Similar to how Death's scythes look)",
+      "quality": 3,
+      "pool": "devil",
       "quote": "Penetrative shots + DMG up",
+      "type": "Passive, Tear Modifier",
       "tags": [
-        "boss",
+        "devil",
         "dmg up",
-        "flight",
-        "golden"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_237.png"
+        "piercing",
+        "tears down"
+      ]
     },
     {
       "id": "238",
-      "name": "Red Stew",
-      "description": "\"Full heal + temp DMG\" — Fully heals. Grants a temporary +21.6 damage that slowly decreases over 3 minutes to +0.",
-      "quality": 3,
-      "pool": "boss",
+      "name": "Key Piece #1",
+      "description": "Increases your chances to find an Angel Room instead of a Devil Room. See the dedicated Devil room page for more details First half of the key required to enter the door to the Mega Satan boss Drops from one of the angels which appear by bombing the statue in an angel room",
+      "quality": 0,
+      "pool": "angel",
       "quote": "???",
+      "type": "Passive, Familiar",
       "tags": [
-        "boss",
-        "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_238.png"
+        "angel"
+      ]
     },
     {
       "id": "239",
-      "name": "Bird Cage",
-      "description": "\"Divebomb familiar\" — Familiar resting on your head. When you take damage, it launches at the nearest enemy dealing 45 damage + rock waves.",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Key Piece #2",
+      "description": "Increases your chances to find an Angel Room instead of a Devil Room. See the dedicated Devil room page for more details Second half of the key required to enter the door to the Mega Satan boss Drops from one of the angels which appear by bombing the statue in an angel room",
+      "quality": 0,
+      "pool": "angel",
       "quote": "???",
+      "type": "Passive, Familiar",
       "tags": [
-        "bomb",
-        "bombe",
-        "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_239.png"
+        "angel"
+      ]
     },
     {
       "id": "240",
-      "name": "Hungry Soul",
-      "description": "\"Ghost tears\" — On killing an enemy, chance to spawn a ghost that chases enemies and explodes for 7 damage.",
-      "quality": 2,
-      "pool": "angel",
+      "name": "Experimental Treatment",
+      "description": "Randomly increases 4 of your stats, and decreases 2 of them Possible stat changes are fixed values: ±1 health, ±1 damage, ±0.2 speed, ±0.5 range, ±0.5 tears, ±0.2 shot speed, ±1 luck Counts as 1 of 3 syringe items needed towards the Spun transformation",
+      "quality": 1,
+      "pool": "boss",
       "quote": "Some stats up, some stats down",
+      "type": "Passive",
       "tags": [
-        "angel"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_240.png"
+        "boss",
+        "shot speed"
+      ]
     },
     {
       "id": "241",
-      "name": "Jar of Wisps",
-      "description": "\"Wisp spawner\" — Active item: spawns wisps that orbit and fire tears. Each use spawns one more wisp than the previous use.",
-      "quality": 2,
-      "pool": "angel",
+      "name": "Contract From Below",
+      "description": "Doubles pickups and chests from clearing a room Also gives a 30% chance for room clear rewards to not spawn Doesn't affect coins spawned in Greed Mode",
+      "quality": 3,
+      "pool": "devil",
       "quote": "Wealth, but at what cost?",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "feuer",
-        "fire"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_241.png"
+        "devil"
+      ]
     },
     {
       "id": "242",
-      "name": "Salvation",
-      "description": "\"Holy aura\" — Light beam aura around you that damages enemies for 3 damage per tick. The aura is larger with more holy hearts.",
-      "quality": 3,
-      "pool": "angel",
+      "name": "Infamy",
+      "description": "Gives a 50% chance to not take damage from projectiles",
+      "quality": 2,
+      "pool": "secret",
       "quote": "Damage reduction",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_242.png"
+        "secret"
+      ]
     },
     {
       "id": "243",
-      "name": "Vanishing Twin",
-      "description": "\"Boss clone\" — Entering a boss room spawns a weaker copy of the boss. Killing the clone drops an extra item.",
+      "name": "Trinity Shield",
+      "description": "Puts a shield in front of Isaac which blocks projectiles The shield will rotate based on the direction in which Isaac is firing tears",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "angel",
       "quote": "You feel guarded",
+      "type": "Passive",
       "tags": [
-        "boss",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_243.png"
+        "angel",
+        "shield"
+      ]
     },
     {
       "id": "244",
       "name": "Tech.5",
-      "description": "Gives Isaac a laser that will fire at random intervals in addition to your normal tears Each laser does damage equal to your current tear damage",
+      "description": "Gives Isaac a laser that will fire at random intervals in addition to your normal tears Each laser does damage equal to your current tear damage The laser will occasionally fire with one of these effects: Hook Worm, Spoon Bender, Tiny Planet, Mysterious Liquid, Rubber Cement Luck has no effect on the rate at which Tech.5 fires and does not scale with items that increase your tears stat",
       "quality": 3,
       "pool": "treasure",
       "quote": "It's still being tested",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_244.png",
+      "type": "Passive, Tear Modifier",
+      "tags": [
+        "laser",
+        "treasure"
+      ]
+    },
+    {
+      "id": "245",
+      "name": "20/20",
+      "description": "Isaac now shoots two tears at once 0.75x damage multiplier Unlike the Inner Eye and Mutant Spider items, this double shot item does not give a tears down",
+      "quality": 4,
+      "pool": "treasure",
+      "quote": "Double shot",
+      "type": "Passive, Tear Modifier",
+      "tags": [
+        "auge",
+        "dmg up",
+        "eye",
+        "spider",
+        "spinne",
+        "tears down",
+        "treasure"
+      ]
+    },
+    {
+      "id": "246",
+      "name": "Blue Map",
+      "description": "Reveals the locations of the secret and super secret room for the current floor and all future floors",
+      "quality": 2,
+      "pool": "shop",
+      "quote": "Secrets",
+      "type": "Passive",
+      "tags": [
+        "shop"
+      ]
+    },
+    {
+      "id": "247",
+      "name": "BFFS!",
+      "description": "Makes all of Isaac's familiars stronger and bigger Causes most familiars to deal double damage Has no effect on most familiars that scale with Isaac's tear damage",
+      "quality": 2,
+      "pool": "shop",
+      "quote": "Your friends rule!",
+      "type": "Passive",
+      "tags": [
+        "familiar",
+        "shop"
+      ]
+    },
+    {
+      "id": "248",
+      "name": "Hive Mind",
+      "description": "Causes your friendly blue spiders and flies to become bigger and do x2 more damage Allows Mom's Wig to spawn a maximum of 10 spiders at once instead of 5 Fly and spider familiars become stronger similar to BFFS Counts as 1 of 3 fly items needed towards the Beelzebub transformation Counts as 1 of 3 spider items needed towards the Spider Baby transformation.",
+      "quality": 2,
+      "pool": "shop",
+      "quote": "Giant spiders and flies",
+      "type": "Passive",
+      "tags": [
+        "familiar",
+        "shop",
+        "spider",
+        "spinne"
+      ]
+    },
+    {
+      "id": "249",
+      "name": "There's Options",
+      "description": "Two items now spawn after beating a boss fight and the boss rush, however only one can be taken The additional item will pick from the Boss Item Pool Does nothing after the Krampus fight Unlocked by donating to the donation machine in the shop",
+      "quality": 3,
+      "pool": "shop",
+      "quote": "More options",
+      "type": "Passive",
+      "tags": [
+        "shop"
+      ]
+    },
+    {
+      "id": "250",
+      "name": "Bogo Bombs",
+      "description": "All bomb pickups are now 1+1 bombs An item only found in the Shop item pool",
+      "quality": 1,
+      "pool": "shop",
+      "quote": "1+1 bombs",
+      "type": "Passive",
+      "tags": [
+        "bomb",
+        "bombe",
+        "shop"
+      ]
+    },
+    {
+      "id": "251",
+      "name": "Starter Deck",
+      "description": "Spawns a random card Isaac can now hold 2 cards or runes at once. Tap the drop button to cycle between each one All future pill drops will now instead become cards An item only available in the Shop room",
+      "quality": 2,
+      "pool": "shop",
+      "quote": "Extra card room",
+      "type": "Passive",
+      "tags": [
+        "pill",
+        "pille",
+        "shop"
+      ]
+    },
+    {
+      "id": "252",
+      "name": "Little Baggy",
+      "description": "Allows for 2 pills to be held. Tap the drop button to cycle between each one Drops a pill on the floor when picked up Changes all card and rune drops into pills. Any Tarot card or rune on the floor or current held when picking this item up will change into a pill Dice Shard counts as a card and will be converted",
+      "quality": 0,
+      "pool": "shop",
+      "quote": "Extra pill room",
+      "type": "Passive",
+      "tags": [
+        "pill",
+        "pille",
+        "shop"
+      ]
+    },
+    {
+      "id": "253",
+      "name": "Magic Scab",
+      "description": "+1 HP Up +1.0 Luck Up Heals one red heart container when picked up",
+      "quality": 2,
+      "pool": "boss",
+      "quote": "HP + luck up",
+      "type": "Passive",
+      "tags": [
+        "boss",
+        "heart",
+        "herz",
+        "hp up",
+        "luck"
+      ]
+    },
+    {
+      "id": "254",
+      "name": "Blood Clot",
+      "description": "+1.0 Damage Up (Left eye only) +1.5 Range Up (Left eye only) The above stats only apply to tears fired from Isaac's left eye or with a 50% chance if you have an item which causes you to fire from a single source only",
+      "quality": 2,
+      "pool": "boss",
+      "quote": "DMG + range up",
+      "type": "Passive",
+      "tags": [
+        "auge",
+        "blood",
+        "blut",
+        "boss",
+        "dmg up",
+        "eye",
+        "range up"
+      ]
+    },
+    {
+      "id": "255",
+      "name": "Screw",
+      "description": "+0.5 Tears Up +0.2 Shot Speed Up",
+      "quality": 3,
+      "pool": "boss",
+      "quote": "Tears + shot speed up",
+      "type": "Passive",
+      "tags": [
+        "boss",
+        "shot speed",
+        "speed up",
+        "tears up"
+      ]
+    },
+    {
+      "id": "256",
+      "name": "Hot Bombs",
+      "description": "+5 Bombs Grants immunity to fire Enemies touching placed bombs take 16 damage Gives all bombs a burning effect when they explode, leaving fire on the floor which deals 22 damage to enemies",
+      "quality": 1,
+      "pool": "treasure",
+      "quote": "Burning blast +5 bombs",
+      "type": "Passive",
+      "tags": [
+        "bomb",
+        "bombe",
+        "feuer",
+        "fire",
+        "treasure"
+      ]
+    },
+    {
+      "id": "257",
+      "name": "Fire Mind",
+      "description": "Isaac's tears now set enemies on fire, leaving a damage over time effect that does 4 or 6 damage per tick There is a chance that tears that hit enemies will explode, leaving a small fire on the floor that damages enemies Exploding tears deal damage * 2 + 22 per tick The chance for tears to explode is affected by your luck stat and at +13 Luck it will activate every time",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Flaming tears",
+      "type": "Passive",
       "tags": [
         "feuer",
         "fire",
@@ -3482,257 +3554,54 @@ window.ISAAC_FALLBACK = {
       ]
     },
     {
-      "id": "245",
-      "name": "Azazel's Rage",
-      "description": "\"Charged Brimstone\" — After clearing 4 rooms, automatically fires a Brimstone beam at the start of the next room.",
-      "quality": 2,
-      "pool": "devil",
-      "quote": "Double shot",
-      "tags": [
-        "devil",
-        "feuer",
-        "fire"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_245.png"
-    },
-    {
-      "id": "246",
-      "name": "False PHD",
-      "description": "\"Bad pills = DMG\" — Identifies all pills. Bad pill effects grant +0.6 damage and a black heart. Converts good pills to bad variants.",
-      "quality": 2,
-      "pool": "devil",
-      "quote": "Secrets",
-      "tags": [
-        "devil",
-        "heart",
-        "herz",
-        "pill",
-        "pille",
-        "secret"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_246.png"
-    },
-    {
-      "id": "247",
-      "name": "Sacrificial Dagger",
-      "description": "\"High damage orbital\" — Orbiting dagger that deals 15 damage per tick on contact. One of the best orbitals.",
-      "quality": 3,
-      "pool": "devil",
-      "quote": "Your friends rule!",
-      "tags": [
-        "devil",
-        "orbital"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_247.png"
-    },
-    {
-      "id": "248",
-      "name": "Athame",
-      "description": "\"Ring on damage\" — When you take damage, a black ring appears around you dealing 10 damage per tick to enemies.",
-      "quality": 1,
-      "pool": "devil",
-      "quote": "Giant spiders and flies",
-      "tags": [
-        "devil",
-        "fliege",
-        "fly",
-        "spider",
-        "spinne"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_248.png"
-    },
-    {
-      "id": "249",
-      "name": "Shade",
-      "description": "\"Shadow friend\" — Shadow familiar that follows you. After dealing enough contact damage, it is permanently absorbed for a +2 damage up.",
-      "quality": 1,
-      "pool": "devil",
-      "quote": "More options",
-      "tags": [
-        "devil",
-        "dmg up",
-        "familiar"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_249.png"
-    },
-    {
-      "id": "250",
-      "name": "Leprosy",
-      "description": "Grants flesh orbitals that block shots",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "1+1 bombs",
-      "tags": [
-        "bomb",
-        "bombe",
-        "orbital",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_250.png"
-    },
-    {
-      "id": "251",
-      "name": "Lil Portal",
-      "description": "Familiar that eats pickups to open portals",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "Extra card room",
-      "tags": [
-        "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_251.png"
-    },
-    {
-      "id": "252",
-      "name": "IBS",
-      "description": "\"Random poop effects\" — After doing enough damage to enemies, randomly: throw poop, create creep, fart, or drop a lit bomb.",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "Extra pill room",
-      "tags": [
-        "bomb",
-        "bombe",
-        "pill",
-        "pille",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_252.png"
-    },
-    {
-      "id": "253",
-      "name": "The Stairway",
-      "description": "\"Angel shop\" — Spawns a ladder at the start of each floor leading to an angel shop with items purchasable for hearts.",
-      "quality": 4,
-      "pool": "angel",
-      "quote": "HP + luck up",
-      "tags": [
-        "angel",
-        "heart",
-        "herz",
-        "luck",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_253.png"
-    },
-    {
-      "id": "254",
-      "name": "Rosary",
-      "description": "Three soul hearts, The Bible appears in shops",
-      "quality": 2,
-      "pool": "angel",
-      "quote": "DMG + range up",
-      "tags": [
-        "angel",
-        "heart",
-        "herz",
-        "range up",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_254.png"
-    },
-    {
-      "id": "255",
-      "name": "Alabaster Box",
-      "description": "\"Angel charge box\" — Charges by collecting soul hearts (3 charges needed). When full, spawns 2 angel items and 3 soul hearts.",
-      "quality": 3,
-      "pool": "angel",
-      "quote": "Tears + shot speed up",
-      "tags": [
-        "angel",
-        "heart",
-        "herz",
-        "shot speed",
-        "speed up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_255.png"
-    },
-    {
-      "id": "256",
-      "name": "Strawman",
-      "description": "Keeper familiar that can collect items",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Burning blast +5 bombs",
-      "tags": [
-        "bomb",
-        "bombe",
-        "familiar",
-        "feuer",
-        "fire",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_256.png"
-    },
-    {
-      "id": "257",
-      "name": "Blood Oath",
-      "description": "\"Morning damage\" — At the start of each floor, stabs you down to half a red heart. Damage and speed up for the floor proportional to health lost.",
-      "quality": 2,
-      "pool": "devil",
-      "quote": "Flaming tears",
-      "tags": [
-        "blood",
-        "blut",
-        "devil",
-        "heart",
-        "herz",
-        "speed up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_257.png"
-    },
-    {
       "id": "258",
-      "name": "Candy Heart",
-      "description": "\"Stat ups on heal\" — Permanently gain +0.2 to a random stat when you heal red hearts.",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Missing No",
+      "description": "When picked up, and at the start of each floor this rerolls all your current items, giving you a new item to replace each of the ones you had Also rerolls all your stats at the same time, giving a random flat modifier that changes each time Doesn't affect important items such as Polaroid, Negative and Key Pieces",
+      "quality": 0,
+      "pool": "secret",
       "quote": "Syntax error",
+      "type": "Passive",
       "tags": [
-        "heart",
-        "herz",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_258.png"
+        "secret"
+      ]
     },
     {
       "id": "259",
-      "name": "Tooth and Nail",
-      "description": "Briefly become invincible periodically",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Dark Matter",
+      "description": "+1.0 Damage Up Tears now have a chance to apply the fear effect to enemies, which causes them to run away from Isaac The chance to fear enemies is affected by your luck stat and at +20 Luck it will activate every time An item only found in the devil room pool (Note: The Fallen boss pulls items from the Devil Room Pool)",
+      "quality": 3,
+      "pool": "devil",
       "quote": "Fear shot",
+      "type": "Passive",
       "tags": [
-        "fliege",
-        "fly",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_259.png"
+        "devil",
+        "dmg up"
+      ]
     },
     {
       "id": "260",
-      "name": "Binge Eater",
-      "description": "\"Food boost\" — Grants one red heart container. Every item pedestal flickers to a food item; taking the food grants temporary damage up and a heart container.",
+      "name": "Black Candle",
+      "description": "+1 Black Heart Immunity to all floor curses (e.g. Curse of the Lost) Black Candle removes the teleportation effect of Cursed Eye +15% chance of a devil or angel room opening after the boss fight",
       "quality": 3,
-      "pool": "treasure",
+      "pool": "shop",
       "quote": "Curse of immunity + evil up",
+      "type": "Passive",
       "tags": [
-        "dmg up",
+        "auge",
+        "eye",
         "heart",
         "herz",
-        "hp up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_260.png"
+        "shop"
+      ]
     },
     {
       "id": "261",
       "name": "Proptosis",
-      "description": "Gives Isaac high damage tears with a short range Tear size and damage falls off very fast with this item, the further the tear travels the less damage it does",
+      "description": "Gives Isaac high damage tears with a short range Tear size and damage falls off very fast with this item, the further the tear travels the less damage it does Tear damage starts at triple (300%) and decreases over range to eventually be 0%",
       "quality": 3,
       "pool": "treasure",
       "quote": "Short range mega tears",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_261.png",
+      "type": "Passive, Tear Modifier",
       "tags": [
         "treasure"
       ]
@@ -3740,11 +3609,11 @@ window.ISAAC_FALLBACK = {
     {
       "id": "262",
       "name": "Missing Page 2",
-      "description": "+1 Black Heart If the total sum of all your health is at one heart after taking damage, the necronomicon effect will activate, dealing 40 damage to the entire room",
+      "description": "+1 Black Heart If the total sum of all your health is at one heart after taking damage, the necronomicon effect will activate, dealing 40 damage to the entire room Missing Page 2 now doubles all black heart and Necronomicon damage to 80",
       "quality": 0,
       "pool": "devil",
       "quote": "Evil up + your enemies will pay",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_262.png",
+      "type": "Passive",
       "tags": [
         "devil",
         "heart",
@@ -3753,81 +3622,79 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "263",
-      "name": "Mom's Bracelet",
-      "description": "\"Strong arms\" — Pick up and throw rocks, TNT, and other obstacles. Thrown objects deal 30 damage.",
+      "name": "Clear Rune",
+      "description": "When used, copies the effect of the Rune or Soul stone you are holding (like the Blank Card) Drops a random rune on the floor when picked up The recharge time of this item depends on the Rune/Soul Stone held: 1 room: Soul of Lazarus 2 rooms: Rune of Ansuz, Rune of Berkano, Rune of Hagalaz, Soul of Cain 3 rooms: Rune of Algiz, Blank Rune, Soul of Magdalene, Soul of Judas, Soul of ???, Soul of the Lost 4 rooms: Rune of Ehwaz, Rune of Perthro, Black Rune, Soul of Isaac, Soul of Eve, Soul of Eden, Soul of the Forgotten, Soul of Jacob and Esau 6 rooms: Rune of Dagaz, Soul of Samson, Soul of Azazel, Soul of Apollyon, Soul of Bethany 12 rooms: Rune of Jera, Soul of Lilith, Soul of the Keeper Recharge Time: Varies",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "secret",
       "quote": "Rune mimic",
+      "type": "Active",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_263.png"
+        "secret"
+      ]
     },
     {
       "id": "264",
-      "name": "The Scooper",
-      "description": "Spawns Peeper eye, damage up for room",
-      "quality": 1,
+      "name": "Smart Fly",
+      "description": "A yellow orbital fly that will block shots and when Isaac gets hit, will seek out the nearest enemy and attack it If the fly is in its attacking state and there are no longer any enemies in range, it will return to Isaac and go back to being a defensive orbital Counts as 1 of 3 fly items needed towards the Beelzebub transformation",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Revenge fly",
+      "type": "Passive, Familiar",
       "tags": [
-        "auge",
-        "dmg up",
-        "eye",
-        "fliege",
-        "fly",
+        "orbital",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_264.png"
+      ]
     },
     {
       "id": "265",
-      "name": "Mr. ME!",
-      "description": "Remote-controlled ghost that opens anything",
-      "quality": 2,
+      "name": "Dry Baby",
+      "description": "A familiar that follows Isaac and blocks any shots that hit it If a projectile is blocked by Dry Baby, he has a 10% chance to activate the Necronomicon effect, dealing 40 damage to the entire room The chance to activate the effect is not changed by your Luck stat Can drop while destroying skulls in the Depths and Necropolis floors Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Immortal friend",
+      "type": "Passive, Familiar",
       "tags": [
+        "familiar",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_265.png"
+      ]
     },
     {
       "id": "266",
-      "name": "Intruder",
-      "description": "Spider familiar in your head",
-      "quality": 1,
+      "name": "Juicy Sack",
+      "description": "A familiar that follows isaac around dropping white creep which slows down enemies that walk over it Spawns 1-2 familiar blue spiders after every room Blue Spiders do x2 of Isaac's damage Counts as 1 of 3 spider items needed towards the Spider Baby transformation.",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Sticky babies",
+      "type": "Passive, Familiar",
       "tags": [
         "familiar",
         "spider",
         "spinne",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_266.png"
+      ]
     },
     {
       "id": "267",
-      "name": "Dirty Mind",
-      "description": "\"Poop friends\" — Destroying poop spawns 1-4 friendly dip (poop) familiars that chase and damage enemies.",
-      "quality": 2,
+      "name": "Robo-Baby 2.0",
+      "description": "A familiar that is controlled via the arrow keys and will automatically fire a laser if anything is in its line of sight Robo-Baby 2.0's lasers deal 3.5 damage per hit Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
+      "quality": 1,
       "pool": "treasure",
       "quote": "We worked out all the kinks",
+      "type": "Passive, Familiar",
       "tags": [
         "familiar",
+        "laser",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_267.png"
+      ]
     },
     {
       "id": "268",
       "name": "Rotten Baby",
-      "description": "A familiar which follows Isaac and spawns a blue flies as you're firing tears Rotten Baby can only create one fly at a time, meaning if he has created a fly he cannot make another until it is used",
+      "description": "A familiar which follows Isaac and spawns a blue flies as you're firing tears Rotten Baby can only create one fly at a time, meaning if he has created a fly he cannot make another until it is used Blue Flies do double your tear damage Counts as 1 of 3 familiar items needed towards the Conjoined transformation",
       "quality": 3,
       "pool": "devil",
       "quote": "Infested friend",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_268.png",
+      "type": "Passive, Familiar",
       "tags": [
         "devil",
         "familiar",
@@ -3837,17 +3704,18 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "269",
-      "name": "Free Lemonade",
-      "description": "Creates a large lemon puddle",
+      "name": "Headless Baby",
+      "description": "A familiar that follows Isaac and leaves blood creep on the floor as it floats, hurting enemies that walk over it for 2 damage per tick Counts as 1 of 3 familiar items needed towards the Conjoined transformation",
       "quality": 1,
-      "pool": "treasure",
+      "pool": "devil",
       "quote": "Bloody friend",
+      "type": "Passive, Familiar",
       "tags": [
         "blood",
         "blut",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_269.png"
+        "devil",
+        "familiar"
+      ]
     },
     {
       "id": "270",
@@ -3856,7 +3724,7 @@ window.ISAAC_FALLBACK = {
       "quality": 2,
       "pool": "treasure",
       "quote": "Blood sucker",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_270.png",
+      "type": "Passive, Familiar",
       "tags": [
         "blood",
         "blut",
@@ -3873,7 +3741,7 @@ window.ISAAC_FALLBACK = {
       "quality": 2,
       "pool": "secret",
       "quote": "?",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_271.png",
+      "type": "Passive, Familiar",
       "tags": [
         "bomb",
         "bombe",
@@ -3885,70 +3753,70 @@ window.ISAAC_FALLBACK = {
     {
       "id": "272",
       "name": "BBF",
-      "description": "A large familiar black fly that bounces around the room, exploding on contact with enemies dealing 70 damage Does not explode if it hits Isaac, however if it explodes on an enemy while Isaac is in range, he will take damage",
+      "description": "A large familiar black fly that bounces around the room, exploding on contact with enemies dealing 70 damage Does not explode if it hits Isaac, however if it explodes on an enemy while Isaac is in range, he will take damage Respawns after 10 seconds or by moving to another room Picking up this item as well as 2 other fly-type items will allow you to transform into Lord of the Flies Counts as 1 of 3 fly items needed towards the Beelzebub transformation",
       "quality": 1,
       "pool": "treasure",
       "quote": "Big beautiful fly",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_272.png",
+      "type": "Passive, Familiar",
       "tags": [
+        "bomb",
+        "bombe",
         "familiar",
-        "fliege",
-        "fly",
         "treasure"
       ]
     },
     {
       "id": "273",
-      "name": "Wavy Cap",
-      "description": "\"Trip\" — Active item: speed +0.75 (stacks per use), tears -0.04 per use. Visual distortion increases. Wears off between floors.",
+      "name": "Bob's Brain",
+      "description": "A green brain that launches in the direction you are firing your tears and will explode on contact with enemies, dealing damage and poisoning anything in the blast radius Bob's Brain deals 100 damage and applies a poison damage over time effect, which deals double your tear damage per tick Regenerates over time Will hurt Isaac if he is in the blast radius Counts as 1 of 3 poison items needed towards the Bob transformation",
       "quality": 1,
       "pool": "treasure",
       "quote": "Explosive thoughts",
+      "type": "Passive, Familiar",
       "tags": [
         "bomb",
         "bombe",
+        "poison",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_273.png"
+      ]
     },
     {
       "id": "274",
-      "name": "Rocket in a Jar",
-      "description": "Running into obstacles places a bomb",
-      "quality": 1,
+      "name": "Best Bud",
+      "description": "When Isaac takes damage, a white attack fly will spawn that orbits him at a similar distance to the Distant Admiration fly The fly orbits a lot faster than Distant Admiration or Forever Alone and deals 10 damage per tick Picking up this item as well as 2 other fly-type items will allow you to transform into Lord of the Flies Counts as 1 of 3 fly items needed towards the Beelzebub transformation",
+      "quality": 0,
       "pool": "treasure",
       "quote": "Sworn protector",
+      "type": "Passive, Orbital",
       "tags": [
-        "bomb",
-        "bombe",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_274.png"
+      ]
     },
     {
       "id": "275",
       "name": "Lil Brimstone",
-      "description": "A familiar that follows Isaac and can fire up and charge brimstone shots, exactly how the normal Brimstone item works but with less damage Each laser deals 3 damage per tick, up to 8 times for a total of 24 damage",
+      "description": "A familiar that follows Isaac and can fire up and charge brimstone shots, exactly how the normal Brimstone item works but with less damage Each laser deals 3 damage per tick, up to 8 times for a total of 24 damage A familiar found in the devil room Lil Brimstone is now unable to start charging until he is finished attacking Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
       "quality": 2,
       "pool": "devil",
       "quote": "Evil friend",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_275.png",
+      "type": "Passive, Familiar",
       "tags": [
         "devil",
         "familiar",
-        "feuer",
-        "fire"
+        "laser"
       ]
     },
     {
       "id": "276",
       "name": "Isaac's Heart",
-      "description": "Prevents Isaac from taking any damage, but instead summons a familiar heart that follows you around. If the heart is hit, Isaac will take damage It will attempt to hide behind you when shooting",
+      "description": "Prevents Isaac from taking any damage, but instead summons a familiar heart that follows you around. If the heart is hit, Isaac will take damage It will attempt to hide behind you when shooting Most enemies will target the heart over Isaac himself Isaac's Heart has a charge attack, which when released will push enemies away and fire blood tears in all directions Spikes, Curse Rooms and Spiked Chests no longer deal damage to you, but sacrifice rooms still work as normal Sharp Plug becomes useless with this item, due to how damage is prevented on Isaac's body",
       "quality": 0,
       "pool": "treasure",
       "quote": "Protect it",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_276.png",
+      "type": "Passive, Familiar",
       "tags": [
+        "blood",
+        "blut",
         "familiar",
         "heart",
         "herz",
@@ -3958,11 +3826,11 @@ window.ISAAC_FALLBACK = {
     {
       "id": "277",
       "name": "Lil Haunt",
-      "description": "A familiar ghost that follows Isaac around and chases enemies close-by, damaging them for 2 contact damage and causing a fear effect Dark Bum",
+      "description": "A familiar ghost that follows Isaac around and chases enemies close-by, damaging them for 2 contact damage and causing a fear effect",
       "quality": 1,
       "pool": "treasure",
       "quote": "Fear him",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_277.png",
+      "type": "Passive, Familiar",
       "tags": [
         "familiar",
         "treasure"
@@ -3970,116 +3838,116 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "278",
-      "name": "Menorah",
-      "description": "Getting hit increases fire rate temporarily",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Dark Bum",
+      "description": "A familiar beggar similar to Bum Friend that follows Isaac and collects red hearts, giving Isaac black hearts, pills, cards, runes or spiders in return For every 1.5 red hearts he takes, he will give a reward Reward chances: Black Heart - 40%, Card/Rune - 20%, Pill - 20%, Blue Spider - 10%, Spider 10% Counts as 1 of 3 bum items needed towards the Super Bum transformation",
+      "quality": 3,
+      "pool": "devil",
       "quote": "He wants to take your life",
+      "type": "Passive, Familiar",
       "tags": [
-        "feuer",
-        "fire",
-        "tears up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_278.png"
+        "devil",
+        "familiar",
+        "heart",
+        "herz",
+        "pill",
+        "pille",
+        "spider",
+        "spinne"
+      ]
     },
     {
       "id": "279",
-      "name": "Gello",
-      "description": "\"Demon baby\" — A demon baby launches from your body, firing tears at your fire rate. It tethers to you and returns after a few seconds.",
-      "quality": 3,
-      "pool": "devil",
+      "name": "Big Fan",
+      "description": "A very large orbital that moves around Isaac very slowly, blocking shots and dealing 2 contact damage per tick Affects the speed of all other orbitals, slowing them down a lot (NOTE: This effect does not happen until you get a new orbital after Big Fan) Does not count as one of your three standard orbital slots Counts as 1 of 3 fly items needed towards the Beelzebub transformation",
+      "quality": 2,
+      "pool": "treasure",
       "quote": "Fat protector",
+      "type": "Passive, Orbital",
       "tags": [
-        "devil",
-        "feuer",
-        "fire",
-        "tears up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_279.png"
+        "orbital",
+        "treasure"
+      ]
     },
     {
       "id": "280",
-      "name": "Decap Attack",
-      "description": "\"Throw your head\" — Active item: throw your head. The head deals contact damage and fires tears from where it lands. Recall to return it.",
-      "quality": 2,
+      "name": "Sissy Long Legs",
+      "description": "An adorable friendly blue spider that walks around the room laying other blue spiders which attack enemies Blue Spiders do x2 of Isaac's damage She can only spawn a maximum of up to 5 spiders at a time and will only do so while there are enemies in the room Sissy Long Legs also charms enemies on contact Counts as 1 of 3 spider items needed towards the Spider Baby transformation.",
+      "quality": 1,
       "pool": "treasure",
       "quote": "She loves you",
+      "type": "Passive, Familiar",
       "tags": [
-        "feuer",
-        "fire",
+        "spider",
+        "spinne",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_280.png"
+      ]
     },
     {
       "id": "281",
-      "name": "Glass Eye",
-      "description": "\"Luck + DMG\" — Luck +1, damage +0.75.",
-      "quality": 2,
-      "pool": "boss",
+      "name": "Punching Bag",
+      "description": "Spawns a friendly Mulligan that walks around the room. Mulligan can be hit by enemy projectiles, making him a good shield Enemies will sometimes target the Mulligan if he is closer",
+      "quality": 1,
+      "pool": "treasure",
       "quote": "Scape goat",
+      "type": "Passive, Familiar",
       "tags": [
-        "auge",
-        "boss",
-        "eye",
-        "luck"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_281.png"
+        "shield",
+        "treasure"
+      ]
     },
     {
       "id": "282",
-      "name": "Stye",
-      "description": "\"Eye damage\" — Damage +1.28 for one eye, range +5.25, shot speed -0.3.",
-      "quality": 2,
-      "pool": "boss",
+      "name": "How To Jump",
+      "description": "When used, makes Isaac leap in the air, similar to the leaper enemies Maintains momentum if you are already moving in the same direction If you already have an item which gives you flying, this item becomes a dash effect instead Can be used in the Isaac boss fight to jump over the beams of light he spawns Recharge Time: Instant",
+      "quality": 1,
+      "pool": "library",
       "quote": "It's time you learned how",
+      "type": "Active",
       "tags": [
-        "auge",
-        "boss",
-        "eye",
-        "shot speed"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_282.png"
+        "library"
+      ]
     },
     {
       "id": "283",
-      "name": "Mom's Ring",
-      "description": "\"DMG + trinket\" — Damage +1.0. Drops a random trinket on pickup. Counts toward Yes Mother? transformation.",
+      "name": "D100",
+      "description": "When used, the D100 will activate the effects of all other dice items at once, including D1, D4, The D6, D7, D8, D10, D12 and D20. Search 'Dice effect' to see all those items and their relevant effects Note: Full run reroll effects (such as D4) are able to remove heart containers and transformations if losing the respective items during the reroll Recharge Time: 6 rooms",
       "quality": 3,
-      "pool": "shop",
+      "pool": "treasure",
       "quote": "REEROLLLLL!",
+      "type": "Active",
       "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_283.png"
+        "heart",
+        "herz",
+        "hp up",
+        "treasure"
+      ]
     },
     {
       "id": "284",
-      "name": "Blood Bombs",
-      "description": "\"Healing bombs\" — Bombs heal 1 red heart. If no bombs available, you can place a bomb at the cost of half a red heart.",
+      "name": "D4",
+      "description": "When used, the D4 re-rolls each item you currently have into another random item from the same item pool If you have an item with no room pool (e.g. Blood Bag) it will be rerolled into a random Item Room item Full run reroll effects such as D4 are able to remove heart containers and transformations if losing the respective items during the reroll Cannot remove Azazel's Brimstone laser, or The Lost's Holy Mantle Recharge Time: 6 rooms",
       "quality": 2,
       "pool": "treasure",
       "quote": "Reroll into something else",
+      "type": "Active",
       "tags": [
         "blood",
         "blut",
-        "bomb",
-        "bombe",
         "heart",
         "herz",
+        "hp up",
+        "laser",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_284.png"
+      ]
     },
     {
       "id": "285",
       "name": "D10",
-      "description": "When used, rerolls all enemies in the room which are currently alive into another random type of enemy D10 attempts to reroll enemies into enemies of similar health where possible",
+      "description": "When used, rerolls all enemies in the room which are currently alive into another random type of enemy D10 attempts to reroll enemies into enemies of similar health where possible Cannot reroll mini-bosses or bosses Recharge Time: 2 rooms",
       "quality": 1,
       "pool": "treasure",
       "quote": "Rerolls enemies",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_285.png",
+      "type": "Active",
       "tags": [
         "treasure"
       ]
@@ -4087,11 +3955,11 @@ window.ISAAC_FALLBACK = {
     {
       "id": "286",
       "name": "Blank Card",
-      "description": "When used, copies the effect of the card you are currently holding without consuming it The charge time depends on the quality of the card you're holding, and will update with each activation",
+      "description": "When used, copies the effect of the card you are currently holding without consuming it The charge time depends on the quality of the card you're holding, and will update with each activation Using this with the ? card will teleport you to the I AM ERROR room Recharge Time: Varies",
       "quality": 2,
       "pool": "shop",
       "quote": "Card Mimic",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_286.png",
+      "type": "Active",
       "tags": [
         "shop"
       ]
@@ -4099,11 +3967,11 @@ window.ISAAC_FALLBACK = {
     {
       "id": "287",
       "name": "Book of Secrets",
-      "description": "When used, you have a chance of getting one of the three following effects: Treasure Map (floor layout), Compass (map icons) or Blue Map (secret room locations) Counts as 1 of 3 book items needed towards the Bookworm transformation",
+      "description": "When used, you have a chance of getting one of the three following effects: Treasure Map (floor layout), Compass (map icons) or Blue Map (secret room locations) Counts as 1 of 3 book items needed towards the Bookworm transformation Book of Secrets avoids giving mapping effects that you already have. If the player has all mapping effects, it grants the 'I can see forever!' effect for the floor Recharge Time: 6 rooms",
       "quality": 1,
       "pool": "secret",
       "quote": "??????",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_287.png",
+      "type": "Active",
       "tags": [
         "secret"
       ]
@@ -4111,11 +3979,11 @@ window.ISAAC_FALLBACK = {
     {
       "id": "288",
       "name": "Box of Spiders",
-      "description": "When used, spawns 4-8 friendly blue spiders on the floor Blue Spiders do x2 of Isaac's damage",
+      "description": "When used, spawns 4-8 friendly blue spiders on the floor Blue Spiders do x2 of Isaac's damage Counts as 1 of 3 spider items needed towards the Spider Baby transformation Recharge Time: 2 rooms",
       "quality": 1,
       "pool": "treasure",
       "quote": "It's a box of spiders",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_288.png",
+      "type": "Active",
       "tags": [
         "spider",
         "spinne",
@@ -4125,11 +3993,11 @@ window.ISAAC_FALLBACK = {
     {
       "id": "289",
       "name": "Red Candle",
-      "description": "When used, the candle is raised above Isaac's head. Upon pressing any fire button, a red flame will slide across the floor in that direction, dealing 23 damage per tick to enemies that come into contact with it Each flame deals 125 total damage and disappears after 10 seconds",
+      "description": "When used, the candle is raised above Isaac's head. Upon pressing any fire button, a red flame will slide across the floor in that direction, dealing 23 damage per tick to enemies that come into contact with it Each flame deals 125 total damage and disappears after 10 seconds The flame will shrink in size when deals damage to something and eventually disappear Recharge Time: Timed (A few seconds)",
       "quality": 2,
       "pool": "shop",
       "quote": "Flame on",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_289.png",
+      "type": "Active",
       "tags": [
         "feuer",
         "fire",
@@ -4138,61 +4006,66 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "290",
-      "name": "Isaac's Tomb",
-      "description": "Spawns an old chest at start of each floor",
-      "quality": 2,
-      "pool": "angel",
+      "name": "The Jar",
+      "description": "Isaac can now pick up hearts while at full health, which will be stored in the Jar and can be spawned again using the spacebar Up to 4 hearts can be stored in The Jar Soul hearts and black hearts cannot be stored If used in a Black heart or Eternal heart super secret room, it will spawn the relevant heart Recharge Time: Instant",
+      "quality": 0,
+      "pool": "shop",
       "quote": "Save your life",
+      "type": "Active",
       "tags": [
-        "angel"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_290.png"
+        "heart",
+        "herz",
+        "shop"
+      ]
     },
     {
       "id": "291",
-      "name": "Vengeful Spirit",
-      "description": "Taking damage releases a ghostly familiar",
-      "quality": 2,
+      "name": "FLUSH!",
+      "description": "When used, turns every normal enemy in the room into poop! Does not work on mini-bosses and bosses Kills poop bosses when used - Dingle, Dangle and Brownie Counts as 1 of 3 poop items needed towards the Oh Crap transformation Recharge Time: 4 rooms",
+      "quality": 1,
       "pool": "treasure",
       "quote": "...",
+      "type": "Active",
       "tags": [
-        "familiar",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_291.png"
+      ]
     },
     {
       "id": "292",
-      "name": "Esau Jr.",
-      "description": "Switch to a different character mid-run",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Satanic Bible",
+      "description": "When used, gives Isaac +1 Black Heart Using this book once before the boss dies, causes the boss item on the current floor to become a devil deal instead, where it will cost heart containers to pick up. Taking this item DOES count as a devil deal, preventing future angel rooms. When depleted, Black Hearts deal 40 damage to the entire room, in a Necronomicon style effect Counts as 1 of 3 book items needed towards the Bookworm transformation Recharge Time: 6 rooms",
+      "quality": 4,
+      "pool": "devil",
       "quote": "Reusable evil... but at what cost?",
+      "type": "Active",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_292.png"
+        "devil",
+        "heart",
+        "herz",
+        "hp up"
+      ]
     },
     {
       "id": "293",
-      "name": "Berserk!",
-      "description": "\"Rage mode\" — Active item: enter berserk mode for a few seconds. Melee weapon, invincibility, huge speed boost. Kills extend the timer.",
-      "quality": 3,
+      "name": "Head of Krampus",
+      "description": "When used, fires a 4 way brimstone laser in all cardinal directions, dealing a lot of damage to any enemies Laser damage does not scale with your damage stat - its a fixed 10 damage per tick for 20 ticks (200 total per use) Has a chance to drop after you beat Krampus If you get close enough to an enemy that has a large hitbox, you can hit it with 2 of the laser beams, allowing you to deal more damage Recharge Time: 3 rooms",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Krampus rage",
+      "type": "Active",
       "tags": [
+        "laser",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_293.png"
+      ]
     },
     {
       "id": "294",
       "name": "Butter Bean",
-      "description": "When used, farts on nearby enemies and knocks them backwards forcefully away from Isaac Allows you to reflect projectiles away from Isaac",
+      "description": "When used, farts on nearby enemies and knocks them backwards forcefully away from Isaac Allows you to reflect projectiles away from Isaac If a pushed enemy hits a rock or wall forcefully enough, they take 10 damage Recharge Time: Timed (A few seconds)",
       "quality": 1,
       "pool": "treasure",
       "quote": "Reusable knockback",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_294.png",
+      "type": "Active",
       "tags": [
         "treasure"
       ]
@@ -4200,90 +4073,93 @@ window.ISAAC_FALLBACK = {
     {
       "id": "295",
       "name": "Magic Fingers",
-      "description": "Upon use, consumes a coin and deals damage to everything in the room Damage dealt is equal to your tear damage * 2 + 10",
+      "description": "Upon use, consumes a coin and deals damage to everything in the room Damage dealt is equal to your tear damage * 2 + 10 Recharge Time: Instant",
       "quality": 1,
       "pool": "shop",
       "quote": "Pay to play",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_295.png",
+      "type": "Active",
       "tags": [
         "shop"
       ]
     },
     {
       "id": "296",
-      "name": "Supper",
-      "description": "\"HP up\" — Grants one red heart container.",
-      "quality": 1,
-      "pool": "boss",
+      "name": "Converter",
+      "description": "When used, converts 1 soul/black heart into 1 red heart container This item will take from your soul hearts first Recharge Time: 3 rooms",
+      "quality": 2,
+      "pool": "shop",
       "quote": "Convert your soul",
+      "type": "Active",
       "tags": [
-        "boss",
         "heart",
         "herz",
-        "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_296.png"
+        "hp up",
+        "shop"
+      ]
     },
     {
       "id": "297",
-      "name": "Stapler",
-      "description": "\"DMG + one eye\" — Damage +1.0. All tears fire from your right eye only.",
+      "name": "Pandora's Box",
+      "description": "When used, this item will spawn a set of items or consumables based on which chapter you are currently on Basement 1: 2 Soul hearts. Basement 2: 2 Bombs + 2 Keys Caves 1: 1 Boss Item. Caves 2: 1 Boss Item + 2 Soul Hearts Depths 1: 4 Soul hearts. Depths 2: 20 coins Womb 1: 2 Boss Items. Womb 2: Bible Blue Womb: Nothing!. The Void: Nothing! Sheol: 1 Devil Room Item + 1 Black Heart. Cathedral: 1 Angel Room Item + 1 Eternal Heart Chest: 1 coin. Dark Room: Nothing! Home: Gives Red Key. Pandora's Box considers XL floors to always be the first floor of a chapter Alternative floors drop the same stuff e.g. Corpse II drops same as Womb II Recharge Time: One time use",
       "quality": 2,
-      "pool": "boss",
+      "pool": "shop",
       "quote": "? ?",
+      "type": "Active",
       "tags": [
-        "auge",
-        "boss",
-        "eye",
-        "feuer",
-        "fire"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_297.png"
+        "bomb",
+        "bombe",
+        "heart",
+        "herz",
+        "shop"
+      ]
     },
     {
       "id": "298",
-      "name": "Suplex!",
-      "description": "\"Grab and slam\" — Active item: dash and grab an enemy, then slam them into the ground. Deals massive damage and creates rock waves.",
-      "quality": 2,
+      "name": "Unicorn Stump",
+      "description": "When used, turns Isaac invincible and gains +0.28 speed for a 5 seconds You cannot fire tears while the stump is active Very similar to the My Little Unicorn item but does not deal contact damage When used with Mom's Knife, you can still deal contact damage but will be unable to change the way the knife faces while the effect is active Recharge Time: 1 room",
+      "quality": 1,
       "pool": "treasure",
       "quote": "You feel stumped",
+      "type": "Active",
       "tags": [
+        "shield",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_298.png"
+      ]
     },
     {
       "id": "299",
-      "name": "Bag of Crafting",
-      "description": "\"Craft items\" — Tainted Cain's starting item. Pick up 8 consumables, then craft them into a specific item based on the combination.",
-      "quality": 3,
+      "name": "Taurus",
+      "description": "-0.3 Speed Down While in a hostile room your speed raises at a rate of +0.065 per game tick When you hit a speed stat of 2.0, Isaac will gain an invincibility effect for 5 seconds, increasing speed and allowing him to run into enemies to deal 40 contact damage per hit The time it takes for the effect to activate becomes shorter with a higher base Speed stat Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Speed down + rage is building",
+      "type": "Passive",
       "tags": [
+        "shield",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_299.png"
+      ]
     },
     {
       "id": "300",
-      "name": "Flip",
-      "description": "\"Alternate items\" — Active item: item pedestals show a ghost item underneath. Use Flip to swap between the real and ghost item.",
-      "quality": 3,
+      "name": "Aries",
+      "description": "+0.25 Speed up Running into enemies while at a high speed will deal 25 damage. Moving at this speed also prevents contact damage Will not deal contact damage unless you are moving fast enough (at least 0.85 speed) Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Ramming speed",
+      "type": "Passive",
       "tags": [
+        "speed up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_300.png"
+      ]
     },
     {
       "id": "301",
       "name": "Cancer",
-      "description": "+3 Soul Hearts After getting hit once, you gain a damage reduction for the rest of the room similar to The Wafer item (-50% damage taken)",
+      "description": "+3 Soul Hearts After getting hit once, you gain a damage reduction for the rest of the room similar to The Wafer item (-50% damage taken) Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
       "quality": 3,
       "pool": "treasure",
       "quote": "HP up + you feel protected",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_301.png",
+      "type": "Passive",
       "tags": [
         "heart",
         "herz",
@@ -4293,111 +4169,113 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "302",
-      "name": "Sumptorium",
-      "description": "\"Blood clots\" — Active item: convert red hearts into blood clot familiars. Clots fire tears at your fire rate. Tainted Eve's ability.",
-      "quality": 2,
+      "name": "Leo",
+      "description": "Isaac increases in size, gets a lion's mane and now has the ability to crush rocks by walking over them Crushed rocks and poop can fill holes if you walk in their direction Allows you to crush Red Poops and sometimes not take damage. However, If you also have flying you will always take damage Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums Counts as 1 of 3 size-increasing items needed towards the Stompy transformation",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Stompy",
-      "tags": [
-        "blood",
-        "blut",
-        "familiar",
-        "feuer",
-        "fire",
-        "heart",
-        "herz",
-        "tears up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_302.png"
-    },
-    {
-      "id": "303",
-      "name": "Recall",
-      "description": "\"Return clots\" — Active item: recall all blood clot familiars back to you. Used with Sumptorium.",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "You feel refreshed and protected",
-      "tags": [
-        "blood",
-        "blut",
-        "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_303.png"
-    },
-    {
-      "id": "304",
-      "name": "Hold",
-      "description": "\"Store poop\" — Active item: store a poop. Use again to place it. First use creates a golden poop or special poop.",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "You feel balanced",
-      "tags": [
-        "shop",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_304.png"
-    },
-    {
-      "id": "305",
-      "name": "Scorpio",
-      "description": "Isaac's tears turn bright green and always apply a poison effect to enemies which deals a total of double your tear damage This is essentially a superior version of The Common Cold item",
-      "quality": 3,
-      "pool": "treasure",
-      "quote": "Poison tears",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_305.png",
+      "type": "Passive",
       "tags": [
         "treasure"
       ]
     },
     {
-      "id": "306",
-      "name": "Keeper's Kin",
-      "description": "\"Rock spiders\" — Destroyed rocks and obstacles spawn 2 blue spiders.",
+      "id": "303",
+      "name": "Virgo",
+      "description": "A random chance when you take damage to get an invincibility shield for 7 seconds The chance to get an invincibility shield is affected by your luck stat and at +10 Luck it will activate every time you get hit Converts all negative pills into their positive counterparts e.g. Stat Down becomes Stat Up, 'Bad Trip' turns into 'Balls of Steel' and 'Amnesia' turns into 'I can see forever' Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
       "quality": 2,
       "pool": "treasure",
-      "quote": "Penetrative shot + speed up",
+      "quote": "You feel refreshed and protected",
+      "type": "Passive",
       "tags": [
-        "speed up",
-        "spider",
-        "spinne",
+        "pill",
+        "pille",
+        "shield",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_306.png"
+      ]
+    },
+    {
+      "id": "304",
+      "name": "Libra",
+      "description": "Gives you 6 keys, 6 bombs and 6 coins Balances out your main stats to bring the high and low stats closer to an average value All future stat upgrading items will now instead spread out across all other stats. For example, an item which usually gives +1 Damage would instead give a small 'all stats up' Stats effected by this item are: Damage, Tears, Range, Speed When taken with another item which gives an extreme value in a certain stat (e.g. Soy Milk) can lead to interesting synergies Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
+      "quality": 1,
+      "pool": "treasure",
+      "quote": "You feel balanced",
+      "type": "Passive",
+      "tags": [
+        "bomb",
+        "bombe",
+        "treasure"
+      ]
+    },
+    {
+      "id": "305",
+      "name": "Scorpio",
+      "description": "Isaac's tears turn bright green and always apply a poison effect to enemies which deals a total of double your tear damage This is essentially a superior version of The Common Cold item Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
+      "quality": 3,
+      "pool": "treasure",
+      "quote": "Poison tears",
+      "type": "Passive",
+      "tags": [
+        "poison",
+        "treasure"
+      ]
+    },
+    {
+      "id": "306",
+      "name": "Sagittarius",
+      "description": "+0.2 Speed Up Grants piercing tears Tears do not travel through rocks with this item Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
+      "quality": 3,
+      "pool": "treasure",
+      "quote": "Penetrative shot + speed up",
+      "type": "Passive",
+      "tags": [
+        "piercing",
+        "speed up",
+        "treasure"
+      ]
     },
     {
       "id": "307",
-      "name": "Keeper's Box",
-      "description": "\"Free shop item\" — Active item: spawns a random shop item or pickup.",
+      "name": "Capricorn",
+      "description": "+1 HP Up +0.5 Damage Up -1 Tear Delay (Tears Up) +0.1 Speed Up +0.75 Range Up +1 Key, +1 Bomb, +1 Coin Heals one red heart container when picked up Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
       "quality": 3,
-      "pool": "shop",
+      "pool": "treasure",
       "quote": "All stats up",
+      "type": "Passive",
       "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_307.png"
+        "bomb",
+        "bombe",
+        "dmg up",
+        "heart",
+        "herz",
+        "hp up",
+        "range up",
+        "speed up",
+        "tears up",
+        "treasure"
+      ]
     },
     {
       "id": "308",
-      "name": "Everything Jar",
-      "description": "\"Pickup collector\" — Active item: spawns a random pickup. Saving up charges spawns better pickups (cards, runes, etc.).",
+      "name": "Aquarius",
+      "description": "Leaves a trail of tears on the floor behind Isaac which damages enemies that walk over it for 2 damage per tick Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums Aquarius synergizes with tear effects",
       "quality": 2,
       "pool": "treasure",
       "quote": "A trail of tears",
+      "type": "Passive",
       "tags": [
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_308.png"
+      ]
     },
     {
       "id": "309",
       "name": "Pisces",
-      "description": "-1 Tear Delay (Tears Up) x1.25 Tear Size Up",
+      "description": "-1 Tear Delay (Tears Up) x1.25 Tear Size Up Tears now have a bigger knockback effect, which pushes enemies backwards Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
       "quality": 2,
       "pool": "treasure",
       "quote": "Tears up + knockback shot",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_309.png",
+      "type": "Passive",
       "tags": [
         "tears up",
         "treasure"
@@ -4405,260 +4283,260 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "310",
-      "name": "Anima Sola",
-      "description": "\"Chain enemy\" — Active item: chains the nearest enemy in place for 5 seconds. Chained enemies can't move or attack.",
+      "name": "Eve's Mascara",
+      "description": "x2 Damage Multiplier Tears Down by exactly half (Tear delay * 2) -0.5 Shot Speed Down The tears down from this item is a x2.0 multiplier after the formula, meaning it will always halve your tear rate (Unless you have Monstro's Lung or Soy Milk)",
       "quality": 3,
       "pool": "treasure",
       "quote": "Shot speed down + DMG up",
+      "type": "Passive",
       "tags": [
         "dmg up",
         "shot speed",
+        "tears down",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_310.png"
+      ]
     },
     {
       "id": "311",
       "name": "Judas' Shadow",
-      "description": "When you die with this item, you respawn in the previous room as Dark Judas with 2 black hearts for health Dark Judas has a damage multiplier of 2.00 (double Isaac's damage) and an additional +0.1 Speed",
+      "description": "When you die with this item, you respawn in the previous room as Dark Judas with 2 black hearts for health Dark Judas has a damage multiplier of 2.00 (double Isaac's damage) and an additional +0.1 Speed Dark Judas is considered a separate character by the game, however he can be used to unlock Judas' secrets/achievements Dark Judas cannot gain red heart containers, HP upgrades give soul hearts instead",
       "quality": 3,
       "pool": "devil",
       "quote": "Sweet revenge",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_311.png",
+      "type": "Passive",
       "tags": [
         "devil",
         "dmg up",
         "heart",
-        "herz"
+        "herz",
+        "hp up"
       ]
     },
     {
       "id": "312",
-      "name": "Hypercoagulation",
-      "description": "\"Heart drops on damage\" — Damage taken from health causes a red heart to launch from you. The heart vanishes after 1.5 seconds if not collected.",
+      "name": "Maggy's Bow",
+      "description": "+1 HP Up Heals one red heart container when picked up All future red hearts now heal for double. Half hearts heal a whole heart and full hearts heal 2 red hearts",
       "quality": 2,
       "pool": "treasure",
       "quote": "HP up + you feel healthy",
+      "type": "Passive",
       "tags": [
         "heart",
         "herz",
         "hp up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_312.png"
+      ]
     },
     {
       "id": "313",
       "name": "Holy Mantle",
-      "description": "Each time you enter a new room, damage is negated for the first time you get hit Can be used to go in and out of a Curse Room without taking damage",
+      "description": "Each time you enter a new room, damage is negated for the first time you get hit Can be used to go in and out of a Curse Room without taking damage Counts as 1 of 3 angel items needed towards the Seraphim transformation The Lost starts with this item after donating 879 coins to the Greed Donation Machine. REPENTANCE - The Lost's Holy Mantle can no longer be re-rolled using an item like D4.",
       "quality": 4,
       "pool": "angel",
       "quote": "Holy shield",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_313.png",
+      "type": "Passive",
       "tags": [
-        "angel"
+        "angel",
+        "shield"
       ]
     },
     {
       "id": "314",
-      "name": "Hemoptysis",
-      "description": "Short-range Brimstone sneeze on double-tap",
-      "quality": 2,
-      "pool": "devil",
-      "quote": "HP + speed down + you feel strong",
-      "tags": [
-        "devil"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_314.png"
-    },
-    {
-      "id": "315",
-      "name": "Ghost Bombs",
-      "description": "\"Ghost allies\" — Bombs spawn a ghost familiar when they explode. Ghosts chase and damage enemies.",
-      "quality": 2,
+      "name": "Thunder Thighs",
+      "description": "+1 HP Up -0.4 Speed Down You can now break obstacles by walking over them Heals one red heart container when picked up Holes in the ground can be filled by crushing adjacent rocks, similar to how this can be done with bombs Allows you to crush Red Poops and sometimes not take damage. However, If you also have flying you will always take damage",
+      "quality": 1,
       "pool": "treasure",
-      "quote": "Magnetic tears",
+      "quote": "HP + speed down + you feel strong",
+      "type": "Passive",
       "tags": [
         "bomb",
         "bombe",
-        "familiar",
+        "heart",
+        "herz",
+        "hp up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_315.png"
+      ]
+    },
+    {
+      "id": "315",
+      "name": "Strange Attractor",
+      "description": "Enemies and pickups (keys, bombs etc.) are now magnetically attracted to Isaac's tears Can cause some enemies to have unpredictable movement",
+      "quality": 0,
+      "pool": "treasure",
+      "quote": "Magnetic tears",
+      "type": "Passive",
+      "tags": [
+        "bomb",
+        "bombe",
+        "treasure"
+      ]
     },
     {
       "id": "316",
       "name": "Cursed Eye",
-      "description": "Tears are now charged up and fired rapidly in a burst of up to 5 shots at once The amount of tears fired in the charge depends on how long you charge for",
+      "description": "Tears are now charged up and fired rapidly in a burst of up to 5 shots at once The amount of tears fired in the charge depends on how long you charge for The eye has three states, white (not firing), black (first second of charging) and blinking between black and white. If you get hit while Cursed eye is a solid black colour you are guaranteed to be teleported to another random room on the floor. If you get hit in either of the other 2 states you will not be teleported The Black Candle item will remove the Cursed Eye's teleportation effect REPENTANCE - Burst now has 5 shots instead of 4",
       "quality": 0,
       "pool": "secret",
       "quote": "Cursed charged shot",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_316.png",
+      "type": "Passive, Tear Modifier",
       "tags": [
         "auge",
         "eye",
-        "feuer",
-        "fire",
         "secret"
       ]
     },
     {
       "id": "317",
       "name": "Mysterious Liquid",
-      "description": "When Isaac's tears hit anything, they leave a green toxic creep on the floor that damages enemies for 1 damage per tick Gemini",
+      "description": "When Isaac's tears hit anything, they leave a green toxic creep on the floor that damages enemies for 1 damage per tick",
       "quality": 3,
       "pool": "treasure",
       "quote": "Toxic splash damage",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_317.png",
+      "type": "Passive",
       "tags": [
         "treasure"
       ]
     },
     {
       "id": "318",
-      "name": "Larynx",
-      "description": "Scream attack that scales with stored hearts",
-      "quality": 2,
+      "name": "Gemini",
+      "description": "A familar that is attached to Isaac, which will seek out and damage any enemies close by for 3 contact damage Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Conjoined friend",
+      "type": "Passive, Familiar",
       "tags": [
-        "heart",
-        "herz",
-        "shop",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_318.png"
+      ]
     },
     {
       "id": "319",
-      "name": "Lost Soul",
-      "description": "Ghost familiar that dies to any hit, rewards on survival",
+      "name": "Cain's Other Eye",
+      "description": "A familiar eye that follows Isaac and copies all his tear modifiers/effects, but shoots in random directions Tears from this familiar deal 75% of Isaac's tear damage",
       "quality": 2,
-      "pool": "angel",
+      "pool": "treasure",
       "quote": "Near sighted friend",
+      "type": "Passive, Familiar",
       "tags": [
-        "angel",
-        "familiar"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_319.png"
+        "auge",
+        "eye",
+        "familiar",
+        "treasure"
+      ]
     },
     {
       "id": "320",
-      "name": "Blood Puppy",
-      "description": "\"Good boy\" — Dog familiar that chases enemies. After enough kills, becomes aggressive (higher damage but can hurt you). Hit it to calm it down.",
+      "name": "???'s Only Friend",
+      "description": "A familiar fly that can be moved around via use of the arrow keys dealing 2.5 contact damage per tick, similar to the Ludovico Technique's mechanic Counts as 1 of 3 fly items needed towards the Beelzebub transformation",
       "quality": 2,
       "pool": "treasure",
       "quote": "Controlled friend",
+      "type": "Passive, Familiar",
       "tags": [
-        "blood",
-        "blut",
         "familiar",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_320.png"
+      ]
     },
     {
       "id": "321",
-      "name": "Dream Catcher",
-      "description": "\"Preview next floor\" — While transitioning between floors, briefly see the next floor's treasure room item and boss.",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Samson's Chains",
+      "description": "An iron ball and chain attached to Isaac, similar to Guppy's Hairball that you can fling around to deal 5 damage per tick The ball will block enemy shots and can also destroy environmental objects such as rocks, mushrooms and skulls Does not decrease your movement speed stat at all however the ball has to be dragged around causing Isaac to slow down slightly when the chain is fully extended",
+      "quality": 1,
+      "pool": "secret",
       "quote": "The ol' ball and chain",
+      "type": "Passive, Familiar",
       "tags": [
-        "boss",
-        "fliege",
-        "fly",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_321.png"
+        "secret"
+      ]
     },
     {
       "id": "322",
-      "name": "Paschal Candle",
-      "description": "\"Tears up per room\" — Tears +0.4 per room cleared without taking damage. Resets to base when you take damage. Max +4.0 at 10 rooms.",
+      "name": "Mongo Baby",
+      "description": "A familiar that will follow Isaac and copy the effect of one of your other familiars If you don't have any other familiars, he will just shoot normal tears Counts as 1 of 3 familiar items needed towards the Conjoined transformation REPENTANCE - Removed the double damage multiplier on Mongo Baby's attacks",
       "quality": 2,
-      "pool": "angel",
+      "pool": "treasure",
       "quote": "Mongo friend",
+      "type": "Passive, Familiar",
       "tags": [
-        "angel",
-        "tears up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_322.png"
+        "dmg up",
+        "familiar",
+        "treasure"
+      ]
     },
     {
       "id": "323",
-      "name": "Divine Intervention",
-      "description": "\"Holy shield\" — Double-tap a fire button to create a shield that blocks and reflects enemy projectiles.",
-      "quality": 3,
-      "pool": "angel",
+      "name": "Isaac's Tears",
+      "description": "A spacebar item that fires 8 of Isaac's tears in a circle around him Tears spawned from this item keep most effect that Isaac currently has applied to his tears, and deal an additional +5 flat damage Recharge Time: 1 bar per tear fired",
+      "quality": 1,
+      "pool": "treasure",
       "quote": "Collected tears",
+      "type": "Active",
       "tags": [
-        "angel",
-        "feuer",
-        "fire"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_323.png"
+        "treasure"
+      ]
     },
     {
       "id": "324",
       "name": "Undefined",
-      "description": "Upon use, teleports you to one of the following rooms at random: Item room, Secret room, Super secret room, the I AM ERROR room or the Black Market (very low chance) There are no I AM ERROR rooms on the final floors, preventing looping with this item",
+      "description": "Upon use, teleports you to one of the following rooms at random: Item room, Secret room, Super secret room, the I AM ERROR room or the Black Market (very low chance) There are no I AM ERROR rooms on the final floors, preventing looping with this item Recharge Time: 6 rooms",
       "quality": 2,
       "pool": "treasure",
       "quote": "Undefined",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_324.png",
+      "type": "Active",
       "tags": [
-        "secret",
         "treasure"
       ]
     },
     {
       "id": "325",
-      "name": "Playdough Cookie",
-      "description": "\"Rainbow tears\" — Each tear has a random color and a corresponding random status effect (poison, fear, slow, charm, etc.).",
-      "quality": 2,
+      "name": "Scissors",
+      "description": "When used will cut your head from your body. Isaac's head will remain stationary and fire tears. His body can be controlled and spews blood nearby Tears fired by the head do a flat 3.5 damage and don't scale REPENTANCE - Scissors has been redesigned. The stationary head is now affected by Isaac's stats and attack modifiers, and the body will spew a controllable fountain of blood shots. Charge time increased to 4 (from 2) Recharge Time: 4 rooms",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Lose your head",
+      "type": "Active",
       "tags": [
+        "blood",
+        "blut",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_325.png"
+      ]
     },
     {
       "id": "326",
-      "name": "Orphan Socks",
-      "description": "Speed up, prevents creep damage",
-      "quality": 2,
-      "pool": "boss",
+      "name": "Breath of Life",
+      "description": "Holding the active item button will deplete the charge bar. When the charge bar gets to zero it will grant you a brief period of invincibility If the spacebar is held for too long (about 1 second) when it has no charge, you will take damage During the invincibility period, Isaac deals 3.5 contact damage to enemies and beams of light will strike down from the sky, dealing 15 damage If damage is blocked perfectly at the exact second the charge bar reaches zero, it will release holy beams in four directions and grant a brief shile effect The invincibility effect is shown via a rapid flashing animation Recharge Time: Timed (1 bar per second)",
+      "quality": 1,
+      "pool": "angel",
       "quote": "Invincibility at a cost",
+      "type": "Active",
       "tags": [
-        "boss",
-        "speed up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_326.png"
+        "angel",
+        "shield"
+      ]
     },
     {
       "id": "327",
       "name": "The Polaroid",
-      "description": "After taking damage, if you have half a red heart or less, The Polaroid will give you an invincibility shield for 5 seconds Grants access to the Chest floor",
+      "description": "After taking damage, if you have half a red heart or less, The Polaroid will give you an invincibility shield for 5 seconds Grants access to the Chest floor Allows you to open the door at the beginning of Depths II that leads to the Mausoluem When unlocked, is guaranteed to drop after the Mom's Foot boss fight The Polaroid will always spawn on the left pedestal",
       "quality": 2,
       "pool": "boss",
       "quote": "Fate chosen",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_327.png",
+      "type": "Passive",
       "tags": [
         "boss",
         "heart",
-        "herz"
+        "herz",
+        "shield"
       ]
     },
     {
       "id": "328",
       "name": "The Negative",
-      "description": "+1.0 Damage Up After taking damage, if you have half a red heart or less, The Negative will deal 40 damage to all enemies in the room",
+      "description": "+1.0 Damage Up After taking damage, if you have half a red heart or less, The Negative will deal 40 damage to all enemies in the room Gives you access to the Dark Room floor Allows you to open the door at the beginning of Depths II that leads to the Mausoluem When unlocked, is guaranteed to drop after the Mom's Foot boss fight The Negative will always spawn on the right pedestal",
       "quality": 2,
       "pool": "boss",
       "quote": "Fate chosen",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_328.png",
+      "type": "Passive",
       "tags": [
         "boss",
         "dmg up",
@@ -4668,153 +4546,157 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "329",
-      "name": "Monstrance",
-      "description": "Damaging aura around you",
-      "quality": 1,
-      "pool": "angel",
+      "name": "The Ludovico Technique",
+      "description": "You no longer shoot tears and instead now control a single large tear with the arrow keys Items which increase your tears stat will cause the tear to deal damage at a faster rate Items which increase your shot speed cause the tear to travel faster across the screen Ludo and Brimstone create a large controllable red ring of death that does massive damage to anything in its path Taking this with Mom's Knife allows you to remote control the knife around the room, dealing huge damage",
+      "quality": 2,
+      "pool": "treasure",
       "quote": "Controlled tears",
+      "type": "Passive, Tear Modifier",
       "tags": [
-        "angel"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_329.png"
+        "laser",
+        "shot speed",
+        "treasure"
+      ]
     },
     {
       "id": "330",
-      "name": "The Intruder",
-      "description": "Spider familiar in your head, fires 4 slowing shots",
-      "quality": 1,
+      "name": "Soy Milk",
+      "description": "Very high Tears Up: Tears * 5.5 -80% Damage Down x0.5 Tear Size REPENTANCE - Soy Milk tears now cause drastically less knockback",
+      "quality": 2,
       "pool": "treasure",
       "quote": "DMG down + tears way up",
+      "type": "Passive, Tear Modifier",
       "tags": [
-        "familiar",
-        "feuer",
-        "fire",
-        "spider",
-        "spinne",
+        "tears up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_330.png"
+      ]
     },
     {
       "id": "331",
       "name": "Godhead",
-      "description": "Isaac's tears become homing and have an aura around them, which will deal a flat 2 damage per tick to anything inside its radius +0.5 Damage Up",
+      "description": "Isaac's tears become homing and have an aura around them, which will deal a flat 2 damage per tick to anything inside its radius +0.5 Damage Up -0.3 Tears Down -0.3 Shot Speed Down Multiple GodHeads doesn't stack the aura damage Counts as 1 of 3 angel items needed towards the Seraphim transformation.",
       "quality": 4,
       "pool": "angel",
       "quote": "God tears",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_331.png",
+      "type": "Passive, Tear Modifier",
       "tags": [
         "angel",
         "dmg up",
-        "homing"
+        "homing",
+        "shot speed",
+        "tears down"
       ]
     },
     {
       "id": "332",
-      "name": "Montezuma's Revenge",
-      "description": "\"Rear Brimstone\" — Charge a Brimstone beam that fires from behind you. Deals your damage per tick.",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Lazarus' Rags",
+      "description": "Gives Isaac an extra life on death, exactly the same as Lazarus' default respawn effect When you die with this item, you respawn in the same room with 1 heart and the Anemic item The game considers you to be a different character (Lazarus II) when this effect activates",
+      "quality": 1,
+      "pool": "angel",
       "quote": "Eternal life?",
+      "type": "Passive",
       "tags": [
-        "feuer",
-        "fire",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_332.png"
+        "angel",
+        "heart",
+        "herz",
+        "hp up"
+      ]
     },
     {
       "id": "333",
-      "name": "Lil Abaddon",
-      "description": "\"Mini Maw\" — Familiar with a Maw of the Void-like aura. Charges up and releases a dark ring dealing damage.",
-      "quality": 2,
-      "pool": "devil",
+      "name": "The Mind",
+      "description": "Gives Isaac a full mapping effect, revealing the entire floor and locations of all secret rooms",
+      "quality": 3,
+      "pool": "angel",
       "quote": "I know all",
+      "type": "Passive",
       "tags": [
-        "devil",
-        "familiar"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_333.png"
+        "angel"
+      ]
     },
     {
       "id": "334",
-      "name": "Sanguine Bond",
-      "description": "\"Devil spikes\" — Sacrifice room spikes have a chance to grant Devil Room rewards including items, black hearts, and stat ups.",
-      "quality": 2,
-      "pool": "devil",
+      "name": "The Body",
+      "description": "+3 Health Up The three heart containers are pre-filled with red hearts",
+      "quality": 3,
+      "pool": "angel",
       "quote": "I feel all",
+      "type": "Passive",
       "tags": [
-        "devil",
+        "angel",
         "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_334.png"
+        "herz",
+        "hp up"
+      ]
     },
     {
       "id": "335",
-      "name": "The Swarm",
-      "description": "8 orbital bone flies, respawn as regular flies",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "The Soul",
+      "description": "+2 Soul Hearts Enemy projectiles will now slowly curve away from Isaac and avoid hitting him",
+      "quality": 3,
+      "pool": "angel",
       "quote": "I am all",
+      "type": "Passive",
       "tags": [
-        "fliege",
-        "fly",
-        "orbital",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_335.png"
+        "angel",
+        "heart",
+        "herz"
+      ]
     },
     {
       "id": "336",
-      "name": "Heartbreak",
-      "description": "\"Broken heart damage\" — Damage +0.25 per broken heart. Grants 3 broken hearts on pickup. Each death adds a broken heart (game over at 12).",
-      "quality": 2,
-      "pool": "devil",
+      "name": "Dead Onion",
+      "description": "Isaac's tears become large, brown and will penetrate all objects and enemies (piercing + spectral) -1.2 Range Down -0.4 Shot Speed Down x1.5 Tear Size Despite the increase in tear size, Dead Onion does NOT increase your damage stat. It also doesn't do poison damage despite having the tagline 'toxic aura tears'",
+      "quality": 3,
+      "pool": "treasure",
       "quote": "Toxic aura tears",
+      "type": "Passive",
       "tags": [
-        "devil",
-        "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_336.png"
+        "piercing",
+        "poison",
+        "shot speed",
+        "spectral",
+        "treasure"
+      ]
     },
     {
       "id": "337",
-      "name": "Bloody Gust",
-      "description": "\"Damage response\" — Taking damage grants speed +0.2 and tears +0.5 for the current floor. Stacks up to 4 times per floor.",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Broken Watch",
+      "description": "Upon entering every 4th unexplored room, the Broken Watch will either slow down or speed up all enemies in the room The slow effect is much more common than the speed up An item only found in the Shop item pool",
+      "quality": 1,
+      "pool": "shop",
       "quote": "I think its broken",
+      "type": "Passive",
       "tags": [
-        "blood",
-        "blut",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_337.png"
+        "shop",
+        "speed up"
+      ]
     },
     {
       "id": "338",
       "name": "Boomerang",
-      "description": "A blue boomerang which can be thrown in a similar fashion to Mom's Knife, to stun any enemies it hits and deal damage The damage dealt by the Boomerang is equal to double your tear damage",
+      "description": "A blue boomerang which can be thrown in a similar fashion to Mom's Knife, to stun any enemies it hits and deal damage The damage dealt by the Boomerang is equal to double your tear damage The boomerang can also be used to grab pickups and consumables from a distance, similar to the legend of zelda boomerang The range of the boomerang is affected by range, with number one the distance is very short and makes the item a lot less effective The Boomerang can be used to kill shopkeeper corpses, allowing you to farm their drops for coins, items, Steam Sale etc REPENTANCE - Boomerang is now piercing, and has far less downtime between throwing it and being able to fire tears again Recharge Time: Timed (A few seconds)",
       "quality": 1,
       "pool": "shop",
       "quote": "It will never leave you",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_338.png",
+      "type": "Active",
       "tags": [
+        "piercing",
         "shop"
       ]
     },
     {
       "id": "339",
       "name": "Safety Pin",
-      "description": "+1.5 Range Up +0.16 Shot Speed Up",
+      "description": "+1.5 Range Up +0.16 Shot Speed Up +1 Black Heart When depleted, Black Hearts deal 40 damage to the entire room, in a Necronomicon style effect",
       "quality": 1,
       "pool": "boss",
       "quote": "Evil up + range + shot speed",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_339.png",
+      "type": "Passive",
       "tags": [
         "boss",
+        "heart",
+        "herz",
         "range up",
         "shot speed",
         "speed up"
@@ -4823,11 +4705,11 @@ window.ISAAC_FALLBACK = {
     {
       "id": "340",
       "name": "Caffeine Pill",
-      "description": "+0.3 Speed Up Decreases the size of Isaac, and your player hitbox, making you less likely to be hit",
+      "description": "+0.3 Speed Up Decreases the size of Isaac, and your player hitbox, making you less likely to be hit Gives you a random pill when picked up An item only found in the boss room pool",
       "quality": 1,
       "pool": "boss",
       "quote": "Speed up + size down",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_340.png",
+      "type": "Passive",
       "tags": [
         "boss",
         "pill",
@@ -4837,72 +4719,80 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "341",
-      "name": "Consolation Prize",
-      "description": "\"Stat fix\" — Grants +3 to your lowest stat and either a coin, bomb, or key (whichever you have fewest of).",
-      "quality": 2,
+      "name": "Torn Photo",
+      "description": "+0.7 Tears Up +0.16 Shot Speed Up",
+      "quality": 3,
       "pool": "boss",
       "quote": "Tears + shot speed up",
+      "type": "Passive",
+      "tags": [
+        "boss",
+        "shot speed",
+        "speed up",
+        "tears up"
+      ]
+    },
+    {
+      "id": "342",
+      "name": "Blue Cap",
+      "description": "+1 HP Up +0.7 Tears Up -0.16 Shot Speed Down Heals one red heart container when picked up An item only found in the Boss Room pool Counts as 1 of 3 mushroom items needed towards the Fun Guy transformation",
+      "quality": 3,
+      "pool": "boss",
+      "quote": "HP + tears + shot speed down",
+      "type": "Passive",
+      "tags": [
+        "boss",
+        "heart",
+        "herz",
+        "hp up",
+        "shot speed",
+        "tears up"
+      ]
+    },
+    {
+      "id": "343",
+      "name": "Latch Key",
+      "description": "+1 Luck Up +1 Soul Heart Spawns 2 keys on the ground",
+      "quality": 1,
+      "pool": "boss",
+      "quote": "Luck up",
+      "type": "Passive",
+      "tags": [
+        "boss",
+        "heart",
+        "herz",
+        "luck"
+      ]
+    },
+    {
+      "id": "344",
+      "name": "Match Book",
+      "description": "+1 Black Heart +3 Bombs When depleted, Black Hearts deal 40 damage to the entire room, in a Necronomicon style effect REPENTANCE - Also drops the Match Stick trinket",
+      "quality": 1,
+      "pool": "boss",
+      "quote": "Evil up",
+      "type": "Passive",
       "tags": [
         "bomb",
         "bombe",
         "boss",
-        "shot speed",
-        "speed up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_341.png"
-    },
-    {
-      "id": "342",
-      "name": "Tinytoma",
-      "description": "\"Splitting orbital\" — Large orbital that blocks shots and deals contact damage. When destroyed, splits into smaller orbitals.",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "HP + tears + shot speed down",
-      "tags": [
-        "orbital",
-        "shot speed",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_342.png"
-    },
-    {
-      "id": "343",
-      "name": "Winner!",
-      "description": "Floor skip trapdoor after boss",
-      "quality": 1,
-      "pool": "boss",
-      "quote": "Luck up",
-      "tags": [
-        "boss",
-        "luck"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_343.png"
-    },
-    {
-      "id": "344",
-      "name": "Fruity Plum",
-      "description": "\"Baby plum\" — Small Baby Plum familiar that bounces around the room dealing contact damage.",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Evil up",
-      "tags": [
-        "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_344.png"
+        "heart",
+        "herz"
+      ]
     },
     {
       "id": "345",
-      "name": "Plum Flute",
-      "description": "Summon Baby Plum to attack for the room",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Synthoil",
+      "description": "+1.0 Damage Up +1.5 Range Up Counts as 1 of 3 syringe items needed towards the Spun transformation",
+      "quality": 3,
+      "pool": "boss",
       "quote": "DMG up + range",
+      "type": "Passive",
       "tags": [
+        "boss",
         "dmg up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_345.png"
+        "range up"
+      ]
     },
     {
       "id": "346",
@@ -4911,7 +4801,7 @@ window.ISAAC_FALLBACK = {
       "quality": 1,
       "pool": "boss",
       "quote": "HP up",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_346.png",
+      "type": "Passive",
       "tags": [
         "boss",
         "heart",
@@ -4921,25 +4811,24 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "347",
-      "name": "Cube Baby",
-      "description": "\"Ice cube\" — Sliding ice familiar. Push it into enemies to freeze them. Frozen enemies shatter for area damage.",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Diplopia",
+      "description": "A one-time use item which when used, will duplicate any pedestal items or consumables in the current room If used in a shop, the duplicated items can be taken for free If used on a trinket, another random trinket will spawn instead of a duplicate If used in the Boss Rush, all the duplicates can be taken for free as well as one of the original items If used in a Devil Room or Black Market, the duplicates can be taken for free Recharge Time: Instant (One time use)",
+      "quality": 3,
+      "pool": "shop",
       "quote": "Double item vision",
+      "type": "Active",
       "tags": [
-        "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_347.png"
+        "shop"
+      ]
     },
     {
       "id": "348",
       "name": "Placebo",
-      "description": "When used, copies the effect of the pill you are currently holding without consuming it The charge time of this item depends on the quality of the pill you're holding",
+      "description": "When used, copies the effect of the pill you are currently holding without consuming it The charge time of this item depends on the quality of the pill you're holding Does not copy effects of Cards or Runes Recharge Time: Varies",
       "quality": 2,
       "pool": "shop",
       "quote": "Pill mimic",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_348.png",
+      "type": "Active",
       "tags": [
         "pill",
         "pille",
@@ -4949,94 +4838,101 @@ window.ISAAC_FALLBACK = {
     {
       "id": "349",
       "name": "Wooden Nickel",
-      "description": "When used, has a 50% chance to drop one random type of coin (penny, nickel or dime) Keeper starts with this item after beating Isaac with Keeper",
+      "description": "When used, has a 50% chance to drop one random type of coin (penny, nickel or dime) Keeper starts with this item after beating Isaac with Keeper Recharge Time: 1 room",
       "quality": 1,
       "pool": "shop",
       "quote": "Flip a coin",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_349.png",
+      "type": "Active",
       "tags": [
         "shop"
       ]
     },
     {
       "id": "350",
-      "name": "Spin to Win",
-      "description": "\"Orbital spin\" — Active item: holding the active button spins all orbitals rapidly, forming a damage ring.",
-      "quality": 2,
+      "name": "Toxic Shock",
+      "description": "With this item, at the start of every room you will deal double your tear damage to the entire room in a poison effect Enemies killed now also leave a pool of creep on the ground where they died. This deals 1 damage per tick High tear damage will cause this item to become very powerful for rooms with a lot of enemies, since they can die instantly and render the room harmless Enemies which spawn after the first few seconds of each room are not affected by this item, e.g. Flies spawned from a Mulligan dying",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Mass poison",
+      "type": "Passive",
       "tags": [
-        "orbital",
+        "poison",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_350.png"
+      ]
     },
     {
       "id": "351",
-      "name": "Vasculitis",
-      "description": "\"Burst on death\" — Enemies burst into tears on death, damaging nearby enemies.",
+      "name": "Mega Bean",
+      "description": "When used, the Mega Bean will freeze all enemies in the current room for a couple of seconds, deal 5 damage and poison any enemies in close proximity and send a wave of spikes across the room in the direction you are facing The enemies in close range will take 5 damage then have a poison over time effect which deals your tear damage 4 or 6 times The spike wave will deal 10 damage to any enemies in contact with it Can be used to open secret rooms Recharge Time: 3 rooms",
       "quality": 1,
       "pool": "treasure",
       "quote": "Giga fart!",
+      "type": "Active",
       "tags": [
+        "freeze",
+        "poison",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_351.png"
+      ]
     },
     {
       "id": "352",
-      "name": "Giant Cell",
-      "description": "Micro-enemies spawn from you when hit",
-      "quality": 2,
+      "name": "Glass Cannon",
+      "description": "Glass Cannon allows you to fire one huge spectral tear that deals a lot of damage. When taking damage, the cannon will break and remain broken until recharged (Recharge time: 4 rooms) When you take damage and the cannon breaks, you take an additional 2 full hearts of damage and gain the Anemic effect for the room. The damage done by Glass Cannon is calculated as follows: dmg = (dmg * 10) + 10 (i.e. at base damage of 3.5, that's 45 damage) Self-inflicted damage such as Blood Donation machines don't trigger this effect Recharge Time: 5 seconds",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Be gentle...",
+      "type": "Active",
       "tags": [
+        "blood",
+        "blut",
+        "heart",
+        "herz",
+        "spectral",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_352.png"
+      ]
     },
     {
       "id": "353",
-      "name": "Tropicamide",
-      "description": "Tears and range up, wider tear spread",
-      "quality": 1,
+      "name": "Bomber Boy",
+      "description": "+5 bombs Isaac's bombs will now explode in a large cross-shaped pattern (roughly 5 bombs explosions wide) This also affects troll bombs",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Explosive blast!",
+      "type": "Passive",
       "tags": [
         "bomb",
         "bombe",
-        "range up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_353.png"
+      ]
     },
     {
       "id": "354",
-      "name": "Card Reading",
-      "description": "\"Portal cards\" — Spawns two portals at the start of each floor (red = boss, blue = treasure, yellow = secret). Walk through to teleport.",
-      "quality": 3,
-      "pool": "treasure",
+      "name": "Crack Jacks",
+      "description": "+1 HP Up Spawns a random trinket on the floor",
+      "quality": 2,
+      "pool": "boss",
       "quote": "Don't swallow the prize!",
+      "type": "Passive",
       "tags": [
         "boss",
-        "secret",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_354.png"
+        "hp up"
+      ]
     },
     {
       "id": "355",
-      "name": "Quints",
-      "description": "Five baby familiars that stay in fixed positions",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Mom's Pearls",
+      "description": "+0.38 Range Up +1 Luck Up +1 Soul Heart Counts as 1 of 3 mom items needed towards the Mom transformation",
+      "quality": 2,
+      "pool": "boss",
       "quote": "Range + luck up",
+      "type": "Passive",
       "tags": [
-        "familiar",
+        "boss",
+        "heart",
+        "herz",
         "luck",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_355.png"
+        "range up"
+      ]
     },
     {
       "id": "356",
@@ -5045,7 +4941,7 @@ window.ISAAC_FALLBACK = {
       "quality": 3,
       "pool": "shop",
       "quote": "Double charge!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_356.png",
+      "type": "Passive",
       "tags": [
         "heart",
         "herz",
@@ -5054,144 +4950,141 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "357",
-      "name": "Brimstone Bombs",
-      "description": "\"Laser bombs\" — Bombs fire 4 Brimstone beams in cardinal directions when they explode.",
-      "quality": 3,
-      "pool": "treasure",
+      "name": "Box of Friends",
+      "description": "Upon use, gives you a duplicate of each familiar you have for the current room It will not 'double' your familiars as the tagline suggests - if you have 2 of one kind, it will only give you an extra one If the familiar only appears when taking damage (i.e. Dead Bird) then Box of Friends will cause it to spawn but won't create duplicates This can be used multiple times in the same room to generate more familiars, meaning you can get a level 4 meatboy or bandage girl by using this item 3 times in the same room If used when you have no familiars, it will give you a Demon Baby temporarily Recharge Time: 3 rooms",
+      "quality": 1,
+      "pool": "shop",
       "quote": "Double your friends",
+      "type": "Active",
       "tags": [
-        "bomb",
-        "bombe",
-        "feuer",
-        "fire",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_357.png"
+        "familiar",
+        "shop"
+      ]
     },
     {
       "id": "358",
-      "name": "It Hurts",
-      "description": "\"Tears up on damage\" — When you take damage, tears rate way up for the current room and release a ring of 10 tears.",
-      "quality": 2,
+      "name": "The Wiz",
+      "description": "Isaac wears a dunce hat and fires 2 tears at once diagonally, similar to the R U A WIZARD pill tear pattern Gives Isaac spectral tears which allows them to travel through objects in the environment (i.e. rocks)",
+      "quality": 0,
       "pool": "treasure",
       "quote": "Double wiz shot!",
+      "type": "Passive",
       "tags": [
-        "tears up",
+        "pill",
+        "pille",
+        "spectral",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_358.png"
+      ]
     },
     {
       "id": "359",
       "name": "8 Inch Nails",
-      "description": "+1.5 Damage Up Replaces Isaac's tears with nails, which have increased knockback",
+      "description": "+1.5 Damage Up Replaces Isaac's tears with nails, which have increased knockback The increased knockback will also affect Brimstone, which usually has no knockback at all",
       "quality": 3,
       "pool": "treasure",
       "quote": "Stick it to 'em!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_359.png",
+      "type": "Passive, Tear Modifier",
       "tags": [
         "dmg up",
+        "laser",
         "treasure"
       ]
     },
     {
       "id": "360",
       "name": "Incubus",
-      "description": "Gives you a familiar demon incubus that follows you and shoots tears that scale with your own tears in terms of damage, stats and also effects It will mimic any tear effects you currently have and also copy your current stats, meaning it will fire with the same damage, fire rate and range",
+      "description": "Gives you a familiar demon incubus that follows you and shoots tears that scale with your own tears in terms of damage, stats and also effects It will mimic any tear effects you currently have and also copy your current stats, meaning it will fire with the same damage, fire rate and range Lilith starts with this item Incubus' damage is reduced by 25% when playing as characters other than Lilith Counts as 1 of 3 familiar items needed towards the Conjoined transformation",
       "quality": 4,
       "pool": "devil",
       "quote": "Dark friend",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_360.png",
+      "type": "Passive, Familiar",
       "tags": [
         "devil",
-        "familiar",
-        "feuer",
-        "fire",
-        "tears up"
+        "familiar"
       ]
     },
     {
       "id": "361",
-      "name": "Nancy Bombs",
-      "description": "\"Random bomb effects\" — Bombs randomly gain extra effects: homing, scatter, burning, sad bombs, etc.",
+      "name": "Fate's Reward",
+      "description": "A familiar blue head that will follow Isaac and fire tears copying his tear damage and effects This familiar is very similar to Incubus, however it only copies damage and is not affected by tears or range upgrades",
       "quality": 2,
       "pool": "treasure",
       "quote": "Your fate beside you",
+      "type": "Passive, Familiar",
       "tags": [
-        "bomb",
-        "bombe",
-        "feuer",
-        "fire",
-        "homing",
+        "familiar",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_361.png"
+      ]
     },
     {
       "id": "362",
-      "name": "A Bar of Soap",
-      "description": "Tears and shot speed up",
-      "quality": 1,
-      "pool": "boss",
+      "name": "Lil Chest",
+      "description": "A familiar chest that follows Isaac and has a 25% chance to drop a pickup after clearing a room Possible drops include hearts, coins, bombs, key, pills, card, runes, batteries, trinket There's a 10% chance to spawn a trinket",
+      "quality": 2,
+      "pool": "treasure",
       "quote": "What's in the box?",
+      "type": "Passive, Familiar",
       "tags": [
-        "boss",
-        "shot speed",
-        "speed up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_362.png"
+        "bomb",
+        "bombe",
+        "familiar",
+        "heart",
+        "herz",
+        "pill",
+        "pille",
+        "treasure"
+      ]
     },
     {
       "id": "363",
       "name": "Sworn Protector",
-      "description": "An orbital angel which does 7 contact damage per tick and blocks shots The angel will attract bullets towards it and block them",
+      "description": "An orbital angel which does 7 contact damage per tick and blocks shots The angel will attract bullets towards it and block them Sworn Protector will drop an eternal heart if it blocks 10 shots in one room. Can only happen once per room Visually this is almost identical to the Guardian Angel item, but without a face Counts as 1 of 3 angel items needed towards the Seraphim transformation Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
       "quality": 3,
       "pool": "angel",
       "quote": "Protective friend",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_363.png",
+      "type": "Passive, Familiar",
       "tags": [
         "angel",
+        "familiar",
+        "heart",
+        "herz",
         "orbital"
       ]
     },
     {
       "id": "364",
       "name": "Friend Zone",
-      "description": "A white orbiting fly which deals 3 contact damage per tick to enemies This familiar orbits Isaac at a middle length distance somewhere between Distant Admiration and Forever Alone",
+      "description": "A white orbiting fly which deals 3 contact damage per tick to enemies This familiar orbits Isaac at a middle length distance somewhere between Distant Admiration and Forever Alone Counts as 1 of 3 fly items needed towards the Beelzebub transformation",
       "quality": 1,
       "pool": "treasure",
       "quote": "Friendly fly",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_364.png",
+      "type": "Passive, Familiar",
       "tags": [
         "familiar",
-        "fliege",
-        "fly",
         "treasure"
       ]
     },
     {
       "id": "365",
       "name": "Lost Fly",
-      "description": "A familiar fly that moves in a straight line and attaches itself to the first obstacle or wall it comes into contact with in each room. If any enemies walk into its path, it will deal 7 contact damage every 7 frames",
+      "description": "A familiar fly that moves in a straight line and attaches itself to the first obstacle or wall it comes into contact with in each room. If any enemies walk into its path, it will deal 7 contact damage every 7 frames Nearby enemies will be forced to target and attack it If the obstacle it is attached to is destroyed then it will continue rolling in the direction it was previously travelling until it meets another wall or obstacle",
       "quality": 2,
       "pool": "treasure",
       "quote": "Lost protector",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_365.png",
+      "type": "Passive, Familiar",
       "tags": [
         "familiar",
-        "fliege",
-        "fly",
         "treasure"
       ]
     },
     {
       "id": "366",
       "name": "Scatter Bombs",
-      "description": "+5 bombs Causes your bombs to explode into 2-4 tiny bombs",
+      "description": "+5 bombs Causes your bombs to explode into 2-4 tiny bombs The smaller bombs deal half damage and have a smaller explosion area. They also retain most of your bomb synergizing items",
       "quality": 1,
       "pool": "treasure",
       "quote": "We put bombs in your bombs!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_366.png",
+      "type": "Passive",
       "tags": [
         "bomb",
         "bombe",
@@ -5201,11 +5094,11 @@ window.ISAAC_FALLBACK = {
     {
       "id": "367",
       "name": "Sticky Bombs",
-      "description": "This item causes your bombs to stick to enemies and when exploding will leave white creep on the ground which slows enemies When one of your bombs kills an enemy, a bunch of blue spiders are spawned to fight by your side, which deal x2 your current damage",
+      "description": "This item causes your bombs to stick to enemies and when exploding will leave white creep on the ground which slows enemies When one of your bombs kills an enemy, a bunch of blue spiders are spawned to fight by your side, which deal x2 your current damage +5 Bombs Counts as 1 of 3 spider items needed towards the Spider Baby transformation.",
       "quality": 2,
       "pool": "treasure",
       "quote": "Egg sack bombs!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_367.png",
+      "type": "Passive, Bomb Modifier",
       "tags": [
         "bomb",
         "bombe",
@@ -5216,257 +5109,266 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "368",
-      "name": "Broken Modem",
-      "description": "\"Lag switch\" — Enemies and projectiles randomly freeze in place. Doubles room rewards.",
-      "quality": 3,
+      "name": "Epiphora",
+      "description": "Shooting in one direction increases your fire rate until a cap is reached The maximum effect is to halve your delay, which takes roughly 10 seconds to achieve The accuracy of your tears is also reduced as your fire rate increases As soon as you change firing direction, your fire rate is reset to its normal amount",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Intensifying tears",
+      "type": "Passive",
       "tags": [
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_368.png"
+      ]
     },
     {
       "id": "369",
-      "name": "Mystery Gift",
-      "description": "\"Random present\" — Active item: spawns a random item from the current room's pool. 10% chance to spawn A Lump of Coal instead.",
+      "name": "Continuum",
+      "description": "+3 Range Up Tears will now travel through walls and appear out of the opposite wall, similar to a portal-type mechanic Your tears can now also travel over rocks and objects in the environment",
       "quality": 2,
-      "pool": "secret",
+      "pool": "treasure",
       "quote": "Transcendent tears",
+      "type": "Passive",
       "tags": [
-        "secret"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_369.png"
+        "range up",
+        "treasure"
+      ]
     },
     {
       "id": "370",
-      "name": "Sprinkler",
-      "description": "\"Tear sprinkler\" — Spawns a stationary sprinkler that rapidly fires tears in all directions at your damage.",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Mr. Dolly",
+      "description": "+0.7 Tears Up +1.5 Range Up Spawns 3 random types of hearts on the floor",
+      "quality": 3,
+      "pool": "boss",
       "quote": "Range + tears up",
+      "type": "Passive",
       "tags": [
-        "feuer",
-        "fire",
-        "tears up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_370.png"
+        "boss",
+        "heart",
+        "herz",
+        "range up",
+        "tears up"
+      ]
     },
     {
       "id": "371",
-      "name": "Fast Bombs",
-      "description": "\"Rapid bomb placement\" — No cooldown between placing bombs. Can place bombs as fast as you press the button.",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Curse of The Tower",
+      "description": "Causes Isaac to spawn 6 troll bombs on the floor every time he gets hit, similar to the Anarchist Cookbook mechanic Doesn't trigger on damage taken from blood donation machines and devil beggars (but still triggers on other forms of intentional self damage such as IV Bag)",
+      "quality": 0,
+      "pool": "curse",
       "quote": "You feel cursed...",
+      "type": "Passive",
       "tags": [
+        "blood",
+        "blut",
         "bomb",
         "bombe",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_371.png"
+        "curse"
+      ]
     },
     {
       "id": "372",
-      "name": "Buddy in a Box",
-      "description": "Random familiar that changes each floor",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Charged Baby",
+      "description": "A familiar baby that has a random chance to drop a battery pickup or freeze all enemies in the room for a short while Charged Baby also has a chance to add one charge to your spacebar item These effects can only occur while in a hostile room with enemies",
+      "quality": 3,
+      "pool": "shop",
       "quote": "Bbbzzzzzt!",
+      "type": "Passive, Familiar",
       "tags": [
         "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_372.png"
+        "freeze",
+        "shop"
+      ]
     },
     {
       "id": "373",
-      "name": "Lil Delirium",
-      "description": "\"Random familiar\" — Familiar that transforms into a random item familiar every 10 seconds.",
+      "name": "Dead Eye",
+      "description": "Gives Isaac a +25% damage up for every tear that successfully hits an enemy The bonus from Dead Eye maxes out at double your damage (+100%) If a tear misses an enemy, there is a chance for the multiplier to be reset back to 1. It's a 20% chance on first miss, 33% for a second miss and 50% for anything beyond that Piercing shots work with this item and multiple hits with a single tear will each give a damage bonus",
       "quality": 3,
       "pool": "treasure",
       "quote": "Accuracy brings power!",
+      "type": "Passive",
       "tags": [
-        "familiar",
+        "auge",
+        "dmg up",
+        "eye",
+        "piercing",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_373.png"
+      ]
     },
     {
       "id": "374",
-      "name": "Jumper Cables",
-      "description": "\"Kill charges\" — Every 15 enemy kills adds 1 charge to your active item.",
+      "name": "Holy Light!",
+      "description": "Isaac has a random chance to fire a Holy tear, which when it hits an enemy, will spawn a light beam on the same enemy, dealing damage The beams from this item deal damage equal to 400% of your tear damage (4x damage multiplier for the beams only) The chance to fire a Holy tear is affected by your luck stat, maxing out at a 50% chance Counts as 1 of 3 angel items needed towards the Seraphim transformation.",
       "quality": 3,
-      "pool": "shop",
+      "pool": "angel",
       "quote": "Holy shot!",
+      "type": "Passive",
       "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_374.png"
+        "angel",
+        "dmg up"
+      ]
     },
     {
       "id": "375",
-      "name": "Extension Cord",
-      "description": "Electricity between you and familiars",
-      "quality": 2,
+      "name": "Host Hat",
+      "description": "A familiar host that sits on Isaac's head and has a 20% chance to block enemy shots When a shot is blocked, Host Hat will fire 3 bullets back at the enemy Causes you to become immune to explosions, but doesn't protect against stomps or shockwaves Blocks damage from projectiles falling from above",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Nice hat!",
+      "type": "Passive",
       "tags": [
         "familiar",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_375.png"
+      ]
     },
     {
       "id": "376",
-      "name": "Coupon",
-      "description": "\"Free item\" — Active item: makes one random shop item free.",
-      "quality": 3,
+      "name": "Restock",
+      "description": "Causes your shops to instantly restock their items when you buy them New items generated by Restock are from the shop item pool The cost increases exponentially every time you purchase an item. For Items it increases by 2 coins * the number of purchases. For everything it increases by 1 coin * the number of purchases The max price of an item is always 99c with this item Works with Keeper's Box and the Member Card extra shop",
+      "quality": 2,
       "pool": "shop",
       "quote": "Never ending stores!",
+      "type": "Passive",
       "tags": [
         "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_376.png"
+      ]
     },
     {
       "id": "377",
-      "name": "Telekinesis",
-      "description": "Hold tears in place, release toward enemies",
-      "quality": 2,
+      "name": "Bursting Sack",
+      "description": "Most spider enemies no longer target or deal contact damage to Isaac This is very similar to a Skatole for spiders instead of flies Counts as 1 of 3 spider items needed towards the Spider Baby transformation.",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Spider love",
+      "type": "Passive",
       "tags": [
         "spider",
         "spinne",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_377.png"
+      ]
     },
     {
       "id": "378",
-      "name": "Moving Box",
-      "description": "Store and place items between rooms",
+      "name": "No. 2",
+      "description": "Continuously firing or charging tears for 3 seconds causes Isaac to fart and drop a Butt Bomb Only 1 Butt Bomb can be dropped per charge, so you'll need to stop firing then start again to drop another one Butt Bombs explode for 50 damage like normal bombs, but also deal 10 damage to all enemies in the room and daze them for a short period of time Counts as 1 of 3 poop items needed towards the Oh Crap transformation.",
       "quality": 2,
-      "pool": "shop",
+      "pool": "treasure",
       "quote": "Uh oh...",
+      "type": "Passive",
       "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_378.png"
+        "bomb",
+        "bombe",
+        "treasure"
+      ]
     },
     {
       "id": "379",
-      "name": "Technology Zero",
-      "description": "\"Electric tears\" — Electricity arcs between your tears, dealing 0.3x your damage per tick to enemies between them.",
-      "quality": 3,
+      "name": "Pupula Duplex",
+      "description": "Transforms Isaac's tears into a wide arc shape which doubles their size and hitbox Gives Isaac spectral tears which allows them to travel through objects in the environment (i.e. rocks)",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Wide shot",
+      "type": "Passive",
       "tags": [
+        "spectral",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_379.png"
+      ]
     },
     {
       "id": "380",
       "name": "Pay To Play",
-      "description": "+5 coins This item turns all doors that require a key into doors which need a coin to enter instead",
+      "description": "+5 coins This item turns all doors that require a key into doors which need a coin to enter instead This affects shops, item rooms, libraries, double locked doors, key blocks, chests and other key doors Changes the appearance of doors and objects that this item works on to show a coin slot instead of a keyhole",
       "quality": 2,
       "pool": "shop",
       "quote": "Money talks",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_380.png",
+      "type": "Passive",
       "tags": [
         "shop"
       ]
     },
     {
       "id": "381",
-      "name": "7 Seals",
-      "description": "Spawns harbinger locust familiars",
-      "quality": 2,
-      "pool": "angel",
+      "name": "Eden's Blessing",
+      "description": "+0.7 Tears Up Gives you a random item at the start of your next run (You need to start a fresh run to receive the item) Important progression items such as Key Pieces or the Mom's Shovel pieces cannot be given by Eden's Blessing",
+      "quality": 3,
+      "pool": "treasure",
       "quote": "Your future shines brighter",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "familiar"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_381.png"
+        "tears up",
+        "treasure"
+      ]
     },
     {
       "id": "382",
       "name": "Friendly Ball",
-      "description": "When used, can be thrown at enemies to capture them (similar to a Poké Ball) After capturing an enemy, the next use of the Friendly Ball will re-spawn the same enemy as a friendly companion which will attack other enemies",
+      "description": "When used, can be thrown at enemies to capture them (similar to a Poké Ball) After capturing an enemy, the next use of the Friendly Ball will re-spawn the same enemy as a friendly companion which will attack other enemies The companion will persist between rooms and floors until it dies by taking enough damage Walking over the thrown ball after capturing an enemy will immediately recharge it Recharge Time: 2 rooms",
       "quality": 1,
       "pool": "treasure",
       "quote": "Gotta fetch 'em all!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_382.png",
+      "type": "Active",
       "tags": [
         "treasure"
       ]
     },
     {
       "id": "383",
-      "name": "Angelic Prism",
-      "description": "\"Quad split\" — Orbiting prism. Tears that pass through it split into 4 colored tears traveling in cardinal directions.",
-      "quality": 3,
-      "pool": "angel",
+      "name": "Tear Detonator",
+      "description": "When used, will detonate any tears currently on the screen and cause each one to split into 6 more tears which will fire in a circle, similar to Tammy's Head Luck-based items such as Holy Light are applied to each tear individually Recharge Time: 15 seconds",
+      "quality": 1,
+      "pool": "shop",
       "quote": "Remote tear detonation",
+      "type": "Active",
       "tags": [
-        "angel"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_383.png"
+        "shop"
+      ]
     },
     {
       "id": "384",
       "name": "Lil Gurdy",
-      "description": "Gives Isaac a familiar Gurdy that will charge around the room dealing contact damage to enemies The Gurdy is charged by holding down the fire button and letting go. The longer the button is held the faster Gurdy will fling itself across the screen",
+      "description": "Gives Isaac a familiar Gurdy that will charge around the room dealing contact damage to enemies The Gurdy is charged by holding down the fire button and letting go. The longer the button is held the faster Gurdy will fling itself across the screen Deals a fixed amount of damage depending on charge level, at lowest being ~5 and at max being ~20 Lil Gurdy bounces off of enemies and obstacles",
       "quality": 2,
       "pool": "treasure",
       "quote": "A gurd of your own!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_384.png",
+      "type": "Passive, Familiar",
       "tags": [
         "familiar",
-        "feuer",
-        "fire",
         "treasure"
       ]
     },
     {
       "id": "385",
-      "name": "Death's List",
-      "description": "\"Kill order\" — A list of enemies appears at the start of each room. Kill them in order for a reward (item from boss pool if successful).",
-      "quality": 3,
-      "pool": "devil",
+      "name": "Bumbo",
+      "description": "A beggar head which floats around the room and picks up any nearby coins. Every 6 coins Bumbo will evolve to a new form except for level 4 which takes 12 coins Level 2: Bumbo gains a body and crawls around the room, sometimes dropping random pickups Level 3: It now fires tears in the same direction Isaac does Level 4: Bumbo no longer fires tears but instead will chase enemies slowly and deal contact damage. It will also sometimes randomly drop bombs After reaching level 4 (and at a much lower chance before level 4), Bumbo will also continue to collect coins and drop random pickups, similar to the Bum Friend item, but can also drop pedestal items very rarely.",
+      "quality": 1,
+      "pool": "treasure",
       "quote": "Bumbo want coin!",
+      "type": "Passive, Familiar",
       "tags": [
-        "boss",
-        "devil"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_385.png"
+        "bomb",
+        "bombe",
+        "treasure"
+      ]
     },
     {
       "id": "386",
       "name": "D12",
-      "description": "When used, the D12 re-rolls any rocks into another random type of object (e.g. poop, pots, TNT, red poop, stone blocks, spikes, fireplaces etc.) Unlock this item by beating Blue Womb (Hush) with Cain",
+      "description": "When used, the D12 re-rolls any rocks into another random type of object (e.g. poop, pots, TNT, red poop, stone blocks, spikes, fireplaces etc.) Recharge Time: 3 rooms",
       "quality": 1,
       "pool": "shop",
       "quote": "Rerolls rocks",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_386.png",
+      "type": "Active",
       "tags": [
-        "feuer",
-        "fire",
         "shop"
       ]
     },
     {
       "id": "387",
       "name": "Censer",
-      "description": "Gives Isaac a familiar golden Censer which creates a huge aura of light that slows down any enemies inside it Unlock this item by beating Greed Mode with Maggy",
+      "description": "Gives Isaac a familiar golden Censer which creates a huge aura of light that slows down any enemies inside it",
       "quality": 3,
       "pool": "angel",
       "quote": "Peace be with you",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_387.png",
+      "type": "Passive, Familiar",
       "tags": [
         "angel",
         "familiar"
@@ -5475,11 +5377,11 @@ window.ISAAC_FALLBACK = {
     {
       "id": "388",
       "name": "Key Bum",
-      "description": "A familiar beggar similar to Bum Friend that follows Isaac and collects keys, giving random chests in return Doesn't pick up golden keys",
+      "description": "A familiar beggar similar to Bum Friend that follows Isaac and collects keys, giving random chests in return Doesn't pick up golden keys Counts as 1 of 3 bum items needed towards the Super Bum transformation",
       "quality": 0,
       "pool": "secret",
       "quote": "He wants your keys!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_388.png",
+      "type": "Passive, Familiar",
       "tags": [
         "familiar",
         "secret"
@@ -5488,285 +5390,281 @@ window.ISAAC_FALLBACK = {
     {
       "id": "389",
       "name": "Rune Bag",
-      "description": "A bag that follows Isaac and drops a random Rune or Soul Stone every 7 or 8 rooms Unlock this item by beating the Isaac boss with Lilith",
+      "description": "A bag that follows Isaac and drops a random Rune or Soul Stone every 7 or 8 rooms",
       "quality": 3,
       "pool": "secret",
       "quote": "Rune generator",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_389.png",
+      "type": "Passive, Familiar",
       "tags": [
-        "boss",
         "secret"
       ]
     },
     {
       "id": "390",
-      "name": "Blanket",
-      "description": "Shield for first hit in boss rooms",
-      "quality": 2,
-      "pool": "shop",
+      "name": "Seraphim",
+      "description": "A familiar angel which follows Isaac and fires Sacred Heart tears which deal 10 damage at -25% shot speed and a reduced fire rate Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
+      "quality": 3,
+      "pool": "angel",
       "quote": "Sworn friend",
+      "type": "Passive, Familiar",
       "tags": [
-        "boss",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_390.png"
+        "angel",
+        "familiar",
+        "heart",
+        "herz",
+        "shot speed"
+      ]
     },
     {
       "id": "391",
       "name": "Betrayal",
-      "description": "This item causes enemy projectiles to be able to hit other enemies. When an enemy takes damage from an enemy projectile, it will attempt to target the enemy that fired it Unlock this item by beating Blue Womb (Hush) with Judas",
+      "description": "This item causes enemy projectiles to be able to hit other enemies. When an enemy takes damage from an enemy projectile, it will attempt to target the enemy that fired it",
       "quality": 1,
       "pool": "devil",
       "quote": "Turn your enemy",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_391.png",
+      "type": "Passive",
       "tags": [
-        "devil",
-        "feuer",
-        "fire"
+        "devil"
       ]
     },
     {
       "id": "392",
-      "name": "Lil Spewer",
-      "description": "Creep-shooting familiar, changes with pills",
+      "name": "Zodiac",
+      "description": "Zodiac will give you a random zodiac item effect that changes after every floor Possible item effects include: Taurus, Aries, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Gemini or Pisces Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
       "quality": 1,
       "pool": "treasure",
       "quote": "The heavens will change you",
+      "type": "Passive",
       "tags": [
-        "familiar",
-        "pill",
-        "pille",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_392.png"
+      ]
     },
     {
       "id": "393",
-      "name": "Marbles",
-      "description": "Swallow trinkets on damage, grants 3 trinkets",
-      "quality": 1,
+      "name": "Serpent's Kiss",
+      "description": "Tears now have a random chance to apply a poison effect, dealing damage equal to your tears each tick, for 2 ticks Isaac now deals poison damage on contact with enemies similar to The Virus item (Damage over time 4 or 6 per tick) Enemies that were poisoned by contact damage have a 20% chance to drop a black sin heart when killed. Only contact poison has this effect - poison from tears doesn't work",
+      "quality": 2,
       "pool": "treasure",
       "quote": "The kiss of death",
+      "type": "Passive",
       "tags": [
+        "heart",
+        "herz",
+        "poison",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_393.png"
+      ]
     },
     {
       "id": "394",
-      "name": "Mystery Egg",
-      "description": "Companion egg that hatches per room, grows per floor",
+      "name": "Marked",
+      "description": "Isaac will now fire tears automatically directed at a red target on the ground which is controlled by the player This allows for a full 360 degree tear firing radius Can be overridden by other tear modifiers such as Mom's Knife or Brimstone Every time you leave the room this effect turns off until you press a shoot button again +0.7 Tears Up +3.0 Range Up Has no effect with Lilith's Incubus",
       "quality": 1,
       "pool": "treasure",
       "quote": "Directed tears",
+      "type": "Passive",
       "tags": [
+        "laser",
+        "range up",
+        "tears up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_394.png"
+      ]
     },
     {
       "id": "395",
       "name": "Tech X",
-      "description": "Tears are replaced with the ability to charge and fire a laser ring that travels across the room The size of the ring will depend on how long you charge it",
+      "description": "Tears are replaced with the ability to charge and fire a laser ring that travels across the room The size of the ring will depend on how long you charge it The laser ring does damage scaling based on charge, from 25% at minimum to 100% at max Rings have infinite range and travel until they hit a wall Multiple Tech X stacks - every one taken adds another laser ring (doesn't affect your fire rate)",
       "quality": 4,
       "pool": "treasure",
       "quote": "Laser ring tears",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_395.png",
+      "type": "Passive, Tear modifier",
       "tags": [
-        "feuer",
-        "fire",
+        "laser",
         "treasure"
       ]
     },
     {
       "id": "396",
-      "name": "Marrow",
-      "description": "Bone heart container",
-      "quality": 2,
-      "pool": "boss",
+      "name": "Ventricle Razor",
+      "description": "Allows you to create one brown tunnel and one blue tunnel in the floor, that can be used to teleport between wherever you placed each one This item will let you port out of the devil room but not back into it Very useful in the boss rush and challenge rooms Recharge Time: Instant",
+      "quality": 1,
+      "pool": "shop",
       "quote": "Short cutter",
+      "type": "Active",
       "tags": [
-        "boss",
-        "heart",
-        "herz",
-        "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_396.png"
+        "shop"
+      ]
     },
     {
       "id": "397",
-      "name": "Slipped Rib",
-      "description": "Bone orbital that reflects enemy shots",
-      "quality": 2,
+      "name": "Tractor Beam",
+      "description": "Isaac's tears now travel directly forwards following a beam of light, but will also move sideways based on your player movement +0.5 Tears Up +1.5 Range Up +0.16 Shot Speed Up Allows for more accurate correction when firing tears, as their direction can be controlled even after they have been fired If you switch the direction in which you are firing tears, the beam of light and all your tears will also be transported to the new direction",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Controlled tears",
+      "type": "Passive, Tear Modifier",
       "tags": [
-        "orbital",
+        "range up",
+        "shot speed",
+        "speed up",
+        "tears up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_397.png"
+      ]
     },
     {
       "id": "398",
-      "name": "Hallowed Ground",
-      "description": "Holy poop that buffs you in its aura",
+      "name": "God's Flesh",
+      "description": "Tears now have a random chance to apply a shrinking effect, causing enemies to shrink in size for 5 seconds and also run away from Isaac Shrunk enemies can be crushed and killed by walking over them Counts as 1 of 3 mushroom items needed towards the Fun Guy transformation",
       "quality": 1,
-      "pool": "angel",
+      "pool": "treasure",
       "quote": "Shrink shot!",
+      "type": "Passive",
       "tags": [
-        "angel"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_398.png"
+        "treasure"
+      ]
     },
     {
       "id": "399",
-      "name": "Pointy Rib",
-      "description": "Bone weapon that pierces enemies",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Maw of The Void",
+      "description": "After firing tears for 3 seconds, a red cross appears on Isaac's head that, upon releasing the fire button, creates a black ring which deals a lot of damage to any enemies inside it The ring deals damage equal to your tear damage rapidly to any enemies in contact with it, for a total of 30 ticks of damage You have to keep the fire button held down for the full 3 seconds to cause this effect Counts as 1 of 3 evil items needed towards the Leviathan transformation",
+      "quality": 3,
+      "pool": "devil",
       "quote": "Consume thy enemy!",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_399.png"
+        "devil"
+      ]
     },
     {
       "id": "400",
-      "name": "Book of the Dead",
-      "description": "\"Raise the dead\" — Active item: spawns bone orbitals and charmed bone enemies based on enemies killed in the current room. Counts toward Bookworm transformation.",
-      "quality": 3,
-      "pool": "devil",
+      "name": "Spear of Destiny",
+      "description": "In addition to tears, Isaac now holds a spear infront of him which deals damage equal to 2 times your tear damage The spear occasionally inflicts fear on enemies it damages. The spear cannot be thrown like Mom's Knife but deals damage while it is in contact with an enemy",
+      "quality": 2,
+      "pool": "angel",
       "quote": "Your destiny",
+      "type": "Passive",
       "tags": [
-        "devil",
-        "orbital"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_400.png"
+        "angel"
+      ]
     },
     {
       "id": "401",
-      "name": "Dad's Ring",
-      "description": "\"Holy aura\" — Orbital ring that petrifies nearby enemies for ~2 seconds.",
+      "name": "Explosivo",
+      "description": "Tears now have a random chance to become sticky bombs, which will attach to enemies and explode after a few seconds The bomb explosion deals your tear damage + 60 Explosivo shots deal regular tear damage upon sticking to an enemy",
       "quality": 3,
-      "pool": "angel",
+      "pool": "treasure",
       "quote": "Sticky bomb shot!",
+      "type": "Passive",
       "tags": [
-        "angel",
         "bomb",
         "bombe",
-        "orbital"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_401.png"
+        "treasure"
+      ]
     },
     {
       "id": "402",
-      "name": "Divorce Papers",
-      "description": "\"Bone tears\" — Grants a bone heart, a Mysterious Paper trinket, and tears +0.7.",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Chaos",
+      "description": "Causes all item pedestals to be chosen from a random item pool instead of the pre-defined ones which normally exist When picked up, drops between 1-6 random pickups on the floor Makes it possible to see items that have been rerolled away, preventing emptying the item pool and Breakfasting Fixed item drops won't be replaced - e.g. Cube of Meat after defeating a Horseman Chaos assigns a weight to item pools based on how many items are in the pool. The more items in a pool, the more likely that pool will be picked",
+      "quality": 3,
+      "pool": "shop",
       "quote": "!!!",
+      "type": "Passive",
       "tags": [
-        "heart",
-        "herz",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_402.png"
+        "shop"
+      ]
     },
     {
       "id": "403",
-      "name": "Jaw Bone",
-      "description": "\"Bone boomerang\" — Throwable bone boomerang familiar that deals contact damage on its flight path.",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Spider Mod",
+      "description": "A familiar grey spider that wanders around and allows you to see your tear damage and the health bars of all enemies The spider will inflict a random status effect on any enemies it comes into contact with (e.g. slow, shrink, fear) Spider Mod will also randomly drop battery consumables or blue spiders when a room is completed For the sake of simplicity for players, all damage values displayed are multiplied by 10 and rounded to the nearest number This item is a reference to Spider853, creator of Spidermod for the original game and one of the lead developers that worked on Rebirth and its DLCs",
+      "quality": 1,
+      "pool": "shop",
       "quote": "Mod buddy!",
+      "type": "Passive",
       "tags": [
         "familiar",
-        "flight",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_403.png"
+        "shop",
+        "spider",
+        "spinne"
+      ]
     },
     {
       "id": "404",
-      "name": "Brittle Bones",
-      "description": "\"Bone heart conversion\" — Removes all red hearts, replaces with 6 bone hearts. When a bone heart breaks, fire 8 bone tears and gain +0.4 tears permanently.",
-      "quality": 2,
+      "name": "Farting Baby",
+      "description": "A familiar that follows Isaac and blocks tears If a tear hits Farting Baby, there is a 10% chance for it to fart, with 3 possible effects: Charm, Poison or Knock back Charm deals 5 damage. Poison deals 5 damage initially and then 3.5 Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
+      "quality": 1,
       "pool": "treasure",
       "quote": "He farts!",
+      "type": "Passive, Familiar",
       "tags": [
-        "feuer",
-        "fire",
-        "heart",
-        "herz",
+        "familiar",
+        "poison",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_404.png"
+      ]
     },
     {
       "id": "405",
       "name": "GB Bug",
-      "description": "Spawns a familiar that follows Isaac. Double tapping the fire button launches it forward, causing it to reroll the first monster, trinket, or pickup it hits",
+      "description": "Spawns a familiar that follows Isaac. Double tapping the fire button launches it forward, causing it to reroll the first monster, trinket, or pickup it hits GB Bug respawns after a room has been cleared Cannot reroll bosses - instead just deals 8 contact damage",
       "quality": 1,
       "pool": "shop",
       "quote": "Game breaking bug, right away!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_405.png",
+      "type": "Passive",
       "tags": [
         "familiar",
-        "feuer",
-        "fire",
         "shop"
       ]
     },
     {
       "id": "406",
       "name": "D8",
-      "description": "When used, the D8 rerolls all of your stats Will only effect your damage, tears, range and speed stats",
+      "description": "When used, the D8 rerolls all of your stats Will only effect your damage, tears, range and speed stats Each stat is given a multiplier that applies after all other adjustments Recharge Time: 4 Rooms",
       "quality": 2,
       "pool": "shop",
       "quote": "Reroll stats",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_406.png",
+      "type": "Active",
       "tags": [
         "shop"
       ]
     },
     {
       "id": "407",
-      "name": "Sharp Key",
-      "description": "\"Offensive keys\" — Thrown keys deal 50 damage and can open doors/chests. Keys drop more frequently.",
-      "quality": 2,
-      "pool": "shop",
+      "name": "Purity",
+      "description": "Purity will boost one of Isaac's stats depending on the colour of the aura around him When you take damage, the aura will be removed and replaced with another random one when you enter the next room Colour code is as follows: Red = +4.0 Damage Blue = -4 Tear Delay Yellow = +0.5 Speed Up Orange = +3.0 Range Up",
+      "quality": 3,
+      "pool": "angel",
       "quote": "Aura stat boost",
+      "type": "Passive",
       "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_407.png"
+        "angel",
+        "range up",
+        "speed up"
+      ]
     },
     {
       "id": "408",
-      "name": "Booster Pack",
-      "description": "\"Free cards\" — Active item: spawns 5 random cards.",
-      "quality": 2,
-      "pool": "shop",
+      "name": "Athame",
+      "description": "Adds a chance for a black ring to spawn around killed enemies, dealing damage to others that touch it The ring damage scales with your tear damage The chance for a ring to spawn scales with your luck stat",
+      "quality": 3,
+      "pool": "devil",
       "quote": "Call to the void",
+      "type": "Passive",
       "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_408.png"
+        "devil"
+      ]
     },
     {
       "id": "409",
       "name": "Empty Vessel",
-      "description": "+2 Black Hearts When Isaac has no red hearts, this item gives Isaac the ability to fly. Every 40 seconds spent in the same room since last activating, when the timer displays 00, 20 or 40 seconds, a shield triggers, nullifying all types of damage for 10 seconds",
+      "description": "+2 Black Hearts When Isaac has no red hearts, this item gives Isaac the ability to fly. Every 40 seconds spent in the same room since last activating, when the timer displays 00, 20 or 40 seconds, a shield triggers, nullifying all types of damage for 10 seconds As soon as Isaac has half a red heart or more, this item deactivates",
       "quality": 2,
       "pool": "devil",
       "quote": "I reward an empty vessel",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_409.png",
+      "type": "Passive",
       "tags": [
         "devil",
-        "fliege",
-        "fly",
         "heart",
-        "herz"
+        "herz",
+        "shield"
       ]
     },
     {
@@ -5776,12 +5674,10 @@ window.ISAAC_FALLBACK = {
       "quality": 2,
       "pool": "treasure",
       "quote": "Eye shot!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_410.png",
+      "type": "Passive",
       "tags": [
         "auge",
         "eye",
-        "feuer",
-        "fire",
         "shot speed",
         "treasure"
       ]
@@ -5789,11 +5685,11 @@ window.ISAAC_FALLBACK = {
     {
       "id": "411",
       "name": "Lusty Blood",
-      "description": "Each time Isaac kills an enemy, you get a temporary +0.5 damage up which lasts for the current room Each subsequent kill will stack further damage up to a maximum of +5 Damage Up after 10 kills",
+      "description": "Each time Isaac kills an enemy, you get a temporary +0.5 damage up which lasts for the current room Each subsequent kill will stack further damage up to a maximum of +5 Damage Up after 10 kills This item is the same principle as the Bloody Lust item from the original flash game",
       "quality": 3,
       "pool": "devil",
       "quote": "Their blood brings rage!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_411.png",
+      "type": "Passive",
       "tags": [
         "blood",
         "blut",
@@ -5804,190 +5700,189 @@ window.ISAAC_FALLBACK = {
     {
       "id": "412",
       "name": "Cambion Conception",
-      "description": "After taking enough damage you will gain a permanent demon familiar Possible familiars include: Dark Bum, Demon Baby, Leech, Lil' Brimstone, Succubus, Incubus, Lil Abaddon, Twisted Pair",
+      "description": "After taking enough damage you will gain a permanent demon familiar Possible familiars include: Dark Bum, Demon Baby, Leech, Lil' Brimstone, Succubus, Incubus, Lil Abaddon, Twisted Pair The effect is shown visually in 3 stages with the character's belly getting larger each time until it finally gives birth to a familiar. The first and second familiars spawn after 15 hits, then 30 hits for the third and fourth Cambion Conception cannot grant more than 4 familiars in total Lilith starts with this item",
       "quality": 2,
       "pool": "devil",
       "quote": "Feed them hate",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_412.png",
+      "type": "Passive",
       "tags": [
         "devil",
-        "familiar"
+        "familiar",
+        "laser"
       ]
     },
     {
       "id": "413",
-      "name": "Bot Fly",
-      "description": "Orbital that shoots tears at projectiles",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Immaculate Conception",
+      "description": "After picking up 15 hearts, Isaac gains a permanent angelic familiar and a soul heart drops Possible familiars include: Holy Water, Guardian Angel, Sworn Protector, The Relic and Seraphim It is possible to get multiple followers by continuing to pick up hearts, at intervals of 15 hearts each After all 5 familiars have spawned, it will just drop a soul heart every 15 hearts collected",
+      "quality": 1,
+      "pool": "angel",
       "quote": "Feed them love",
+      "type": "Passive",
       "tags": [
-        "fliege",
-        "fly",
-        "orbital",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_413.png"
+        "angel",
+        "familiar",
+        "heart",
+        "herz"
+      ]
     },
     {
       "id": "414",
-      "name": "Meat Cleaver",
-      "description": "Split all enemies into two smaller versions",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "There are even more options!",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_414.png"
-    },
-    {
-      "id": "415",
-      "name": "Evil Charm",
-      "description": "Luck up, poison/burn/confusion immunity",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "The untainted gain power",
-      "tags": [
-        "feuer",
-        "fire",
-        "luck",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_415.png"
-    },
-    {
-      "id": "416",
-      "name": "Deep Pockets",
-      "description": "Increases your money cap to 999 When a room clear would otherwise yield no rewards, it now spawns 1-3 pennies",
-      "quality": 2,
+      "name": "More Options",
+      "description": "Two items now spawn in each of your item rooms, however only one can be taken and the other will disappear Doesn't work for half-sized item rooms",
+      "quality": 3,
       "pool": "shop",
-      "quote": "More stuff to carry!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_416.png",
+      "quote": "There are even more options!",
+      "type": "Passive",
       "tags": [
         "shop"
       ]
     },
     {
+      "id": "415",
+      "name": "Crown of Light",
+      "description": "+2 Soul Hearts A crown that replaces normal tears with blue diamond tears while you don't have any empty red heart containers or bone hearts While the effect is active, tears do double damage and have -0.30 Shot Speed The crown will glow blue while active, if inactive it will appear grey The effect will also deactivate for the rest of the current room when you take damage, regardless of your health",
+      "quality": 4,
+      "pool": "angel",
+      "quote": "The untainted gain power",
+      "type": "Passive",
+      "tags": [
+        "angel",
+        "heart",
+        "herz",
+        "hp up",
+        "shot speed"
+      ]
+    },
+    {
+      "id": "416",
+      "name": "Deep Pockets",
+      "description": "Increases your money cap to 999 When a room clear would otherwise yield no rewards, it now spawns 1-3 pennies Previously this item would add an extra card/pill slot, however this was removed with the Repentance rebalance",
+      "quality": 2,
+      "pool": "shop",
+      "quote": "More stuff to carry!",
+      "type": "Passive",
+      "tags": [
+        "pill",
+        "pille",
+        "shop"
+      ]
+    },
+    {
       "id": "417",
-      "name": "Purgatory",
-      "description": "\"Ghost explosion\" — While in a room with enemies, ghost cracks appear under you. Walking over them later releases a ghost explosion dealing 7 damage.",
+      "name": "Succubus",
+      "description": "A flying familiar that bounces around the room with a damaging aura, dealing rapid damage to any enemies inside it and boosting Isaac's tear damage While standing in the black aura, Isaac has a temporary 1.5x damage multiplier (this will stack if you have more than one Succubus) The aura deals 2.5 damage per tick or about 7.5 - 10 damage per second",
       "quality": 3,
       "pool": "devil",
       "quote": "Damage booster",
+      "type": "Passive, Familiar",
       "tags": [
-        "bomb",
-        "bombe",
-        "devil"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_417.png"
+        "devil",
+        "dmg up",
+        "familiar"
+      ]
     },
     {
       "id": "418",
-      "name": "Stitches",
-      "description": "Teleport familiar, swap positions with it",
-      "quality": 2,
+      "name": "Fruit Cake",
+      "description": "Gives you a different tear effect with every tear that you fire Tear effects include: Anti-Gravity, Ball of Bandages (Lvl 4), Bumbo (Lvl 3), Continuum, Cupid's Arrow, Compound Fracture, Euthanasia, Explosivo, Eye of Greed, Fire Mind, Flat Stone, Flat Worm, God's Flesh, Godhead, Head of the Keeper, Holy Light, Hook Worm, Ipecac, Iron Bar, Jacob's Ladder, Knockout Drops, Lachryphagy, Little Horn, Lodestone, Mom's Contacts, Mom's Eyeshadow, Mom's Perfume, Mucormycosis, My Reflection, Mysterious Liquid, Ocular Rift, Ouija Board, Ouroboros Worm, The Parasite, Parasitoid, Polyphemus, Pop!, Proptosis, Pulse Worm, Ring Worm, Rotten Tomato, Rubber Cement, Serpent's Kiss, Sinus Infection, Spider Bite, Strange Attractor, Sulfuric Acid, Technology Zero, Tiny Planet, Trisagion and Wiggle Worm With Dr. Fetus, this item will also cycle through random Bomb Modifiers (e.g. Butt Bombs, Hot Bombs)",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Rainbow effects!",
+      "type": "Passive, Tear Modifier",
       "tags": [
-        "familiar",
+        "auge",
+        "bomb",
+        "bombe",
+        "eye",
+        "spider",
+        "spinne",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_418.png"
+      ]
     },
     {
       "id": "419",
       "name": "Teleport 2.0",
-      "description": "When used will teleport you to another random room that has not been explored yet After all the normal rooms have been explored, the hierarchy of rooms chosen is: Super Secret Room, Shop, Item Room, Sacrifice Room, Dice Room, Library, Curse Room, Miniboss, Challenge Room, Bedroom, Arcade, Vault, Secret Room, Devil/Angel Room, I AM ERROR",
+      "description": "When used will teleport you to another random room that has not been explored yet After all the normal rooms have been explored, the hierarchy of rooms chosen is: Super Secret Room, Shop, Item Room, Sacrifice Room, Dice Room, Library, Curse Room, Miniboss, Challenge Room, Bedroom, Arcade, Vault, Secret Room, Devil/Angel Room, I AM ERROR This ordering means a Devil and I Am Error room can both be forced if all others have been visited If used in a normal room with enemies it will teleport you out and back into the exact same room Recharge Time: 4 rooms",
       "quality": 3,
       "pool": "treasure",
       "quote": "I-teleport!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_419.png",
+      "type": "Active",
       "tags": [
-        "angel",
-        "boss",
-        "devil",
-        "secret",
-        "shop",
         "treasure"
       ]
     },
     {
       "id": "420",
-      "name": "Knockout Drops",
-      "description": "Tears can knock back and confuse enemies",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Black Powder",
+      "description": "Walking in a circle will spawn a pentagram symbol on the floor, which deals 10 damage per tick to any enemies inside it The trail of black powder left on the floor will quickly disappear, meaning you are limited on the size of the pentagram symbol you can create Will deal damage to flying enemies inside the pentagram",
+      "quality": 1,
+      "pool": "devil",
       "quote": "Spin the black circle!",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_420.png"
+        "devil"
+      ]
     },
     {
       "id": "421",
-      "name": "Eraser",
-      "description": "\"Delete enemy\" — Active item: throw an eraser that permanently removes one enemy type from the rest of the run. One use per floor.",
-      "quality": 2,
+      "name": "Kidney Bean",
+      "description": "When used, applies the charm effect to any enemies in close range and deals 5 damage Charmed enemies will prioritize attacking other enemies in the room, otherwise they will still attack Isaac REPENTANCE - Kidney Bean now has a bigger effect radius, no longer deals damage to the enemies it's charming, and charge time has been reduced to 1 (from 2). Recharge Time: 1 Rooms",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Love toots!",
+      "type": "Active",
       "tags": [
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_421.png"
+      ]
     },
     {
       "id": "422",
-      "name": "Yuck Heart",
-      "description": "\"Rotten heart\" — Grants a rotten heart (red heart that spawns blue flies when damaged).",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Glowing Hour Glass",
+      "description": "When used, this item will rewind time and put you back in the previous room, in the same state you were in at that moment This means any damage taken or consumables used in the current room will be reset back to the previous state Can be used to check the contents of an Item Room without affecting Planetarium spawn chances Glowing Hour Glass has no cooldown, but can only be used 3 times per floor Recharge Time: None (Max 3 use per floor)",
+      "quality": 3,
+      "pool": "shop",
       "quote": "Turn back time",
+      "type": "Active",
       "tags": [
-        "fliege",
-        "fly",
-        "heart",
-        "herz",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_422.png"
+        "shop"
+      ]
     },
     {
       "id": "423",
-      "name": "Urn of Souls",
-      "description": "Collect enemy souls, release as fire",
-      "quality": 3,
+      "name": "Circle of Protection",
+      "description": "Gives Isaac a large white halo around him, that deals a bit of damage to any enemies in contact with the ring Every time an enemy bullet enters the ring, there is a chance it will reflect a homing tear back at the enemy",
+      "quality": 2,
       "pool": "angel",
       "quote": "Protect me from myself",
+      "type": "Passive",
       "tags": [
         "angel",
-        "feuer",
-        "fire"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_423.png"
+        "homing"
+      ]
     },
     {
       "id": "424",
-      "name": "Akeldama",
-      "description": "\"Blood chain\" — While in a room with enemies, create a chain of blood tears behind you that damage enemies on contact.",
-      "quality": 2,
-      "pool": "devil",
+      "name": "Sack Head",
+      "description": "Coins have a 10% chance to be replaced with Sack. Bombs, keys, cards, runes and batteries have a 20% chance Spawns a sack when picked up Can lead to game-breaking combinations with the D20 due to the amount of consumables and batteries spawned by the item sacks REPENTANCE - Added to the Secret Room pool",
+      "quality": 3,
+      "pool": "shop",
       "quote": "More sacks!",
+      "type": "Passive",
       "tags": [
-        "blood",
-        "blut",
-        "devil"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_424.png"
+        "bomb",
+        "bombe",
+        "shop"
+      ]
     },
     {
       "id": "425",
       "name": "Night Light",
-      "description": "Gives Isaac a cone of light infront of him that slows any enemies inside it and their tears The light faces the direction that you are facing, not the direction you are firing",
+      "description": "Gives Isaac a cone of light infront of him that slows any enemies inside it and their tears The light faces the direction that you are facing, not the direction you are firing Removes Curse of Darkness for the current floor, if picked up on a floor where the curse is active",
       "quality": 1,
       "pool": "shop",
       "quote": "Scared of the dark?",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_425.png",
+      "type": "Passive",
       "tags": [
         "shop"
       ]
@@ -5999,22 +5894,20 @@ window.ISAAC_FALLBACK = {
       "quality": 0,
       "pool": "treasure",
       "quote": "Follows my every move...",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_426.png",
+      "type": "Passive, Familiar",
       "tags": [
         "familiar",
-        "fliege",
-        "fly",
         "treasure"
       ]
     },
     {
       "id": "427",
       "name": "Mine Crafter",
-      "description": "When used, places an explosive TNT barrel next to you The TNT barrel can be pushed and used to explode rocks or damage enemies",
+      "description": "When used, places an explosive TNT barrel next to you The TNT barrel can be pushed and used to explode rocks or damage enemies If used a second time in the same room while the last TNT barrel is still there, it will remotely explode the first TNT and not spawn another Recharge Time: 1 room",
       "quality": 1,
       "pool": "treasure",
       "quote": "Booom!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_427.png",
+      "type": "Active",
       "tags": [
         "bomb",
         "bombe",
@@ -6024,106 +5917,103 @@ window.ISAAC_FALLBACK = {
     {
       "id": "428",
       "name": "PJs",
-      "description": "+4 Soul Hearts Fully restores your red health",
+      "description": "+4 Soul Hearts Fully restores your red health REPENTANCE - Added to the Gold Chest Pool",
       "quality": 2,
       "pool": "boss",
       "quote": "You feel cozy",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_428.png",
+      "type": "Passive",
       "tags": [
         "boss",
         "heart",
-        "herz",
-        "shop"
+        "herz"
       ]
     },
     {
       "id": "429",
-      "name": "Worm Friend",
-      "description": "Worm bursts from ground to grab enemies",
+      "name": "Head of the Keeper",
+      "description": "Isaac's tears become coins and now have a 5% chance to drop pennies on the floor upon successfully hitting an enemy Has a chance to drop when exploding a dead shopkeeper",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "shop",
       "quote": "Penny tears!",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_429.png"
+        "shop"
+      ]
     },
     {
       "id": "430",
-      "name": "Bone Spurs",
-      "description": "Enemies leave bone orbitals on death",
-      "quality": 2,
+      "name": "Papa Fly",
+      "description": "A familiar blue fly that will follow Isaac's movement pattern but delayed by 1 second Papa Fly will fire tears at nearby enemies that deal damage equal to Isaac's tear damage Counts as 1 of 3 fly items needed towards the Beelzebub transformation",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Turret follower",
+      "type": "Passive, Familiar",
       "tags": [
-        "orbital",
+        "familiar",
+        "fliege",
+        "fly",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_430.png"
+      ]
     },
     {
       "id": "431",
-      "name": "Spirit Shackles",
-      "description": "Revive as ghost on death, return to body to heal",
+      "name": "Multidimensional Baby",
+      "description": "A familiar baby that will follow your movement pattern on a 2 second delay Tears that pass through the baby will double up and gain x1.33 speed boost Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
       "quality": 2,
-      "pool": "angel",
+      "pool": "devil",
       "quote": "ydduB Buddy",
+      "type": "Passive, Familiar",
       "tags": [
-        "angel"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_431.png"
+        "devil",
+        "familiar"
+      ]
     },
     {
       "id": "432",
-      "name": "Cracked Orb",
-      "description": "Getting hit opens locked doors and reveals rooms",
-      "quality": 1,
+      "name": "Glitter Bombs",
+      "description": "+5 bombs Isaac's normal bombs become pink and causes them to drop random pickups when they explode (e.g. keys, coins, bombs, trinkets) Bombs have a chance to charm enemies The chance for pickups to spawn decreases by 1% each time Glitter Bombs provides something (resets at the next floor). This is to prevent a syngery like Dr. Fetus or a Golden Bomb giving you infinite resources",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Prize bombs!",
+      "type": "Passive, Bomb Modifier",
       "tags": [
         "bomb",
         "bombe",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_432.png"
+      ]
     },
     {
       "id": "433",
-      "name": "Empty Heart",
-      "description": "Grants empty heart container each floor at low health",
-      "quality": 1,
-      "pool": "boss",
+      "name": "My Shadow",
+      "description": "Isaac's shadow will follow closely behind him and when it comes into contact with enemies, will spawn friendly dark charger mobs The chargers deal contact damage to enemies, and will be killed if it is hurt too much Chargers disappear upon entering a new room",
+      "quality": 2,
+      "pool": "devil",
       "quote": "Me! And my shaaaadow!",
+      "type": "Passive",
       "tags": [
-        "boss",
-        "heart",
-        "herz",
-        "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_433.png"
+        "devil"
+      ]
     },
     {
       "id": "434",
-      "name": "Astral Projection",
-      "description": "\"Ghost mode\" — When you would take damage in an uncleared room, become a ghost for 2 seconds (flight, spectral tears, invincible).",
-      "quality": 3,
-      "pool": "treasure",
+      "name": "Jar of Flies",
+      "description": "Every time you kill an enemy a fly will be added to the Jar, allowing you to stack up to 20 Using the Jar of Flies will release all the flies that are currently in the jar as friendly flies that will damage enemies Counts as 1 of 3 fly items needed towards the Beelzebub transformation Recharge Time: Instant",
+      "quality": 2,
+      "pool": "shop",
       "quote": "Gotta catch 'em all?",
+      "type": "Active",
       "tags": [
-        "flight",
-        "spectral",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_434.png"
+        "shop"
+      ]
     },
     {
       "id": "435",
       "name": "Lil Loki",
-      "description": "A Loki familiar that follows Isaac and shoots tears 4 tears in a cross pattern, dealing a flat 3.5 damage each Milk!",
+      "description": "A Loki familiar that follows Isaac and shoots tears 4 tears in a cross pattern, dealing a flat 3.5 damage each",
       "quality": 1,
       "pool": "treasure",
       "quote": "4-way buddy!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_435.png",
+      "type": "Passive",
       "tags": [
         "familiar",
         "treasure"
@@ -6136,11 +6026,9 @@ window.ISAAC_FALLBACK = {
       "quality": 1,
       "pool": "treasure",
       "quote": "Dont cry over it...",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_436.png",
+      "type": "Passive, Familiar",
       "tags": [
         "familiar",
-        "pill",
-        "pille",
         "tears up",
         "treasure"
       ]
@@ -6148,11 +6036,11 @@ window.ISAAC_FALLBACK = {
     {
       "id": "437",
       "name": "D7",
-      "description": "When used, the D7 will restart the current room and bring back all enemies once again, enabling you to farm rewards that spawn at the end after beating the room Can be used to generate infinite consumable combinations, gaining as many coins/keys/bombs as you need",
+      "description": "When used, the D7 will restart the current room and bring back all enemies once again, enabling you to farm rewards that spawn at the end after beating the room Can be used to generate infinite consumable combinations, gaining as many coins/keys/bombs as you need This item has no effect in Greed Mode, Challenge Rooms and rooms that had no enemies in originally If used in a Boss Room or Angel/Devil Room, you get teleported to another random room, which is reset instead of the boss/angel/devil room you were in Enemies respawned by the D7 don't drop loot if they were champions and also don't grant score in daily run Recharge Time: 3 rooms",
       "quality": 1,
       "pool": "treasure",
       "quote": "Reroll rewards!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_437.png",
+      "type": "Active",
       "tags": [
         "bomb",
         "bombe",
@@ -6162,11 +6050,11 @@ window.ISAAC_FALLBACK = {
     {
       "id": "438",
       "name": "Binky",
-      "description": "+1 Soul heart +0.75 Tears Up",
+      "description": "+1 Soul heart +0.75 Tears Up Isaac size down Makes Isaac very small like a baby, reducing his hitbox size",
       "quality": 3,
       "pool": "boss",
       "quote": "Memories...",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_438.png",
+      "type": "Passive",
       "tags": [
         "boss",
         "heart",
@@ -6177,13 +6065,12 @@ window.ISAAC_FALLBACK = {
     {
       "id": "439",
       "name": "Mom's Box",
-      "description": "When used, Mom's Box will drop a random trinket on the ground +1 Luck while held",
+      "description": "When used, Mom's Box will drop a random trinket on the ground +1 Luck while held While held, doubles the effect of trinkets which make sense to be doubled (e.g. +4 damage from Curved Horn instead of 2, -4 Tear Delay from Cancer instead of 2) Recharge Time: 4 rooms",
       "quality": 2,
       "pool": "shop",
       "quote": "What's inside?",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_439.png",
+      "type": "Active",
       "tags": [
-        "luck",
         "shop"
       ]
     },
@@ -6194,7 +6081,7 @@ window.ISAAC_FALLBACK = {
       "quality": 2,
       "pool": "treasure",
       "quote": "Matt's kidney stone",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_440.png",
+      "type": "Passive",
       "tags": [
         "treasure"
       ]
@@ -6202,25 +6089,24 @@ window.ISAAC_FALLBACK = {
     {
       "id": "441",
       "name": "Mega Blast",
-      "description": "Upon use, fires a huge Mega Satan laser for 15 seconds, dealing your tear damage * 5 per tick to anything in its path and pushing Isaac back by the force The laser persists for the entire 15 seconds even between rooms and floors",
+      "description": "Upon use, fires a huge Mega Satan laser for 15 seconds, dealing your tear damage * 5 per tick to anything in its path and pushing Isaac back by the force The laser persists for the entire 15 seconds even between rooms and floors This item appears in the Devil Room but is weighted to be about 5 times rarer than all other devil room items Recharge Time: 12 rooms",
       "quality": 4,
       "pool": "devil",
       "quote": "Laser breath",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_441.png",
+      "type": "Active",
       "tags": [
         "devil",
-        "feuer",
-        "fire"
+        "laser"
       ]
     },
     {
       "id": "442",
       "name": "Dark Prince's Crown",
-      "description": "A crown appears above your head and while at exactly 1 full red heart of health, you gain a +1.5 Range Up, +2.0 Tears Up and +0.20 Shot Speed Up Any time your health changes to be not exactly 1 red heart you lose the effect",
+      "description": "A crown appears above your head and while at exactly 1 full red heart of health, you gain a +1.5 Range Up, +2.0 Tears Up and +0.20 Shot Speed Up Any time your health changes to be not exactly 1 red heart you lose the effect This item does nothing with The Lost REPENTANCE - Dark Prince's Crown now grants more of an increase in rate of fire, and the bonus now breaks the soft tears cap.",
       "quality": 1,
       "pool": "devil",
       "quote": "Loss is power",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_442.png",
+      "type": "Passive",
       "tags": [
         "devil",
         "heart",
@@ -6234,14 +6120,12 @@ window.ISAAC_FALLBACK = {
     {
       "id": "443",
       "name": "Apple!",
-      "description": "Gives you a 6.66% chance to fire a razor blade which deals x4 damage +0.3 Tears Up",
+      "description": "Gives you a 6.66% chance to fire a razor blade which deals x4 damage +0.3 Tears Up This item also turns your tears red, but does not change your actual damage stat or the damage your normal tears do The chance to fire a razor blade depends on your luck stat, and at +14 luck you will fire a razor blade every time",
       "quality": 3,
       "pool": "treasure",
       "quote": "Trick or treat?",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_443.png",
+      "type": "Passive",
       "tags": [
-        "feuer",
-        "fire",
         "tears up",
         "treasure"
       ]
@@ -6249,27 +6133,25 @@ window.ISAAC_FALLBACK = {
     {
       "id": "444",
       "name": "Lead Pencil",
-      "description": "With every 15 tears fired, Isaac will fire a cluster of 12 tears instead of your normal tear Causes your normal tears to fire out of one eye, which means tears will fire in a near-perfect line instead of slightly off-center",
+      "description": "With every 15 tears fired, Isaac will fire a cluster of 12 tears instead of your normal tear Causes your normal tears to fire out of one eye, which means tears will fire in a near-perfect line instead of slightly off-center REPENTANCE - Lead Pencil's tear barrage no longer deals double damage",
       "quality": 3,
       "pool": "treasure",
       "quote": "Hes a bleeder!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_444.png",
+      "type": "Passive",
       "tags": [
         "auge",
         "eye",
-        "feuer",
-        "fire",
         "treasure"
       ]
     },
     {
       "id": "445",
       "name": "Dog Tooth",
-      "description": "+0.3 Damage Up +0.1 Speed Up",
+      "description": "+0.3 Damage Up +0.1 Speed Up When entering a room connected to a Secret Room or Super Secret Room, a howling sound will play When entering a room with a crawl space trapdoor in it, a barking sound will play",
       "quality": 2,
       "pool": "treasure",
       "quote": "Bark at the moon!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_445.png",
+      "type": "Passive",
       "tags": [
         "dmg up",
         "speed up",
@@ -6283,21 +6165,20 @@ window.ISAAC_FALLBACK = {
       "quality": 1,
       "pool": "treasure",
       "quote": "Halitosis",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_446.png",
+      "type": "Passive",
       "tags": [
-        "feuer",
-        "fire",
+        "poison",
         "treasure"
       ]
     },
     {
       "id": "447",
       "name": "Linger Bean",
-      "description": "While firing tears constantly for 7.5 seconds, you spawn a poop cloud, which deals periodic damage to any enemies which come near it The cloud deals damage equal to your base tear damage per tick, roughly 5 times per second",
+      "description": "While firing tears constantly for 7.5 seconds, you spawn a poop cloud, which deals periodic damage to any enemies which come near it The cloud deals damage equal to your base tear damage per tick, roughly 5 times per second Clouds last 15 seconds before disappearing The cloud can be pushed slightly by firing tears at it",
       "quality": 0,
       "pool": "treasure",
       "quote": "Crying makes me toot",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_447.png",
+      "type": "Passive",
       "tags": [
         "treasure"
       ]
@@ -6305,82 +6186,84 @@ window.ISAAC_FALLBACK = {
     {
       "id": "448",
       "name": "Shard of Glass",
-      "description": "Upon taking damage, Isaac starts to bleed, leaving a trail of blood and spraying blood tears everywhere which deal damage to nearby enemies While bleeding, Isaac takes damage every 30 seconds",
+      "description": "Upon taking damage, Isaac starts to bleed, leaving a trail of blood and spraying blood tears everywhere which deal damage to nearby enemies While bleeding, Isaac takes damage every 30 seconds The blood sprays in the direction you are current firing, or just randomly near Isaac if not shooting your tears The blood spray scales with your current tear damage and any future damage increases This effect lasts until you pick up a red heart Upon taking damage, this item gives a 25% chance to drop a full red heart REPENTANCE - This entire item has been reworked",
       "quality": 1,
       "pool": "treasure",
       "quote": "Blood and guts!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_448.png",
+      "type": "Passive",
       "tags": [
         "blood",
         "blut",
+        "heart",
+        "herz",
         "treasure"
       ]
     },
     {
       "id": "449",
-      "name": "Voodoo Head",
-      "description": "Extra curse room per floor",
-      "quality": 2,
+      "name": "Metal Plate",
+      "description": "+1 Soul Heart Enemy bullets have a 25% chance to be deflected back at the enemy, which will hurt them and apply the concussive status effect, causing it to be stunned for a few seconds",
+      "quality": 1,
       "pool": "treasure",
       "quote": "It itches...",
+      "type": "Passive",
       "tags": [
+        "heart",
+        "herz",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_449.png"
+      ]
     },
     {
       "id": "450",
-      "name": "Eye Drops",
-      "description": "Extra shot from one eye, increased fire rate",
+      "name": "Eye of Greed",
+      "description": "Every 20th tear fired will also fire a golden coin tear at the same time. This tear turns enemies to gold for a few seconds and causes them to drop 1-4 coins if killed while golden (similar to the Midas' Touch item) When the Midas Touch tear effect triggers, it will remove 1 coin from your current total The golden tear deals double your tear damage The effect can still trigger even if you have no held coins",
       "quality": 2,
-      "pool": "boss",
+      "pool": "secret",
       "quote": "Gold tears!",
+      "type": "Passive",
       "tags": [
         "auge",
-        "boss",
         "eye",
-        "feuer",
-        "fire",
-        "tears up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_450.png"
+        "secret"
+      ]
     },
     {
       "id": "451",
       "name": "Tarot Cloth",
-      "description": "Drops a random card on pickup Doubles the effect of most tarot cards. A slow pulsing outline HUD effect appears for cards that would be buffed by Tarot Cloth",
+      "description": "Drops a random card on pickup Doubles the effect of most tarot cards. A slow pulsing outline HUD effect appears for cards that would be buffed by Tarot Cloth To see the full list of Tarot Card effects, check out the Mechanics > Tarot Cloth page Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
       "quality": 2,
       "pool": "shop",
       "quote": "I see the future",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_451.png",
+      "type": "Passive",
       "tags": [
         "shop"
       ]
     },
     {
       "id": "452",
-      "name": "Member Card",
-      "description": "\"Secret shop\" — A trapdoor appears in shops leading to a second shop with rare items at discounted prices.",
-      "quality": 3,
-      "pool": "shop",
+      "name": "Varicose Veins",
+      "description": "Every time you take damage, 10 high damage tears are fired in a circle around you (similar to the Tammy's Head effect) Tear damage is equal to Isaac's tear damage + 25 flat damage Additionally, has a chance to activate the Anemic effect when taking damage for 2 seconds Similar to Tammy's Head, this item synergizes with a lot of items (i.e. with Brimstone it fires 10 lasers)",
+      "quality": 1,
+      "pool": "treasure",
       "quote": "I'm leaking...",
+      "type": "Passive",
       "tags": [
-        "secret",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_452.png"
+        "laser",
+        "treasure"
+      ]
     },
     {
       "id": "453",
-      "name": "Battery Pack",
-      "description": "\"Full charge\" — Fully charges your active item on pickup. Spawns 2-4 batteries.",
-      "quality": 2,
-      "pool": "shop",
+      "name": "Compound Fracture",
+      "description": "Turns your tears into bones, which shatter into 1-3 smaller bone shards upon hitting any object or enemy The smaller bone shards deal damage equal to half your normal tear damage +0.38 Range Up",
+      "quality": 3,
+      "pool": "treasure",
       "quote": "Bone tears!",
+      "type": "Passive",
       "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_453.png"
+        "range up",
+        "treasure"
+      ]
     },
     {
       "id": "454",
@@ -6389,7 +6272,7 @@ window.ISAAC_FALLBACK = {
       "quality": 2,
       "pool": "treasure",
       "quote": "Hold me!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_454.png",
+      "type": "Passive",
       "tags": [
         "pill",
         "pille",
@@ -6403,110 +6286,115 @@ window.ISAAC_FALLBACK = {
       "quality": 1,
       "pool": "boss",
       "quote": "I remember this...",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_455.png",
+      "type": "Passive",
       "tags": [
         "boss",
-        "luck",
         "range up"
       ]
     },
     {
       "id": "456",
-      "name": "Ocular Rift",
-      "description": "Tears create rifts that pull enemies and shots",
-      "quality": 3,
-      "pool": "treasure",
+      "name": "Midnight Snack",
+      "description": "+1 HP Up REPENTANCE - This was renamed from Moldy Bread",
+      "quality": 1,
+      "pool": "boss",
       "quote": "HP up",
+      "type": "Passive",
       "tags": [
-        "hp up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_456.png"
+        "boss",
+        "hp up"
+      ]
     },
     {
       "id": "457",
-      "name": "Boiled Baby",
-      "description": "Familiar shoots chaotic rapid fire tears",
+      "name": "Cone Head",
+      "description": "+1 Soul Heart Each time you take damage from any source, Cone Head has a 20% chance to prevent it from reducing your health Isaac flashes blue very briefly when damage is negated by this item",
       "quality": 2,
       "pool": "treasure",
       "quote": "Hard headed!",
+      "type": "Passive",
       "tags": [
-        "familiar",
-        "feuer",
-        "fire",
+        "heart",
+        "herz",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_457.png"
+      ]
     },
     {
       "id": "458",
-      "name": "Freezer Baby",
-      "description": "Shoots ice tears that freeze enemies",
-      "quality": 2,
+      "name": "Belly Button",
+      "description": "Drops one random trinket on pickup Gives you an extra trinket slot",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Whats in there?",
+      "type": "Passive",
       "tags": [
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_458.png"
+      ]
     },
     {
       "id": "459",
-      "name": "Eternal D6",
-      "description": "Reroll items with chance to delete them",
-      "quality": 2,
+      "name": "Sinus Infection",
+      "description": "Isaac's tears have a 20% chance to be a booger instead, which stick on to enemies and deal periodic poison damage until they die Each tick of poison damage is equal to your normal tear damage Each booger persists for 10 seconds or until the enemy dies",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Booger tears!",
+      "type": "Passive",
       "tags": [
+        "poison",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_459.png"
+      ]
     },
     {
       "id": "460",
       "name": "Glaucoma",
-      "description": "Adds a chance to shoot a concussive tear, which will cause enemies to walk around dazed in confusion The daze effect is effectively permanent for normal enemies, and has a much longer duration for bosses compared to other status effects",
+      "description": "Adds a chance to shoot a concussive tear, which will cause enemies to walk around dazed in confusion The daze effect is effectively permanent for normal enemies, and has a much longer duration for bosses compared to other status effects Makes all rooms slightly darker The visual effect of a Glaucoma tear is hard to notice, however it is slightly lighter than normal tears and is not a perfect circle shape",
       "quality": 1,
       "pool": "treasure",
       "quote": "Blind tears!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_460.png",
+      "type": "Passive",
       "tags": [
-        "boss",
         "treasure"
       ]
     },
     {
       "id": "461",
-      "name": "Lodestone",
-      "description": "Magnetize enemies, attract tears and enemies",
-      "quality": 2,
+      "name": "Parasitoid",
+      "description": "This item gives you a chance that instead of firing tears you will fire an egg sack, which slows enemies on hit and drops a pool of white slowing creep below them If a parasitoid shot successfully hits an enemy, a blue friendly fly or spider is spawned Counts as 1 of 3 fly items needed towards the Beelzebub transformation. Counts as 1 of 3 spider items needed towards the Spider Baby transformation.",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Egg tears!",
+      "type": "Passive",
       "tags": [
+        "spider",
+        "spinne",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_461.png"
+      ]
     },
     {
       "id": "462",
-      "name": "Rotten Tomato",
-      "description": "Tears mark enemies, marked enemies get targeted",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Eye of Belial",
+      "description": "Causes your tears to become piercing, allowing them to travel through enemies After hitting its first enemy, each tear will double in damage and gain a homing effect +0.38 Range Up",
+      "quality": 3,
+      "pool": "devil",
       "quote": "Possessed tears!",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_462.png"
+        "auge",
+        "devil",
+        "eye",
+        "homing",
+        "piercing",
+        "range up"
+      ]
     },
     {
       "id": "463",
       "name": "Sulfuric Acid",
-      "description": "+0.3 Damage Up Each tear has a chance to become acidic, allowing it to break rocks, pots and other breakable objects",
+      "description": "+0.3 Damage Up Each tear has a chance to become acidic, allowing it to break rocks, pots and other breakable objects Acidic tears can also be used to open secret rooms",
       "quality": 2,
       "pool": "treasure",
       "quote": "Acid tears!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_463.png",
+      "type": "Passive",
       "tags": [
         "dmg up",
         "treasure"
@@ -6514,56 +6402,60 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "464",
-      "name": "69 Cents",
-      "description": "69 cents",
+      "name": "Glyph of Balance",
+      "description": "+2 Soul Hearts This item will modify drops from room clearing and champion enemies based on your current player state. The priority list of what will drop from champion enemies in order is as follows: Soul Hearts - When you have no red heart containers and less than 2 soul hearts Red Hearts (Full hearts) - While at 0.5 red hearts Keys - When you have no keys Bombs - When you have no Bombs Red Hearts (Full hearts) - When you have at least half a red heart container empty Coins - While at less than 15 cents Keys - When you have less than 5 keys Bombs - When you have less than 5 bombs Trinkets - If you have no trinkets and there are no trinkets on the ground in the room Soul Hearts - When you have less than 6 total heart containers of any kind If none of the above conditions are true, champions will resume dropping their regular pickups",
       "quality": 2,
-      "pool": "shop",
+      "pool": "angel",
       "quote": "A gift from above",
+      "type": "Passive",
       "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_464.png"
+        "angel",
+        "bomb",
+        "bombe",
+        "heart",
+        "herz",
+        "hp up"
+      ]
     },
     {
       "id": "465",
       "name": "Analog Stick",
-      "description": "+0.35 Tears Up Allows you to fire tears diagonally by holding down two of the fire buttons at once",
+      "description": "+0.35 Tears Up Allows you to fire tears diagonally by holding down two of the fire buttons at once If you are using a gamepad, this item allows you to fire in any direction",
       "quality": 2,
       "pool": "treasure",
       "quote": "360 tears!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_465.png",
+      "type": "Passive",
       "tags": [
-        "feuer",
-        "fire",
         "tears up",
         "treasure"
       ]
     },
     {
       "id": "466",
-      "name": "Lucky Sack",
-      "description": "Sack drops after completing each boss",
+      "name": "Contagion",
+      "description": "The first enemy you kill in each new room will now explode and poison all nearby enemies, causing them to take periodic damage until they also die and explode If you have lots of enemies near each other this can cause a chain reaction, killing lots of enemies in one go",
       "quality": 2,
       "pool": "treasure",
       "quote": "Outbreak!",
+      "type": "Passive",
       "tags": [
-        "boss",
-        "luck",
+        "poison",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_466.png"
+      ]
     },
     {
       "id": "467",
-      "name": "Belly Jelly",
-      "description": "Bounce back enemies, deflect projectiles on contact",
-      "quality": 2,
+      "name": "Finger!",
+      "description": "Gives Isaac a finger which floats infront of him and points in the same direction he is facing or firing. The finger deals 10% of your normal damage to all enemies in the same direction that the finger is pointing The finger will also deal damage to entities such as fires and poops Applies on-hit status effects such as the burning debuff from Fire Mind Spawns guppy flies if you have the Guppy transformation",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Watch where you point that!",
+      "type": "Passive, Familiar",
       "tags": [
+        "feuer",
+        "fire",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_467.png"
+      ]
     },
     {
       "id": "468",
@@ -6572,7 +6464,7 @@ window.ISAAC_FALLBACK = {
       "quality": 0,
       "pool": "devil",
       "quote": "It follows",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_468.png",
+      "type": "Passive, Familiar",
       "tags": [
         "devil",
         "familiar"
@@ -6585,7 +6477,7 @@ window.ISAAC_FALLBACK = {
       "quality": 1,
       "pool": "treasure",
       "quote": ":(",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_469.png",
+      "type": "Passive, Familiar",
       "tags": [
         "familiar",
         "treasure"
@@ -6593,16 +6485,16 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "470",
-      "name": "Options?",
-      "description": "\"Boss item choice\" — Two items spawn after boss fights. Taking one causes the other to disappear.",
-      "quality": 3,
+      "name": "Hushy",
+      "description": "Gives Isaac a small Hush familiar that bounces diagonally around the room dealing 2 contact damage per tick While you're firing tears Hushy will stop moving, which allows you to keep it in one place Hushy will block enemy tears and projectiles",
+      "quality": 0,
       "pool": "treasure",
       "quote": "Lil hush!",
+      "type": "Passive, Familiar",
       "tags": [
-        "boss",
+        "familiar",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_470.png"
+      ]
     },
     {
       "id": "471",
@@ -6611,396 +6503,381 @@ window.ISAAC_FALLBACK = {
       "quality": 2,
       "pool": "treasure",
       "quote": "Ain't he cute?",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_471.png",
+      "type": "Passive, Familiar",
       "tags": [
-        "dmg up",
         "treasure"
       ]
     },
     {
       "id": "472",
-      "name": "Pound of Flesh",
-      "description": "\"Swap costs\" — Devil Deal items cost coins instead of hearts. Shop items cost hearts instead of coins.",
-      "quality": 2,
-      "pool": "devil",
+      "name": "King Baby",
+      "description": "A baby familiar that follows you and causes other familiars to follow it. It stops moving while Isaac is firing tears and upon releasing the fire button, King Baby will teleport back to your location King Baby will always appear first in the queue of familiars Counts as 1 of 3 familiar items needed towards the Conjoined transformation. REPENTANCE - Familiars now automatically aim at enemies when being commanded by King Baby",
+      "quality": 1,
+      "pool": "shop",
       "quote": "Lord of the dead!",
+      "type": "Passive, Familiar",
       "tags": [
-        "devil",
-        "heart",
-        "herz",
+        "familiar",
         "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_472.png"
+      ]
     },
     {
       "id": "473",
-      "name": "Redemption",
-      "description": "\"Angel reward\" — If you entered a Devil Room on the previous floor without buying, gain +1 damage and a soul heart on the next floor.",
+      "name": "Big Chubby",
+      "description": "A familiar that follows Isaac and charges forwards very slowly, dealing 2.7 damage per tick to any enemies it comes into contact with Almost identical to the Little Chubby familiar, but this one moves much more slowly and deals less damage REPENTANCE - The damage tick rate on Big Chubby has been increased",
       "quality": 2,
-      "pool": "angel",
+      "pool": "treasure",
       "quote": "Chub chub",
+      "type": "Passive, Familiar",
       "tags": [
-        "angel",
-        "devil",
-        "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_473.png"
+        "familiar",
+        "treasure"
+      ]
     },
     {
       "id": "475",
-      "name": "Mom's Contact",
-      "description": "\"Petrify tears\" — Chance to fire petrifying tears that freeze enemies in place. Counts toward Yes Mother? transformation.",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Plan C",
+      "description": "Upon use, this item deals 9,999,999 damage to all enemies in the room and then kills you 3 seconds later This is a single use active item, meaning it is destroyed after using it Does not kill both phases of multi-phase bosses like Hush or Ultra Greed If used to kill a boss, the kill still counts as a victory for post-it note completion marks, but the run will still get a game over Delirium's death animation takes longer than 3 seconds, meaning you will die before it can count as a completion mark. One exception to this is if you are playing as Lazarus or have Lazarus' Rags - you will respawn in the same room and get the kill Plan C is 5 times rarer than other items in the same item pool, making it less likely to appear Recharge Time: One time use",
+      "quality": 0,
+      "pool": "devil",
       "quote": "My last resort",
+      "type": "Active",
       "tags": [
-        "feuer",
-        "fire",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_475.png"
+        "devil"
+      ]
     },
     {
       "id": "476",
-      "name": "Mom's Perfume",
-      "description": "\"Fear tears\" — Tears +0.5. Chance to fire fear-inducing tears. Counts toward Yes Mother? transformation.",
+      "name": "D1",
+      "description": "When used, the D1 duplicates 1 random pickup in the current room. This works with all normal pickups, including cards, runes, chests and trinkets. Duplicated items might not be identical copies of the original - for example duplicating a card may spawn a different card Jera runes and trinkets cannot be duplicated using the D1 Duplicated chests can turn into another kind of chest randomly (e.g. Red chests) Can be used in a shop to duplicate pickups which have not yet been purchased, and take the duplicate pickup for free Recharge Time: 4 rooms",
       "quality": 2,
       "pool": "treasure",
       "quote": "What will it be?",
+      "type": "Active",
       "tags": [
-        "feuer",
-        "fire",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_476.png"
+      ]
     },
     {
       "id": "477",
-      "name": "Monster Manuel",
-      "description": "Random familiar for current room",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Void",
+      "description": "When used, Void will consume any pedestal items in the current room If an active item is consumed, its effect will be added to Void's effect when used, allowing you to consume multiple items and combine their effects If a passive item is consumed, you gain a small stat upgrade to a random stat Possible stat changes include: +1.0 flat damage, +0.5 tears, +0.2 speed, +0.2 shot speed, +0.5 range, +1.0 luck Void does not work on devil deal or shop items unless they have been bought first Using Void to absorb items in Boss Rush or Challenge Rooms counts as taking the items and will cause the encounter to start Using Void on one time use items such as Mama Mega or Diplopia will cause their effect to instantly trigger and will not give you further uses through activating Void again Recharge Time: 6 rooms",
+      "quality": 4,
+      "pool": "devil",
       "quote": "Consume",
+      "type": "Active",
       "tags": [
-        "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_477.png"
+        "devil",
+        "shot speed"
+      ]
     },
     {
       "id": "478",
-      "name": "Mom's Pearls",
-      "description": "Range, luck up, chance for soul hearts",
-      "quality": 2,
-      "pool": "boss",
+      "name": "Pause",
+      "description": "Upon use, this item freezes all enemies in the room until you press the fire button again or 30 seconds passes (whichever happens first) Unlike other active items, bosses are not immune to this effect Touching a frozen enemy will still hurt you This item doesn not affect troll bombs - they will still explode Recharge Time: 2 rooms",
+      "quality": 1,
+      "pool": "treasure",
       "quote": "Stop!",
-      "tags": [
-        "boss",
-        "heart",
-        "herz",
-        "luck"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_478.png"
-    },
-    {
-      "id": "479",
-      "name": "Mom's Wig",
-      "description": "\"Spider spawner\" — Chance to spawn a blue spider when firing tears. Counts toward Yes Mother? transformation.",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "Trinket melter!",
-      "tags": [
-        "spider",
-        "spinne",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_479.png"
-    },
-    {
-      "id": "480",
-      "name": "Spider Bite",
-      "description": "\"Slow tears\" — Tears have a chance to apply a slowing effect to enemies. Counts toward Spider Baby transformation.",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "Gain more friends!",
-      "tags": [
-        "spider",
-        "spinne",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_480.png"
-    },
-    {
-      "id": "481",
-      "name": "Spider Butt",
-      "description": "\"Mass slow\" — Active item: slows all enemies and deals 10 damage to everything in the room. Counts toward Spider Baby transformation.",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "109",
-      "tags": [
-        "spider",
-        "spinne",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_481.png"
-    },
-    {
-      "id": "482",
-      "name": "Box of Spiders",
-      "description": "\"Spider spawner\" — Active item: spawns 2-4 blue spiders. Counts toward Spider Baby transformation.",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "Change",
-      "tags": [
-        "spider",
-        "spinne",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_482.png"
-    },
-    {
-      "id": "483",
-      "name": "Spider Mod",
-      "description": "\"HP bars\" — Displays health bars on enemies and bosses. Chance to spawn blue spider on enemy kill. Counts toward Spider Baby transformation.",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "BOOOOOOOOOM!",
-      "tags": [
-        "boss",
-        "spider",
-        "spinne",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_483.png"
-    },
-    {
-      "id": "484",
-      "name": "Sissy Longlegs",
-      "description": "\"Spider friend\" — Spider familiar that wanders the room, spawning blue spiders and charming enemies. Counts toward Spider Baby transformation.",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "I can't believe it's not butter bean!",
-      "tags": [
-        "familiar",
-        "spider",
-        "spinne",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_484.png"
-    },
-    {
-      "id": "485",
-      "name": "Parasitoid",
-      "description": "\"Egg tears\" — Chance for tears to spawn a blue spider or blue fly on hitting an enemy. Counts toward Spider Baby transformation.",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "50/50",
-      "tags": [
-        "fliege",
-        "fly",
-        "spider",
-        "spinne",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_485.png"
-    },
-    {
-      "id": "486",
-      "name": "Bob's Curse",
-      "description": "\"Poison clouds\" — Bombs leave a large persistent poison cloud on explosion. Counts toward Bob transformation.",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "I feel numb...",
+      "type": "Active",
       "tags": [
         "bomb",
         "bombe",
+        "freeze",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_486.png"
+      ]
+    },
+    {
+      "id": "479",
+      "name": "Smelter",
+      "description": "Upon use, the Smelter will destroy your currently held trinket and give you the effect permanently, allowing you to stack up lots of different trinket effects Holding the Smelter increases the chance for a trinket to drop. (2% chance for the end of room drop to become a trinket) If a trinket has been smelted, it won't appear a second time unless the entire trinket pool is exhausted or you restart the run (e.g. by doing a victory lap) Recharge Time: 6 rooms",
+      "quality": 3,
+      "pool": "shop",
+      "quote": "Trinket melter!",
+      "type": "Active",
+      "tags": [
+        "shop"
+      ]
+    },
+    {
+      "id": "480",
+      "name": "Compost",
+      "description": "When used, Compost doubles up the current number of blue flies and spiders you have When picked up, Compost will also destroy every consumable on the ground in the current room and turn each of them into a blue fly or blue spider If you have no pickups on the ground in the current room and no other flies or spiders, Compost will spawn 1 blue fly or blue spider Recharge Time: 2 rooms",
+      "quality": 1,
+      "pool": "shop",
+      "quote": "Gain more friends!",
+      "type": "Active",
+      "tags": [
+        "fliege",
+        "fly",
+        "shop",
+        "spider",
+        "spinne"
+      ]
+    },
+    {
+      "id": "481",
+      "name": "Dataminer",
+      "description": "When used, this item will distort all the sprites and music, rotating graphics 90 degrees and translating them diagonally up/left, while leaving the hitbox in the same place. This can make it confusing while navigating the room Enemy hitboxes remain the same Dataminer will randomly increase or decrease one of your stats by a small amount when used Gives you the Fruit Cake effect for the room when used, which will give a random tear effect with every tear fired All visual and tear effects reset after leaving the room Recharge Time: 4 rooms",
+      "quality": 0,
+      "pool": "treasure",
+      "quote": "109",
+      "type": "Active",
+      "tags": [
+        "treasure"
+      ]
+    },
+    {
+      "id": "482",
+      "name": "Clicker",
+      "description": "When used, this item will randomly change you into another character and remove the last item you picked up All stat changes of the new character are applied (e.g. character damage multipliers) This item can only reduce your heart containers and will not increase them if you change back into a character with more health. This means if you roll into The Lost, changing back to another character will leave you with only 1/2 of a soul heart Cannot turn you into a character that isn't unlocked yet Also includes Lazarus II (Lazarus' revived form) and Dark Judas (effect of Judas' Shadow) It's also possible that this item will pick the same character, making it seem like nothing happened Recharge Time: 6 rooms",
+      "quality": 0,
+      "pool": "treasure",
+      "quote": "Change",
+      "type": "Active",
+      "tags": [
+        "heart",
+        "herz",
+        "hp up",
+        "treasure"
+      ]
+    },
+    {
+      "id": "483",
+      "name": "MaMa Mega!",
+      "description": "A one time use item that when used will explode all objects (i.e. rocks, poop) in the room and deal 200 damage to all enemies in the current room, as well as every other room for the remainder of the floor Also opens the boss rush door after Mom's Foot, blue womb door after Mom's Heart, secret rooms and super secret rooms Like all single-use items, this item cannot be absorbed and used multiple times by the Void item Entering a room with an angel statue will destroy it and automatically spawn one of the Angel mini bosses REPENTANCE - This now blows up machines, beggars and fireplaces too Recharge Time: One time use",
+      "quality": 3,
+      "pool": "shop",
+      "quote": "BOOOOOOOOOM!",
+      "type": "Active",
+      "tags": [
+        "heart",
+        "herz",
+        "shop"
+      ]
+    },
+    {
+      "id": "484",
+      "name": "Wait What?",
+      "description": "Upon use, this item will fart, pushing enemies away and causing a wave of rocks to spawn that spread outwards from Isaac in a circle, dealing 10 damage per hit to any enemies caught in it Can be used to open secret rooms Visually this item is very similar to Butter Bean The rock waves can destroy destructible objects, e.g. poop Recharge Time: 10 seconds",
+      "quality": 1,
+      "pool": "treasure",
+      "quote": "I can't believe it's not butter bean!",
+      "type": "Active",
+      "tags": [
+        "treasure"
+      ]
+    },
+    {
+      "id": "485",
+      "name": "Crooked Penny",
+      "description": "When used, you have a 50% chance to double all items, consumables and chests in the current room If the effect fails, all pickups and items are deleted and Crooked Penny spawns 1 coin If there are no consumables currently on the floor, Crooked Penny spawns 1 coin This item works with items which can be purchased such as shop items, allowing you to spawn a free version if the effect triggers If used in a shop and the effect fails, a Restock box can be used to restore the shop items. This mechanic is very useful on Greed and Greedier modes Recharge Time: 4 rooms",
+      "quality": 2,
+      "pool": "shop",
+      "quote": "50/50",
+      "type": "Active",
+      "tags": [
+        "shop"
+      ]
+    },
+    {
+      "id": "486",
+      "name": "Dull Razor",
+      "description": "Upon use this item hurts Isaac without actually taking health away, allowing you to activate any items which trigger when taking damage without losing health Recharge Time: 2 rooms",
+      "quality": 1,
+      "pool": "shop",
+      "quote": "I feel numb...",
+      "type": "Active",
+      "tags": [
+        "shop"
+      ]
     },
     {
       "id": "487",
-      "name": "Speed Ball",
-      "description": "\"Speed + shot speed\" — Speed +0.3, shot speed +0.2. Counts toward Spun transformation.",
+      "name": "Potato Peeler",
+      "description": "When used, this item permanently removes one of your red heart containers and gives you a flat +0.2 Damage Up, the Anemic effect (+1.5 Range Up + red creep trail) and a Cube of Meat The Anemic effect will only last for the current room, but the Cube of Meat and Damage Up are both permanent Only works for red hearts and has no effect when used if you only have soul/black hearts Has no recharge time and can be used as often as you like It is possible to generate multiple meatboys by stacking more than 4 Cubes of Meat Recharge Time: None",
       "quality": 2,
-      "pool": "boss",
+      "pool": "shop",
       "quote": "A pound of flesh...",
+      "type": "Active",
       "tags": [
-        "boss",
-        "shot speed"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_487.png"
+        "dmg up",
+        "heart",
+        "herz",
+        "hp up",
+        "range up",
+        "shop"
+      ]
     },
     {
       "id": "488",
-      "name": "Synthoil",
-      "description": "\"Stats up\" — Damage +1.0, range +5.25. Identifies pills. Counts toward Spun transformation.",
-      "quality": 3,
+      "name": "Metronome",
+      "description": "When used, this item gives you the effect of a random item for the rest of the room Using this item multiple times in the same room will replace the previous item's effect with a new one Certain items can be activated with this item which have unexpected effects and many items will do nothing Items do not grant consumable drops which would normally occur when that item is picked up Most flight-granting items have cosmetic effects only, and will not allow you to fly Items that usually give HP up will not give extra health when gained from Metronome Recharge Time: 2 rooms",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Waggles a finger",
+      "type": "Active",
       "tags": [
-        "pill",
-        "pille",
+        "flight",
+        "hp up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_488.png"
+      ]
     },
     {
       "id": "489",
-      "name": "Euthanasia",
-      "description": "\"Needle tears\" — 3.3% chance (scales with luck) to fire a needle tear that instantly kills non-boss enemies and bursts into 10 tears.",
-      "quality": 3,
-      "pool": "treasure",
+      "name": "D Infinity",
+      "description": "This dice allows you to press the Drop key to cycle between all possible dice effects and pick one to use Charge time scales based on the chosen dice, updating every time you use it Possible dice include: D1, D4, D6, D8, D10, D12, D20, D100 REPENTANCE - This item was completely reworked for Repentance and no longer forces a random dice use each time. You can pick which dice you want to use. Recharge Time: Varies",
+      "quality": 4,
+      "pool": "secret",
       "quote": "Reroll forever",
+      "type": "Active",
       "tags": [
-        "boss",
-        "feuer",
-        "fire",
-        "luck",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_489.png"
+        "secret"
+      ]
     },
     {
       "id": "490",
-      "name": "Adrenaline",
-      "description": "\"Damage for empty hearts\" — Damage up for each empty heart container. The bonus scales: +0.2 per first empty, increasing per additional.",
+      "name": "Eden's Soul",
+      "description": "A one time use active item that when used, will spawn 2 random item pedestals from the item pool associated with the current room (e.g. in an Angel room, this will spawn 2 Angel room items) Starts with 0 charge and requires 12 charges to use Recharge Time: 12 rooms (one time use)",
+      "quality": 3,
+      "pool": "angel",
+      "quote": "...",
+      "type": "Active",
+      "tags": [
+        "angel"
+      ]
+    },
+    {
+      "id": "491",
+      "name": "Acid Baby",
+      "description": "Every 6-7 rooms Acid Baby will drop a random pill The first pill drops after 2 rooms Every time you use a pill, Acid Baby will deal 10 damage to all enemies and poison them for 6-7 ticks Counts as 1 of 3 familiar items needed towards the Conjoined transformation. REPENTANCE - Poison effect is stronger, but Acid Baby's pill drop rate has been reduced to every 6-7 rooms (previously every 2-3 rooms)",
       "quality": 2,
       "pool": "treasure",
-      "quote": "...",
+      "quote": "Pills pills pills!",
+      "type": "Passive, Familiar",
+      "tags": [
+        "familiar",
+        "pill",
+        "pille",
+        "poison",
+        "treasure"
+      ]
+    },
+    {
+      "id": "492",
+      "name": "YO LISTEN!",
+      "description": "+1 Luck Up A familiar fairy that will float around the room and highlight the location of any secret room doors, tinted rocks or trapdoors under rocks Upon entering a new room, if there is an undiscovered secret room or tinted rock, it will move directly to the point of interest, otherwise it will just randomly fly around the room Counts as 1 of 3 fly items needed towards the Beelzebub transformation.",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Yo listen!",
+      "type": "Passive, Familiar",
+      "tags": [
+        "familiar",
+        "luck",
+        "treasure"
+      ]
+    },
+    {
+      "id": "493",
+      "name": "Adrenaline",
+      "description": "For every empty red heart container, Isaac gains Damage Up and his body increases in size Only works on full hearts - damage does not change if Isaac is missing 1/2 of a heart in one container Healing empty red heart containers will remove the damage increases Has no effect for The Lost and ???, as they cannot gain red heart containers (except for counting towards the Spun transformation) Counts as 1 of 3 syringe items needed towards the Spun transformation REPENTANCE - Adrenaline now grants an increasingly higher damage bonus the more empty heart containers Isaac has",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Panic - power",
+      "type": "Passive",
       "tags": [
         "dmg up",
         "heart",
         "herz",
         "hp up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_490.png"
-    },
-    {
-      "id": "491",
-      "name": "Leo",
-      "description": "\"Stompy\" — Destroy rocks by walking over them. Counts toward Stompy transformation.",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Pills pills pills!",
-      "tags": [
-        "pill",
-        "pille",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_491.png"
-    },
-    {
-      "id": "492",
-      "name": "Bug Fixes",
-      "description": "Grants random bonus effect per room",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "Yo listen!",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_492.png"
-    },
-    {
-      "id": "493",
-      "name": "Golden Razor",
-      "description": "\"Pay for damage\" — Active item: spend 5 coins to gain +1.2 damage for the current room.",
-      "quality": 2,
-      "pool": "shop",
-      "quote": "Panic - power",
-      "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_493.png"
+      ]
     },
     {
       "id": "494",
-      "name": "Soul Locket",
-      "description": "\"Soul heart stats\" — Gain a small permanent stat up (damage, tears, range, or speed) each time you pick up a soul heart.",
+      "name": "Jacob's Ladder",
+      "description": "Isaac gains electric tears, which fire 1-2 sparks of electricty in random directions upon hitting any object or enemy The electricity will chain between nearby enemies The electricty deals half of your normal tear damage Tear effects will still apply to your electricty sparks in a lot of cases. Spoon Bender will give them a homing effect, and status effects like fear/poison will spread onto all enemies the electricity chains to Tears which fall naturally to the floor at max range do not generate sparks It's possible to fire tears at a wall to create electricity that damages enemies on the other side of the wall",
       "quality": 3,
-      "pool": "angel",
+      "pool": "treasure",
       "quote": "Electric tears",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_494.png"
+        "homing",
+        "poison",
+        "treasure"
+      ]
     },
     {
       "id": "495",
-      "name": "Inner Child",
-      "description": "\"Extra life\" — Grants an extra life. On death, respawn as a tiny version of yourself with Holy Mantle for the current room.",
-      "quality": 3,
+      "name": "Ghost Pepper",
+      "description": "Each tear now has a small chance to be a spectral blue flame instead, which deals damage to enemies that come in contact with it The fire will remain in place and shrink in size when deals damage to something. After dealing enough damage it will eventually disappear At full size the flame deals 6x your tear damage, scaling down to 3x at its smallest size The chance to for each tear to become a flame is affected by your luck stat and at +10 Luck it will activate 50% of the time (starts at 8.33% at +0 Luck)",
+      "quality": 4,
       "pool": "treasure",
       "quote": "Flame tears",
+      "type": "Passive",
       "tags": [
+        "feuer",
+        "fire",
+        "spectral",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_495.png"
+      ]
     },
     {
       "id": "496",
-      "name": "Glowing Hourglass",
-      "description": "\"Time reverse\" — Active item: reverses time to the beginning of the previous room, undoing all actions.",
+      "name": "Euthanasia",
+      "description": "Each tear now has a small chance (3.33%) to be a needle instead, which deals 3 times your tear damage If a needle hits a non-boss enemy it will instantly kill it and will explode into a circle of 10 more needles The 10 spawned needles will also deal 3 times your tear damage, but won't instantly kill enemies or explode into more needles The chance to for each tear to become a needle is affected by your luck stat and at +15 Luck it will activate 50% of the time Counts as 1 of 3 syringe items needed towards the Spun transformation",
       "quality": 3,
-      "pool": "shop",
+      "pool": "curse",
       "quote": "Needle shot",
+      "type": "Passive",
       "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_496.png"
+        "curse"
+      ]
     },
     {
       "id": "497",
-      "name": "Clicker",
-      "description": "\"Random character\" — Active item: transforms you into a random character and removes the most recent passive item.",
-      "quality": 1,
+      "name": "Camo Undies",
+      "description": "Upon entering a new room, Isaac will become camouflaged and enemies won't attack until you start firing tears Bosses are immune to this effect Camo Undies grants +0.5 speed while cloaked When uncloaking, all nearby enemies take damage, and Isaac gains a brief tears + damage up",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Camo kid",
+      "type": "Passive",
       "tags": [
+        "dmg up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_497.png"
+      ]
     },
     {
       "id": "498",
       "name": "Duality",
-      "description": "Any time a devil or angel room door opens after a boss, the other one will also spawn The extra door will only spawn if a devil or angel room was randomly chosen to spawn already",
+      "description": "Any time a devil or angel room door opens after a boss, the other one will also spawn The extra door will only spawn if a devil or angel room was randomly chosen to spawn already After entering one of the doors, the other will disappear If there isn't an available wall for the extra door to spawn on, only one door will spawn (i.e. in a small boss room)",
       "quality": 1,
       "pool": "devil",
       "quote": "You feel very balanced",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_498.png",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "boss",
         "devil"
       ]
     },
     {
       "id": "499",
       "name": "Eucharist",
-      "description": "Gives you a 100% chance to find an Angel Room on every valid floor after defeating the boss Doesn't spawn an angel room on any floor where it is normally not possible to find one (e.g. Basement 1, Cathedral, Sheol etc.)",
+      "description": "Gives you a 100% chance to find an Angel Room on every valid floor after defeating the boss Doesn't spawn an angel room on any floor where it is normally not possible to find one (e.g. Basement 1, Cathedral, Sheol etc.) Keeps the chance at 100% even after entering and leaving the angel room, meaning the door will not close after visiting Makes it impossible to find Devil Rooms again, unless you find a way to remove or reroll this item away, or find the Duality item",
       "quality": 3,
       "pool": "angel",
       "quote": "Peace be with you",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_499.png",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "boss"
+        "angel"
       ]
     },
     {
       "id": "500",
       "name": "Sack of Sacks",
-      "description": "A sack familiar that drops a sack every 5 or 6 rooms cleared (alternates between 5 and 6) Unlock this item by defeating Greedier Mode as Cain",
+      "description": "A sack familiar that drops a sack every 5 or 6 rooms cleared (alternates between 5 and 6)",
       "quality": 3,
       "pool": "secret",
       "quote": "Gives Sacks!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_500.png",
+      "type": "Passive, Familiar",
       "tags": [
         "familiar",
         "secret"
@@ -7008,355 +6885,333 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "501",
-      "name": "Brown Nugget",
-      "description": "Spawn a stationary turret fly",
+      "name": "Greed's Gullet",
+      "description": "Gives you an extra heart container for every 25 coins you are currently holding, up to a maximum of 4 extra HP at 99 coins held If your coin counter goes below the required amount for a heart container, you will lose it again This item works for the Keeper, allowing him to exceed his usual 2 health containers However, if Keeper drops to under 2 health coins as a result of Greed's Gullet, he is unable to use a HP Up to increase his health back to 2, and has to regain the lost coins to do so",
       "quality": 1,
-      "pool": "treasure",
+      "pool": "secret",
       "quote": "Money = Health!",
-      "tags": [
-        "fliege",
-        "fly",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_501.png"
-    },
-    {
-      "id": "502",
-      "name": "Sharp Straw",
-      "description": "Deal damage to all enemies, gain red hearts",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "Creep shots",
+      "type": "Passive",
       "tags": [
         "heart",
         "herz",
+        "hp up",
+        "secret"
+      ]
+    },
+    {
+      "id": "502",
+      "name": "Large Zit",
+      "description": "Gives you a random chance while firing tears to also fire a creep shot, which deals double your tear damage and places white creep on the floor infront of you that slows enemies down if they walk through it Unlike some similar tear effects, your luck stat does not alter the chance for this effect to activate A creep shot is also fired in a random direction after taking damage",
+      "quality": 1,
+      "pool": "treasure",
+      "quote": "Creep shots",
+      "type": "Passive",
+      "tags": [
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_502.png"
+      ]
     },
     {
       "id": "503",
       "name": "Little Horn",
-      "description": "While firing tears you have a 5% chance to fire a void tear. Void tears that touch enemies will spawn Big Horn, who appears and grabs them, instantly killing that enemy The chance to for each tear to become a void tear is affected by your luck stat and at +15 Luck it will activate 20% of the time",
+      "description": "While firing tears you have a 5% chance to fire a void tear. Void tears that touch enemies will spawn Big Horn, who appears and grabs them, instantly killing that enemy The chance to for each tear to become a void tear is affected by your luck stat and at +15 Luck it will activate 20% of the time Isaac also grows a horn on his head, which causes you to deal contact damage to enemies by running into them (this effect deals base damage of 3.5 per tick) Void tears from this item can also destroy blue/purple fires, spiked blocks and stone grimaces",
       "quality": 3,
       "pool": "devil",
       "quote": "Big brother is watching",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_503.png",
+      "type": "Passive",
       "tags": [
-        "devil",
-        "feuer",
-        "fire",
-        "luck"
+        "devil"
       ]
     },
     {
       "id": "504",
-      "name": "Bloodshot Eye",
-      "description": "Orbiting eye that fires tears",
-      "quality": 1,
+      "name": "Brown Nugget",
+      "description": "When used, will spawn a fly turret that doesn't move and fires tears at nearby enemies Only persists for the current room The fly's bullets deal 3.5 damage each and do not scale with your own damage stat REPENTANCE - Brown Nugget flies now have faster shot speed, and their damage has been increased to 3.5 (from 2). Recharge Time: 7 seconds",
+      "quality": 0,
       "pool": "treasure",
       "quote": "Friendly Fly",
+      "type": "Active",
       "tags": [
-        "auge",
-        "blood",
-        "blut",
-        "eye",
-        "feuer",
-        "fire",
-        "fliege",
-        "fly",
+        "shot speed",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_504.png"
+      ]
     },
     {
       "id": "505",
-      "name": "Dull Razor",
-      "description": "Hurt yourself without losing health (trigger on-hit effects)",
+      "name": "Poke Go",
+      "description": "At the start of each new hostile room, you have a 20% chance to gain a random charmed familiar which will fight for you The charmed enemy has its own health bar and will die if it takes enough damage Charmed enemies persist between each room and floor for as long as they stay alive Allows you to have more than one charmed familiar at a time if you can keep them alive",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "shop",
       "quote": "Gotta catch em...",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_505.png"
+        "familiar",
+        "shop"
+      ]
     },
     {
       "id": "506",
-      "name": "Potato Peeler",
-      "description": "Remove heart container for Cube of Meat + damage up",
+      "name": "BackStabber",
+      "description": "Every time one of your tears hits an enemy, it has a chance to start bleeding, which will cause it to take damage every 5 seconds The bleed damage dealt by BackStabber is based on how quickly an enemy is moving (faster enemies take more damage) Damaging enemies from behind gives the bleed effect a 100% chance to apply While an enemy bleeds, they leave behind creep that damages other enemies The tear that inflicts the bleed effect also deals double damage The bleed effect cannot be applied to immune enemies (e.g. bosses and mini bosses)",
+      "quality": 3,
+      "pool": "devil",
+      "quote": "Watch your back!",
+      "type": "Passive",
+      "tags": [
+        "devil"
+      ]
+    },
+    {
+      "id": "507",
+      "name": "Sharp Straw",
+      "description": "When used, Sharp Straw will deal damage to all enemies in the room The damage dealt is equal to Isaac's current tear damage plus 10% of the enemy's max health Every time this item deals damage, it has a 15% chance to drop 1/2 red hearts REPENTANCE - Sharp Straw is now only able to generate half red hearts (previously, it generated half soul hearts if the player had no heart containers) Recharge Time: 8 seconds",
       "quality": 2,
       "pool": "treasure",
-      "quote": "Watch your back!",
+      "quote": "More blood!",
+      "type": "Active",
       "tags": [
-        "dmg up",
+        "blood",
+        "blut",
         "heart",
         "herz",
         "hp up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_506.png"
-    },
-    {
-      "id": "507",
-      "name": "Metronome",
-      "description": "Random item effect each use",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "More blood!",
-      "tags": [
-        "blood",
-        "blut",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_507.png"
+      ]
     },
     {
       "id": "508",
-      "name": "D7",
-      "description": "Restart the current room's layout and enemies",
+      "name": "Mom's Razor",
+      "description": "A razor blade orbital that deals contact damage and applies the bleeding status effect to enemies and bosses, which will cause them to take damage every 5 seconds The contact damage dealt by Mom's Razor is based on how quickly an enemy is moving (faster enemies take more damage) While an enemy bleeds, they leave behind creep that damages other enemies This item DOES block enemy shots Its speed is not affected by the Guardian Angel item Counts as 1 of 3 mom items needed towards the Mom transformation",
       "quality": 2,
       "pool": "treasure",
       "quote": "It's sharp!",
+      "type": "Passive, Familiar",
       "tags": [
+        "orbital",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_508.png"
+      ]
     },
     {
       "id": "509",
-      "name": "Battery Bees",
-      "description": "Random blue flies or battery drops per room",
+      "name": "Bloodshot Eye",
+      "description": "An eye orbital that shoots tears that deal 3.5 damage and deals 2 contact damage per tick to enemies The damage dealt by this orbital does not scale with damage upgrades Its speed is not affected by the Guardian Angel item REPENTANCE - Bloodshot Eye now blocks enemy shots, has increased shot speed and rate of fire, and now only shoots when lined up with enemies",
       "quality": 1,
       "pool": "treasure",
       "quote": "Bloody friend",
+      "type": "Passive, Familiar",
       "tags": [
-        "blood",
-        "blut",
-        "fliege",
-        "fly",
+        "auge",
+        "eye",
+        "orbital",
+        "shot speed",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_509.png"
+      ]
     },
     {
       "id": "510",
-      "name": "Apple of Sodom",
-      "description": "Red hearts may become blue spiders",
+      "name": "Delirious",
+      "description": "When used, spawns a charmed random white delirium version of a boss, that will fight for you and kill other enemies for the rest of the current room Possible bosses spawned include most bosses in the game Some bosses' effects can harm Isaac. For example if the spawned boss leaves creep, it can damage Isaac Recharge Time: 12 rooms",
       "quality": 1,
-      "pool": "treasure",
+      "pool": "angel",
       "quote": "Unleash the power!",
+      "type": "Active",
       "tags": [
-        "heart",
-        "herz",
-        "spider",
-        "spinne",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_510.png"
+        "angel"
+      ]
     },
     {
       "id": "511",
       "name": "Angry Fly",
-      "description": "A familiar fly that orbits around a random enemy in the room until that enemy dies, dealing 2 contact damage to other enemies Angry Fly will move to the next enemy after the one it is currently orbiting dies, until the room is cleared, at which point it will return to orbiting Isaac",
+      "description": "A familiar fly that orbits around a random enemy in the room until that enemy dies, dealing 2 contact damage to other enemies Angry Fly will move to the next enemy after the one it is currently orbiting dies, until the room is cleared, at which point it will return to orbiting Isaac Added as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Custom Phase Counts as 1 of 3 fly items needed towards the Beelzebub transformation",
       "quality": 1,
       "pool": "treasure",
       "quote": "He's violent",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_511.png",
+      "type": "Passive, Familiar",
       "tags": [
         "familiar",
-        "fliege",
-        "fly",
         "treasure"
       ]
     },
     {
       "id": "512",
       "name": "Black Hole",
-      "description": "A throwable active item that places a black hole on the ground where it lands, sucking all enemies into it for 6 seconds Enemies stuck inside the black hole take rapid damage over time",
+      "description": "A throwable active item that places a black hole on the ground where it lands, sucking all enemies into it for 6 seconds Enemies stuck inside the black hole take rapid damage over time The Black Hole will also suck Isaac into it, but with a much weaker effect than to enemies The Black Hole will destroy nearby obstacles such as rocks and pots Added as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Custom Phase Recharge Time: 4 rooms",
       "quality": 1,
       "pool": "treasure",
       "quote": "Nothing can escape",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_512.png",
+      "type": "Active",
       "tags": [
         "treasure"
       ]
     },
     {
       "id": "513",
-      "name": "Sworn Protector",
-      "description": "Orbital angel that blocks shots, drops hearts",
+      "name": "Bozo",
+      "description": "+0.1 Damage Up +1 Soul Heart Adds a random chance for an enemy in the current room to become charmed or feared briefly Adds a random chance to spawn a rainbow poop upon taking damage Added as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Electoon",
       "quality": 2,
-      "pool": "angel",
+      "pool": "treasure",
       "quote": "Party time!",
+      "type": "Passive",
       "tags": [
-        "angel",
+        "dmg up",
         "heart",
         "herz",
-        "orbital"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_513.png"
+        "treasure"
+      ]
     },
     {
       "id": "514",
-      "name": "Friend Zone",
-      "description": "Large white fly orbital",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Broken Modem",
+      "description": "Causes random enemies to 'lag' at random intervals, causing them to freeze in place for a second The lag effect can also apply to tears, projectiles and consumables on the ground While held, this item has a 25% chance to double up any end of room drops (similar to the Contract from Below effect) Isaac's Luck stat affects how often the lag effect occurs Added as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Freezenification Complete 7 Daily Challenges (30 on console)",
+      "quality": 3,
+      "pool": "shop",
       "quote": "LAG!",
+      "type": "Passive",
       "tags": [
-        "fliege",
-        "fly",
-        "orbital",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_514.png"
+        "freeze",
+        "shop"
+      ]
     },
     {
       "id": "515",
-      "name": "Lost Fly",
-      "description": "Fly that bounces around, deals contact damage",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Mystery Gift",
+      "description": "A one-time use item that spawns a random item from the current room's item pool, with a chance for it to spawn Lump of Coal or The Poop instead Added as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Mills Recharge Time: One time use",
+      "quality": 3,
+      "pool": "shop",
       "quote": "Wrapped up nice for you!",
+      "type": "Active",
       "tags": [
-        "fliege",
-        "fly",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_515.png"
+        "shop"
+      ]
     },
     {
       "id": "516",
-      "name": "Scatter Bombs",
-      "description": "Bombs split into 2-4 mini bombs",
+      "name": "Sprinkler",
+      "description": "When used, spawns a Sprinkler that rotates in a circle, spraying tears in all directions Will also synergize with some other items, such as Mom's Eye, Brimstone, Dr. Fetus, Tech X or Loki's Horns Added as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Kieran and Stewartisme Recharge Time: 4 rooms",
       "quality": 2,
       "pool": "treasure",
       "quote": "Sprinkles.",
+      "type": "Active",
       "tags": [
-        "bomb",
-        "bombe",
+        "auge",
+        "eye",
+        "laser",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_516.png"
+      ]
     },
     {
       "id": "517",
-      "name": "Sticky Bombs",
-      "description": "Bombs stick to enemies",
-      "quality": 2,
+      "name": "Fast Bombs",
+      "description": "+7 Bombs Allows you to rapidly place bombs on the ground Added as part of the Afterbirth+ Booster Pack #1 REPENTANCE - Bombs no longer knock each other around when the player has Fast Bombs, allowing for a more controlled line of explosions.",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Faster Bomb Drops!",
+      "type": "Passive",
       "tags": [
         "bomb",
         "bombe",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_517.png"
+      ]
     },
     {
       "id": "518",
-      "name": "Epiphora",
-      "description": "Tears up while firing in same direction",
+      "name": "Buddy in a Box",
+      "description": "When picked up, gives Isaac a random familiar which has a random sprite and tear effect The familiar will be fully randomized again upon entering the next floor The appearance is chosen from a random co-op baby sprite Counts as 1 of 3 familiar items needed towards the Conjoined transformation. Added as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Ashkait and Scayze",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "shop",
       "quote": "What could it be?!",
+      "type": "Passive, Familiar",
       "tags": [
-        "tears up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_518.png"
+        "familiar",
+        "shop"
+      ]
     },
     {
       "id": "519",
-      "name": "Continuum",
-      "description": "Tears travel through walls and wrap around",
-      "quality": 3,
-      "pool": "treasure",
+      "name": "Lil Delirium",
+      "description": "A familiar that will transform into another random familiar every 10 seconds, copying their behaviour and effect Can be any other familiar, including (but not limited to) Lil Brimstone, Bob's Brain, BBF, Meatboy, Rotten Baby Familiars appear as a white Delirium version of the original Added as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Ashkait and Scayze",
+      "quality": 2,
+      "pool": "devil",
       "quote": "He's Delirious",
+      "type": "Passive, Familiar",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_519.png"
+        "devil",
+        "familiar",
+        "laser"
+      ]
     },
     {
       "id": "520",
-      "name": "Mr. Dolly",
-      "description": "Tears and range up, spawn 2 random hearts",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Jumper Cables",
+      "description": "This item gives you 1 bar of charge on your active item for every 15 enemies you kill Added as part of the Afterbirth+ Booster Pack #2 and based on the Steam Workshop mod created by Ashkait and Scayze",
+      "quality": 3,
+      "pool": "shop",
       "quote": "Bloody recharge!",
+      "type": "Passive",
       "tags": [
-        "blood",
-        "blut",
-        "heart",
-        "herz",
-        "range up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_520.png"
+        "shop"
+      ]
     },
     {
       "id": "521",
-      "name": "Curse of the Tower",
-      "description": "Spawns troll bombs when hit",
-      "quality": 0,
-      "pool": "treasure",
+      "name": "Coupon",
+      "description": "When used, the coupon causes one random item in the shop to become free While held, guarantees a random item or pickup from the shop to be half price The effect of this item also works in Devil Rooms, allowing you to take one random item for free Added as part of the Afterbirth+ Booster Pack #2 and based on the Steam Workshop mod created by Plumbo Recharge Time: 6 rooms",
+      "quality": 2,
+      "pool": "shop",
       "quote": "Allow 6 weeks for delivery",
+      "type": "Active",
       "tags": [
-        "bomb",
-        "bombe",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_521.png"
+        "shop"
+      ]
     },
     {
       "id": "522",
-      "name": "Charged Baby",
-      "description": "Familiar drops batteries",
+      "name": "Telekinesis",
+      "description": "An active that causes all enemy tears to be held in place and then thrown back away from Isaac for a period of 3 seconds The aura from this item will repel nearby enemies Added as part of the Afterbirth+ Booster Pack #2 Recharge Time: 6 seconds",
       "quality": 1,
       "pool": "treasure",
       "quote": "The power of mind!",
+      "type": "Active",
       "tags": [
-        "familiar",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_522.png"
+      ]
     },
     {
       "id": "523",
-      "name": "Dead Tooth",
-      "description": "Green damage aura while firing",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Moving Box",
+      "description": "When used, the box will pick up a maximum of 6 items. Using the box again will put the picked up items back on the floor again, allowing you to move things between rooms Can move any of the following: Batteries, Items, Trinkets, Hearts, Keys, Bombs, Coins, Chests and more Using Moving Box with Car Battery will trigger 2 interactions at the same time: First it will drop all items currently inside the box and secondly will then pick up the current room's contents When used in a room with 2 items you can choose from (e.g. There's Options, Double item room, Boss Rush) the Moving Box will pick only one of the items at random Added as part of the Afterbirth+ Booster Pack #2 and based on the Steam Workshop mod created by HurleyFarrill Recharge Time: 4 rooms",
+      "quality": 1,
+      "pool": "shop",
       "quote": "Pack and unpack",
+      "type": "Active",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_523.png"
+        "bomb",
+        "bombe",
+        "heart",
+        "herz",
+        "shop"
+      ]
     },
     {
       "id": "524",
-      "name": "Holy Light",
-      "description": "Chance to fire holy tears that create light beams",
+      "name": "Technology Zero",
+      "description": "Your tears will now be connected together by beams of electricity which deals damage to enemies they hit The lasers from this item deal 30% of your current damage stat Added as part of the Afterbirth+ Booster Pack #2 and based on the Steam Workshop mod created by Ashkait and Scayze REPENTANCE - Technology Zero's lasers now deal 30% of the player's damage stat per tick (from 100%)",
       "quality": 3,
-      "pool": "angel",
+      "pool": "treasure",
       "quote": "Static tears!",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "feuer",
-        "fire"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_524.png"
+        "laser",
+        "treasure"
+      ]
     },
     {
       "id": "525",
       "name": "Leprosy",
-      "description": "Taking damage will spawn an orbital that rotates around Isaac, dealing contact damage to enemies and blocking enemy projectiles A maximum of 3 Leprocy orbitals can be active at one time",
+      "description": "Taking damage will spawn an orbital that rotates around Isaac, dealing contact damage to enemies and blocking enemy projectiles A maximum of 3 Leprocy orbitals can be active at one time Using the orbital to deal damage to enemies can cause it to break Added as part of the Afterbirth+ Booster Pack #2. Based loosely on the Steam Workshop mod created by Extreme Ninja Home Makeover with changes by Edmund McMillen",
       "quality": 1,
       "pool": "treasure",
       "quote": "You're tearing me apart!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_525.png",
+      "type": "Passive",
       "tags": [
         "orbital",
         "treasure"
@@ -7365,243 +7220,255 @@ window.ISAAC_FALLBACK = {
     {
       "id": "526",
       "name": "7 Seals",
-      "description": "Gives you a random Harbinger familiar that changes every 10 seconds Each harbinger behaves differently, based on any of the original 5 horsemen bosses",
+      "description": "Gives you a random Harbinger familiar that changes every 10 seconds Each harbinger behaves differently, based on any of the original 5 horsemen bosses REPENTANCE - The harbingers will also randomly spawn their relevant Locust variant. The locust fly will do different things for each harbinger - e.g. poison effect for Pestilence Added as part of the Afterbirth+ Booster Pack #3. Based on the Steam Workshop mod created by by Scayze and Ashkait",
       "quality": 2,
       "pool": "devil",
       "quote": "Lil Harbingers!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_526.png",
+      "type": "Passive",
       "tags": [
-        "boss",
         "devil",
-        "familiar"
+        "familiar",
+        "poison"
       ]
     },
     {
       "id": "527",
-      "name": "Bursting Sack",
-      "description": "Spawn spiders from poop and destroyed obstacles",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Mr. ME!",
+      "description": "Upon use, this item summons a ghost near Isaac that will follow him around. Also summons a blue crosshair which can be moved around freely. After a few seconds, the crosshair will disappear, and the Ghost will do certain things based on what you targeted: Items, pickups, trinkets: Brings them to Isaac. Works in shops and devil deals as well, allowing you to take them for no cost. Stealing an item has a chance to fail (a buzzer sound will play if it fails) Buttons: Presses the button Enemies: Attacks the enemy until either the ghost or the enemy dies Doors: Opens the door, even if it is locked Secret room entrances: Explodes and opens the entrance Boss rush door: Will open the Boss Rush door from either side, allowing you get into and escape the Boss Rush Slot machines, dead shopkeepers: Charges towards them and explodes them Added as part of the Afterbirth+ Booster Pack #3. Based on the Steam Workshop mod created by Jean-Alphonse Recharge Time: 4 rooms",
+      "quality": 3,
+      "pool": "shop",
       "quote": "Caaan Do!",
+      "type": "Active",
       "tags": [
-        "spider",
-        "spinne",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_527.png"
+        "bomb",
+        "bombe",
+        "shop"
+      ]
     },
     {
       "id": "528",
-      "name": "Number Two",
-      "description": "Drop a burning poop when damaged",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Angelic Prism",
+      "description": "Grants a prism orbital with a large orbital radius Isaac's tears that pass through the prism split into four multi-colored tears Does not deal contact damage to enemies that it passes over Added as part of the Afterbirth+ Booster Pack #3. Based on the Steam Workshop mod created by electoon and Erfly",
+      "quality": 3,
+      "pool": "angel",
       "quote": "Eclipsed by the moon",
+      "type": "Passive, Orbital",
       "tags": [
-        "feuer",
-        "fire",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_528.png"
+        "angel",
+        "orbital"
+      ]
     },
     {
       "id": "529",
-      "name": "Acid Baby",
-      "description": "Poison all enemies when using pills",
+      "name": "Pop!",
+      "description": "Replaces Isaac's tears with eyeballs that can bounce off of each other Issac's tears are no longer limited by range, and will instead dissipate when they stop moving or when hitting an enemy or obstacle Added as part of the Afterbirth+ Booster Pack #3. Based on the Steam Workshop mod created by Scayze and Ashkait",
       "quality": 1,
       "pool": "treasure",
       "quote": "Eyeball tears!",
+      "type": "Passive",
       "tags": [
-        "auge",
-        "eye",
-        "pill",
-        "pille",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_529.png"
+      ]
     },
     {
       "id": "530",
-      "name": "Sack of Sacks",
-      "description": "Sacks drop more sacks",
+      "name": "Death's List",
+      "description": "Upon entering a room, a skull appears over a random enemy's head Killing the marked enemy will cause the skull to move to a different enemy If all enemies in the room are cleared in the order they are marked, Isaac gains a random reward from one of the following: Soul heart, Key, Pill, Bomb, Nickel, +0.2 Speed, +0.5 Range, +0.5 Tears, +1 Flat damage or +1 luck Killing enemies in the wrong order will end the streak and deny you any extra rewards Added as part of the Afterbirth+ Booster Pack #4. Based on the Steam Workshop mod created by Merlo",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "devil",
       "quote": "Just hope you're not next",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_530.png"
+        "bomb",
+        "bombe",
+        "devil",
+        "heart",
+        "herz",
+        "pill",
+        "pille"
+      ]
     },
     {
       "id": "531",
-      "name": "Greed's Gullet",
-      "description": "Heart container per 25 coins",
-      "quality": 2,
-      "pool": "secret",
+      "name": "Haemolacria",
+      "description": "With Haemolacria, Isaac's tears become bloody and now fire by in the air in an arc Upon hitting the floor, an obstacle or enemy, the bloody tear will burst and fire lots of smaller tears at random directions around the impact point Tears Down - (Tear delay * 2) + 10 Your damage stat is unaffected by this item, however the large bloody tear does +31% of your tear damage and the smaller scattering tears deal 50-80% of your tear damage Added as part of the Afterbirth+ Booster Pack #4. Based on the Steam Workshop mod (originally called Water Balloon) created by HiHowAreYou",
+      "quality": 4,
+      "pool": "treasure",
       "quote": "I'm seeing red...",
+      "type": "Passive",
       "tags": [
-        "heart",
-        "herz",
-        "hp up",
-        "secret"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_531.png"
+        "tears down",
+        "treasure"
+      ]
     },
     {
       "id": "532",
-      "name": "Bumbo",
-      "description": "Coin-collecting familiar that levels up",
+      "name": "Lachryphagy",
+      "description": "Isaac's tears slow down over time while moving across the room, and upon stopping completely or hitting an object will burst into 8 smaller tears which fire in all directions This item will also allow you to 'feed' a tear with other tears. Doing so will cause it to increase in size, and also increase their damage and the damage of the burst tears Once a tear is fed 5 times, it will immediately burst Tears in the burst will deal half the damage the main tear would have Tears which hit an enemy do not burst Added as part of the Afterbirth+ Booster Pack #4. Based on the Steam Workshop mod (originally called Hungry Tears) created by Echo",
       "quality": 2,
       "pool": "treasure",
       "quote": "Feed them!",
+      "type": "Passive",
       "tags": [
-        "familiar",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_532.png"
+      ]
     },
     {
       "id": "533",
-      "name": "Key Bum",
-      "description": "Takes keys, returns chests",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Trisagion",
+      "description": "Isaac's tears are replaced with piercing holy flashes of light, which travel across the room in a similar speed to regular tears Trisagion tears deal roughly 33% of your usual tear damage, however due to the size of the holy flash it is likely to hit enemies multiple times Trisagion tears cause no knockback on enemies and simply travel through them (piercing tears) Added as part of the Afterbirth+ Booster Pack #4. Based on the Steam Workshop mod (originally called Lightshot) created by Wyvern and TRPG",
+      "quality": 3,
+      "pool": "angel",
       "quote": "Smite thy enemy",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_533.png"
+        "angel",
+        "piercing"
+      ]
     },
     {
       "id": "534",
-      "name": "Rune Bag",
-      "description": "Drops a random rune/soul stone every few rooms",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Schoolbag",
+      "description": "Gives you an extra active item slot Pressing the CTRL key (R2 on PS4, RT on XB1, ZR on Switch) allows you to switch active items Some items that give temporary effects like The Nail might deactivate if switched to the other slot Added as part of the Afterbirth+ Booster Pack #4",
+      "quality": 3,
+      "pool": "shop",
       "quote": "Extra active item room",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_534.png"
+        "shop"
+      ]
     },
     {
       "id": "535",
-      "name": "Seraphim",
-      "description": "Angel familiar that fires sacred heart tears",
-      "quality": 3,
-      "pool": "angel",
+      "name": "Blanket",
+      "description": "+1 Soul Heart Heals 1 red heart when picked up Grants you a shield when entering the Boss Room, which prevents damage from 1 hit, then disappears. This shield stacks with Holy Mantle, giving you 2 free hits Added as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Ratlah",
+      "quality": 2,
+      "pool": "shop",
       "quote": "You feel safe",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "familiar",
-        "feuer",
-        "fire",
         "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_535.png"
+        "herz",
+        "shield",
+        "shop"
+      ]
     },
     {
       "id": "536",
-      "name": "GB Bug",
-      "description": "Reroll touched enemies/pickups",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Sacrificial Altar",
+      "description": "When used, this item will sacrifice up to 2 of your familiars (chosen at random), and spawn a random Devil Room item for each familar sacrificed this way In addition to the familiars, any blue flies or spiders will be converted to 1 coin each If Guardian Angel, Sworn Protector, or Seraphim is sacrificed, Satan will be extra happy and reward you with 2 black hearts Incubus won't be sacrificed if you're playing as Lilith If used while you have no familiar, this item will do nothing and won't consume the item Added as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Niro Recharge Time: Single use",
+      "quality": 2,
+      "pool": "devil",
       "quote": "He demands a sacrifice",
+      "type": "Active",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_536.png"
+        "devil",
+        "familiar",
+        "fliege",
+        "fly",
+        "heart",
+        "herz",
+        "spider",
+        "spinne"
+      ]
     },
     {
       "id": "537",
-      "name": "Betrayal",
-      "description": "Enemies fight each other when you're hit",
+      "name": "Lil Spewer",
+      "description": "A familiar with a charged attack, that spawns a line of creep on the floor which damages enemies that walk over it Spawns 1 random pill when picked up The familiar and its creep will change randomly when Isaac uses a pill Possible creep types include green (deals damage), black (slows enemies), red (deals damage, forms a line with a larger puddle), yellow (deals damage, forms a short-range cone) and white (slows enemies, forms a ring) Added as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Strawrat and Aczom",
       "quality": 1,
-      "pool": "devil",
+      "pool": "treasure",
       "quote": "Puking buddy",
+      "type": "Passive",
       "tags": [
-        "devil"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_537.png"
+        "familiar",
+        "pill",
+        "pille",
+        "treasure"
+      ]
     },
     {
       "id": "538",
       "name": "Marbles",
-      "description": "Spawns 3 random trinkets when picked up Upon taking damage, you have a random chance to consume one of your currently held trinkets, gaining its effect permanently",
+      "description": "Spawns 3 random trinkets when picked up Upon taking damage, you have a random chance to consume one of your currently held trinkets, gaining its effect permanently Added as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Amethyst",
       "quality": 2,
       "pool": "boss",
       "quote": "Choking hazard",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_538.png",
+      "type": "Passive",
       "tags": [
         "boss"
       ]
     },
     {
       "id": "539",
-      "name": "Box of Friends",
-      "description": "Duplicate all familiars for the room",
-      "quality": 3,
+      "name": "Mystery Egg",
+      "description": "A familiar which follows Isaac and, upon taking damage, will spawn a charmed enemy that will fight for you When the charmed enemy is spawned the egg will crack, but regenerate in the next room Added as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Strawrat and Aczom",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Sacrificial insemination",
+      "type": "Passive",
       "tags": [
         "familiar",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_539.png"
+      ]
     },
     {
       "id": "540",
-      "name": "Jar of Flies",
-      "description": "Kill enemies to store flies, release them",
+      "name": "Flat Stone",
+      "description": "Flat Stone causes your tears to bounce across the room Whenever a tear bounces, it deals splash damage to nearby enemies for 25% of your tear damage Added as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Maddogs",
       "quality": 2,
       "pool": "treasure",
       "quote": "Skipping tears",
+      "type": "Passive",
       "tags": [
-        "fliege",
-        "fly",
-        "shop",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_540.png"
+      ]
     },
     {
       "id": "541",
-      "name": "Lil Loki",
-      "description": "Shoots in 4 directions",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Marrow",
+      "description": "+1 Bone Heart Spawns 3 red hearts on the ground when picked up Added as part of the Afterbirth+ Booster Pack #5",
+      "quality": 1,
+      "pool": "boss",
       "quote": "HP up?",
+      "type": "Passive",
       "tags": [
-        "hp up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_541.png"
+        "boss",
+        "heart",
+        "herz",
+        "hp up"
+      ]
     },
     {
       "id": "542",
-      "name": "Milk!",
-      "description": "Tears up for current room after getting hit",
-      "quality": 1,
+      "name": "Slipped Rib",
+      "description": "This item gives you an orbital, which will reflect projectiles back at enemies Unlike some other orbitals, Slipped Rib doesn't deal contact damage to enemies Added as part of the Afterbirth+ Booster Pack #5",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Projectile shield",
+      "type": "Passive",
       "tags": [
-        "tears up",
+        "orbital",
+        "shield",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_542.png"
+      ]
     },
     {
       "id": "543",
-      "name": "D12",
-      "description": "Reroll obstacles in the room",
+      "name": "Hallowed Ground",
+      "description": "A familiar which follows Isaac and spawns a white poop when you take damage The white poop gives an aura that cuts your tear delay in half (Tears up) and has a chance to block damage The aura disappears if the poop is destroyed Added as part of the Afterbirth+ Booster Pack #5 Counts as 1 of 3 poop items needed towards the Oh Crap transformation. Can cause white poops through other item effects such as A Card Against Humanity or Re-Lax pills. REPENTANCE - White poop from Hallowed Ground is now more durable, similar to golden poop. While standing in the aura, Isaac's damage is now also increased by 25%, and his tears gain a homing effect",
       "quality": 1,
-      "pool": "treasure",
+      "pool": "angel",
       "quote": "Portable sanctuary",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_543.png"
+        "angel",
+        "familiar",
+        "homing",
+        "pill",
+        "pille",
+        "tears up"
+      ]
     },
     {
       "id": "544",
@@ -7610,22 +7477,20 @@ window.ISAAC_FALLBACK = {
       "quality": 2,
       "pool": "treasure",
       "quote": "Stabbing time",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_544.png",
+      "type": "Passive",
       "tags": [
         "familiar",
-        "feuer",
-        "fire",
         "treasure"
       ]
     },
     {
       "id": "545",
       "name": "Book of the Dead",
-      "description": "When used, this item will spawn a bone orbital or charmed Bony for each enemy killed in the current room The orbitals and charmed enemies persist when travelling between rooms",
+      "description": "When used, this item will spawn a bone orbital or charmed Bony for each enemy killed in the current room The orbitals and charmed enemies persist when travelling between rooms Bone orbitals break after dealing enough damage or blocking too many shots Added as part of the Afterbirth+ Booster Pack #5 Counts as 1 of 3 book items needed towards the Bookworm transformation. Recharge Time: 6 rooms",
       "quality": 3,
       "pool": "devil",
       "quote": "Rise from the grave",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_545.png",
+      "type": "Active",
       "tags": [
         "devil",
         "orbital"
@@ -7633,27 +7498,25 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "546",
-      "name": "Immaculate Conception",
-      "description": "Collect hearts to spawn angel familiars",
-      "quality": 2,
-      "pool": "angel",
+      "name": "Dad's Ring",
+      "description": "A passive item that puts a yellow ring around Isaac. Enemies are frozen in place while touching the yellow ring Enemies touching the ring will stay permanently frozen until you move away, except for bosses which only get a temporary freeze effect after touching it Added as part of the Afterbirth+ Booster Pack #5",
+      "quality": 3,
+      "pool": "secret",
       "quote": "Father's blessing",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "familiar",
-        "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_546.png"
+        "freeze",
+        "secret"
+      ]
     },
     {
       "id": "547",
       "name": "Divorce Papers",
-      "description": "+1 Bone Heart +0.7 Tears Up",
+      "description": "+1 Bone Heart +0.7 Tears Up When you pick this item up, the Mysterious Paper trinket is spawned on the ground Added as part of the Afterbirth+ Booster Pack #5",
       "quality": 3,
       "pool": "boss",
       "quote": "Tears up + you feel empty",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_547.png",
+      "type": "Passive",
       "tags": [
         "boss",
         "heart",
@@ -7663,323 +7526,327 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "548",
-      "name": "Obsessed Fan",
-      "description": "Follows your path, damages enemies on contact",
+      "name": "Jaw Bone",
+      "description": "A familiar that flies across the room every few seconds while firing and damages enemies (2x your tear damage) Can also be used like the Boomerang to pick up consumables on the ground Added as part of the Afterbirth+ Booster Pack #5",
       "quality": 1,
       "pool": "treasure",
       "quote": "Fetch",
+      "type": "Passive",
       "tags": [
+        "familiar",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_548.png"
+      ]
     },
     {
       "id": "549",
-      "name": "Multidimensional Baby",
-      "description": "Familiar doubles tears that pass through it",
-      "quality": 2,
+      "name": "Brittle Bones",
+      "description": "When picked up, this item replaces all of your red heart containers with 6 Bone Hearts Every time you lose a bone heart, lots of bones fire in all directions damaging any enemies hit and you gain a permanent +0.5 Tears Up For the Lost and Keeper characters, this item simply gives a permanent Tears Up Added as part of the Afterbirth+ Booster Pack #5",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Everything hurts",
+      "type": "Passive",
       "tags": [
-        "familiar",
+        "heart",
+        "herz",
+        "hp up",
+        "tears up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_549.png"
+      ]
     },
     {
       "id": "550",
-      "name": "Papa Fly",
-      "description": "Fly familiar that follows enemies and shoots",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Broken Shovel",
+      "description": "Obtained by beating the Basement 1 boss within 1 minute, then bombing the large shadow that appears in the middle of the starting room While held, Mom's Foot will stomp on you from above twice every few seconds, and she will continue to stomp for as long as you hold this item Using the Broken Shovel will stop Mom stomping you for the rest of the current room (or current wave if you're in the boss rush or challenge room) Beating the Boss Rush while holding this item will drop the second half of the Broken Shovel, which combine to create Mom's Shovel, which is used to unlock The Forgotten character Dropping the Broken Shovel will cause it to disappear if you leave the room NOTE: This item will not drop unless you have beaten The Lamb at least once Added as part of the Afterbirth+ Booster Pack #5 and used in the quest to unlock The Forgotten character Recharge Time: 4 rooms",
+      "quality": 4,
       "quote": "It feels cursed",
-      "tags": [
-        "familiar",
-        "fliege",
-        "fly",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_550.png"
+      "type": "Active"
     },
     {
       "id": "551",
-      "name": "Spider Baby",
-      "description": "Spawn spiders when hit",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Broken Shovel",
+      "description": "Drops after beating the Boss Rush while holding the other half of the Broken Shovel (see previous item for more details) Combines with the first Broken Shovel piece to create Mom's Shovel (see next item for more details) Added as part of the Afterbirth+ Booster Pack #5 and used in the quest to unlock The Forgotten character",
+      "quality": 4,
       "quote": "Lost but not forgotten",
-      "tags": [
-        "spider",
-        "spinne",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_551.png"
+      "type": "Passive"
     },
     {
       "id": "552",
-      "name": "Angry Fly",
-      "description": "Fly that orbits enemies and deals contact damage",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Mom's Shovel",
+      "description": "When used, spawns a trapdoor that leads to the next floor Digging in certain spots with objects or markings on the floor will guarantee a crawlspace once per floor Unlocks The Forgotten character when used on a mound of dirt that appears in a room in The Dark Room floor Obtained by combining the two Broken Shovel pieces. The first piece drops by beating the first floor boss within 1 minute then bombing the shadow in the first room. The second piece drops after beating the Boss Rush as long as you are holding the first Broken Shovel piece (see previous 2 items for full details) After The Forgotten is unlocked, using it on the mound of dirt again just spawns a random type of chest Added as part of the Afterbirth+ Booster Pack #5 and used in the quest to unlock The Forgotten character Recharge Time: 4 rooms",
+      "quality": 4,
       "quote": "Lost but not forgotten",
-      "tags": [
-        "fliege",
-        "fly",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_552.png"
+      "type": "Active"
     },
     {
       "id": "553",
       "name": "Mucormycosis",
-      "description": "Tears have a chance to fire a fungus tear that sticks to enemies. It grows rapidly in size then explodes into a gas cloud that damages nearby enemies When the explosion happens, more homing fungus tears fire out in random directions. Those tears will cause the same effect if they happen to hit other enemies",
+      "description": "Tears have a chance to fire a fungus tear that sticks to enemies. It grows rapidly in size then explodes into a gas cloud that damages nearby enemies When the explosion happens, more homing fungus tears fire out in random directions. Those tears will cause the same effect if they happen to hit other enemies Effects that replace your tears such as Brimstone simply have a chance to apply this effect",
       "quality": 3,
       "pool": "treasure",
       "quote": "Spore shot",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_553.png",
+      "type": "Passive",
       "tags": [
         "bomb",
         "bombe",
-        "feuer",
-        "fire",
         "homing",
+        "laser",
         "treasure"
       ]
     },
     {
       "id": "554",
       "name": "2Spooky",
-      "description": "Any enemies that come within close range of Isaac will become feared, which causes them to flee Golden Razor",
+      "description": "Any enemies that come within close range of Isaac will become feared, which causes them to flee",
       "quality": 1,
       "pool": "devil",
       "quote": "4me",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_554.png",
+      "type": "Passive",
       "tags": [
         "devil"
       ]
     },
     {
       "id": "555",
-      "name": "Sigil of Baphomet",
-      "description": "Brief invincibility after killing an enemy",
-      "quality": 2,
-      "pool": "devil",
+      "name": "Golden Razor",
+      "description": "+5 coins when picked up When used, this item takes away 5 of your coins and gives a +1.2 Damage Up that lasts for the current room Can stack as many times as you want. Using it with less than 5 coins does nothing Recharge Time: Instant",
+      "quality": 1,
+      "pool": "treasure",
       "quote": "Pain from gain",
+      "type": "Active",
       "tags": [
-        "devil"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_555.png"
+        "dmg up",
+        "treasure"
+      ]
     },
     {
       "id": "556",
-      "name": "Voodoo Pin",
-      "description": "Damage all enemies with use",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Sulfur",
+      "description": "Upon use, grants use of Brimstone for the current room If used twice in the same room, the brimstone laser becomes massive and deals +1.8 more damage Using it more than twice in the same room will give a damage increase each time Counts as 1 of 3 evil items needed towards the Leviathan transformation. Recharge Time: 3 rooms",
+      "quality": 2,
+      "pool": "devil",
       "quote": "Temporary demon form",
+      "type": "Active",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_556.png"
+        "devil",
+        "laser"
+      ]
     },
     {
       "id": "557",
-      "name": "Wait What?",
-      "description": "Butt stomp that sends a rock wave",
-      "quality": 1,
+      "name": "Fortune Cookie",
+      "description": "Upon use, displays a random fortune and has a chance to drop either a soul heart, a card (including dice shards), rune/soul stone or a trinket Soul hearts and tarot cards are much more common than trinkets Recharge Time: 2 rooms",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Reusable fortunes",
+      "type": "Active",
       "tags": [
+        "heart",
+        "herz",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_557.png"
+      ]
     },
     {
       "id": "558",
-      "name": "Pause",
-      "description": "Freeze all enemies while moving",
-      "quality": 2,
+      "name": "Eye Sore",
+      "description": "With each tear fired, you have a chance to fire 1-3 extra tears in random directions The extra tears scale with your other damage increasing items Synergises with other items that replace your tears, like Brimstone or Technology The chance to fire extra tears is not affected by luck",
+      "quality": 1,
       "pool": "treasure",
       "quote": "More eyes",
+      "type": "Passive",
       "tags": [
         "auge",
         "eye",
+        "laser",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_558.png"
+      ]
     },
     {
       "id": "559",
-      "name": "Flush!",
-      "description": "Turn enemies into poop",
+      "name": "120 Volt",
+      "description": "This item will fire electricity at nearby enemies, dealing roughly x0.75 of your tear damage rapidly The electricity can chain up to 4 enemies if they are close enough On floors with water on the ground (Downpour, Flooded Caves, Dross) this effect chain onto enemies further away than it normally would",
       "quality": 2,
       "pool": "treasure",
       "quote": "Zap!",
+      "type": "Passive",
       "tags": [
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_559.png"
+      ]
     },
     {
       "id": "560",
-      "name": "D8",
-      "description": "Reroll all your stats randomly",
-      "quality": 2,
+      "name": "It Hurts",
+      "description": "Taking damage causes Isaac to fire a circle of 10 tears around him, each dealing 10 damage After taking damage, you also gain a +1.2 Tears Up for the rest of the current room. Any subsequent hits give +0.4 Tears Up and will ignore the normal fire rate cap",
+      "quality": 1,
       "pool": "treasure",
       "quote": "No it doesn't...",
+      "type": "Passive",
       "tags": [
+        "tears up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_560.png"
+      ]
     },
     {
       "id": "561",
-      "name": "Teleport 2.0",
-      "description": "\"Better teleport\" — Active item: teleport to the nearest room you haven't entered yet. Cycles through rooms in order: treasure, shop, boss, etc.",
-      "quality": 3,
+      "name": "Almond Milk",
+      "description": "Greatly increases tears (x4 fire rate) Greatly decreases damage (x0.33 damage multiplier) Individual tears gain random worm effects (e.g. Hook Worm, Wiggle Worm etc.)",
+      "quality": 1,
       "pool": "treasure",
       "quote": "DMG down + tears up + you feel nutty",
+      "type": "Passive, Tear Modifier",
       "tags": [
-        "boss",
-        "shop",
+        "dmg up",
         "tears up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_561.png"
+      ]
     },
     {
       "id": "562",
-      "name": "Mama Mega!",
-      "description": "\"MEGA BOMB\" — Active item: all doors on the floor are blasted open. Opens Boss Rush and Hush regardless of time.",
+      "name": "Rock Bottom",
+      "description": "Prevents your stats from being reduced any more for the rest of the run e.g. Stat Down pills do nothing, and items like Experimental Treatment increase stats but don't reduce any This effect works on items that apply negative stat modifiers, such as Soy Milk This effect works for anything that gives temporary buffs, like Devil/Strength cards, or kill bonuses like Bloody Lust If you somehow lose Rock Bottom, your stats will go back to normal",
       "quality": 3,
-      "pool": "shop",
+      "pool": "secret",
       "quote": "It's only up from there",
+      "type": "Passive",
       "tags": [
-        "bomb",
-        "bombe",
-        "boss",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_562.png"
+        "pill",
+        "pille",
+        "secret"
+      ]
     },
     {
       "id": "563",
-      "name": "Sharp Plug",
-      "description": "\"Charge at a cost\" — When your active item isn't charged, using it takes 2 hearts of damage to fully charge it, then activates it.",
-      "quality": 1,
-      "pool": "shop",
+      "name": "Nancy Bombs",
+      "description": "+5 Bombs Bombs now explode with a random effect (e.g. Poison, Homing, Prize Bombs) In Antibirth this was called Enigma Bombs",
+      "quality": 2,
+      "pool": "treasure",
       "quote": "Random blast +5 bombs",
+      "type": "Passive",
       "tags": [
         "bomb",
         "bombe",
-        "heart",
-        "herz",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_563.png"
+        "homing",
+        "poison",
+        "treasure"
+      ]
     },
     {
       "id": "564",
-      "name": "Pandora's Box",
-      "description": "Floor-specific reward on use",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "A Bar of Soap",
+      "description": "+0.5 Tears Up +0.2 Shot Speed Up",
+      "quality": 3,
+      "pool": "boss",
       "quote": "Tears + shot speed up",
+      "type": "Passive",
       "tags": [
+        "boss",
         "shot speed",
         "speed up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_564.png"
+        "tears up"
+      ]
     },
     {
       "id": "565",
-      "name": "How to Jump",
-      "description": "\"How to jump\" — Active item: jump over obstacles, pits, and enemies. Brief invincibility during the jump. Counts toward Bookworm transformation.",
+      "name": "Blood Puppy",
+      "description": "Spawns a red worm familiar that chases enemies nearby around the room and deals 2 contact damage per tick After killing a 15 enemies, Blood Puppy transforms into an aggressive version that will also attack Isaac by charging at him. Damaging the aggressive Blood Puppy will eventually return it to its normal state. While aggressive, Blood Puppy deals 7.5 damage and drops half a red heart for every 10 enemies it kills. After killing a 25 more enemies, it transforms again dealing 15 damage and destroying obstacles it charges into. Isaac takes a full heart if hurt by Blood Puppy and it drops a full red heart for every 10 enemies it kills.",
       "quality": 1,
-      "pool": "shop",
+      "pool": "curse",
       "quote": "What a cute little thing!",
+      "type": "Passive, Familiar",
       "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_565.png"
+        "blood",
+        "blut",
+        "curse",
+        "familiar",
+        "heart",
+        "herz"
+      ]
     },
     {
       "id": "566",
-      "name": "D10",
-      "description": "Reroll enemies in the room",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Dream Catcher",
+      "description": "During the transition between floors, this item shows you a preview of the item that will spawn in the item room, and the boss that will appear This effect will work even if you have Curse of the Blind, but the item will still appear as a ? when entering the item room Gives +1 Soul Heart when starting each new floor after picking this up On XL floors both items are shown Currently this effect doesn't work in Greed Mode - It will show 2 items but the item rooms will have different items in them",
+      "quality": 2,
+      "pool": "shop",
       "quote": "Sweet dreams",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_566.png"
+        "heart",
+        "herz",
+        "shop"
+      ]
     },
     {
       "id": "567",
-      "name": "Undefined",
-      "description": "\"Random teleport\" — Active item: teleports you to a random special room (treasure, shop, secret, or I AM ERROR).",
+      "name": "Paschal Candle",
+      "description": "Gives +0.4 Tears Up for each room completed without taking damage, up to a maximum of +2.0 Tears Up When you take damage, the tears bonus is reset Picking this item up counts and gives you a temporary +0.4 Tears Up as well",
       "quality": 3,
-      "pool": "secret",
+      "pool": "angel",
       "quote": "Keep the flame burning",
+      "type": "Passive",
       "tags": [
+        "angel",
         "feuer",
         "fire",
-        "secret",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_567.png"
+        "tears up"
+      ]
     },
     {
       "id": "568",
-      "name": "Telepathy for Dummies",
-      "description": "Homing tears for current room",
+      "name": "Divine Intervention",
+      "description": "Allows you to double-tap the shoot button to create a holy shield for 1 second that pushes enemies back and deals 10 damage to them if they touch it The shield also reflects enemy shots and beams back at them for some extra damage Can only be activated every 3 seconds (Shown by a white glow and a ticking noise) Counts as 1 of 3 angel items needed towards the Seraphim transformation.",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "angel",
       "quote": "Double tap shield",
+      "type": "Passive",
       "tags": [
-        "homing",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_568.png"
+        "angel",
+        "shield"
+      ]
     },
     {
       "id": "569",
-      "name": "Compost",
-      "description": "Spawn blue flies/spiders from pickups",
+      "name": "Blood Oath",
+      "description": "At the beginning of each new floor, this item will stab Isaac and reduce your red health down as much as it can without killing you. In exchange it gives you +0.05 Speed Up and Damage Up for every half a heart this item removes The amount of Damage Up is (0.15 * FullHeartsRemoved ^ 2) If Isaac is already at half a red heart when stabbed, no damage or speed increases are given The damage from being stabbed can be avoided with invincibility, however no damage or speed stat increases are gained if you do",
       "quality": 1,
-      "pool": "treasure",
+      "pool": "devil",
       "quote": "Bleed me dry",
+      "type": "Passive",
       "tags": [
-        "fliege",
-        "fly",
-        "spider",
-        "spinne",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_569.png"
+        "blood",
+        "blut",
+        "devil",
+        "dmg up",
+        "heart",
+        "herz",
+        "shield",
+        "speed up"
+      ]
     },
     {
       "id": "570",
-      "name": "Mine Crafter",
-      "description": "Place or detonate a TNT barrel",
-      "quality": 1,
+      "name": "Playdough Cookie",
+      "description": "Your individual tears each gain a random effect from either: Poison, Fear, Slow, Freeze, Charm, Burning, Homing, Bleeding, x2 Damage or Reduced damage",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Tasty rainbow",
+      "type": "Passive, Tear Modifier",
       "tags": [
+        "feuer",
+        "fire",
+        "freeze",
+        "homing",
+        "poison",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_570.png"
+      ]
     },
     {
       "id": "571",
       "name": "Orphan Socks",
-      "description": "+2 Soul Hearts +0.3 Speed Up",
+      "description": "+2 Soul Hearts +0.3 Speed Up Allows you to walk on harmful floor effects without taking damage (e.g. spikes, creep). Doesn't include Curse Room doors or spiked rocks",
       "quality": 2,
       "pool": "secret",
       "quote": "Speed up + your feet feel stronger",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_571.png",
+      "type": "Passive",
       "tags": [
         "heart",
         "herz",
@@ -7990,32 +7857,32 @@ window.ISAAC_FALLBACK = {
     {
       "id": "572",
       "name": "Eye of the Occult",
-      "description": "Tears can be controlled mid-flight using the directional keys +1 Damage Up",
+      "description": "Tears can be controlled mid-flight using the directional keys +1 Damage Up +2.0 Range Up -0.16 Shot Speed Down Counts as 1 of 3 evil items needed towards the Leviathan transformation.",
       "quality": 3,
       "pool": "devil",
       "quote": "DMG up + range up + controlled tears",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_572.png",
+      "type": "Passive",
       "tags": [
         "auge",
         "devil",
         "dmg up",
         "eye",
         "flight",
-        "range up"
+        "range up",
+        "shot speed"
       ]
     },
     {
       "id": "573",
       "name": "Immaculate Heart",
-      "description": "In addition to regular tears, Isaac will sometimes fire extra spectral tears that orbit around him +1 HP Up",
+      "description": "In addition to regular tears, Isaac will sometimes fire extra spectral tears that orbit around him +1 HP Up +20% damage multiplier (x1.2) Fully heals all your red heart containers Counts as 1 of 3 angel items needed towards the Seraphim transformation.",
       "quality": 3,
       "pool": "angel",
       "quote": "Halo of tears",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_573.png",
+      "type": "Passive",
       "tags": [
         "angel",
-        "feuer",
-        "fire",
+        "dmg up",
         "heart",
         "herz",
         "hp up",
@@ -8025,273 +7892,238 @@ window.ISAAC_FALLBACK = {
     {
       "id": "574",
       "name": "Monstrance",
-      "description": "Isaac now emits a large light aura that damages nearby enemies 5 times per second while touching it The visual effect is similar to the effect given to tears by the GodHead item",
+      "description": "Isaac now emits a large light aura that damages nearby enemies 5 times per second while touching it The visual effect is similar to the effect given to tears by the GodHead item The aura deals more damage towards the center, ranging from 0.75 at max range to 4 damage when touching Isaac",
       "quality": 2,
       "pool": "angel",
       "quote": "Purifying light",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_574.png",
+      "type": "Passive",
       "tags": [
         "angel"
       ]
     },
     {
       "id": "575",
-      "name": "Deck of Cards",
-      "description": "Spawn a random card on use",
-      "quality": 2,
+      "name": "The Intruder",
+      "description": "In addition to normal tears, Isaac now also fires a set of 4 quadshot tears with a slowing effect The quadshot tears deal 1.5 damage each and do not scale with your damage upgrades Upon taking damage, you have a chance to dislodge the spider from your face. It leaps at enemies, dealing contact damage and firing quad shots at them for the rest of the room Counts as 1 of 3 spider items needed towards the Spider Baby transformation.",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Invasive friend",
+      "type": "Passive",
       "tags": [
+        "spider",
+        "spinne",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_575.png"
+      ]
     },
     {
       "id": "576",
       "name": "Dirty Mind",
-      "description": "Each time you destroy a poop, this item will spawn 1-4 friendly Dip familiars that follow you, block shots and attack nearby enemies Different poop types will spawn different types of Dip, each with their own effect",
+      "description": "Each time you destroy a poop, this item will spawn 1-4 friendly Dip familiars that follow you, block shots and attack nearby enemies Different poop types will spawn different types of Dip, each with their own effect Golden poop dips can petrify enemies, turning them to gold for a few seconds. If the enemy dies while in this state they will drop 1-4 coins Corn poop dips spawn 1 blue fly on death Rainbow poop Dips charm enemies and have a chance to spawn 1/2 a red heart on death Black poop Dips leave a trail of creep White poop Dips have a small Hallowed Ground aura effect, increasing your damage and fire rate while standing in it. Poops spawned by Tainted ??? and IBS also have special effects: Stone Dips deal 3.5 more damage and can take 6 hits before they die. Toxic Dips release a poison cloud when they move/die. Fire Dips burn enemies and leave a fire behind on death All enemy dips become friendly. Counts as 1 of 3 poop items needed towards the Oh Crap transformation.",
       "quality": 1,
       "pool": "treasure",
       "quote": "Filthy friends",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_576.png",
+      "type": "Passive",
       "tags": [
         "familiar",
+        "fliege",
+        "fly",
+        "heart",
+        "herz",
+        "poison",
         "treasure"
       ]
     },
     {
       "id": "577",
       "name": "Damocles",
-      "description": "When used, places a sword directly above Isaac's head and while active, will spawn an extra item for every item pedestal spawned After getting hit once with the item activated, at any time without warning, the sword may fall, instantly killing Isaac regardless of his health",
+      "description": "When used, places a sword directly above Isaac's head and while active, will spawn an extra item for every item pedestal spawned After getting hit once with the item activated, at any time without warning, the sword may fall, instantly killing Isaac regardless of his health After being hit the sword has a 1/10000 chance every 4 frames to fall. This chance doesnt change if you take further damage You effectively have a 4.4% chance for every minute that passes after taking damage to die Self-inflicted damage i.e. Curse Rooms and Blood Donation Machines don't trigger this effect Items with a price will spawn the extra item free of charge (i.e. in shops or devil rooms) The only way to survive the falling sword is either through extra lives, by using items that would make you invincible, such as Gnawed Leaf or playing as The Lost. After the sword falls, extra items will no longer spawn Recharge Time: One time use",
       "quality": 2,
       "pool": "devil",
       "quote": "A king's fortune... but at what cost?",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_577.png",
+      "type": "Active",
       "tags": [
-        "devil"
+        "blood",
+        "blut",
+        "devil",
+        "shield"
       ]
     },
     {
       "id": "578",
-      "name": "Mom's Key",
-      "description": "Drops extra pickups from chests",
-      "quality": 2,
+      "name": "Free Lemonade",
+      "description": "Upon use, spawns a giant puddle of lemonade that deals 8 damage per tick to any enemies which come in contact with it Lasts for about 19 seconds A similar effect to the Lemon Party pill Recharge Time: 4 rooms",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Party time!",
+      "type": "Active",
       "tags": [
+        "pill",
+        "pille",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_578.png"
+      ]
     },
     {
       "id": "579",
-      "name": "Mom's Purse",
-      "description": "Hold 2 trinkets at once",
-      "quality": 2,
-      "pool": "shop",
+      "name": "Spirit Sword",
+      "description": "Your tears are replaced with a sword which can be swung to deal damage (Damage * 3 + Base Damage) Holding the fire button charges a spin attack (Damage * 8 + 10). The charge time is based on your tears stat. While at full red health you also shoot a projectile across the room with each swing, dealing your current Damage + 2 (similar to the Master Sword in Zelda)",
+      "quality": 3,
+      "pool": "angel",
       "quote": "Divine blade",
+      "type": "Passive, Tear Modifier",
       "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_579.png"
+        "angel"
+      ]
     },
     {
       "id": "580",
       "name": "Red Key",
-      "description": "While held, a red outline of a door will appear on certain walls. Using the Red Key near it will spawn a red room This room will randomly choose from many types, including (but not limited to) any regular room from that floor, treasure rooms, curse rooms, devil rooms, angel rooms, I AM ERROR rooms and more",
+      "description": "While held, a red outline of a door will appear on certain walls. Using the Red Key near it will spawn a red room This room will randomly choose from many types, including (but not limited to) any regular room from that floor, treasure rooms, curse rooms, devil rooms, angel rooms, I AM ERROR rooms and more In rooms with multiple door outlines, the closest one will be opened Attempting to create a room outside the maximum boundary (13 x 13 rooms) of the map will take you to an I AM ERROR room. You can't use the Red Key to leave this room The Red Key can be used to open the secret room in the Home floor, which is the method for unlocking alternative 'Tainted' characters Recharge Time: 4 rooms",
       "quality": 3,
       "pool": "secret",
       "quote": "Explore the other side",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_580.png",
+      "type": "Active",
       "tags": [
-        "angel",
-        "devil",
         "secret"
       ]
     },
     {
       "id": "581",
-      "name": "Best Bud",
-      "description": "Orbital fly spawns on damage",
-      "quality": 1,
+      "name": "Psy Fly",
+      "description": "Gives Isaac an orbital fly, that will rapidly charge around and deflect any incoming tears that would hit Isaac. It isn't 100% effective but the effect is very strong and will deflect most shots under a bullet hell situation. Deflected tears turn into homing tears and fire back at enemies, dealing 2 damage. After reflecting a certain number of projectiles, Psy Fly enters a brief cooldown period Counts as 1 of 3 fly items needed towards the Beelzebub transformation.",
+      "quality": 4,
       "pool": "treasure",
       "quote": "Flamboyant protector",
+      "type": "Passive, Familiar",
       "tags": [
-        "fliege",
-        "fly",
+        "homing",
         "orbital",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_581.png"
+      ]
     },
     {
       "id": "582",
-      "name": "BBF",
-      "description": "Exploding fly familiar",
+      "name": "Wavy Cap",
+      "description": "Every time you use Wavy Cap, it gives +0.75 Tears Up and -0.03 Speed Down Also when used, this item will distort the screen and sound slightly, stacking every time you use it All of these effects stack for the rest of the floor, meaning if used too many times the screen will be distorted so much it becomes unplayable Each room you clear removes one use worth of effect - reducing the screen distortion slightly and giving +0.06 Speed Up and -0.3 Tears Down This item was called Black Mushroom in Antibirth Counts as 1 of 3 mushroom items needed towards the Fun Guy transformation. Recharge Time: Starts at 1 second, increasing by every time you use it. After 10 uses it stops auto recharging.",
       "quality": 1,
-      "pool": "treasure",
+      "pool": "secret",
       "quote": "Tears up. A mind changing experience!",
+      "type": "Active",
       "tags": [
-        "familiar",
-        "fliege",
-        "fly",
-        "tears up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_582.png"
+        "secret",
+        "speed up",
+        "tears down",
+        "tears up"
+      ]
     },
     {
       "id": "583",
-      "name": "Big Fan",
-      "description": "Large orbital fly that blocks shots",
-      "quality": 1,
+      "name": "Rocket in a Jar",
+      "description": "+5 Bombs Placing a bomb while pressing a fire button will fire an explosive rocket in that direction Placing a bomb while standing still will place a regular bomb",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Rocket propulsion +5 bombs",
+      "type": "Passive",
       "tags": [
         "bomb",
         "bombe",
-        "fliege",
-        "fly",
-        "orbital",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_583.png"
+      ]
     },
     {
       "id": "584",
-      "name": "Smart Fly",
-      "description": "Orbital that chases enemies after being hit",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Book of Virtues",
+      "description": "Upon use, spawns a flame familiar that fires spectral tears and deals contact damage to enemies. After taking two hits, the fire will be extinguished The Book can be held at the same time as another active item. When used, this will combine with your other active item, creating a unique flame and possibly giving special effects The recharge time of this item is based on your 2nd active item, otherwise it's 4 rooms While held, guarantees the first Devil/Angel Room encountered to be an Angel Room, and increases the overall chance of getting one A maximum of 16 flames can be active at one time around Isaac Counts as 1 of 3 book items needed towards the Bookworm transformation Recharge Time: Varies",
+      "quality": 3,
+      "pool": "angel",
       "quote": "Spiritual companionship",
+      "type": "Active/Passive Item",
       "tags": [
-        "fliege",
-        "fly",
-        "orbital",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_584.png"
+        "angel",
+        "familiar",
+        "feuer",
+        "fire",
+        "spectral"
+      ]
     },
     {
       "id": "585",
-      "name": "Dry Baby",
-      "description": "Familiar that triggers Necronomicon on hit",
+      "name": "Alabaster Box",
+      "description": "A single use active item that will spawn 3 soul hearts and 2 items from the Angel Room pool Starts fully uncharged and gains charges only through picking up soul and black. (6 full hearts to fully charge) Unless fully charged, hearts picked up are consumed by the Alabaster Box, instead of being added to your life total If a devil deal was already taken this run, it spawns 2 soul hearts and 1 Angel Room item instead. Picking up Bone Hearts while at 12 hearts will remove charges from the Box Recharge Time: 12 charges (one time use)",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "shop",
       "quote": "A sacred offering",
+      "type": "Active",
       "tags": [
-        "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_585.png"
+        "heart",
+        "herz",
+        "shop"
+      ]
     },
     {
       "id": "586",
-      "name": "King Baby",
-      "description": "Familiar that controls other familiars",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "The Stairway",
+      "description": "Spawns a ladder in the starting room of all future floors, which leads to an Angel Room Angel rooms accessed by The Stairway are different - They sell angel room items and soul hearts for money, similar to the Shop Pedestal items cost 15c, all other items (eternal/soul hearts, keys and holy cards) cost 5c. Sales can be randomly applied just like regular shops The ladder disappears after leaving the starting room, even if you haven't used it yet In Antibirth this was called Jacob's Ladder, which had to be renamed as Afterbirth+ already had an item with this name",
+      "quality": 3,
+      "pool": "angel",
       "quote": "Stairway to heaven",
+      "type": "Passive",
       "tags": [
-        "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_586.png"
+        "angel",
+        "heart",
+        "herz"
+      ]
     },
     {
       "id": "588",
-      "name": "Lil Haunt",
-      "description": "Chasing ghost familiar that fears enemies",
+      "name": "Sol",
+      "description": "Permanently shows the location of the boss room on the map After defeating the shown boss fight, this item will activate a use of the Sun card (full heal and map reveal), fully recharge your active item, remove curses from the floor, gives +3 Damage Up and +1 Luck up for the rest of the floor Only available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped) In The Void floor it shows a random boss room, which isn't necessarily Delirium's room",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "planetarium",
       "quote": "Radiant victory",
+      "type": "Passive",
       "tags": [
-        "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_588.png"
+        "dmg up",
+        "hp up",
+        "luck",
+        "planetarium"
+      ]
     },
     {
       "id": "589",
       "name": "Luna",
-      "description": "Adds one extra secret room and one extra super secret room to each floor Each secret room contains a beam of light, that gives half a soul heart, and a Tears Up for the rest of the floor. These stack with multiple secret rooms - The first one gives +1.00 Tears Up, then all future ones give +0.5.",
+      "description": "Adds one extra secret room and one extra super secret room to each floor Each secret room contains a beam of light, that gives half a soul heart, and a Tears Up for the rest of the floor. These stack with multiple secret rooms - The first one gives +1.00 Tears Up, then all future ones give +0.5. Reveals the location of one secret room on the minimap. Only available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
       "quality": 2,
       "pool": "planetarium",
       "quote": "More secrets",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_589.png",
+      "type": "Passive",
       "tags": [
         "heart",
         "herz",
         "planetarium",
-        "secret",
         "tears up"
       ]
     },
     {
       "id": "590",
-      "name": "Cambion Conception",
-      "description": "Taking damage spawns devil familiars",
-      "quality": 2,
-      "pool": "devil",
-      "quote": "Speed up + you feel elusive",
-      "tags": [
-        "devil",
-        "familiar",
-        "speed up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_590.png"
-    },
-    {
-      "id": "591",
-      "name": "Serpent's Kiss",
-      "description": "Poison contact damage, black heart drops",
-      "quality": 2,
-      "pool": "devil",
-      "quote": "HP up + you feel pretty",
-      "tags": [
-        "devil",
-        "heart",
-        "herz",
-        "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_591.png"
-    },
-    {
-      "id": "592",
-      "name": "Marked",
-      "description": "Auto-fire at a crosshair you control",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "Born to rock",
-      "tags": [
-        "feuer",
-        "fire",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_592.png"
-    },
-    {
-      "id": "593",
-      "name": "Mars",
-      "description": "Allows Isaac to charge by double tapping the same direction, dealing damage to any enemies caught You are invincible while charging (doesn't include self-damage like Blood Donation machines)",
-      "quality": 2,
+      "name": "Mercurius",
+      "description": "+0.40 Speed Up Doors remain open when entering a room with enemies in it. This means you can leave rooms before defeating the enemies inside Doesn't open locked doors, or the door that leads to the Boss Room Only available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
+      "quality": 3,
       "pool": "planetarium",
-      "quote": "Double tap dash",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_593.png",
+      "quote": "Speed up + you feel elusive",
+      "type": "Passive",
       "tags": [
-        "blood",
-        "blut",
-        "planetarium"
+        "planetarium",
+        "speed up"
       ]
     },
     {
-      "id": "594",
-      "name": "Jupiter",
-      "description": "+2 HP Up (only half a heart is filled) -0.3 Speed Down",
+      "id": "591",
+      "name": "Venus",
+      "description": "+1 HP Up Heals one red heart container when picked up This item causes nearby enemies to be affected by the charm effect, causing them to attack other nearby enemies The charm effect will wear off very quicky when enemies move away from Isaac Only available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
       "quality": 2,
       "pool": "planetarium",
-      "quote": "You're a gas giant!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_594.png",
+      "quote": "HP up + you feel pretty",
+      "type": "Passive",
       "tags": [
         "heart",
         "herz",
@@ -8300,54 +8132,95 @@ window.ISAAC_FALLBACK = {
       ]
     },
     {
+      "id": "592",
+      "name": "Terra",
+      "description": "This item causes your tears to become rocks, which have increased knockback and can break other rocks and objects. This includes key blocks and secret room doors +1.0 Damage Up, but each rock tear has a random damage modifier that can go up or down (x0.5 to x2) Only available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
+      "quality": 3,
+      "pool": "planetarium",
+      "quote": "Born to rock",
+      "type": "Passive, Tear Modifier",
+      "tags": [
+        "dmg up",
+        "planetarium"
+      ]
+    },
+    {
+      "id": "593",
+      "name": "Mars",
+      "description": "Allows Isaac to charge by double tapping the same direction, dealing damage to any enemies caught You are invincible while charging (doesn't include self-damage like Blood Donation machines) Can be used multiple times per room The dash deals x4 your current tear damage + 8 Doesn't have to be in a straight line, you can hold another button to curve it Has a 3 second cooldown before it can be used again Only available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
+      "quality": 2,
+      "pool": "planetarium",
+      "quote": "Double tap dash",
+      "type": "Passive",
+      "tags": [
+        "blood",
+        "blut",
+        "planetarium",
+        "shield"
+      ]
+    },
+    {
+      "id": "594",
+      "name": "Jupiter",
+      "description": "+2 HP Up (only half a heart is filled) -0.3 Speed Down While not moving your speed rapidly increases up to a bonus of +0.5 While you have this +0.5 bonus, moving will cause Isaac to fart around the room, spawning poison gas clouds The farts stop spawning once you reach your regular movement speed Poison deals damage equal to half your tears per tick Isaac is immune to Poison from enemies, such as Gasbag Only available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
+      "quality": 2,
+      "pool": "planetarium",
+      "quote": "You're a gas giant!",
+      "type": "Passive",
+      "tags": [
+        "heart",
+        "herz",
+        "hp up",
+        "planetarium",
+        "poison"
+      ]
+    },
+    {
       "id": "595",
       "name": "Saturnus",
-      "description": "Gives you a wide circle halo which grants 7 orbital tears upon entering a new room The tears orbit for 13 seconds before dropping off",
+      "description": "Gives you a wide circle halo which grants 7 orbital tears upon entering a new room The tears orbit for 13 seconds before dropping off Has a chance to absorb any enemy tears and add them to the orbiting tears. They can be used to damage enemies Saturnus tears can't break objects such as poop and TNT barrels Only available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
       "quality": 2,
       "pool": "planetarium",
       "quote": "Ring of tears",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_595.png",
+      "type": "Passive",
       "tags": [
         "orbital",
-        "planetarium",
-        "tears up"
+        "planetarium"
       ]
     },
     {
       "id": "596",
-      "name": "God's Flesh",
-      "description": "Tears shrink enemies",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Uranus",
+      "description": "Isaac now shoots ice tears that slow enemies. Enemies that are killed by the ice tears will become frozen Frozen enemies never unfreeze and are considered dead by the game. Kicking a frozen enemy will push it into the wall, where it shatters and fires ice shards everywhere (these can then freeze other enemies) Only available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
+      "quality": 3,
+      "pool": "planetarium",
       "quote": "Ice tears",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_596.png"
+        "freeze",
+        "planetarium"
+      ]
     },
     {
       "id": "597",
       "name": "Neptunus",
-      "description": "Isaac will now automatically charge up tears, allowing you to store them up and fire them rapidly for a short time Any time you aren't firing tears, the charge bar will start filling up, for up to 3 seconds. Holding down the fire button again will quickly release all stored teared",
+      "description": "Isaac will now automatically charge up tears, allowing you to store them up and fire them rapidly for a short time Any time you aren't firing tears, the charge bar will start filling up, for up to 3 seconds. Holding down the fire button again will quickly release all stored teared The charge time and max tears stored scales with your current tears stat Only available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
       "quality": 3,
       "pool": "planetarium",
       "quote": "Open the floodgates",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_597.png",
+      "type": "Passive, Tear Modifier",
       "tags": [
-        "feuer",
-        "fire",
-        "planetarium",
-        "shop"
+        "planetarium"
       ]
     },
     {
       "id": "598",
       "name": "Pluto",
-      "description": "+0.7 Tears Up Greatly reduce Isaac's size, to an extent where some enemy tears will now travel straight over him without dealing damage if they are high off the ground. Tears can still hit Isaac if gravity applies for too long",
+      "description": "+0.7 Tears Up Greatly reduce Isaac's size, to an extent where some enemy tears will now travel straight over him without dealing damage if they are high off the ground. Tears can still hit Isaac if gravity applies for too long Allows Isaac to squeeze between some objects Only available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
       "quality": 3,
       "pool": "planetarium",
       "quote": "Size down",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_598.png",
+      "type": "Passive",
       "tags": [
         "planetarium",
         "tears up"
@@ -8356,162 +8229,157 @@ window.ISAAC_FALLBACK = {
     {
       "id": "599",
       "name": "Voodoo Head",
-      "description": "This item has a chance to spawn an additional curse room on each future floor Causes a penny to spawn in all future Curse Rooms",
+      "description": "This item has a chance to spawn an additional curse room on each future floor Causes a penny to spawn in all future Curse Rooms Improves curse room layouts and rewards",
       "quality": 2,
       "pool": "shop",
       "quote": "Extra curse rooms",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_599.png",
+      "type": "Passive",
       "tags": [
         "shop"
       ]
     },
     {
       "id": "600",
-      "name": "Empty Vessel",
-      "description": "Flight and invincibility at no red hearts",
+      "name": "Eye Drops",
+      "description": "Tears fired from your left eye gain roughly +28% fire rate increase Causes your tears to be fired at staggered rates",
       "quality": 3,
-      "pool": "devil",
+      "pool": "boss",
       "quote": "Tears up",
+      "type": "Passive",
       "tags": [
-        "devil",
-        "flight",
-        "heart",
-        "herz",
+        "auge",
+        "boss",
+        "eye",
         "tears up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_600.png"
+      ]
     },
     {
       "id": "601",
-      "name": "Eden's Blessing",
-      "description": "Random item at start of next run",
+      "name": "Act of Contrition",
+      "description": "+1 Eternal Heart +0.7 Tears Up Allows Angel Rooms to appears even if a Devil deal has been taken before",
       "quality": 3,
-      "pool": "treasure",
+      "pool": "angel",
       "quote": "Tears up, you feel forgiven",
+      "type": "Passive",
       "tags": [
-        "tears up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_601.png"
+        "angel",
+        "heart",
+        "herz",
+        "tears up"
+      ]
     },
     {
       "id": "602",
       "name": "Member Card",
-      "description": "All shops now contain a trapdoor with a ladder, which leads down to a special shop The special shop contains various consumables and items at a higher price from the Devil/Angel room, Boss room and Secret room pools.",
+      "description": "All shops now contain a trapdoor with a ladder, which leads down to a special shop The special shop contains various consumables and items at a higher price from the Devil/Angel room, Boss room and Secret room pools. Items cost 15-30c, trinkets cost 15c, cards/runes cost 6-8c, black/bone hearts 8c, eternal hearts 15c, rotten hearts 5c",
       "quality": 2,
       "pool": "shop",
       "quote": "Exclusive access!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_602.png",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "boss",
-        "devil",
-        "secret",
+        "heart",
+        "herz",
         "shop"
       ]
     },
     {
       "id": "603",
       "name": "Battery Pack",
-      "description": "When picked up, this item fully recharges your currently held active item and drops between 2-4 battery pickups. These can be smaller or big batteries Mom's Bracelet",
+      "description": "When picked up, this item fully recharges your currently held active item and drops between 2-4 battery pickups. These can be smaller or big batteries",
       "quality": 0,
       "pool": "shop",
       "quote": "Instant energy!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_603.png",
+      "type": "Passive",
       "tags": [
         "shop"
       ]
     },
     {
       "id": "604",
-      "name": "Fate's Reward",
-      "description": "Familiar that copies your tears",
-      "quality": 3,
-      "pool": "treasure",
+      "name": "Mom's Bracelet",
+      "description": "Upon use, Mom's Bracelet allows you to grab objects in the room and throw them, damaging any enemies which are hit for 40 damage Most objects can be thrown including pots, rocks, poops, tnt etc Pressing the activate button again will drop the object where you stand, which doesn't consume a charge of use Allows you to remove the skull on top of Host enemies, turning them into the red version Counts as 1 of 3 mom items needed towards the Mom transformation Recharge Time: 1 second",
+      "quality": 1,
+      "pool": "shop",
       "quote": "Mother's strength",
+      "type": "Active",
       "tags": [
-        "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_604.png"
+        "shop"
+      ]
     },
     {
       "id": "605",
-      "name": "The Body",
-      "description": "3 red heart containers",
-      "quality": 2,
-      "pool": "angel",
+      "name": "The Scooper",
+      "description": "When used, this item spawns a Peeper familiar for the current room, which deals 12 contact damage per tick to enemies and leaves red creep in its path Using this item removes Isaac's right eye, causing tears from this eye to deal x1.5 your normal tear damage Using it more than once in the same room will spawn multiple Peeper familiars Recharge Time: 3 rooms",
+      "quality": 1,
+      "pool": "treasure",
       "quote": "Plop!",
+      "type": "Active",
       "tags": [
-        "angel",
-        "heart",
-        "herz",
-        "hp up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_605.png"
+        "auge",
+        "eye",
+        "familiar",
+        "treasure"
+      ]
     },
     {
       "id": "606",
-      "name": "The Soul",
-      "description": "2 soul hearts + invincible aura",
+      "name": "Ocular Rift",
+      "description": "Fired tears now have a chance to summon a rift when they land on the ground The spawned rift sucks in enemies, projectiles and pickups and deals damage to enemies caught inside for 2 seconds The chance to fire the rift tear can improve based on your luck stat. At +0 Luck theres a ~2.5% chance for this effect to activate The size of the rift scales with your tear damage Rifts deal half your damage per tick In Antibirth this item was called Oculus Rift",
       "quality": 3,
-      "pool": "angel",
+      "pool": "devil",
       "quote": "Stare into the abyss",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_606.png"
+        "devil"
+      ]
     },
     {
       "id": "607",
-      "name": "The Mind",
-      "description": "Full map reveal every floor",
-      "quality": 3,
-      "pool": "angel",
+      "name": "Boiled Baby",
+      "description": "A familiar boil that randomly fires bursts of tears, similar to the Boil enemy Tears either deal 5.3 or 3.5 damage Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
+      "quality": 1,
+      "pool": "treasure",
       "quote": "Messy friend",
+      "type": "Passive, Familiar",
       "tags": [
-        "angel"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_607.png"
+        "familiar",
+        "treasure"
+      ]
     },
     {
       "id": "608",
-      "name": "Dead Eye",
-      "description": "Damage up per consecutive hit, resets on miss",
-      "quality": 3,
+      "name": "Freezer Baby",
+      "description": "A familiar baby that fires tears which have a chance to freeze or petrify enemies Frozen enemies never unfreeze and are considered dead by the game. Kicking a frozen enemy will push it into the wall, where it shatters and fires ice shards everywhere (these can then freeze other enemies) Counts as 1 of 3 familiar items needed towards the Conjoined transformation",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Iced iced baby",
+      "type": "Passive, Familiar",
       "tags": [
-        "auge",
-        "dmg up",
-        "eye",
+        "familiar",
+        "freeze",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_608.png"
+      ]
     },
     {
       "id": "609",
       "name": "Eternal D6",
-      "description": "When used, rerolls all items in the room into another random item from the current room's item pool, however the item also has a 30% chance to disappear The chance associated with this item does NOT scale with your Luck stat - it's always 30%",
+      "description": "When used, rerolls all items in the room into another random item from the current room's item pool, however the item also has a 30% chance to disappear The chance associated with this item does NOT scale with your Luck stat - it's always 30% In the game files this item is called 'Florians Dice', which is a reference to the Eternal update for the original Binding of Isaac game, which changed the D6 to act as this item does Recharge Time: 2 rooms",
       "quality": 3,
       "pool": "secret",
       "quote": "???",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_609.png",
+      "type": "Active",
       "tags": [
-        "luck",
         "secret"
       ]
     },
     {
       "id": "610",
       "name": "Bird Cage",
-      "description": "Taking damage for the first time in a room spawns a familiar which targets an enemy and jumps on them, releasing a rock wave outwards For the remainder of the room the familiar then continues to attack enemies similar to the Dead Bird item dealing 3 contact damage per tick",
+      "description": "Taking damage for the first time in a room spawns a familiar which targets an enemy and jumps on them, releasing a rock wave outwards For the remainder of the room the familiar then continues to attack enemies similar to the Dead Bird item dealing 3 contact damage per tick Deals 45 damage to enemies it lands on. The rock wave deals 10 damage.",
       "quality": 1,
       "pool": "treasure",
       "quote": "Fat buddy",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_610.png",
+      "type": "Passive",
       "tags": [
         "familiar",
         "treasure"
@@ -8520,11 +8388,11 @@ window.ISAAC_FALLBACK = {
     {
       "id": "611",
       "name": "Larynx",
-      "description": "When used, this item does a shout-type attack, with its effect increasing in damage and size the more charges you have Larynx can be used with any number of charges. At 1 charge it deals 48 damage to any enemies close to Isaac. At the full 12 charges Isaac does a massive shout, dealing 356 damage to all enemies on the screen",
+      "description": "When used, this item does a shout-type attack, with its effect increasing in damage and size the more charges you have Larynx can be used with any number of charges. At 1 charge it deals 48 damage to any enemies close to Isaac. At the full 12 charges Isaac does a massive shout, dealing 356 damage to all enemies on the screen Larynx gains 1 charge every time you take damage (also charges as normal) Recharge Time: 12 rooms (Can be used with partial charges)",
       "quality": 2,
       "pool": "treasure",
       "quote": "Hear my pain",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_611.png",
+      "type": "Active",
       "tags": [
         "treasure"
       ]
@@ -8532,13 +8400,12 @@ window.ISAAC_FALLBACK = {
     {
       "id": "612",
       "name": "Lost Soul",
-      "description": "This item gives you a familiar version of The Lost character which dies instantly upon hit If the familiar survives an entire floor you get one of: 3 soul hearts, 2 eternal hearts or a random item/angel room item",
+      "description": "This item gives you a familiar version of The Lost character which dies instantly upon hit If the familiar survives an entire floor you get one of: 3 soul hearts, 2 eternal hearts or a random item/angel room item Regenerates at the start of each floor if dead",
       "quality": 2,
       "pool": "secret",
       "quote": "Protect him",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_612.png",
+      "type": "Passive, Familiar",
       "tags": [
-        "angel",
         "familiar",
         "heart",
         "herz",
@@ -8548,11 +8415,11 @@ window.ISAAC_FALLBACK = {
     {
       "id": "614",
       "name": "Blood Bombs",
-      "description": "+1 HP Up Restores 5 empty red heart containers",
+      "description": "+1 HP Up Restores 5 empty red heart containers Bombs now spawn a puddle of red creep upon explosion, dealing 2 damage per tick to enemies touching it While at 0 bombs, you can also place further bombs now at the cost of 1/2 of a heart (kills The Lost if used like this). Placing a bomb this way will not affect your devil/angel room chances",
       "quality": 2,
       "pool": "treasure",
       "quote": "Bloody blast + HP up",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_614.png",
+      "type": "Passive",
       "tags": [
         "blood",
         "blut",
@@ -8561,58 +8428,159 @@ window.ISAAC_FALLBACK = {
         "heart",
         "herz",
         "hp up",
-        "shop",
         "treasure"
       ]
     },
     {
       "id": "615",
       "name": "Lil Dumpy",
-      "description": "Lil Dumpy follows Isaac and produces a Butter Bean fart when a projectile or enemy is about to hit Isaac, pushing the enemy back and preventing the damage After it farts, it flies away, stops following Isaac and has to be picked up again before it will follow again",
+      "description": "Lil Dumpy follows Isaac and produces a Butter Bean fart when a projectile or enemy is about to hit Isaac, pushing the enemy back and preventing the damage After it farts, it flies away, stops following Isaac and has to be picked up again before it will follow again He also has a second larger detection radius that can randomly trigger from enemy projectiles The effect only works if Lil Dumpy is following and near Isaac",
       "quality": 3,
       "pool": "treasure",
       "quote": "Puffy buddy",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_615.png",
+      "type": "Passive",
       "tags": [
-        "fliege",
-        "fly",
         "treasure"
       ]
     },
     {
       "id": "616",
-      "name": "Censer",
-      "description": "Slowing holy aura around you",
-      "quality": 2,
-      "pool": "angel",
+      "name": "Bird's Eye",
+      "description": "You have a chance alongside each tear to shoot a red flame, which deals damage to enemies that come in contact with it Damage starts at x4 your current tear damage, and scales down each time an enemy touches the fire The chance to create a fire scales with your Luck stat, at +11 Luck you have a 50% chance to shoot one The flames from this item can destroy shopkeepers, which is handy since doing this once per floor increases your devil/angel room chances slightly",
+      "quality": 3,
+      "pool": "treasure",
       "quote": "It burns",
+      "type": "Passive",
       "tags": [
-        "angel",
+        "auge",
+        "eye",
         "feuer",
-        "fire"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_616.png"
+        "fire",
+        "treasure"
+      ]
     },
     {
       "id": "617",
       "name": "Lodestone",
-      "description": "Tears now have a chance to cause enemies to be magnetized Magnetized enemies attract other enemies, tears (including Isaac's) and enemy projectiles, causing them to be pulled in towards them",
+      "description": "Tears now have a chance to cause enemies to be magnetized Magnetized enemies attract other enemies, tears (including Isaac's) and enemy projectiles, causing them to be pulled in towards them Enemy tears that get pulled into other enemies will hurt them",
       "quality": 3,
-      "pool": "treasure",
+      "pool": "crane",
       "quote": "Magnetizing tears",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_617.png",
+      "type": "Passive",
       "tags": [
-        "treasure"
+        "crane"
       ]
     },
     {
       "id": "618",
       "name": "Rotten Tomato",
-      "description": "You have a chance to fire a tear that marks enemies red and slow them Marked enemies will be attacked by other enemies either until it is killed or it kills all the other enemies attacking it",
+      "description": "You have a chance to fire a tear that marks enemies red and slow them Marked enemies will be attacked by other enemies either until it is killed or it kills all the other enemies attacking it Chance to fire a marking tear scales with your luck stat",
       "quality": 2,
       "pool": "treasure",
       "quote": "Delicious!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_618.png",
+      "type": "Passive",
+      "tags": [
+        "treasure"
+      ]
+    },
+    {
+      "id": "619",
+      "name": "Birthright",
+      "description": "This item has a different effect for each character. See next icon for Tainted character effects Isaac - All new pedestal items cycle through two options Maggy - +1 HP up. Increases the maximum heart limit to 18. Cain - +1 Luck. All floors guaranteed to have an Arcade except the Chest & Dark Room floors Judas - Gives a passive Book of Belial item similar to Book of Virtues. Using active items gives a damage up that scales with the charge time ??? - Every HP upgrade is now worth 2 soul hearts. Health down effects still only remove 1 heart Eve - Whore of Babylon and Dead Bird effects are always active Samson - Bloody Lust can gain 4 more damage boosts, for a new max total of +14 Damage Azazel - His beam becomes much wider, no effect on damage Lazarus - Every time Lazarus dies, gives +21.6 temporary Damage Up, gradually fading over 1 minute. Eden - Spawns 3 items from any pools, you can only take 1 The Lost - Useless items like HP upgrades, spectral tears or flight are removed from the item pools Lilith - Causes all your offensive familiars to stack tightly infront of Lilith for more controlled damage Keeper - +1 HP up. Increases HP cap by 1 Apollyon - Void has a chance to spawn a previously destroyed item as well. More items consumed = more chance for this effect The Forgotten - Your Soul is now unchained and free to move. Bethany - Activating an item using soul charges is sometimes free Jacob & Esau - The character who picks up Birthright gains copies of three of the other character's passive items This item has a different effect for each character. See previous icon for normal character effects Tainted Isaac - Adds 4 more spaces for passive items Tainted Maggy - Adds 1 extra real heart container that doesn't deplete Tainted Cain - Doubles picks dropped when touching an item Tainted Judas - Increases the range in which Dark Arts hits enemies and tears Tainted ??? - Allows you to hold up to 29 poops Tainted Eve - Clots created only from red hearts spawn a heart that disappears after 2 seconds when they die Tainted Samson - Chaining kills adds 3 seconds to the Berserk timer instead of 1 Tainted Azazel - Doubles his sneeze size Tainted Lazarus - The inactive character moves alongside you like Esau. Can fire tears but is immune to damage Tainted Eden - Items taken before Birthright no longer get rerolled when taking damage Tainted Lost - Grants an extra life. Deals 200 damage to nearby enemies when reviving Tainted Lilith - All familiars now attach to her Umbilical cord like the Gello item Tainted Keeper - Nearby coins dropped by enemies move towards you quickly Tainted Apollyon - Holding the fire button causes locusts to stay near enemies and damage them instead of returning Tainted Forgotten - Grants the Recall ability. When used, it retrieves the Forgotten skull, causing it to shoot back into your arms Tainted Bethany - Spawns four random item wisps of high quality with significantly higher HP than normal Tainted Jacob - Dark Esau splits into 2. Both charge at the same time and using Anima Sola chains both in the same spot",
+      "quality": 3,
+      "pool": "shop",
+      "quote": "???",
+      "type": "Passive",
+      "tags": [
+        "dmg up",
+        "familiar",
+        "flight",
+        "heart",
+        "herz",
+        "hp up",
+        "shop",
+        "spectral"
+      ]
+    },
+    {
+      "id": "621",
+      "name": "Red Stew",
+      "description": "Fully heals all red heart containers Significantly increases damage by +21.6, however the damage boost wears off slowly over time at a rate of roughly -0.04 per second Every enemy you kill adds +0.02 Damage to the timed effect of Red Stew",
+      "quality": 2,
+      "pool": "shop",
+      "quote": "Full HP + temporary DMG up",
+      "type": "Passive",
+      "tags": [
+        "dmg up",
+        "heart",
+        "herz",
+        "hp up",
+        "shop"
+      ]
+    },
+    {
+      "id": "622",
+      "name": "Genesis",
+      "description": "When used, removes all your passive items and teleports you to Isaac's Bedroom For every passive item removed, you are given a choice of 3 random pedestal items from any item pool. Essentially you are rerolling all your items, but each new item you get to choose between 3 random options The bedroom also contains a random trinket, 2 chests, 2 sacks and Isaac's bed, which can be used to full heal your red heart health The only way to exit Isaac's bedroom is teleporting out or via the trapdoor, which takes you to the next floor. This will deviate you from the alt path if you are currently on it Since this item resets your stats, this item can remove Broken Hearts Recharge Time: One time use",
+      "quality": 3,
+      "pool": "angel",
+      "quote": "In the beginning",
+      "type": "Active",
+      "tags": [
+        "angel",
+        "heart",
+        "herz",
+        "hp up"
+      ]
+    },
+    {
+      "id": "623",
+      "name": "Sharp Key",
+      "description": "+5 Keys Upon use, allows you to consume 1 key and fire it at an enemy, piercing enemies and dealing significant damage The damage done by the key projectile pierces through enemies and scales with your damage upgrades (x5 damage + 30) Keys fired by this item can open locked doors/chests, secret rooms and destroy objects in the room, such as rocks Cannot be used if you don't have any keys Enemies killed by Sharp Key have a ~10% chance to spawn random items that appear in a chests. This can be anything that would normally drop from a chest including pedestal items Recharge Time: Instant",
+      "quality": 1,
+      "pool": "shop",
+      "quote": "Open your enemies",
+      "type": "Active",
+      "tags": [
+        "piercing",
+        "shop"
+      ]
+    },
+    {
+      "id": "624",
+      "name": "Booster Pack",
+      "description": "Spawns 5 random cards",
+      "quality": 1,
+      "pool": "shop",
+      "quote": "Collect them all!",
+      "type": "Passive",
+      "tags": [
+        "shop"
+      ]
+    },
+    {
+      "id": "625",
+      "name": "Mega Mush",
+      "description": "When used, this item causes Isaac to become humongous for 30 seconds While huge, Isaac is invincible and can crush objects, doors and enemies For the duration of the effect this gives you a x4 Damage Multiplier and +2.0 Range Up, but your rate of fire goes way down Deals significant contact damage to enemies while active (1600 dps). Counts as 1 of 3 mushroom items needed towards the Fun Guy transformation. Recharge Time: 12 rooms",
+      "quality": 4,
+      "pool": "treasure",
+      "quote": "I'm a big boy now!",
+      "type": "Active",
+      "tags": [
+        "dmg up",
+        "range up",
+        "shield",
+        "treasure"
+      ]
+    },
+    {
+      "id": "626",
+      "name": "Knife Piece 1",
+      "description": "Combine with Knife Piece 2 to create a Knife which can be fired across the room, dealing 25 damage to any enemies it comes into contact with In the Downpour/Dross II, you will find a white flame somewhere, and a room with a mirror in it. Touching the white flame temporarily turns you into The Lost, but allows you to walk through the mirror into a mirrored version of this floor. You have the Holy Mantle effect to prevent one hit per room, but taking another hit will kill you. The Knife Piece 1 is located in the Item Room in the mirrored area. Returning back through the mirror door returns you back to normal again If you haven't unlocked Holy Mantle for The Lost yet, you won't gain the effect after touching a white fire so be careful! The mirrored floor rooms have respawned enemies, and allows you to optionally fight the Boss a second time for an extra item When combined with Knife Piece 2, can be used to stab the fleshy door in the Mausoleum II, which then leads to the Corpse floor and the Mother boss",
+      "quality": 0,
+      "pool": "treasure",
+      "quote": "???",
+      "type": "Passive",
       "tags": [
         "feuer",
         "fire",
@@ -8620,117 +8588,27 @@ window.ISAAC_FALLBACK = {
       ]
     },
     {
-      "id": "619",
-      "name": "Birthright",
-      "description": "This item has a different effect for each character. See next icon for Tainted character effects Isaac - All new pedestal items cycle through two options",
-      "quality": 3,
-      "pool": "shop",
-      "quote": "???",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_619.png",
-      "tags": [
-        "shop"
-      ]
-    },
-    {
-      "id": "621",
-      "name": "Sacrificial Heart",
-      "description": "Bonus item in angel rooms",
-      "quality": 3,
-      "pool": "angel",
-      "quote": "Full HP + temporary DMG up",
-      "tags": [
-        "angel",
-        "dmg up",
-        "heart",
-        "herz"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_621.png"
-    },
-    {
-      "id": "622",
-      "name": "Genesis",
-      "description": "When used, removes all your passive items and teleports you to Isaac's Bedroom For every passive item removed, you are given a choice of 3 random pedestal items from any item pool. Essentially you are rerolling all your items, but each new item you get to choose between 3 random options",
-      "quality": 3,
-      "pool": "angel",
-      "quote": "In the beginning",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_622.png",
-      "tags": [
-        "angel"
-      ]
-    },
-    {
-      "id": "623",
-      "name": "Isaac's Heart",
-      "description": "Body is invincible, heart follows you",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "Open your enemies",
-      "tags": [
-        "heart",
-        "herz",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_623.png"
-    },
-    {
-      "id": "624",
-      "name": "Blue Map",
-      "description": "Reveals secret room locations",
-      "quality": 1,
-      "pool": "shop",
-      "quote": "Collect them all!",
-      "tags": [
-        "secret",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_624.png"
-    },
-    {
-      "id": "625",
-      "name": "There's Options",
-      "description": "Two boss items, pick one",
-      "quality": 3,
-      "pool": "treasure",
-      "quote": "I'm a big boy now!",
-      "tags": [
-        "boss",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_625.png"
-    },
-    {
-      "id": "626",
-      "name": "More Options",
-      "description": "Two treasure room items, pick one",
-      "quality": 3,
-      "pool": "treasure",
-      "quote": "???",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_626.png"
-    },
-    {
       "id": "627",
-      "name": "Black Candle",
-      "description": "\"No curses\" — Removes all curses for the entire run. +1 luck. Counts toward Leviathan transformation.",
-      "quality": 3,
-      "pool": "shop",
+      "name": "Knife Piece 2",
+      "description": "Combine with Knife Piece 1 to create a Knife which can be fired across the room, dealing 25 damage to any enemies it comes into contact with In the Mines/Ashpit II, there's a room with a minecart and a broken track. Pressing 3 yellow buttons on the floor causes the minecart to be rideable. Following the path takes you to an abandoned mineshaft, which leads you to a pedestal with the Knife Piece. Taking it will cause Mom's Shadow to spawn and chase you. You must make it back through the path solving a few bomb puzzles while avoiding her, to get back to the regular floor. All your items and consumables are temporarily removed while in the abandoned mine The room to access Knife Piece 2 only appears if you have Knife Piece 1 already You can skip pressing the 3 yellow buttons if you have the ability to fly and have 2 bombs to force open the door When combined with Knife Piece 1, can be used to stab the fleshy door in the Mausoleum II, which then leads to the Corpse floor and the Mother boss",
+      "quality": 0,
+      "pool": "treasure",
       "quote": "???",
+      "type": "Passive",
       "tags": [
-        "luck",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_627.png"
+        "bomb",
+        "bombe",
+        "treasure"
+      ]
     },
     {
       "id": "628",
       "name": "Death Certificate",
-      "description": "This is a one time use item that teleports you to an alternate floor, which contains every single item in the game The items are spread between several different rooms all on pedestals. You may take only one of the items, before being teleported back to where you were",
+      "description": "This is a one time use item that teleports you to an alternate floor, which contains every single item in the game The items are spread between several different rooms all on pedestals. You may take only one of the items, before being teleported back to where you were It's literally every item, that includes items not in item pools like Knife Pieces Recharge Time: 1 time use",
       "quality": 4,
       "pool": "secret",
       "quote": "Where am I?",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_628.png",
+      "type": "Active",
       "tags": [
         "secret"
       ]
@@ -8738,77 +8616,78 @@ window.ISAAC_FALLBACK = {
     {
       "id": "629",
       "name": "Bot Fly",
-      "description": "Gives you a robot fly familar that orbits around Isaac and fires shielded tears at incoming projectiles Deals contact damage to enemies it touches",
+      "description": "Gives you a robot fly familar that orbits around Isaac and fires shielded tears at incoming projectiles Deals contact damage to enemies it touches Counts as 1 of 3 fly items needed towards the Beelzebub transformation",
       "quality": 3,
-      "pool": "treasure",
+      "pool": "crane",
       "quote": "Defense drone",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_629.png",
+      "type": "Passive, Familiar",
       "tags": [
-        "feuer",
-        "fire",
-        "fliege",
-        "fly",
-        "treasure"
+        "crane"
       ]
     },
     {
       "id": "631",
       "name": "Meat Cleaver",
-      "description": "When used, the Meat Cleaver will split all enemies in the room into 2 smaller versions with ~40% health each For enemies that have multiple parts to them (e.g. Larry Jr.) it will split them into 2 smaller enemies with half the number of sections they used to have",
+      "description": "When used, the Meat Cleaver will split all enemies in the room into 2 smaller versions with ~40% health each For enemies that have multiple parts to them (e.g. Larry Jr.) it will split them into 2 smaller enemies with half the number of sections they used to have If the enemy normally has a mechanic that splits it (e.g. Teratoma, Envy) then Meat Cleaver will deal a lot of damage and trigger the splitting effect If the split enemy has low enough health, it will just die instead of splitting Doesn't work on end-game bosses except Delirium, where it will deal a chunk of damage and spawn a 2nd Delirium to deal with Recharge Time: 2 rooms",
       "quality": 1,
       "pool": "treasure",
       "quote": "Slice but no dice",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_631.png",
+      "type": "Active",
       "tags": [
         "treasure"
       ]
     },
     {
       "id": "632",
-      "name": "Night Light",
-      "description": "Cone of slowing light in front of you",
+      "name": "Evil Charm",
+      "description": "+2 Luck Up You no longer take damage from poison/toxic gas/burn effects, and become immune to fear/confusion",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "secret",
       "quote": "Luck up + you feel protected",
+      "type": "Passive",
       "tags": [
         "luck",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_632.png"
+        "poison",
+        "secret"
+      ]
     },
     {
       "id": "633",
       "name": "Dogma",
-      "description": "This item isn't available in any item pools - you are automatically given it after defeating Dogma, just before The Beast sequence +0.1 Speed Up",
+      "description": "This item isn't available in any item pools - you are automatically given it after defeating Dogma, just before The Beast sequence +0.1 Speed Up +2.0 Damage Up Grants you the ability to fly Grants a one-time use of the Holy Mantle effect On normal mode this grants The Wafer effect, causing all damage to do a maximum of half a heart each time Sets your health to 6 hearts if you have fewer than 6. This will heal red hearts and then give soul hearts up to a total of 6. This doesn't work with The Lost characters",
       "quality": 3,
       "pool": "treasure",
       "quote": "Ascended",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_633.png",
+      "type": "Passive",
       "tags": [
+        "dmg up",
+        "heart",
+        "herz",
         "speed up",
         "treasure"
       ]
     },
     {
       "id": "634",
-      "name": "Expansion Pack",
-      "description": "Activate 2 random actives on use",
+      "name": "Purgatory",
+      "description": "While in a room with enemies, red cracks will appear on the floor in random locations Walking over the crack spawns a white soul familiar, that launches itself into the nearest enemy, exploding and dealing double your tear damage to everything near it Cracks will keep appearing but only one can exist in the room at a time",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "devil",
       "quote": "Help from beyond",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_634.png"
+        "devil",
+        "familiar"
+      ]
     },
     {
       "id": "635",
       "name": "Stitches",
-      "description": "While held, this item spawns a familiar that can be moved around using the arrow keys and deals 1.5 damage per tick to any enemies it touches When activated, you teleport, swapping places with wherever Stitches was positioned",
+      "description": "While held, this item spawns a familiar that can be moved around using the arrow keys and deals 1.5 damage per tick to any enemies it touches When activated, you teleport, swapping places with wherever Stitches was positioned Teleporting next to fires will extinguish them (including blue fires) and on top of shopkeepers will destroy them (gives +10% devil/angel room chance as normal) If used while stitches is on top of an enemy, it can be used to telefrag enemies, dealing x3.5 your damage + 40 Can be used to enter/exit Curse Rooms for free by teleporting infront of the door while holding the direction key to move in immediately. Also works for opening Spiked Chests and Mimic Chests without taking damage Recharge Time: 3 seconds",
       "quality": 1,
       "pool": "treasure",
       "quote": "Bait and switch",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_635.png",
+      "type": "Active, Familiar",
       "tags": [
         "familiar",
         "treasure"
@@ -8817,11 +8696,11 @@ window.ISAAC_FALLBACK = {
     {
       "id": "636",
       "name": "R Key",
-      "description": "When used, this item restarts the game and places you back on the first floor with all your currently collected items, similar to doing a Victory Lap The game timer does not reset",
+      "description": "When used, this item restarts the game and places you back on the first floor with all your currently collected items, similar to doing a Victory Lap The game timer does not reset Allows angel rooms to be found in the new run if a devil deal was taken in the first run In Greed Mode and while playing as Tainted Keeper, this item costs 99 coins instead of 15 When used in the backwards path after picking up Dad's Note, R key will skip you to the Basement 1 version of this path, which leads directly to the Home floor. This may cause you to skip floors where you left a trinket to spawn a Cracked Key. Donation machines become fixed if they were jammed before using the R Key Recharge Time: Single use",
       "quality": 4,
       "pool": "secret",
       "quote": "Time to start over",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_636.png",
+      "type": "Active",
       "tags": [
         "secret"
       ]
@@ -8833,95 +8712,91 @@ window.ISAAC_FALLBACK = {
       "quality": 3,
       "pool": "treasure",
       "quote": "They pack a punch!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_637.png",
+      "type": "Passive",
       "tags": [
-        "feuer",
-        "fire",
         "treasure"
       ]
     },
     {
       "id": "638",
-      "name": "Sack of Pennies",
-      "description": "Drops a coin every 2 rooms",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Eraser",
+      "description": "An active item that allows you to throw an eraser at any enemy, which will kill it and prevent it from appearing for the rest of the run Enemies that are erased create a puff of smoke instead of spawning Works on bosses, except it doesn't kill them it just deals 15 damage Can only be used once per floor - batteries also cannot be used to recharge it to bypass this restriction The first use will raise it above your head, then by pressing the fire button it will be thrown in that direction Recharge Time: 1 room (Can only be used once per floor)",
+      "quality": 2,
+      "pool": "shop",
       "quote": "Erase thy enemy",
+      "type": "Active",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_638.png"
+        "shop"
+      ]
     },
     {
       "id": "639",
-      "name": "Little C.H.A.D.",
-      "description": "Drops half a red heart every 3 rooms",
+      "name": "Yuck Heart",
+      "description": "When used, this item will give you +1 Rotten Heart Rotten Hearts act as red hearts and each one you currently have spawns 2 blue flies upon successfully clearing a room Recharge Time: 4 rooms",
       "quality": 1,
       "pool": "treasure",
       "quote": "Gross!",
+      "type": "Active",
       "tags": [
+        "fliege",
+        "fly",
         "heart",
         "herz",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_639.png"
+      ]
     },
     {
       "id": "640",
-      "name": "Bomb Bag",
-      "description": "Drops a bomb every 3 rooms",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Urn of Souls",
+      "description": "Enemies now create a soul upon death, which is automatically sucked into the Urn giving it +1 charge. Mini-bosses and bosses create 2-3 souls When activated, the urn can be fired as a high damage flamethrower in any direction A charge is consumed roughly every 0.5 seconds of use Multi-part enemies such as Envy or Teratoma create a soul per each part killed A maximum of 20 souls can be held in the urn at one time Recharge Time: None (see above)",
+      "quality": 3,
+      "pool": "angel",
       "quote": "Unleash their sorrow",
+      "type": "Active",
       "tags": [
-        "bomb",
-        "bombe",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_640.png"
+        "angel"
+      ]
     },
     {
       "id": "641",
-      "name": "Jar of Hearts",
-      "description": "Spawns red hearts on room clear",
+      "name": "Akeldama",
+      "description": "With each shot fired, another bloody tear will spawn behind Isaac Spawning multiple tears will form a trail of tears that follow Isaac as he moves, bursting and dealing damage upon contact with enemies The effect from this item will only work while in a hostile room that contains at least 1 enemy",
       "quality": 2,
       "pool": "treasure",
       "quote": "Spill your guts",
+      "type": "Passive",
       "tags": [
-        "heart",
-        "herz",
-        "pill",
-        "pille",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_641.png"
+      ]
     },
     {
       "id": "642",
-      "name": "Chaos",
-      "description": "\"Random pools\" — All items come from random item pools. Can find any item anywhere. Also grants 1-6 of random pickups.",
-      "quality": 3,
+      "name": "Magic Skin",
+      "description": "Upon use, this item consumes 1 heart container or 2 soul hearts and spawns one item pedestal from the current room's pool Every use gives a broken heart, meaning that slot is permanently broken and the maximum health limit is reduced by 1 for the rest of the run If Isaac has 12 broken hearts, he dies instantly (this also applies to The Lost despite having no health) Magic Skin will continue to appear after finding it once if you are not still holding it - the chance for it to replace an item is 1 ÷ (12 - number of times used) up to a maximum of 50% Broken hearts are empty heart containers that cannot be removed or refilled and will override other types of hearts when you reach 12 total. Replacing all 12 containers with broken hearts will kill you instantly. The only way to remove broken hearts is by donating to a Confessional Machine Recharge Time: 6 rooms",
+      "quality": 2,
       "pool": "shop",
       "quote": "All your desires fulfilled",
+      "type": "Active",
       "tags": [
+        "heart",
+        "herz",
+        "hp up",
         "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_642.png"
+      ]
     },
     {
       "id": "643",
       "name": "Revelation",
-      "description": "+2 Soul Hearts Grants you the ability to fly",
+      "description": "+2 Soul Hearts Grants you the ability to fly Holding the fire button charges up a light beam attack similar to Brimstone The light beam deals damage equal to your current tear damage per tick to any enemies touching it Counts as 1 of 3 angel items needed towards the Seraphim transformation.",
       "quality": 4,
       "pool": "angel",
       "quote": "Awaken your faith",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_643.png",
+      "type": "Passive",
       "tags": [
         "angel",
-        "fliege",
-        "fly",
         "heart",
-        "herz"
+        "herz",
+        "laser"
       ]
     },
     {
@@ -8931,7 +8806,7 @@ window.ISAAC_FALLBACK = {
       "quality": 1,
       "pool": "boss",
       "quote": "+1 to lowest stat",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_644.png",
+      "type": "Passive",
       "tags": [
         "bomb",
         "bombe",
@@ -8940,400 +8815,425 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "645",
-      "name": "Compound Fracture",
-      "description": "\"Bone shards\" — Tears split into 2-3 bone shards on impact, each dealing half your damage. Range up.",
-      "quality": 2,
+      "name": "Tinytoma",
+      "description": "Grants a large orbital that rotates around Isaac When the orbital takes a few hits, they split into two smaller ones After the smaller orbitals take another hit, they explode into 2 blue spiders This item will respawn after a period of time",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Itching for revenge",
+      "type": "Passive, Familiar",
       "tags": [
-        "range up",
+        "orbital",
+        "spider",
+        "spinne",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_645.png"
+      ]
     },
     {
       "id": "646",
-      "name": "Polydactyly",
-      "description": "Hold 2 cards/pills, free card/pill on use",
+      "name": "Brimstone Bombs",
+      "description": "+5 Bombs Your bombs now explode and fire 4 Brimstone lasers in all cardinal directions Each brimstone laser deals 8 damage per tick for 13 total hits",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "devil",
       "quote": "Demon blast +5 bombs",
+      "type": "Passive",
       "tags": [
         "bomb",
         "bombe",
-        "pill",
-        "pille",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_646.png"
+        "devil",
+        "laser"
+      ]
     },
     {
       "id": "647",
-      "name": "Dad's Lost Coin",
-      "description": "Range up, lucky penny drop",
+      "name": "4.5 Volt",
+      "description": "Active items no longer charge up as normal from clearing rooms Enemies taking damage now charges your item instead. This includes damage you deal, and environmental damage they take e.g. from Fireplaces 60 damage dealt = 1 charge",
       "quality": 2,
-      "pool": "boss",
+      "pool": "shop",
       "quote": "Beat the juice out of them!",
+      "type": "Passive",
       "tags": [
-        "boss",
-        "luck",
-        "range up"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_647.png"
+        "shop"
+      ]
     },
     {
       "id": "649",
-      "name": "Greed Machine",
-      "description": "Greed mode donation machine",
-      "quality": 0,
-      "pool": "golden",
+      "name": "Fruity Plum",
+      "description": "Gives you a familiar which is a smaller version of the Plum boss, which sprays tears and propels itself around the room Deals 2 contact damage per tick to enemies, and the tears deal 3 damage each Deals contact damage to any enemies it runs into Counts as 1 of 3 fly items needed towards the Beelzebub transformation.",
+      "quality": 1,
+      "pool": "treasure",
       "quote": "Bouncy friend",
+      "type": "Passive, Familiar",
       "tags": [
-        "golden"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_649.png"
+        "familiar",
+        "treasure"
+      ]
     },
     {
       "id": "650",
       "name": "Plum Flute",
-      "description": "When used, this item calls a friendly version of the Plum boss to fight for you for 10 seconds It will jump to the nearest enemy, slam on the ground and fire tears around it, then propel itself around the room, dealing contact damage to any enemies it touches before disappearing",
+      "description": "When used, this item calls a friendly version of the Plum boss to fight for you for 10 seconds It will jump to the nearest enemy, slam on the ground and fire tears around it, then propel itself around the room, dealing contact damage to any enemies it touches before disappearing It's possible to get a guaranteed spawn of this item by encountering the Baby Plum boss and not damaging her. After a minute or so of not hurting her she will fly away and spawn Plum Flute Counts as 1 of 3 fly items needed towards the Beelzebub transformation. Recharge Time: 4 rooms",
       "quality": 1,
       "pool": "treasure",
       "quote": "Play time!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_650.png",
+      "type": "Active",
       "tags": [
-        "boss",
-        "feuer",
-        "fire",
         "treasure"
       ]
     },
     {
       "id": "651",
       "name": "Star of Bethlehem",
-      "description": "Spawns a star with a white aura around it, that floats very slowly through each room on the floor, making its way towards the boss room While standing inside the aura, you gain a big Tears Up (x2.5 fire rate), Damage Up (damage * 1.2 + 1) and homing tears",
+      "description": "Spawns a star with a white aura around it, that floats very slowly through each room on the floor, making its way towards the boss room While standing inside the aura, you gain a big Tears Up (x2.5 fire rate), Damage Up (damage * 1.2 + 1) and homing tears The star continues to make its way through the floor, even if you aren't in the same room as it, moving faster if you are a long distance ahead of it On The Void floor, it will move towards the boss room containing Delirium Doesn't travel into the Hush or Mega Satan boss room It may travel through secret/curse rooms on its route to the boss room Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
       "quality": 3,
       "pool": "angel",
       "quote": "Follow the light",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_651.png",
+      "type": "Passive, Familiar",
       "tags": [
         "angel",
-        "boss",
         "dmg up",
-        "feuer",
-        "fire",
         "homing",
         "tears up"
       ]
     },
     {
       "id": "652",
-      "name": "Glaucoma",
-      "description": "Random concussive tears that confuse enemies",
+      "name": "Cube Baby",
+      "description": "Gives you a baby in an ice cube, which can be kicked around the room by walking into it Enemies take damage from Cube Baby depending on how fast it was travelling when it hit them. Having a higher movement speed allows you to kick it harder Enemies hit by the cube while moving have a high chance to become frozen. Frozen enemies never unfreeze and are considered dead by the game. Kicking a frozen enemy will push it into the wall, where it shatters and fires ice shards everywhere (these can then freeze other enemies) Enemies touching the cube while it's not moving or moving slowly will become slowed for a few seconds, and take a small amount of damage Cube Baby and enemies frozen will block enemy shots Cube Baby can be launched across the room if you have a melee weapon Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
       "quality": 1,
       "pool": "treasure",
       "quote": "Kick it!",
+      "type": "Passive, Familiar",
       "tags": [
+        "familiar",
+        "freeze",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_652.png"
+      ]
     },
     {
       "id": "653",
       "name": "Vade Retro",
-      "description": "Enemies that die now spawn a red ghost, that floats in place of where the enemy died Activating the item causes all red ghosts in the room to explode, dealing damage to any enemies near them",
+      "description": "Enemies that die now spawn a red ghost, that floats in place of where the enemy died Activating the item causes all red ghosts in the room to explode, dealing damage to any enemies near them The explosion doesn't deal damage to Isaac Damage dealt by each ghost is 3 + 0.04x the HP of the enemy it spawned from Larger enemies such as minibosses will spawn a larger red ghost that causes 3 explosions The red ghosts can be moved around slightly by firing tears through them Using the item will instantly kill any enemy or boss that has the 'ghost' tag and is at 50% or less HP. Enemies include Candler, Lil' Haunt, Polty, Red Ghost, Wizoob and The Forsaken, The Haunt, The Heretic and The Rainmaker bosses. This effect also works on Delirium if it is currently transformed into The Haunt while below half health Recharge Time: Instant",
       "quality": 2,
       "pool": "angel",
       "quote": "Begone!",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_653.png",
+      "type": "Active",
       "tags": [
-        "angel"
+        "angel",
+        "bomb",
+        "bombe"
       ]
     },
     {
       "id": "654",
       "name": "False PHD",
-      "description": "Identified all pills on pickup, and converts them to their worse counterparts (e.g. Stat Up becomes Stat Down) Any 'Stat down' pills you take give you a permanent +0.6 Damage Up (Horse pills +1.2)",
+      "description": "Identified all pills on pickup, and converts them to their worse counterparts (e.g. Stat Up becomes Stat Down) Any 'Stat down' pills you take give you a permanent +0.6 Damage Up (Horse pills +1.2) Most other pills spawn a black heart when used, including R U A Wizard?, Amnesia, Bad Trip, ???, Paralysis, Retro Vision, I'm Excited +1 Black Heart when picked up",
       "quality": 2,
       "pool": "devil",
       "quote": "Worse pills + evil up",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_654.png",
+      "type": "Passive",
       "tags": [
         "devil",
         "dmg up",
+        "heart",
+        "herz",
         "pill",
         "pille"
       ]
     },
     {
       "id": "655",
-      "name": "Dim Bulb",
-      "description": "Stat ups while active item is empty",
-      "quality": 2,
+      "name": "Spin to Win",
+      "description": "While held, gives you an orbital that blocks enemy shots and deals contact damage equal to 3.5 per tick While the active key is held down, Isaac gains +0.5 Speed and all of your orbitals spin faster and deal more damage Orbital damage is equal to 1.5 x OrbitalDamage + 6 while this effect is active",
+      "quality": 1,
       "pool": "treasure",
       "quote": "Let it rip!",
+      "type": "Active & Passive, Familiar",
       "tags": [
+        "orbital",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_655.png"
+      ]
     },
     {
       "id": "657",
-      "name": "Large Zit",
-      "description": "Creep tears that leave white trails",
+      "name": "Vasculitis",
+      "description": "On death enemies now fire tears in random directions, which can damage other enemies The amount of tears created by this effect depends on the total health of the enemy killed. Smaller enemies spawn 2-3 tears, and bosses spawn a maximum of 16 Tears from this effect maintain tear modifiers and status effects that Isaac currently has Isaac doesn't take damage from the tears created by this item",
       "quality": 1,
       "pool": "treasure",
       "quote": "Clogged enemies",
+      "type": "Passive",
       "tags": [
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_657.png"
+      ]
     },
     {
       "id": "658",
-      "name": "Little Horn",
-      "description": "Chance for void tears that instantly kill",
-      "quality": 3,
-      "pool": "devil",
+      "name": "Giant Cell",
+      "description": "Every time you take damage, a tiny Isaac familiar will spawn, which follows you and shoots tears at nearby enemies that deal 1.3 Damage The mini-Isaacs stay with you between floors, but can die if they take too much damage Maximum number of mini-Isaacs is 16 at one time Mini-Isaac's keep some of the abilities and appearance that Isaac has - e.g. the ability to fly. As Azazel they fire brimstone and as The Forgotten they use a bone club",
+      "quality": 1,
+      "pool": "treasure",
       "quote": "Micro friends",
+      "type": "Passive",
       "tags": [
-        "devil"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_658.png"
+        "familiar",
+        "laser",
+        "treasure"
+      ]
     },
     {
       "id": "659",
-      "name": "Contagion",
-      "description": "First enemy killed each room poisons nearby",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Tropicamide",
+      "description": "+1.5 Range Up Tear Size Up",
+      "quality": 1,
+      "pool": "boss",
       "quote": "Tear size + range up",
+      "type": "Passive",
       "tags": [
-        "range up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_659.png"
+        "boss",
+        "range up"
+      ]
     },
     {
       "id": "660",
       "name": "Card Reading",
-      "description": "At the beginning of all future floors, two portals will appear, that can take you to either the Boss room (Red portal), Item room (Yellow portal) or Secret room (Blue portal) After Chapter 3 (The Depths floors) only one portal will spawn",
+      "description": "At the beginning of all future floors, two portals will appear, that can take you to either the Boss room (Red portal), Item room (Yellow portal) or Secret room (Blue portal) After Chapter 3 (The Depths floors) only one portal will spawn Portals disappear if you leave the starting room Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
       "quality": 3,
       "pool": "shop",
       "quote": "A link to your future",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_660.png",
+      "type": "Passive",
       "tags": [
-        "boss",
-        "secret",
         "shop"
       ]
     },
     {
       "id": "661",
-      "name": "Finger!",
-      "description": "Finger that points and damages enemies",
+      "name": "Quints",
+      "description": "Every time an enemy dies, a random familiar spawns where it was killed for the rest of the room The familiar cannot move, but continues to do its usual abilities Possible familiars include: Abel, Boiled Baby, Brother Bobby, Sister Maggy, Little Steven, Demon Baby, Multidimensional Baby, Freezer Baby, Rotten Baby, Harlequin Baby, Ghost Baby, Guardian Angel, Lil Brimstone, Robo-Baby and Seraphim Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
       "quality": 2,
       "pool": "treasure",
       "quote": "They lurk inside",
+      "type": "Passive",
       "tags": [
+        "familiar",
+        "laser",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_661.png"
+      ]
     },
     {
       "id": "663",
       "name": "Tooth and Nail",
-      "description": "Every 5 seconds you become spiky for a second, becoming immune and dealing 40 contact damage to any enemies that touch you The effect is indicated by 4 white flashes, where the item activates on the 4th flash",
+      "description": "Every 5 seconds you become spiky for a second, becoming immune and dealing 40 contact damage to any enemies that touch you The effect is indicated by 4 white flashes, where the item activates on the 4th flash If timed well, can be used to enter curse rooms and open spiky chests without taking damage. You still take damage however when using Blood Donation machines and Devil Beggars",
       "quality": 2,
       "pool": "treasure",
       "quote": "You feel prickly",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_663.png",
+      "type": "Passive",
       "tags": [
+        "blood",
+        "blut",
         "treasure"
       ]
     },
     {
       "id": "664",
       "name": "Binge Eater",
-      "description": "Causes all pedestal items to show up as rotating items, that swap every 1 second between the original spawned item and a HP up item. This allows you to choose between the item that originally spawned and a HP upgrade every time This effect applies to most items, including those in the shop and devil room. Doesn't apply to progress items like The Polaroid",
+      "description": "Causes all pedestal items to show up as rotating items, that swap every 1 second between the original spawned item and a HP up item. This allows you to choose between the item that originally spawned and a HP upgrade every time This effect applies to most items, including those in the shop and devil room. Doesn't apply to progress items like The Polaroid When you pick up an item that increases your maximum HP, you gain 2 permanent stat increases, and a temporary damage boost that slowly goes down over time. Starts at +3.6 damage and goes to 0 after 30 seconds While this temporary damage boost is active, each enemy you kill increases your damage slightly, allowing you to quickly kill multiple enemies and chain the effect for longer This item also gives a -0.03 Speed Down for every food item held The 2 permanent stat increases depend on the item taken: A Snack = +0.2 shot speed, +1 luck. Breakfast = +0.2 shot speed, +1.5 Range. Dessert = +1 Flat Damage, +0.2 shot speed. Dinner = +0.5 tears, +0.2 shot speed. Lunch = +0.5 tears, +1.5 range. Midnight Snack = +1 flat damage, +1 luck. Rotten Meat = +1 flat damage, +1.5 range. Supper = +0.5 tears, +1 luck.",
       "quality": 4,
       "pool": "secret",
       "quote": "All you can eat",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_664.png",
+      "type": "Passive",
       "tags": [
-        "devil",
         "hp up",
         "secret",
-        "shop"
+        "shot speed"
       ]
     },
     {
       "id": "665",
       "name": "Guppy's Eye",
-      "description": "Shows you to see the contents of chests, sacks, shopkeepers and items that will drop from fires before you destroy them Doesn't work on tinted rocks and other obstacles (e.g. poop, pots)",
+      "description": "Shows you to see the contents of chests, sacks, shopkeepers and items that will drop from fires before you destroy them Doesn't work on tinted rocks and other obstacles (e.g. poop, pots) Counts as 1 of 3 cat items needed towards the Guppy transformation",
       "quality": 2,
       "pool": "devil",
       "quote": "An eye for secrets",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_665.png",
+      "type": "Passive",
       "tags": [
         "auge",
         "devil",
-        "eye",
-        "feuer",
-        "fire",
-        "secret",
-        "shop"
+        "eye"
       ]
     },
     {
       "id": "667",
-      "name": "Black Powder",
-      "description": "Walking in circles creates pentagram",
-      "quality": 1,
-      "pool": "devil",
+      "name": "Strawman",
+      "description": "Spawns a Keeper familiar, that shoots triple tears and follows your exact movements as you walk The keeper has 3 health coins and can die if it takes enough damage. He can pick up coins to restore health Similar to other familiars of this kind, you can hold the drop key to cause him to stand still If he dies, his corpse turns into a few blue spiders. He won't respawn even if you move to a new floor Will always match your current movement speed +1 Bomb",
+      "quality": 2,
+      "pool": "secret",
       "quote": "A helping hand",
+      "type": "Passive, Familiar",
       "tags": [
-        "devil"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_667.png"
+        "bomb",
+        "bombe",
+        "familiar",
+        "secret",
+        "spider",
+        "spinne"
+      ]
     },
     {
       "id": "668",
-      "name": "Flat Worm",
-      "description": "Tears are wider",
-      "quality": 1,
+      "name": "Dad's Note",
+      "description": "Only found in the Mausoleum/Gehenna II boss room The item itself has no effect, but triggers the ascent through the backwards path towards the Home floor Once you've beaten Mother once, a door will appear at the starting room in Depths II, which leads to the Mausoleum/Gehenna floors. The door can only be opened if you have The Polaroid, The Negative or Faded Polaroid (the item/trinket is taken away when it opens). This means you need a way to teleport out of the Mom's Foot boss fight. If you didn't find one before this point, there will be a tinted Skull somewhere on Depths II, which contains a Fool card when blown up. Cannot be rerolled by 4-pip dice rooms and Spindown Dice",
+      "quality": 0,
       "pool": "treasure",
       "quote": "...",
+      "type": "Passive",
       "tags": [
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_668.png"
+      ]
     },
     {
       "id": "669",
-      "name": "Pulse Worm",
-      "description": "Tears grow and shrink in size",
-      "quality": 0,
-      "pool": "treasure",
+      "name": "Sausage",
+      "description": "+1 HP +0.2 Speed Up +0.5 Tears Up +0.5 Damage Up +1.5 Range Up +0.16 Shot Speed Up +1 Luck Up +6.9% Devil/Angel Room chance +6.9% Planetarium chance",
+      "quality": 3,
+      "pool": "secret",
       "quote": "All stats up",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_669.png"
+        "dmg up",
+        "luck",
+        "range up",
+        "secret",
+        "shot speed",
+        "speed up",
+        "tears up"
+      ]
     },
     {
       "id": "670",
-      "name": "Ring Worm",
-      "description": "Tears spiral and orbit",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Options?",
+      "description": "Clearing a room will spawn an extra reward, however only one can be picked up - the other one will disappear",
+      "quality": 2,
+      "pool": "shop",
       "quote": "There might be options",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_670.png"
+        "shop"
+      ]
     },
     {
       "id": "671",
-      "name": "Hook Worm",
-      "description": "Tears move in angular patterns",
+      "name": "Candy Heart",
+      "description": "Every half red heart you pick up gives a small but permanent stat increase Randomly picks between +0.10 Damage Up, +0.05 Tears Up, +0.15 Range Up, +0.02 Speed Up, +0.1 Luck Up, +0.02 Shot Speed Up per half red heart Spawns 1 Red Heart when picked up",
       "quality": 1,
       "pool": "treasure",
       "quote": "Power of love",
+      "type": "Passive",
       "tags": [
+        "dmg up",
+        "heart",
+        "herz",
+        "luck",
+        "range up",
+        "shot speed",
+        "speed up",
+        "tears up",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_671.png"
+      ]
     },
     {
       "id": "672",
-      "name": "Whip Worm",
-      "description": "Shot speed way up",
+      "name": "A Pound of Flesh",
+      "description": "This item causes Devil deals to cost money instead of hearts, and shop items to cost hearts instead of money Shop items cost heart containers, and pickups have spikes around them The Devil deal conversion rate is 1 heart container to 15 coins Devil deal items can be on discount similar to the shop, making it 1 heart container = 7 coins instead",
       "quality": 1,
-      "pool": "treasure",
+      "pool": "devil",
       "quote": "Blood money",
+      "type": "Passive",
       "tags": [
         "blood",
         "blut",
-        "shot speed",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_672.png"
+        "devil",
+        "heart",
+        "herz",
+        "hp up"
+      ]
     },
     {
       "id": "673",
-      "name": "Rainbow Worm",
-      "description": "Random worm trinket effect each room",
-      "quality": 1,
+      "name": "Redemption",
+      "description": "Every time you enter a devil room and choose not to take an item, you get +1 Damage Up upon entering the next floor The effect is shown via a cross above Isaac's head. Taking a Devil deal breaks the cross and prevents the damage up next floor Taking free pickups such as Black hearts in the Devil room also count",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Deliver me from evil",
+      "type": "Passive",
       "tags": [
+        "dmg up",
+        "heart",
+        "herz",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_673.png"
+      ]
     },
     {
       "id": "674",
-      "name": "Duct Tape",
-      "description": "Familiars stop moving",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Spirit Shackles",
+      "description": "When you die, you turn into a ghost with 1/2 a red heart and flying, that is chained to your body for 10 seconds. This allows you to stay alive as long as you don't get hit during this 10 second period After this effect occurs, it cannot activate again until Isaac gains a half or full Soul Heart or a Black Heart. Soul Hearts that are used to charge Spirit Shackles will not be added to your health as normal",
+      "quality": 2,
+      "pool": "secret",
       "quote": "Unfinished business",
+      "type": "Passive",
       "tags": [
-        "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_674.png"
+        "heart",
+        "herz",
+        "secret"
+      ]
     },
     {
       "id": "675",
-      "name": "Silver Dollar",
-      "description": "Shops appear in Womb floors",
-      "quality": 2,
-      "pool": "shop",
+      "name": "Cracked Orb",
+      "description": "Taking damage reveals a random room on the minimap, and automatically opens certain doors in the current room. Possible doors include any needing a key to open (Item Room, Shop, Alt Path doors), secret rooms and crawl spaces Cracked Orb can also reveal the location of the red room that contains a pedestal item. The Red Key item is required to access it, but it shows the direction to get there",
+      "quality": 1,
+      "pool": "secret",
       "quote": "Shards of knowledge",
+      "type": "Passive",
       "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_675.png"
+        "secret"
+      ]
     },
     {
       "id": "676",
-      "name": "Bloody Crown",
-      "description": "Treasure rooms appear in Womb floors",
-      "quality": 3,
+      "name": "Empty Heart",
+      "description": "Upon entering each new floor, if you have one red heart or less, another one is added This effect works while moving up floors in the backwards path This item has no effect for characters with non-red health i.e. ???, Keeper and The Forgotten",
+      "quality": 1,
       "pool": "treasure",
       "quote": "It multiplies",
+      "type": "Passive",
       "tags": [
-        "blood",
-        "blut",
+        "heart",
+        "herz",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_676.png"
+      ]
     },
     {
       "id": "677",
-      "name": "Pay to Win",
-      "description": "Restock machines appear in shops",
+      "name": "Astral Projection",
+      "description": "The first time you take damage in a room, Isaac will become a ghost and time will stop for 3 seconds During this ghost effect, you gain flight, spectral tears and the damage from the next hit you take is negated Isaac returns to his body if you either clear the room or take damage while in ghost form Only happens once per room - taking damage a second time does not turn you into a ghost again",
       "quality": 2,
-      "pool": "shop",
+      "pool": "secret",
       "quote": "The true out-of-body experience!",
+      "type": "Passive",
       "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_677.png"
+        "flight",
+        "secret",
+        "spectral"
+      ]
     },
     {
       "id": "678",
       "name": "C Section",
-      "description": "Your tears are replaced with a charge attack that fires a homing, spectral fetus The fetus tears deal damage equal to 75% of your current tear damage while in contact with enemies, roughly 5 times per second",
+      "description": "Your tears are replaced with a charge attack that fires a homing, spectral fetus The fetus tears deal damage equal to 75% of your current tear damage while in contact with enemies, roughly 5 times per second Can't be held down like normal charge attacks, they will release automatically at full charge",
       "quality": 4,
       "pool": "secret",
       "quote": "Fetus shots",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_678.png",
+      "type": "Passive",
       "tags": [
-        "feuer",
-        "fire",
         "homing",
         "secret",
         "spectral"
@@ -9341,204 +9241,192 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "679",
-      "name": "Ball of Flies",
-      "description": "Flies orbit from killing enemies",
+      "name": "Lil Abaddon",
+      "description": "Gives you a familiar that can be charged up to release a black ring, that damages any enemies that touch it with rapid hits (similar to Maw of the Void / Athame effects) The effect does a decent amount of damage, but doesn't scale with your damage upgrades Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "devil",
       "quote": "Abyssal friend",
+      "type": "Passive, Familiar",
       "tags": [
-        "fliege",
-        "fly",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_679.png"
+        "devil",
+        "familiar"
+      ]
     },
     {
       "id": "680",
       "name": "Montezuma's Revenge",
-      "description": "While firing tears, you now charge up a poop attack for 3 seconds that when released, fires from Isaac's behind The poop attack deals your current tear damage to any enemies caught in the blast",
+      "description": "While firing tears, you now charge up a poop attack for 3 seconds that when released, fires from Isaac's behind The poop attack deals your current tear damage to any enemies caught in the blast Counts as 1 of 3 poop items needed towards the Oh Crap transformation",
       "quality": 2,
       "pool": "treasure",
       "quote": "Oh no...",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_680.png",
+      "type": "Passive",
       "tags": [
-        "feuer",
-        "fire",
         "treasure"
       ]
     },
     {
       "id": "681",
       "name": "Lil Portal",
-      "description": "Gives Isaac a little portal familiar, that moves across the screen as you're firing The portal will suck up any consumables and trinkets it travels over, causing it to become larger and deal more contact damage",
+      "description": "Gives Isaac a little portal familiar, that moves across the screen as you're firing The portal will suck up any consumables and trinkets it travels over, causing it to become larger and deal more contact damage When the portal sucks up 4 pickups, it turns into a portal that can be used to teleport to unexplored rooms around the floor. It can take you to rooms that require bombs/keys, e.g. the Secret Room or the Shop Every time the portal sucks up an item, it spawns a blue attack fly for you Once every room has been explored, the portal does nothing Cannot take you to rooms that aren't a part of the floor structure e.g. Devil Rooms / I AM ERROR rooms",
       "quality": 1,
       "pool": "treasure",
       "quote": "It hungers",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_681.png",
+      "type": "Passive, Familiar",
       "tags": [
+        "bomb",
+        "bombe",
         "familiar",
         "treasure"
       ]
     },
     {
       "id": "682",
-      "name": "Door Stop",
-      "description": "Last door entered stays open",
-      "quality": 1,
-      "pool": "shop",
+      "name": "Worm Friend",
+      "description": "You gain a familiar that lives under the floor. Every so often it will come up and attempt to grab onto a random enemy in the room, holding them in place and dealing damage The Worm Friend deals 4 damage for 8 ticks total If the enemy moves quickly enough it can miss its attack",
+      "quality": 3,
+      "pool": "treasure",
       "quote": "Clingy buddy",
+      "type": "Passive, Familiar",
       "tags": [
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_682.png"
+        "familiar",
+        "treasure"
+      ]
     },
     {
       "id": "683",
-      "name": "Blue Key",
-      "description": "Open any door with key, enter hush-like room",
+      "name": "Bone Spurs",
+      "description": "Enemies that die will leave behind 1-2 floating bone shards where they die, until you leave the room Other enemies that touch the bone shards will take 3.5 damage, with a chance to either bounce off them or cause it to break and disappear",
       "quality": 2,
       "pool": "treasure",
       "quote": "Break your enemies",
+      "type": "Passive",
       "tags": [
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_683.png"
+      ]
     },
     {
       "id": "684",
-      "name": "Flat File",
-      "description": "Removes all spikes",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Hungry Soul",
+      "description": "Each time an enemy dies, a friendly red soul appears. It will hunt down other enemies, dealing contact damage which scales with your tear damage After 5 seconds the red soul explodes (Isaac doesn't take damage from this effect)",
+      "quality": 2,
+      "pool": "devil",
       "quote": "Out for blood",
+      "type": "Passive",
       "tags": [
         "blood",
         "blut",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_684.png"
+        "bomb",
+        "bombe",
+        "devil"
+      ]
     },
     {
       "id": "685",
-      "name": "Telescope Lens",
-      "description": "Planetarium chance up, damage on first boss",
-      "quality": 3,
-      "pool": "treasure",
+      "name": "Jar of Wisps",
+      "description": "When used, gives you number of blue flame orbitals based on the number shown over this item It starts at 1, and increments each activation, giving you more familiars each time you use it The flames fire tears at the same time Isaac does, that deal a flat 3 damage If a flame touches an enemy, it deals contact damage equal to double your current tear damage and then disappears You can have a maximum of 24 flame orbitals at once Each flame has a chance to spawn as one of many variants, such as green flames that poison enemies, or a crucifix flame that spawns a random horseman familiar + Locusts when it is extinguished Recharge Time: 12 rooms",
+      "quality": 2,
+      "pool": "angel",
       "quote": "Your faith grows",
+      "type": "Active",
       "tags": [
-        "boss",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_685.png"
+        "angel",
+        "familiar",
+        "feuer",
+        "fire",
+        "orbital",
+        "poison"
+      ]
     },
     {
       "id": "686",
-      "name": "Mom's Lock",
-      "description": "Chance for extra drops from chests",
+      "name": "Soul Locket",
+      "description": "Spawns 1 soul heart on the floor Soul hearts give you small permanent stat increases when picked up Possible stats include +0.3 Range Up, +0.2 Luck Up, +0.2 Damage Up, +0.1 Tears Up, +0.04 Speed Up",
       "quality": 1,
-      "pool": "treasure",
+      "pool": "angel",
       "quote": "Power of faith",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_686.png"
+        "angel",
+        "dmg up",
+        "heart",
+        "herz",
+        "luck",
+        "range up",
+        "speed up",
+        "tears up"
+      ]
     },
     {
       "id": "687",
-      "name": "Dice Bag",
-      "description": "Chance to get free dice item each room",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Friend Finder",
+      "description": "Spawns a random charmed enemy which fights by your side and copies your exact movements, similar to how Jacob & Esau work The familiars fire tears at the same time as Isaac, and have a visible health bar showing how much damage they can take before dying Recharge Time: 4 rooms",
+      "quality": 3,
+      "pool": "crane",
       "quote": "Best friends forever!",
+      "type": "Active",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_687.png"
+        "crane",
+        "familiar"
+      ]
     },
     {
       "id": "688",
-      "name": "Holy Crown",
-      "description": "Treasure and shop rooms in Cathedral",
+      "name": "Inner Child",
+      "description": "Gives you an extra life You respawn as a tiny version of Isaac, with a greatly reduced hitbox and +0.2 Speed Up When the effect activates you deal 35 damage to nearby enemies Once unlocked, if you have already unlocked the tainted version of the character you're playing as, Inner Child is guaranteed to spawn in the hidden closet on the Home floor",
       "quality": 2,
-      "pool": "angel",
+      "pool": "secret",
       "quote": "Let him free",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_688.png"
+        "hp up",
+        "secret",
+        "speed up"
+      ]
     },
     {
       "id": "689",
-      "name": "Wicked Crown",
-      "description": "Treasure and shop rooms in Sheol",
-      "quality": 2,
-      "pool": "devil",
+      "name": "Glitched Crown",
+      "description": "Item pedestals now cycle between 5 random items",
+      "quality": 4,
+      "pool": "secret",
       "quote": "?????",
+      "type": "Passive",
       "tags": [
-        "devil",
-        "shop"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_689.png"
+        "secret"
+      ]
     },
     {
       "id": "690",
-      "name": "Azazel's Stump",
-      "description": "Chance to become Azazel after each room",
-      "quality": 2,
+      "name": "Belly Jelly",
+      "description": "Enemies that touch Isaac will now bounce off him and fly off in the opposite direction Bounced enemies will take 10 damage if they slam into the wall This item also gives a random chance for enemy shots to bounce off you without taking damage",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Bounce away!",
+      "type": "Passive",
       "tags": [
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_690.png"
+      ]
     },
     {
       "id": "691",
-      "name": "Dingle Berry",
-      "description": "Friendly dip spawns when clearing rooms",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Sacred Orb",
+      "description": "Increases the quality of generated items Rerolls items with a quality of 0 or 1 33% chance to reroll items with a quality of 2 Quality is a hidden mechanic in Repetance for all items and ranges from 0-4. Certain items consider Quality for picking what item to spawn, allowing better items to spawn under certain conditions Counts as 1 of 3 angel items needed towards the Seraphim transformation.",
+      "quality": 4,
+      "pool": "angel",
       "quote": "Destined for greatness",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_691.png"
+        "angel"
+      ]
     },
     {
       "id": "692",
-      "name": "Ring Cap",
-      "description": "Bombs spawn 2 extra bombs on detonation",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "He awaits your offering",
-      "tags": [
-        "bomb",
-        "bombe",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_692.png"
-    },
-    {
-      "id": "693",
-      "name": "Gilded Key",
-      "description": "Better chest rewards, golden chest from first room",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Infest",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_693.png"
-    },
-    {
-      "id": "694",
-      "name": "Heartbreak",
-      "description": "Gives you +0.25 Damage Up for every broken heart you have Gives 3 broken hearts when picked up",
-      "quality": 3,
+      "name": "Sanguine Bond",
+      "description": "Spawns a special set of spikes in the Devil Room Taking damage from the spikes has a chance to spawn a reward Nothing - 37.5% chance 6 Pennies - 17% chance +0.5 Damage Up - 27.5% chance 2 Black Hearts - 9.5% chance Random Item - 5.5% chance Leviathan trasformation - 3% chance",
+      "quality": 1,
       "pool": "devil",
-      "quote": "Eternal sorrow",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_694.png",
+      "quote": "He awaits your offering",
+      "type": "Passive",
       "tags": [
         "devil",
         "dmg up",
@@ -9547,16 +9435,45 @@ window.ISAAC_FALLBACK = {
       ]
     },
     {
+      "id": "693",
+      "name": "The Swarm",
+      "description": "When picked up, this gives you 9 orbital flies Each time a fly blocks an enemy shot, it will turn into a blue fly and attack nearby enemies, leaving you with one less orbital Every room clear gives you +1 orbital fly, up to a maximum of 9 Counts as 1 of 3 fly items needed towards the Beelzebub transformation.",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Infest",
+      "type": "Passive",
+      "tags": [
+        "fliege",
+        "fly",
+        "orbital",
+        "treasure"
+      ]
+    },
+    {
+      "id": "694",
+      "name": "Heartbreak",
+      "description": "Gives you +0.25 Damage Up for every broken heart you have Gives 3 broken hearts when picked up Every hit of damage that would kill you, instead adds 2 more broken hearts and deal 40 damage to all enemies in the room Heartbreak cannot kill you on pickup Broken hearts are empty heart containers that cannot be removed or refilled and will override other types of hearts when you reach 12 total. Replacing all 12 containers with broken hearts will kill you instantly. The only way to remove broken hearts is by donating to a Confessional Machine",
+      "quality": 3,
+      "pool": "devil",
+      "quote": "Eternal sorrow",
+      "type": "Passive",
+      "tags": [
+        "devil",
+        "dmg up",
+        "heart",
+        "herz",
+        "hp up"
+      ]
+    },
+    {
       "id": "695",
       "name": "Bloody Gust",
-      "description": "Every time you take damage, you gain a Speed Up and a Tears Up The stat increases start small, and scale up each time you take damage (+0.25 Tears Up for the first hit, +0.75 Tears Up for the 6th hit)",
+      "description": "Every time you take damage, you gain a Speed Up and a Tears Up The stat increases start small, and scale up each time you take damage (+0.25 Tears Up for the first hit, +0.75 Tears Up for the 6th hit) The effect maxes out at +3 Tears Up and +1 Speed Up after taking damage 6 times. This brings you to the maximum possible speed The effect lasts for the rest of the current floor",
       "quality": 2,
       "pool": "devil",
       "quote": "May your rage bring haste",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_695.png",
+      "type": "Passive",
       "tags": [
-        "blood",
-        "blut",
         "devil",
         "speed up",
         "tears up"
@@ -9565,231 +9482,241 @@ window.ISAAC_FALLBACK = {
     {
       "id": "696",
       "name": "Salvation",
-      "description": "Isaac gains a halo of light around him. When an enemy touches the halo for couple of seconds, a beam of light will come down and deal a burst of damage to it The triggered beam also fires in all 4 cardinal directions, dealing damage to anything it touches",
+      "description": "Isaac gains a halo of light around him. When an enemy touches the halo for couple of seconds, a beam of light will come down and deal a burst of damage to it The triggered beam also fires in all 4 cardinal directions, dealing damage to anything it touches Every time Isaac takes damage, the halo grows slightly bigger up to a maximum of 10 times. The size resets when leaving the floor Counts as 1 of 3 angel items needed towards the Seraphim transformation.",
       "quality": 3,
       "pool": "angel",
       "quote": "Divine protection",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_696.png",
+      "type": "Passive",
       "tags": [
-        "angel",
-        "feuer",
-        "fire"
+        "angel"
       ]
     },
     {
       "id": "697",
-      "name": "Polished Bone",
-      "description": "Chance for bone orbital from clearing rooms",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Vanishing Twin",
+      "description": "A fetus familiar follows Isaac, and upon entering the Boss room on each floor, it will transform into a copy of the boss This makes bosses a lot harder, however you now get 2 boss item drops",
+      "quality": 2,
+      "pool": "secret",
       "quote": "He wants revenge",
+      "type": "Passive, Familiar",
       "tags": [
-        "orbital",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_697.png"
+        "familiar",
+        "secret"
+      ]
     },
     {
       "id": "698",
-      "name": "Hollow Heart",
-      "description": "Extra bone heart each floor",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Twisted Pair",
+      "description": "You gain two familiar demons, that stay by Isaac's side and fire shots in the same direction as you The familiars deal roughly 40% of Isaac's damage, scaling with damage upgrades you get They sit near and rotate around Isaac depending on which way you're firing tears. They do not block enemy shots Counts as 1 of 3 familiar items needed towards the Conjoined transformation.",
+      "quality": 4,
+      "pool": "devil",
       "quote": "Double trouble!",
+      "type": "Passive, Familiar",
       "tags": [
-        "heart",
-        "herz",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_698.png"
+        "devil",
+        "familiar"
+      ]
     },
     {
       "id": "699",
-      "name": "Kid's Drawing",
-      "description": "Count toward Guppy transformation",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Azazel's Rage",
+      "description": "Isaac builds rage each time you clear a new room. This is shown by the Azazel skin spreading on Isaac's face After 4 rooms, Isaac's face will flash red. The next room you enter he will automatically fire a massive red brimstone laser for 4 seconds, dealing huge damage The rage resets back to zero, and the cycle continues every 5 rooms cleared",
+      "quality": 2,
+      "pool": "devil",
       "quote": "Ancient power",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_699.png"
+        "devil",
+        "laser"
+      ]
     },
     {
       "id": "700",
-      "name": "Crystal Key",
-      "description": "Chance for red rooms when clearing rooms",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Echo Chamber",
+      "description": "When using a card, pill, or rune, you also use a copy of the last 3 cards/pills/runes you used after picking up Echo Chamber Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
+      "quality": 3,
+      "pool": "secret",
       "quote": "I can see see the future future future",
+      "type": "Passive",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_700.png"
+        "pill",
+        "pille",
+        "secret"
+      ]
     },
     {
       "id": "701",
-      "name": "Keeper's Bargain",
-      "description": "50% off devil deals",
-      "quality": 2,
-      "pool": "devil",
+      "name": "Isaac's Tomb",
+      "description": "Spawns an Old chest at the start of all future floors Old Chests work the same as Golden Chests, requiring a key to open but contain different items The Old chest can contain: 3 trinkets (42% chance), 1-3 soul hearts (43% chance), a random item from the Old Chest pool (10% chance) or an angel room item (5% chance) Spawns a second chest in the mirrored floor of Downpour II or Dross II, but only if you had this item before entering the floor",
+      "quality": 3,
+      "pool": "secret",
       "quote": "Buried memories",
+      "type": "Passive",
       "tags": [
-        "devil"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_701.png"
+        "heart",
+        "herz",
+        "secret"
+      ]
     },
     {
       "id": "702",
-      "name": "Cursed Penny",
-      "description": "Teleport on pickup collection",
+      "name": "Vengeful Spirit",
+      "description": "Each time you take damage, a red flame orbital will appear around Isaac for the remainder of the floor, up to a maximum of 6 The flames deal contact damage which scales with your tear damage Upon reaching 6 flames, they will also start to fire tears along with Isaac, dealing a flat 3.2 damage per tear When entering a new floor, all the flames disappear",
       "quality": 1,
-      "pool": "treasure",
+      "pool": "devil",
       "quote": "Hot blooded",
+      "type": "Passive",
       "tags": [
-        "blood",
-        "blut",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_702.png"
+        "devil",
+        "feuer",
+        "fire",
+        "orbital"
+      ]
     },
     {
       "id": "703",
-      "name": "Your Soul",
-      "description": "Free devil deal item",
+      "name": "Esau Jr",
+      "description": "Using this item swaps you between the character you started as, and Esau, which has 3 black hearts, +2 base damage and the ability to fly This character keeps its own separate health and items. Items picked up are not shared between the two characters If either character dies it's game over Recharge Time: 1 room",
       "quality": 2,
-      "pool": "devil",
+      "pool": "secret",
       "quote": "Lost brother",
+      "type": "Active",
       "tags": [
-        "devil"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_703.png"
+        "heart",
+        "herz",
+        "secret"
+      ]
     },
     {
       "id": "704",
-      "name": "Number Magnet",
-      "description": "Higher devil room chance, no Krampus",
+      "name": "Berserk!",
+      "description": "When activated, Isaac's tears are replaced by a bone sword and he goes on a killing rampage, gaining +0.4 Speed, +3 Flat Damage Up for 5 seconds The sword deals x3 damage if used at close range, or x1.5 damage if charged up and thrown Clearing rooms doesn't charge this item - charge is added equal to damage taken by enemies. This includes all sources of damage, including environmental damage to enemies Killing an enemy while berserk will increase the duration of the effect by 1 second You don't die while in Berserk mode, but taking lethal damage will kill you after the effect wears off The bone sword from this item is similar to Donkey Jawbone from Antibirth Tainted Samson starts with a passive version of this item Recharge Time: Enemy damage taken = charge",
       "quality": 2,
       "pool": "devil",
       "quote": "Rip and tear",
+      "type": "Active",
       "tags": [
-        "devil"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_704.png"
+        "devil",
+        "dmg up"
+      ]
     },
     {
       "id": "705",
-      "name": "Broken Syringe",
-      "description": "Random syringe item effect each room",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Dark Arts",
+      "description": "When used, Isaac turns into a ghost for 1 second and his speed goes up to maximum (2.0). During this time he can walk over enemies to mark them for death. When the effect wears off, Isaac quickly runs between each marked enemy, dealing high damage to each one rapidly (roughly x2.5 your tear damage) The damage caused by this effect scales up with every target it hits in a row Tainted Judas starts with this item Recharge Time: 7 seconds",
+      "quality": 2,
+      "pool": "devil",
       "quote": "One with the shadows",
+      "type": "Active",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_705.png"
+        "devil"
+      ]
     },
     {
       "id": "706",
-      "name": "Short Fuse",
-      "description": "Bombs explode faster",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Abyss",
+      "description": "When used, Abyss consumes all pedestal items in the current room and converts them into Red attack flies Red attack flies will charge across the room in the same direction Isaac is shooting, dealing contact damage to enemies equal to Isaac's tear damage The flies don't block enemy shots, but this also means they never die and stay with Isaac forever Tainted Apollyon starts with this item Recharge Time: 4 rooms",
+      "quality": 4,
+      "pool": "devil",
       "quote": "Come forth from the depths",
+      "type": "Active",
       "tags": [
-        "bomb",
-        "bombe",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_706.png"
+        "devil"
+      ]
     },
     {
       "id": "707",
-      "name": "Gigante Bean",
-      "description": "Massive knockback fart",
+      "name": "Supper",
+      "description": "+1 HP Up",
       "quality": 1,
-      "pool": "treasure",
+      "pool": "boss",
       "quote": "HP up",
+      "type": "Passive",
       "tags": [
-        "hp up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_707.png"
+        "boss",
+        "hp up"
+      ]
     },
     {
       "id": "708",
-      "name": "A Lighter",
-      "description": "Fires start in rooms when entering",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Stapler",
+      "description": "+1.0 Damage Up Staples one of Isaac's eyes shut, meaning he only shoots tears from one eye. This means some effects such as R U A WIZARD pills only fire tears in one direction",
+      "quality": 3,
+      "pool": "boss",
       "quote": "DMG up",
+      "type": "Passive",
       "tags": [
+        "auge",
+        "boss",
         "dmg up",
-        "feuer",
-        "fire",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_708.png"
+        "eye",
+        "pill",
+        "pille"
+      ]
     },
     {
       "id": "709",
-      "name": "Broken Padlock",
-      "description": "Bombs open locked doors and chests",
+      "name": "Suplex!",
+      "description": "When used, you charge forwards for a second. If you touch an enemy in that time, Isaac will pick it up and slam it on the ground, killing it and sending a shockwave around the impact In the brief period while holding the enemy you can move a target to decide where it lands Actually does work on bosses! However after the attack you end up near the boss, which puts you in danger of taking damage too Scales in damage and area of effect with the player's size Recharge Time: 8 seconds",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "crane",
       "quote": "Angel breaker",
+      "type": "Active",
       "tags": [
-        "angel",
-        "bomb",
-        "bombe",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_709.png"
+        "crane"
+      ]
     },
     {
       "id": "710",
-      "name": "Myosotis",
-      "description": "Uncollected pickups carry to next floor",
-      "quality": 2,
+      "name": "Bag of Crafting",
+      "description": "When used will do a swipe attack in any direction. Can be used to store up to 8 consumables in, such as hearts, coins, keys, bombs, cards etc When the bag has 8 items you can hold down the activate button for 2 seconds to craft yourself a brand new random item Bag of Crafting's recipes are based on your current seed, but there are some fixed recipes that exist in every run, e.g. 8 coins = Slot Machine While playing as Tainted Cain you get a visual interface to see what items are in the bag, allowing you to see what item will be created and swap out specific consumables Has other uses - Will deal 3 damage to enemies it hits, and can be used to quickly push bombs and objects across rooms Tainted Cain starts with this item, but can be used by any character after unlocking it and finding it in the item room Cannot be used to craft another Bag of Crafting! Recharge Time: Instant",
+      "quality": 3,
       "pool": "treasure",
       "quote": "Make your destiny",
+      "type": "Active",
       "tags": [
+        "bomb",
+        "bombe",
+        "heart",
+        "herz",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_710.png"
+      ]
     },
     {
       "id": "711",
-      "name": "'M",
-      "description": "Reroll your active item",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Flip",
+      "description": "While holding flip, a ghost item will appear behind item pedestals upon entering Item Rooms and Shop that cannot be interacted with When activated, all real items in the room will be swapped with the ghost items behind them The ghost item stays there even if you take the regular item, allowing you to use Flip to get both of them Does nothing with item pedestals that don't have a ghost item behind them When playing as Tainted Lazarus, activating Flip also changes you between Lazarus and Dead Lazarus Tainted Lazarus starts with this item, but can be used by any character after unlocking it and finding it in the item room Recharge Time: 6 rooms",
+      "quality": 4,
+      "pool": "shop",
       "quote": "Life and death",
+      "type": "Active",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_711.png"
+        "shop"
+      ]
     },
     {
       "id": "712",
-      "name": "Panic Button",
-      "description": "Active item triggers on damage",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Lemegeton",
+      "description": "When used, gives you an orbital flame which represents another random passive item in the game. While you have this flame you also have that item's effect The flame deals double your tear damage to any enemies that touch it, but if it takes too much damage the flame will disappear and you lose the item's effect Tainted Bethany starts with this item Wisps are randomly chosen from Item Room, Boss Room and Shop item pools, with a 25% chance to pick the same pool as the current room Counts as 1 of 3 book items needed towards the Bookworm transformation. Recharge Time: 6 rooms",
+      "quality": 3,
+      "pool": "devil",
       "quote": "Item summoner",
+      "type": "Active",
       "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_712.png"
+        "devil",
+        "feuer",
+        "fire",
+        "orbital"
+      ]
     },
     {
       "id": "713",
       "name": "Sumptorium",
-      "description": "When used, removes half a heart of health and creates a clot familiar Clot familiars follow Isaac's exact movements including flight, firing tears and tear effects",
+      "description": "When used, removes half a heart of health and creates a clot familiar Clot familiars follow Isaac's exact movements including flight, firing tears and tear effects Holding down the swap button will cause all your clots to stay in place Works differently as Tainted Eve - instead clots are created by firing for 2 seconds, down to a minimum of half a red heart. Using Sumptorium as her will then cause all Clots to be consumed and return your hearts back to you. Clots returning back to Eve deal 3x damage as they suck back in The type of heart consumed to create a clot will give it different abilities: Soul Hearts = More health, Black Hearts = Dark Matter effect, Eternal Hearts = Sacred Heart effect, Gold Hearts = Midas Touch effect, Bone Hearts = Compound Fracture effect, Rotten Hearts = Less health Tainted Eve starts with this item, but can be used by any character after unlocking it and finding it in the item room This item comes along with Tainted Eve. The achievement 'Sumptorium' is unlocked by defeating Delirium as Tainted Eve Recharge Time: 10 seconds",
       "quality": 3,
       "pool": "treasure",
       "quote": "Return",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_713.png",
+      "type": "Active",
       "tags": [
         "familiar",
         "flight",
@@ -9800,50 +9727,53 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "714",
-      "name": "RC Remote",
-      "description": "Control familiar movement directly",
-      "quality": 1,
+      "name": "Recall",
+      "description": "When used, this will retreive the Tainted Forgotten's skeleton back to its owner's hands from any distance Tainted Forgotten's Birthright effect. Cannot be obtained and has no use for any other character Birthright is a Shop item that has unique effects depending on what character you're playing as Recharge Time: 3 seconds",
+      "quality": 0,
       "pool": "treasure",
       "quote": "Come back",
+      "type": "Active",
       "tags": [
-        "familiar",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_714.png"
+      ]
     },
     {
       "id": "715",
-      "name": "Found Soul",
-      "description": "Ghost familiar that copies your actions, dies in one hit",
-      "quality": 2,
-      "pool": "angel",
+      "name": "Hold",
+      "description": "This is the item Tainted Blue Baby (???) uses as his main mechanic Killing or damaging enemies spawns various poops, which add to his collection. Pressing the bomb button will put the next poop into the 'Hold' jar. Pressing it again allows you to throw it at enemies. Each poop has random effects like Butt Bombs, Fire Poops etc Tainted Blue Baby starts with this item, and is the only one who can use it Recharge Time: Instant",
+      "quality": 0,
+      "pool": "treasure",
       "quote": "Saved for later",
+      "type": "Active",
       "tags": [
-        "angel",
-        "familiar"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_715.png"
+        "bomb",
+        "bombe",
+        "treasure"
+      ]
     },
     {
       "id": "716",
       "name": "Keeper's Sack",
-      "description": "Spawns 3 random coins and a key when picked up Buying items from the shop gives you random stat upgrades. The more you spend the higher the stat increase",
+      "description": "Spawns 3 random coins and a key when picked up Buying items from the shop gives you random stat upgrades. The more you spend the higher the stat increase Possible stats include Speed, Damage and Range 15c items give all 3 stats: +1 Damage Up, +0.03 or +0.06 Speed Up, +0.25 or +0.5 Range Up 5c items give 1 or 2 stats: +0.5 Damage Up **OR** +0.25 Range and +0.03 Speed Up",
       "quality": 3,
       "pool": "shop",
       "quote": "Spending power",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_716.png",
+      "type": "Passive",
       "tags": [
-        "shop"
+        "dmg up",
+        "range up",
+        "shop",
+        "speed up"
       ]
     },
     {
       "id": "717",
       "name": "Keeper's Kin",
-      "description": "While in a room with enemies, blue spiders will randomly spawn from objects in the room (e.g. rocks, pots, stone blocks) All rocks spawn 0-2 blue spiders when destroyed",
+      "description": "While in a room with enemies, blue spiders will randomly spawn from objects in the room (e.g. rocks, pots, stone blocks) All rocks spawn 0-2 blue spiders when destroyed Counts as 1 of 3 spider items needed towards the Spider Baby transformation.",
       "quality": 2,
       "pool": "secret",
       "quote": "Under a rock",
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_717.png",
+      "type": "Passive",
       "tags": [
         "secret",
         "spider",
@@ -9852,199 +9782,198 @@ window.ISAAC_FALLBACK = {
     },
     {
       "id": "719",
-      "name": "Swarm",
-      "description": "8 bone orbital flies that respawn as regular flies",
+      "name": "Keeper's Box",
+      "description": "When used, spawns a random shop item or consumable, however you have to pay the relevant cost to pick it up Can include anything that would appear in the shop Recharge Time: 4 rooms",
       "quality": 2,
-      "pool": "treasure",
+      "pool": "shop",
       "quote": "Portable shop",
+      "type": "Active",
       "tags": [
-        "fliege",
-        "fly",
-        "orbital",
-        "shop",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_719.png"
+        "shop"
+      ]
     },
     {
       "id": "720",
-      "name": "Mini Mush",
-      "description": "Speed up, size down, range up",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Everything Jar",
+      "description": "With every bar of charge this item has, a different consumable is shown inside the Jar. 1 = poop, 2 = penny, 3 = bomb, 4 = key, 5 = red heart, 6 = pill, 7 = card, 8 = soul heart, 9 = gold heart, 10 = gold key, 11 = gold bomb At the full 12 charges, a completely random effect will happen. It can be anything including spawning a bunch of consumables, spawning a glitched pedestal item, creating a bunch of light beams, spawning troll bombs or nothing at all Recharge Time: 12 rooms",
+      "quality": 3,
+      "pool": "crane",
       "quote": "Anything is possible",
-      "tags": [
-        "range up",
-        "speed up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_720.png"
-    },
-    {
-      "id": "721",
-      "name": "Odd Mushroom (Thin)",
-      "description": "Tears and speed up, damage down",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Isaac and his mother lived alone in a small house on a hill",
-      "tags": [
-        "speed up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_721.png"
-    },
-    {
-      "id": "722",
-      "name": "Odd Mushroom (Large)",
-      "description": "Damage and HP up, speed down",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Repent",
-      "tags": [
-        "hp up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_722.png"
-    },
-    {
-      "id": "723",
-      "name": "Blue Cap",
-      "description": "HP up, tears up, shot speed down",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "-1",
-      "tags": [
-        "hp up",
-        "shot speed",
-        "tears up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_723.png"
-    },
-    {
-      "id": "724",
-      "name": "Liberty Cap",
-      "description": "Chance for random mushroom effect per room",
-      "quality": 2,
-      "pool": "boss",
-      "quote": "Thick blooded",
-      "tags": [
-        "blood",
-        "blut",
-        "boss"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_724.png"
-    },
-    {
-      "id": "725",
-      "name": "Experimental Treatment",
-      "description": "Randomly increases and decreases stats",
-      "quality": 1,
-      "pool": "treasure",
-      "quote": "Your stomach rumbles",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_725.png"
-    },
-    {
-      "id": "726",
-      "name": "Mom's Contacts",
-      "description": "Chance to shoot petrifying tears",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Double tap sneeze",
-      "tags": [
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_726.png"
-    },
-    {
-      "id": "727",
-      "name": "Harlequin Baby",
-      "description": "Familiar that shoots two tears at once",
-      "quality": 2,
-      "pool": "treasure",
-      "quote": "Spooky blast +5 bombs",
+      "type": "Active",
       "tags": [
         "bomb",
         "bombe",
-        "familiar",
+        "crane",
+        "heart",
+        "herz",
+        "pill",
+        "pille"
+      ]
+    },
+    {
+      "id": "721",
+      "name": "TMTRAINER",
+      "description": "When picked up, all future items become 'glitched', causing them to become random combinations of 2-3 effects based on other items Glitched items can be passive or active and are completely randomly generated with infinite possibilities (similar to other 'Randomizer' games) The ratio of active to passive item effects given is 1/4 Random effects combine effects that exist on other items, and assign them to a random event (e.g. on enemy death, on room clear, on damage taken etc.)",
+      "quality": 0,
+      "pool": "secret",
+      "quote": "Isaac and his mother lived alone in a small house on a hill",
+      "type": "Passive",
+      "tags": [
+        "secret"
+      ]
+    },
+    {
+      "id": "722",
+      "name": "Anima Sola",
+      "description": "When used, it puts the closes enemy in chains for 5 seconds, preventing it from moving. You can release the enemy early by using it again Tainted Jacob starts with this item. While playing as him Anima Sola will always target Dark Esau. Releasing Dark Esau will cause him to charge directly at Jacob and deal damage to anything in his path. If used in a room with no enemies, Dark Esau will instantly spawn Will chain up to two targets if you have Car Battery, if only one valid target is present it will be chained for twice the duration Recharge Time: 15 seconds",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Repent",
+      "type": "Active",
+      "tags": [
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_727.png"
+      ]
+    },
+    {
+      "id": "723",
+      "name": "Spindown Dice",
+      "description": "Rerolls all pedestal items, lowering all their internal item IDs by 1 For example: Brimstone's ID = 118, so it would be rerolled into Dead Bird (ID = 117) Sad Onion (ID = 1) will reroll into nothing There are some gaps in item IDs which are skipped if no item exists, or will reroll into unexpected items if hidden items are present at that ID. For example rerolling Plan C (ID = 475) changes it into the Broken Glass Cannon, which is a hidden item with ID = 474 Items that are yet to be unlocked will also be skipped over, preventing you from getting items you don't have access to yet Recharge Time: 6 rooms",
+      "quality": 4,
+      "pool": "secret",
+      "quote": "-1",
+      "type": "Active",
+      "tags": [
+        "laser",
+        "secret"
+      ]
+    },
+    {
+      "id": "724",
+      "name": "Hypercoagulation",
+      "description": "Upon taking damage you have a chance to drop the heart that you just lost. It gives you 2 seconds to pick it up again to re-heal, before it disappears",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Thick blooded",
+      "type": "Passive",
+      "tags": [
+        "heart",
+        "herz",
+        "treasure"
+      ]
+    },
+    {
+      "id": "725",
+      "name": "IBS",
+      "description": "Whenever you deal damage to an enemy, has a chance to give the effect of one of Tainted ???'s unique poops Corn poop - Spawns a blue fly every 2 seconds Flaming poop - Leaves behind fire that damages enemies Stinky poop - Emits a toxic cloud Black poop - Creates slowing black creep. Confuses all enemies briefly when destroyed White poop - Same effect as Hallowed Ground Stone poop - Deals extra thrown damage, can hit multiple enemies. Takes more shots before breaking Bomb poop - Throws a butt bomb that explodes after 2 seconds",
+      "quality": 0,
+      "pool": "treasure",
+      "quote": "Your stomach rumbles",
+      "type": "Passive",
+      "tags": [
+        "bomb",
+        "bombe",
+        "fliege",
+        "fly",
+        "treasure"
+      ]
+    },
+    {
+      "id": "726",
+      "name": "Hemoptysis",
+      "description": "Allows you to quickly double tap a shoot button to sneeze on nearby enemies, dealing x1.5 your tear damage and pushing them back slightly If an enemy is pushed into a wall or object it takes 10 damage",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Double tap sneeze",
+      "type": "Passive",
+      "tags": [
+        "treasure"
+      ]
+    },
+    {
+      "id": "727",
+      "name": "Ghost Bombs",
+      "description": "+5 Bombs Bombs become spectral and can now pass through objects Bombs spawn a friendly white soul, which will hunt down other enemies, dealing contact damage which scales with your tear damage After 10 seconds the white soul explodes dealing 7 damage to nearby enemies. Isaac doesn't take damage from this effect",
+      "quality": 2,
+      "pool": "treasure",
+      "quote": "Spooky blast +5 bombs",
+      "type": "Passive",
+      "tags": [
+        "bomb",
+        "bombe",
+        "spectral",
+        "treasure"
+      ]
     },
     {
       "id": "728",
-      "name": "Headless Baby",
-      "description": "Familiar that leaves blood trail",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Gello",
+      "description": "Spawns a familiar that's attached via an Umbilical Cord, but will move and shoot in the same direction Isaac is shooting When activated you first need to throw the familiar, which deals x3 your tear damage to any enemies it touches Gello's tears deal x0.75 your tear damage (x1.0 if Lilith) Can be used multiple times per room to spawn more familiars, however they only last for the current room Recharge Time: 2 rooms",
+      "quality": 3,
+      "pool": "devil",
       "quote": "Demonic gestation",
+      "type": "Active",
       "tags": [
-        "blood",
-        "blut",
-        "familiar",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_728.png"
+        "devil",
+        "familiar"
+      ]
     },
     {
       "id": "729",
-      "name": "Little Steven",
-      "description": "Familiar that shoots homing tears",
-      "quality": 1,
+      "name": "Decap Attack",
+      "description": "When used, this item allows you to throw your head where it will sit as a stationary sentry firing bullets until you walk over and pick it up again Throwing Isaac's head deals 24 damage to anything it hits while being thrown Your hitbox remains with the body. Enemies touching the head don't hurt Isaac Recharge Time: 4 seconds",
+      "quality": 2,
       "pool": "treasure",
       "quote": "Chuck away!",
+      "type": "Active",
       "tags": [
-        "familiar",
-        "homing",
         "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_729.png"
+      ]
     },
     {
       "id": "730",
-      "name": "Mongo Baby",
-      "description": "Familiar that copies your other familiars' attacks",
-      "quality": 2,
-      "pool": "treasure",
+      "name": "Glass Eye",
+      "description": "+0.75 Damage Up +1 Luck Up",
+      "quality": 3,
+      "pool": "boss",
       "quote": "DMG + luck up",
+      "type": "Passive",
       "tags": [
-        "familiar",
-        "luck",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_730.png"
+        "auge",
+        "boss",
+        "dmg up",
+        "eye",
+        "luck"
+      ]
     },
     {
       "id": "731",
-      "name": "Sister Maggy",
-      "description": "Familiar that shoots blood tears",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Stye",
+      "description": "+28% Damage Up (right eye only) +7 Range Up (right eye only) -0.3 Shot Speed Down (right eye only)",
+      "quality": 2,
+      "pool": "boss",
       "quote": "DMG + range up",
+      "type": "Passive",
       "tags": [
-        "blood",
-        "blut",
-        "familiar",
+        "auge",
+        "boss",
+        "dmg up",
+        "eye",
         "range up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_731.png"
+        "shot speed"
+      ]
     },
     {
       "id": "732",
-      "name": "E. Coli",
-      "description": "Touch enemies to turn them into poop",
-      "quality": 1,
-      "pool": "treasure",
+      "name": "Mom's Ring",
+      "description": "+1 Damage Up Drops 1 random rune or soul stone when picked up Counts as 1 of 3 mom items needed towards the Mom transformation",
+      "quality": 3,
+      "pool": "shop",
       "quote": "DMG up",
+      "type": "Passive",
       "tags": [
         "dmg up",
-        "treasure"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Hyphen-ated/RebirthItemTracker/master/collectibles/collectibles_732.png"
+        "shop"
+      ]
     }
   ],
   "paths": [
@@ -13433,35 +13362,27 @@ window.ISAAC_FALLBACK = {
     {
       "id": "1",
       "name": "Swallowed Penny",
-      "description": "Each time you get hit, you drop a coin or two Unlock this item by beating Challenge #15 (Slow Roll)",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/001.png",
-      "tags": []
+      "description": "Each time you get hit, you drop a coin or two",
+      "quote": "Gulp!"
     },
     {
       "id": "2",
       "name": "Petrified Poop",
-      "description": "While held, Isaac has a significantly higher chance to find drops when breaking poops AAA Battery",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/002.png",
-      "tags": []
+      "description": "While held, Isaac has a significantly higher chance to find drops when breaking poops",
+      "quote": "It feels lucky?"
     },
     {
       "id": "3",
       "name": "AAA Battery",
-      "description": "Lowers your spacebar item charge rate by 1 Cannot lower the charge of your spacebar item below 1 room",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/003.png",
-      "tags": []
+      "description": "Lowers your spacebar item charge rate by 1 Cannot lower the charge of your spacebar item below 1 room For example, you will now be able to use a 3 room charge item after 2 rooms instead",
+      "quote": "Trickle charge"
     },
     {
       "id": "4",
       "name": "Broken Remote",
       "description": "Does the teleport effect every time you use your current spacebar item Can be used infinitely every room if you have Guppy's Paw and no red heart containers (Can be exploited to get to the boss room without clearing any other rooms)",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/004.png",
+      "quote": "It's broken",
       "tags": [
-        "boss",
         "heart",
         "herz",
         "hp up"
@@ -13470,9 +13391,8 @@ window.ISAAC_FALLBACK = {
     {
       "id": "5",
       "name": "Purple Heart",
-      "description": "Higher chance for champion enemies while held Broken Magnet",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/005.png",
+      "description": "Higher chance for champion enemies while held",
+      "quote": "Challenge up",
       "tags": [
         "heart",
         "herz"
@@ -13482,114 +13402,88 @@ window.ISAAC_FALLBACK = {
       "id": "6",
       "name": "Broken Magnet",
       "description": "Has a partial Magneto effect and will attract coins, pulling them into Isaac from a distance Does not attract other pickups like the full Magneto item does",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/006.png",
-      "tags": []
+      "quote": "It kinda works"
     },
     {
       "id": "7",
       "name": "Rosary Bead",
       "description": "Increases your chances to find an Angel Room instead of a Devil Room Normally there is a 50%/50% chance of a Angel or Devil room with if a door spawns after the boss. The Rosary Bead changes this to a 75%/25% chance of an angel or devil room (respectively)",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/007.png",
-      "tags": [
-        "angel",
-        "boss",
-        "devil"
-      ]
+      "quote": "Faith up"
     },
     {
       "id": "8",
       "name": "Cartridge",
       "description": "When Isaac takes damage, there is a chance he will gain the Gamekid effect, turning him invincible and dealing contact damage to any enemies he touches The chance to activate the invincibility effect is affected by your luck stat and at +38 Luck it will activate every time you get hit",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/008.png",
+      "quote": "I remember these",
       "tags": [
-        "luck"
+        "shield"
       ]
     },
     {
       "id": "9",
       "name": "Pulse Worm",
       "description": "Tears shrink and grow in size as they go across the room Does not appear to affect your damage and only the hitbox size of tears",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/009.png",
-      "tags": []
+      "quote": "Wub wub!"
     },
     {
       "id": "10",
       "name": "Wiggle Worm",
-      "description": "Tears now move in a wave fashion across the room Grants spectral tears",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/010.png",
+      "description": "Tears now move in a wave fashion across the room Grants spectral tears +0.4 Tears up",
+      "quote": "Wiggle wiggle!",
       "tags": [
-        "spectral"
+        "spectral",
+        "tears up"
       ]
     },
     {
       "id": "11",
       "name": "Ring Worm",
-      "description": "While held, tears move in a spiral pattern across the screen at high speed Grants spectral tears",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/011.png",
+      "description": "While held, tears move in a spiral pattern across the screen at high speed Grants spectral tears +0.4 Tears up Effectively increases your range due to the tear pattern",
+      "quote": "Woop woop!",
       "tags": [
-        "spectral"
+        "spectral",
+        "tears up"
       ]
     },
     {
       "id": "12",
       "name": "Flat Worm",
       "description": "Tears become flat and disc shaped giving them a larger hitbox Higher knockback effect with your tears",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/012.png",
-      "tags": []
+      "quote": "Blub blub!"
     },
     {
       "id": "13",
       "name": "Store Credit",
       "description": "While this trinket is held, all items in the Shop cost 0 coins After buying any 0 cent item in the Shop, the trinket disappears",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/013.png",
-      "tags": [
-        "shop"
-      ]
+      "quote": "YES!"
     },
     {
       "id": "14",
       "name": "Callus",
-      "description": "Isaac no longer takes damage from walking over spikes and blood creep while this trinket is held Lucky Rock",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/014.png",
+      "description": "Isaac no longer takes damage from walking over spikes and blood creep while this trinket is held",
+      "quote": "Your feet feel stronger",
       "tags": [
         "blood",
-        "blut",
-        "luck"
+        "blut"
       ]
     },
     {
       "id": "15",
       "name": "Lucky Rock",
-      "description": "33% chance to drop a coin for every rock that you destroy Unlock this item by destroying 100 rocks",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/015.png",
-      "tags": [
-        "luck"
-      ]
+      "description": "33% chance to drop a coin for every rock that you destroy",
+      "quote": "There's something inside"
     },
     {
       "id": "16",
       "name": "Mom's Toenail",
       "description": "Mom's Leg will now appear every 20 seconds and stomp down randomly in the room dealing 300 damage to enemies Be warned though, Mom's leg can also stomp and hurt Isaac too!",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/016.png",
-      "tags": []
+      "quote": "???"
     },
     {
       "id": "17",
       "name": "Black Lipstick",
-      "description": "Increases the chance for Black hearts to spawn Unlock this item by beating the Dark Room with Eve",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/017.png",
+      "description": "Increases the chance for Black hearts to spawn",
+      "quote": "Evil up",
       "tags": [
         "heart",
         "herz"
@@ -13599,11 +13493,8 @@ window.ISAAC_FALLBACK = {
       "id": "18",
       "name": "Bible Tract",
       "description": "Gives you a higher chance of eternal hearts Contrary to popular belief, the Bible Tract doesn't allow Angel Rooms to appear after paying for a Devil Deal",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/018.png",
+      "quote": "Faith up",
       "tags": [
-        "angel",
-        "devil",
         "heart",
         "herz"
       ]
@@ -13611,17 +13502,14 @@ window.ISAAC_FALLBACK = {
     {
       "id": "19",
       "name": "Paper Clip",
-      "description": "Allows you to unlock golden chests without needing a key Does not work on locked rooms",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/019.png",
-      "tags": []
+      "description": "Allows you to unlock golden chests without needing a key Does not work on locked rooms Cain starts with this trinket after donating 68 coins to the Greed Donation Machine",
+      "quote": "Master of lockpicking"
     },
     {
       "id": "20",
       "name": "Monkey Paw",
       "description": "When you reach half a heart of life remaining, a black heart will spawn After three black hearts have spawned, the trinket dissapears",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/020.png",
+      "quote": "Wish granted",
       "tags": [
         "heart",
         "herz"
@@ -13630,64 +13518,62 @@ window.ISAAC_FALLBACK = {
     {
       "id": "21",
       "name": "Mysterious Paper",
-      "description": "Imitates the behaviours of some of the other 'paper' items/trinkets A Missing Page: When taking damage, Isaac has a chance to deal damage to the entire room in a Necronomicon style effect",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/021.png",
-      "tags": []
+      "description": "Imitates the behaviours of some of the other 'paper' items/trinkets A Missing Page: When taking damage, Isaac has a chance to deal damage to the entire room in a Necronomicon style effect Has a chance to trigger the Polaroid or Negative effect every time you take damage with half a red heart or less Missing Poster: Dying in a sacrifice room while holding this trinket will reveal a puzzle piece on the death screen. Finding all the puzzle pieces will help you to reveal the final secret, unlocking the hidden character 'The Lost' If held when you touch the chest after the Satan or Isaac fight and you don't have the relevant item to go to the next floor (Polaroid or Negative), you have a small chance to be taken there anyway",
+      "quote": "???",
+      "tags": [
+        "heart",
+        "herz"
+      ]
     },
     {
       "id": "22",
       "name": "Daemon's Tail",
-      "description": "80% of heart drops are replaced with keys Hearts turn into black hearts where possible. This doesn't convert hearts that dropped before picking up this trinket, and doesn't apply to set heart drops, i.e. the eternal hearts that drop in angel themed super secret rooms",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/022.png",
+      "description": "80% of heart drops are replaced with keys Hearts turn into black hearts where possible. This doesn't convert hearts that dropped before picking up this trinket, and doesn't apply to set heart drops, i.e. the eternal hearts that drop in angel themed super secret rooms All heart drops from Ace of Hearts will be Black Hearts",
+      "quote": "Evil up",
       "tags": [
-        "angel",
         "heart",
-        "herz",
-        "secret"
+        "herz"
       ]
     },
     {
       "id": "23",
       "name": "Missing Poster",
-      "description": "Dying in a sacrifice room while holding this trinket will unlock The Lost character After The Lost is unlocked, dying anywhere with this trinket will bring you back to life as The Lost and the trinket will be deleted",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/023.png",
-      "tags": []
+      "description": "Dying in a sacrifice room while holding this trinket will unlock The Lost character After The Lost is unlocked, dying anywhere with this trinket will bring you back to life as The Lost and the trinket will be deleted When playing as Tainted Lost, you don't swap to being regular Lost, it simply acts as an extra life",
+      "quote": "???",
+      "tags": [
+        "hp up"
+      ]
     },
     {
       "id": "24",
       "name": "Butt Penny",
       "description": "Everytime you pick up a coin, you fart, inflicting poison damage to nearby enemies Greatly increases the chance of coins dropping from poops",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/024.png",
-      "tags": []
+      "quote": "Wealth of gas",
+      "tags": [
+        "poison"
+      ]
     },
     {
       "id": "25",
       "name": "Mysterious Candy",
-      "description": "Causes Isaac to create poops randomly Hook Worm",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/025.png",
-      "tags": []
+      "description": "Causes Isaac to create poops randomly",
+      "quote": "Uh-oh!"
     },
     {
       "id": "26",
       "name": "Hook Worm",
-      "description": "Tears now move forwards at right angles, shifting left and right across the room +0.4 Tears up",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/026.png",
+      "description": "Tears now move forwards at right angles, shifting left and right across the room +0.4 Tears up Grants spectral tears Increases your range stat by +10.0 while held but due to the fire pattern, your tears travel a similar distance to normal",
+      "quote": "Zip zoop!",
       "tags": [
+        "spectral",
         "tears up"
       ]
     },
     {
       "id": "27",
       "name": "Whip Worm",
-      "description": "+0.5 Shot Speed Up Your tears now whip across the room at a very high shot speed",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/027.png",
+      "description": "+0.5 Shot Speed Up Your tears now whip across the room at a very high shot speed Shot speed gives your tears more effective range, but doesn't increase your range stat directly",
+      "quote": "Wooosh!",
       "tags": [
         "shot speed",
         "speed up"
@@ -13696,9 +13582,8 @@ window.ISAAC_FALLBACK = {
     {
       "id": "28",
       "name": "Broken Ankh",
-      "description": "Has a 22.22% chance to respawn with 3 Soul hearts as Blue Baby when you die Unlock this item by beating Satan with Lazarus",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/028.png",
+      "description": "Has a 22.22% chance to respawn with 3 Soul hearts as Blue Baby when you die",
+      "quote": "Eternal life?",
       "tags": [
         "heart",
         "herz"
@@ -13707,12 +13592,9 @@ window.ISAAC_FALLBACK = {
     {
       "id": "29",
       "name": "Fish Head",
-      "description": "Everytime Isaac takes damage, one blue fly will spawn Pinky Eye",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/029.png",
+      "description": "Everytime Isaac takes damage, one blue fly will spawn",
+      "quote": "It stinks",
       "tags": [
-        "auge",
-        "eye",
         "fliege",
         "fly"
       ]
@@ -13720,24 +13602,20 @@ window.ISAAC_FALLBACK = {
     {
       "id": "30",
       "name": "Pinky Eye",
-      "description": "Isaac's tears have a chance to poison enemies The poison effect leaves a damage over time, which deals 4 or 6 damage per tick",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/030.png",
+      "description": "Isaac's tears have a chance to poison enemies The poison effect leaves a damage over time, which deals 4 or 6 damage per tick The chance to poison enemies is affected by your luck stat and at +18 Luck it will activate every time",
+      "quote": "Poison shots",
       "tags": [
         "auge",
-        "eye"
+        "eye",
+        "poison"
       ]
     },
     {
       "id": "31",
       "name": "Push Pin",
       "description": "Isaac now has a chance to make a spectral and piercing tear The chance to fire a piercing tear is affected by your luck stat and at +18 Luck it will activate every time",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/031.png",
+      "quote": "Piercing shots",
       "tags": [
-        "feuer",
-        "fire",
-        "luck",
         "piercing",
         "spectral"
       ]
@@ -13746,16 +13624,13 @@ window.ISAAC_FALLBACK = {
       "id": "32",
       "name": "Liberty Cap",
       "description": "While held, this trinket gives a random mushroom effect each room Possible mushrooms include: Mini Mush, Odd Mushroom (Thin), Odd Mushroom (Thick), The Compass",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/032.png",
-      "tags": []
+      "quote": "Touch fuzzy, get dizzy!"
     },
     {
       "id": "33",
       "name": "Umbilical Cord",
       "description": "While at 1/2 a red heart of health, you gain a Little Steve familiar that follows you and shoots homing tears Umbilical Cord has a high chance to spawn a Gemini familiar for the room when Isaac takes damage. This effect is stackable",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/033.png",
+      "quote": "Fetal protection",
       "tags": [
         "familiar",
         "heart",
@@ -13766,9 +13641,8 @@ window.ISAAC_FALLBACK = {
     {
       "id": "34",
       "name": "Child's Heart",
-      "description": "Gives Isaac a higher chance to find hearts from drops after clearing a room and from chests Curved Horn",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/034.png",
+      "description": "Gives Isaac a higher chance to find hearts from drops after clearing a room and from chests",
+      "quote": "It calls out to its brothers",
       "tags": [
         "heart",
         "herz"
@@ -13777,9 +13651,8 @@ window.ISAAC_FALLBACK = {
     {
       "id": "35",
       "name": "Curved Horn",
-      "description": "+2 Damage Up Unlock this item by beating the Dark Room with Judas",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/035.png",
+      "description": "+2 Damage Up",
+      "quote": "DMG up",
       "tags": [
         "dmg up"
       ]
@@ -13787,17 +13660,14 @@ window.ISAAC_FALLBACK = {
     {
       "id": "36",
       "name": "Rusted Key",
-      "description": "Gives Isaac a higher chance to find keys and chests Goat Hoof",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/036.png",
-      "tags": []
+      "description": "Gives Isaac a higher chance to find keys and chests",
+      "quote": "It feels lucky?"
     },
     {
       "id": "37",
       "name": "Goat Hoof",
-      "description": "+0.15 Speed Up Mom's Pearl",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/037.png",
+      "description": "+0.15 Speed Up",
+      "quote": "Speed up",
       "tags": [
         "speed up"
       ]
@@ -13805,9 +13675,8 @@ window.ISAAC_FALLBACK = {
     {
       "id": "38",
       "name": "Mom's Pearl",
-      "description": "Grants a secondary chance of any non-specific heart drop turning into a soul heart Cancer",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/038.png",
+      "description": "Grants a secondary chance of any non-specific heart drop turning into a soul heart",
+      "quote": "It emanates purity",
       "tags": [
         "heart",
         "herz"
@@ -13816,21 +13685,17 @@ window.ISAAC_FALLBACK = {
     {
       "id": "39",
       "name": "Cancer",
-      "description": "-2 Tear Delay (Tears Up) The fire rate increase is applied in such a way that the higher your tear stat is, the more effective Cancer is",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/039.png",
+      "description": "-2 Tear Delay (Tears Up) The fire rate increase is applied in such a way that the higher your tear stat is, the more effective Cancer is Breaks the normal fire rate cap, allowing you to fire faster than the normal maximum",
+      "quote": "Yay, cancer!",
       "tags": [
-        "feuer",
-        "fire",
         "tears up"
       ]
     },
     {
       "id": "40",
       "name": "Red Patch",
-      "description": "You have a chance when taking damage to gain +1.8 Damage Up for the rest of the room Match Stick",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/040.png",
+      "description": "You have a chance when taking damage to gain +1.8 Damage Up for the rest of the room",
+      "quote": "Your rage grows",
       "tags": [
         "dmg up"
       ]
@@ -13839,31 +13704,28 @@ window.ISAAC_FALLBACK = {
       "id": "41",
       "name": "Match Stick",
       "description": "Gives Isaac a higher chance to find bombs Picking up the Match Stick is the only way to remove the Tick trinket",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/041.png",
+      "quote": "Tastes like burning",
       "tags": [
         "bomb",
-        "bombe"
+        "bombe",
+        "feuer",
+        "fire"
       ]
     },
     {
       "id": "42",
       "name": "Lucky Toe",
-      "description": "+1 Luck Up while held Unlock this item by blowing up 20 shop keepers (this includes the ones in the secret room)",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/042.png",
+      "description": "+1 Luck Up while held",
+      "quote": "Luck up!",
       "tags": [
-        "luck",
-        "secret",
-        "shop"
+        "luck"
       ]
     },
     {
       "id": "43",
       "name": "Cursed Skull",
-      "description": "When you take damage while on 1/2 a heart, you are teleported back to the previous room Safety Cap",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/043.png",
+      "description": "When you take damage while on 1/2 a heart, you are teleported back to the previous room",
+      "quote": "Cursed?",
       "tags": [
         "heart",
         "herz"
@@ -13872,9 +13734,8 @@ window.ISAAC_FALLBACK = {
     {
       "id": "44",
       "name": "Safety Cap",
-      "description": "Gives Isaac a higher chance to find pills Ace of Spades",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/044.png",
+      "description": "Gives Isaac a higher chance to find pills",
+      "quote": "Don't swallow it",
       "tags": [
         "pill",
         "pille"
@@ -13883,17 +13744,14 @@ window.ISAAC_FALLBACK = {
     {
       "id": "45",
       "name": "Ace of Spades",
-      "description": "Gives Isaac a higher chance to find Tarot cards after clearing a room or from chests Isaac's Fork",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/045.png",
-      "tags": []
+      "description": "Gives Isaac a higher chance to find Tarot cards after clearing a room or from chests",
+      "quote": "Luck of the draw"
     },
     {
       "id": "46",
       "name": "Isaac's Fork",
-      "description": "After clearing a room, you have a chance to heal for half a red heart A Missing Page",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/046.png",
+      "description": "After clearing a room, you have a chance to heal for half a red heart",
+      "quote": "Consume thy enemy",
       "tags": [
         "heart",
         "herz"
@@ -13903,21 +13761,14 @@ window.ISAAC_FALLBACK = {
       "id": "48",
       "name": "A Missing Page",
       "description": "When taking damage, Isaac has a chance to deal damage to the entire room in a Necronomicon style effect The chance to damage enemies is affected by your luck stat and at +50 or more Luck it will activate 50% of the time",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/048.png",
-      "tags": [
-        "luck"
-      ]
+      "quote": "It glows with power"
     },
     {
       "id": "49",
       "name": "Bloody Penny",
-      "description": "Everytime you pick up a penny, you have a 25% chance to spawn a red heart on the floor Unlock this item by beating the Chest with Samson",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/049.png",
+      "description": "Everytime you pick up a penny, you have a 25% chance to spawn a red heart on the floor",
+      "quote": "Wealth of health",
       "tags": [
-        "blood",
-        "blut",
         "heart",
         "herz"
       ]
@@ -13925,57 +13776,43 @@ window.ISAAC_FALLBACK = {
     {
       "id": "50",
       "name": "Burnt Penny",
-      "description": "Everytime you pick up a coin, you have a 25% chance to spawn a bomb on the floor Unlock this item by beating Challenge #13 (Beans!)",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/050.png",
+      "description": "Everytime you pick up a coin, you have a 25% chance to spawn a bomb on the floor",
+      "quote": "Wealth of chaos",
       "tags": [
         "bomb",
-        "bombe",
-        "feuer",
-        "fire"
+        "bombe"
       ]
     },
     {
       "id": "51",
       "name": "Flat Penny",
-      "description": "Everytime you pick up a coin, you have a 25% chance to spawn a key Counterfeit Penny",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/051.png",
-      "tags": []
+      "description": "Everytime you pick up a coin, you have a 25% chance to spawn a key",
+      "quote": "Wealth of answers"
     },
     {
       "id": "52",
       "name": "Counterfeit Penny",
-      "description": "When picking up a coin, you have a chance to automatically gain one more coin Unlock this item by playing the shell game in the arcade 100 times",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/052.png",
-      "tags": []
+      "description": "When picking up a coin, you have a chance to automatically gain one more coin",
+      "quote": "Wealth of wealth"
     },
     {
       "id": "53",
       "name": "Tick",
       "description": "When you enter a boss room, immediately remove 15% health from the boss and restore 1 red heart This trinket cannot be dropped by holding the drop key or picking up other trinkets. The only way to remove it is via having a second trinket slot (Mom's Purse, Belly Button) or absorbing it (Marbles, Smelter, Gulp! pill) or picking up the Match Stick trinket, which will burn it off you",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/053.png",
+      "quote": "Well, that's not coming off",
       "tags": [
-        "boss",
-        "feuer",
-        "fire",
         "heart",
         "herz",
         "pill",
-        "pille",
-        "shop"
+        "pille"
       ]
     },
     {
       "id": "54",
       "name": "Isaac's Head",
-      "description": "While held, this trinket gives Isaac a familiar that shoots piercing tears that deal 3.5 damage Unlock this item by beating the Boss Rush with Isaac",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/054.png",
+      "description": "While held, this trinket gives Isaac a familiar that shoots piercing tears that deal 3.5 damage",
+      "quote": "Dead friend",
       "tags": [
-        "boss",
         "familiar",
         "piercing"
       ]
@@ -13983,9 +13820,8 @@ window.ISAAC_FALLBACK = {
     {
       "id": "55",
       "name": "Maggy's Faith",
-      "description": "At the start of a new floor, you get an eternal heart Unlock this item by beating the Dark Room with Maggy",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/055.png",
+      "description": "At the start of a new floor, you get an eternal heart",
+      "quote": "Faith's reward",
       "tags": [
         "heart",
         "herz"
@@ -13994,11 +13830,9 @@ window.ISAAC_FALLBACK = {
     {
       "id": "56",
       "name": "Judas' Tongue",
-      "description": "Items which cost 2 heart containers in a deal with the devil are reduced to only cost 1 heart Unlock this item by beating Satan with Judas",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/056.png",
+      "description": "Items which cost 2 heart containers in a deal with the devil are reduced to only cost 1 heart",
+      "quote": "Payment received",
       "tags": [
-        "devil",
         "heart",
         "herz",
         "hp up"
@@ -14007,9 +13841,8 @@ window.ISAAC_FALLBACK = {
     {
       "id": "57",
       "name": "???'s Soul",
-      "description": "Creates a familiar which moves around the room in a similar fashion to The Peeper, shooting tears in the same direction as Isaac Unlock this item by beating the Dark Room with Blue Baby",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/057.png",
+      "description": "Creates a familiar which moves around the room in a similar fashion to The Peeper, shooting tears in the same direction as Isaac",
+      "quote": "Imaginary friend",
       "tags": [
         "familiar"
       ]
@@ -14017,9 +13850,8 @@ window.ISAAC_FALLBACK = {
     {
       "id": "58",
       "name": "Samson's Lock",
-      "description": "When you kill an enemy, you have a chance to get +0.5 damage up for the current room Unlock this item by beating the Dark Room with Samson",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/058.png",
+      "description": "When you kill an enemy, you have a chance to get +0.5 damage up for the current room",
+      "quote": "Your rage grows",
       "tags": [
         "dmg up"
       ]
@@ -14027,9 +13859,8 @@ window.ISAAC_FALLBACK = {
     {
       "id": "59",
       "name": "Cain's Eye",
-      "description": "Gives a 25% chance to reveal map icons at the start of a new floor (The same effect as the Compass) Unlock this item by beating the Chest with Cain",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/059.png",
+      "description": "Gives a 25% chance to reveal map icons at the start of a new floor (The same effect as the Compass)",
+      "quote": "May you see your destination",
       "tags": [
         "auge",
         "eye"
@@ -14039,8 +13870,7 @@ window.ISAAC_FALLBACK = {
       "id": "60",
       "name": "Eve's Bird Foot",
       "description": "When you kill an enemy, you have a chance to spawn a transparent Dead Bird familiar The Dead Bird familiar deals 2 damage per tick to enemies while in contact with them",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/060.png",
+      "quote": "Revenge from beyond",
       "tags": [
         "familiar"
       ]
@@ -14049,24 +13879,19 @@ window.ISAAC_FALLBACK = {
       "id": "61",
       "name": "The Left Hand",
       "description": "Replaces chest spawns with red chests Doesn't replace chests that have already spawned",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/061.png",
-      "tags": []
+      "quote": "The left hand path reaps dark rewards"
     },
     {
       "id": "62",
       "name": "Shiny Rock",
-      "description": "While held, tinted rocks and rocks with a crawlspace below them will flash white every 10 seconds Safety Scissors",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/062.png",
-      "tags": []
+      "description": "While held, tinted rocks and rocks with a crawlspace below them will flash white every 10 seconds",
+      "quote": "It shines for it's brothers"
     },
     {
       "id": "63",
       "name": "Safety Scissors",
       "description": "Turns all troll bombs into bombs which you can pick up and use Super Troll bombs turn into 1+1 free double bomb pickups",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/063.png",
+      "quote": "Fuse cutter",
       "tags": [
         "bomb",
         "bombe"
@@ -14076,24 +13901,19 @@ window.ISAAC_FALLBACK = {
       "id": "64",
       "name": "Rainbow Worm",
       "description": "Gives your tears a random worm effect every few seconds The possible tear effects include: Whip Worm, Ring Worm, Wiggle Worm, Flat Worm, Hook Worm, Pulse Worm, Tape Worm and Lazy Worm",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/064.png",
-      "tags": []
+      "quote": "Bleep bloop blop"
     },
     {
       "id": "65",
       "name": "Tape Worm",
-      "description": "While held, Tape Worm doubles your range stat and halves your tear height stat Lazy Worm",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/065.png",
-      "tags": []
+      "description": "While held, Tape Worm doubles your range stat and halves your tear height stat",
+      "quote": "Floooooooooop!"
     },
     {
       "id": "66",
       "name": "Lazy Worm",
-      "description": "-0.4 Shot Speed Down Cracked Dice",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/066.png",
+      "description": "-0.4 Shot Speed Down",
+      "quote": "Pft",
       "tags": [
         "shot speed"
       ]
@@ -14101,33 +13921,26 @@ window.ISAAC_FALLBACK = {
     {
       "id": "67",
       "name": "Cracked Dice",
-      "description": "Every time you get hit, you have a chance to activate the D6, D20, D8, D10 or D12 effect Unlock this item by beating Greed Mode with ???",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/067.png",
-      "tags": []
+      "description": "Every time you get hit, you have a chance to activate the D6, D20, D8, D10 or D12 effect",
+      "quote": "You feel cursed... kinda."
     },
     {
       "id": "68",
       "name": "Super Magnet",
       "description": "While held this trinket causes all pickups and enemies to move slowly towards you Will also attract the Mom's Foot and Ultra Greed door entities",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/068.png",
-      "tags": []
+      "quote": "It pulls"
     },
     {
       "id": "69",
       "name": "Faded Polaroid",
       "description": "Randomly Isaac will gain a camouflage for a few seconds and all enemies in the current room will have a confused status effect applied to them This trinket can be used to open the door to Mausoleum in Depths II",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/069.png",
-      "tags": []
+      "quote": "You feel faded"
     },
     {
       "id": "70",
       "name": "Louse",
-      "description": "Gives a small chance to spawn a friendly attack spider while in a hostile room with enemies Bob's Bladder",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/070.png",
+      "description": "Gives a small chance to spawn a friendly attack spider while in a hostile room with enemies",
+      "quote": "Itchy, tasty...",
       "tags": [
         "spider",
         "spinne"
@@ -14136,9 +13949,8 @@ window.ISAAC_FALLBACK = {
     {
       "id": "71",
       "name": "Bob's Bladder",
-      "description": "Leaves a pool of green creep under all bombs you place, which damages enemies that walk over it Watch Battery",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/071.png",
+      "description": "Leaves a pool of green creep under all bombs you place, which damages enemies that walk over it",
+      "quote": "Creepy bombs",
       "tags": [
         "bomb",
         "bombe"
@@ -14147,17 +13959,14 @@ window.ISAAC_FALLBACK = {
     {
       "id": "72",
       "name": "Watch Battery",
-      "description": "Gives a +6.66% chance of a getting a small battery after clearing a room Gives a +2.0% chance for pickups to be small batteries",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/072.png",
-      "tags": []
+      "description": "Gives a +6.66% chance of a getting a small battery after clearing a room Gives a +2.0% chance for pickups to be small batteries Gives a +5.0% chance to add an extra charge to your active item after clearing a room",
+      "quote": "Lil charge"
     },
     {
       "id": "73",
       "name": "Blasting Cap",
-      "description": "Exploding bombs now have a chance to drop another bomb that you can pick up Stud Finder",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/073.png",
+      "description": "Exploding bombs now have a chance to drop another bomb that you can pick up",
+      "quote": "Pop! Pop!",
       "tags": [
         "bomb",
         "bombe"
@@ -14166,49 +13975,41 @@ window.ISAAC_FALLBACK = {
     {
       "id": "74",
       "name": "Stud Finder",
-      "description": "Higher chance to find crawl spaces when exploding rocks Unlock this trinket by beating Challenge #27 (Brains)",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/074.png",
-      "tags": []
+      "description": "Higher chance to find crawl spaces when exploding rocks",
+      "quote": "The ground below feels hollow..."
     },
     {
       "id": "75",
       "name": "Error",
       "description": "Gives a different trinket effect per room, randomly choosing between any of the other available trinkets in the game Each room is locked to a specific trinket effect, meaning if you exit and re-enter a room, that specific room will always have the same effect",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/075.png",
-      "tags": []
+      "quote": "Effect not found?"
     },
     {
       "id": "76",
       "name": "Poker Chip",
-      "description": "Chests now have a 50/50 chance to either pay out with extra consumables or nothing/an enemy Unlock this trinket by beating Challenge #26 (I Rule)",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/076.png",
-      "tags": []
+      "description": "Chests now have a 50/50 chance to either pay out with extra consumables or nothing/an enemy",
+      "quote": "It's double down time!"
     },
     {
       "id": "77",
       "name": "Blister",
-      "description": "Tears have a stronger knockback effect while this trinket is held Second Hand",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/077.png",
-      "tags": []
+      "description": "Tears have a stronger knockback effect while this trinket is held",
+      "quote": "Bounce back!"
     },
     {
       "id": "78",
       "name": "Second Hand",
-      "description": "Increases the time that status effects stay on enemies. e.g. With poison effects, the damage over time poison will last for much longer Endless Nameless",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/078.png",
-      "tags": []
+      "description": "Increases the time that status effects stay on enemies. e.g. With poison effects, the damage over time poison will last for much longer",
+      "quote": "Extended stat effect time",
+      "tags": [
+        "poison"
+      ]
     },
     {
       "id": "79",
       "name": "Endless Nameless",
-      "description": "While held there is a small chance when using a tarot card or pill that a copy of it will be dropped on the floor next to you Black Feather",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/079.png",
+      "description": "While held there is a small chance when using a tarot card or pill that a copy of it will be dropped on the floor next to you",
+      "quote": "I'm stuck in a loop...",
       "tags": [
         "pill",
         "pille"
@@ -14218,8 +14019,7 @@ window.ISAAC_FALLBACK = {
       "id": "80",
       "name": "Black Feather",
       "description": "+0.2 Damage Up for each 'evil' item you have Items classed as evil in this case are Black Candle, Ceremonial Robes, Abaddon, Goat Head, Match Book, Missing Page 2, Safety Pin",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/080.png",
+      "quote": "With darkness comes power",
       "tags": [
         "dmg up"
       ]
@@ -14228,49 +14028,36 @@ window.ISAAC_FALLBACK = {
       "id": "81",
       "name": "Blind Rage",
       "description": "Invincibility lasts longer after getting hit (Increased i-frames) This makes it possible to use the Blood Donation machine twice from one hit of damage",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/081.png",
+      "quote": "Blind to damage",
       "tags": [
         "blood",
-        "blut"
+        "blut",
+        "shield"
       ]
     },
     {
       "id": "82",
       "name": "Golden Horse Shoe",
-      "description": "+15% chance to get a double item room to spawn on the next floor If the effect activates, two items spawn in your item room, however only one can be taken (Same effect as the More Options item)",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/082.png",
-      "tags": []
+      "description": "+15% chance to get a double item room to spawn on the next floor If the effect activates, two items spawn in your item room, however only one can be taken (Same effect as the More Options item) The chance doubles to +30% with the effect from Mom's Box",
+      "quote": "Feel lucky?"
     },
     {
       "id": "83",
       "name": "Store Key",
-      "description": "Automatically opens all shop room doors for free Unlock this trinket by donating 666 coins to the Greed Donation Machine",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/083.png",
-      "tags": [
-        "shop"
-      ]
+      "description": "Automatically opens all shop room doors for free",
+      "quote": "Stores are open"
     },
     {
       "id": "84",
       "name": "Rib of Greed",
       "description": "Forces the Greed and Super Greed mini bosses to no longer appear in shops or secret rooms Holding Rib of Greed increase your chance to receive coin drops",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/084.png",
-      "tags": [
-        "boss",
-        "secret",
-        "shop"
-      ]
+      "quote": "Feels greedy"
     },
     {
       "id": "85",
       "name": "Karma",
       "description": "Donating to a Donation Machine has a chance to heal Isaac for a full red heart or spawn a Beggar Can't spawn in greed mode",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/085.png",
+      "quote": "Karma up",
       "tags": [
         "heart",
         "herz"
@@ -14279,9 +14066,8 @@ window.ISAAC_FALLBACK = {
     {
       "id": "86",
       "name": "Lil Larva",
-      "description": "Destroying poops now gives you a blue fly Mom's Locket",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/086.png",
+      "description": "Destroying poops now gives you a blue fly",
+      "quote": "the poop is moving...",
       "tags": [
         "fliege",
         "fly"
@@ -14290,9 +14076,8 @@ window.ISAAC_FALLBACK = {
     {
       "id": "87",
       "name": "Mom's Locket",
-      "description": "While held, you heal for half a red heart every time you use a key to open a door or golden chest Changes all half red hearts into full hearts",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/087.png",
+      "description": "While held, you heal for half a red heart every time you use a key to open a door or golden chest Changes all half red hearts into full hearts Hearts dropped from Tainted Magdalene's mechanic will be always full red hearts",
+      "quote": "you feel her love",
       "tags": [
         "heart",
         "herz"
@@ -14301,17 +14086,14 @@ window.ISAAC_FALLBACK = {
     {
       "id": "88",
       "name": "NO!",
-      "description": "While this trinket is held you have a significantly lower chance to find spacebar/active items It will cause passive items to spawn except when the game cannot generate any more passive items and will then instead choose spacebar/active items",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/088.png",
-      "tags": []
+      "description": "While this trinket is held you have a significantly lower chance to find spacebar/active items It will cause passive items to spawn except when the game cannot generate any more passive items and will then instead choose spacebar/active items Some hard coded spacebar items from bosses and mini-bosses (i.e. Krampus Head) can still spawn Bible drops caused by the Rosary item are not prevented by this trinket",
+      "quote": "Never again!"
     },
     {
       "id": "89",
       "name": "Child Leash",
-      "description": "Causes your familiars to stay closer to each other Brown Cap",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/089.png",
+      "description": "Causes your familiars to stay closer to each other",
+      "quote": "Keep your friends close...",
       "tags": [
         "familiar"
       ]
@@ -14320,24 +14102,19 @@ window.ISAAC_FALLBACK = {
       "id": "90",
       "name": "Brown Cap",
       "description": "Poop in the environment will now explode when destroyed",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/090.png",
-      "tags": []
+      "quote": "Fartoom!"
     },
     {
       "id": "91",
       "name": "Meconium",
       "description": "While held you have an increased chance for Black Poops to spawn, which deal damage to all enemies in the room when destroyed Gives The Poop active item a chance to spawn a Black Poop too",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/091.png",
-      "tags": []
+      "quote": "Eww"
     },
     {
       "id": "92",
       "name": "Cracked Crown",
       "description": "Boosts speed, range, shot speed, tears and damage if they are above their base values by roughly +20% Affects stat bonuses from passive items, trinkets that are absorbed or in a second trinket slot, and permanent bonuses given by items such as Void",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/092.png",
+      "quote": "Boost Stats",
       "tags": [
         "shot speed"
       ]
@@ -14346,21 +14123,13 @@ window.ISAAC_FALLBACK = {
       "id": "93",
       "name": "Used Diaper",
       "description": "While held, gives the Skatole effect only in certain rooms, which will turn hostile flies to neutral and stop others from shooting Attack, Dart and Ring Flies turn into neutral Black Flies and Pooters and Fat Flies will no longer fire at you",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/093.png",
-      "tags": [
-        "feuer",
-        "fire",
-        "fliege",
-        "fly"
-      ]
+      "quote": "You Stink"
     },
     {
       "id": "94",
       "name": "Fish Tail",
-      "description": "Items and trinkets which generate blue flies and spiders will have double the effect, causing twice as many to spawn Black Tooth",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/094.png",
+      "description": "Items and trinkets which generate blue flies and spiders will have double the effect, causing twice as many to spawn",
+      "quote": "It also stinks!",
       "tags": [
         "fliege",
         "fly",
@@ -14371,28 +14140,28 @@ window.ISAAC_FALLBACK = {
     {
       "id": "95",
       "name": "Black Tooth",
-      "description": "Some tears will randomly become a black tooth, that deal double your normal tear damage and can poison enemies Ouroboros Worm",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/095.png",
-      "tags": []
+      "description": "Some tears will randomly become a black tooth, that deal double your normal tear damage and can poison enemies",
+      "quote": "It looks dead",
+      "tags": [
+        "poison"
+      ]
     },
     {
       "id": "96",
       "name": "Ouroboros Worm",
-      "description": "Tears become spectral and travel in a huge spiral pattern +1.5 Range Up",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/096.png",
+      "description": "Tears become spectral and travel in a huge spiral pattern +1.5 Range Up +0.4 Tears up",
+      "quote": "Foop foop!",
       "tags": [
         "range up",
-        "spectral"
+        "spectral",
+        "tears up"
       ]
     },
     {
       "id": "97",
       "name": "Tonsil",
-      "description": "Every time you take damage you have a very small chance to gain a Tonsil familiar, which follows you and blocks enemy projectiles This effect can happen twice before the Tonsil trinket is destroyed",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/097.png",
+      "description": "Every time you take damage you have a very small chance to gain a Tonsil familiar, which follows you and blocks enemy projectiles This effect can happen twice before the Tonsil trinket is destroyed Does not deal contact damage to enemies",
+      "quote": "Sick...",
       "tags": [
         "familiar"
       ]
@@ -14400,27 +14169,25 @@ window.ISAAC_FALLBACK = {
     {
       "id": "98",
       "name": "Nose Goblin",
-      "description": "Your tears have a random chance to become booger tears Booger tears stick on to enemies and deal periodic poison damage until they die or 60 seconds passes. Each tick of poison damage is equal to your normal tear damage",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/098.png",
-      "tags": []
+      "description": "Your tears have a random chance to become booger tears Booger tears stick on to enemies and deal periodic poison damage until they die or 60 seconds passes. Each tick of poison damage is equal to your normal tear damage The boogers will have a homing effect",
+      "quote": "Seems magic...",
+      "tags": [
+        "homing",
+        "poison"
+      ]
     },
     {
       "id": "99",
       "name": "Super Ball",
-      "description": "Some random tears will gain the Rubber Cement effect and become bouncy Vibrant Bulb",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/099.png",
-      "tags": []
+      "description": "Some random tears will gain the Rubber Cement effect and become bouncy",
+      "quote": "Boing!"
     },
     {
       "id": "100",
       "name": "Vibrant Bulb",
       "description": "Grants +0.25 Speed, +0.75 Range, +0.1 Shot Speed, +0.2 Tears, +0.5 Damage and +1 Luck when Isaac's active item is fully charged Infinite use items such as Potato Peeler count as charged and provide the bonus from this trinket",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/100.png",
+      "quote": "It needs power",
       "tags": [
-        "luck",
         "shot speed"
       ]
     },
@@ -14428,8 +14195,7 @@ window.ISAAC_FALLBACK = {
       "id": "101",
       "name": "Dim Bulb",
       "description": "Grants +0.5 Speed, +1.5 Range, +0.3 Shot Speed, +0.4 Tears, +1.5 Damage when Isaac's active item is completely uncharged One-time use items such as Mama Mega count as uncharged and provide the bonus from this trinket",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/101.png",
+      "quote": "I think it's broken",
       "tags": [
         "shot speed"
       ]
@@ -14438,18 +14204,13 @@ window.ISAAC_FALLBACK = {
       "id": "102",
       "name": "Fragmented Card",
       "description": "Gives you another secret room on each new floor while held Does not spawn more than one super secret room, only the normal secret room",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/102.png",
-      "tags": [
-        "secret"
-      ]
+      "quote": "Double moon"
     },
     {
       "id": "103",
       "name": "Equality!",
       "description": "When you have the same amount of coins, bombs and keys, half consumables turn into their doubled version This effect works for any number of consumables, including 0 and 99, as long as the count for coins/keys/bombs is equal",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/103.png",
+      "quote": "=",
       "tags": [
         "bomb",
         "bombe"
@@ -14459,16 +14220,13 @@ window.ISAAC_FALLBACK = {
       "id": "104",
       "name": "Wish Bone",
       "description": "Every time you take damage you have a very small chance to spawn a random pedestal item When the effect triggers, the trinket is destroyed",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/104.png",
-      "tags": []
+      "quote": "Make a wish"
     },
     {
       "id": "105",
       "name": "Bag Lunch",
       "description": "Every time you take damage you have a very small chance to spawn the Lunch item, which gives +1 HP up When the effect triggers, this trinket is destroyed",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/105.png",
+      "quote": "I wonder what it is",
       "tags": [
         "hp up"
       ]
@@ -14476,20 +14234,14 @@ window.ISAAC_FALLBACK = {
     {
       "id": "106",
       "name": "Lost Cork",
-      "description": "Increases the radius of any creep you produce Crow Heart",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/106.png",
-      "tags": [
-        "heart",
-        "herz"
-      ]
+      "description": "Increases the radius of any creep you produce",
+      "quote": "Uncorked"
     },
     {
       "id": "107",
       "name": "Crow Heart",
       "description": "While held, any damage taken remove red hearts first, before soul hearts, black hearts and rotten heart damage While at 1/2 of a red heart, it will begin to remove your other hearts again",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/107.png",
+      "quote": "Drain me",
       "tags": [
         "heart",
         "herz"
@@ -14499,8 +14251,7 @@ window.ISAAC_FALLBACK = {
       "id": "108",
       "name": "Walnut",
       "description": "The Walnut has a chance to break when taking damage from an explosion. If it does, it will drop a random trinket, coin, heart and key The Walnut trinket is destroyed once the effect activates",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/108.png",
+      "quote": "Thats a hard nut to crack!",
       "tags": [
         "bomb",
         "bombe",
@@ -14511,9 +14262,8 @@ window.ISAAC_FALLBACK = {
     {
       "id": "109",
       "name": "Duct Tape",
-      "description": "Causes any orbitals you have to stop moving while held Stops shooting familiars from moving (including Lilith's Incubus)",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/109.png",
+      "description": "Causes any orbitals you have to stop moving while held Stops shooting familiars from moving (including Lilith's Incubus) Some familiars with irregular movement are not affected by Duct Tape, such as Abel, BBF, Bumbo, Guppy's Hair Ball, Lil Gurdy, Punching Bag, Robo-Baby 2.0, Succubus",
+      "quote": "Stuck!",
       "tags": [
         "familiar",
         "orbital"
@@ -14522,19 +14272,14 @@ window.ISAAC_FALLBACK = {
     {
       "id": "110",
       "name": "Silver Dollar",
-      "description": "While held, shops will now appear on the womb floors (The Womb, Utero and Scarred Womb) Unlock this item by defeating Delirium in The Void floor with Cain",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/110.png",
-      "tags": [
-        "shop"
-      ]
+      "description": "While held, shops will now appear on the womb floors (The Womb, Utero and Scarred Womb)",
+      "quote": "Feels lucky..."
     },
     {
       "id": "111",
       "name": "Bloody Crown",
       "description": "While held, item rooms now appear on the womb floors (The Womb, Utero and Scarred Womb) Causes item rooms to appear on the Corpse floors",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/111.png",
+      "quote": "Drips with blood...",
       "tags": [
         "blood",
         "blut"
@@ -14543,83 +14288,57 @@ window.ISAAC_FALLBACK = {
     {
       "id": "112",
       "name": "Pay To Win",
-      "description": "While held, restock boxes will always spawn in item rooms Locust of War",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/112.png",
-      "tags": []
+      "description": "While held, restock boxes will always spawn in item rooms",
+      "quote": "..."
     },
     {
       "id": "113",
       "name": "Locust of War",
       "description": "Upon entering a room with enemies, spawns a Red Locust which detonates upon impact with enemies, dealing double tear damage for the impact of the Locust and 60 damage for the explosion Can be dangerous as the fly will target the nearest enemy, which can be close enough to catch Isaac in its blast radius",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/113.png",
+      "quote": "I Bring Wrath",
       "tags": [
         "bomb",
-        "bombe",
-        "fliege",
-        "fly"
+        "bombe"
       ]
     },
     {
       "id": "114",
       "name": "Locust of Pestilence",
-      "description": "At the start of each new hostile room you spawn a green attack fly, which will target a nearby enemy, deal double your tear damage and then poison them Unlock this item by beating Satan with Apollyon",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/114.png",
+      "description": "At the start of each new hostile room you spawn a green attack fly, which will target a nearby enemy, deal double your tear damage and then poison them",
+      "quote": "I Bring Pestilence",
       "tags": [
-        "fliege",
-        "fly"
+        "poison"
       ]
     },
     {
       "id": "115",
       "name": "Locust of Famine",
-      "description": "At the start of each new hostile room you spawn a yellow attack fly, which will target a nearby enemy, deal double your tear damage and apply a slowing effect to it Unlock this trinket by defeating ??? in The Chest as Apollyon",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/115.png",
-      "tags": [
-        "fliege",
-        "fly"
-      ]
+      "description": "At the start of each new hostile room you spawn a yellow attack fly, which will target a nearby enemy, deal double your tear damage and apply a slowing effect to it",
+      "quote": "I bring Famine"
     },
     {
       "id": "116",
       "name": "Locust of Death",
-      "description": "Upon entering a room with enemies, spawns a Black Locust that deals quadruple Isaac's damage, applied as two hits of double damage Unlock this trinket by defeating The Lamb as Apollyon",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/116.png",
-      "tags": []
+      "description": "Upon entering a room with enemies, spawns a Black Locust that deals quadruple Isaac's damage, applied as two hits of double damage",
+      "quote": "I bring Death"
     },
     {
       "id": "117",
       "name": "Locust of Conquest",
-      "description": "At the start of each new hostile room you spawn 2-5 white attack flies, which will target a nearby enemy and deal double your tear damage to it Unlock this trinket by defeating Boss Rush as Apollyon",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/117.png",
-      "tags": [
-        "boss",
-        "fliege",
-        "fly"
-      ]
+      "description": "At the start of each new hostile room you spawn 2-5 white attack flies, which will target a nearby enemy and deal double your tear damage to it",
+      "quote": "I Bring Conquest"
     },
     {
       "id": "118",
       "name": "Bat Wing",
-      "description": "When killing an enemy, you have a very small chance to gain the ability to fly for the rest of the room Unlock this trinket by defeating Greedier Mode with Azazel",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/118.png",
-      "tags": [
-        "fliege",
-        "fly"
-      ]
+      "description": "When killing an enemy, you have a very small chance to gain the ability to fly for the rest of the room",
+      "quote": "They Are Growing..."
     },
     {
       "id": "119",
       "name": "Stem Cell",
       "description": "Stem Cell heals Isaac's red heart containers to 50% each floor If Isaac already has 50% health or more, it heals half of a heart instead",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/119.png",
+      "quote": "Regen!",
       "tags": [
         "heart",
         "herz",
@@ -14630,92 +14349,70 @@ window.ISAAC_FALLBACK = {
       "id": "120",
       "name": "Hairpin",
       "description": "Fully recharges your active item at the start of each boss fight Added as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Zaratus",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/120.png",
-      "tags": [
-        "boss",
-        "shop"
-      ]
+      "quote": "Danger charge"
     },
     {
       "id": "121",
       "name": "Wooden Cross",
-      "description": "Gives you the Holy Mantle shield effect at the start of every new floor, which protects you from the next hit of damage you take Does not recharge until the start of the next floor",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/121.png",
-      "tags": []
+      "description": "Gives you the Holy Mantle shield effect at the start of every new floor, which protects you from the next hit of damage you take Does not recharge until the start of the next floor Stacks with the effects from Holy Mantle and Blanket, but it does not stack with Holy Card Added as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Ep and Mills",
+      "quote": "My faith protects me",
+      "tags": [
+        "shield"
+      ]
     },
     {
       "id": "122",
       "name": "Butter!",
-      "description": "Using your active item while holding this trinket will drop it back on a pedestal on the ground Also after taking damage, you have a very small chance to drop one of your passive items",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/122.png",
-      "tags": []
+      "description": "Using your active item while holding this trinket will drop it back on a pedestal on the ground Also after taking damage, you have a very small chance to drop one of your passive items One-time use active items will be consumed and not dropped Added as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by MarkusLeben and iguesti",
+      "quote": "Can't hold it!"
     },
     {
       "id": "123",
       "name": "Filigree Feather",
       "description": "Holding this trinket will cause the Angel mini bosses to drop normal items instead of Key Pieces Added as part of the Afterbirth+ Booster Pack #2, designed by Edmund McMillen",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/123.png",
-      "tags": [
-        "angel",
-        "boss"
-      ]
+      "quote": "Angelic spoils!"
     },
     {
       "id": "124",
       "name": "Door Stop",
-      "description": "While held, the last door Isaac went through stays open, allowing him to leave the room even if enemies are in it This trinket works on boss rooms (except Ultra Greed) and devil rooms containing Krampus, allowing you to exit out mid-fight",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/124.png",
-      "tags": [
-        "boss",
-        "devil"
-      ]
+      "description": "While held, the last door Isaac went through stays open, allowing him to leave the room even if enemies are in it This trinket works on boss rooms (except Ultra Greed) and devil rooms containing Krampus, allowing you to exit out mid-fight Does not drop in Greed mode",
+      "quote": "Hold the door!"
     },
     {
       "id": "125",
       "name": "Extension Cord",
       "description": "After being picked up, a yellow laser chain now flows through Isaac's familiars Added as part of the Afterbirth+ Booster Pack #4 and based on the Steam Workshop mod created by Strawrat and Aczom",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/125.png",
+      "quote": "Charged friends",
       "tags": [
         "familiar",
-        "shop"
+        "laser"
       ]
     },
     {
       "id": "126",
       "name": "Rotten Penny",
       "description": "While held, spawns +1 friendly blue fly every time you pick up a coin Added as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Eufuu",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/126.png",
+      "quote": "Wealth of flies",
       "tags": [
         "fliege",
-        "fly",
-        "shop"
+        "fly"
       ]
     },
     {
       "id": "127",
       "name": "Baby-Bender",
       "description": "While held this trinket gives your familiars homing shots Added as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Ink Tears",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/127.png",
+      "quote": "Feed them magic!",
       "tags": [
         "familiar",
-        "homing",
-        "shop"
+        "homing"
       ]
     },
     {
       "id": "128",
       "name": "Finger Bone",
       "description": "While held, gives you a 5% chance to gain a bone heart everytime you take damage Added as part of the Afterbirth+ Booster Pack #5",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/128.png",
+      "quote": "It looks brittle",
       "tags": [
         "heart",
         "herz"
@@ -14724,29 +14421,20 @@ window.ISAAC_FALLBACK = {
     {
       "id": "129",
       "name": "Jawbreaker",
-      "description": "Tears have a chance to become a tooth, dealing x3.2 damage, similar to Tough Love The chance to fire a tooth with this trinket is affected by your Luck stat",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/129.png",
-      "tags": [
-        "feuer",
-        "fire",
-        "luck"
-      ]
+      "description": "Tears have a chance to become a tooth, dealing x3.2 damage, similar to Tough Love The chance to fire a tooth with this trinket is affected by your Luck stat At +0 luck you have ~12% chance for this effect to activate At +9 luck every tear you fire will be a tooth",
+      "quote": "Don't chew on it"
     },
     {
       "id": "130",
       "name": "Chewed Pen",
-      "description": "Tears have a chance to slow enemies Blessed Penny",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/130.png",
-      "tags": []
+      "description": "Tears have a chance to slow enemies",
+      "quote": "It's leaking"
     },
     {
       "id": "131",
       "name": "Blessed Penny",
       "description": "Chance to spawn half a soul heart when picking up a coin The chance scales up based on the coin's worth: Penny = 16.66%, Double Penny = 30.5%, Nickel = 59.7%, Dime = 83.3%",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/131.png",
+      "quote": "Wealth of purity",
       "tags": [
         "heart",
         "herz"
@@ -14756,29 +14444,23 @@ window.ISAAC_FALLBACK = {
       "id": "132",
       "name": "Broken Syringe",
       "description": "Gives you a random syringe effect every room The effect can be The Virus, Roid Rage, Speed Ball, Experimental Treatment, Synthoil, Euthanasia or Growth Hormones",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/132.png",
-      "tags": []
+      "quote": "Mystery medicine"
     },
     {
       "id": "133",
       "name": "Short Fuse",
       "description": "Placed bombs explode after 0.66 seconds instead of the usual 1.5 seconds This was called Exploded Firecracker in Antibirth",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/133.png",
+      "quote": "Faster explosions",
       "tags": [
         "bomb",
-        "bombe",
-        "feuer",
-        "fire"
+        "bombe"
       ]
     },
     {
       "id": "134",
       "name": "Gigante Bean",
-      "description": "Farts produced by Isaac or familiars will be twice as large A Lighter",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/134.png",
+      "description": "Farts produced by Isaac or familiars will be twice as large",
+      "quote": "Mega farts",
       "tags": [
         "familiar"
       ]
@@ -14787,20 +14469,13 @@ window.ISAAC_FALLBACK = {
       "id": "135",
       "name": "A Lighter",
       "description": "Chance for enemies to burn when entering a room The chance for this effect to activate is effected by your Luck stat",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/135.png",
-      "tags": [
-        "feuer",
-        "fire",
-        "luck"
-      ]
+      "quote": "Watch the world burn"
     },
     {
       "id": "136",
       "name": "Broken Padlock",
       "description": "Explosions can open locked doors This includes key blocks and golden chests",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/136.png",
+      "quote": "Bombs are key",
       "tags": [
         "bomb",
         "bombe"
@@ -14809,25 +14484,20 @@ window.ISAAC_FALLBACK = {
     {
       "id": "137",
       "name": "Myosotis",
-      "description": "Pickups left on current floor will appear in the starting room of the next floor, up to a maximum of 4 pickups 'M",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/137.png",
-      "tags": []
+      "description": "Pickups left on current floor will appear in the starting room of the next floor, up to a maximum of 4 pickups",
+      "quote": "Forget me not..."
     },
     {
       "id": "138",
       "name": "'M",
-      "description": "Active items will be rerolled upon using them Using with Book of Virtues will only reroll the item the book is holding",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/138.png",
-      "tags": []
+      "description": "Active items will be rerolled upon using them Using with Book of Virtues will only reroll the item the book is holding Has no effect with Notched Axe due to how its durability works",
+      "quote": "t's broken9Reroll your dest"
     },
     {
       "id": "139",
       "name": "Teardrop Charm",
       "description": "Random luck-based tear effects have an extra chance of occurring The additional chance is effectively +3 Luck Up",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/139.png",
+      "quote": "It feels lucky",
       "tags": [
         "luck"
       ]
@@ -14835,9 +14505,8 @@ window.ISAAC_FALLBACK = {
     {
       "id": "140",
       "name": "Apple of Sodom",
-      "description": "Picking up red hearts now has a high chance to spawn 1-4 blue attack spiders, instead of giving you health back This effect also works while fully healed, giving a guaranteed chance of getting spiders",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/140.png",
+      "description": "Picking up red hearts now has a high chance to spawn 1-4 blue attack spiders, instead of giving you health back This effect also works while fully healed, giving a guaranteed chance of getting spiders While missing any red health the chance for spiders is less Works for characters that don't use red health, which always gives you spiders Hearts in Shops can be converted into spiders for free",
+      "quote": "It feels empty",
       "tags": [
         "heart",
         "herz",
@@ -14849,20 +14518,16 @@ window.ISAAC_FALLBACK = {
       "id": "141",
       "name": "Forgotten Lullaby",
       "description": "Gives your familiars improved rate of fire while held In Antibirth this trinket was called Song of the Siren",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/141.png",
+      "quote": "Sing for your friends",
       "tags": [
-        "familiar",
-        "feuer",
-        "fire"
+        "familiar"
       ]
     },
     {
       "id": "142",
       "name": "Beth's Faith",
       "description": "While held at the start of each floor, this trinket spawns four wisp familiar orbitals around Isaac These wisps are the same as the ones created by the Book of Virtues item",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/142.png",
+      "quote": "My faith protects me",
       "tags": [
         "familiar",
         "orbital"
@@ -14871,55 +14536,42 @@ window.ISAAC_FALLBACK = {
     {
       "id": "143",
       "name": "Old Capacitor",
-      "description": "Your active item no longer gains charges, but battery drops become much more common Unlock this trinket by blowing up 10 Battery Beggars",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/143.png",
-      "tags": []
+      "description": "Your active item no longer gains charges, but battery drops become much more common",
+      "quote": "Voltage starving"
     },
     {
       "id": "144",
       "name": "Brain Worm",
       "description": "Tears that miss enemies will redirect themselves and travel 90 degrees towards enemies Tears must be roughly 2 tiles or closer to activate this effect",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/144.png",
-      "tags": []
+      "quote": "Ding!"
     },
     {
       "id": "145",
       "name": "Perfection",
-      "description": "+10 Luck while held, but the trinket is destroyed when damage is taken Blood donation machines, Curse Rooms and Sacrifice Rooms wont destroy it",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/145.png",
+      "description": "+10 Luck while held, but the trinket is destroyed when damage is taken Blood donation machines, Curse Rooms and Sacrifice Rooms wont destroy it Taking a hit and activating Holy Mantle won't destroy it Can be dropped in order to avoid breaking it This trinket is automatically given to you after clearing 3 bosses without taking damage",
+      "quote": "Luck way up. Don't lose it!",
       "tags": [
         "blood",
-        "blut",
-        "luck"
+        "blut"
       ]
     },
     {
       "id": "146",
       "name": "Devil's Crown",
-      "description": "Treasure Rooms are replaced with Red Treasure Rooms, which contain a deal with the devil in place of a regular item pedestal If an item room has not yet been entered, it can be transformed to either a regular or Red Treasure Room by picking up or dropping this trinket before entering",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/146.png",
-      "tags": [
-        "devil"
-      ]
+      "description": "Treasure Rooms are replaced with Red Treasure Rooms, which contain a deal with the devil in place of a regular item pedestal If an item room has not yet been entered, it can be transformed to either a regular or Red Treasure Room by picking up or dropping this trinket before entering Does not affect the mirrored treasure room in Downpour II",
+      "quote": "His special customer"
     },
     {
       "id": "147",
       "name": "Charged Penny",
-      "description": "Every time you pick up a coin, you have a small chance to gain 1 bar of charge on your active item The chance for this effect to happen is 1/6th of the value of the coin picked up",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/147.png",
-      "tags": []
+      "description": "Every time you pick up a coin, you have a small chance to gain 1 bar of charge on your active item The chance for this effect to happen is 1/6th of the value of the coin picked up Can only activate once per coin collected In Antibirth this trinket was called Electric Penny",
+      "quote": "Wealth of power"
     },
     {
       "id": "148",
       "name": "Friendship Necklace",
-      "description": "While held, your familiars will now orbit around Isaac instead of following behind him Panic Button",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/148.png",
+      "description": "While held, your familiars will now orbit around Isaac instead of following behind him",
+      "quote": "Gather round",
       "tags": [
         "familiar"
       ]
@@ -14927,67 +14579,50 @@ window.ISAAC_FALLBACK = {
     {
       "id": "149",
       "name": "Panic Button",
-      "description": "Activates your active item just before damage would be taken It doesn't activate for free - the charges are used up as normal if this effect activates. This means the trinket does nothing if your active item isn't fully charged",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/149.png",
-      "tags": []
+      "description": "Activates your active item just before damage would be taken It doesn't activate for free - the charges are used up as normal if this effect activates. This means the trinket does nothing if your active item isn't fully charged Single-use active items are consumed as normal",
+      "quote": "Push in case of emergency"
     },
     {
       "id": "150",
       "name": "Blue Key",
       "description": "Doors can be opened without using up a key However, when entering the door you are taken to a blue womb room with enemies to defeat. This room will always drop a reward at the end, then allow you to exit back to the real floor",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/150.png",
-      "tags": []
+      "quote": "Look between the rooms"
     },
     {
       "id": "151",
       "name": "Flat File",
-      "description": "While held this trinket causes spikes to retract into the floor Works for curse rooms - you no longer take damage entering or leaving",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/151.png",
-      "tags": []
+      "description": "While held this trinket causes spikes to retract into the floor Works for curse rooms - you no longer take damage entering or leaving Allows you to open spiked chests without taking damage",
+      "quote": "No more spikes"
     },
     {
       "id": "152",
       "name": "Telescope Lens",
-      "description": "+9% chance for a Planetarium to spawn Allows Planetariums to spawn in the Womb/Utero floors",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/152.png",
-      "tags": []
+      "description": "+9% chance for a Planetarium to spawn Allows Planetariums to spawn in the Womb/Utero floors Planetarium have a base 1% chance to appear, which increases by +20% whenever you skip an Item Room (Must not enter to count as skipped) After entering a Planetarium the chance goes back to 1%. Holding this trinket increase that chance by +15% Does not drop in Greed Mode",
+      "quote": "Seek the stars"
     },
     {
       "id": "153",
       "name": "Mom's Lock",
-      "description": "Has a high chance to give you the effect of a random Mom item every room Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Isaac",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/153.png",
-      "tags": []
+      "description": "Has a high chance to give you the effect of a random Mom item every room",
+      "quote": "A piece of her love"
     },
     {
       "id": "154",
       "name": "Dice Bag",
-      "description": "Every time you enter a brand new room, you have a chance to get a random one-time use Dice (e.g. D6, D20 etc.) Unlock this trinket by defeating Mother as Tainted Isaac",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/154.png",
-      "tags": []
+      "description": "Every time you enter a brand new room, you have a chance to get a random one-time use Dice (e.g. D6, D20 etc.)",
+      "quote": "Bonus roll"
     },
     {
       "id": "155",
       "name": "Holy Crown",
-      "description": "Causes Item rooms and Shops to appear in the Cathedral Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Magdalene",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/155.png",
-      "tags": [
-        "shop"
-      ]
+      "description": "Causes Item rooms and Shops to appear in the Cathedral",
+      "quote": "Walk the path of the saint"
     },
     {
       "id": "156",
       "name": "Mother's Kiss",
       "description": "While held you get +1 HP Up The first time you pick this trinket up, the heart container will be filled. This effect can't be abused - next time it will be empty if dropped",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/156.png",
+      "quote": "HP up",
       "tags": [
         "heart",
         "herz",
@@ -14998,22 +14633,17 @@ window.ISAAC_FALLBACK = {
       "id": "157",
       "name": "Torn Card",
       "description": "Every 15 shots you will shoot an Ipecac + My Reflection shot The tear will fly in the air for about 3 seconds and follows Isaac until it falls and explodes. You need to move out of the way or it will hurt Isaac, but can be used to open anything requiring a bomb e.g. Secret Rooms",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/157.png",
+      "quote": "Death awaits",
       "tags": [
         "bomb",
-        "bombe",
-        "fliege",
-        "fly",
-        "secret"
+        "bombe"
       ]
     },
     {
       "id": "158",
       "name": "Torn Pocket",
-      "description": "Every time you take damage, you drop up to 2 different types of consumables on the ground Dropped consumables can be any variant of its kind - e.g. a bomb can become a troll bomb, or a dropped coin can become a dime",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/158.png",
+      "description": "Every time you take damage, you drop up to 2 different types of consumables on the ground Dropped consumables can be any variant of its kind - e.g. a bomb can become a troll bomb, or a dropped coin can become a dime Does nothing if you have no consumables",
+      "quote": "A hole in your pocket",
       "tags": [
         "bomb",
         "bombe"
@@ -15022,56 +14652,41 @@ window.ISAAC_FALLBACK = {
     {
       "id": "159",
       "name": "Gilded Key",
-      "description": "All new chests become locked Golden chests Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Cain",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/159.png",
-      "tags": []
+      "description": "All new chests become locked Golden chests",
+      "quote": "Less is more"
     },
     {
       "id": "160",
       "name": "Lucky Sack",
-      "description": "Spawns a sack at the start of each new floor Unlock this trinket by defeating Mother as Tainted Cain",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/160.png",
-      "tags": [
-        "luck"
-      ]
+      "description": "Spawns a sack at the start of each new floor",
+      "quote": "Free goodies!"
     },
     {
       "id": "161",
       "name": "Wicked Crown",
-      "description": "Causes an Item Room and Shop to appear in Sheol Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Azazel",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/161.png",
-      "tags": [
-        "shop"
-      ]
+      "description": "Causes an Item Room and Shop to appear in Sheol",
+      "quote": "Walk the path of the wicked"
     },
     {
       "id": "162",
       "name": "Azazel's Stump",
-      "description": "When entering a new room, gives a small chance to gain Azazel's short-range Brimstone laser for the current room and the ability to fly Unlock this trinket by defeating Mother as Tainted Azazel",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/162.png",
+      "description": "When entering a new room, gives a small chance to gain Azazel's short-range Brimstone laser for the current room and the ability to fly",
+      "quote": "Unleash your inner demon",
       "tags": [
-        "fliege",
-        "fly"
+        "laser"
       ]
     },
     {
       "id": "163",
       "name": "Dingle Berry",
       "description": "Spawns 2 friendly Dips upon clearing a room Dips that spawn after killing a Squirt turn friendly",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/163.png",
-      "tags": []
+      "quote": "Oops!"
     },
     {
       "id": "164",
       "name": "Ring Cap",
-      "description": "Drops 2 bombs at once (only 1 bomb is removed from your total) Unlock this trinket by defeating Mother as Tainted Blue Baby",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/164.png",
+      "description": "Drops 2 bombs at once (only 1 bomb is removed from your total)",
+      "quote": "Twice the bang!",
       "tags": [
         "bomb",
         "bombe"
@@ -15080,38 +14695,34 @@ window.ISAAC_FALLBACK = {
     {
       "id": "165",
       "name": "Nuh Uh!",
-      "description": "Beyond the womb floor, replaces all coin and key spawns with a random pickup as follows: Bomb - 26.6% chance. Heart - 26.6% chance",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/165.png",
+      "description": "Beyond the womb floor, replaces all coin and key spawns with a random pickup as follows: Bomb - 26.6% chance. Heart - 26.6% chance Pill - 16.6% chance. Card - 16.6% chance Trinket - 6.6% chance. Battery - 6.6% chance Also adds a 20% chance to spawn a fly if the original drop was a coin Doesn't spawn in Greed Mode",
+      "quote": "Don't want!",
       "tags": [
         "bomb",
         "bombe",
         "heart",
-        "herz"
+        "herz",
+        "pill",
+        "pille"
       ]
     },
     {
       "id": "166",
       "name": "Modeling Clay",
-      "description": "Each brand new room, this trinket has a chance to transform into a copy of a random passive item, which gives you the effect for the duration of this room Unlock this trinket by defeating Mother as Tainted Eden",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/166.png",
-      "tags": []
+      "description": "Each brand new room, this trinket has a chance to transform into a copy of a random passive item, which gives you the effect for the duration of this room",
+      "quote": "???"
     },
     {
       "id": "167",
       "name": "Polished Bone",
       "description": "Gives a small chance to spawn a friendly Bony when clearing a room, which will throw bones at enemies until it takes enough damage to die Can be either the regular white Bony or the black variant",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/167.png",
-      "tags": []
+      "quote": "Friends from beyond"
     },
     {
       "id": "168",
       "name": "Hollow Heart",
-      "description": "Gives you +1 Bone Heart every time you enter a new floor Unlock this trinket by defeating Mother as Tainted Forgotten",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/168.png",
+      "description": "Gives you +1 Bone Heart every time you enter a new floor",
+      "quote": "A brittle blessing",
       "tags": [
         "heart",
         "herz"
@@ -15121,26 +14732,23 @@ window.ISAAC_FALLBACK = {
       "id": "169",
       "name": "Kid's Drawing",
       "description": "Counts as 1 of 3 cat items needed towards the Guppy transformation Dropping this trinket again removes the transformation if you dont have 3 other Guppy items",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/169.png",
-      "tags": []
+      "quote": "Looks familiar...",
+      "tags": [
+        "familiar"
+      ]
     },
     {
       "id": "170",
       "name": "Crystal Key",
-      "description": "Each time you clear a room there is a chance a Red Room will spawn at one of the walls. The chance for a Red Room to unlock increases as you pick up more Crystal Keys.",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/170.png",
-      "tags": []
+      "description": "Each time you clear a room there is a chance a Red Room will spawn at one of the walls. The chance for a Red Room to unlock increases as you pick up more Crystal Keys. While in a regular room, the chances to spawn a Red Room are: 1 Key = 33.33% chance. 2 keys = 50% chance. 3 or more keys = 100% chance. While in a Red room, the chances to spawn a Red Room are: 1 Key = 12.5% chance. 2 keys = 16.6% chance. 3 keys = 25% chance. 4 keys = 50% chance. 5 keys = 100% chance. Passive rooms with no enemies don't have a chance to spawn Red Rooms. It's possible to hold more than one trinket by taking Mom's Purse, Belly Button or using the Smelter to convert them into passive items. Having a golden version of this trinket counts as 2 keys. Doesn't spawn in Greed Mode",
+      "quote": "Call to the other side"
     },
     {
       "id": "171",
       "name": "Keeper's Bargain",
-      "description": "Has a decent chance for Devil Deals to cost money instead of Health The conversion rate is 1 heart container to 15 coins",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/171.png",
+      "description": "Has a decent chance for Devil Deals to cost money instead of Health The conversion rate is 1 heart container to 15 coins Items can be on discount similar to the shop, making it 1 heart container = 7 coins instead No effect on Lost or Tainted Lost Can be dropped to disable this effect while in the room",
+      "quote": "Money talks",
       "tags": [
-        "devil",
         "heart",
         "herz",
         "hp up"
@@ -15149,29 +14757,21 @@ window.ISAAC_FALLBACK = {
     {
       "id": "172",
       "name": "Cursed Penny",
-      "description": "While held, you will be teleported to a random room everytime you pick up a coin Unlock this trinket by defeating Mother as Tainted Keeper",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/172.png",
-      "tags": []
+      "description": "While held, you will be teleported to a random room everytime you pick up a coin",
+      "quote": "Wealth of misery"
     },
     {
       "id": "173",
       "name": "Your Soul",
-      "description": "Allows you to pay for a devil deal with this trinket Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Judas",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/173.png",
-      "tags": [
-        "devil"
-      ]
+      "description": "Allows you to pay for a devil deal with this trinket",
+      "quote": "Give it to me"
     },
     {
       "id": "174",
       "name": "Number Magnet",
-      "description": "+10% devil room chance while held Changes Devil Room layouts. The new rooms contain 0-3 Devil Deal Items, 1-3 Black Hearts and random enemies from the Sheol floor",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/174.png",
+      "description": "+10% devil room chance while held Changes Devil Room layouts. The new rooms contain 0-3 Devil Deal Items, 1-3 Black Hearts and random enemies from the Sheol floor Prevents Krampus from appearing",
+      "quote": "6",
       "tags": [
-        "devil",
         "heart",
         "herz"
       ]
@@ -15180,34 +14780,25 @@ window.ISAAC_FALLBACK = {
       "id": "175",
       "name": "Strange Key",
       "description": "Opens the door to the Blue Womb, regardless of whether you meet the 30 minute speed timer Opening Pandora's Box while holding this item will ignore the normal effect and instead spawn 6 item pedestals from random item pools. Both the box and trinket are consumed when this happens",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/175.png",
-      "tags": []
+      "quote": "What could it open?"
     },
     {
       "id": "176",
       "name": "Lil Clot",
-      "description": "A small clot friend will hug Isaac, following his exact movements (similar to how Jacob & Esau work) and shooting tears when he does The clot can be moved around by collision with an object/wall, allowing you to re-position it",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/176.png",
-      "tags": []
+      "description": "A small clot friend will hug Isaac, following his exact movements (similar to how Jacob & Esau work) and shooting tears when he does The clot can be moved around by collision with an object/wall, allowing you to re-position it The clot's damage is roughly 1/3 of your tear damage If it takes a few hits it will die, and respawn in the next room",
+      "quote": "Mini friend"
     },
     {
       "id": "177",
       "name": "Temporary Tattoo",
-      "description": "Spawns a random chest after completing a regular Challenge Room Spawns a pedestal item after completing a boss Challenge Room",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/177.png",
-      "tags": [
-        "boss"
-      ]
+      "description": "Spawns a random chest after completing a regular Challenge Room Spawns a pedestal item after completing a boss Challenge Room Doesn't spawn in Greed Mode",
+      "quote": "You feel braver"
     },
     {
       "id": "178",
       "name": "Swallowed M80",
-      "description": "When taking damage you have a chance to explode and deal 185 damage to all enemies around you (Same damage as a Mr. Mega bomb) Unlock this trinket by defeating Mother as Tainted Samson",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/178.png",
+      "description": "When taking damage you have a chance to explode and deal 185 damage to all enemies around you (Same damage as a Mr. Mega bomb)",
+      "quote": "Bang!",
       "tags": [
         "bomb",
         "bombe"
@@ -15216,9 +14807,8 @@ window.ISAAC_FALLBACK = {
     {
       "id": "179",
       "name": "RC Remote",
-      "description": "Familiars follow Isaac's exact movements, (similar to how Jacob & Esau work) instead of following loosely like they usually do Holding the drop button (Ctrl on Steam version) causes them to stop moving",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/179.png",
+      "description": "Familiars follow Isaac's exact movements, (similar to how Jacob & Esau work) instead of following loosely like they usually do Holding the drop button (Ctrl on Steam version) causes them to stop moving Doesn't affect some familiars with specific movement patterns, e.g. Abel",
+      "quote": "Controllable buddies!",
       "tags": [
         "familiar"
       ]
@@ -15226,10 +14816,11 @@ window.ISAAC_FALLBACK = {
     {
       "id": "180",
       "name": "Found Soul",
-      "description": "Gives you a familiar that follows Isaac's exact movements (similar to how Jacob & Esau work) and shoots spectral tears Similar to Jacob and Esau, positions can be altered by running it into objects, or holding the drop button (Ctrl on Steam version)",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/180.png",
+      "description": "Gives you a familiar that follows Isaac's exact movements (similar to how Jacob & Esau work) and shoots spectral tears Similar to Jacob and Esau, positions can be altered by running it into objects, or holding the drop button (Ctrl on Steam version) When you place a bomb, the Found Soul will drop one too If it takes any damage, it will die and not respawn until the next floor Will always match your current movement speed",
+      "quote": "Finally!",
       "tags": [
+        "bomb",
+        "bombe",
         "familiar",
         "spectral"
       ]
@@ -15238,27 +14829,24 @@ window.ISAAC_FALLBACK = {
       "id": "181",
       "name": "Expansion Pack",
       "description": "Everytime you use your active item, you have a chance to activate another random active item Glowing Hourglass effect is blocked from this item",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/181.png",
-      "tags": []
+      "quote": "Fun extras"
     },
     {
       "id": "182",
       "name": "Beth's Essence",
-      "description": "Taking damage gives you a chance to spawn a flame orbital, similar to the ones created by Book of Virtues Entering an Angel Room gives you +5 flame orbitals. The angel room spawned by The Stairway item also counts",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/182.png",
+      "description": "Taking damage gives you a chance to spawn a flame orbital, similar to the ones created by Book of Virtues Entering an Angel Room gives you +5 flame orbitals. The angel room spawned by The Stairway item also counts Giving money to a beggar gives a flame orbital",
+      "quote": "Virtue's reward",
       "tags": [
-        "angel",
+        "feuer",
+        "fire",
         "orbital"
       ]
     },
     {
       "id": "183",
       "name": "The Twins",
-      "description": "Upon entering each new room, this trinket has a chance to copy one of your current familiars If you have no familiars instead it will spawn either Brother Bobby or Sister Maggy",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/183.png",
+      "description": "Upon entering each new room, this trinket has a chance to copy one of your current familiars If you have no familiars instead it will spawn either Brother Bobby or Sister Maggy Only lasts for the current room",
+      "quote": "I'm seeing double...",
       "tags": [
         "familiar"
       ]
@@ -15267,60 +14855,53 @@ window.ISAAC_FALLBACK = {
       "id": "184",
       "name": "Adoption Papers",
       "description": "All shops only sell familiars while holding this trinket If you enter a shop while holding this trinket, the effect won't undo by dropping it until you move to a new floor",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/184.png",
+      "quote": "Give them a home",
       "tags": [
-        "familiar",
-        "shop"
+        "familiar"
       ]
     },
     {
       "id": "185",
       "name": "Cricket Leg",
-      "description": "Every time an enemy dies you have a chance to gain a random Locust Different color Locusts correspond to the horsemen. Each of them deal double your tear damage, similar to how standard blue flies work",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/185.png",
+      "description": "Every time an enemy dies you have a chance to gain a random Locust Different color Locusts correspond to the horsemen. Each of them deal double your tear damage, similar to how standard blue flies work War (Red) - Explodes when touching the enemy. The actual explosion deals flat 60 damage Pestilence (Green) - Poisons the enemy it attacks Famine (Brown) - Applies a slowing effect Death (Black) - Deals x4 damage instead of x2 Conquest (White) - Spawns 2-5 at once",
+      "quote": "Infested",
       "tags": [
+        "bomb",
+        "bombe",
         "fliege",
-        "fly"
+        "fly",
+        "poison"
       ]
     },
     {
       "id": "186",
       "name": "Apollyon's Best Friend",
-      "description": "Gives you a red attack fly, that will charge at enemies in the same direction you are shooting Deals damage equal to your current tear damage",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/186.png",
-      "tags": [
-        "fliege",
-        "fly"
-      ]
+      "description": "Gives you a red attack fly, that will charge at enemies in the same direction you are shooting Deals damage equal to your current tear damage Stops charging once it hits an enemy and returns to Isaac's side",
+      "quote": "Attack buddy"
     },
     {
       "id": "187",
       "name": "Broken Glasses",
       "description": "Gives a 33% chance to spawn an extra blind pedestal item in all future item rooms. This one will be a hidden question mark Allows you to see what both items are on alternative path floors (Downpour/Dross, Mines/Ashpit, Gehenna/Mausoleum)",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/187.png",
-      "tags": []
+      "quote": "Double vision?"
     },
     {
       "id": "188",
       "name": "Ice Cube",
-      "description": "Gives a small chance when entering a room for enemies to be petrified for 4 seconds. Killing a petrified enemy will freeze it. The chance for this effect to activate depends on your Luck stat.",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/188.png",
+      "description": "Gives a small chance when entering a room for enemies to be petrified for 4 seconds. Killing a petrified enemy will freeze it. The chance for this effect to activate depends on your Luck stat. Frozen enemies can be pushed into obstacles where they shatter on contact and fire ice shards around them. Any other enemies hit by these shards will become frozen too Frozen enemies are considered dead by the game, and won't unfreeze or move again. The room doors will open if only frozen enemies remain",
+      "quote": "Stay frosty",
       "tags": [
-        "luck"
+        "freeze"
       ]
     },
     {
       "id": "189",
       "name": "Sigil of Baphomet",
       "description": "Every time you kill an enemy you get an invincibility shield for 1 second While shielded, each enemy killed adds +1 seconds to the duration",
-      "quality": 1,
-      "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/189.png",
-      "tags": []
+      "quote": "Revel in death",
+      "tags": [
+        "shield"
+      ]
     }
   ]
 };

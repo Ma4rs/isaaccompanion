@@ -51,7 +51,7 @@ async function upsert(table, rows) {
 }
 
 async function deleteAll(table) {
-  const res = await fetch(`${SUPABASE_URL}/rest/v1/${table}?id=gt.0`, {
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/${table}?id=not.is.null`, {
     method: 'DELETE',
     headers
   });
@@ -75,6 +75,8 @@ async function seedItems() {
     type: r.type ?? null,
     synergies: r.synergies ?? []
   }));
+  // Item IDs were realigned to canonical in-game IDs; clear stale rows first.
+  await deleteAll('ic_items');
   await upsert('ic_items', items);
 }
 
@@ -87,6 +89,7 @@ async function seedTrinkets() {
     icon_url: t.icon_url ?? t.iconUrl ?? null,
     tags: t.tags ?? []
   }));
+  await deleteAll('ic_trinkets');
   await upsert('ic_trinkets', trinkets);
 }
 

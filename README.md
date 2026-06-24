@@ -24,19 +24,53 @@ npx serve .
 
 ## Data Pipeline
 
-Canonical data sync and consistency checks:
+All item/trinket data uses **canonical in-game IDs** (matching the wiki, Steam,
+and the RebirthItemTracker icon set). Rebuild everything from source with:
 
 ```bash
-npm run sync:data -- "<path-to-platinumgod-export.txt>"
+npm run data          # rebuild:data + icons + build:fallback + check:data
+```
+
+Or run the steps individually:
+
+```bash
+npm run rebuild:data  # parse data/sources/platinumgod.txt -> items/trinkets JSON
+npm run icons         # download missing canonical icons
+npm run icons:force   # re-download all icons
 npm run build:fallback
 npm run check:data
 ```
 
 Scripts:
 
-- `scripts/sync-platinumgod-data.mjs`: completes collectibles + trinkets and derives tags.
+- `scripts/rebuild-data.mjs`: parses the Platinum God export (`data/sources/platinumgod.txt`)
+  into `data/items.fallback.json` + `data/trinkets.json` with canonical IDs,
+  effect descriptions, quality, pool, quotes, and derived tags. Duplicate listings
+  (e.g. Birthright normal/Tainted) are merged.
+- `scripts/data-utils.mjs`: whole-word tag derivation rules (avoids false positives
+  like `fire` matching "tears fired").
+- `scripts/download-icons.mjs`: fetches icons from Rchardon's maintained
+  RebirthItemTracker fork — items via `collectibles_<id>.png`, trinkets via
+  `collectibles_<2000+id>.png` — into `icons/<id>.png` and `icons/trinkets/<id>.png`.
 - `scripts/build-fallback.js`: generates `data/fallback.js` from JSON sources.
 - `scripts/check-data.js`: validates counts, duplicates, required fields, icon availability.
+
+> Icons are bundled locally (no `icon_url` in the data), so collectible images
+> stay correct and work offline. The client loads items from Supabase first, then
+> falls back to the bundled canonical JSON.
+
+### Updating the cloud database
+
+The hosted app reads items/trinkets from Supabase first. After changing the data,
+reseed Supabase so the live app reflects it (requires `SUPABASE_URL` +
+`SUPABASE_SERVICE_KEY`):
+
+```bash
+node supabase/seed-standalone.js
+```
+
+The seed clears `ic_items`/`ic_trinkets` before inserting, so stale rows from the
+previous (non-canonical) ID scheme are removed.
 
 ## Supabase
 
@@ -82,8 +116,12 @@ data/
   challenges.json
   transformations.json
   steam-achievement-map.json
+  sources/
+    platinumgod.txt
 scripts/
-  sync-platinumgod-data.mjs
+  rebuild-data.mjs
+  data-utils.mjs
+  download-icons.mjs
   build-fallback.js
   check-data.js
 supabase/

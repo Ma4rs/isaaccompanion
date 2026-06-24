@@ -1,5 +1,5 @@
-const CACHE = 'isaac-companion-v5';
-const RUNTIME_CACHE = 'isaac-companion-runtime-v1';
+const CACHE = 'isaac-companion-v6';
+const RUNTIME_CACHE = 'isaac-companion-runtime-v2';
 const ASSETS = [
   './',
   './index.html',

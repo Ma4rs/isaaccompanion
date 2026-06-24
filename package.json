@@ -4,8 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "rebuild:data": "node scripts/rebuild-data.mjs",
+    "icons": "node scripts/download-icons.mjs",
+    "icons:force": "node scripts/download-icons.mjs --force",
     "build:fallback": "node scripts/build-fallback.js",
-    "sync:data": "node scripts/sync-platinumgod-data.mjs",
+    "data": "npm run rebuild:data && npm run icons && npm run build:fallback && npm run check:data",
     "check:data": "node scripts/check-data.js",
     "lint": "eslint . --ext .js,.mjs",
     "format": "prettier --check .",

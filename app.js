@@ -1,15 +1,13 @@
 (function () {
   'use strict';
 
-  const API_BASE = 'https://isaac-fastapi.onrender.com';
-  const API_TIMEOUT = 5000;
   const PREFIX_PATH = 'isaac-path-';
   const PREFIX_UNLOCK = 'isaac-unlock-';
   const PREFIX_CHALLENGE = 'isaac-challenge-';
   const PREFIX_MARK = 'isaac-mark-';
   const MARK_BOSSES = ['Mom\'s Heart', 'Isaac', 'Satan', '???', 'The Lamb', 'Boss Rush', 'Hush', 'Delirium', 'Mega Satan', 'Greedier', 'Mother', 'The Beast'];
   const MARK_BOSS_SHORT = ['Heart', 'Isaac', 'Satan', '???', 'Lamb', 'Rush', 'Hush', 'Del', 'MSat', 'Greed', 'Mom', 'Beast'];
-  const POOLS = ['treasure', 'devil', 'angel', 'shop', 'boss', 'secret', 'golden', 'planetarium'];
+  const POOLS = ['treasure', 'devil', 'angel', 'shop', 'boss', 'secret', 'planetarium', 'library', 'curse', 'crane'];
   const QUALITIES = [0, 1, 2, 3, 4];
   const DIFFICULTIES = ['easy', 'medium', 'hard', 'extreme'];
 
@@ -56,16 +54,7 @@
 
   function mapItem(raw) { return dataTools.mapItem(raw); }
 
-  // --- Data fetching (Supabase first, then JSON fallback) ---
-
-  function fetchItemsApi() {
-    const controller = new AbortController();
-    const t = setTimeout(() => controller.abort(), API_TIMEOUT);
-    return fetch(API_BASE + '/items', { signal: controller.signal })
-      .then(res => { clearTimeout(t); if (!res.ok) throw new Error('API ' + res.status); return res.json(); })
-      .then(data => { const list = Array.isArray(data) ? data : (data && (data.items || data.data)) || []; return list.map(mapItem); })
-      .catch(() => { clearTimeout(t); throw new Error('API unavailable'); });
-  }
+  // --- Data fetching (Supabase first, then bundled canonical JSON) ---
 
   function fetchItemsFallback() {
     return fetch('data/items.fallback.json').then(res => {
@@ -77,9 +66,8 @@
     state.itemsLoading = true; state.itemsError = null; render();
     (db ? db.fetchItems() : Promise.reject())
       .then(list => { state.items = list; state.itemsSource = 'supabase'; state.itemsLoading = false; render(); })
-      .catch(() => fetchItemsApi()
-        .then(list => { state.items = list; state.itemsSource = 'api'; state.itemsLoading = false; render(); })
-        .catch(() => fetchItemsFallback().then(list => { state.items = list; state.itemsSource = 'fallback'; state.itemsLoading = false; render(); }))
+      .catch(() => fetchItemsFallback()
+        .then(list => { state.items = list; state.itemsSource = 'fallback'; state.itemsLoading = false; render(); })
         .catch(() => { state.items = fallback.items.map(mapItem); state.itemsSource = 'fallback'; state.itemsError = null; state.itemsLoading = false; render(); })
       );
   }

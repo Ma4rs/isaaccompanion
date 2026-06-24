@@ -38,6 +38,8 @@ async function seedItems() {
     type: r.type ?? null,
     synergies: r.synergies ?? []
   }));
+  // Item IDs were realigned to canonical in-game IDs; clear stale rows first.
+  await supabase.from('ic_items').delete().not('id', 'is', null);
   const { error } = await supabase.from('ic_items').upsert(items, { onConflict: 'id' });
   if (error) throw new Error(`Items: ${error.message}`);
   console.log(`Seeded ${items.length} items`);
@@ -53,6 +55,7 @@ async function seedTrinkets() {
     icon_url: t.icon_url ?? t.iconUrl ?? null,
     tags: t.tags ?? []
   }));
+  await supabase.from('ic_trinkets').delete().not('id', 'is', null);
   const { error } = await supabase.from('ic_trinkets').upsert(trinkets, { onConflict: 'id' });
   if (error) throw new Error(`Trinkets: ${error.message}`);
   console.log(`Seeded ${trinkets.length} trinkets`);

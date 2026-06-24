@@ -2,35 +2,27 @@
   {
     "id": "1",
     "name": "Swallowed Penny",
-    "description": "Each time you get hit, you drop a coin or two Unlock this item by beating Challenge #15 (Slow Roll)",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/001.png",
-    "tags": []
+    "description": "Each time you get hit, you drop a coin or two",
+    "quote": "Gulp!"
   },
   {
     "id": "2",
     "name": "Petrified Poop",
-    "description": "While held, Isaac has a significantly higher chance to find drops when breaking poops AAA Battery",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/002.png",
-    "tags": []
+    "description": "While held, Isaac has a significantly higher chance to find drops when breaking poops",
+    "quote": "It feels lucky?"
   },
   {
     "id": "3",
     "name": "AAA Battery",
-    "description": "Lowers your spacebar item charge rate by 1 Cannot lower the charge of your spacebar item below 1 room",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/003.png",
-    "tags": []
+    "description": "Lowers your spacebar item charge rate by 1 Cannot lower the charge of your spacebar item below 1 room For example, you will now be able to use a 3 room charge item after 2 rooms instead",
+    "quote": "Trickle charge"
   },
   {
     "id": "4",
     "name": "Broken Remote",
     "description": "Does the teleport effect every time you use your current spacebar item Can be used infinitely every room if you have Guppy's Paw and no red heart containers (Can be exploited to get to the boss room without clearing any other rooms)",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/004.png",
+    "quote": "It's broken",
     "tags": [
-      "boss",
       "heart",
       "herz",
       "hp up"
@@ -39,9 +31,8 @@
   {
     "id": "5",
     "name": "Purple Heart",
-    "description": "Higher chance for champion enemies while held Broken Magnet",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/005.png",
+    "description": "Higher chance for champion enemies while held",
+    "quote": "Challenge up",
     "tags": [
       "heart",
       "herz"
@@ -51,114 +42,88 @@
     "id": "6",
     "name": "Broken Magnet",
     "description": "Has a partial Magneto effect and will attract coins, pulling them into Isaac from a distance Does not attract other pickups like the full Magneto item does",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/006.png",
-    "tags": []
+    "quote": "It kinda works"
   },
   {
     "id": "7",
     "name": "Rosary Bead",
     "description": "Increases your chances to find an Angel Room instead of a Devil Room Normally there is a 50%/50% chance of a Angel or Devil room with if a door spawns after the boss. The Rosary Bead changes this to a 75%/25% chance of an angel or devil room (respectively)",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/007.png",
-    "tags": [
-      "angel",
-      "boss",
-      "devil"
-    ]
+    "quote": "Faith up"
   },
   {
     "id": "8",
     "name": "Cartridge",
     "description": "When Isaac takes damage, there is a chance he will gain the Gamekid effect, turning him invincible and dealing contact damage to any enemies he touches The chance to activate the invincibility effect is affected by your luck stat and at +38 Luck it will activate every time you get hit",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/008.png",
+    "quote": "I remember these",
     "tags": [
-      "luck"
+      "shield"
     ]
   },
   {
     "id": "9",
     "name": "Pulse Worm",
     "description": "Tears shrink and grow in size as they go across the room Does not appear to affect your damage and only the hitbox size of tears",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/009.png",
-    "tags": []
+    "quote": "Wub wub!"
   },
   {
     "id": "10",
     "name": "Wiggle Worm",
-    "description": "Tears now move in a wave fashion across the room Grants spectral tears",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/010.png",
+    "description": "Tears now move in a wave fashion across the room Grants spectral tears +0.4 Tears up",
+    "quote": "Wiggle wiggle!",
     "tags": [
-      "spectral"
+      "spectral",
+      "tears up"
     ]
   },
   {
     "id": "11",
     "name": "Ring Worm",
-    "description": "While held, tears move in a spiral pattern across the screen at high speed Grants spectral tears",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/011.png",
+    "description": "While held, tears move in a spiral pattern across the screen at high speed Grants spectral tears +0.4 Tears up Effectively increases your range due to the tear pattern",
+    "quote": "Woop woop!",
     "tags": [
-      "spectral"
+      "spectral",
+      "tears up"
     ]
   },
   {
     "id": "12",
     "name": "Flat Worm",
     "description": "Tears become flat and disc shaped giving them a larger hitbox Higher knockback effect with your tears",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/012.png",
-    "tags": []
+    "quote": "Blub blub!"
   },
   {
     "id": "13",
     "name": "Store Credit",
     "description": "While this trinket is held, all items in the Shop cost 0 coins After buying any 0 cent item in the Shop, the trinket disappears",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/013.png",
-    "tags": [
-      "shop"
-    ]
+    "quote": "YES!"
   },
   {
     "id": "14",
     "name": "Callus",
-    "description": "Isaac no longer takes damage from walking over spikes and blood creep while this trinket is held Lucky Rock",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/014.png",
+    "description": "Isaac no longer takes damage from walking over spikes and blood creep while this trinket is held",
+    "quote": "Your feet feel stronger",
     "tags": [
       "blood",
-      "blut",
-      "luck"
+      "blut"
     ]
   },
   {
     "id": "15",
     "name": "Lucky Rock",
-    "description": "33% chance to drop a coin for every rock that you destroy Unlock this item by destroying 100 rocks",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/015.png",
-    "tags": [
-      "luck"
-    ]
+    "description": "33% chance to drop a coin for every rock that you destroy",
+    "quote": "There's something inside"
   },
   {
     "id": "16",
     "name": "Mom's Toenail",
     "description": "Mom's Leg will now appear every 20 seconds and stomp down randomly in the room dealing 300 damage to enemies Be warned though, Mom's leg can also stomp and hurt Isaac too!",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/016.png",
-    "tags": []
+    "quote": "???"
   },
   {
     "id": "17",
     "name": "Black Lipstick",
-    "description": "Increases the chance for Black hearts to spawn Unlock this item by beating the Dark Room with Eve",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/017.png",
+    "description": "Increases the chance for Black hearts to spawn",
+    "quote": "Evil up",
     "tags": [
       "heart",
       "herz"
@@ -168,11 +133,8 @@
     "id": "18",
     "name": "Bible Tract",
     "description": "Gives you a higher chance of eternal hearts Contrary to popular belief, the Bible Tract doesn't allow Angel Rooms to appear after paying for a Devil Deal",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/018.png",
+    "quote": "Faith up",
     "tags": [
-      "angel",
-      "devil",
       "heart",
       "herz"
     ]
@@ -180,17 +142,14 @@
   {
     "id": "19",
     "name": "Paper Clip",
-    "description": "Allows you to unlock golden chests without needing a key Does not work on locked rooms",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/019.png",
-    "tags": []
+    "description": "Allows you to unlock golden chests without needing a key Does not work on locked rooms Cain starts with this trinket after donating 68 coins to the Greed Donation Machine",
+    "quote": "Master of lockpicking"
   },
   {
     "id": "20",
     "name": "Monkey Paw",
     "description": "When you reach half a heart of life remaining, a black heart will spawn After three black hearts have spawned, the trinket dissapears",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/020.png",
+    "quote": "Wish granted",
     "tags": [
       "heart",
       "herz"
@@ -199,64 +158,62 @@
   {
     "id": "21",
     "name": "Mysterious Paper",
-    "description": "Imitates the behaviours of some of the other 'paper' items/trinkets A Missing Page: When taking damage, Isaac has a chance to deal damage to the entire room in a Necronomicon style effect",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/021.png",
-    "tags": []
+    "description": "Imitates the behaviours of some of the other 'paper' items/trinkets A Missing Page: When taking damage, Isaac has a chance to deal damage to the entire room in a Necronomicon style effect Has a chance to trigger the Polaroid or Negative effect every time you take damage with half a red heart or less Missing Poster: Dying in a sacrifice room while holding this trinket will reveal a puzzle piece on the death screen. Finding all the puzzle pieces will help you to reveal the final secret, unlocking the hidden character 'The Lost' If held when you touch the chest after the Satan or Isaac fight and you don't have the relevant item to go to the next floor (Polaroid or Negative), you have a small chance to be taken there anyway",
+    "quote": "???",
+    "tags": [
+      "heart",
+      "herz"
+    ]
   },
   {
     "id": "22",
     "name": "Daemon's Tail",
-    "description": "80% of heart drops are replaced with keys Hearts turn into black hearts where possible. This doesn't convert hearts that dropped before picking up this trinket, and doesn't apply to set heart drops, i.e. the eternal hearts that drop in angel themed super secret rooms",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/022.png",
+    "description": "80% of heart drops are replaced with keys Hearts turn into black hearts where possible. This doesn't convert hearts that dropped before picking up this trinket, and doesn't apply to set heart drops, i.e. the eternal hearts that drop in angel themed super secret rooms All heart drops from Ace of Hearts will be Black Hearts",
+    "quote": "Evil up",
     "tags": [
-      "angel",
       "heart",
-      "herz",
-      "secret"
+      "herz"
     ]
   },
   {
     "id": "23",
     "name": "Missing Poster",
-    "description": "Dying in a sacrifice room while holding this trinket will unlock The Lost character After The Lost is unlocked, dying anywhere with this trinket will bring you back to life as The Lost and the trinket will be deleted",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/023.png",
-    "tags": []
+    "description": "Dying in a sacrifice room while holding this trinket will unlock The Lost character After The Lost is unlocked, dying anywhere with this trinket will bring you back to life as The Lost and the trinket will be deleted When playing as Tainted Lost, you don't swap to being regular Lost, it simply acts as an extra life",
+    "quote": "???",
+    "tags": [
+      "hp up"
+    ]
   },
   {
     "id": "24",
     "name": "Butt Penny",
     "description": "Everytime you pick up a coin, you fart, inflicting poison damage to nearby enemies Greatly increases the chance of coins dropping from poops",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/024.png",
-    "tags": []
+    "quote": "Wealth of gas",
+    "tags": [
+      "poison"
+    ]
   },
   {
     "id": "25",
     "name": "Mysterious Candy",
-    "description": "Causes Isaac to create poops randomly Hook Worm",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/025.png",
-    "tags": []
+    "description": "Causes Isaac to create poops randomly",
+    "quote": "Uh-oh!"
   },
   {
     "id": "26",
     "name": "Hook Worm",
-    "description": "Tears now move forwards at right angles, shifting left and right across the room +0.4 Tears up",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/026.png",
+    "description": "Tears now move forwards at right angles, shifting left and right across the room +0.4 Tears up Grants spectral tears Increases your range stat by +10.0 while held but due to the fire pattern, your tears travel a similar distance to normal",
+    "quote": "Zip zoop!",
     "tags": [
+      "spectral",
       "tears up"
     ]
   },
   {
     "id": "27",
     "name": "Whip Worm",
-    "description": "+0.5 Shot Speed Up Your tears now whip across the room at a very high shot speed",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/027.png",
+    "description": "+0.5 Shot Speed Up Your tears now whip across the room at a very high shot speed Shot speed gives your tears more effective range, but doesn't increase your range stat directly",
+    "quote": "Wooosh!",
     "tags": [
       "shot speed",
       "speed up"
@@ -265,9 +222,8 @@
   {
     "id": "28",
     "name": "Broken Ankh",
-    "description": "Has a 22.22% chance to respawn with 3 Soul hearts as Blue Baby when you die Unlock this item by beating Satan with Lazarus",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/028.png",
+    "description": "Has a 22.22% chance to respawn with 3 Soul hearts as Blue Baby when you die",
+    "quote": "Eternal life?",
     "tags": [
       "heart",
       "herz"
@@ -276,12 +232,9 @@
   {
     "id": "29",
     "name": "Fish Head",
-    "description": "Everytime Isaac takes damage, one blue fly will spawn Pinky Eye",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/029.png",
+    "description": "Everytime Isaac takes damage, one blue fly will spawn",
+    "quote": "It stinks",
     "tags": [
-      "auge",
-      "eye",
       "fliege",
       "fly"
     ]
@@ -289,24 +242,20 @@
   {
     "id": "30",
     "name": "Pinky Eye",
-    "description": "Isaac's tears have a chance to poison enemies The poison effect leaves a damage over time, which deals 4 or 6 damage per tick",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/030.png",
+    "description": "Isaac's tears have a chance to poison enemies The poison effect leaves a damage over time, which deals 4 or 6 damage per tick The chance to poison enemies is affected by your luck stat and at +18 Luck it will activate every time",
+    "quote": "Poison shots",
     "tags": [
       "auge",
-      "eye"
+      "eye",
+      "poison"
     ]
   },
   {
     "id": "31",
     "name": "Push Pin",
     "description": "Isaac now has a chance to make a spectral and piercing tear The chance to fire a piercing tear is affected by your luck stat and at +18 Luck it will activate every time",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/031.png",
+    "quote": "Piercing shots",
     "tags": [
-      "feuer",
-      "fire",
-      "luck",
       "piercing",
       "spectral"
     ]
@@ -315,16 +264,13 @@
     "id": "32",
     "name": "Liberty Cap",
     "description": "While held, this trinket gives a random mushroom effect each room Possible mushrooms include: Mini Mush, Odd Mushroom (Thin), Odd Mushroom (Thick), The Compass",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/032.png",
-    "tags": []
+    "quote": "Touch fuzzy, get dizzy!"
   },
   {
     "id": "33",
     "name": "Umbilical Cord",
     "description": "While at 1/2 a red heart of health, you gain a Little Steve familiar that follows you and shoots homing tears Umbilical Cord has a high chance to spawn a Gemini familiar for the room when Isaac takes damage. This effect is stackable",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/033.png",
+    "quote": "Fetal protection",
     "tags": [
       "familiar",
       "heart",
@@ -335,9 +281,8 @@
   {
     "id": "34",
     "name": "Child's Heart",
-    "description": "Gives Isaac a higher chance to find hearts from drops after clearing a room and from chests Curved Horn",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/034.png",
+    "description": "Gives Isaac a higher chance to find hearts from drops after clearing a room and from chests",
+    "quote": "It calls out to its brothers",
     "tags": [
       "heart",
       "herz"
@@ -346,9 +291,8 @@
   {
     "id": "35",
     "name": "Curved Horn",
-    "description": "+2 Damage Up Unlock this item by beating the Dark Room with Judas",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/035.png",
+    "description": "+2 Damage Up",
+    "quote": "DMG up",
     "tags": [
       "dmg up"
     ]
@@ -356,17 +300,14 @@
   {
     "id": "36",
     "name": "Rusted Key",
-    "description": "Gives Isaac a higher chance to find keys and chests Goat Hoof",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/036.png",
-    "tags": []
+    "description": "Gives Isaac a higher chance to find keys and chests",
+    "quote": "It feels lucky?"
   },
   {
     "id": "37",
     "name": "Goat Hoof",
-    "description": "+0.15 Speed Up Mom's Pearl",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/037.png",
+    "description": "+0.15 Speed Up",
+    "quote": "Speed up",
     "tags": [
       "speed up"
     ]
@@ -374,9 +315,8 @@
   {
     "id": "38",
     "name": "Mom's Pearl",
-    "description": "Grants a secondary chance of any non-specific heart drop turning into a soul heart Cancer",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/038.png",
+    "description": "Grants a secondary chance of any non-specific heart drop turning into a soul heart",
+    "quote": "It emanates purity",
     "tags": [
       "heart",
       "herz"
@@ -385,21 +325,17 @@
   {
     "id": "39",
     "name": "Cancer",
-    "description": "-2 Tear Delay (Tears Up) The fire rate increase is applied in such a way that the higher your tear stat is, the more effective Cancer is",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/039.png",
+    "description": "-2 Tear Delay (Tears Up) The fire rate increase is applied in such a way that the higher your tear stat is, the more effective Cancer is Breaks the normal fire rate cap, allowing you to fire faster than the normal maximum",
+    "quote": "Yay, cancer!",
     "tags": [
-      "feuer",
-      "fire",
       "tears up"
     ]
   },
   {
     "id": "40",
     "name": "Red Patch",
-    "description": "You have a chance when taking damage to gain +1.8 Damage Up for the rest of the room Match Stick",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/040.png",
+    "description": "You have a chance when taking damage to gain +1.8 Damage Up for the rest of the room",
+    "quote": "Your rage grows",
     "tags": [
       "dmg up"
     ]
@@ -408,31 +344,28 @@
     "id": "41",
     "name": "Match Stick",
     "description": "Gives Isaac a higher chance to find bombs Picking up the Match Stick is the only way to remove the Tick trinket",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/041.png",
+    "quote": "Tastes like burning",
     "tags": [
       "bomb",
-      "bombe"
+      "bombe",
+      "feuer",
+      "fire"
     ]
   },
   {
     "id": "42",
     "name": "Lucky Toe",
-    "description": "+1 Luck Up while held Unlock this item by blowing up 20 shop keepers (this includes the ones in the secret room)",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/042.png",
+    "description": "+1 Luck Up while held",
+    "quote": "Luck up!",
     "tags": [
-      "luck",
-      "secret",
-      "shop"
+      "luck"
     ]
   },
   {
     "id": "43",
     "name": "Cursed Skull",
-    "description": "When you take damage while on 1/2 a heart, you are teleported back to the previous room Safety Cap",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/043.png",
+    "description": "When you take damage while on 1/2 a heart, you are teleported back to the previous room",
+    "quote": "Cursed?",
     "tags": [
       "heart",
       "herz"
@@ -441,9 +374,8 @@
   {
     "id": "44",
     "name": "Safety Cap",
-    "description": "Gives Isaac a higher chance to find pills Ace of Spades",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/044.png",
+    "description": "Gives Isaac a higher chance to find pills",
+    "quote": "Don't swallow it",
     "tags": [
       "pill",
       "pille"
@@ -452,17 +384,14 @@
   {
     "id": "45",
     "name": "Ace of Spades",
-    "description": "Gives Isaac a higher chance to find Tarot cards after clearing a room or from chests Isaac's Fork",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/045.png",
-    "tags": []
+    "description": "Gives Isaac a higher chance to find Tarot cards after clearing a room or from chests",
+    "quote": "Luck of the draw"
   },
   {
     "id": "46",
     "name": "Isaac's Fork",
-    "description": "After clearing a room, you have a chance to heal for half a red heart A Missing Page",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/046.png",
+    "description": "After clearing a room, you have a chance to heal for half a red heart",
+    "quote": "Consume thy enemy",
     "tags": [
       "heart",
       "herz"
@@ -472,21 +401,14 @@
     "id": "48",
     "name": "A Missing Page",
     "description": "When taking damage, Isaac has a chance to deal damage to the entire room in a Necronomicon style effect The chance to damage enemies is affected by your luck stat and at +50 or more Luck it will activate 50% of the time",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/048.png",
-    "tags": [
-      "luck"
-    ]
+    "quote": "It glows with power"
   },
   {
     "id": "49",
     "name": "Bloody Penny",
-    "description": "Everytime you pick up a penny, you have a 25% chance to spawn a red heart on the floor Unlock this item by beating the Chest with Samson",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/049.png",
+    "description": "Everytime you pick up a penny, you have a 25% chance to spawn a red heart on the floor",
+    "quote": "Wealth of health",
     "tags": [
-      "blood",
-      "blut",
       "heart",
       "herz"
     ]
@@ -494,57 +416,43 @@
   {
     "id": "50",
     "name": "Burnt Penny",
-    "description": "Everytime you pick up a coin, you have a 25% chance to spawn a bomb on the floor Unlock this item by beating Challenge #13 (Beans!)",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/050.png",
+    "description": "Everytime you pick up a coin, you have a 25% chance to spawn a bomb on the floor",
+    "quote": "Wealth of chaos",
     "tags": [
       "bomb",
-      "bombe",
-      "feuer",
-      "fire"
+      "bombe"
     ]
   },
   {
     "id": "51",
     "name": "Flat Penny",
-    "description": "Everytime you pick up a coin, you have a 25% chance to spawn a key Counterfeit Penny",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/051.png",
-    "tags": []
+    "description": "Everytime you pick up a coin, you have a 25% chance to spawn a key",
+    "quote": "Wealth of answers"
   },
   {
     "id": "52",
     "name": "Counterfeit Penny",
-    "description": "When picking up a coin, you have a chance to automatically gain one more coin Unlock this item by playing the shell game in the arcade 100 times",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/052.png",
-    "tags": []
+    "description": "When picking up a coin, you have a chance to automatically gain one more coin",
+    "quote": "Wealth of wealth"
   },
   {
     "id": "53",
     "name": "Tick",
     "description": "When you enter a boss room, immediately remove 15% health from the boss and restore 1 red heart This trinket cannot be dropped by holding the drop key or picking up other trinkets. The only way to remove it is via having a second trinket slot (Mom's Purse, Belly Button) or absorbing it (Marbles, Smelter, Gulp! pill) or picking up the Match Stick trinket, which will burn it off you",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/053.png",
+    "quote": "Well, that's not coming off",
     "tags": [
-      "boss",
-      "feuer",
-      "fire",
       "heart",
       "herz",
       "pill",
-      "pille",
-      "shop"
+      "pille"
     ]
   },
   {
     "id": "54",
     "name": "Isaac's Head",
-    "description": "While held, this trinket gives Isaac a familiar that shoots piercing tears that deal 3.5 damage Unlock this item by beating the Boss Rush with Isaac",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/054.png",
+    "description": "While held, this trinket gives Isaac a familiar that shoots piercing tears that deal 3.5 damage",
+    "quote": "Dead friend",
     "tags": [
-      "boss",
       "familiar",
       "piercing"
     ]
@@ -552,9 +460,8 @@
   {
     "id": "55",
     "name": "Maggy's Faith",
-    "description": "At the start of a new floor, you get an eternal heart Unlock this item by beating the Dark Room with Maggy",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/055.png",
+    "description": "At the start of a new floor, you get an eternal heart",
+    "quote": "Faith's reward",
     "tags": [
       "heart",
       "herz"
@@ -563,11 +470,9 @@
   {
     "id": "56",
     "name": "Judas' Tongue",
-    "description": "Items which cost 2 heart containers in a deal with the devil are reduced to only cost 1 heart Unlock this item by beating Satan with Judas",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/056.png",
+    "description": "Items which cost 2 heart containers in a deal with the devil are reduced to only cost 1 heart",
+    "quote": "Payment received",
     "tags": [
-      "devil",
       "heart",
       "herz",
       "hp up"
@@ -576,9 +481,8 @@
   {
     "id": "57",
     "name": "???'s Soul",
-    "description": "Creates a familiar which moves around the room in a similar fashion to The Peeper, shooting tears in the same direction as Isaac Unlock this item by beating the Dark Room with Blue Baby",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/057.png",
+    "description": "Creates a familiar which moves around the room in a similar fashion to The Peeper, shooting tears in the same direction as Isaac",
+    "quote": "Imaginary friend",
     "tags": [
       "familiar"
     ]
@@ -586,9 +490,8 @@
   {
     "id": "58",
     "name": "Samson's Lock",
-    "description": "When you kill an enemy, you have a chance to get +0.5 damage up for the current room Unlock this item by beating the Dark Room with Samson",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/058.png",
+    "description": "When you kill an enemy, you have a chance to get +0.5 damage up for the current room",
+    "quote": "Your rage grows",
     "tags": [
       "dmg up"
     ]
@@ -596,9 +499,8 @@
   {
     "id": "59",
     "name": "Cain's Eye",
-    "description": "Gives a 25% chance to reveal map icons at the start of a new floor (The same effect as the Compass) Unlock this item by beating the Chest with Cain",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/059.png",
+    "description": "Gives a 25% chance to reveal map icons at the start of a new floor (The same effect as the Compass)",
+    "quote": "May you see your destination",
     "tags": [
       "auge",
       "eye"
@@ -608,8 +510,7 @@
     "id": "60",
     "name": "Eve's Bird Foot",
     "description": "When you kill an enemy, you have a chance to spawn a transparent Dead Bird familiar The Dead Bird familiar deals 2 damage per tick to enemies while in contact with them",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/060.png",
+    "quote": "Revenge from beyond",
     "tags": [
       "familiar"
     ]
@@ -618,24 +519,19 @@
     "id": "61",
     "name": "The Left Hand",
     "description": "Replaces chest spawns with red chests Doesn't replace chests that have already spawned",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/061.png",
-    "tags": []
+    "quote": "The left hand path reaps dark rewards"
   },
   {
     "id": "62",
     "name": "Shiny Rock",
-    "description": "While held, tinted rocks and rocks with a crawlspace below them will flash white every 10 seconds Safety Scissors",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/062.png",
-    "tags": []
+    "description": "While held, tinted rocks and rocks with a crawlspace below them will flash white every 10 seconds",
+    "quote": "It shines for it's brothers"
   },
   {
     "id": "63",
     "name": "Safety Scissors",
     "description": "Turns all troll bombs into bombs which you can pick up and use Super Troll bombs turn into 1+1 free double bomb pickups",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/063.png",
+    "quote": "Fuse cutter",
     "tags": [
       "bomb",
       "bombe"
@@ -645,24 +541,19 @@
     "id": "64",
     "name": "Rainbow Worm",
     "description": "Gives your tears a random worm effect every few seconds The possible tear effects include: Whip Worm, Ring Worm, Wiggle Worm, Flat Worm, Hook Worm, Pulse Worm, Tape Worm and Lazy Worm",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/064.png",
-    "tags": []
+    "quote": "Bleep bloop blop"
   },
   {
     "id": "65",
     "name": "Tape Worm",
-    "description": "While held, Tape Worm doubles your range stat and halves your tear height stat Lazy Worm",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/065.png",
-    "tags": []
+    "description": "While held, Tape Worm doubles your range stat and halves your tear height stat",
+    "quote": "Floooooooooop!"
   },
   {
     "id": "66",
     "name": "Lazy Worm",
-    "description": "-0.4 Shot Speed Down Cracked Dice",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/066.png",
+    "description": "-0.4 Shot Speed Down",
+    "quote": "Pft",
     "tags": [
       "shot speed"
     ]
@@ -670,33 +561,26 @@
   {
     "id": "67",
     "name": "Cracked Dice",
-    "description": "Every time you get hit, you have a chance to activate the D6, D20, D8, D10 or D12 effect Unlock this item by beating Greed Mode with ???",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/067.png",
-    "tags": []
+    "description": "Every time you get hit, you have a chance to activate the D6, D20, D8, D10 or D12 effect",
+    "quote": "You feel cursed... kinda."
   },
   {
     "id": "68",
     "name": "Super Magnet",
     "description": "While held this trinket causes all pickups and enemies to move slowly towards you Will also attract the Mom's Foot and Ultra Greed door entities",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/068.png",
-    "tags": []
+    "quote": "It pulls"
   },
   {
     "id": "69",
     "name": "Faded Polaroid",
     "description": "Randomly Isaac will gain a camouflage for a few seconds and all enemies in the current room will have a confused status effect applied to them This trinket can be used to open the door to Mausoleum in Depths II",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/069.png",
-    "tags": []
+    "quote": "You feel faded"
   },
   {
     "id": "70",
     "name": "Louse",
-    "description": "Gives a small chance to spawn a friendly attack spider while in a hostile room with enemies Bob's Bladder",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/070.png",
+    "description": "Gives a small chance to spawn a friendly attack spider while in a hostile room with enemies",
+    "quote": "Itchy, tasty...",
     "tags": [
       "spider",
       "spinne"
@@ -705,9 +589,8 @@
   {
     "id": "71",
     "name": "Bob's Bladder",
-    "description": "Leaves a pool of green creep under all bombs you place, which damages enemies that walk over it Watch Battery",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/071.png",
+    "description": "Leaves a pool of green creep under all bombs you place, which damages enemies that walk over it",
+    "quote": "Creepy bombs",
     "tags": [
       "bomb",
       "bombe"
@@ -716,17 +599,14 @@
   {
     "id": "72",
     "name": "Watch Battery",
-    "description": "Gives a +6.66% chance of a getting a small battery after clearing a room Gives a +2.0% chance for pickups to be small batteries",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/072.png",
-    "tags": []
+    "description": "Gives a +6.66% chance of a getting a small battery after clearing a room Gives a +2.0% chance for pickups to be small batteries Gives a +5.0% chance to add an extra charge to your active item after clearing a room",
+    "quote": "Lil charge"
   },
   {
     "id": "73",
     "name": "Blasting Cap",
-    "description": "Exploding bombs now have a chance to drop another bomb that you can pick up Stud Finder",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/073.png",
+    "description": "Exploding bombs now have a chance to drop another bomb that you can pick up",
+    "quote": "Pop! Pop!",
     "tags": [
       "bomb",
       "bombe"
@@ -735,49 +615,41 @@
   {
     "id": "74",
     "name": "Stud Finder",
-    "description": "Higher chance to find crawl spaces when exploding rocks Unlock this trinket by beating Challenge #27 (Brains)",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/074.png",
-    "tags": []
+    "description": "Higher chance to find crawl spaces when exploding rocks",
+    "quote": "The ground below feels hollow..."
   },
   {
     "id": "75",
     "name": "Error",
     "description": "Gives a different trinket effect per room, randomly choosing between any of the other available trinkets in the game Each room is locked to a specific trinket effect, meaning if you exit and re-enter a room, that specific room will always have the same effect",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/075.png",
-    "tags": []
+    "quote": "Effect not found?"
   },
   {
     "id": "76",
     "name": "Poker Chip",
-    "description": "Chests now have a 50/50 chance to either pay out with extra consumables or nothing/an enemy Unlock this trinket by beating Challenge #26 (I Rule)",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/076.png",
-    "tags": []
+    "description": "Chests now have a 50/50 chance to either pay out with extra consumables or nothing/an enemy",
+    "quote": "It's double down time!"
   },
   {
     "id": "77",
     "name": "Blister",
-    "description": "Tears have a stronger knockback effect while this trinket is held Second Hand",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/077.png",
-    "tags": []
+    "description": "Tears have a stronger knockback effect while this trinket is held",
+    "quote": "Bounce back!"
   },
   {
     "id": "78",
     "name": "Second Hand",
-    "description": "Increases the time that status effects stay on enemies. e.g. With poison effects, the damage over time poison will last for much longer Endless Nameless",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/078.png",
-    "tags": []
+    "description": "Increases the time that status effects stay on enemies. e.g. With poison effects, the damage over time poison will last for much longer",
+    "quote": "Extended stat effect time",
+    "tags": [
+      "poison"
+    ]
   },
   {
     "id": "79",
     "name": "Endless Nameless",
-    "description": "While held there is a small chance when using a tarot card or pill that a copy of it will be dropped on the floor next to you Black Feather",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/079.png",
+    "description": "While held there is a small chance when using a tarot card or pill that a copy of it will be dropped on the floor next to you",
+    "quote": "I'm stuck in a loop...",
     "tags": [
       "pill",
       "pille"
@@ -787,8 +659,7 @@
     "id": "80",
     "name": "Black Feather",
     "description": "+0.2 Damage Up for each 'evil' item you have Items classed as evil in this case are Black Candle, Ceremonial Robes, Abaddon, Goat Head, Match Book, Missing Page 2, Safety Pin",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/080.png",
+    "quote": "With darkness comes power",
     "tags": [
       "dmg up"
     ]
@@ -797,49 +668,36 @@
     "id": "81",
     "name": "Blind Rage",
     "description": "Invincibility lasts longer after getting hit (Increased i-frames) This makes it possible to use the Blood Donation machine twice from one hit of damage",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/081.png",
+    "quote": "Blind to damage",
     "tags": [
       "blood",
-      "blut"
+      "blut",
+      "shield"
     ]
   },
   {
     "id": "82",
     "name": "Golden Horse Shoe",
-    "description": "+15% chance to get a double item room to spawn on the next floor If the effect activates, two items spawn in your item room, however only one can be taken (Same effect as the More Options item)",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/082.png",
-    "tags": []
+    "description": "+15% chance to get a double item room to spawn on the next floor If the effect activates, two items spawn in your item room, however only one can be taken (Same effect as the More Options item) The chance doubles to +30% with the effect from Mom's Box",
+    "quote": "Feel lucky?"
   },
   {
     "id": "83",
     "name": "Store Key",
-    "description": "Automatically opens all shop room doors for free Unlock this trinket by donating 666 coins to the Greed Donation Machine",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/083.png",
-    "tags": [
-      "shop"
-    ]
+    "description": "Automatically opens all shop room doors for free",
+    "quote": "Stores are open"
   },
   {
     "id": "84",
     "name": "Rib of Greed",
     "description": "Forces the Greed and Super Greed mini bosses to no longer appear in shops or secret rooms Holding Rib of Greed increase your chance to receive coin drops",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/084.png",
-    "tags": [
-      "boss",
-      "secret",
-      "shop"
-    ]
+    "quote": "Feels greedy"
   },
   {
     "id": "85",
     "name": "Karma",
     "description": "Donating to a Donation Machine has a chance to heal Isaac for a full red heart or spawn a Beggar Can't spawn in greed mode",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/085.png",
+    "quote": "Karma up",
     "tags": [
       "heart",
       "herz"
@@ -848,9 +706,8 @@
   {
     "id": "86",
     "name": "Lil Larva",
-    "description": "Destroying poops now gives you a blue fly Mom's Locket",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/086.png",
+    "description": "Destroying poops now gives you a blue fly",
+    "quote": "the poop is moving...",
     "tags": [
       "fliege",
       "fly"
@@ -859,9 +716,8 @@
   {
     "id": "87",
     "name": "Mom's Locket",
-    "description": "While held, you heal for half a red heart every time you use a key to open a door or golden chest Changes all half red hearts into full hearts",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/087.png",
+    "description": "While held, you heal for half a red heart every time you use a key to open a door or golden chest Changes all half red hearts into full hearts Hearts dropped from Tainted Magdalene's mechanic will be always full red hearts",
+    "quote": "you feel her love",
     "tags": [
       "heart",
       "herz"
@@ -870,17 +726,14 @@
   {
     "id": "88",
     "name": "NO!",
-    "description": "While this trinket is held you have a significantly lower chance to find spacebar/active items It will cause passive items to spawn except when the game cannot generate any more passive items and will then instead choose spacebar/active items",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/088.png",
-    "tags": []
+    "description": "While this trinket is held you have a significantly lower chance to find spacebar/active items It will cause passive items to spawn except when the game cannot generate any more passive items and will then instead choose spacebar/active items Some hard coded spacebar items from bosses and mini-bosses (i.e. Krampus Head) can still spawn Bible drops caused by the Rosary item are not prevented by this trinket",
+    "quote": "Never again!"
   },
   {
     "id": "89",
     "name": "Child Leash",
-    "description": "Causes your familiars to stay closer to each other Brown Cap",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/089.png",
+    "description": "Causes your familiars to stay closer to each other",
+    "quote": "Keep your friends close...",
     "tags": [
       "familiar"
     ]
@@ -889,24 +742,19 @@
     "id": "90",
     "name": "Brown Cap",
     "description": "Poop in the environment will now explode when destroyed",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/090.png",
-    "tags": []
+    "quote": "Fartoom!"
   },
   {
     "id": "91",
     "name": "Meconium",
     "description": "While held you have an increased chance for Black Poops to spawn, which deal damage to all enemies in the room when destroyed Gives The Poop active item a chance to spawn a Black Poop too",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/091.png",
-    "tags": []
+    "quote": "Eww"
   },
   {
     "id": "92",
     "name": "Cracked Crown",
     "description": "Boosts speed, range, shot speed, tears and damage if they are above their base values by roughly +20% Affects stat bonuses from passive items, trinkets that are absorbed or in a second trinket slot, and permanent bonuses given by items such as Void",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/092.png",
+    "quote": "Boost Stats",
     "tags": [
       "shot speed"
     ]
@@ -915,21 +763,13 @@
     "id": "93",
     "name": "Used Diaper",
     "description": "While held, gives the Skatole effect only in certain rooms, which will turn hostile flies to neutral and stop others from shooting Attack, Dart and Ring Flies turn into neutral Black Flies and Pooters and Fat Flies will no longer fire at you",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/093.png",
-    "tags": [
-      "feuer",
-      "fire",
-      "fliege",
-      "fly"
-    ]
+    "quote": "You Stink"
   },
   {
     "id": "94",
     "name": "Fish Tail",
-    "description": "Items and trinkets which generate blue flies and spiders will have double the effect, causing twice as many to spawn Black Tooth",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/094.png",
+    "description": "Items and trinkets which generate blue flies and spiders will have double the effect, causing twice as many to spawn",
+    "quote": "It also stinks!",
     "tags": [
       "fliege",
       "fly",
@@ -940,28 +780,28 @@
   {
     "id": "95",
     "name": "Black Tooth",
-    "description": "Some tears will randomly become a black tooth, that deal double your normal tear damage and can poison enemies Ouroboros Worm",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/095.png",
-    "tags": []
+    "description": "Some tears will randomly become a black tooth, that deal double your normal tear damage and can poison enemies",
+    "quote": "It looks dead",
+    "tags": [
+      "poison"
+    ]
   },
   {
     "id": "96",
     "name": "Ouroboros Worm",
-    "description": "Tears become spectral and travel in a huge spiral pattern +1.5 Range Up",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/096.png",
+    "description": "Tears become spectral and travel in a huge spiral pattern +1.5 Range Up +0.4 Tears up",
+    "quote": "Foop foop!",
     "tags": [
       "range up",
-      "spectral"
+      "spectral",
+      "tears up"
     ]
   },
   {
     "id": "97",
     "name": "Tonsil",
-    "description": "Every time you take damage you have a very small chance to gain a Tonsil familiar, which follows you and blocks enemy projectiles This effect can happen twice before the Tonsil trinket is destroyed",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/097.png",
+    "description": "Every time you take damage you have a very small chance to gain a Tonsil familiar, which follows you and blocks enemy projectiles This effect can happen twice before the Tonsil trinket is destroyed Does not deal contact damage to enemies",
+    "quote": "Sick...",
     "tags": [
       "familiar"
     ]
@@ -969,27 +809,25 @@
   {
     "id": "98",
     "name": "Nose Goblin",
-    "description": "Your tears have a random chance to become booger tears Booger tears stick on to enemies and deal periodic poison damage until they die or 60 seconds passes. Each tick of poison damage is equal to your normal tear damage",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/098.png",
-    "tags": []
+    "description": "Your tears have a random chance to become booger tears Booger tears stick on to enemies and deal periodic poison damage until they die or 60 seconds passes. Each tick of poison damage is equal to your normal tear damage The boogers will have a homing effect",
+    "quote": "Seems magic...",
+    "tags": [
+      "homing",
+      "poison"
+    ]
   },
   {
     "id": "99",
     "name": "Super Ball",
-    "description": "Some random tears will gain the Rubber Cement effect and become bouncy Vibrant Bulb",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/099.png",
-    "tags": []
+    "description": "Some random tears will gain the Rubber Cement effect and become bouncy",
+    "quote": "Boing!"
   },
   {
     "id": "100",
     "name": "Vibrant Bulb",
     "description": "Grants +0.25 Speed, +0.75 Range, +0.1 Shot Speed, +0.2 Tears, +0.5 Damage and +1 Luck when Isaac's active item is fully charged Infinite use items such as Potato Peeler count as charged and provide the bonus from this trinket",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/100.png",
+    "quote": "It needs power",
     "tags": [
-      "luck",
       "shot speed"
     ]
   },
@@ -997,8 +835,7 @@
     "id": "101",
     "name": "Dim Bulb",
     "description": "Grants +0.5 Speed, +1.5 Range, +0.3 Shot Speed, +0.4 Tears, +1.5 Damage when Isaac's active item is completely uncharged One-time use items such as Mama Mega count as uncharged and provide the bonus from this trinket",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/101.png",
+    "quote": "I think it's broken",
     "tags": [
       "shot speed"
     ]
@@ -1007,18 +844,13 @@
     "id": "102",
     "name": "Fragmented Card",
     "description": "Gives you another secret room on each new floor while held Does not spawn more than one super secret room, only the normal secret room",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/102.png",
-    "tags": [
-      "secret"
-    ]
+    "quote": "Double moon"
   },
   {
     "id": "103",
     "name": "Equality!",
     "description": "When you have the same amount of coins, bombs and keys, half consumables turn into their doubled version This effect works for any number of consumables, including 0 and 99, as long as the count for coins/keys/bombs is equal",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/103.png",
+    "quote": "=",
     "tags": [
       "bomb",
       "bombe"
@@ -1028,16 +860,13 @@
     "id": "104",
     "name": "Wish Bone",
     "description": "Every time you take damage you have a very small chance to spawn a random pedestal item When the effect triggers, the trinket is destroyed",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/104.png",
-    "tags": []
+    "quote": "Make a wish"
   },
   {
     "id": "105",
     "name": "Bag Lunch",
     "description": "Every time you take damage you have a very small chance to spawn the Lunch item, which gives +1 HP up When the effect triggers, this trinket is destroyed",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/105.png",
+    "quote": "I wonder what it is",
     "tags": [
       "hp up"
     ]
@@ -1045,20 +874,14 @@
   {
     "id": "106",
     "name": "Lost Cork",
-    "description": "Increases the radius of any creep you produce Crow Heart",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/106.png",
-    "tags": [
-      "heart",
-      "herz"
-    ]
+    "description": "Increases the radius of any creep you produce",
+    "quote": "Uncorked"
   },
   {
     "id": "107",
     "name": "Crow Heart",
     "description": "While held, any damage taken remove red hearts first, before soul hearts, black hearts and rotten heart damage While at 1/2 of a red heart, it will begin to remove your other hearts again",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/107.png",
+    "quote": "Drain me",
     "tags": [
       "heart",
       "herz"
@@ -1068,8 +891,7 @@
     "id": "108",
     "name": "Walnut",
     "description": "The Walnut has a chance to break when taking damage from an explosion. If it does, it will drop a random trinket, coin, heart and key The Walnut trinket is destroyed once the effect activates",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/108.png",
+    "quote": "Thats a hard nut to crack!",
     "tags": [
       "bomb",
       "bombe",
@@ -1080,9 +902,8 @@
   {
     "id": "109",
     "name": "Duct Tape",
-    "description": "Causes any orbitals you have to stop moving while held Stops shooting familiars from moving (including Lilith's Incubus)",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/109.png",
+    "description": "Causes any orbitals you have to stop moving while held Stops shooting familiars from moving (including Lilith's Incubus) Some familiars with irregular movement are not affected by Duct Tape, such as Abel, BBF, Bumbo, Guppy's Hair Ball, Lil Gurdy, Punching Bag, Robo-Baby 2.0, Succubus",
+    "quote": "Stuck!",
     "tags": [
       "familiar",
       "orbital"
@@ -1091,19 +912,14 @@
   {
     "id": "110",
     "name": "Silver Dollar",
-    "description": "While held, shops will now appear on the womb floors (The Womb, Utero and Scarred Womb) Unlock this item by defeating Delirium in The Void floor with Cain",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/110.png",
-    "tags": [
-      "shop"
-    ]
+    "description": "While held, shops will now appear on the womb floors (The Womb, Utero and Scarred Womb)",
+    "quote": "Feels lucky..."
   },
   {
     "id": "111",
     "name": "Bloody Crown",
     "description": "While held, item rooms now appear on the womb floors (The Womb, Utero and Scarred Womb) Causes item rooms to appear on the Corpse floors",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/111.png",
+    "quote": "Drips with blood...",
     "tags": [
       "blood",
       "blut"
@@ -1112,83 +928,57 @@
   {
     "id": "112",
     "name": "Pay To Win",
-    "description": "While held, restock boxes will always spawn in item rooms Locust of War",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/112.png",
-    "tags": []
+    "description": "While held, restock boxes will always spawn in item rooms",
+    "quote": "..."
   },
   {
     "id": "113",
     "name": "Locust of War",
     "description": "Upon entering a room with enemies, spawns a Red Locust which detonates upon impact with enemies, dealing double tear damage for the impact of the Locust and 60 damage for the explosion Can be dangerous as the fly will target the nearest enemy, which can be close enough to catch Isaac in its blast radius",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/113.png",
+    "quote": "I Bring Wrath",
     "tags": [
       "bomb",
-      "bombe",
-      "fliege",
-      "fly"
+      "bombe"
     ]
   },
   {
     "id": "114",
     "name": "Locust of Pestilence",
-    "description": "At the start of each new hostile room you spawn a green attack fly, which will target a nearby enemy, deal double your tear damage and then poison them Unlock this item by beating Satan with Apollyon",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/114.png",
+    "description": "At the start of each new hostile room you spawn a green attack fly, which will target a nearby enemy, deal double your tear damage and then poison them",
+    "quote": "I Bring Pestilence",
     "tags": [
-      "fliege",
-      "fly"
+      "poison"
     ]
   },
   {
     "id": "115",
     "name": "Locust of Famine",
-    "description": "At the start of each new hostile room you spawn a yellow attack fly, which will target a nearby enemy, deal double your tear damage and apply a slowing effect to it Unlock this trinket by defeating ??? in The Chest as Apollyon",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/115.png",
-    "tags": [
-      "fliege",
-      "fly"
-    ]
+    "description": "At the start of each new hostile room you spawn a yellow attack fly, which will target a nearby enemy, deal double your tear damage and apply a slowing effect to it",
+    "quote": "I bring Famine"
   },
   {
     "id": "116",
     "name": "Locust of Death",
-    "description": "Upon entering a room with enemies, spawns a Black Locust that deals quadruple Isaac's damage, applied as two hits of double damage Unlock this trinket by defeating The Lamb as Apollyon",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/116.png",
-    "tags": []
+    "description": "Upon entering a room with enemies, spawns a Black Locust that deals quadruple Isaac's damage, applied as two hits of double damage",
+    "quote": "I bring Death"
   },
   {
     "id": "117",
     "name": "Locust of Conquest",
-    "description": "At the start of each new hostile room you spawn 2-5 white attack flies, which will target a nearby enemy and deal double your tear damage to it Unlock this trinket by defeating Boss Rush as Apollyon",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/117.png",
-    "tags": [
-      "boss",
-      "fliege",
-      "fly"
-    ]
+    "description": "At the start of each new hostile room you spawn 2-5 white attack flies, which will target a nearby enemy and deal double your tear damage to it",
+    "quote": "I Bring Conquest"
   },
   {
     "id": "118",
     "name": "Bat Wing",
-    "description": "When killing an enemy, you have a very small chance to gain the ability to fly for the rest of the room Unlock this trinket by defeating Greedier Mode with Azazel",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/118.png",
-    "tags": [
-      "fliege",
-      "fly"
-    ]
+    "description": "When killing an enemy, you have a very small chance to gain the ability to fly for the rest of the room",
+    "quote": "They Are Growing..."
   },
   {
     "id": "119",
     "name": "Stem Cell",
     "description": "Stem Cell heals Isaac's red heart containers to 50% each floor If Isaac already has 50% health or more, it heals half of a heart instead",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/119.png",
+    "quote": "Regen!",
     "tags": [
       "heart",
       "herz",
@@ -1199,92 +989,70 @@
     "id": "120",
     "name": "Hairpin",
     "description": "Fully recharges your active item at the start of each boss fight Added as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Zaratus",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/120.png",
-    "tags": [
-      "boss",
-      "shop"
-    ]
+    "quote": "Danger charge"
   },
   {
     "id": "121",
     "name": "Wooden Cross",
-    "description": "Gives you the Holy Mantle shield effect at the start of every new floor, which protects you from the next hit of damage you take Does not recharge until the start of the next floor",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/121.png",
-    "tags": []
+    "description": "Gives you the Holy Mantle shield effect at the start of every new floor, which protects you from the next hit of damage you take Does not recharge until the start of the next floor Stacks with the effects from Holy Mantle and Blanket, but it does not stack with Holy Card Added as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Ep and Mills",
+    "quote": "My faith protects me",
+    "tags": [
+      "shield"
+    ]
   },
   {
     "id": "122",
     "name": "Butter!",
-    "description": "Using your active item while holding this trinket will drop it back on a pedestal on the ground Also after taking damage, you have a very small chance to drop one of your passive items",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/122.png",
-    "tags": []
+    "description": "Using your active item while holding this trinket will drop it back on a pedestal on the ground Also after taking damage, you have a very small chance to drop one of your passive items One-time use active items will be consumed and not dropped Added as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by MarkusLeben and iguesti",
+    "quote": "Can't hold it!"
   },
   {
     "id": "123",
     "name": "Filigree Feather",
     "description": "Holding this trinket will cause the Angel mini bosses to drop normal items instead of Key Pieces Added as part of the Afterbirth+ Booster Pack #2, designed by Edmund McMillen",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/123.png",
-    "tags": [
-      "angel",
-      "boss"
-    ]
+    "quote": "Angelic spoils!"
   },
   {
     "id": "124",
     "name": "Door Stop",
-    "description": "While held, the last door Isaac went through stays open, allowing him to leave the room even if enemies are in it This trinket works on boss rooms (except Ultra Greed) and devil rooms containing Krampus, allowing you to exit out mid-fight",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/124.png",
-    "tags": [
-      "boss",
-      "devil"
-    ]
+    "description": "While held, the last door Isaac went through stays open, allowing him to leave the room even if enemies are in it This trinket works on boss rooms (except Ultra Greed) and devil rooms containing Krampus, allowing you to exit out mid-fight Does not drop in Greed mode",
+    "quote": "Hold the door!"
   },
   {
     "id": "125",
     "name": "Extension Cord",
     "description": "After being picked up, a yellow laser chain now flows through Isaac's familiars Added as part of the Afterbirth+ Booster Pack #4 and based on the Steam Workshop mod created by Strawrat and Aczom",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/125.png",
+    "quote": "Charged friends",
     "tags": [
       "familiar",
-      "shop"
+      "laser"
     ]
   },
   {
     "id": "126",
     "name": "Rotten Penny",
     "description": "While held, spawns +1 friendly blue fly every time you pick up a coin Added as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Eufuu",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/126.png",
+    "quote": "Wealth of flies",
     "tags": [
       "fliege",
-      "fly",
-      "shop"
+      "fly"
     ]
   },
   {
     "id": "127",
     "name": "Baby-Bender",
     "description": "While held this trinket gives your familiars homing shots Added as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Ink Tears",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/127.png",
+    "quote": "Feed them magic!",
     "tags": [
       "familiar",
-      "homing",
-      "shop"
+      "homing"
     ]
   },
   {
     "id": "128",
     "name": "Finger Bone",
     "description": "While held, gives you a 5% chance to gain a bone heart everytime you take damage Added as part of the Afterbirth+ Booster Pack #5",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/128.png",
+    "quote": "It looks brittle",
     "tags": [
       "heart",
       "herz"
@@ -1293,29 +1061,20 @@
   {
     "id": "129",
     "name": "Jawbreaker",
-    "description": "Tears have a chance to become a tooth, dealing x3.2 damage, similar to Tough Love The chance to fire a tooth with this trinket is affected by your Luck stat",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/129.png",
-    "tags": [
-      "feuer",
-      "fire",
-      "luck"
-    ]
+    "description": "Tears have a chance to become a tooth, dealing x3.2 damage, similar to Tough Love The chance to fire a tooth with this trinket is affected by your Luck stat At +0 luck you have ~12% chance for this effect to activate At +9 luck every tear you fire will be a tooth",
+    "quote": "Don't chew on it"
   },
   {
     "id": "130",
     "name": "Chewed Pen",
-    "description": "Tears have a chance to slow enemies Blessed Penny",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/130.png",
-    "tags": []
+    "description": "Tears have a chance to slow enemies",
+    "quote": "It's leaking"
   },
   {
     "id": "131",
     "name": "Blessed Penny",
     "description": "Chance to spawn half a soul heart when picking up a coin The chance scales up based on the coin's worth: Penny = 16.66%, Double Penny = 30.5%, Nickel = 59.7%, Dime = 83.3%",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/131.png",
+    "quote": "Wealth of purity",
     "tags": [
       "heart",
       "herz"
@@ -1325,29 +1084,23 @@
     "id": "132",
     "name": "Broken Syringe",
     "description": "Gives you a random syringe effect every room The effect can be The Virus, Roid Rage, Speed Ball, Experimental Treatment, Synthoil, Euthanasia or Growth Hormones",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/132.png",
-    "tags": []
+    "quote": "Mystery medicine"
   },
   {
     "id": "133",
     "name": "Short Fuse",
     "description": "Placed bombs explode after 0.66 seconds instead of the usual 1.5 seconds This was called Exploded Firecracker in Antibirth",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/133.png",
+    "quote": "Faster explosions",
     "tags": [
       "bomb",
-      "bombe",
-      "feuer",
-      "fire"
+      "bombe"
     ]
   },
   {
     "id": "134",
     "name": "Gigante Bean",
-    "description": "Farts produced by Isaac or familiars will be twice as large A Lighter",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/134.png",
+    "description": "Farts produced by Isaac or familiars will be twice as large",
+    "quote": "Mega farts",
     "tags": [
       "familiar"
     ]
@@ -1356,20 +1109,13 @@
     "id": "135",
     "name": "A Lighter",
     "description": "Chance for enemies to burn when entering a room The chance for this effect to activate is effected by your Luck stat",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/135.png",
-    "tags": [
-      "feuer",
-      "fire",
-      "luck"
-    ]
+    "quote": "Watch the world burn"
   },
   {
     "id": "136",
     "name": "Broken Padlock",
     "description": "Explosions can open locked doors This includes key blocks and golden chests",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/136.png",
+    "quote": "Bombs are key",
     "tags": [
       "bomb",
       "bombe"
@@ -1378,25 +1124,20 @@
   {
     "id": "137",
     "name": "Myosotis",
-    "description": "Pickups left on current floor will appear in the starting room of the next floor, up to a maximum of 4 pickups 'M",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/137.png",
-    "tags": []
+    "description": "Pickups left on current floor will appear in the starting room of the next floor, up to a maximum of 4 pickups",
+    "quote": "Forget me not..."
   },
   {
     "id": "138",
     "name": "'M",
-    "description": "Active items will be rerolled upon using them Using with Book of Virtues will only reroll the item the book is holding",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/138.png",
-    "tags": []
+    "description": "Active items will be rerolled upon using them Using with Book of Virtues will only reroll the item the book is holding Has no effect with Notched Axe due to how its durability works",
+    "quote": "t's broken9Reroll your dest"
   },
   {
     "id": "139",
     "name": "Teardrop Charm",
     "description": "Random luck-based tear effects have an extra chance of occurring The additional chance is effectively +3 Luck Up",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/139.png",
+    "quote": "It feels lucky",
     "tags": [
       "luck"
     ]
@@ -1404,9 +1145,8 @@
   {
     "id": "140",
     "name": "Apple of Sodom",
-    "description": "Picking up red hearts now has a high chance to spawn 1-4 blue attack spiders, instead of giving you health back This effect also works while fully healed, giving a guaranteed chance of getting spiders",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/140.png",
+    "description": "Picking up red hearts now has a high chance to spawn 1-4 blue attack spiders, instead of giving you health back This effect also works while fully healed, giving a guaranteed chance of getting spiders While missing any red health the chance for spiders is less Works for characters that don't use red health, which always gives you spiders Hearts in Shops can be converted into spiders for free",
+    "quote": "It feels empty",
     "tags": [
       "heart",
       "herz",
@@ -1418,20 +1158,16 @@
     "id": "141",
     "name": "Forgotten Lullaby",
     "description": "Gives your familiars improved rate of fire while held In Antibirth this trinket was called Song of the Siren",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/141.png",
+    "quote": "Sing for your friends",
     "tags": [
-      "familiar",
-      "feuer",
-      "fire"
+      "familiar"
     ]
   },
   {
     "id": "142",
     "name": "Beth's Faith",
     "description": "While held at the start of each floor, this trinket spawns four wisp familiar orbitals around Isaac These wisps are the same as the ones created by the Book of Virtues item",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/142.png",
+    "quote": "My faith protects me",
     "tags": [
       "familiar",
       "orbital"
@@ -1440,55 +1176,42 @@
   {
     "id": "143",
     "name": "Old Capacitor",
-    "description": "Your active item no longer gains charges, but battery drops become much more common Unlock this trinket by blowing up 10 Battery Beggars",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/143.png",
-    "tags": []
+    "description": "Your active item no longer gains charges, but battery drops become much more common",
+    "quote": "Voltage starving"
   },
   {
     "id": "144",
     "name": "Brain Worm",
     "description": "Tears that miss enemies will redirect themselves and travel 90 degrees towards enemies Tears must be roughly 2 tiles or closer to activate this effect",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/144.png",
-    "tags": []
+    "quote": "Ding!"
   },
   {
     "id": "145",
     "name": "Perfection",
-    "description": "+10 Luck while held, but the trinket is destroyed when damage is taken Blood donation machines, Curse Rooms and Sacrifice Rooms wont destroy it",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/145.png",
+    "description": "+10 Luck while held, but the trinket is destroyed when damage is taken Blood donation machines, Curse Rooms and Sacrifice Rooms wont destroy it Taking a hit and activating Holy Mantle won't destroy it Can be dropped in order to avoid breaking it This trinket is automatically given to you after clearing 3 bosses without taking damage",
+    "quote": "Luck way up. Don't lose it!",
     "tags": [
       "blood",
-      "blut",
-      "luck"
+      "blut"
     ]
   },
   {
     "id": "146",
     "name": "Devil's Crown",
-    "description": "Treasure Rooms are replaced with Red Treasure Rooms, which contain a deal with the devil in place of a regular item pedestal If an item room has not yet been entered, it can be transformed to either a regular or Red Treasure Room by picking up or dropping this trinket before entering",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/146.png",
-    "tags": [
-      "devil"
-    ]
+    "description": "Treasure Rooms are replaced with Red Treasure Rooms, which contain a deal with the devil in place of a regular item pedestal If an item room has not yet been entered, it can be transformed to either a regular or Red Treasure Room by picking up or dropping this trinket before entering Does not affect the mirrored treasure room in Downpour II",
+    "quote": "His special customer"
   },
   {
     "id": "147",
     "name": "Charged Penny",
-    "description": "Every time you pick up a coin, you have a small chance to gain 1 bar of charge on your active item The chance for this effect to happen is 1/6th of the value of the coin picked up",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/147.png",
-    "tags": []
+    "description": "Every time you pick up a coin, you have a small chance to gain 1 bar of charge on your active item The chance for this effect to happen is 1/6th of the value of the coin picked up Can only activate once per coin collected In Antibirth this trinket was called Electric Penny",
+    "quote": "Wealth of power"
   },
   {
     "id": "148",
     "name": "Friendship Necklace",
-    "description": "While held, your familiars will now orbit around Isaac instead of following behind him Panic Button",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/148.png",
+    "description": "While held, your familiars will now orbit around Isaac instead of following behind him",
+    "quote": "Gather round",
     "tags": [
       "familiar"
     ]
@@ -1496,67 +1219,50 @@
   {
     "id": "149",
     "name": "Panic Button",
-    "description": "Activates your active item just before damage would be taken It doesn't activate for free - the charges are used up as normal if this effect activates. This means the trinket does nothing if your active item isn't fully charged",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/149.png",
-    "tags": []
+    "description": "Activates your active item just before damage would be taken It doesn't activate for free - the charges are used up as normal if this effect activates. This means the trinket does nothing if your active item isn't fully charged Single-use active items are consumed as normal",
+    "quote": "Push in case of emergency"
   },
   {
     "id": "150",
     "name": "Blue Key",
     "description": "Doors can be opened without using up a key However, when entering the door you are taken to a blue womb room with enemies to defeat. This room will always drop a reward at the end, then allow you to exit back to the real floor",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/150.png",
-    "tags": []
+    "quote": "Look between the rooms"
   },
   {
     "id": "151",
     "name": "Flat File",
-    "description": "While held this trinket causes spikes to retract into the floor Works for curse rooms - you no longer take damage entering or leaving",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/151.png",
-    "tags": []
+    "description": "While held this trinket causes spikes to retract into the floor Works for curse rooms - you no longer take damage entering or leaving Allows you to open spiked chests without taking damage",
+    "quote": "No more spikes"
   },
   {
     "id": "152",
     "name": "Telescope Lens",
-    "description": "+9% chance for a Planetarium to spawn Allows Planetariums to spawn in the Womb/Utero floors",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/152.png",
-    "tags": []
+    "description": "+9% chance for a Planetarium to spawn Allows Planetariums to spawn in the Womb/Utero floors Planetarium have a base 1% chance to appear, which increases by +20% whenever you skip an Item Room (Must not enter to count as skipped) After entering a Planetarium the chance goes back to 1%. Holding this trinket increase that chance by +15% Does not drop in Greed Mode",
+    "quote": "Seek the stars"
   },
   {
     "id": "153",
     "name": "Mom's Lock",
-    "description": "Has a high chance to give you the effect of a random Mom item every room Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Isaac",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/153.png",
-    "tags": []
+    "description": "Has a high chance to give you the effect of a random Mom item every room",
+    "quote": "A piece of her love"
   },
   {
     "id": "154",
     "name": "Dice Bag",
-    "description": "Every time you enter a brand new room, you have a chance to get a random one-time use Dice (e.g. D6, D20 etc.) Unlock this trinket by defeating Mother as Tainted Isaac",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/154.png",
-    "tags": []
+    "description": "Every time you enter a brand new room, you have a chance to get a random one-time use Dice (e.g. D6, D20 etc.)",
+    "quote": "Bonus roll"
   },
   {
     "id": "155",
     "name": "Holy Crown",
-    "description": "Causes Item rooms and Shops to appear in the Cathedral Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Magdalene",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/155.png",
-    "tags": [
-      "shop"
-    ]
+    "description": "Causes Item rooms and Shops to appear in the Cathedral",
+    "quote": "Walk the path of the saint"
   },
   {
     "id": "156",
     "name": "Mother's Kiss",
     "description": "While held you get +1 HP Up The first time you pick this trinket up, the heart container will be filled. This effect can't be abused - next time it will be empty if dropped",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/156.png",
+    "quote": "HP up",
     "tags": [
       "heart",
       "herz",
@@ -1567,22 +1273,17 @@
     "id": "157",
     "name": "Torn Card",
     "description": "Every 15 shots you will shoot an Ipecac + My Reflection shot The tear will fly in the air for about 3 seconds and follows Isaac until it falls and explodes. You need to move out of the way or it will hurt Isaac, but can be used to open anything requiring a bomb e.g. Secret Rooms",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/157.png",
+    "quote": "Death awaits",
     "tags": [
       "bomb",
-      "bombe",
-      "fliege",
-      "fly",
-      "secret"
+      "bombe"
     ]
   },
   {
     "id": "158",
     "name": "Torn Pocket",
-    "description": "Every time you take damage, you drop up to 2 different types of consumables on the ground Dropped consumables can be any variant of its kind - e.g. a bomb can become a troll bomb, or a dropped coin can become a dime",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/158.png",
+    "description": "Every time you take damage, you drop up to 2 different types of consumables on the ground Dropped consumables can be any variant of its kind - e.g. a bomb can become a troll bomb, or a dropped coin can become a dime Does nothing if you have no consumables",
+    "quote": "A hole in your pocket",
     "tags": [
       "bomb",
       "bombe"
@@ -1591,56 +1292,41 @@
   {
     "id": "159",
     "name": "Gilded Key",
-    "description": "All new chests become locked Golden chests Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Cain",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/159.png",
-    "tags": []
+    "description": "All new chests become locked Golden chests",
+    "quote": "Less is more"
   },
   {
     "id": "160",
     "name": "Lucky Sack",
-    "description": "Spawns a sack at the start of each new floor Unlock this trinket by defeating Mother as Tainted Cain",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/160.png",
-    "tags": [
-      "luck"
-    ]
+    "description": "Spawns a sack at the start of each new floor",
+    "quote": "Free goodies!"
   },
   {
     "id": "161",
     "name": "Wicked Crown",
-    "description": "Causes an Item Room and Shop to appear in Sheol Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Azazel",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/161.png",
-    "tags": [
-      "shop"
-    ]
+    "description": "Causes an Item Room and Shop to appear in Sheol",
+    "quote": "Walk the path of the wicked"
   },
   {
     "id": "162",
     "name": "Azazel's Stump",
-    "description": "When entering a new room, gives a small chance to gain Azazel's short-range Brimstone laser for the current room and the ability to fly Unlock this trinket by defeating Mother as Tainted Azazel",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/162.png",
+    "description": "When entering a new room, gives a small chance to gain Azazel's short-range Brimstone laser for the current room and the ability to fly",
+    "quote": "Unleash your inner demon",
     "tags": [
-      "fliege",
-      "fly"
+      "laser"
     ]
   },
   {
     "id": "163",
     "name": "Dingle Berry",
     "description": "Spawns 2 friendly Dips upon clearing a room Dips that spawn after killing a Squirt turn friendly",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/163.png",
-    "tags": []
+    "quote": "Oops!"
   },
   {
     "id": "164",
     "name": "Ring Cap",
-    "description": "Drops 2 bombs at once (only 1 bomb is removed from your total) Unlock this trinket by defeating Mother as Tainted Blue Baby",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/164.png",
+    "description": "Drops 2 bombs at once (only 1 bomb is removed from your total)",
+    "quote": "Twice the bang!",
     "tags": [
       "bomb",
       "bombe"
@@ -1649,38 +1335,34 @@
   {
     "id": "165",
     "name": "Nuh Uh!",
-    "description": "Beyond the womb floor, replaces all coin and key spawns with a random pickup as follows: Bomb - 26.6% chance. Heart - 26.6% chance",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/165.png",
+    "description": "Beyond the womb floor, replaces all coin and key spawns with a random pickup as follows: Bomb - 26.6% chance. Heart - 26.6% chance Pill - 16.6% chance. Card - 16.6% chance Trinket - 6.6% chance. Battery - 6.6% chance Also adds a 20% chance to spawn a fly if the original drop was a coin Doesn't spawn in Greed Mode",
+    "quote": "Don't want!",
     "tags": [
       "bomb",
       "bombe",
       "heart",
-      "herz"
+      "herz",
+      "pill",
+      "pille"
     ]
   },
   {
     "id": "166",
     "name": "Modeling Clay",
-    "description": "Each brand new room, this trinket has a chance to transform into a copy of a random passive item, which gives you the effect for the duration of this room Unlock this trinket by defeating Mother as Tainted Eden",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/166.png",
-    "tags": []
+    "description": "Each brand new room, this trinket has a chance to transform into a copy of a random passive item, which gives you the effect for the duration of this room",
+    "quote": "???"
   },
   {
     "id": "167",
     "name": "Polished Bone",
     "description": "Gives a small chance to spawn a friendly Bony when clearing a room, which will throw bones at enemies until it takes enough damage to die Can be either the regular white Bony or the black variant",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/167.png",
-    "tags": []
+    "quote": "Friends from beyond"
   },
   {
     "id": "168",
     "name": "Hollow Heart",
-    "description": "Gives you +1 Bone Heart every time you enter a new floor Unlock this trinket by defeating Mother as Tainted Forgotten",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/168.png",
+    "description": "Gives you +1 Bone Heart every time you enter a new floor",
+    "quote": "A brittle blessing",
     "tags": [
       "heart",
       "herz"
@@ -1690,26 +1372,23 @@
     "id": "169",
     "name": "Kid's Drawing",
     "description": "Counts as 1 of 3 cat items needed towards the Guppy transformation Dropping this trinket again removes the transformation if you dont have 3 other Guppy items",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/169.png",
-    "tags": []
+    "quote": "Looks familiar...",
+    "tags": [
+      "familiar"
+    ]
   },
   {
     "id": "170",
     "name": "Crystal Key",
-    "description": "Each time you clear a room there is a chance a Red Room will spawn at one of the walls. The chance for a Red Room to unlock increases as you pick up more Crystal Keys.",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/170.png",
-    "tags": []
+    "description": "Each time you clear a room there is a chance a Red Room will spawn at one of the walls. The chance for a Red Room to unlock increases as you pick up more Crystal Keys. While in a regular room, the chances to spawn a Red Room are: 1 Key = 33.33% chance. 2 keys = 50% chance. 3 or more keys = 100% chance. While in a Red room, the chances to spawn a Red Room are: 1 Key = 12.5% chance. 2 keys = 16.6% chance. 3 keys = 25% chance. 4 keys = 50% chance. 5 keys = 100% chance. Passive rooms with no enemies don't have a chance to spawn Red Rooms. It's possible to hold more than one trinket by taking Mom's Purse, Belly Button or using the Smelter to convert them into passive items. Having a golden version of this trinket counts as 2 keys. Doesn't spawn in Greed Mode",
+    "quote": "Call to the other side"
   },
   {
     "id": "171",
     "name": "Keeper's Bargain",
-    "description": "Has a decent chance for Devil Deals to cost money instead of Health The conversion rate is 1 heart container to 15 coins",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/171.png",
+    "description": "Has a decent chance for Devil Deals to cost money instead of Health The conversion rate is 1 heart container to 15 coins Items can be on discount similar to the shop, making it 1 heart container = 7 coins instead No effect on Lost or Tainted Lost Can be dropped to disable this effect while in the room",
+    "quote": "Money talks",
     "tags": [
-      "devil",
       "heart",
       "herz",
       "hp up"
@@ -1718,29 +1397,21 @@
   {
     "id": "172",
     "name": "Cursed Penny",
-    "description": "While held, you will be teleported to a random room everytime you pick up a coin Unlock this trinket by defeating Mother as Tainted Keeper",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/172.png",
-    "tags": []
+    "description": "While held, you will be teleported to a random room everytime you pick up a coin",
+    "quote": "Wealth of misery"
   },
   {
     "id": "173",
     "name": "Your Soul",
-    "description": "Allows you to pay for a devil deal with this trinket Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Judas",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/173.png",
-    "tags": [
-      "devil"
-    ]
+    "description": "Allows you to pay for a devil deal with this trinket",
+    "quote": "Give it to me"
   },
   {
     "id": "174",
     "name": "Number Magnet",
-    "description": "+10% devil room chance while held Changes Devil Room layouts. The new rooms contain 0-3 Devil Deal Items, 1-3 Black Hearts and random enemies from the Sheol floor",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/174.png",
+    "description": "+10% devil room chance while held Changes Devil Room layouts. The new rooms contain 0-3 Devil Deal Items, 1-3 Black Hearts and random enemies from the Sheol floor Prevents Krampus from appearing",
+    "quote": "6",
     "tags": [
-      "devil",
       "heart",
       "herz"
     ]
@@ -1749,34 +1420,25 @@
     "id": "175",
     "name": "Strange Key",
     "description": "Opens the door to the Blue Womb, regardless of whether you meet the 30 minute speed timer Opening Pandora's Box while holding this item will ignore the normal effect and instead spawn 6 item pedestals from random item pools. Both the box and trinket are consumed when this happens",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/175.png",
-    "tags": []
+    "quote": "What could it open?"
   },
   {
     "id": "176",
     "name": "Lil Clot",
-    "description": "A small clot friend will hug Isaac, following his exact movements (similar to how Jacob & Esau work) and shooting tears when he does The clot can be moved around by collision with an object/wall, allowing you to re-position it",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/176.png",
-    "tags": []
+    "description": "A small clot friend will hug Isaac, following his exact movements (similar to how Jacob & Esau work) and shooting tears when he does The clot can be moved around by collision with an object/wall, allowing you to re-position it The clot's damage is roughly 1/3 of your tear damage If it takes a few hits it will die, and respawn in the next room",
+    "quote": "Mini friend"
   },
   {
     "id": "177",
     "name": "Temporary Tattoo",
-    "description": "Spawns a random chest after completing a regular Challenge Room Spawns a pedestal item after completing a boss Challenge Room",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/177.png",
-    "tags": [
-      "boss"
-    ]
+    "description": "Spawns a random chest after completing a regular Challenge Room Spawns a pedestal item after completing a boss Challenge Room Doesn't spawn in Greed Mode",
+    "quote": "You feel braver"
   },
   {
     "id": "178",
     "name": "Swallowed M80",
-    "description": "When taking damage you have a chance to explode and deal 185 damage to all enemies around you (Same damage as a Mr. Mega bomb) Unlock this trinket by defeating Mother as Tainted Samson",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/178.png",
+    "description": "When taking damage you have a chance to explode and deal 185 damage to all enemies around you (Same damage as a Mr. Mega bomb)",
+    "quote": "Bang!",
     "tags": [
       "bomb",
       "bombe"
@@ -1785,9 +1447,8 @@
   {
     "id": "179",
     "name": "RC Remote",
-    "description": "Familiars follow Isaac's exact movements, (similar to how Jacob & Esau work) instead of following loosely like they usually do Holding the drop button (Ctrl on Steam version) causes them to stop moving",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/179.png",
+    "description": "Familiars follow Isaac's exact movements, (similar to how Jacob & Esau work) instead of following loosely like they usually do Holding the drop button (Ctrl on Steam version) causes them to stop moving Doesn't affect some familiars with specific movement patterns, e.g. Abel",
+    "quote": "Controllable buddies!",
     "tags": [
       "familiar"
     ]
@@ -1795,10 +1456,11 @@
   {
     "id": "180",
     "name": "Found Soul",
-    "description": "Gives you a familiar that follows Isaac's exact movements (similar to how Jacob & Esau work) and shoots spectral tears Similar to Jacob and Esau, positions can be altered by running it into objects, or holding the drop button (Ctrl on Steam version)",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/180.png",
+    "description": "Gives you a familiar that follows Isaac's exact movements (similar to how Jacob & Esau work) and shoots spectral tears Similar to Jacob and Esau, positions can be altered by running it into objects, or holding the drop button (Ctrl on Steam version) When you place a bomb, the Found Soul will drop one too If it takes any damage, it will die and not respawn until the next floor Will always match your current movement speed",
+    "quote": "Finally!",
     "tags": [
+      "bomb",
+      "bombe",
       "familiar",
       "spectral"
     ]
@@ -1807,27 +1469,24 @@
     "id": "181",
     "name": "Expansion Pack",
     "description": "Everytime you use your active item, you have a chance to activate another random active item Glowing Hourglass effect is blocked from this item",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/181.png",
-    "tags": []
+    "quote": "Fun extras"
   },
   {
     "id": "182",
     "name": "Beth's Essence",
-    "description": "Taking damage gives you a chance to spawn a flame orbital, similar to the ones created by Book of Virtues Entering an Angel Room gives you +5 flame orbitals. The angel room spawned by The Stairway item also counts",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/182.png",
+    "description": "Taking damage gives you a chance to spawn a flame orbital, similar to the ones created by Book of Virtues Entering an Angel Room gives you +5 flame orbitals. The angel room spawned by The Stairway item also counts Giving money to a beggar gives a flame orbital",
+    "quote": "Virtue's reward",
     "tags": [
-      "angel",
+      "feuer",
+      "fire",
       "orbital"
     ]
   },
   {
     "id": "183",
     "name": "The Twins",
-    "description": "Upon entering each new room, this trinket has a chance to copy one of your current familiars If you have no familiars instead it will spawn either Brother Bobby or Sister Maggy",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/183.png",
+    "description": "Upon entering each new room, this trinket has a chance to copy one of your current familiars If you have no familiars instead it will spawn either Brother Bobby or Sister Maggy Only lasts for the current room",
+    "quote": "I'm seeing double...",
     "tags": [
       "familiar"
     ]
@@ -1836,59 +1495,52 @@
     "id": "184",
     "name": "Adoption Papers",
     "description": "All shops only sell familiars while holding this trinket If you enter a shop while holding this trinket, the effect won't undo by dropping it until you move to a new floor",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/184.png",
+    "quote": "Give them a home",
     "tags": [
-      "familiar",
-      "shop"
+      "familiar"
     ]
   },
   {
     "id": "185",
     "name": "Cricket Leg",
-    "description": "Every time an enemy dies you have a chance to gain a random Locust Different color Locusts correspond to the horsemen. Each of them deal double your tear damage, similar to how standard blue flies work",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/185.png",
+    "description": "Every time an enemy dies you have a chance to gain a random Locust Different color Locusts correspond to the horsemen. Each of them deal double your tear damage, similar to how standard blue flies work War (Red) - Explodes when touching the enemy. The actual explosion deals flat 60 damage Pestilence (Green) - Poisons the enemy it attacks Famine (Brown) - Applies a slowing effect Death (Black) - Deals x4 damage instead of x2 Conquest (White) - Spawns 2-5 at once",
+    "quote": "Infested",
     "tags": [
+      "bomb",
+      "bombe",
       "fliege",
-      "fly"
+      "fly",
+      "poison"
     ]
   },
   {
     "id": "186",
     "name": "Apollyon's Best Friend",
-    "description": "Gives you a red attack fly, that will charge at enemies in the same direction you are shooting Deals damage equal to your current tear damage",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/186.png",
-    "tags": [
-      "fliege",
-      "fly"
-    ]
+    "description": "Gives you a red attack fly, that will charge at enemies in the same direction you are shooting Deals damage equal to your current tear damage Stops charging once it hits an enemy and returns to Isaac's side",
+    "quote": "Attack buddy"
   },
   {
     "id": "187",
     "name": "Broken Glasses",
     "description": "Gives a 33% chance to spawn an extra blind pedestal item in all future item rooms. This one will be a hidden question mark Allows you to see what both items are on alternative path floors (Downpour/Dross, Mines/Ashpit, Gehenna/Mausoleum)",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/187.png",
-    "tags": []
+    "quote": "Double vision?"
   },
   {
     "id": "188",
     "name": "Ice Cube",
-    "description": "Gives a small chance when entering a room for enemies to be petrified for 4 seconds. Killing a petrified enemy will freeze it. The chance for this effect to activate depends on your Luck stat.",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/188.png",
+    "description": "Gives a small chance when entering a room for enemies to be petrified for 4 seconds. Killing a petrified enemy will freeze it. The chance for this effect to activate depends on your Luck stat. Frozen enemies can be pushed into obstacles where they shatter on contact and fire ice shards around them. Any other enemies hit by these shards will become frozen too Frozen enemies are considered dead by the game, and won't unfreeze or move again. The room doors will open if only frozen enemies remain",
+    "quote": "Stay frosty",
     "tags": [
-      "luck"
+      "freeze"
     ]
   },
   {
     "id": "189",
     "name": "Sigil of Baphomet",
     "description": "Every time you kill an enemy you get an invincibility shield for 1 second While shielded, each enemy killed adds +1 seconds to the duration",
-    "quality": 1,
-    "icon_url": "https://raw.githubusercontent.com/wofsauge/External-Item-Descriptions/master/images/trinkets/189.png",
-    "tags": []
+    "quote": "Revel in death",
+    "tags": [
+      "shield"
+    ]
   }
 ]
